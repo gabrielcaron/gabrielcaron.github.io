@@ -23,58 +23,49 @@
 
 /* Polices */
 @font-face {
-  font-family: Roboto-Regulier;
-  src: url(../../liaisons/polices/ro.woff2) format('woff2'),
-  url(../../polices/heebo-light.woff) format('woff'),
-  url(../../polices/heebo-light.ttf) format('truetype');
+  font-family: Roboto-Regular;
+  src: url(../../liaisons/polices/roboto-regular.woff2) format('woff2'),
+  url(../../liaisons/polices/roboto-regular.woff) format('woff'),
+  url(../../liaisons/polices/roboto-regular.ttf) format('truetype');
 }
 
-h1, h2, h3 {
-  font-family: Heebo-Bold, sans-serif;
-  line-height: 110%;
-  letter-spacing: 1px;
-}
+//h1, h2, h3 {
+//  //font-family: Heebo-Bold, sans-serif;
+//  line-height: 110%;
+//  letter-spacing: 1px;
+//}
 
-h1 {
-  @include fontSize(50px);
-  text-align: center;
-  color: $vertForet;
-  margin: 0;
-  padding: 5rem 0 1rem 0;
-}
-
-h2 {
-  @include fontSize(35px);
-  color: $vertForet;
-}
-
-h3 {
-  @include fontSize(25px);
-  color: $vertForet;
-}
+//h1 {
+//  @include fontSize(50px);
+//  text-align: center;
+//  color: $vertForet;
+//  margin: 0;
+//  padding: 5rem 0 1rem 0;
+//}
+//
+//h2 {
+//  @include fontSize(35px);
+//  color: $vertForet;
+//}
+//
+//h3 {
+//  @include fontSize(25px);
+//  color: $vertForet;
+//}
 
 
 /* Base décimale */
-html {
-  font-size: 62.5%;
-}
+//html {
+//  font-size: 62.5%;
+//}
 
 body {
-  font-family: Heebo-Light, sans-serif;
+  font-family: Roboto-Regular, sans-serif;
   /* 16px pour toutes les largeurs d'écran */
-  @include fontSize(16px);
+  //@include fontSize(16px);
   line-height: 1.5;
 }
 
-ol {
-  line-height: 1.5em;
-  font-size: 1.25em;
-}
-
-ol li {
-  padding: 0.5em 0;
-}
-
 p {
-  @include fontSize(20px);
+  //@include fontSize(20px);
 }
