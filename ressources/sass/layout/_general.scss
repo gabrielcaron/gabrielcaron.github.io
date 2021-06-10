@@ -1,0 +1,29 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* STYLES GÉNÉRAUX
+*
+*
+*/
+
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.contenu {
+  @include conteneur1920px();
+
+  &__conteneurRangeeGrid {
+	@include rangeeGrid12col;
+
+	& > * {
+	  grid-column: 2 / 12;
+	}
+  }
+}

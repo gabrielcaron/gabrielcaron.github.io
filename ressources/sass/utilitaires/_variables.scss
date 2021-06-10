@@ -1,0 +1,35 @@
+/**
+ * @author Gabriel Caron <1861095@csfoy.ca>
+ * @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* VARIABLES
+* PALETTES DE COULEURS
+** Couleurs de base
+** Autres couleurs
+* POINTS DE RUPTURE
+*/
+
+
+$coinArrondi: 1rem;
+
+/** Palette de couleurs **/
+
+/* Couleurs de base AAA */
+$gris: #595959;
+$vertForet: #006437;
+$noir: #000;
+$blanc: #fff;
+
+/* Autres couleurs */
+$hyperlien: $vertForet;
+
+
+/** Points de rupture **/
+$mobile600px: 600px;
+$tablet800px: 800px;
+$tablet900px: 900px; // Pied de page seulement
+$desktop1050px: 1050px;
+$desktop1200px: 1200px;

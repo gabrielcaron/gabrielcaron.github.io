@@ -1,0 +1,57 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.3
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* Utilisation du modèle de boîte avec Box-Sizing
+* Classe conteneur pour le centrage du bloc parent avec CSS Grid
+* Classe conteneur pour le positionnement de la rangée enfant en Grid
+* Classe conteneur pour le positionnement de la rangée enfant en flexbox
+*/
+
+/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
+html {
+  box-sizing: border-box;
+}
+
+/*** Images responsives ***/
+img {
+  max-width: 100%;
+}
+
+
+// TODO faire la solution de repli de max-width pour nav plus anciens. Utiliser min-max comme condition&nbsp;? Voir ici: https://www.linkedin.com/learning/css-advanced-layouts-with-grid/check-for-grid-support
+
+/*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
+.conteneur {
+  // Si le navigateur ne supporte pas Grid
+  @include padding3rem;
+  // Sinon, on y va avec Grid
+  display: grid;
+  grid-template-columns: minmax(auto, 1920px);
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @media (min-width: 1300px) {
+	padding-left: initial;
+	padding-right: initial;
+  }
+}
+
+/*** Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
+.rangeeGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+/*** Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
+@media (min-width: 600px) {
+  .rangeeFlex {
+	display: flex;
+	justify-content: space-between;
+  }
+
+}
