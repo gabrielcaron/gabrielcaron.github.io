@@ -613,7 +613,7 @@ img {
 }
 .navigation__lien:hover, .navigation__lien:active {
   position: relative;
-  background: linear-gradient(91.9deg, rgba(255, 225, 0, 0.5) 5.42%, rgba(255, 200, 0, 0.5) 100%), #FFD700;
+  background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
   background-clip: padding-box;
   border: solid 1px transparent;
 }
