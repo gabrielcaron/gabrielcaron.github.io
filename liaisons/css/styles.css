@@ -524,6 +524,12 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+@media screen and (min-width: 1000px) {
+  .conteneur {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 @media (min-width: 600px) {
   .conteneur {
     display: grid;
@@ -550,7 +556,7 @@ img {
 /** Entete **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -562,7 +568,17 @@ img {
 .entete {
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 5.5rem;
+  background-image: url("../images/vagues-entete.svg");
+  background-repeat: no-repeat;
+  background-position: 30rem -7rem;
+  background-size: 70rem;
+  height: 23rem;
+}
+@media screen and (min-width: 1000px) {
+  .entete {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 @media (min-width: 600px) {
   .entete {
@@ -571,7 +587,34 @@ img {
     justify-content: center;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
+  .entete {
+    background-position: 35vw -2vw;
+    background-size: initial;
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .entete {
+    background-position: 40vw 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .entete {
+    background-position: 44vw 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .entete {
+    background-position: 46vw 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .entete {
+    background-position: 48vw 0;
+  }
+}
+@media screen and (max-width: 899px) {
   .entete__lien-accueil {
     flex-basis: 100%;
   }
@@ -595,6 +638,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 5.5rem;
 }
 
 /**
@@ -657,9 +701,9 @@ img {
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1050px) {
   .navigation__lien {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 .navigation__lien:link, .navigation__lien:visited {
