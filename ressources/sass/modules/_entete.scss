@@ -5,7 +5,26 @@
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* TITRE
+* EN-TÊTE
 *
 *
 */
+
+
+.entete {
+  @include conteneur1400px();
+  margin-top: 5.5rem;
+
+  //&__lien-accueil {
+  //}
+
+  &__logo {
+	width: 285px;
+  }
+
+  &__menu {
+	align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+  }
+}

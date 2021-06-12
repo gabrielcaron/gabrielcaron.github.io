@@ -9,3 +9,56 @@
 *
 *
 */
+
+
+.navigation {
+
+  &__liste {
+	list-style-type: none;
+  }
+
+  &__item {
+	display: inline-block;
+  }
+
+  &__lien {
+	font-family: $RobotoMedium;
+	font-size: 2rem;
+	color: $gris25;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	padding: 1.5rem 3rem;
+	text-align: center;
+
+	&:link, &:visited {
+	  transition: background, 0.1s ease-in-out;
+	  border: solid 1px transparent;
+	  border-radius: 3rem;
+	}
+
+	&:hover, &:active {
+	  // Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
+	  position: relative;
+	  $bordure: 1px;
+	  background: linear-gradient(91.9deg, rgba(255, 225, 0, 0.5) 5.42%, rgba(255, 200, 0, 0.5) 100%), #FFD700;
+	  background-clip: padding-box;
+	  border: solid $bordure transparent;
+
+
+	  &:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -$bordure;
+		border-radius: inherit;
+		background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
+		box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+	  }
+
+	}
+  }
+}

@@ -18,18 +18,24 @@ $coinArrondi: 1rem;
 /** Palette de couleurs **/
 
 /* Couleurs de base AAA */
-$gris: #595959;
-$vertForet: #006437;
+$gris98: #FAFAFA;
+$gris99: #FCFCFC; // Icones seulement
+$gris25: #404040;
+$jauneOfficiel: #FFE100;
 $noir: #000;
 $blanc: #fff;
 
-/* Autres couleurs */
-$hyperlien: $vertForet;
+/* Polices */
 
+$RobotoRegular: Roboto-Regular, sans serif;
+$RobotoItalic: Roboto-Italic, sans serif;
+$RobotoMedium: Roboto-Medium, sans serif;
+$RobotoMediumItalic: Roboto-MediumItalic, sans serif;
+$RobotoBold: Roboto-Bold, sans serif;
+$RobotoBoldItalic: Roboto-BoldItalic, sans serif;
 
 /** Points de rupture **/
 $mobile600px: 600px;
 $tablet800px: 800px;
-$tablet900px: 900px; // Pied de page seulement
 $desktop1050px: 1050px;
 $desktop1200px: 1200px;

@@ -10,6 +10,14 @@
 *
 */
 
+/* Base décimale */
+html {
+  font-size: 62.5%;
+}
+
+body {
+background-color: $gris98;
+}
 
 img {
   vertical-align: bottom;
@@ -17,7 +25,7 @@ img {
 }
 
 .contenu {
-  @include conteneur1920px();
+  @include conteneur1400px();
 
   &__conteneurRangeeGrid {
 	@include rangeeGrid12col;

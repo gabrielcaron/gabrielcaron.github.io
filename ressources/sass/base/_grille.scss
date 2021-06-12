@@ -26,17 +26,11 @@ img {
 
 /*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
-  // Si le navigateur ne supporte pas Grid
   @include padding3rem;
-  // Sinon, on y va avec Grid
-  display: grid;
-  grid-template-columns: minmax(auto, 1920px);
-  justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  @media (min-width: 1300px) {
-	padding-left: initial;
-	padding-right: initial;
+  @media (min-width: $mobile600px) {
+	display: grid;
+	grid-template-columns: minmax(auto, 1400px);
+	justify-content: center;
   }
 }
 

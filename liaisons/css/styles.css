@@ -383,7 +383,7 @@ template {
 */
 /** Palette de couleurs **/
 /* Couleurs de base AAA */
-/* Autres couleurs */
+/* Polices */
 /** Points de rupture **/
 /** Mixins **/
 /**
@@ -470,10 +470,29 @@ template {
   font-family: Roboto-Regular;
   src: url(../../liaisons/polices/roboto-regular.woff2) format("woff2"), url(../../liaisons/polices/roboto-regular.woff) format("woff"), url(../../liaisons/polices/roboto-regular.ttf) format("truetype");
 }
-/* Base décimale */
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../../liaisons/polices/roboto-italic.woff2) format("woff2"), url(../../liaisons/polices/roboto-italic.woff) format("woff"), url(../../liaisons/polices/roboto-italic.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../../liaisons/polices/roboto-medium.woff2) format("woff2"), url(../../liaisons/polices/roboto-medium.woff) format("woff"), url(../../liaisons/polices/roboto-medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url(../../liaisons/polices/roboto-mediumItalic.woff2) format("woff2"), url(../../liaisons/polices/roboto-mediumItalic.woff) format("woff"), url(../../liaisons/polices/roboto-mediumItalic.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../../liaisons/polices/roboto-bold.woff2) format("woff2"), url(../../liaisons/polices/roboto-bold.woff) format("woff"), url(../../liaisons/polices/roboto-bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url(../../liaisons/polices/roboto-boldItalic.woff2) format("woff2"), url(../../liaisons/polices/roboto-boldItalic.woff) format("woff"), url(../../liaisons/polices/roboto-boldItalic.ttf) format("truetype");
+}
 body {
-  font-family: Roboto-Regular, sans-serif;
-  /* 16px pour toutes les largeurs d'écran */
+  font-family: Roboto-Regular, sans serif;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
@@ -504,16 +523,12 @@ img {
 .conteneur {
   padding-left: 3rem;
   padding-right: 3rem;
-  display: grid;
-  grid-template-columns: minmax(auto, 1920px);
-  justify-content: center;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
-@media (min-width: 1300px) {
+@media (min-width: 600px) {
   .conteneur {
-    padding-left: initial;
-    padding-right: initial;
+    display: grid;
+    grid-template-columns: minmax(auto, 1400px);
+    justify-content: center;
   }
 }
 
@@ -540,10 +555,82 @@ img {
 * ------------------
 * TABLE DES MATIERES
 * ------------------
+* EN-TÊTE
+*
+*
+*/
+.entete {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 5.5rem;
+}
+@media (min-width: 600px) {
+  .entete {
+    display: grid;
+    grid-template-columns: minmax(auto, 1400px);
+    justify-content: center;
+  }
+}
+.entete__logo {
+  width: 285px;
+}
+.entete__menu {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
 * TITRE
 *
 *
 */
+.navigation__liste {
+  list-style-type: none;
+}
+.navigation__item {
+  display: inline-block;
+}
+.navigation__lien {
+  font-family: Roboto-Medium, sans serif;
+  font-size: 2rem;
+  color: #404040;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  padding: 1.5rem 3rem;
+  text-align: center;
+}
+.navigation__lien:link, .navigation__lien:visited {
+  transition: background, 0.1s ease-in-out;
+  border: solid 1px transparent;
+  border-radius: 3rem;
+}
+.navigation__lien:hover, .navigation__lien:active {
+  position: relative;
+  background: linear-gradient(91.9deg, rgba(255, 225, 0, 0.5) 5.42%, rgba(255, 200, 0, 0.5) 100%), #FFD700;
+  background-clip: padding-box;
+  border: solid 1px transparent;
+}
+.navigation__lien:hover:before, .navigation__lien:active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+}
+
 /** Pied de page **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -569,6 +656,15 @@ img {
 *
 *
 */
+/* Base décimale */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
 img {
   vertical-align: bottom;
   max-width: 100%;
@@ -581,7 +677,7 @@ img {
 @media (min-width: 600px) {
   .contenu {
     display: grid;
-    grid-template-columns: minmax(auto, 1920px);
+    grid-template-columns: minmax(auto, 1400px);
     justify-content: center;
   }
 }

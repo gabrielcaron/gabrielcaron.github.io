@@ -29,6 +29,41 @@
   url(../../liaisons/polices/roboto-regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../../liaisons/polices/roboto-italic.woff2) format('woff2'),
+  url(../../liaisons/polices/roboto-italic.woff) format('woff'),
+  url(../../liaisons/polices/roboto-italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../../liaisons/polices/roboto-medium.woff2) format('woff2'),
+  url(../../liaisons/polices/roboto-medium.woff) format('woff'),
+  url(../../liaisons/polices/roboto-medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url(../../liaisons/polices/roboto-mediumItalic.woff2) format('woff2'),
+  url(../../liaisons/polices/roboto-mediumItalic.woff) format('woff'),
+  url(../../liaisons/polices/roboto-mediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../../liaisons/polices/roboto-bold.woff2) format('woff2'),
+  url(../../liaisons/polices/roboto-bold.woff) format('woff'),
+  url(../../liaisons/polices/roboto-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url(../../liaisons/polices/roboto-boldItalic.woff2) format('woff2'),
+  url(../../liaisons/polices/roboto-boldItalic.woff) format('woff'),
+  url(../../liaisons/polices/roboto-boldItalic.ttf) format('truetype');
+}
+
 //h1, h2, h3 {
 //  //font-family: Heebo-Bold, sans-serif;
 //  line-height: 110%;
@@ -54,18 +89,8 @@
 //}
 
 
-/* Base décimale */
-//html {
-//  font-size: 62.5%;
-//}
-
 body {
-  font-family: Roboto-Regular, sans-serif;
-  /* 16px pour toutes les largeurs d'écran */
-  //@include fontSize(16px);
+  font-family: $RobotoRegular;
+  font-size: 1.8rem;
   line-height: 1.5;
-}
-
-p {
-  //@include fontSize(20px);
 }
