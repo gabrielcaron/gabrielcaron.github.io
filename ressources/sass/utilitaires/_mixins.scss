@@ -84,7 +84,7 @@
 
 // Mixin pour conteneur parent en Grid
 @mixin conteneur1400px($conteneurBleed: false) {
-  @include padding3rem;
+  @include paddingConteneur;
   @media (min-width: $mobile600px) {
 	display: grid;
 	grid-template-columns: minmax(auto, 1400px);
@@ -113,7 +113,7 @@
 }
 
 // Mixin pour le padding de base pour mobile si Grid ou Flex ne sont pas utilisés
-@mixin padding3rem {
-  padding-left: 3rem;
-  padding-right: 3rem;
+@mixin paddingConteneur {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

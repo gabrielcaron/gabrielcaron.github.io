@@ -15,16 +15,29 @@
   @include conteneur1400px();
   margin-top: 5.5rem;
 
-  //&__lien-accueil {
-  //}
+  &__lien-accueil {
+	@media screen and (max-width: $tablet900px) {
+	  flex-basis: 100%;
+	}
+  }
 
   &__logo {
-	width: 285px;
+	background-image: url("../images/iv-gabrielcaron.svg");
+	background-repeat: no-repeat;
+	width: 217px;
+	height: 53px;
+	margin-left: 2rem;
+	@media screen and (min-width: 1000px) {
+	  width: 285px;
+	  height: 70px;
+	  margin-left: 0;
+	}
   }
 
   &__menu {
 	align-items: baseline;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
   }
 }

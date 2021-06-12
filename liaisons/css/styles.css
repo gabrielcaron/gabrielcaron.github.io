@@ -521,8 +521,8 @@ img {
 
 /*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media (min-width: 600px) {
   .conteneur {
@@ -560,8 +560,8 @@ img {
 *
 */
 .entete {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-top: 5.5rem;
 }
 @media (min-width: 600px) {
@@ -571,18 +571,35 @@ img {
     justify-content: center;
   }
 }
+@media screen and (max-width: 900px) {
+  .entete__lien-accueil {
+    flex-basis: 100%;
+  }
+}
 .entete__logo {
-  width: 285px;
+  background-image: url("../images/iv-gabrielcaron.svg");
+  background-repeat: no-repeat;
+  width: 217px;
+  height: 53px;
+  margin-left: 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .entete__logo {
+    width: 285px;
+    height: 70px;
+    margin-left: 0;
+  }
 }
 .entete__menu {
   align-items: baseline;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -591,33 +608,72 @@ img {
 *
 *
 */
+.navigation {
+  width: 100%;
+}
+@media screen and (min-width: 830px) and (max-width: 899px) {
+  .navigation {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navigation {
+    width: initial;
+  }
+}
 .navigation__liste {
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 }
 .navigation__item {
   display: inline-block;
 }
 .navigation__lien {
+  display: inline-block;
   font-family: Roboto-Medium, sans serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #404040;
   text-decoration: none;
+  line-height: 120%;
   letter-spacing: 0.02em;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   text-align: center;
+}
+@media screen and (min-width: 550px) {
+  .navigation__lien {
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .navigation__lien {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navigation__lien {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .navigation__lien {
+    font-size: 2rem;
+  }
 }
 .navigation__lien:link, .navigation__lien:visited {
   transition: background, 0.1s ease-in-out;
   border: solid 1px transparent;
   border-radius: 3rem;
 }
-.navigation__lien:hover, .navigation__lien:active {
+.navigation__lien:hover {
   position: relative;
   background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
   background-clip: padding-box;
   border: solid 1px transparent;
 }
-.navigation__lien:hover:before, .navigation__lien:active:before {
+.navigation__lien:hover:before {
   content: "";
   position: absolute;
   top: 0;
@@ -629,6 +685,25 @@ img {
   border-radius: inherit;
   background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+}
+.navigation__lien:active {
+  position: relative;
+  background: linear-gradient(175deg, #FFF000 6.26%, #FFD700 93.03%);
+  background-clip: padding-box;
+  border: solid 1px transparent;
+}
+.navigation__lien:active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
+  box-shadow: -5px -5px 20px 0px white, 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 /** Pied de page **/
@@ -663,33 +738,15 @@ html {
 
 body {
   background-color: #FAFAFA;
+  background-image: url("../images/texture-vagues.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 5rem;
 }
 
 img {
   vertical-align: bottom;
   max-width: 100%;
-}
-
-.contenu {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-@media (min-width: 600px) {
-  .contenu {
-    display: grid;
-    grid-template-columns: minmax(auto, 1400px);
-    justify-content: center;
-  }
-}
-@media (min-width: 600px) {
-  .contenu__conteneurRangeeGrid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-  }
-}
-.contenu__conteneurRangeeGrid > * {
-  grid-column: 2/12;
 }
 
 /** Accueil **/

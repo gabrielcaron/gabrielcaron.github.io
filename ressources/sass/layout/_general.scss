@@ -16,22 +16,14 @@ html {
 }
 
 body {
-background-color: $gris98;
+  background-color: $gris98;
+  background-image: url("../images/texture-vagues.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 5rem;
 }
 
 img {
   vertical-align: bottom;
   max-width: 100%;
-}
-
-.contenu {
-  @include conteneur1400px();
-
-  &__conteneurRangeeGrid {
-	@include rangeeGrid12col;
-
-	& > * {
-	  grid-column: 2 / 12;
-	}
-  }
 }

@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -12,9 +12,19 @@
 
 
 .navigation {
+  width: 100%;
+  @media screen and (min-width: 830px) and (max-width: $tablet900px - 1) {
+	width: 90%;
+  }
+  @media screen and (min-width: $tablet900px) {
+	width: initial;
+  }
 
   &__liste {
+	display: flex;
+	justify-content: space-between;
 	list-style-type: none;
+	padding: 0;
   }
 
   &__item {
@@ -22,13 +32,28 @@
   }
 
   &__lien {
+	display: inline-block;
 	font-family: $RobotoMedium;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	color: $gris25;
 	text-decoration: none;
+	line-height: 120%;
 	letter-spacing: 0.02em;
-	padding: 1.5rem 3rem;
+	padding: 1rem 2rem;
 	text-align: center;
+	@media screen and (min-width: 550px) {
+	  font-size: 2rem;
+	  padding: 1.5rem 2.5rem;
+	}
+	@media screen and (min-width: 750px) {
+	  font-size: 2.2rem;
+	}
+	@media screen and (min-width: $tablet900px) {
+	  font-size: 1.8rem;
+	}
+	@media screen and (min-width: $desktop1100px) {
+	  font-size: 2rem;
+	}
 
 	&:link, &:visited {
 	  transition: background, 0.1s ease-in-out;
@@ -36,14 +61,13 @@
 	  border-radius: 3rem;
 	}
 
-	&:hover, &:active {
+	&:hover {
 	  // Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
 	  position: relative;
 	  $bordure: 1px;
 	  background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
 	  background-clip: padding-box;
 	  border: solid $bordure transparent;
-
 
 	  &:before {
 		content: '';
@@ -59,6 +83,29 @@
 		box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
 	  }
 
+	}
+
+	&:active {
+	  // Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
+	  position: relative;
+	  $bordure: 1px;
+	  background: linear-gradient(175deg, #FFF000 6.26%, #FFD700 93.03%);
+	  background-clip: padding-box;
+	  border: solid $bordure transparent;
+
+	  &:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -$bordure;
+		border-radius: inherit;
+		background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
+		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+	  }
 	}
   }
 }
