@@ -101,7 +101,7 @@
   @media (min-width: $mobile600px) {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-gap: $gridGap;
+	column-gap: $gridGap;
   }
 }
 
@@ -116,8 +116,16 @@
 @mixin paddingConteneur {
   padding-left: 2rem;
   padding-right: 2rem;
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 600px) {
 	padding-left: 3rem;
 	padding-right: 3rem;
+  }
+  @media screen and (min-width: 1000px) {
+	padding-left: 5rem;
+	padding-right: 5rem;
+  }
+  @media screen and (min-width: 1930px) {
+	padding-left: 0;
+	padding-right: 0;
   }
 }

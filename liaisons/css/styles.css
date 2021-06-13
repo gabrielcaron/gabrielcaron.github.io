@@ -524,10 +524,22 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .conteneur {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .conteneur {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1930px) {
+  .conteneur {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 600px) {
@@ -542,7 +554,7 @@ img {
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 20px;
+  column-gap: 20px;
 }
 
 /*** Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
@@ -574,10 +586,22 @@ img {
   background-size: 70rem;
   height: 23rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .entete {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .entete {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1930px) {
+  .entete {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (min-width: 600px) {
@@ -585,6 +609,18 @@ img {
     display: grid;
     grid-template-columns: minmax(auto, 1400px);
     justify-content: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .entete {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .entete {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -652,29 +688,29 @@ img {
 *
 *
 */
-.navigation {
+.entete .navigation {
   width: 100%;
 }
 @media screen and (min-width: 830px) and (max-width: 899px) {
-  .navigation {
+  .entete .navigation {
     width: 90%;
   }
 }
 @media screen and (min-width: 900px) {
-  .navigation {
+  .entete .navigation {
     width: initial;
   }
 }
-.navigation__liste {
+.entete .navigation__liste {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
 }
-.navigation__item {
+.entete .navigation__item {
   display: inline-block;
 }
-.navigation__lien {
+.entete .navigation__lien {
   display: inline-block;
   font-family: Roboto-Medium, sans serif;
   font-size: 1.6rem;
@@ -686,38 +722,38 @@ img {
   text-align: center;
 }
 @media screen and (min-width: 550px) {
-  .navigation__lien {
+  .entete .navigation__lien {
     font-size: 2rem;
     padding: 1.5rem 2.5rem;
   }
 }
 @media screen and (min-width: 750px) {
-  .navigation__lien {
+  .entete .navigation__lien {
     font-size: 2.2rem;
   }
 }
 @media screen and (min-width: 900px) {
-  .navigation__lien {
+  .entete .navigation__lien {
     font-size: 1.8rem;
   }
 }
-@media screen and (min-width: 1050px) {
-  .navigation__lien {
+@media screen and (min-width: 1100px) {
+  .entete .navigation__lien {
     font-size: 2.2rem;
   }
 }
-.navigation__lien:link, .navigation__lien:visited {
+.entete .navigation__lien:link, .entete .navigation__lien:visited {
   transition: background, 0.1s ease-in-out;
   border: solid 1px transparent;
   border-radius: 3rem;
 }
-.navigation__lien:hover {
+.entete .navigation__lien:hover {
   position: relative;
   background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
   background-clip: padding-box;
   border: solid 1px transparent;
 }
-.navigation__lien:hover:before {
+.entete .navigation__lien:hover:before {
   content: "";
   position: absolute;
   top: 0;
@@ -730,13 +766,13 @@ img {
   background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
 }
-.navigation__lien:active {
+.entete .navigation__lien:active {
   position: relative;
   background: linear-gradient(175deg, #FFF000 6.26%, #FFD700 93.03%);
   background-clip: padding-box;
   border: solid 1px transparent;
 }
-.navigation__lien:active:before {
+.entete .navigation__lien:active:before {
   content: "";
   position: absolute;
   top: 0;
@@ -750,6 +786,71 @@ img {
   box-shadow: -5px -5px 20px 0px white, 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
+.pieddepage .navigation {
+  grid-column: 1/13;
+}
+@media screen and (min-width: 900px) {
+  .pieddepage .navigation {
+    row-gap: 0;
+  }
+}
+@media screen and (min-width: 900px) and (min-width: 600px) {
+  .pieddepage .navigation {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.pieddepage .navigation .rangee1 {
+  grid-row: 1;
+}
+.pieddepage .navigation .rangee2 {
+  grid-row: 2;
+}
+.pieddepage .navigation .rangee3 {
+  grid-row: 3;
+}
+.pieddepage .navigation .rangee4 {
+  grid-row: 4;
+}
+.pieddepage .navigation__titre {
+  grid-column: span 4;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.pieddepage .navigation__titre .section {
+  color: #000;
+  font-family: Roboto-Bold, sans serif;
+  font-size: 3rem;
+}
+.pieddepage .navigation__liste {
+  grid-column: span 4;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+.pieddepage .navigation__lien {
+  font-family: Roboto-Medium, sans serif;
+  font-size: 2.5rem;
+  color: #404040;
+  text-decoration: none;
+  line-height: 175%;
+  letter-spacing: 0.05rem;
+}
+.pieddepage .navigation__lien.section {
+  line-height: 100%;
+}
+.pieddepage .navigation__lien.secondaire {
+  font-size: 2rem;
+}
+.pieddepage .navigation__lien:hover {
+  text-decoration: underline;
+}
+.pieddepage__copyright {
+  grid-column: 1/13;
+}
+
 /** Pied de page **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -758,10 +859,84 @@ img {
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* TITRE
+* PIED DE PAGE
 *
 *
 */
+.pieddepage {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-image: linear-gradient(to right bottom, #fff000, #ffe100);
+}
+@media screen and (min-width: 600px) {
+  .pieddepage {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .pieddepage {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1930px) {
+  .pieddepage {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .pieddepage {
+    display: grid;
+    grid-template-columns: minmax(auto, 1400px);
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .pieddepage {
+    border-radius: 20rem 0 0 0;
+  }
+}
+@media (min-width: 600px) {
+  .pieddepage__conteneurGrille {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.pieddepage__titres {
+  font-family: Roboto-Regular, sans serif;
+  font-size: 2rem;
+  color: #404040;
+  line-height: 150%;
+  letter-spacing: 0.05rem;
+  margin: 0.75rem 0 0 0;
+  padding-left: 4rem;
+}
+.pieddepage__rangeeLogo {
+  grid-column: 1/13;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 10rem 0 5rem 0;
+}
+.pieddepage__logo {
+  background-image: url("../images/iv-gabrielcaron-nb.svg");
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 60px;
+}
+.pieddepage__copyright {
+  position: relative;
+  top: 13rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+.pieddepage__vagues {
+  padding-top: 5rem;
+}
+
 /********* LAYOUT *********/
 /** Règles de style générales **/
 /**

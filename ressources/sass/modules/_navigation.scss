@@ -11,7 +11,7 @@
 */
 
 
-.navigation {
+.entete .navigation {
   width: 100%;
   @media screen and (min-width: 830px) and (max-width: $tablet900px - 1) {
 	width: 90%;
@@ -51,7 +51,7 @@
 	@media screen and (min-width: $tablet900px) {
 	  font-size: 1.8rem;
 	}
-	@media screen and (min-width: 1050px) {
+	@media screen and (min-width: 1100px) {
 	  font-size: 2.2rem;
 	}
 
@@ -107,5 +107,76 @@
 		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 	  }
 	}
+  }
+}
+
+.pieddepage {
+  .navigation {
+	grid-column: 1 / 13;
+	@media screen and (min-width: $tablet900px) {
+	  @include rangeeGrid12col();
+	  row-gap: 0;
+	}
+
+	.rangee1 {
+	  grid-row: 1;
+	}
+
+	.rangee2 {
+	  grid-row: 2;
+	}
+
+	.rangee3 {
+	  grid-row: 3;
+	}
+
+	.rangee4 {
+	  grid-row: 4;
+	}
+
+	&__titre {
+	  grid-column: span 4;
+	  color: $noir;
+	  text-decoration: none;
+	  margin-bottom: 0;
+
+	  & .section {
+		color: $noir;
+		font-family: $RobotoBold;
+		font-size: 3rem;
+	  }
+	}
+
+	&__liste {
+	  grid-column: span 4;
+	  list-style-type: none;
+	  padding: 0;
+	  margin-top: 0;
+	}
+
+	&__lien {
+	  font-family: $RobotoMedium;
+	  font-size: 2.5rem;
+	  color: $gris25;
+	  text-decoration: none;
+	  line-height: 175%;
+	  letter-spacing: 0.05rem;
+
+	  &.section {
+		line-height: 100%;
+	  }
+
+	  &.secondaire {
+		font-size: 2rem;
+	  }
+
+	  &:hover {
+		text-decoration: underline;
+	  }
+	}
+  }
+
+  &__copyright {
+	grid-column: 1 / 13;
   }
 }
