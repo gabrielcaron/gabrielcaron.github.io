@@ -74,11 +74,12 @@
 }
 
 .sauter-contenu {
-  padding: 2rem 6rem;
-  line-height: 12rem;
-  color: $blanc;
-  background-color: #3200C1;
-  top: -12px;
+  display: block;
+  padding: 0 3rem;
+  line-height: 5rem;
+  color: $noir;
+  background-color: $jauneOfficiel;
+  text-align: center;
 }
 
 

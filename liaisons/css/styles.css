@@ -434,11 +434,12 @@ template {
 }
 
 .sauter-contenu {
-  padding: 2rem 6rem;
-  line-height: 12rem;
-  color: #fff;
-  background-color: #3200C1;
-  top: -12px;
+  display: block;
+  padding: 0 3rem;
+  line-height: 5rem;
+  color: #000;
+  background-color: #FFE100;
+  text-align: center;
 }
 
 /****** BASE ******/
@@ -867,6 +868,7 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
   background-image: linear-gradient(to right bottom, #fff000, #ffe100);
+  margin-top: 10rem;
 }
 @media screen and (min-width: 600px) {
   .pieddepage {
@@ -958,7 +960,7 @@ html {
 body {
   background-color: #FAFAFA;
   background-image: url("../images/texture-vagues.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-y: 5rem;
 }
@@ -980,6 +982,21 @@ img {
 *
 *
 */
+.accueil__slogan {
+  font-family: Roboto-Medium, sans serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 6rem;
+  line-height: 100%;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
+}
+.accueil__hashtags {
+  text-align: center;
+}
+
 /** Contact **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
