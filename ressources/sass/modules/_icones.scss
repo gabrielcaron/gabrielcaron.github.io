@@ -71,6 +71,7 @@
 
   &__lien {
 	color: $gris25;
+	text-decoration: none;
 	&.courant .projets__figcaption {
 	  border: none;
 	  line-height: 3.9rem; // 45px - la bordure
@@ -106,7 +107,7 @@
   }
 
   &__figure {
-	width: calc(50% - 2rem);
+	width: calc(50% - 1.3rem);
 
 	@media screen and (min-width: $mobile600px) {
 	  width: initial;

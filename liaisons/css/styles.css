@@ -1014,6 +1014,7 @@ img {
 
 .projets__lien {
   color: #404040;
+  text-decoration: none;
 }
 .projets__lien.courant .projets__figcaption {
   border: none;
