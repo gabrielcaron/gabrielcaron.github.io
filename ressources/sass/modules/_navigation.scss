@@ -58,11 +58,11 @@
 	&:link, &:visited {
 	  border: solid 1px transparent;
 	  border-radius: 3rem;
-	  transition: background 2s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+	  transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
 	}
 
 	&:hover {
-	  // Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
+	  // Technique pour obtenir des coins arrondis avec un dégradé
 	  position: relative;
 	  $bordure: 1px;
 	  background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
@@ -114,7 +114,7 @@
 .pieddepage {
   .navigation {
 	grid-column: 1 / 13;
-	@media screen and (min-width: $tablet900px) {
+	@media screen and (min-width: 600px) {
 	  @include rangeeGrid12col();
 	  row-gap: 0;
 	}
@@ -140,11 +140,12 @@
 	  color: $noir;
 	  text-decoration: none;
 	  margin-bottom: 0;
+	  line-height: 110%;
 
 	  & .section {
 		color: $noir;
 		font-family: $RobotoBold;
-		font-size: 3rem;
+		font-size: 2.5rem;
 	  }
 	}
 
@@ -157,11 +158,12 @@
 
 	&__lien {
 	  font-family: $RobotoMedium;
-	  font-size: 2.5rem;
+	  font-size: 2rem;
 	  color: $gris25;
 	  text-decoration: none;
 	  line-height: 175%;
 	  letter-spacing: 0.05rem;
+	  transition: border-bottom 0.075s ease-in-out;
 
 	  &.section {
 		line-height: 100%;
@@ -172,7 +174,7 @@
 	  }
 
 	  &:hover {
-		text-decoration: underline;
+		border-bottom: solid 0.3rem $gris25;
 	  }
 	}
   }

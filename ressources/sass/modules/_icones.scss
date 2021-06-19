@@ -16,7 +16,7 @@
   position: relative;
   $bordure: 2px;
   background-color: $gris98;
-  //background-color: #d461c8; // pour tester uniquement
+  //background-color: #0541ce; // pour tester uniquement
   background-clip: padding-box;
   border: solid $bordure transparent;
   border-radius: 55px;
@@ -49,7 +49,7 @@
   }
 
   svg #fond {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
   &:hover {
     svg #fond {

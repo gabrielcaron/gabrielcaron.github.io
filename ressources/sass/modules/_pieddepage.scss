@@ -24,20 +24,26 @@
   }
 
   &__titres {
-	font-family: $RobotoRegular;
+	font-family: $RobotoMedium;
 	font-size: 2rem;
 	color: $gris25;
 	line-height: 150%;
 	letter-spacing: 0.05rem;
-	margin: 0.75rem 0 0 0;
-	padding-left: 4rem;
+	margin: 2rem 0 0 0;
+	@media screen and (min-width: $mobile600px) {
+	  margin: 0.75rem 0 0 0;
+	  padding-left: 4rem;
+	}
   }
 
   &__rangeeLogo {
-	grid-column: 1 / 13;
-	@include rangeeFlex;
-	justify-content: flex-start;
-	padding: 10rem 0 5rem 0;
+	padding: 6rem 0 2rem 0;
+	@media screen and (min-width: $mobile600px) {
+	  grid-column: 1 / 13;
+	  @include rangeeFlex;
+	  justify-content: flex-start;
+	  padding: 10rem 0 5rem 0;
+	}
   }
 
   &__logo {
@@ -45,6 +51,7 @@
 	background-repeat: no-repeat;
 	width: 250px;
 	height: 60px;
+	display: block;
   }
 
   &__copyright {
