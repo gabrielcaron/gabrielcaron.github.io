@@ -56,9 +56,9 @@
 	}
 
 	&:link, &:visited {
-	  transition: background, 0.1s ease-in-out;
 	  border: solid 1px transparent;
 	  border-radius: 3rem;
+	  transition: background 2s ease-in-out; //linear-gradient pas supporté par CSS Transitions
 	}
 
 	&:hover {
@@ -68,6 +68,7 @@
 	  background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
 	  background-clip: padding-box;
 	  border: solid $bordure transparent;
+
 
 	  &:before {
 		content: '';

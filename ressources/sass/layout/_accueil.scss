@@ -11,7 +11,7 @@
 */
 
 .accueil {
-  &__slogan {
+  &__accroche {
 	font-family: $RobotoMedium;
 	font-style: normal;
 	font-weight: 500;
@@ -21,8 +21,88 @@
 	text-align: center;
 	color: #000000;
 	text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
+	margin: 25rem 0 0 0;
   }
+
   &__hashtags {
-    text-align: center;
+	text-align: center;
+	margin-bottom: 20rem;
+  }
+
+
+  .projets {
+	@include rangeeGrid12col();
+
+	&__conteneurDemiGrille {
+	  display: grid;
+	  grid-template-columns: minmax(auto, 690px);
+	  column-gap: 20px;
+
+	  &.web-applis {
+		grid-column: 1 / 7;
+		justify-content: flex-end;
+		border-radius: 0 $arrondiStandard $arrondiStandard 0;
+		border-left: 0;
+	  }
+
+	  &.design-graphique {
+		grid-column: 7 / 13;
+		justify-content: flex-start;
+		border-radius: $arrondiStandard 0 0 $arrondiStandard;
+		border-right: 0;
+	  }
+	}
+
+	&__titre-section {
+	  grid-column: span 12;
+	  font-family: $RobotoBold;
+	  font-size: 4rem;
+	  padding-top: 1rem;
+	}
+
+	&__conteneurIcones {
+	  @include rangeeGrid12col();
+	  & > * {
+		grid-column: span 6;
+	  }
+	}
+
+	&__web-applis {
+	  @include rangeeGrid12col();
+	  padding-right: 3rem;
+
+	  & .titre {
+		grid-column: 3 / 13;
+	  }
+
+	  & .rangeeIcones {
+		grid-column: 3 / 13;
+	  }
+
+	}
+
+	&__design-graphique {
+	  @include rangeeGrid12col();
+	  padding-left: 3rem;
+
+	  & .titre {
+		grid-column: 1 / 11;
+	  }
+
+	  & .rangeeIcones {
+		grid-column: 1 / 11;
+	  }
+	}
+
+	&__figure {
+	  display: inline-block;
+	  margin: 0;
+	  grid-column: span 6;
+	}
+
+	&__figcaption {
+	  text-align: center;
+	}
   }
 }
+

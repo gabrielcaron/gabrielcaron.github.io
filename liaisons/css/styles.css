@@ -585,7 +585,6 @@ img {
   background-repeat: no-repeat;
   background-position: 30rem -7rem;
   background-size: 70rem;
-  height: 23rem;
 }
 @media screen and (min-width: 600px) {
   .entete {
@@ -628,7 +627,6 @@ img {
   .entete {
     background-position: 35vw -2vw;
     background-size: initial;
-    height: 30rem;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -744,9 +742,9 @@ img {
   }
 }
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
-  transition: background, 0.1s ease-in-out;
   border: solid 1px transparent;
   border-radius: 3rem;
+  transition: background 2s ease-in-out;
 }
 .entete .navigation__lien:hover {
   position: relative;
@@ -939,6 +937,56 @@ img {
   padding-top: 5rem;
 }
 
+/** Icônes **/
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* ICONES
+** Conteneur
+*
+*
+*/
+.bulle {
+  position: relative;
+  background-color: #FAFAFA;
+  background-clip: padding-box;
+  border: solid 2px transparent;
+  border-radius: 55px;
+  display: inline-block;
+}
+.bulle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+}
+
+.icone {
+  border: solid 3px #fff;
+  border-radius: 5.5rem;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+}
+
+.boreal svg {
+  width: 100%;
+}
+.boreal svg #fond {
+  transition: all 0.2s ease-in-out;
+}
+.boreal:hover svg #fond {
+  fill: green;
+}
+
 /********* LAYOUT *********/
 /** Règles de style générales **/
 /**
@@ -982,7 +1030,7 @@ img {
 *
 *
 */
-.accueil__slogan {
+.accueil__accroche {
   font-family: Roboto-Medium, sans serif;
   font-style: normal;
   font-weight: 500;
@@ -992,8 +1040,90 @@ img {
   text-align: center;
   color: #000000;
   text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
+  margin: 25rem 0 0 0;
 }
 .accueil__hashtags {
+  text-align: center;
+  margin-bottom: 20rem;
+}
+@media (min-width: 600px) {
+  .accueil .projets {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.accueil .projets__conteneurDemiGrille {
+  display: grid;
+  grid-template-columns: minmax(auto, 690px);
+  column-gap: 20px;
+}
+.accueil .projets__conteneurDemiGrille.web-applis {
+  grid-column: 1/7;
+  justify-content: flex-end;
+  border-radius: 0 5.5rem 5.5rem 0;
+  border-left: 0;
+}
+.accueil .projets__conteneurDemiGrille.design-graphique {
+  grid-column: 7/13;
+  justify-content: flex-start;
+  border-radius: 5.5rem 0 0 5.5rem;
+  border-right: 0;
+}
+.accueil .projets__titre-section {
+  grid-column: span 12;
+  font-family: Roboto-Bold, sans serif;
+  font-size: 4rem;
+  padding-top: 1rem;
+}
+@media (min-width: 600px) {
+  .accueil .projets__conteneurIcones {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.accueil .projets__conteneurIcones > * {
+  grid-column: span 6;
+}
+.accueil .projets__web-applis {
+  padding-right: 3rem;
+}
+@media (min-width: 600px) {
+  .accueil .projets__web-applis {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.accueil .projets__web-applis .titre {
+  grid-column: 3/13;
+}
+.accueil .projets__web-applis .rangeeIcones {
+  grid-column: 3/13;
+}
+.accueil .projets__design-graphique {
+  padding-left: 3rem;
+}
+@media (min-width: 600px) {
+  .accueil .projets__design-graphique {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.accueil .projets__design-graphique .titre {
+  grid-column: 1/11;
+}
+.accueil .projets__design-graphique .rangeeIcones {
+  grid-column: 1/11;
+}
+.accueil .projets__figure {
+  display: inline-block;
+  margin: 0;
+  grid-column: span 6;
+}
+.accueil .projets__figcaption {
   text-align: center;
 }
 

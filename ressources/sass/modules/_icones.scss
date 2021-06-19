@@ -1,0 +1,60 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* ICONES
+** Conteneur
+*
+*
+*/
+
+
+.bulle {
+  position: relative;
+  $bordure: 2px;
+  background-color: $gris98;
+  //background-color: #d461c8; // pour tester uniquement
+  background-clip: padding-box;
+  border: solid $bordure transparent;
+  border-radius: 55px;
+  display: inline-block;
+
+  &:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	margin: -$bordure;
+	border-radius: inherit;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+  }
+}
+
+.icone {
+  border: solid 3px $blanc;
+  border-radius: $arrondiStandard;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
+}
+
+.boreal {
+
+  svg {
+    width: 100%;
+  }
+
+  svg #fond {
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    svg #fond {
+      fill: green;
+    }
+  }
+}
+
