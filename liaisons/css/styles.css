@@ -867,6 +867,7 @@ img {
 .pieddepage {
   padding-left: 2rem;
   padding-right: 2rem;
+  padding: 0 3rem 0 3rem;
   background-image: linear-gradient(to right bottom, #fff000, #ffe100);
   margin-top: 10rem;
 }
@@ -953,7 +954,7 @@ img {
 /** Icônes **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -986,18 +987,76 @@ img {
 
 .icone {
   border: solid 3px #fff;
-  border-radius: 5.5rem;
+  border-radius: 3rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
 }
+@media screen and (min-width: 1200px) {
+  .icone {
+    border-radius: 5.5rem;
+  }
+}
 
-.boreal svg {
+.icone-figure {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+}
+.icone-figure svg {
   width: 100%;
 }
-.boreal svg #fond {
+.icone-figure svg #fond {
   transition: all 0.1s ease-in-out;
 }
-.boreal:hover svg #fond {
+.icone-figure:hover svg #fond {
   fill: green;
+}
+
+.projets__lien {
+  color: #404040;
+}
+.projets__lien.courant .projets__figcaption {
+  border: none;
+  line-height: 3.9rem;
+}
+.projets__lien:hover .projets__figcaption {
+  border: none;
+  line-height: 4.5rem;
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets__lien:hover.courant .projets__figcaption {
+  border: none;
+  line-height: 4.5rem;
+}
+.projets__lien:active .projets__figcaption {
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets__lien:active.courant .projets__figcaption {
+  border: none;
+  line-height: 4.5rem;
+}
+.projets__lien.courant .projets__figcaption {
+  border: 3px solid #ffe100;
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets__figure {
+  width: calc(50% - 2rem);
+}
+@media screen and (min-width: 600px) {
+  .projets__figure {
+    width: initial;
+    grid-column: span 6;
+  }
+}
+.projets__figcaption {
+  font-family: Roboto-Medium, sans serif;
+  font-size: 1.6rem;
+  display: inline-block;
+  line-height: 4.5rem;
+  border-radius: 3rem;
+  padding: 0 2rem;
+  margin-top: 0.5rem;
 }
 
 /********* LAYOUT *********/
@@ -1088,6 +1147,15 @@ img {
   font-family: Roboto-Bold, sans serif;
   font-size: 4rem;
   padding-top: 1rem;
+  line-height: 120%;
+}
+.accueil .projets__conteneurIcones .projets__lien:nth-child(odd) .projets__figure {
+  padding-right: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .accueil .projets__conteneurIcones .projets__lien:nth-child(odd) .projets__figure {
+    padding-right: initial;
+  }
 }
 @media (min-width: 600px) {
   .accueil .projets__conteneurIcones {
@@ -1100,13 +1168,18 @@ img {
   grid-column: span 6;
 }
 .accueil .projets__web-applis {
-  padding-right: 3rem;
+  padding: 0 3rem 0 3rem;
 }
 @media (min-width: 600px) {
   .accueil .projets__web-applis {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .accueil .projets__web-applis {
+    padding: 0 3rem 0 0;
   }
 }
 .accueil .projets__web-applis .titre {
@@ -1116,7 +1189,7 @@ img {
   grid-column: 3/13;
 }
 .accueil .projets__design-graphique {
-  padding-left: 3rem;
+  padding: 0 3rem 0 3rem;
 }
 @media (min-width: 600px) {
   .accueil .projets__design-graphique {
@@ -1125,19 +1198,16 @@ img {
     column-gap: 20px;
   }
 }
+@media screen and (min-width: 600px) {
+  .accueil .projets__design-graphique {
+    padding: 0 0 0 3rem;
+  }
+}
 .accueil .projets__design-graphique .titre {
   grid-column: 1/11;
 }
 .accueil .projets__design-graphique .rangeeIcones {
   grid-column: 1/11;
-}
-.accueil .projets__figure {
-  display: inline-block;
-  margin: 0;
-  grid-column: span 6;
-}
-.accueil .projets__figcaption {
-  text-align: center;
 }
 
 /** Contact **/

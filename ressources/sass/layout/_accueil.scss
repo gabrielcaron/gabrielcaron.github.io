@@ -41,14 +41,14 @@
 	  &.web-applis {
 		grid-column: 1 / 7;
 		justify-content: flex-end;
-		border-radius: 0 $arrondiStandard $arrondiStandard 0;
+		border-radius: 0 $arrondiTable $arrondiTable 0;
 		border-left: 0;
 	  }
 
 	  &.design-graphique {
 		grid-column: 7 / 13;
 		justify-content: flex-start;
-		border-radius: $arrondiStandard 0 0 $arrondiStandard;
+		border-radius: $arrondiTable 0 0 $arrondiTable;
 		border-right: 0;
 	  }
 	}
@@ -58,9 +58,17 @@
 	  font-family: $RobotoBold;
 	  font-size: 4rem;
 	  padding-top: 1rem;
+	  line-height: 120%;
 	}
 
 	&__conteneurIcones {
+	  & .projets__lien:nth-child(odd) .projets__figure {
+		padding-right: 2rem;
+		@media screen and (min-width: $mobile600px) {
+		  padding-right: initial;
+		}
+	  }
+
 	  @include rangeeGrid12col();
 	  & > * {
 		grid-column: span 6;
@@ -69,7 +77,10 @@
 
 	&__web-applis {
 	  @include rangeeGrid12col();
-	  padding-right: 3rem;
+	  padding: 0 3rem 0 3rem;
+	  @media screen and (min-width: $mobile600px) {
+		padding: 0 3rem 0 0;
+	  }
 
 	  & .titre {
 		grid-column: 3 / 13;
@@ -83,7 +94,10 @@
 
 	&__design-graphique {
 	  @include rangeeGrid12col();
-	  padding-left: 3rem;
+	  padding: 0 3rem 0 3rem;
+	  @media screen and (min-width: $mobile600px) {
+		padding: 0 0 0 3rem;
+	  }
 
 	  & .titre {
 		grid-column: 1 / 11;
@@ -92,16 +106,6 @@
 	  & .rangeeIcones {
 		grid-column: 1 / 11;
 	  }
-	}
-
-	&__figure {
-	  display: inline-block;
-	  margin: 0;
-	  grid-column: span 6;
-	}
-
-	&__figcaption {
-	  text-align: center;
 	}
   }
 }

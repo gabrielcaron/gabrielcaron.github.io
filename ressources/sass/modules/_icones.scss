@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -11,7 +11,7 @@
 *
 */
 
-
+// Bulle qui contient les icônes
 .bulle {
   position: relative;
   $bordure: 2px;
@@ -36,13 +36,20 @@
   }
 }
 
+// Styles généraux des icônes
 .icone {
   border: solid 3px $blanc;
-  border-radius: $arrondiStandard;
+  border-radius: $arrondiMobile;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
+  @media screen and (min-width: $desktop1200px) {
+	border-radius: $arrondiTable;
+  }
 }
 
-.boreal {
+.icone-figure {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
 
   svg {
     width: 100%;
@@ -55,6 +62,65 @@
     svg #fond {
       fill: green;
     }
+  }
+}
+
+// Styles pour les icônes dans un contexte de projets
+.projets {
+
+  &__lien {
+	color: $gris25;
+	&.courant .projets__figcaption {
+	  border: none;
+	  line-height: 3.9rem; // 45px - la bordure
+	}
+	&:hover {
+	  & .projets__figcaption {
+		border: none;
+		line-height: 4.5rem;
+		background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
+		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+	  }
+	  &.courant .projets__figcaption {
+		border: none;
+		line-height: 4.5rem;
+	  }
+	}
+	&:active {
+	  .projets__figcaption {
+		background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
+		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+	  }
+	  &.courant .projets__figcaption {
+		border: none;
+		line-height: 4.5rem;
+	  }
+	}
+	&.courant {
+	  & .projets__figcaption {
+		border: 3px solid rgba(255, 225, 0, 1);
+		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+	  }
+	}
+  }
+
+  &__figure {
+	width: calc(50% - 2rem);
+
+	@media screen and (min-width: $mobile600px) {
+	  width: initial;
+	  grid-column: span 6;
+	}
+  }
+
+  &__figcaption {
+	font-family: $RobotoMedium;
+	font-size: 1.6rem;
+	display: inline-block;
+	line-height: 4.5rem;
+	border-radius: $arrondiMobile;
+	padding: 0 2rem;
+	margin-top: 0.5rem;
   }
 }
 
