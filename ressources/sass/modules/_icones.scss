@@ -80,8 +80,7 @@
 	  & .projets__figcaption {
 		border: none;
 		line-height: 4.5rem;
-		background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
-		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+		@include boutonSurvol;
 	  }
 	  &.courant .projets__figcaption {
 		border: none;
@@ -90,8 +89,7 @@
 	}
 	&:active {
 	  .projets__figcaption {
-		background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
-		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+		@include boutonActif;
 	  }
 	  &.courant .projets__figcaption {
 		border: none;
@@ -100,8 +98,7 @@
 	}
 	&.courant {
 	  & .projets__figcaption {
-		border: 3px solid rgba(255, 225, 0, 1);
-		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+		@include boutonPageCourante;
 	  }
 	}
   }

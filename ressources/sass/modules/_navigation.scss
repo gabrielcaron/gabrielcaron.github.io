@@ -29,6 +29,10 @@
 
   &__item {
 	display: inline-block;
+
+	@media screen and (min-width: $mobile600px) {
+	  margin-left: 1rem;
+	}
   }
 
   &__lien {
@@ -43,22 +47,22 @@
 	text-align: center;
 	@media screen and (min-width: 550px) {
 	  font-size: 2rem;
-	  padding: 1.5rem 2.5rem;
-	}
-	@media screen and (min-width: 750px) {
-	  font-size: 2.2rem;
+	  padding: 1.2rem 2.5rem;
 	}
 	@media screen and (min-width: $tablet900px) {
 	  font-size: 1.8rem;
 	}
 	@media screen and (min-width: 1100px) {
-	  font-size: 2.2rem;
+	  font-size: 2rem;
 	}
 
 	&:link, &:visited {
 	  border: solid 1px transparent;
-	  border-radius: 3rem;
+	  border-radius: 2.5rem;
 	  transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+	  @media screen and (min-width: $mobile600px) {
+		border-radius: 3rem;
+	  }
 	}
 
 	&:hover {
@@ -106,6 +110,16 @@
 		border-radius: inherit;
 		background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
 		box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+	  }
+	}
+
+	&.courante {
+	  @include boutonPageCourante;
+	  line-height: 100%;
+
+	  &:hover {
+		border: none;
+		padding: 1.5rem 2.8rem;
 	  }
 	}
   }

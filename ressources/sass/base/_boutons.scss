@@ -1,0 +1,34 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* BOUTONS
+*
+*/
+
+
+
+/* Styles pour l'état survol */
+
+@mixin boutonSurvol {
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Styles pour l'état actif */
+
+@mixin boutonActif {
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* Styles pour la page courante */
+
+@mixin boutonPageCourante {
+  border: 3px solid rgba(255, 225, 0, 1);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}

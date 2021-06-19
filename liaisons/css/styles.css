@@ -491,6 +491,18 @@ template {
   font-family: Roboto-BoldItalic;
   src: url(../../liaisons/polices/roboto-boldItalic.woff2) format("woff2"), url(../../liaisons/polices/roboto-boldItalic.woff) format("woff"), url(../../liaisons/polices/roboto-boldItalic.ttf) format("truetype");
 }
+h1, h2, h3 {
+  font-family: Roboto-Medium, sans serif;
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 8rem;
+  text-align: center;
+}
+
 body {
   font-family: Roboto-Regular, sans serif;
   font-size: 1.8rem;
@@ -565,6 +577,20 @@ img {
     justify-content: space-between;
   }
 }
+/** Boutons **/
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* BOUTONS
+*
+*/
+/* Styles pour l'état survol */
+/* Styles pour l'état actif */
+/* Styles pour la page courante */
 /****** MODULES ******/
 /** Entete **/
 /**
@@ -581,6 +607,7 @@ img {
 .entete {
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 10rem;
   background-image: url("../images/vagues-entete.svg");
   background-repeat: no-repeat;
   background-position: 30rem -7rem;
@@ -659,7 +686,7 @@ img {
   background-repeat: no-repeat;
   width: 217px;
   height: 53px;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 @media screen and (min-width: 1000px) {
   .entete__logo {
@@ -709,6 +736,11 @@ img {
 .entete .navigation__item {
   display: inline-block;
 }
+@media screen and (min-width: 600px) {
+  .entete .navigation__item {
+    margin-left: 1rem;
+  }
+}
 .entete .navigation__lien {
   display: inline-block;
   font-family: Roboto-Medium, sans serif;
@@ -723,12 +755,7 @@ img {
 @media screen and (min-width: 550px) {
   .entete .navigation__lien {
     font-size: 2rem;
-    padding: 1.5rem 2.5rem;
-  }
-}
-@media screen and (min-width: 750px) {
-  .entete .navigation__lien {
-    font-size: 2.2rem;
+    padding: 1.2rem 2.5rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -738,13 +765,18 @@ img {
 }
 @media screen and (min-width: 1100px) {
   .entete .navigation__lien {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 }
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
   border: solid 1px transparent;
-  border-radius: 3rem;
+  border-radius: 2.5rem;
   transition: background 0.1s ease-in-out;
+}
+@media screen and (min-width: 600px) {
+  .entete .navigation__lien:link, .entete .navigation__lien:visited {
+    border-radius: 3rem;
+  }
 }
 .entete .navigation__lien:hover {
   position: relative;
@@ -783,6 +815,15 @@ img {
   border-radius: inherit;
   background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
   box-shadow: -5px -5px 20px 0px white, 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.entete .navigation__lien.courante {
+  border: 3px solid #ffe100;
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  line-height: 100%;
+}
+.entete .navigation__lien.courante:hover {
+  border: none;
+  padding: 1.5rem 2.8rem;
 }
 
 .pieddepage .navigation {
@@ -1043,7 +1084,7 @@ img {
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .projets__figure {
-  width: calc(50% - 2rem);
+  width: calc(50% - 1.3rem);
 }
 @media screen and (min-width: 600px) {
   .projets__figure {
