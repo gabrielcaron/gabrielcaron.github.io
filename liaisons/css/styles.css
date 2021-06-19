@@ -1003,6 +1003,7 @@ img {
 }
 .icone-figure svg {
   width: 100%;
+  margin-left: -3px;
 }
 .icone-figure svg #fond {
   transition: all 0.1s ease-in-out;
