@@ -72,16 +72,16 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 7rem;
   text-align: center;
-  //margin: 5rem 0 1rem 0;
+  padding: 10rem 0;
 }
 
-//h2 {
-//  @include fontSize(35px);
-//  color: $vertForet;
-//}
-//
+h2 {
+  font-size: 4rem;
+  font-family: $RobotoBold;
+}
+
 //h3 {
 //  @include fontSize(25px);
 //  color: $vertForet;

@@ -10,8 +10,13 @@
 *
 */
 
+/* Styles généraux */
 
 .projets {
+
+  &__selecteur.applis-mobiles {
+	margin: 5rem 0;
+  }
 
   &__conteneurIcones {
 	@include rangeeGrid12col();
@@ -58,6 +63,10 @@
 
   & .navigation {
 	padding: 3rem 3rem 1.5rem 3rem;
+
+	&__titre {
+	  margin: 2rem 0 3rem 0;
+	}
 
 	&__liste {
 	  list-style-type: none;

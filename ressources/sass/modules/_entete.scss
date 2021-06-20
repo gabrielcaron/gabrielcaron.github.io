@@ -13,7 +13,7 @@
 
 .entete {
   @include conteneur1400px();
-  padding-bottom: 19rem;
+  padding-bottom: 10rem;
 
   @media screen and (min-width: $mobile600px) {
 	padding-left: 2rem;
