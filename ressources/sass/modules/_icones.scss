@@ -16,7 +16,7 @@
   position: relative;
   $bordure: 2px;
   background-color: $gris98;
-  //background-color: #0541ce; // pour tester uniquement
+  //background-color: #5ac6ee; // pour tester uniquement
   background-clip: padding-box;
   border: solid $bordure transparent;
   border-radius: 55px;
@@ -65,61 +65,3 @@
     }
   }
 }
-
-// Styles pour les icônes dans un contexte de projets
-.projets {
-
-  &__lien {
-	color: $gris25;
-	text-decoration: none;
-	&.courant .projets__figcaption {
-	  border: none;
-	  line-height: 3.9rem; // 45px - la bordure
-	}
-	&:hover {
-	  & .projets__figcaption {
-		border: none;
-		line-height: 4.5rem;
-		@include boutonSurvol;
-	  }
-	  &.courant .projets__figcaption {
-		border: none;
-		line-height: 4.5rem;
-	  }
-	}
-	&:active {
-	  .projets__figcaption {
-		@include boutonActif;
-	  }
-	  &.courant .projets__figcaption {
-		border: none;
-		line-height: 4.5rem;
-	  }
-	}
-	&.courant {
-	  & .projets__figcaption {
-		@include boutonPageCourante;
-	  }
-	}
-  }
-
-  &__figure {
-	width: calc(50% - 1.3rem);
-
-	@media screen and (min-width: $mobile600px) {
-	  width: initial;
-	  grid-column: span 6;
-	}
-  }
-
-  &__figcaption {
-	font-family: $RobotoMedium;
-	font-size: 1.6rem;
-	display: inline-block;
-	line-height: 4.5rem;
-	border-radius: $arrondiMobile;
-	padding: 0 2rem;
-	margin-top: 0.5rem;
-  }
-}
-

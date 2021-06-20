@@ -607,7 +607,7 @@ img {
 .entete {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 10rem;
+  padding-bottom: 19rem;
   background-image: url("../images/vagues-entete.svg");
   background-repeat: no-repeat;
   background-position: 30rem -7rem;
@@ -1053,57 +1053,7 @@ img {
   fill: green;
 }
 
-.projets__lien {
-  color: #404040;
-  text-decoration: none;
-}
-.projets__lien.courant .projets__figcaption {
-  border: none;
-  line-height: 3.9rem;
-}
-.projets__lien:hover .projets__figcaption {
-  border: none;
-  line-height: 4.5rem;
-  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-}
-.projets__lien:hover.courant .projets__figcaption {
-  border: none;
-  line-height: 4.5rem;
-}
-.projets__lien:active .projets__figcaption {
-  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-}
-.projets__lien:active.courant .projets__figcaption {
-  border: none;
-  line-height: 4.5rem;
-}
-.projets__lien.courant .projets__figcaption {
-  border: 3px solid #ffe100;
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-}
-.projets__figure {
-  width: calc(50% - 1.3rem);
-}
-@media screen and (min-width: 600px) {
-  .projets__figure {
-    width: initial;
-    grid-column: span 6;
-  }
-}
-.projets__figcaption {
-  font-family: Roboto-Medium, sans serif;
-  font-size: 1.6rem;
-  display: inline-block;
-  line-height: 4.5rem;
-  border-radius: 3rem;
-  padding: 0 2rem;
-  margin-top: 0.5rem;
-}
-
 /********* LAYOUT *********/
-/** Règles de style générales **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2021.0
@@ -1133,7 +1083,6 @@ img {
   max-width: 100%;
 }
 
-/** Accueil **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2021.0
@@ -1145,6 +1094,9 @@ img {
 *
 *
 */
+.accueil .entete {
+  padding-bottom: 0;
+}
 .accueil__accroche {
   font-family: Roboto-Medium, sans serif;
   font-style: normal;
@@ -1192,22 +1144,18 @@ img {
   padding-top: 1rem;
   line-height: 120%;
 }
-.accueil .projets__conteneurIcones .projets__lien:nth-child(odd) .projets__figure {
-  padding-right: 2rem;
-}
-@media screen and (min-width: 600px) {
-  .accueil .projets__conteneurIcones .projets__lien:nth-child(odd) .projets__figure {
-    padding-right: initial;
-  }
+.accueil .projets__liste {
+  list-style-type: none;
+  padding: 0;
 }
 @media (min-width: 600px) {
-  .accueil .projets__conteneurIcones {
+  .accueil .projets__liste {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
   }
 }
-.accueil .projets__conteneurIcones > * {
+.accueil .projets__liste > * {
   grid-column: span 6;
 }
 .accueil .projets__web-applis {
@@ -1228,7 +1176,7 @@ img {
 .accueil .projets__web-applis .titre {
   grid-column: 3/13;
 }
-.accueil .projets__web-applis .rangeeIcones {
+.accueil .projets__web-applis .rangeeProjets {
   grid-column: 3/13;
 }
 .accueil .projets__design-graphique {
@@ -1249,11 +1197,10 @@ img {
 .accueil .projets__design-graphique .titre {
   grid-column: 1/11;
 }
-.accueil .projets__design-graphique .rangeeIcones {
+.accueil .projets__design-graphique .rangeeProjets {
   grid-column: 1/11;
 }
 
-/** Contact **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2021.0
@@ -1265,5 +1212,115 @@ img {
 *
 *
 */
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.1
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* PROJETS
+*
+*
+*/
+@media (min-width: 600px) {
+  .projets__conteneurIcones {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.projets__conteneurIcones > * {
+  grid-column: span 2;
+}
+.projets__item {
+  display: inline-block;
+  width: calc(50% - 1.3rem);
+}
+.projets__item:nth-child(odd) {
+  padding-right: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .projets__item:nth-child(odd) {
+    padding-right: initial;
+  }
+}
+@media screen and (min-width: 600px) {
+  .projets__item {
+    width: initial;
+    grid-column: span 6;
+  }
+}
+.projets__lien, .projets .navigation__lien {
+  font-family: Roboto-Medium, sans serif;
+  border-radius: 3rem;
+  text-decoration: none;
+  color: #404040;
+  line-height: 100%;
+}
+.projets__figcaption, .projets .navigation__figcaption {
+  font-family: Roboto-Medium, sans serif;
+  font-size: 1.6rem;
+  display: inline-block;
+  line-height: 120%;
+  border-radius: 3rem;
+  margin-top: 0.5rem;
+  padding: 1.3rem 3rem;
+}
+.projets .navigation {
+  padding: 3rem 3rem 1.5rem 3rem;
+}
+.projets .navigation__liste {
+  list-style-type: none;
+  padding: 0;
+}
+.projets .navigation__liste.rangeeSections {
+  padding: 0 0 2rem 0;
+}
+.projets .navigation__item {
+  display: inline-block;
+}
+.projets .navigation .rangeeSections .courant {
+  border: 3px solid #ffe100;
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets .navigation .rangeeSections .navigation__lien {
+  font-size: 2.5rem;
+  padding: 1rem 3rem;
+}
+.projets .navigation .rangeeSections .navigation__lien:hover {
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets .navigation .rangeeSections .navigation__lien:hover.courant {
+  border: none;
+  padding: 1.3rem 3.3rem;
+}
+.projets .navigation .rangeeSections .navigation__lien:active {
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets .navigation .rangeeSections .navigation__lien:active.courant {
+  border: none;
+  padding: 1.3rem 3.3rem;
+}
+.projets .rangeeProjets .navigation__lien:hover .navigation__figcaption, .projets .rangeeProjets .navigation__lien:hover .projets__figcaption, .projets .rangeeProjets .projets__lien:hover .navigation__figcaption, .projets .rangeeProjets .projets__lien:hover .projets__figcaption {
+  border: none;
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption, .projets .rangeeProjets .projets__lien:hover.courant .navigation__figcaption {
+  border: none;
+  padding: 1.3rem 3.6rem;
+}
+.projets .rangeeProjets .navigation__lien:active .navigation__figcaption, .projets .rangeeProjets .navigation__lien:active .projets__figcaption, .projets .rangeeProjets .projets__lien:active .navigation__figcaption, .projets .rangeeProjets .projets__lien:active .projets__figcaption {
+  background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.projets .rangeeProjets .navigation__lien.courant .navigation__figcaption, .projets .rangeeProjets .projets__lien.courant .navigation__figcaption {
+  border: 3px solid #ffe100;
+  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  padding: 1rem 3.3rem;
+}
 
 /*# sourceMappingURL=styles.css.map */

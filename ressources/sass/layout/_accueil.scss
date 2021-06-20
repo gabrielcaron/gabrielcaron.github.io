@@ -11,6 +11,11 @@
 */
 
 .accueil {
+
+  .entete {
+	padding-bottom: 0;
+  }
+
   &__accroche {
 	font-family: $RobotoMedium;
 	font-style: normal;
@@ -61,15 +66,12 @@
 	  line-height: 120%;
 	}
 
-	&__conteneurIcones {
-	  & .projets__lien:nth-child(odd) .projets__figure {
-		padding-right: 2rem;
-		@media screen and (min-width: $mobile600px) {
-		  padding-right: initial;
-		}
-	  }
+	&__liste {
+	  list-style-type: none;
+	  padding: 0;
 
 	  @include rangeeGrid12col();
+
 	  & > * {
 		grid-column: span 6;
 	  }
@@ -86,7 +88,7 @@
 		grid-column: 3 / 13;
 	  }
 
-	  & .rangeeIcones {
+	  & .rangeeProjets {
 		grid-column: 3 / 13;
 	  }
 
@@ -103,7 +105,7 @@
 		grid-column: 1 / 11;
 	  }
 
-	  & .rangeeIcones {
+	  & .rangeeProjets {
 		grid-column: 1 / 11;
 	  }
 	}
