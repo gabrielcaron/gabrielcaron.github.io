@@ -58,25 +58,6 @@
 	  }
 	}
 
-	&__titre-section {
-	  grid-column: span 12;
-	  font-family: $RobotoBold;
-	  font-size: 4rem;
-	  padding-top: 1rem;
-	  line-height: 120%;
-	}
-
-	&__liste {
-	  list-style-type: none;
-	  padding: 0;
-
-	  @include rangeeGrid12col();
-
-	  & > * {
-		grid-column: span 6;
-	  }
-	}
-
 	&__web-applis {
 	  @include rangeeGrid12col();
 	  padding: 0 3rem 0 3rem;
@@ -107,6 +88,20 @@
 
 	  & .rangeeProjets {
 		grid-column: 1 / 11;
+	  }
+	}
+
+	// Navigation spécifique à l'accueil
+	.navigation {
+	  &__liste {
+		list-style-type: none;
+		padding: 0;
+
+		@include rangeeGrid12col();
+
+		& > * {
+		  grid-column: span 6;
+		}
 	  }
 	}
   }

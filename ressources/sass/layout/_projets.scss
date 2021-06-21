@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.1
+* @version 2021.2
 *
 * ------------------
 * TABLE DES MATIERES
@@ -20,128 +20,7 @@
 
   &__conteneurIcones {
 	@include rangeeGrid12col();
-
-	& > * {
-	  grid-column: span 2;
-	}
   }
 
-  &__item {
-	display: inline-block;
-	width: calc(50% - 1.3rem);
 
-	&:nth-child(odd) {
-	  padding-right: 2rem;
-	  @media screen and (min-width: $mobile600px) {
-	    padding-right: initial;
-	  }
-	}
-
-	@media screen and (min-width: $mobile600px) {
-	  width: initial;
-	  grid-column: span 6;
-	}
-  }
-
-  &__lien, & .navigation__lien {
-	font-family: $RobotoMedium;
-	border-radius: $arrondiMobile;
-	text-decoration: none;
-	color: $gris25;
-	line-height: 100%;
-  }
-
-  &__figcaption, & .navigation__figcaption {
-	font-family: $RobotoMedium;
-	font-size: 1.6rem;
-	display: inline-block;
-	line-height: 120%;
-	border-radius: $arrondiMobile;
-	margin-top: 0.5rem;
-	padding: 1.3rem 3rem;
-  }
-
-  & .navigation {
-	padding: 3rem 3rem 1.5rem 3rem;
-
-	&__titre {
-	  margin: 2rem 0 3rem 0;
-	}
-
-	&__liste {
-	  list-style-type: none;
-	  padding: 0;
-
-	  &.rangeeSections {
-		padding: 0 0 2rem 0;
-	  }
-	}
-
-	&__item {
-	  display: inline-block;
-	}
-
-	// Styles spécifique aux liens des sections
-	& .rangeeSections {
-
-	  & .courant {
-		@include boutonPageCourante;
-	  }
-
-	  & .navigation__lien {
-		font-size: 2.5rem;
-		padding: 1rem 3rem;
-
-		&:hover {
-		  @include boutonSurvol;
-
-		  &.courant {
-			border: none;
-			padding: 1.3rem 3.3rem;
-		  }
-		}
-
-		&:active {
-			@include boutonActif;
-
-		  &.courant {
-			border: none;
-			padding: 1.3rem 3.3rem;
-		  }
-		}
-	  }
-	}
-  }  // fin nav
-
-  // Styles spécifiques aux liens des projets
-  & .rangeeProjets {
-
-	& .navigation__lien, & .projets__lien {
-	  &:hover {
-		& .navigation__figcaption, & .projets__figcaption {
-		  border: none;
-		  @include boutonSurvol;
-		}
-		&.courant {
-		  & .navigation__figcaption {
-			border: none;
-			padding: 1.3rem 3.6rem;
-		  }
-		}
-	  }
-
-	  &:active {
-		& .navigation__figcaption, & .projets__figcaption {
-		  @include boutonActif;
-		}
-	  }
-
-	  &.courant {
-		& .navigation__figcaption {
-		  @include boutonPageCourante;
-		  padding: 1rem 3.3rem;
-		}
-	  }
-	}
-  }
-} // fin projets
+}
