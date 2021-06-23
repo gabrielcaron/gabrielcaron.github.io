@@ -40,10 +40,12 @@
 
 	&__conteneurDemiGrille {
 
-	  @media screen and (min-width: 800px) {
-		display: grid;
-		grid-template-columns: minmax(auto, 690px);
-		column-gap: 20px;
+	  @supports (grid-template-columns: minmax(auto, 1400px)) {
+		@media screen and (min-width: 800px) {
+		  display: grid;
+		  grid-template-columns: minmax(auto, 690px);
+		  column-gap: 20px;
+		}
 	  }
 
 	  &.web-applis {
