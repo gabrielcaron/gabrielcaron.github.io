@@ -86,22 +86,29 @@
 // Mixin pour conteneur parent en Grid
 @mixin conteneur1400px($conteneurBleed: false) {
   @include paddingConteneur;
-  @media (min-width: $mobile600px) {
-	display: grid;
-	grid-template-columns: minmax(auto, 1400px);
-	justify-content: center;
-	@if $conteneurBleed == true {
-	  padding: 0;
+  @supports (grid-template-columns: minmax(auto, 1400px)) {
+	@media (min-width: $mobile600px) {
+	  display: grid;
+	  grid-template-columns: minmax(auto, 1400px);
+	  justify-content: center;
+	  @if $conteneurBleed == true {
+		padding: 0;
+	  }
 	}
+  }
+  @supports not (grid-template-columns: minmax(auto, 1400px)) {
+	max-width: 1400px;
   }
 }
 
 // Mixin pour rangée Grid sur 12 colonnes
 @mixin rangeeGrid12col($pointRupture: $mobile600px) {
-  @media (min-width: $pointRupture) {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	column-gap: 20px;
+  @supports (grid-template-columns: minmax(auto, 1400px)) {
+	@media (min-width: $pointRupture) {
+	  display: grid;
+	  grid-template-columns: repeat(12, 1fr);
+	  column-gap: 20px;
+	}
   }
 }
 
