@@ -36,12 +36,15 @@
 
 
   .projets {
-	@include rangeeGrid12col();
+	@include rangeeGrid12col(800px);
 
 	&__conteneurDemiGrille {
-	  display: grid;
-	  grid-template-columns: minmax(auto, 690px);
-	  column-gap: 20px;
+
+	  @media screen and (min-width: 800px) {
+		display: grid;
+		grid-template-columns: minmax(auto, 690px);
+		column-gap: 20px;
+	  }
 
 	  &.web-applis {
 		grid-column: 1 / 7;
@@ -59,40 +62,63 @@
 	}
 
 	&__web-applis {
-	  @include rangeeGrid12col();
 	  padding: 0 3rem 0 3rem;
 	  @media screen and (min-width: $mobile600px) {
 		padding: 0 3rem 0 0;
 	  }
-
-	  & .titre {
-		grid-column: 3 / 13;
-	  }
-
-	  & .rangeeProjets {
-		grid-column: 3 / 13;
-	  }
-
 	}
 
 	&__design-graphique {
-	  @include rangeeGrid12col();
 	  padding: 0 3rem 0 3rem;
 	  @media screen and (min-width: $mobile600px) {
 		padding: 0 0 0 3rem;
 	  }
-
-	  & .titre {
-		grid-column: 1 / 11;
-	  }
-
-	  & .rangeeProjets {
-		grid-column: 1 / 11;
-	  }
 	}
 
 	// Navigation spécifique à l'accueil
+
 	.navigation {
+
+	  &.web-applis {
+		@include rangeeGrid12col();
+
+		& .titre {
+		  grid-column: 2 / 13;
+
+		  @media screen and (min-width: 1000px) {
+			grid-column: 3 / 13;
+		  }
+		}
+
+		& .rangeeProjets {
+		  grid-column: 2 / 13;
+
+		  @media screen and (min-width: 1000px) {
+			grid-column: 3 / 13;
+		  }
+		}
+	  }
+
+	  &.design-graphique {
+		@include rangeeGrid12col();
+
+		& .titre {
+		  grid-column: 1 / 12;
+
+		  @media screen and (min-width: 1000px) {
+			grid-column: 1 / 11;
+		  }
+		}
+
+		& .rangeeProjets {
+		  grid-column: 1 / 12;
+
+		  @media screen and (min-width: 1000px) {
+			grid-column: 1 / 11;
+		  }
+		}
+	  }
+
 	  &__liste {
 		list-style-type: none;
 		padding: 0;

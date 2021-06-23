@@ -58,6 +58,7 @@
 	width: 217px;
 	height: 53px;
 	margin-left: 1rem;
+	display: block; // si flex non fonctionnel
 	@media screen and (min-width: 1000px) {
 	  width: 285px;
 	  height: 70px;

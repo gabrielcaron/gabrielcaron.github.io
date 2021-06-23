@@ -693,6 +693,7 @@ img {
   width: 217px;
   height: 53px;
   margin-left: 1rem;
+  display: block;
 }
 @media screen and (min-width: 1000px) {
   .entete__logo {
@@ -1209,17 +1210,19 @@ img {
   text-align: center;
   margin-bottom: 20rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .accueil .projets {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 20px;
   }
 }
-.accueil .projets__conteneurDemiGrille {
-  display: grid;
-  grid-template-columns: minmax(auto, 690px);
-  column-gap: 20px;
+@media screen and (min-width: 800px) {
+  .accueil .projets__conteneurDemiGrille {
+    display: grid;
+    grid-template-columns: minmax(auto, 690px);
+    column-gap: 20px;
+  }
 }
 .accueil .projets__conteneurDemiGrille.web-applis {
   grid-column: 1/7;
@@ -1236,44 +1239,64 @@ img {
 .accueil .projets__web-applis {
   padding: 0 3rem 0 3rem;
 }
-@media (min-width: 600px) {
-  .accueil .projets__web-applis {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 20px;
-  }
-}
 @media screen and (min-width: 600px) {
   .accueil .projets__web-applis {
     padding: 0 3rem 0 0;
   }
 }
-.accueil .projets__web-applis .titre {
-  grid-column: 3/13;
-}
-.accueil .projets__web-applis .rangeeProjets {
-  grid-column: 3/13;
-}
 .accueil .projets__design-graphique {
   padding: 0 3rem 0 3rem;
-}
-@media (min-width: 600px) {
-  .accueil .projets__design-graphique {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 20px;
-  }
 }
 @media screen and (min-width: 600px) {
   .accueil .projets__design-graphique {
     padding: 0 0 0 3rem;
   }
 }
-.accueil .projets__design-graphique .titre {
-  grid-column: 1/11;
+@media (min-width: 600px) {
+  .accueil .projets .navigation.web-applis {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
 }
-.accueil .projets__design-graphique .rangeeProjets {
-  grid-column: 1/11;
+.accueil .projets .navigation.web-applis .titre {
+  grid-column: 2/13;
+}
+@media screen and (min-width: 1000px) {
+  .accueil .projets .navigation.web-applis .titre {
+    grid-column: 3/13;
+  }
+}
+.accueil .projets .navigation.web-applis .rangeeProjets {
+  grid-column: 2/13;
+}
+@media screen and (min-width: 1000px) {
+  .accueil .projets .navigation.web-applis .rangeeProjets {
+    grid-column: 3/13;
+  }
+}
+@media (min-width: 600px) {
+  .accueil .projets .navigation.design-graphique {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 20px;
+  }
+}
+.accueil .projets .navigation.design-graphique .titre {
+  grid-column: 1/12;
+}
+@media screen and (min-width: 1000px) {
+  .accueil .projets .navigation.design-graphique .titre {
+    grid-column: 1/11;
+  }
+}
+.accueil .projets .navigation.design-graphique .rangeeProjets {
+  grid-column: 1/12;
+}
+@media screen and (min-width: 1000px) {
+  .accueil .projets .navigation.design-graphique .rangeeProjets {
+    grid-column: 1/11;
+  }
 }
 .accueil .projets .navigation__liste {
   list-style-type: none;
@@ -1339,6 +1362,47 @@ img {
   letter-spacing: 0.1rem;
   color: #404040;
   margin: 1rem 0;
+}
+.projet__processus {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 7rem;
+}
+.projet__formats {
+  padding: 1rem 4rem 1rem 0;
+}
+@media screen and (min-width: 600px) {
+  .projet__formats {
+    display: inline-block;
+  }
+}
+.projet__formats .lien {
+  font-family: Roboto-Medium, sans serif;
+  text-decoration: none;
+}
+.projet__formats .lien::before {
+  content: "";
+  display: inline-block;
+  width: 3.5rem;
+  height: 5rem;
+  vertical-align: middle;
+  margin-top: -0.5rem;
+  padding-right: 1rem;
+  background-repeat: no-repeat;
+  transition: all, 0.1s ease-in-out;
+}
+.projet__formats .lien:link, .projet__formats .lien:visited {
+  color: #404040;
+}
+.projet__formats .lien:hover, .projet__formats .lien:active {
+  color: #000;
+  text-decoration: underline;
+}
+.projet__formats .web::before {
+  background-image: url(../images/icones/icone-defaut.svg);
+}
+.projet__formats .web:hover::before, .projet__formats .web:active::before {
+  background-image: url(../images/icones/icone-hover.svg);
 }
 
 /*# sourceMappingURL=styles.css.map */
