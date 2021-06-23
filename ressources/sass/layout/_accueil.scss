@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.3
 *
 * ------------------
 * TABLE DES MATIERES
@@ -82,7 +82,7 @@
 	.navigation {
 
 	  &.web-applis {
-		@include rangeeGrid12col();
+		@include rangeeGrid12col(800px);
 
 		& .titre {
 		  grid-column: 2 / 13;
@@ -102,7 +102,7 @@
 	  }
 
 	  &.design-graphique {
-		@include rangeeGrid12col();
+		@include rangeeGrid12col(800px);
 
 		& .titre {
 		  grid-column: 1 / 12;
