@@ -514,6 +514,12 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 2.5rem;
+  font-family: Roboto-Bold, sans serif;
+  margin-bottom: 1rem;
+}
+
 body {
   font-family: Roboto-Regular, sans serif;
   font-size: 1.8rem;
@@ -968,7 +974,6 @@ img {
   grid-column: span 4;
   color: #000;
   text-decoration: none;
-  margin-bottom: 0;
   line-height: 110%;
 }
 .pieddepage .navigation__titre .section {
@@ -1146,30 +1151,30 @@ img {
   background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
 }
 
-.icone {
+.boreal {
   border: solid 3px #fff;
   border-radius: 3rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
 }
 @media screen and (min-width: 1200px) {
-  .icone {
+  .boreal {
     border-radius: 5.5rem;
   }
 }
 
-.icone-figure {
+.icone {
   display: inline-block;
   margin: 0;
   text-align: center;
 }
-.icone-figure svg {
+.icone svg {
   width: 100%;
   margin-left: -3px;
 }
-.icone-figure svg #fond {
+.icone svg #fond {
   transition: all 0.1s ease-in-out;
 }
-.icone-figure:hover svg #fond {
+.icone:hover svg #fond {
   fill: green;
 }
 
@@ -1369,7 +1374,7 @@ img {
 *
 */
 /* Styles généraux, tous les projets */
-.projets__selecteur.applis-mobiles {
+.projets__selecteur.applis {
   margin: 5rem 0;
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
