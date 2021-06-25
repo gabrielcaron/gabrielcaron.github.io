@@ -13,7 +13,7 @@ Toutes les images sont en SVG, sauf pour les captures d'écran des projets pour 
 
 ### Formats
 
-Toutes les images au format PNG sont à 1x et 2x. Le site est d'abord destiné à être consulté sur une tablette ou un poste de table avec une densité de 2x. Certains iPhone vont jusqu'à 3x; cette densité ferait augmenter sensiblement la consommation de données dans un contexte de site Web.
+Toutes les images au format PNG sont à 1x et 2x. Le site est d'abord destiné à être consulté sur une tablette ou un poste de table avec une densité de 2x.
 
 |          | 1x     | 2x     |
 |----------|--------|--------|

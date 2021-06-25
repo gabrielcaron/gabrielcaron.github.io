@@ -58,45 +58,14 @@
 	@media screen and (min-width: $mobile600px) {
 	  display: inline-block;
 	}
+  }
 
-	.lien {
-	  font-family: $RobotoMedium;
-	  text-decoration: none;
+  &__figure {
+	margin: 0;
+  }
 
-	  &::before {
-		content: "";
-		display: inline-block;
-		width: 3.5rem;
-		height: 5rem;
-		vertical-align: middle;
-		margin-top: -0.5rem;
-		padding-right: 1rem;
-		background-repeat: no-repeat;
-		transition: all, 0.1s ease-in-out;
-	  }
-
-	  &:link, &:visited {
-		color: $gris25;
-	  }
-
-	  &:hover, &:active {
-		color: $noir;
-		text-decoration: underline;
-	  }
-	}
-
-	.web {
-
-	  &::before {
-		background-image: url(../images/icones/icone-defaut.svg);
-	  }
-
-	  &:hover, &:active {
-
-		&::before {
-		  background-image: url(../images/icones/icone-hover.svg);
-		}
-	  }
-	}
+  &__figcaption {
+	font-size: 1.6rem;
+	margin-top: 2rem;
   }
 }

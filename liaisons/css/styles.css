@@ -1025,7 +1025,7 @@ img {
   padding-left: 2rem;
   padding-right: 2rem;
   padding: 0 3rem 0 3rem;
-  background-image: linear-gradient(to right bottom, #fff000, #ffe100);
+  background-image: linear-gradient(to right bottom, #fff000, #FFEB00);
   margin-top: 10rem;
 }
 @media screen and (min-width: 600px) {
@@ -1176,6 +1176,78 @@ img {
 }
 .icone:hover svg #fond {
   fill: green;
+}
+
+.lien {
+  font-family: Roboto-Medium, sans serif;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+}
+.lien::before {
+  content: "";
+  display: inline-block;
+  width: 3.5rem;
+  height: 5rem;
+  vertical-align: middle;
+  margin-top: -0.5rem;
+  padding-right: 1rem;
+  background-repeat: no-repeat;
+  transition: all, 0.1s ease-in-out;
+}
+.lien:link, .lien:visited {
+  color: #404040;
+}
+.lien:hover, .lien:active {
+  color: #000;
+  text-decoration: underline;
+}
+.lien.axure::before {
+  background-image: url(../images/icones/axure.svg);
+}
+.lien.axure:hover::before, .lien.axure:active::before {
+  background-image: url(../images/icones/axure--hover.svg);
+}
+.lien.figma::before {
+  background-image: url(../images/icones/figma.svg);
+}
+.lien.figma:hover::before, .lien.figma:active::before {
+  background-image: url(../images/icones/figma--hover.svg);
+}
+.lien.github::before {
+  background-image: url(../images/icones/github.svg);
+}
+.lien.github:hover::before, .lien.github:active::before {
+  background-image: url(../images/icones/github--hover.svg);
+}
+.lien.pdf::before {
+  background-image: url(../images/icones/pdf.svg);
+}
+.lien.pdf:hover::before, .lien.pdf:active::before {
+  background-image: url(../images/icones/pdf--hover.svg);
+}
+.lien.rtf::before {
+  background-image: url(../images/icones/rtf.svg);
+}
+.lien.rtf:hover::before, .lien.rtf:active::before {
+  background-image: url(../images/icones/rtf--hover.svg);
+}
+.lien.sketch::before {
+  background-image: url(../images/icones/sketch.svg);
+}
+.lien.sketch:hover::before, .lien.sketch:active::before {
+  background-image: url(../images/icones/sketch--hover.svg);
+}
+.lien.web::before {
+  background-image: url(../images/icones/web.svg);
+}
+.lien.web:hover::before, .lien.web:active::before {
+  background-image: url(../images/icones/web--hover.svg);
+}
+.lien.xd::before {
+  background-image: url(../images/icones/xd.svg);
+}
+.lien.xd:hover::before, .lien.xd:active::before {
+  background-image: url(../images/icones/xd--hover.svg);
 }
 
 /********* LAYOUT *********/
@@ -1416,33 +1488,12 @@ img {
     display: inline-block;
   }
 }
-.projet__formats .lien {
-  font-family: Roboto-Medium, sans serif;
-  text-decoration: none;
+.projet__figure {
+  margin: 0;
 }
-.projet__formats .lien::before {
-  content: "";
-  display: inline-block;
-  width: 3.5rem;
-  height: 5rem;
-  vertical-align: middle;
-  margin-top: -0.5rem;
-  padding-right: 1rem;
-  background-repeat: no-repeat;
-  transition: all, 0.1s ease-in-out;
-}
-.projet__formats .lien:link, .projet__formats .lien:visited {
-  color: #404040;
-}
-.projet__formats .lien:hover, .projet__formats .lien:active {
-  color: #000;
-  text-decoration: underline;
-}
-.projet__formats .web::before {
-  background-image: url(../images/icones/icone-defaut.svg);
-}
-.projet__formats .web:hover::before, .projet__formats .web:active::before {
-  background-image: url(../images/icones/icone-hover.svg);
+.projet__figcaption {
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

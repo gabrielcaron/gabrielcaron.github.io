@@ -13,7 +13,7 @@
 .pieddepage {
   @include conteneur1400px();
   padding: 0 3rem 0 3rem;
-  background-image: linear-gradient(to right bottom, #fff000, #ffe100);
+  background-image: linear-gradient(to right bottom, #fff000, #FFEB00);
   margin-top: 10rem;
 
   @media screen and (min-width: 1700px) {

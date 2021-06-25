@@ -65,3 +65,145 @@
     }
   }
 }
+
+
+// Liens avec icones pour formats
+
+.lien {
+  font-family: $RobotoMedium;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+
+  &::before {
+	content: "";
+	display: inline-block;
+	width: 3.5rem;
+	height: 5rem;
+	vertical-align: middle;
+	margin-top: -0.5rem;
+	padding-right: 1rem;
+	background-repeat: no-repeat;
+	transition: all, 0.1s ease-in-out;
+  }
+
+  &:link, &:visited {
+	color: $gris25;
+  }
+
+  &:hover, &:active {
+	color: $noir;
+	text-decoration: underline;
+  }
+
+  &.axure {
+
+	&::before {
+	  background-image: url(../images/icones/axure.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/axure--hover.svg);
+	  }
+	}
+  }
+
+  &.figma {
+
+	&::before {
+	  background-image: url(../images/icones/figma.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/figma--hover.svg);
+	  }
+	}
+  }
+
+  &.github {
+
+	&::before {
+	  background-image: url(../images/icones/github.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/github--hover.svg);
+	  }
+	}
+  }
+
+  &.pdf {
+
+	&::before {
+	  background-image: url(../images/icones/pdf.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/pdf--hover.svg);
+	  }
+	}
+  }
+
+  &.rtf {
+
+	&::before {
+	  background-image: url(../images/icones/rtf.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/rtf--hover.svg);
+	  }
+	}
+  }
+
+  &.sketch {
+
+	&::before {
+	  background-image: url(../images/icones/sketch.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/sketch--hover.svg);
+	  }
+	}
+  }
+
+  &.web {
+
+	&::before {
+	  background-image: url(../images/icones/web.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/web--hover.svg);
+	  }
+	}
+  }
+
+  &.xd {
+
+	&::before {
+	  background-image: url(../images/icones/xd.svg);
+	}
+
+	&:hover, &:active {
+
+	  &::before {
+		background-image: url(../images/icones/xd--hover.svg);
+	  }
+	}
+  }
+}
