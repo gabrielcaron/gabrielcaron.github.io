@@ -52,27 +52,53 @@
   text-align: center;
 
   svg {
-    width: 100%;
+	width: 100%;
 	margin-left: -3px;
-  }
-
-  svg #fond {
-    transition: all 0.1s ease-in-out;
-  }
-  &:hover {
-    svg #fond {
-      fill: green;
-    }
   }
 }
 
+// État des SVG des icônes de projets
+
+
+.navigation {
+
+  // Icône Mexico
+  &__lien {
+
+	// Si c'est le projet courant
+	&.courant {
+	  & .mexico {
+		& .elevation {
+		  fill: url(#elevation-hover);
+		}
+
+		& .guitare path {
+		  fill: url(#guitare-hover);
+		}
+	  }
+	}
+
+	// Sinon, l'état survol
+	&:hover {
+	  & .mexico {
+		& .elevation {
+		  fill: url(#elevation-hover);
+		}
+
+		& .guitare path {
+		  fill: url(#guitare-hover);
+		}
+	  }
+	}
+  }
+}
 
 // Liens avec icones pour formats
 
 .lien {
   font-family: $RobotoMedium;
   text-decoration: none;
-  letter-spacing: 0.05rem;
+  letter-spacing: $EspacementStandard;
 
   &::before {
 	content: "";

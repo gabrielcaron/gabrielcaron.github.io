@@ -43,7 +43,7 @@
 	color: $gris25;
 	text-decoration: none;
 	line-height: 120%;
-	letter-spacing: 0.02em;
+	letter-spacing: $EspacementStandard;
 	padding: 1rem 2rem;
 	text-align: center;
 	@media screen and (min-width: 550px) {
@@ -136,7 +136,7 @@
 	padding: 0;
 
 	&.rangeeSections {
-	  padding: 0 0 2rem 0;
+	  padding: 1rem 0 1rem 0;
 	}
   }
 
@@ -159,10 +159,11 @@
 
   &__lien {
 	font-family: $RobotoMedium;
-	border-radius: $arrondiMobile;
 	text-decoration: none;
 	color: $gris25;
+	letter-spacing: $EspacementStandard;
 	line-height: 100%;
+	border-radius: $arrondiMobile;
   }
 
   &__figcaption {
@@ -183,7 +184,7 @@
 	}
 
 	& .navigation__lien {
-	  font-size: 2.5rem;
+	  font-size: 2.4rem;
 	  padding: 1rem 3rem;
 
 	  &:hover {
@@ -296,7 +297,7 @@
 	  color: $gris25;
 	  text-decoration: none;
 	  line-height: 175%;
-	  letter-spacing: 0.05rem;
+	  letter-spacing: $EspacementStandard;
 	  transition: border-bottom 0.075s ease-in-out;
 
 	  &.section {

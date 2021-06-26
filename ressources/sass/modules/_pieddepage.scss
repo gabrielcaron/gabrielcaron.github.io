@@ -29,7 +29,7 @@
 	font-size: 2rem;
 	color: $gris25;
 	line-height: 150%;
-	letter-spacing: 0.05rem;
+	letter-spacing: $EspacementStandard;
 	margin: 2rem 0 0 0;
 	@media screen and (min-width: $mobile600px) {
 	  margin: 0.75rem 0 0 0;
@@ -59,7 +59,7 @@
 	position: relative;
 	top: 13rem;
 	font-size: 1.6rem;
-	letter-spacing: 0.05rem;
+	letter-spacing: $EspacementStandard;
   }
 
   &__vagues {

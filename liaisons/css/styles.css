@@ -495,7 +495,7 @@ h1, h2, h3 {
   font-family: Roboto-Medium, sans serif;
   font-weight: normal;
   line-height: 100%;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 h1 {
@@ -774,7 +774,7 @@ img {
   color: #404040;
   text-decoration: none;
   line-height: 120%;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05rem;
   padding: 1rem 2rem;
   text-align: center;
 }
@@ -861,7 +861,7 @@ img {
   padding: 0;
 }
 .projets .navigation__liste.rangeeSections {
-  padding: 0 0 2rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .projets .navigation__item {
   display: inline-block;
@@ -883,10 +883,11 @@ img {
 }
 .projets .navigation__lien {
   font-family: Roboto-Medium, sans serif;
-  border-radius: 3rem;
   text-decoration: none;
   color: #404040;
+  letter-spacing: 0.05rem;
   line-height: 100%;
+  border-radius: 3rem;
 }
 .projets .navigation__figcaption {
   font-family: Roboto-Medium, sans serif;
@@ -902,7 +903,7 @@ img {
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .projets .navigation .rangeeSections .navigation__lien {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   padding: 1rem 3rem;
 }
 .projets .navigation .rangeeSections .navigation__lien:hover {
@@ -1171,11 +1172,18 @@ img {
   width: 100%;
   margin-left: -3px;
 }
-.icone svg #fond {
-  transition: all 0.1s ease-in-out;
+
+.navigation__lien.courant .mexico .elevation {
+  fill: url(#elevation-hover);
 }
-.icone:hover svg #fond {
-  fill: green;
+.navigation__lien.courant .mexico .guitare path {
+  fill: url(#guitare-hover);
+}
+.navigation__lien:hover .mexico .elevation {
+  fill: url(#elevation-hover);
+}
+.navigation__lien:hover .mexico .guitare path {
+  fill: url(#guitare-hover);
 }
 
 .lien {
@@ -1471,7 +1479,7 @@ img {
 }
 .projet__description {
   font-size: 2.5rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   color: #404040;
   margin: 1rem 0;
 }
