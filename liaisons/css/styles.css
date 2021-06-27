@@ -889,6 +889,22 @@ img {
   line-height: 100%;
   border-radius: 3rem;
 }
+.projets .navigation__figure {
+  margin: 0;
+  text-align: center;
+}
+.projets .navigation__figure svg {
+  width: 100%;
+  margin-left: -3px;
+  border: solid 3px #fff;
+  border-radius: 3rem;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+}
+@media screen and (min-width: 1200px) {
+  .projets .navigation__figure svg {
+    border-radius: 5.5rem;
+  }
+}
 .projets .navigation__figcaption {
   font-family: Roboto-Medium, sans serif;
   font-size: 1.6rem;
@@ -1121,7 +1137,7 @@ img {
 /** Icônes **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.1
+* @version 2021.3
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1152,38 +1168,18 @@ img {
   background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
 }
 
-.boreal {
-  border: solid 3px #fff;
-  border-radius: 3rem;
-  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
-}
-@media screen and (min-width: 1200px) {
-  .boreal {
-    border-radius: 5.5rem;
-  }
-}
-
-.icone {
-  display: inline-block;
-  margin: 0;
-  text-align: center;
-}
-.icone svg {
-  width: 100%;
-  margin-left: -3px;
-}
-
+/* État des SVG des icônes de projets */
 .navigation__lien.courant .mexico .elevation {
-  fill: url(#elevation-hover);
+  fill: url(#mexico-orange-lineaire);
 }
 .navigation__lien.courant .mexico .guitare path {
-  fill: url(#guitare-hover);
+  fill: url(#mexico-gris);
 }
 .navigation__lien:hover .mexico .elevation {
-  fill: url(#elevation-hover);
+  fill: url(#mexico-orange-lineaire);
 }
 .navigation__lien:hover .mexico .guitare path {
-  fill: url(#guitare-hover);
+  fill: url(#mexico-gris);
 }
 
 .lien {

@@ -1,6 +1,6 @@
 <img src="liaisons/images/iv-gabrielcaron.svg" width="300" alt="">
 
-Ce dépôt contient tous les fichiers de mon site personnel.
+Ce dépôt contient l'ensemble des informations et fichiers à propos de mon site personnel.
 
 ## CSS
 
@@ -10,6 +10,31 @@ Ce dépôt contient tous les fichiers de mon site personnel.
 ## Images
 
 Toutes les images sont en SVG, sauf pour les captures d'écran des projets pour lesquelles le format PNG a été utilisé.
+
+### Icônes
+
+* Le symbole occupe 75% de la largeur de l'élévation. Un dégradé radial est utilisé.
+* L'élévation est gris (aplat). Au survol, un dégradé linéaire est utilisé.
+
+Au moment d'exporter une icône à partir de Figma :
+1. Retirer les ombres et les contours de l'élévation (le cas échéant)
+2. Aplatir le symbole
+3. Exporter en SVG
+4. Optimiser dans ImageOptim
+5. Ajouter une classe avec le nom du projet
+6. Ajouter `aria-hidden="true"`
+7. Retirer les width et height
+8. Ajouter dans le SVG par défaut les dégradés pour l'état survol
+9. Pour conserver la validité du HTML, préfixer avec des ID uniques les dégradés avec le nom du projet, exemple : `#mexico-orange-radial`.
+10. Lier les ID dans les CSS pour l'état survol
+
+
+### Projets
+
+Lorsque les projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad), les images sont exportées en PNG à partir de Photoshop.
+
+1. Exporter en PNG avec Photoshop > Exporter sous...
+2. Optimiser avec ImageOptim à 80% de qualité
 
 ### Formats
 
@@ -21,8 +46,7 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est d'abord destiné �
 | Tablette | 1000px | 2000px |
 | Table    | 1400px | 2880px |
 
-1. Exporter en PNG avec Photoshop > Exporter sous...
-2. Optimiser avec ImageOptim à 80% de qualité 
+
 
 ## Javascript
 
@@ -36,15 +60,15 @@ Aucune dépendance requise.
 
 ### En résumé
 
-Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D en 3e année de Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue.
+Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours *Projet graphique* 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue à ce moment.
 
-À l'été 2019, suite à la fin de ma première année en Techniques d'intégration multimédia au Cégep de Sainte-Foy, je lance le projet d'un nouveau portfolio en version Web cette fois. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
+À l'été 2019, suite à la fin de ma première année en Techniques d'intégration multimédia au Cégep de Sainte-Foy, j'ai amorcé le projet d'un nouveau portfolio en version Web. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
 
-À la fin de l'hiver 2020, en pleine pandémie, le projet est mis sur la glace en raison de sa complexité. Le prototype intégré n'est pas concluant. Au cours des mois suivants, je me concentre sur la refonte de mon identité visuelle qui servira de fondation à mon projet de portfolio.
+À la fin de l'hiver 2020, le projet est mis sur la glace. Le prototype intégré n'est pas concluant et le projet est plus complexe que prévu. Au cours des mois suivants, je me concentre sur la refonte de mon identité visuelle qui servira de fondation à mon projet de portfolio.
 
-À l'automne 2020, le projet de portfolio Web est relancé. La version 1.0 est abandonnée. Tout le projet de portfolio Web est recommencé du début. Une nouvelle phase de conception démarre.
+À l'automne 2020, le projet de portfolio Web est relancé. La version 1.0 est abandonnée. Tout le projet est recommencé du début : recherche visuelle, conception, etc.
 
-À l'été 2021, le projet entre dans nouvelle phase avec le début de l'intégration du design et la mise en ligne de la version de développement. Le nom de domaine est acheté.
+À l'été 2021, le projet entre dans nouvelle phase avec le début de l'intégration du design et la mise en ligne de la version de développement.
 
 La mise en ligne officielle est prévue au mois d'août 2021.
 
@@ -56,7 +80,11 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 
 #### 24 juin 2021
 
-* Fin de l'intégration des composantes du design du site (en-tête, pied de page, gabarits des menus et pages des projets, sélecteur de projets et icônes)
+* Fin de l'intégration des composantes primaires du design du site (en-tête, pied de page, gabarits des menus et pages des projets, sélecteur de projets et icônes)
+
+### 23 juin 2021
+
+* Réservation du nom de domaine
 
 #### 11 juin 2021
 
@@ -67,15 +95,27 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 * Début de l'intégration de la version 2.0 du site
 * Mise en ligne de la version de développement
 
+#### 1er mai 2021
+
+* Début de la refonte du projet Boréal Magazine
+  * Retrait des floats
+  * Conversion vers CSS Grid
+  * Utilisation de SASS
+  * Nouvelle page d'accueil
+
 #### 12 février 2021
 
-* Début des maquettes du projet 2.0
+* Début des maquettes de la version 2.0
 
 #### 3 janvier 2021
 
 * Début des esquisses fonctionnelles
 
 ### 2020
+
+#### 11 décembre 2020
+
+* Établissement de l'architecture de l'information
 
 #### 15 septembre 2020
 

@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.1
+* @version 2021.3
 *
 * ------------------
 * TABLE DES MATIERES
@@ -36,28 +36,8 @@
   }
 }
 
-// Styles généraux des icônes
-.boreal {
-  border: solid 3px $blanc;
-  border-radius: $arrondiMobile;
-  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
-  @media screen and (min-width: $desktop1200px) {
-	border-radius: $arrondiTable;
-  }
-}
 
-.icone {
-  display: inline-block;
-  margin: 0;
-  text-align: center;
-
-  svg {
-	width: 100%;
-	margin-left: -3px;
-  }
-}
-
-// État des SVG des icônes de projets
+/* État des SVG des icônes de projets */
 
 
 .navigation {
@@ -69,11 +49,11 @@
 	&.courant {
 	  & .mexico {
 		& .elevation {
-		  fill: url(#elevation-hover);
+		  fill: url(#mexico-orange-lineaire);
 		}
 
 		& .guitare path {
-		  fill: url(#guitare-hover);
+		  fill: url(#mexico-gris);
 		}
 	  }
 	}
@@ -82,11 +62,11 @@
 	&:hover {
 	  & .mexico {
 		& .elevation {
-		  fill: url(#elevation-hover);
+		  fill: url(#mexico-orange-lineaire);
 		}
 
 		& .guitare path {
-		  fill: url(#guitare-hover);
+		  fill: url(#mexico-gris);
 		}
 	  }
 	}
