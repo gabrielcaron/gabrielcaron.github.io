@@ -34,6 +34,20 @@ Aucune dépendance requise.
 
 ## Historique de ce projet
 
+### En résumé
+
+Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D en 3e année de Graphisme. Aucune version Web n'avait été prévue.
+
+À l'été 2019, suite à la fin de ma première année en Techniques d'intégration multimédia au Cégep de Sainte-Foy, je lance le projet d'un nouveau portfolio en version Web cette fois.
+
+À la fin de l'hiver 2020, en pleine pandémie, le projet est mis sur la glace en raison de sa complexité. Le prototype intégré n'est pas concluant. Au cours des mois suivants, je me concentre sur la refonte de mon identité visuelle qui servira de fondation à mon projet de portfolio.
+
+À l'automne 2020, je relance le projet de portfolio Web. La version 1.0 est abandonnée. Tout le projet de portfolio Web est recommencé du début. La phase de conception démarre.
+
+À l'été 2021, le projet entre dans nouvelle phase avec le début de l'intégration du design et la mise en ligne de la version de développement. Le nom de domaine est acheté.
+
+La mise en ligne officielle est prévue au mois d'août 2021.
+
 ### 2021
 
 #### 26 juin 2021
