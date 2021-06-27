@@ -108,7 +108,6 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 
 #### 4 janvier 2020
 
-* Début de la refonte des projets de design sélectionnés
 * Début de la refonte des projets :
     * Grosse-Île
     * Mexico
@@ -130,5 +129,5 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 
 #### Mai 2007
 
-* Publication du portfolio imprimé
+* Réalisation du portfolio imprimé
 * Dévoilement de ma première identité visuelle lors de l'exposition des finissants de Graphisme
