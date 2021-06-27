@@ -36,9 +36,9 @@ Aucune dépendance requise.
 
 ### En résumé
 
-Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D en 3e année de Graphisme. Aucune version Web n'avait été prévue.
+Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D en 3e année de Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue.
 
-À l'été 2019, suite à la fin de ma première année en Techniques d'intégration multimédia au Cégep de Sainte-Foy, je lance le projet d'un nouveau portfolio en version Web cette fois.
+À l'été 2019, suite à la fin de ma première année en Techniques d'intégration multimédia au Cégep de Sainte-Foy, je lance le projet d'un nouveau portfolio en version Web cette fois. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
 
 À la fin de l'hiver 2020, en pleine pandémie, le projet est mis sur la glace en raison de sa complexité. Le prototype intégré n'est pas concluant. Au cours des mois suivants, je me concentre sur la refonte de mon identité visuelle qui servira de fondation à mon projet de portfolio.
 
