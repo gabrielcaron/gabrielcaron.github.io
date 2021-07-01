@@ -42,11 +42,10 @@
 
 .navigation {
 
-  // Icône Mexico
   &__lien {
 
-	// Si c'est le projet courant
-	&.courant {
+	// Mexico - projet courant ou l'état survol
+	&.courant, &:hover {
 	  & .mexico {
 		& .elevation {
 		  fill: url(#mexico-orange-lineaire);
@@ -58,15 +57,23 @@
 	  }
 	}
 
-	// Sinon, l'état survol
-	&:hover {
-	  & .mexico {
+	// Alaia - projet courant ou l'état survol
+	&.courant, &:hover {
+	  & .alaia {
 		& .elevation {
-		  fill: url(#mexico-orange-lineaire);
+		  fill: url(#alaia-bleu);
 		}
 
-		& .guitare path {
-		  fill: url(#mexico-gris);
+		& .planche-devant {
+		  fill: url(#alaia-gris-devant);
+		}
+
+		& .planche-arriere {
+		  fill: url(#alaia-gris-arriere);
+		}
+
+		& .planche-ligne {
+		  fill: #045D85;
 		}
 	  }
 	}

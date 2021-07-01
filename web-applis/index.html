@@ -31,21 +31,53 @@
 		<nav class="navigation">
 			<ul class="navigation__liste projets__conteneurIcones rangeeProjets">
 				<li class="navigation__item">
-					<a href="#" class="navigation__lien">
+					<a href="alaia.html" class="navigation__lien">
 						<figure class="navigation__figure icone">
-							<svg class="boreal" fill="none" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"
+							<svg aria-hidden="true" class="alaia" fill="none" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"
 								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="129.508" x2="129.508"
-												y1="97.0008"
-												y2="163.033">
-									<stop offset="0" stop-color="#009250"/>
-									<stop offset="1" stop-color="#006437"/>
+								<linearGradient id="alaia-bleu" gradientUnits="userSpaceOnUse" x1="130" x2="130" y1="0" y2="260">
+									<stop offset=".213542" stop-color="#035393"/>
+									<stop offset="1" stop-color="#036873"/>
 								</linearGradient>
-								<rect id="fond" fill="#fcfcfc" height="260" width="260"/>
-								<path d="m193.176 112.022c-41.557 2.831-44.769-16.6772-66.58-14.9075-16.055 1.3117-27.451 16.4795-33.3625 26.6395-.1071.204-.2787.366-.488.462-.2094.096-.4448.12-.6693.069-7.5134-1.444-14.8282-3.775-21.7902-6.944-3.8159-1.78-7.1522 6.444-4.0348 8.037 31.7469 16.208 75.8068 5.038 91.9778 0 .255-.085.533-.075.782.028.248.104.451.294.571.535.119.241.147.517.079.777-.069.26-.229.487-.452.638-10.343 7.287-34.958 21.299-66.0485 16.781-.2204-.03-.4449.005-.6451.102s-.3671.251-.4798.442c-.1126.192-.1659.412-.1531.634.0127.222.091.435.225.612 5.3276 7.225 17.4005 20.217 39.6185 16.428 33.509-5.726 68.06-51.707 61.45-50.333z"
-									  fill="url(#a)"/>
+								<radialGradient id="alaia-beige-arriere" cx="0" cy="0"
+												gradientTransform="matrix(236.50021204 130.50020369 -35.4040913 64.16139488 130 120)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset="0" stop-color="#f9d289"/>
+									<stop offset="1" stop-color="#e6b353"/>
+								</radialGradient>
+								<radialGradient id="alaia-beige-devant" cx="0" cy="0"
+												gradientTransform="matrix(132.50026874 131.50039722 -35.67539462 35.94665472 71 73)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset="0" stop-color="#eec881"/>
+									<stop offset="1" stop-color="#e6b353"/>
+								</radialGradient>
+								<radialGradient id="alaia-gris-arriere" cx="0" cy="0"
+												gradientTransform="matrix(-86.99877513 123.00018735 -28.18052853 -19.93225797 129.5 129.5)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset=".494792" stop-color="#fff"/>
+									<stop offset="1" stop-color="#ededed"/>
+								</radialGradient>
+								<radialGradient id="alaia-gris-devant" cx="0" cy="0"
+												gradientTransform="matrix(121.00021349 131.50011763 -48.84936602 44.9488854 93 89.5)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset=".192708" stop-color="#fff"/>
+									<stop offset="1" stop-color="#ededed"/>
+								</radialGradient>
+								<rect class="elevation" fill="#fcfcfc" height="260" rx="55" width="260"/>
+								<path class="planche-arriere" d="m55.0534 203.942c-8.1701-8.17 6.795-40.902 64.1786-98.285 47.384-47.3844 78.486-56.827 84.71-50.6036 6.223 6.2235-3.215 37.3308-50.599 84.7146-57.383 57.384-90.1171 72.346-98.2896 64.174z"
+									  fill="url(#alaia-beige-arriere)"/>
+								<path class="planche-ligne" d="m67.1073 205.102c3.3432-.952 6.5903-2.214 9.6991-3.769l124.3536-124.3535c1.387-3.0208 2.53-6.1473 3.42-9.3498z"
+									  fill="#fff"/>
+								<path class="planche-ligne" d="m57.6647 182.191c-1.5558 3.109-2.8175 6.356-3.7687 9.699l137.48-137.4792c-3.206.8907-6.335 2.0366-9.358 3.4268z"
+									  fill="#fff"/>
+								<path class="planche-devant" d="m203.944 203.947c-8.17 8.17-40.901-6.795-98.285-64.179-47.3838-47.3838-56.8264-78.4863-50.6029-84.7097 6.2234-6.2235 37.3307 3.2143 84.7149 50.5987 57.383 57.383 72.346 90.117 64.173 98.29z"
+									  fill="url(#alaia-beige-devant)"/>
+								<g class="planche-ligne" fill="#fff">
+									<path d="m205.104 191.893c-.951-3.343-2.213-6.59-3.768-9.699l-124.354-124.3538c-3.0208-1.3865-6.1473-2.5299-9.3498-3.4195z"/>
+									<path d="m182.194 201.336c3.109 1.555 6.356 2.817 9.699 3.768l-137.4795-137.4793c.8907 3.2055 2.0366 6.3345 3.4268 9.3571z"/>
+								</g>
 							</svg>
-							<figcaption class="navigation__figcaption">Boréal</figcaption>
+							<figcaption class="navigation__figcaption">Alaia</figcaption>
 						</figure>
 					</a></li>
 			</ul>
@@ -55,42 +87,24 @@
 		<h2 class="projets__titre-h2">Applis</h2>
 		<nav class="navigation">
 			<ul class="navigation__liste projets__conteneurIcones rangeeProjets">
-				<li class="navigation__item">
-					<a href="#" class="navigation__lien">
-						<figure class="navigation__figure icone">
-							<svg class="boreal" fill="none" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"
-								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="129.508" x2="129.508"
-												y1="97.0008"
-												y2="163.033">
-									<stop offset="0" stop-color="#009250"/>
-									<stop offset="1" stop-color="#006437"/>
-								</linearGradient>
-								<rect id="fond" fill="#fcfcfc" height="260" width="260"/>
-								<path d="m193.176 112.022c-41.557 2.831-44.769-16.6772-66.58-14.9075-16.055 1.3117-27.451 16.4795-33.3625 26.6395-.1071.204-.2787.366-.488.462-.2094.096-.4448.12-.6693.069-7.5134-1.444-14.8282-3.775-21.7902-6.944-3.8159-1.78-7.1522 6.444-4.0348 8.037 31.7469 16.208 75.8068 5.038 91.9778 0 .255-.085.533-.075.782.028.248.104.451.294.571.535.119.241.147.517.079.777-.069.26-.229.487-.452.638-10.343 7.287-34.958 21.299-66.0485 16.781-.2204-.03-.4449.005-.6451.102s-.3671.251-.4798.442c-.1126.192-.1659.412-.1531.634.0127.222.091.435.225.612 5.3276 7.225 17.4005 20.217 39.6185 16.428 33.509-5.726 68.06-51.707 61.45-50.333z"
-									  fill="url(#a)"/>
-							</svg>
-							<figcaption class="navigation__figcaption">Boréal</figcaption>
-						</figure>
-					</a></li>
-				<li class="navigation__item">
-					<a href="#" class="navigation__lien">
-						<figure class="navigation__figure icone">
-							<svg class="boreal" fill="none" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"
-								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="129.508" x2="129.508"
-												y1="97.0008"
-												y2="163.033">
-									<stop offset="0" stop-color="#009250"/>
-									<stop offset="1" stop-color="#006437"/>
-								</linearGradient>
-								<rect id="fond" fill="#fcfcfc" height="260" width="260"/>
-								<path d="m193.176 112.022c-41.557 2.831-44.769-16.6772-66.58-14.9075-16.055 1.3117-27.451 16.4795-33.3625 26.6395-.1071.204-.2787.366-.488.462-.2094.096-.4448.12-.6693.069-7.5134-1.444-14.8282-3.775-21.7902-6.944-3.8159-1.78-7.1522 6.444-4.0348 8.037 31.7469 16.208 75.8068 5.038 91.9778 0 .255-.085.533-.075.782.028.248.104.451.294.571.535.119.241.147.517.079.777-.069.26-.229.487-.452.638-10.343 7.287-34.958 21.299-66.0485 16.781-.2204-.03-.4449.005-.6451.102s-.3671.251-.4798.442c-.1126.192-.1659.412-.1531.634.0127.222.091.435.225.612 5.3276 7.225 17.4005 20.217 39.6185 16.428 33.509-5.726 68.06-51.707 61.45-50.333z"
-									  fill="url(#a)"/>
-							</svg>
-							<figcaption class="navigation__figcaption">Boréal</figcaption>
-						</figure>
-					</a></li>
+<!--				<li class="navigation__item">-->
+<!--					<a href="#" class="navigation__lien">-->
+<!--						<figure class="navigation__figure icone">-->
+<!--							<svg class="boreal" fill="none" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"-->
+<!--								 xmlns:xlink="http://www.w3.org/1999/xlink">-->
+<!--								<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="129.508" x2="129.508"-->
+<!--												y1="97.0008"-->
+<!--												y2="163.033">-->
+<!--									<stop offset="0" stop-color="#009250"/>-->
+<!--									<stop offset="1" stop-color="#006437"/>-->
+<!--								</linearGradient>-->
+<!--								<rect id="fond" fill="#fcfcfc" height="260" width="260"/>-->
+<!--								<path d="m193.176 112.022c-41.557 2.831-44.769-16.6772-66.58-14.9075-16.055 1.3117-27.451 16.4795-33.3625 26.6395-.1071.204-.2787.366-.488.462-.2094.096-.4448.12-.6693.069-7.5134-1.444-14.8282-3.775-21.7902-6.944-3.8159-1.78-7.1522 6.444-4.0348 8.037 31.7469 16.208 75.8068 5.038 91.9778 0 .255-.085.533-.075.782.028.248.104.451.294.571.535.119.241.147.517.079.777-.069.26-.229.487-.452.638-10.343 7.287-34.958 21.299-66.0485 16.781-.2204-.03-.4449.005-.6451.102s-.3671.251-.4798.442c-.1126.192-.1659.412-.1531.634.0127.222.091.435.225.612 5.3276 7.225 17.4005 20.217 39.6185 16.428 33.509-5.726 68.06-51.707 61.45-50.333z"-->
+<!--									  fill="url(#a)"/>-->
+<!--							</svg>-->
+<!--							<figcaption class="navigation__figcaption">Boréal</figcaption>-->
+<!--						</figure>-->
+<!--					</a></li>-->
 			</ul>
 		</nav>
 	</section>

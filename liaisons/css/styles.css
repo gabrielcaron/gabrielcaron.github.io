@@ -1169,17 +1169,23 @@ img {
 }
 
 /* État des SVG des icônes de projets */
-.navigation__lien.courant .mexico .elevation {
+.navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-lineaire);
 }
-.navigation__lien.courant .mexico .guitare path {
+.navigation__lien.courant .mexico .guitare path, .navigation__lien:hover .mexico .guitare path {
   fill: url(#mexico-gris);
 }
-.navigation__lien:hover .mexico .elevation {
-  fill: url(#mexico-orange-lineaire);
+.navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation {
+  fill: url(#alaia-bleu);
 }
-.navigation__lien:hover .mexico .guitare path {
-  fill: url(#mexico-gris);
+.navigation__lien.courant .alaia .planche-devant, .navigation__lien:hover .alaia .planche-devant {
+  fill: url(#alaia-gris-devant);
+}
+.navigation__lien.courant .alaia .planche-arriere, .navigation__lien:hover .alaia .planche-arriere {
+  fill: url(#alaia-gris-arriere);
+}
+.navigation__lien.courant .alaia .planche-ligne, .navigation__lien:hover .alaia .planche-ligne {
+  fill: #045D85;
 }
 
 .lien {
