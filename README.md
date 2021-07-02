@@ -1,6 +1,6 @@
 <img src="liaisons/images/iv-gabrielcaron.svg" width="300" alt="">
 
-Ce dépôt contient l'ensemble des informations et fichiers à propos de mon site personnel.
+Ce dépôt contient mon site personnel.
 
 ## CSS
 
@@ -9,24 +9,27 @@ Ce dépôt contient l'ensemble des informations et fichiers à propos de mon sit
 
 ## Images
 
-Toutes les images sont en SVG, sauf pour les captures d'écran des projets pour lesquelles le format PNG a été utilisé.
+Toutes les images sont en SVG, excepté pour les aperçus des projets au format PNG.
 
 ### Icônes
 
-* Le symbole occupe 75% de la largeur de l'élévation. Un dégradé radial est utilisé.
+* Le symbole occupe 60% à 75% de la largeur de l'élévation. Un dégradé radial est utilisé.
 * L'élévation est gris (aplat). Au survol, un dégradé linéaire est utilisé.
 
-Au moment d'exporter une icône à partir de Figma :
+#### Exporter une icône à partir de Figma
 1. Retirer les ombres et les contours de l'élévation (le cas échéant)
 2. Aplatir le symbole
 3. Exporter en SVG
 4. Optimiser dans ImageOptim
-5. Ajouter une classe avec le nom du projet
-6. Ajouter `aria-hidden="true"`
+5. Ajouter des classes aux endroits suivants :
+   * sur la balise SVG : nom du projet
+   * sur l'élévation : elevation
+   * sur les formes : donner des noms explicites
+6. Ajouter `aria-hidden="true"` sur la balise SVG
 7. Retirer les width et height
-8. Ajouter dans le SVG par défaut les dégradés pour l'état survol
+8. Ajouter dans le SVG par défaut les dégradés du SVG de l'état survol
 9. Pour conserver la validité du HTML, préfixer avec des ID uniques les dégradés avec le nom du projet, exemple : `#mexico-orange-radial`.
-10. Lier les ID dans les CSS pour l'état survol
+10. Lier les ID à l'état survol dans les CSS
 
 
 ### Projets
@@ -35,6 +38,7 @@ Lorsque les projets sont présentés avec des périphériques mobiles (iPhone et
 
 1. Exporter en PNG avec Photoshop > Exporter sous...
 2. Optimiser avec ImageOptim à 80% de qualité
+3. Nommer selon la convention, sous la forme **projet-largeur en px**, exemple : mexico-1400.png
 
 ### Formats
 
@@ -46,7 +50,7 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est d'abord destiné �
 | Tablette | 1000px | 2000px |
 | Table    | 1400px | 2880px |
 
-
+Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
 
 ## Javascript
 
@@ -74,13 +78,17 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 
 ### 2021
 
+#### 30 juin 2021
+
+* Mise en ligne du projet Alaia
+
 #### 26 juin 2021
 
 * Mise en ligne du projet Mexico
 
 #### 24 juin 2021
 
-* Fin de l'intégration des composantes primaires du design du site (en-tête, pied de page, gabarits des menus et pages des projets, sélecteur de projets et icônes)
+* Fin de l'intégration des composantes principales du design du site (en-tête, pied de page, gabarits des menus et pages des projets, sélecteur de projets et icônes)
 
 ### 23 juin 2021
 
