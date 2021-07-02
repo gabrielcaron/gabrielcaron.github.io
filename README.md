@@ -36,11 +36,13 @@ Toutes les images sont en SVG, excepté pour les aperçus des projets au format 
 
 Lorsque les projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad), les images sont exportées en PNG à partir de Photoshop.
 
-1. Exporter en PNG avec Photoshop > Exporter sous...
+#### Exporter les aperçus à partir de Photoshop
+
+1. Exporter en PNG via Exporter sous...
 2. Optimiser avec ImageOptim à 80% de qualité
 3. Nommer selon la convention, sous la forme **projet-largeur en px**, exemple : mexico-1400.png
 
-### Formats
+#### Formats normalisés
 
 Toutes les images au format PNG sont à 1x et 2x. Le site est d'abord destiné à être consulté sur une tablette ou un poste de table avec un écran avec une densité de 2x.
 
