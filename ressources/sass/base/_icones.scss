@@ -37,14 +37,14 @@
 }
 
 
-/* État des SVG des icônes de projets */
+/* État survol des icônes des projets */
 
 
 .navigation {
 
   &__lien {
 
-	// Mexico - projet courant ou l'état survol
+	// Mexico
 	&.courant, &:hover {
 	  & .mexico {
 		& .elevation {
@@ -57,7 +57,7 @@
 	  }
 	}
 
-	// Alaia - projet courant ou l'état survol
+	// Alaia
 	&.courant, &:hover {
 	  & .alaia {
 		& .elevation {
@@ -77,6 +77,20 @@
 		}
 	  }
 	}
+
+	// Destinations Canada
+	&.courant, &:hover {
+	  & .destinations {
+		& .elevation {
+		  fill: url(#destinations-rouge-hover);
+		}
+
+		& .symbole {
+		  fill: url(#destinations-gris-hover);
+		}
+	  }
+	}
+
   }
 }
 

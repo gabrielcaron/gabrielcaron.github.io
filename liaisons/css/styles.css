@@ -1168,7 +1168,7 @@ img {
   background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
 }
 
-/* État des SVG des icônes de projets */
+/* État survol des icônes des projets */
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-lineaire);
 }
@@ -1186,6 +1186,12 @@ img {
 }
 .navigation__lien.courant .alaia .planche-ligne, .navigation__lien:hover .alaia .planche-ligne {
   fill: #045D85;
+}
+.navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation {
+  fill: url(#destinations-rouge-hover);
+}
+.navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
+  fill: url(#destinations-gris-hover);
 }
 
 .lien {
