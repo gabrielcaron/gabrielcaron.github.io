@@ -54,9 +54,16 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une ta
 |----------|--------|--------|
 | Mobile   | 600px  | 1200px |
 | Tablette | 1000px | 2000px |
-| Table    | 1400px | 2880px |
+| Table    | 1400px | 2800px |
 
 Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
+
+#### Exporter des PDF
+
+InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
+1. Aller dans Acrobat > Fichier > Exporter vers > PostScript. Enregistrer.
+2. Ouvrir ce fichier dans Acrobat Distiller. Utiliser les paramètres «PDF qualité max».
+3. Importer le PDF converti dans InDesign.
 
 ## Javascript
 
