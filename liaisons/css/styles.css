@@ -1222,7 +1222,7 @@ img {
 /** Icônes **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.4
+* @version 2021.5
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1233,6 +1233,12 @@ img {
 *
 */
 /* État survol des icônes des projets */
+.navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
+  fill: url(#grosseile-bleu-hover);
+}
+.navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
+  fill: url(#grosseile-gris-hover);
+}
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-lineaire);
 }

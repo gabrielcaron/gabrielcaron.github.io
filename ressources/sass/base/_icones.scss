@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.4
+* @version 2021.5
 *
 * ------------------
 * TABLE DES MATIERES
@@ -43,6 +43,19 @@
 .navigation {
 
   &__lien {
+
+	// Grosse-Île
+	&.courant, &:hover {
+	  & .grosseile {
+		& .elevation {
+		  fill: url(#grosseile-bleu-hover);
+		}
+
+		& .croix {
+		  fill: url(#grosseile-gris-hover);
+		}
+	  }
+	}
 
 	// Mexico
 	&.courant, &:hover {
