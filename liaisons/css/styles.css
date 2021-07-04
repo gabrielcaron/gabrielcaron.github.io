@@ -630,7 +630,7 @@ img {
 .entete {
   padding-left: 2rem;
   padding-right: 2rem;
-  background-image: url("../images/vagues-entete.svg");
+  background-image: url("../images/design/vagues-entete.svg");
   background-repeat: no-repeat;
   background-position: 30rem -7rem;
   background-size: 70rem;
@@ -1001,7 +1001,7 @@ img {
 }
 .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption {
   border: none;
-  padding: 1.3rem 3.6rem;
+  padding: 1.3rem 1rem;
 }
 .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
@@ -1010,7 +1010,7 @@ img {
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-  padding: 1rem 3.3rem;
+  padding: 1rem;
 }
 
 /* Pied de page */
@@ -1344,7 +1344,7 @@ html {
 
 body {
   background-color: #FAFAFA;
-  background-image: url("../images/texture-vagues.svg");
+  background-image: url("../images/design/texture-vagues.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: 17rem;
