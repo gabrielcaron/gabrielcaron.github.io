@@ -555,7 +555,7 @@ img {
   max-width: 100%;
 }
 
-/*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
+/*** DEV seulement - Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -586,14 +586,14 @@ img {
   }
 }
 
-/*** Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
+/*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
 }
 
-/*** Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
+/*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
 @media (min-width: 600px) {
   .rangeeFlex {
     display: flex;

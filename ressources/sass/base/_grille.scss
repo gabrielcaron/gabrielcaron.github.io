@@ -22,9 +22,8 @@ img {
 }
 
 
-// TODO faire la solution de repli de max-width pour nav plus anciens. Utiliser min-max comme condition&nbsp;? Voir ici: https://www.linkedin.com/learning/css-advanced-layouts-with-grid/check-for-grid-support
 
-/*** Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
+/*** DEV seulement - Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
   @include paddingConteneur;
   @media (min-width: $mobile600px) {
@@ -34,14 +33,14 @@ img {
   }
 }
 
-/*** Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
+/*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
 }
 
-/*** Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
+/*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
 @media (min-width: 600px) {
   .rangeeFlex {
 	display: flex;
