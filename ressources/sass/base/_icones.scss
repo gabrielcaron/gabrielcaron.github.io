@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.3
+* @version 2021.4
 *
 * ------------------
 * TABLE DES MATIERES
@@ -12,7 +12,7 @@
 */
 
 // Bulle qui contient les icônes
-.bulle {
+@mixin bulle {
   position: relative;
   $bordure: 2px;
   background-color: $gris98;

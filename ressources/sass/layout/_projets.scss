@@ -14,8 +14,10 @@
 
 .projets {
 
-  &__selecteur.applis {
-	margin: 5rem 0;
+  &__selecteur {
+	@media screen and (min-width: $tablet900px) {
+	  @include bulle();
+	}
   }
 
   &__conteneurIcones {

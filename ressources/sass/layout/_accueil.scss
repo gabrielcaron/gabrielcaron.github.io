@@ -36,12 +36,15 @@
 
 
   .projets {
-	@include rangeeGrid12col(800px);
+	@include rangeeGrid12col(900px);
+	@media screen and (max-width: 899px) {
+	  @include paddingConteneur;
+	}
 
 	&__conteneurDemiGrille {
 
 	  @supports (grid-template-columns: minmax(auto, 1400px)) {
-		@media screen and (min-width: 800px) {
+		@media screen and (min-width: $tablet900px) {
 		  display: grid;
 		  grid-template-columns: minmax(auto, 690px);
 		  column-gap: 20px;
@@ -53,6 +56,9 @@
 		justify-content: flex-end;
 		border-radius: 0 $arrondiTable $arrondiTable 0;
 		border-left: 0;
+		@media screen and (min-width: $tablet900px) {
+		  @include bulle();
+		}
 	  }
 
 	  &.design-graphique {
@@ -60,6 +66,9 @@
 		justify-content: flex-start;
 		border-radius: $arrondiTable 0 0 $arrondiTable;
 		border-right: 0;
+		@media screen and (min-width: $tablet900px) {
+		  @include bulle();
+		}
 	  }
 	}
 
@@ -82,7 +91,7 @@
 	.navigation {
 
 	  &.web-applis {
-		@include rangeeGrid12col(800px);
+		@include rangeeGrid12col(900px);
 
 		& .titre {
 		  grid-column: 2 / 13;
@@ -102,7 +111,7 @@
 	  }
 
 	  &.design-graphique {
-		@include rangeeGrid12col(800px);
+		@include rangeeGrid12col(900px);
 
 		& .titre {
 		  grid-column: 1 / 12;

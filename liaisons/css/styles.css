@@ -388,7 +388,7 @@ template {
 /** Mixins **/
 /**
 * @author Gabriel Caron - 1861095@csfoy.ca
-* @version 2021.3
+* @version 2021.4
 *
 * ------------------
 * TABLE DES MATIERES
@@ -869,8 +869,10 @@ img {
 }
 
 /* Projets */
-.projets .navigation {
-  padding: 1rem 3rem 1.5rem 3rem;
+@media screen and (min-width: 900px) {
+  .projets .navigation {
+    padding: 1rem 3rem 1.5rem 3rem;
+  }
 }
 .projets .navigation__liste {
   list-style-type: none;
@@ -915,7 +917,7 @@ img {
   color: #404040;
   letter-spacing: 0.05rem;
   line-height: 100%;
-  border-radius: 3rem;
+  border-radius: 4rem;
 }
 .projets .navigation__figure {
   margin: 0;
@@ -925,10 +927,20 @@ img {
   width: 100%;
   margin-left: -3px;
   border: solid 3px #fff;
-  border-radius: 3rem;
+  border-radius: 4rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
+  .projets .navigation__figure svg {
+    border-radius: 5.5rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .projets .navigation__figure svg {
+    border-radius: 4rem;
+  }
+}
+@media screen and (min-width: 1100px) {
   .projets .navigation__figure svg {
     border-radius: 5.5rem;
   }
@@ -938,36 +950,25 @@ img {
   font-size: 1.6rem;
   display: inline-block;
   line-height: 120%;
-  border-radius: 2rem;
+  border-radius: 4rem;
   margin-top: 0.5rem;
-  padding: 1.3rem 1rem;
-}
-@media screen and (min-width: 400px) {
-  .projets .navigation__figcaption {
-    padding: 1.3rem 2rem;
-    border-radius: 3rem;
-  }
+  padding: 1.3rem 2rem;
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__figcaption {
     padding: 1.3rem 3rem;
   }
 }
-@media screen and (min-width: 800px) {
-  .projets .navigation__figcaption {
-    padding: 1.3rem 2rem;
-  }
-}
 @media screen and (min-width: 900px) {
   .projets .navigation__figcaption {
     padding: 1.3rem 1rem;
-    border-radius: 2rem;
+    border-radius: 3rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .projets .navigation__figcaption {
     padding: 1.3rem 3rem;
-    border-radius: 3rem;
+    border-radius: 4rem;
   }
 }
 .projets .navigation .rangeeSections .courant {
@@ -976,7 +977,8 @@ img {
 }
 .projets .navigation .rangeeSections .navigation__lien {
   font-size: 2.4rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2.7rem;
+  margin: 0 0.3rem;
 }
 .projets .navigation .rangeeSections .navigation__lien:hover {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
@@ -984,7 +986,7 @@ img {
 }
 .projets .navigation .rangeeSections .navigation__lien:hover.courant {
   border: none;
-  padding: 1.3rem 3.3rem;
+  padding: 1.3rem 3rem;
 }
 .projets .navigation .rangeeSections .navigation__lien:active {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
@@ -992,7 +994,8 @@ img {
 }
 .projets .navigation .rangeeSections .navigation__lien:active.courant {
   border: none;
-  padding: 1.3rem 3.3rem;
+  padding: 1.3rem 3rem;
+  margin: 0 0.3rem;
 }
 .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption {
   border: none;
@@ -1003,6 +1006,11 @@ img {
   border: none;
   padding: 1.3rem 2.3rem;
 }
+@media screen and (min-width: 600px) {
+  .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption {
+    padding: 1.3rem 3.3rem;
+  }
+}
 .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1011,6 +1019,11 @@ img {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
+}
+@media screen and (min-width: 600px) {
+  .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
+    padding: 1rem 3rem;
+  }
 }
 
 /* Pied de page */
@@ -1196,7 +1209,7 @@ img {
 /** Icônes **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.3
+* @version 2021.4
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1206,27 +1219,6 @@ img {
 *
 *
 */
-.bulle {
-  position: relative;
-  background-color: #FAFAFA;
-  background-clip: padding-box;
-  border: solid 2px transparent;
-  border-radius: 55px;
-  display: inline-block;
-}
-.bulle:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -2px;
-  border-radius: inherit;
-  background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
-}
-
 /* État survol des icônes des projets */
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-lineaire);
@@ -1386,7 +1378,7 @@ img {
   margin-bottom: 20rem;
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     .accueil .projets {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -1394,8 +1386,32 @@ img {
     }
   }
 }
+@media screen and (max-width: 899px) {
+  .accueil .projets {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 600px) {
+  .accueil .projets {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 1000px) {
+  .accueil .projets {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 1930px) {
+  .accueil .projets {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 @supports (grid-template-columns: minmax(auto, 1400px)) {
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 900px) {
     .accueil .projets__conteneurDemiGrille {
       display: grid;
       grid-template-columns: minmax(auto, 690px);
@@ -1409,11 +1425,55 @@ img {
   border-radius: 0 5.5rem 5.5rem 0;
   border-left: 0;
 }
+@media screen and (min-width: 900px) {
+  .accueil .projets__conteneurDemiGrille.web-applis {
+    position: relative;
+    background-color: #FAFAFA;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 55px;
+    display: inline-block;
+  }
+  .accueil .projets__conteneurDemiGrille.web-applis:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+  }
+}
 .accueil .projets__conteneurDemiGrille.design-graphique {
   grid-column: 7/13;
   justify-content: flex-start;
   border-radius: 5.5rem 0 0 5.5rem;
   border-right: 0;
+}
+@media screen and (min-width: 900px) {
+  .accueil .projets__conteneurDemiGrille.design-graphique {
+    position: relative;
+    background-color: #FAFAFA;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 55px;
+    display: inline-block;
+  }
+  .accueil .projets__conteneurDemiGrille.design-graphique:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+  }
 }
 .accueil .projets__web-applis {
   padding: 0 3rem 0 3rem;
@@ -1432,7 +1492,7 @@ img {
   }
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     .accueil .projets .navigation.web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -1457,7 +1517,7 @@ img {
   }
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
-  @media (min-width: 800px) {
+  @media (min-width: 900px) {
     .accueil .projets .navigation.design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -1522,8 +1582,27 @@ img {
 *
 */
 /* Styles généraux, tous les projets */
-.projets__selecteur.applis {
-  margin: 5rem 0;
+@media screen and (min-width: 900px) {
+  .projets__selecteur {
+    position: relative;
+    background-color: #FAFAFA;
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    border-radius: 55px;
+    display: inline-block;
+  }
+  .projets__selecteur:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+  }
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
   @media (min-width: 600px) {

@@ -134,7 +134,10 @@
 /* Projets */
 
 .projets .navigation {
-  padding: 1rem 3rem 1.5rem 3rem;
+
+  @media screen and (min-width: $tablet900px) {
+	padding: 1rem 3rem 1.5rem 3rem;
+  }
 
   &__liste {
 	list-style-type: none;
@@ -193,7 +196,13 @@
 	  border: solid 3px $blanc;
 	  border-radius: $arrondiMobile;
 	  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
-	  @media screen and (min-width: $desktop1200px) {
+	  @media screen and (min-width: $mobile600px) {
+		border-radius: $arrondiTable;
+	  }
+	  @media screen and (min-width: $tablet900px) {
+		border-radius: $arrondiMobile;
+	  }
+	  @media screen and (min-width: $desktop1100px) {
 		border-radius: $arrondiTable;
 	  }
 	}
@@ -204,18 +213,11 @@
 	font-size: 1.6rem;
 	display: inline-block;
 	line-height: 120%;
-	border-radius: $arrondiMobile - 1rem;
+	border-radius: $arrondiMobile;
 	margin-top: 0.5rem;
-	padding: 1.3rem 1rem;
-	@media screen and (min-width: 400px) {
-	  padding: 1.3rem 2rem;
-	  border-radius: $arrondiMobile;
-	}
+	padding: 1.3rem 2rem;
 	@media screen and (min-width: $mobile600px) {
 	  padding: 1.3rem 3rem;
-	}
-	@media screen and (min-width: 800px) {
-	  padding: 1.3rem 2rem;
 	}
 	@media screen and (min-width: $tablet900px) {
 	  padding: 1.3rem 1rem;
@@ -236,14 +238,15 @@
 
 	& .navigation__lien {
 	  font-size: 2.4rem;
-	  padding: 1rem 3rem;
+	  padding: 1rem 2.7rem;
+	  margin: 0 0.3rem;
 
 	  &:hover {
 		@include boutonSurvol;
 
 		&.courant {
 		  border: none;
-		  padding: 1.3rem 3.3rem;
+		  padding: 1.3rem 3rem;
 		}
 	  }
 
@@ -252,7 +255,8 @@
 
 		&.courant {
 		  border: none;
-		  padding: 1.3rem 3.3rem;
+		  padding: 1.3rem 3rem;
+		  margin: 0 0.3rem;
 		}
 	  }
 	}
@@ -273,6 +277,9 @@
 			& .navigation__figcaption {
 			  border: none;
 			  padding: 1.3rem 2.3rem;
+			  @media screen and (min-width: $mobile600px) {
+				padding: 1.3rem 3.3rem;
+			  }
 			}
 		  }
 		}
@@ -287,6 +294,9 @@
 		  & .navigation__figcaption {
 			@include boutonPageCourante;
 			padding: 1rem 2rem;
+			@media screen and (min-width: $mobile600px) {
+			  padding: 1rem 3rem;
+			}
 		  }
 		}
 	  }
