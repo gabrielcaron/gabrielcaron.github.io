@@ -673,11 +673,15 @@ img {
     padding-right: 2rem;
   }
 }
+@media screen and (min-width: 900px) {
+  .entete {
+    padding-bottom: 10rem;
+  }
+}
 @media screen and (min-width: 1000px) {
   .entete {
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-bottom: 10rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -752,11 +756,6 @@ img {
 .entete .navigation {
   width: 100%;
 }
-@media screen and (min-width: 750px) and (max-width: 899px) {
-  .entete .navigation {
-    width: 85%;
-  }
-}
 @media screen and (min-width: 900px) {
   .entete .navigation {
     width: initial;
@@ -764,7 +763,6 @@ img {
 }
 .entete .navigation__liste {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 3.5rem 0;
