@@ -54,7 +54,7 @@
   }
 
   &__logo {
-	background-image: url("../images/iv-gabrielcaron.svg");
+	background-image: url("../images/design/iv-gabrielcaron.svg");
 	background-repeat: no-repeat;
 	width: 217px;
 	height: 53px;
@@ -64,6 +64,9 @@
 	  width: 285px;
 	  height: 70px;
 	  margin-left: 0;
+	}
+	&:hover {
+	  background-image: url("../images/design/iv-gabrielcaron--retour.svg");
 	}
   }
 

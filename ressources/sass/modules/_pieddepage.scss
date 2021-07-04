@@ -48,11 +48,14 @@
   }
 
   &__logo {
-	background-image: url("../images/iv-gabrielcaron-nb.svg");
+	background-image: url("../images/design/iv-gabrielcaron-nb.svg");
 	background-repeat: no-repeat;
 	width: 250px;
 	height: 60px;
 	display: block;
+	&:hover {
+	  background-image: url("../images/design/iv-gabrielcaron-nb--retour.svg");
+	}
   }
 
   &__copyright {

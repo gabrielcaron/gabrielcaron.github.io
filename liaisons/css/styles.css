@@ -712,7 +712,7 @@ img {
   }
 }
 .entete__logo {
-  background-image: url("../images/iv-gabrielcaron.svg");
+  background-image: url("../images/design/iv-gabrielcaron.svg");
   background-repeat: no-repeat;
   width: 217px;
   height: 53px;
@@ -726,6 +726,9 @@ img {
     margin-left: 0;
   }
 }
+.entete__logo:hover {
+  background-image: url("../images/design/iv-gabrielcaron--retour.svg");
+}
 .entete__menu {
   align-items: baseline;
   display: flex;
@@ -736,7 +739,7 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.1
+* @version 2021.3
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1171,11 +1174,14 @@ img {
   }
 }
 .pieddepage__logo {
-  background-image: url("../images/iv-gabrielcaron-nb.svg");
+  background-image: url("../images/design/iv-gabrielcaron-nb.svg");
   background-repeat: no-repeat;
   width: 250px;
   height: 60px;
   display: block;
+}
+.pieddepage__logo:hover {
+  background-image: url("../images/design/iv-gabrielcaron-nb--retour.svg");
 }
 .pieddepage__copyright {
   position: relative;
