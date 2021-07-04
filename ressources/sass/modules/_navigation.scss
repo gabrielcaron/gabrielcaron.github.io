@@ -272,7 +272,7 @@
 		  &.courant {
 			& .navigation__figcaption {
 			  border: none;
-			  padding: 1.3rem 1rem;
+			  padding: 1.3rem 2.3rem;
 			}
 		  }
 		}
@@ -286,7 +286,7 @@
 		&.courant {
 		  & .navigation__figcaption {
 			@include boutonPageCourante;
-			padding: 1rem;
+			padding: 1rem 2rem;
 		  }
 		}
 	  }
