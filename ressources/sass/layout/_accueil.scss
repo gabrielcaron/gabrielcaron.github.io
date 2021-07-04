@@ -54,20 +54,20 @@
 	  &.web-applis {
 		grid-column: 1 / 7;
 		justify-content: flex-end;
-		border-radius: 0 $arrondiTable $arrondiTable 0;
 		border-left: 0;
 		@media screen and (min-width: $tablet900px) {
 		  @include bulle();
+		  border-radius: 0 $arrondiTable $arrondiTable 0;
 		}
 	  }
 
 	  &.design-graphique {
 		grid-column: 7 / 13;
 		justify-content: flex-start;
-		border-radius: $arrondiTable 0 0 $arrondiTable;
 		border-right: 0;
 		@media screen and (min-width: $tablet900px) {
 		  @include bulle();
+		  border-radius: $arrondiTable 0 0 $arrondiTable;
 		}
 	  }
 	}

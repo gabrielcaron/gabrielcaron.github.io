@@ -889,6 +889,16 @@ img {
   vertical-align: top;
   padding: 1rem 0;
 }
+.projets .navigation__item.block {
+  display: block;
+  padding: 1.5rem 0;
+}
+@media screen and (min-width: 650px) {
+  .projets .navigation__item.block {
+    display: inline-block;
+    padding: 1rem 0;
+  }
+}
 .projets .navigation__item:nth-child(odd) {
   padding-right: 2rem;
 }
@@ -974,9 +984,14 @@ img {
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 .projets .navigation .rangeeSections .navigation__lien {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 1rem 2.7rem;
   margin: 0 0.3rem;
+}
+@media screen and (min-width: 550px) {
+  .projets .navigation .rangeeSections .navigation__lien {
+    font-size: 2.4rem;
+  }
 }
 .projets .navigation .rangeeSections .navigation__lien:hover {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
@@ -1420,7 +1435,6 @@ img {
 .accueil .projets__conteneurDemiGrille.web-applis {
   grid-column: 1/7;
   justify-content: flex-end;
-  border-radius: 0 5.5rem 5.5rem 0;
   border-left: 0;
 }
 @media screen and (min-width: 900px) {
@@ -1431,6 +1445,7 @@ img {
     border: solid 2px transparent;
     border-radius: 55px;
     display: inline-block;
+    border-radius: 0 5.5rem 5.5rem 0;
   }
   .accueil .projets__conteneurDemiGrille.web-applis:before {
     content: "";
@@ -1448,7 +1463,6 @@ img {
 .accueil .projets__conteneurDemiGrille.design-graphique {
   grid-column: 7/13;
   justify-content: flex-start;
-  border-radius: 5.5rem 0 0 5.5rem;
   border-right: 0;
 }
 @media screen and (min-width: 900px) {
@@ -1459,6 +1473,7 @@ img {
     border: solid 2px transparent;
     border-radius: 55px;
     display: inline-block;
+    border-radius: 5.5rem 0 0 5.5rem;
   }
   .accueil .projets__conteneurDemiGrille.design-graphique:before {
     content: "";
