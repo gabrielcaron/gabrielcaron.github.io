@@ -72,9 +72,13 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 4.5rem;
   text-align: center;
-  padding: 10rem 0;
+  padding: 7rem 0;
+  @media screen and (min-width: $mobile600px) {
+    font-size: 7rem;
+    padding: 10rem 0;
+  }
 }
 
 h2 {

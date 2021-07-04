@@ -129,6 +129,7 @@
 
 		& > * {
 		  grid-column: span 6;
+		  vertical-align: top; // Pour la version mobile
 		}
 	  }
 	}

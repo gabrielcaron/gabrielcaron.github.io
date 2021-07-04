@@ -499,9 +499,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 4.5rem;
   text-align: center;
-  padding: 10rem 0;
+  padding: 7rem 0;
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 7rem;
+    padding: 10rem 0;
+  }
 }
 
 h2 {
@@ -624,7 +630,6 @@ img {
 .entete {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 10rem;
   background-image: url("../images/vagues-entete.svg");
   background-repeat: no-repeat;
   background-position: 30rem -7rem;
@@ -672,6 +677,7 @@ img {
   .entete {
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-bottom: 10rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -743,9 +749,9 @@ img {
 .entete .navigation {
   width: 100%;
 }
-@media screen and (min-width: 830px) and (max-width: 899px) {
+@media screen and (min-width: 750px) and (max-width: 899px) {
   .entete .navigation {
-    width: 90%;
+    width: 85%;
   }
 }
 @media screen and (min-width: 900px) {
@@ -758,6 +764,7 @@ img {
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
+  margin: 3.5rem 0;
 }
 .entete .navigation__item {
   display: inline-block;
@@ -775,7 +782,8 @@ img {
   text-decoration: none;
   line-height: 120%;
   letter-spacing: 0.05rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
+  margin: 0 0.3rem;
   text-align: center;
 }
 @media screen and (min-width: 550px) {
@@ -845,11 +853,16 @@ img {
 .entete .navigation__lien.courante {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-  line-height: 100%;
+  line-height: 120%;
 }
 .entete .navigation__lien.courante:hover {
   border: none;
-  padding: 1.5rem 2.8rem;
+  padding: 1.3rem 1.8rem;
+}
+@media screen and (min-width: 550px) {
+  .entete .navigation__lien.courante:hover {
+    padding: 1.5rem 2.8rem;
+  }
 }
 
 /* Projets */
@@ -859,13 +872,19 @@ img {
 .projets .navigation__liste {
   list-style-type: none;
   padding: 0;
+  vertical-align: top;
 }
 .projets .navigation__liste.rangeeSections {
   padding: 1rem 0 1rem 0;
 }
+.projets .navigation__liste.rangeeSections > * {
+  width: initial;
+}
 .projets .navigation__item {
   display: inline-block;
   width: calc(50% - 1.3rem);
+  vertical-align: top;
+  padding: 1rem 0;
 }
 .projets .navigation__item:nth-child(odd) {
   padding-right: 2rem;
@@ -876,6 +895,12 @@ img {
   }
 }
 @media screen and (min-width: 600px) {
+  .projets .navigation__item {
+    width: initial;
+    grid-column: span 6;
+  }
+}
+@media screen and (min-width: 900px) {
   .projets .navigation__item {
     width: initial;
     grid-column: span 2;
@@ -910,9 +935,37 @@ img {
   font-size: 1.6rem;
   display: inline-block;
   line-height: 120%;
-  border-radius: 3rem;
+  border-radius: 2rem;
   margin-top: 0.5rem;
-  padding: 1.3rem 3rem;
+  padding: 1.3rem 1rem;
+}
+@media screen and (min-width: 400px) {
+  .projets .navigation__figcaption {
+    padding: 1.3rem 2rem;
+    border-radius: 3rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .projets .navigation__figcaption {
+    padding: 1.3rem 3rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .projets .navigation__figcaption {
+    padding: 1.3rem 2rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .projets .navigation__figcaption {
+    padding: 1.3rem 1rem;
+    border-radius: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projets .navigation__figcaption {
+    padding: 1.3rem 3rem;
+    border-radius: 3rem;
+  }
 }
 .projets .navigation .rangeeSections .courant {
   border: 3px solid #ffe100;
@@ -1437,6 +1490,7 @@ img {
 }
 .accueil .projets .navigation__liste > * {
   grid-column: span 6;
+  vertical-align: top;
 }
 
 /**

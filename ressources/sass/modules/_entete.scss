@@ -13,15 +13,16 @@
 
 .entete {
   @include conteneur1400px();
-  padding-bottom: 10rem;
 
   @media screen and (min-width: $mobile600px) {
 	padding-left: 2rem;
 	padding-right: 2rem;
   }
+
   @media screen and (min-width: 1000px) {
 	padding-left: 5rem;
 	padding-right: 5rem;
+	padding-bottom: 10rem;
   }
 
   // Positionnement des vagues
