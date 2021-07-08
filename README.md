@@ -1,4 +1,4 @@
-<img src="liaisons/images/iv-gabrielcaron.svg" width="300" alt="">
+#gabrielcaron.ca
 
 Ce dépôt contient mon site personnel.
 
@@ -14,7 +14,7 @@ Ce dépôt contient mon site personnel.
 
 ### Icônes
 
-* Le symbole occupe 60% à 75% de la largeur de l'élévation. Un dégradé **radial** est utilisé pour l'état par défaut et pour l'état survol.
+* Le symbole occupe 60% à 65% de la largeur de l'élévation. Un dégradé **radial** est utilisé pour l'état par défaut et pour l'état survol.
 * L'élévation est gris, en aplat. Au survol, un dégradé **linéaire** est utilisé.
 
 #### Exporter une icône à partir de Figma
@@ -38,11 +38,14 @@ Ce dépôt contient mon site personnel.
 
 ### Projets
 
-La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad).
+La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
+* On peut désactiver le téléchargement du document PDF
+* On peut zoomer autant qu'on souhaite
+* La qualité d'affichage est supérieure
 
 #### Exporter les aperçus à partir de Photoshop
 
-1. Exporter en PNG via Exporter sous...
+1. Exporter en PNG via Exporter sous... Choisir le rééchantillonage **Bicubique plus net**
 2. Optimiser avec ImageOptim à 80% de qualité
 3. Nommer sous la forme **projet-largeur en px**, exemple : `mexico-1400.png`
 
@@ -73,6 +76,12 @@ Pour une meilleure accessibilité, il n'y a aucun JavaScript requis pour affiche
 
 Aucune dépendance requise.
 
+## Configurations ciblées
+
+* Poste de table : MacBook Pro 15/16 pouces
+* Tablette : iPad Pro
+* Mobile : iPhone X
+
 ## Historique de ce projet
 
 ### En résumé
@@ -90,6 +99,14 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 La mise en ligne officielle est prévue au mois d'août 2021.
 
 ### 2021
+
+#### 7 juillet 2021
+
+* Mise en ligne du projet Grosse-Île
+
+#### 3 juillet 2021
+
+* Mise en ligne du projet Destinations Canada
 
 #### 30 juin 2021
 
