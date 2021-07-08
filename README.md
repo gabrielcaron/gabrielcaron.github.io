@@ -1,4 +1,4 @@
-#gabrielcaron.ca
+# gabrielcaron.ca
 
 Ce dépôt contient mon site personnel.
 
