@@ -151,9 +151,11 @@
 
   &__item {
 	display: inline-block;
-	width: calc(50% - 1.3rem);
 	vertical-align: top;
 	padding: 1rem 0;
+	@media screen and (max-width: $mobile600px - 1px) {
+	  width: calc(50% - 1.3rem);
+	}
 	&.block {
 	  display: block;
 	  padding: 1.5rem 0;
@@ -171,12 +173,10 @@
 	}
 
 	@media screen and (min-width: $mobile600px) {
-	  width: initial;
 	  grid-column: span 6;
 	}
 
 	@media screen and (min-width: $tablet900px) {
-	  width: initial;
 	  grid-column: span 2;
 	}
   }
@@ -195,8 +195,6 @@
 	text-align: center;
 
 	& svg {
-	  width: 100%;
-	  margin-left: -3px;
 	  border: solid 3px $blanc;
 	  border-radius: $arrondiMobile;
 	  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);

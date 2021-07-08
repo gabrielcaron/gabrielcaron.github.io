@@ -885,9 +885,13 @@ img {
 }
 .projets .navigation__item {
   display: inline-block;
-  width: calc(50% - 1.3rem);
   vertical-align: top;
   padding: 1rem 0;
+}
+@media screen and (max-width: 599px) {
+  .projets .navigation__item {
+    width: calc(50% - 1.3rem);
+  }
 }
 .projets .navigation__item.block {
   display: block;
@@ -909,13 +913,11 @@ img {
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__item {
-    width: initial;
     grid-column: span 6;
   }
 }
 @media screen and (min-width: 900px) {
   .projets .navigation__item {
-    width: initial;
     grid-column: span 2;
   }
 }
@@ -932,8 +934,6 @@ img {
   text-align: center;
 }
 .projets .navigation__figure svg {
-  width: 100%;
-  margin-left: -3px;
   border: solid 3px #fff;
   border-radius: 4rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
