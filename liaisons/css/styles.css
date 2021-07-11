@@ -868,17 +868,22 @@ img {
 
 /* Projets */
 @media screen and (min-width: 900px) {
-  .projets .navigation {
-    padding: 1rem 3rem 1.5rem 3rem;
+  .projets .navigation.web-applis {
+    padding: 1rem 3rem 1.5rem 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .projets .navigation.design-graphique {
+    padding: 1rem 1rem 1.5rem 3rem;
   }
 }
 .projets .navigation__liste {
   list-style-type: none;
-  padding: 0;
+  padding: 0 3rem;
   vertical-align: top;
 }
 .projets .navigation__liste.rangeeSections {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 1rem 3rem;
 }
 .projets .navigation__liste.rangeeSections > * {
   width: initial;
@@ -918,7 +923,7 @@ img {
 }
 @media screen and (min-width: 900px) {
   .projets .navigation__item {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 }
 .projets .navigation__lien {
@@ -1444,7 +1449,7 @@ img {
     padding-right: 0;
   }
 }
-@supports (grid-template-columns: minmax(auto, 1400px)) {
+@supports (grid-template-columns: minmax(auto, 900px)) {
   @media screen and (min-width: 900px) {
     .accueil .projets__conteneurDemiGrille {
       display: grid;
@@ -1465,7 +1470,6 @@ img {
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
-    display: inline-block;
     border-radius: 0 5.5rem 5.5rem 0;
   }
   .accueil .projets__conteneurDemiGrille.web-applis:before {
@@ -1493,7 +1497,6 @@ img {
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
-    display: inline-block;
     border-radius: 5.5rem 0 0 5.5rem;
   }
   .accueil .projets__conteneurDemiGrille.design-graphique:before {
@@ -1575,6 +1578,9 @@ img {
     grid-column: 1/11;
   }
 }
+.accueil .projets .navigation__titre-section {
+  margin: 3rem 0 1rem 2rem;
+}
 .accueil .projets .navigation__liste {
   list-style-type: none;
   padding: 0;
@@ -1623,7 +1629,6 @@ img {
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
-    display: inline-block;
   }
   .projets__selecteur:before {
     content: "";
@@ -1648,7 +1653,7 @@ img {
   }
 }
 .projets__titre-h2 {
-  margin: 4rem 0 0 3.5rem;
+  margin: 4rem 0 0 5rem;
 }
 
 /* Styles spécifiques, aperçu d'un projet */

@@ -131,17 +131,25 @@
 
 .projets .navigation {
 
-  @media screen and (min-width: $tablet900px) {
-	padding: 1rem 3rem 1.5rem 3rem;
+  &.web-applis {
+	@media screen and (min-width: $tablet900px) {
+	  padding: 1rem 3rem 1.5rem 1rem;
+	}
+  }
+
+  &.design-graphique {
+	@media screen and (min-width: $tablet900px) {
+	  padding: 1rem 1rem 1.5rem 3rem;
+	}
   }
 
   &__liste {
 	list-style-type: none;
-	padding: 0;
+	padding: 0 3rem;
 	vertical-align: top;
 
 	&.rangeeSections {
-	  padding: 1rem 0 1rem 0;
+	  padding: 1rem 0 1rem 3rem;
 
 	  & > * {
 		width: initial;
@@ -177,7 +185,7 @@
 	}
 
 	@media screen and (min-width: $tablet900px) {
-	  grid-column: span 2;
+	  grid-column: span 3;
 	}
   }
 

@@ -43,7 +43,7 @@
 
 	&__conteneurDemiGrille {
 
-	  @supports (grid-template-columns: minmax(auto, 1400px)) {
+	  @supports (grid-template-columns: minmax(auto, 900px)) {
 		@media screen and (min-width: $tablet900px) {
 		  display: grid;
 		  grid-template-columns: minmax(auto, 690px);
@@ -130,6 +130,10 @@
 		}
 	  }
 
+	  &__titre-section {
+		margin: 3rem 0 1rem 2rem;
+	  }
+
 	  &__liste {
 		list-style-type: none;
 		padding: 0;
@@ -138,7 +142,8 @@
 
 		& > * {
 		  grid-column: span 6;
-		  vertical-align: top; // Pour la version mobile
+		  vertical-align: top; // Version mobile
+		  //min-height: 25rem; // Éviter un décalage causé par les figcaptions sur deux lignes
 		}
 	  }
 	}
