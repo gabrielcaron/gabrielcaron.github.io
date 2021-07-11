@@ -1233,6 +1233,15 @@ img {
 *
 */
 /* État survol des icônes des projets */
+.navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
+  fill: url(#SOS-elevation-hover);
+}
+.navigation__lien.courant .SOS .anneau, .navigation__lien:hover .SOS .anneau {
+  fill: url(#SOS-anneau-hover);
+}
+.navigation__lien.courant .SOS .cordes, .navigation__lien:hover .SOS .cordes {
+  fill: #f34b18;
+}
 .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
   fill: url(#elevation-bleu-hover);
 }

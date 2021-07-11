@@ -46,6 +46,23 @@
 
 	// Projets en ordre alphabétique
 
+	// 100 ans de SOS
+	&.courant, &:hover {
+	  & .SOS {
+		& .elevation {
+		  fill: url(#SOS-elevation-hover);
+		}
+
+		& .anneau {
+		  fill: url(#SOS-anneau-hover);
+		}
+
+		& .cordes {
+		  fill: #f34b18;
+		}
+	  }
+	}
+
 	// Aquafina
 	&.courant, &:hover {
 	  & .aquafina {
