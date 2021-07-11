@@ -70,4 +70,11 @@
 	font-size: 1.6rem;
 	margin-top: 2rem;
   }
+
+  &.sans-contexte {
+	img {
+	  border-radius: 3.5rem;
+	  border: 2px solid $blanc;
+	}
+  }
 }

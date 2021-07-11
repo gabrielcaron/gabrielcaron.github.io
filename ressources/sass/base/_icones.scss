@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.5
+* @version 2021.6
 *
 * ------------------
 * TABLE DES MATIERES
@@ -43,6 +43,21 @@
 .navigation {
 
   &__lien {
+
+	// Projets en ordre alphabétique
+
+	// Aquafina
+	&.courant, &:hover {
+	  & .aquafina {
+		& .elevation {
+		  fill: url(#elevation-bleu-hover);
+		}
+
+		& .goutte {
+		  fill: url(#goutte-gris-hover);
+		}
+	  }
+	}
 
 	// Grosse-Île
 	&.courant, &:hover {

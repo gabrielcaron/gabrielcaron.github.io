@@ -1222,7 +1222,7 @@ img {
 /** Icônes **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.5
+* @version 2021.6
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1233,6 +1233,12 @@ img {
 *
 */
 /* État survol des icônes des projets */
+.navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
+  fill: url(#elevation-bleu-hover);
+}
+.navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
+  fill: url(#goutte-gris-hover);
+}
 .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
   fill: url(#grosseile-bleu-hover);
 }
@@ -1668,6 +1674,10 @@ img {
 .projet__figcaption {
   font-size: 1.6rem;
   margin-top: 2rem;
+}
+.projet.sans-contexte img {
+  border-radius: 3.5rem;
+  border: 2px solid #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
