@@ -53,11 +53,20 @@ La plupart des projets sont présentés avec des périphériques mobiles (iPhone
 
 Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une tablette ou un poste de table avec un écran avec une densité de 2x.
 
+##### 12 colonnes (pleine largeur)
+
 |          | 1x     | 2x     |
 |----------|--------|--------|
 | Mobile   | 600px  | 1200px |
 | Tablette | 1000px | 2000px |
 | Table    | 1400px | 2800px |
+
+##### 6 colonnes (design graphique seulement)
+
+|          | 1x     | 2x     |
+|----------|--------|--------|
+| Mobile   | 600px  | 1200px |
+| Tablette+| 690px  | 1380px |
 
 Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
 
