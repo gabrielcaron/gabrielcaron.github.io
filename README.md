@@ -1,4 +1,4 @@
-<img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px" style="margin-top: 2rem;">
+<img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px">
 
 Ce dépôt contient mon site personnel.
 
@@ -115,6 +115,10 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 La mise en ligne officielle est prévue au mois d'août 2021.
 
 ### 2021
+
+#### 11 juillet 2021
+
+* Mise en ligne du projet 100 ans de SOS
 
 #### 10 juillet 2021
 
