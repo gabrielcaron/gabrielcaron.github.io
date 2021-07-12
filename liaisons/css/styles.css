@@ -1247,24 +1247,6 @@ img {
 .navigation__lien.courant .SOS .cordes, .navigation__lien:hover .SOS .cordes {
   fill: #f34b18;
 }
-.navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
-  fill: url(#elevation-bleu-hover);
-}
-.navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
-  fill: url(#goutte-gris-hover);
-}
-.navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
-  fill: url(#grosseile-bleu-hover);
-}
-.navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
-  fill: url(#grosseile-gris-hover);
-}
-.navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
-  fill: url(#mexico-orange-lineaire);
-}
-.navigation__lien.courant .mexico .guitare path, .navigation__lien:hover .mexico .guitare path {
-  fill: url(#mexico-gris);
-}
 .navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation {
   fill: url(#alaia-bleu);
 }
@@ -1277,11 +1259,29 @@ img {
 .navigation__lien.courant .alaia .planche-ligne, .navigation__lien:hover .alaia .planche-ligne {
   fill: #045D85;
 }
+.navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
+  fill: url(#elevation-bleu-hover);
+}
+.navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
+  fill: url(#goutte-gris-hover);
+}
 .navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation {
   fill: url(#destinations-rouge-hover);
 }
 .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
   fill: url(#destinations-gris-hover);
+}
+.navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
+  fill: url(#grosseile-bleu-hover);
+}
+.navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
+  fill: url(#grosseile-gris-hover);
+}
+.navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
+  fill: url(#mexico-orange-lineaire);
+}
+.navigation__lien.courant .mexico .guitare path, .navigation__lien:hover .mexico .guitare path {
+  fill: url(#mexico-gris);
 }
 
 .lien {
@@ -1606,10 +1606,68 @@ img {
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* ACCUEIL
+* CONTACTER
 *
 *
 */
+.contact__titre {
+  padding: 10rem 0 0 0;
+}
+.contact__liste {
+  padding: 0 0 5rem 0;
+  list-style-type: none;
+}
+@supports (grid-template-columns: minmax(auto, 1400px)) {
+  @media (min-width: 600px) {
+    .contact__liste {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 20px;
+    }
+  }
+}
+.contact__item {
+  grid-column: span 4;
+}
+.contact__item:first-child {
+  grid-column: 3/span 4;
+}
+.contact__lien {
+  font-family: Roboto-Medium, sans serif;
+  text-decoration: none;
+  color: #404040;
+  letter-spacing: 0.05rem;
+  line-height: 100%;
+  border-radius: 4rem;
+}
+.contact__lien:hover .courriel .elevation {
+  fill: url(#courriel-elevation-hover);
+}
+.contact__lien:hover .courriel .enveloppe {
+  fill: url(#enveloppe-hover);
+}
+.contact__figure {
+  margin: 0;
+  text-align: center;
+}
+.contact__figure svg {
+  width: 13rem;
+  border: solid 3px #fff;
+  border-radius: 3.5rem;
+  vertical-align: middle;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+}
+.contact__figcaption {
+  font-family: Roboto-Bold, sans serif;
+  font-size: 3.5rem;
+  display: inline-block;
+  line-height: 120%;
+  border-radius: 4rem;
+  margin-top: 0.5rem;
+  padding: 1.3rem 2rem;
+  vertical-align: middle;
+}
+
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2021.1

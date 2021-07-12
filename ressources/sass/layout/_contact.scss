@@ -5,7 +5,75 @@
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* ACCUEIL
+* CONTACTER
 *
 *
 */
+
+
+.contact {
+
+  &__titre {
+	padding: 10rem 0 0 0;
+  }
+
+  &__liste {
+	@include rangeeGrid12col();
+	padding: 0 0 5rem 0;
+	list-style-type: none;
+  }
+
+  &__item {
+	grid-column: span 4;
+
+	&:first-child {
+	  grid-column: 3 / span 4;
+	}
+  }
+
+  &__lien {
+	font-family: $RobotoMedium;
+	text-decoration: none;
+	color: $gris25;
+	letter-spacing: $EspacementStandard;
+	line-height: 100%;
+	border-radius: $arrondiMobile;
+
+	// Icône Courriel
+	&:hover {
+	  & .courriel {
+		& .elevation {
+		  fill: url(#courriel-elevation-hover);
+		}
+
+		& .enveloppe {
+		  fill: url(#enveloppe-hover);
+		}
+	  }
+	}
+  }
+
+  &__figure {
+	margin: 0;
+	text-align: center;
+
+	& svg {
+	  width: 13rem;
+	  border: solid 3px $blanc;
+	  border-radius: 3.5rem;
+	  vertical-align: middle;
+	  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
+	}
+  }
+
+  &__figcaption {
+	font-family: $RobotoBold;
+	font-size: 3.5rem;
+	display: inline-block;
+	line-height: 120%;
+	border-radius: $arrondiMobile;
+	margin-top: 0.5rem;
+	padding: 1.3rem 2rem;
+	vertical-align: middle;
+  }
+}
