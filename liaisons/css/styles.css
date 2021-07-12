@@ -923,7 +923,7 @@ img {
 }
 @media screen and (min-width: 900px) {
   .projets .navigation__item {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 }
 .projets .navigation__lien {
@@ -1388,7 +1388,7 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.3
+* @version 2021.4
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1610,6 +1610,23 @@ img {
 *
 *
 */
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.1
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* MENUS
+*
+*
+*/
+@media screen and (min-width: 900px) {
+  .menu .navigation__item {
+    grid-column: span 3;
+  }
+}
+
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2021.2

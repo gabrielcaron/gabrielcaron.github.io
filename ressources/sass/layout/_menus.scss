@@ -1,0 +1,22 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.1
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* MENUS
+*
+*
+*/
+
+
+.menu {
+	.navigation {
+	  &__item {
+		@media screen and (min-width: $tablet900px) {
+		  grid-column: span 3;
+		}
+	  }
+	}
+}
