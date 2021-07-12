@@ -1,5 +1,4 @@
-![gabrielcaron.ca](liaisons/images/design/iv-gabrielcaron.svg)
-<img src="liaisons/images/design/iv-gabrielcaron.svg">
+<img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px">
 
 Ce dépôt contient mon site personnel.
 
