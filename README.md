@@ -1,4 +1,4 @@
-<img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px" style="margin-top: 2rem">
+<img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px" style="margin-top: 2rem;">
 
 Ce dépôt contient mon site personnel.
 
