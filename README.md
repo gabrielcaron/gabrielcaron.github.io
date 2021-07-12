@@ -1,4 +1,5 @@
-# gabrielcaron.ca
+![gabrielcaron.ca](liaisons/images/design/iv-gabrielcaron.svg)
+<img src="liaisons/images/design/iv-gabrielcaron.svg">
 
 Ce dépôt contient mon site personnel.
 
@@ -68,6 +69,13 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une ta
 | Mobile   | 600px  | 1200px |
 | Tablette+| 690px  | 1380px |
 
+##### 8 colonnes (design graphique seulement)
+
+|          | 1x     | 2x     |
+|----------|--------|--------|
+| Mobile   | 600px  | 1200px |
+| Tablette+| 927px  | 1854px |
+
 Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
 
 #### Exporter des PDF
@@ -108,6 +116,10 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 La mise en ligne officielle est prévue au mois d'août 2021.
 
 ### 2021
+
+#### 10 juillet 2021
+
+* Mise en ligne du projet Aquafina
 
 #### 7 juillet 2021
 
