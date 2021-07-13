@@ -1601,7 +1601,7 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1645,6 +1645,15 @@ img {
 }
 .contact__lien:hover .courriel .enveloppe {
   fill: url(#enveloppe-hover);
+}
+.contact__lien:hover .linkedin .elevation {
+  fill: url(#linkedin-bleu-hover);
+}
+.contact__lien:hover .linkedin .logotype {
+  fill: url(#linkedin-gris-hover);
+}
+.contact__lien:hover .contact__figcaption {
+  text-decoration: underline;
 }
 .contact__figure {
   margin: 0;

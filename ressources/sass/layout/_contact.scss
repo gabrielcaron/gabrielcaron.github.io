@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -39,8 +39,9 @@
 	line-height: 100%;
 	border-radius: $arrondiMobile;
 
-	// Icône Courriel
+
 	&:hover {
+	  // Icône Courriel
 	  & .courriel {
 		& .elevation {
 		  fill: url(#courriel-elevation-hover);
@@ -49,6 +50,21 @@
 		& .enveloppe {
 		  fill: url(#enveloppe-hover);
 		}
+	  }
+
+	  // Icône LinkedIn
+	  & .linkedin {
+		& .elevation {
+		  fill: url(#linkedin-bleu-hover);
+		}
+
+		& .logotype {
+		  fill: url(#linkedin-gris-hover);
+		}
+	  }
+
+	  & .contact__figcaption {
+		text-decoration: underline;
 	  }
 	}
   }
