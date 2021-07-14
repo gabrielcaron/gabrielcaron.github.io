@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.3
+* @version 2021.5
 *
 * ------------------
 * TABLE DES MATIERES
@@ -36,14 +36,14 @@
 
 
   .projets {
-	@include rangeeGrid12col(900px);
+	@include rangeeGrid12col($tablet900px);
 	@media screen and (max-width: 899px) {
 	  @include paddingConteneur;
 	}
 
 	&__conteneurDemiGrille {
 
-	  @supports (grid-template-columns: minmax(auto, 900px)) {
+	  @supports (grid-template-columns: minmax(auto, $tablet900px)) {
 		@media screen and (min-width: $tablet900px) {
 		  display: grid;
 		  grid-template-columns: minmax(auto, 690px);
@@ -91,7 +91,7 @@
 	.navigation {
 
 	  &.web-applis {
-		@include rangeeGrid12col(900px);
+		@include rangeeGrid12col($tablet900px);
 
 		& .titre {
 		  grid-column: 2 / 13;
@@ -111,7 +111,7 @@
 	  }
 
 	  &.design-graphique {
-		@include rangeeGrid12col(900px);
+		@include rangeeGrid12col($tablet900px);
 
 		& .titre {
 		  grid-column: 1 / 12;
