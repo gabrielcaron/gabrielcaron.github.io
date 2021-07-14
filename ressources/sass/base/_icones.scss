@@ -44,6 +44,27 @@
 
   &__lien {
 
+	// Nouveau projet
+
+	&.nouveau {
+	  & .navigation__figcaption::before {
+		content: "";
+		display: inline-block;
+		width: 1.4rem;
+		height: 1.4rem;
+		background-image: url(../images/icones/nouveau.svg);
+		background-repeat: no-repeat;
+		padding-right: 1rem;
+	  }
+
+	  &.nouveau:hover, &.nouveau:active {
+
+		& .navigation__figcaption::before {
+		  background-image: url(../images/icones/nouveau--hover.svg);
+		}
+	  }
+	}
+
 	// Projets en ordre alphabétique
 
 	// 100 ans de SOS
@@ -135,7 +156,6 @@
 		}
 	  }
 	}
-
   }
 }
 

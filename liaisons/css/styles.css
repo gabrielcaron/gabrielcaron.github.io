@@ -1238,6 +1238,18 @@ img {
 *
 */
 /* État survol des icônes des projets */
+.navigation__lien.nouveau .navigation__figcaption::before {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url(../images/icones/nouveau.svg);
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+}
+.navigation__lien.nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:active .navigation__figcaption::before {
+  background-image: url(../images/icones/nouveau--hover.svg);
+}
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
   fill: url(#SOS-elevation-hover);
 }
