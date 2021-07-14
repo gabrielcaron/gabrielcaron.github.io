@@ -104,15 +104,13 @@ Aucune dépendance requise.
 
 Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue à ce moment.
 
-À l'été 2019, suite à la fin de ma première année en Techniques d'intégration multimédia au Cégep de Sainte-Foy, j'ai amorcé le projet d'un portfolio révisé en version Web. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
+À l'été 2019, le projet d'un nouveau portfolio Web est amorcé. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
 
-À la fin de l'hiver 2020, le projet est mis sur la glace. Le prototype intégré n'est pas concluant et le projet est plus complexe que prévu.
+À l'hiver 2020, un premier prototype est intégré. Puisque le résultat visuel n'était pas concluant, le projet est mis sur la glace temporairement.
 
-À l'automne 2020, le projet est relancé et la version 1.0 est abandonnée. Le projet est presque recommencé du début : recherche visuelle, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
+À l'automne 2020, le projet est relancé et la première version est abandonnée. Le projet est recommencé du début : recherche visuelle, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
 
-À l'été 2021, le projet entre dans sa phase d'intégration du design. La mise en ligne d'une nouvelle version de développement est effectuée.
-
-La mise en ligne officielle est prévue au mois d'août 2021.
+À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
 
 ### 2021
 
@@ -189,7 +187,7 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 
 #### 2 avril 2020
 
-* Mise sur pause du projet en raison du résultat non concluant du prototype.
+* Mise sur pause du projet en raison du prototype non concluant.
 
 #### 30 mars 2020
 
@@ -202,7 +200,7 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 
 #### 4 janvier 2020
 
-* Refonte des projets :
+* Refonte des projets
     * Grosse-Île
     * Mexico
 
@@ -223,4 +221,4 @@ La mise en ligne officielle est prévue au mois d'août 2021.
 #### Mai 2007
 
 * Réalisation du portfolio imprimé
-* Dévoilement de la version 1.0 de mon identité visuelle lors de l'exposition des finissants de Graphisme
+* Réalisation de la première version de mon identité visuelle
