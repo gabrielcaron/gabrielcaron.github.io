@@ -1271,6 +1271,12 @@ img {
 .navigation__lien.courant .alaia .planche-ligne, .navigation__lien:hover .alaia .planche-ligne {
   fill: #045D85;
 }
+.navigation__lien.courant .altitude .elevation, .navigation__lien:hover .altitude .elevation {
+  fill: url(#altitude-bleu-hover);
+}
+.navigation__lien.courant .altitude .altisymbole, .navigation__lien:hover .altitude .altisymbole {
+  fill: url(#altitude-gris-hover);
+}
 .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
   fill: url(#elevation-bleu-hover);
 }
@@ -1768,7 +1774,6 @@ img {
 .projet__processus {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 7rem;
 }
 .projet__formats {
   padding: 1rem 4rem 1rem 0;
@@ -1779,7 +1784,7 @@ img {
   }
 }
 .projet__figure {
-  margin: 0;
+  margin: 7rem 0 0 0;
 }
 .projet__figcaption {
   font-size: 1.6rem;
