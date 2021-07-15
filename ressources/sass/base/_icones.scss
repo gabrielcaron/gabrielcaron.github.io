@@ -105,6 +105,19 @@
 	  }
 	}
 
+	// Altitude
+	&.courant, &:hover {
+	  & .altitude {
+		& .elevation {
+		  fill: url(#altitude-bleu-hover);
+		}
+
+		& .altisymbole {
+		  fill: url(#altitude-gris-hover);
+		}
+	  }
+	}
+
 	// Aquafina
 	&.courant, &:hover {
 	  & .aquafina {
