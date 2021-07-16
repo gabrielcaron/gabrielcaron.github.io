@@ -1283,6 +1283,15 @@ img {
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
   fill: url(#goutte-gris-hover);
 }
+.navigation__lien.courant .danseenboites .elevation, .navigation__lien:hover .danseenboites .elevation {
+  fill: url(#danse-or-elevation-hover);
+}
+.navigation__lien.courant .danseenboites .danse-masque-joyeux, .navigation__lien:hover .danseenboites .danse-masque-joyeux {
+  fill: url(#danse-gris-masque-joyeux-hover);
+}
+.navigation__lien.courant .danseenboites .danse-masque-triste, .navigation__lien:hover .danseenboites .danse-masque-triste {
+  fill: url(#danse-gris-masque-triste-hover);
+}
 .navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation {
   fill: url(#destinations-rouge-hover);
 }

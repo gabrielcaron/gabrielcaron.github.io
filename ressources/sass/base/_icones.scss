@@ -131,6 +131,23 @@
 	  }
 	}
 
+	// Danse en boîtes
+	&.courant, &:hover {
+	  & .danseenboites {
+		& .elevation {
+		  fill: url(#danse-or-elevation-hover);
+		}
+
+		& .danse-masque-joyeux {
+		  fill: url(#danse-gris-masque-joyeux-hover);
+		}
+
+		& .danse-masque-triste {
+		  fill: url(#danse-gris-masque-triste-hover);
+		}
+	  }
+	}
+
 	// Destinations Canada
 	&.courant, &:hover {
 	  & .destinations {
