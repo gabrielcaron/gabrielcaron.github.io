@@ -38,10 +38,14 @@ Ce dépôt contient mon site personnel.
 
 ### Projets
 
-La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
+La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Publish Online pour les raisons suivantes :
 * On peut désactiver le téléchargement du document PDF
 * On peut zoomer autant qu'on souhaite
 * La qualité d'affichage est supérieure
+
+#### Formats normalisés
+
+Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une tablette ou un poste de table avec un écran avec une densité de 2x.
 
 #### Exporter les aperçus à partir de Photoshop
 
@@ -49,9 +53,13 @@ La plupart des projets sont présentés avec des périphériques mobiles (iPhone
 2. Optimiser avec ImageOptim à 80% de qualité
 3. Nommer sous la forme **projet-largeur en px**, exemple : `mexico-1400.png`
 
-#### Formats normalisés
+#### Projets sans contexte
 
-Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une tablette ou un poste de table avec un écran avec une densité de 2x.
+1. Exporter en SVG et nommer sous la forme **projet-largeur en px**, exemple : `altitude-1400.svg`.
+2. Optimiser avec ImageOptim.
+3. Dans `<svg>` retirer `width` et `height`.
+4. Dans `<rect>` conserver seulement `fill` `height` `width`. Exemple: `fill="#fcfcfc" height="500" width="1400"`
+5. Intégrer avec une balise `<img>`.
 
 ##### 12 colonnes (pleine largeur)
 
@@ -113,6 +121,10 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
 
 ### 2021
+
+#### 16 juillet 2021
+
+* Mise en ligne du projet Danse en boîtes
 
 #### 11 juillet 2021
 
