@@ -7,7 +7,22 @@ Ce dépôt contient mon site personnel.
 * [CSS](#css)
 * [Dépendances](#dépendances)
 * [Historique](#historique-de-ce-projet)
+    * [En résumé](#en-résumé)
+    * [2021](#2021)
+    * [2020](#2020)
+    * [2019](#2019)
+    * [2007](#2007)
 * [Images](#images)
+    * [Icônes](#icônes)
+        * [Exporter une icône à partir de Figma](#exporter-une-icône-à-partir-de-figma)
+    * [Projets](#projets)
+        * [Formats normalisés](#formats-normalisés)
+            * [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
+            * [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
+            * [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
+        * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
+        * [Projets sans contexte](#projets-sans-contexte)
+        * [Exporter des PDF](#exporter-des-pdf)
 * [Javascript](#javascript)
 
 ## Configurations ciblées
@@ -198,6 +213,30 @@ La plupart des projets sont présentés avec des périphériques mobiles (iPhone
 
 Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une tablette ou un poste de table avec un écran avec une densité de 2x.
 
+##### 12 colonnes (pleine largeur)
+
+|          | 1x     | 2x     |
+|----------|--------|--------|
+| Mobile   | 600px  | 1200px |
+| Tablette | 1000px | 2000px |
+| Table    | 1400px | 2800px |
+
+##### 8 colonnes (design graphique seulement)
+
+|          | 1x     | 2x     |
+|----------|--------|--------|
+| Mobile   | 600px  | 1200px |
+| Tablette+| 927px  | 1854px |
+
+##### 6 colonnes (design graphique seulement)
+
+|          | 1x     | 2x     |
+|----------|--------|--------|
+| Mobile   | 600px  | 1200px |
+| Tablette+| 690px  | 1380px |
+
+Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
+
 #### Exporter les aperçus à partir de Photoshop
 
 1. Exporter en PNG via Exporter sous... Choisir le rééchantillonage **Bicubique plus net**
@@ -211,30 +250,6 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une ta
 3. Dans `<svg>` retirer `width` et `height`.
 4. Dans `<rect>` conserver seulement `fill` `height` `width`. Exemple: `fill="#fcfcfc" height="500" width="1400"`
 5. Intégrer avec une balise `<img>`.
-
-##### 12 colonnes (pleine largeur)
-
-|          | 1x     | 2x     |
-|----------|--------|--------|
-| Mobile   | 600px  | 1200px |
-| Tablette | 1000px | 2000px |
-| Table    | 1400px | 2800px |
-
-##### 6 colonnes (design graphique seulement)
-
-|          | 1x     | 2x     |
-|----------|--------|--------|
-| Mobile   | 600px  | 1200px |
-| Tablette+| 690px  | 1380px |
-
-##### 8 colonnes (design graphique seulement)
-
-|          | 1x     | 2x     |
-|----------|--------|--------|
-| Mobile   | 600px  | 1200px |
-| Tablette+| 927px  | 1854px |
-
-Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
 
 #### Exporter des PDF
 
