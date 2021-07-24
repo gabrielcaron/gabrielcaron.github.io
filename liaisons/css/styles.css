@@ -1328,6 +1328,12 @@ img {
 .navigation__lien.courant .mexico .guitare path, .navigation__lien:hover .mexico .guitare path {
   fill: url(#mexico-gris);
 }
+.navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation {
+  fill: url(#presto-vert-hover);
+}
+.navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole {
+  fill: url(#presto-gris-hover);
+}
 
 .lien {
   font-family: Roboto-Medium, sans serif;

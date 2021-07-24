@@ -215,6 +215,19 @@
 		}
 	  }
 	}
+
+	// Presto!
+	&.courant, &:hover {
+	  & .presto {
+		& .elevation {
+		  fill: url(#presto-vert-hover);
+		}
+
+		& .prestosymbole {
+		  fill: url(#presto-gris-hover);
+		}
+	  }
+	}
   }
 }
 
