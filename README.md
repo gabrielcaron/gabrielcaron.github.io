@@ -22,8 +22,9 @@ Ce dépôt contient mon site personnel.
             * [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
         * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
         * [Projets sans contexte](#projets-sans-contexte)
+        * [Capture d'écran de Xcode](#) --lien à faire
         * [Exporter des PDF](#exporter-des-pdf)
-* [Javascript](#javascript)
+* [JavaScript](#javascript)
 
 ## Configurations ciblées
 
@@ -251,6 +252,13 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 4. Dans `<rect>` conserver seulement `fill` `height` `width`. Exemple: `fill="#fcfcfc" height="500" width="1400"`
 5. Intégrer avec une balise `<img>`.
 
+##### Capture d'écran de Xcode
+
+1. Pour avoir un format équivalent au iPad (1400px x 1000px environ), superposer la fenêtre d'Xcode par-dessus la maquette Figma pour avoir un repère visuel.
+2. Faire ensuite la capture d'écran.
+3. Recadrer dans Photoshop en retirant les arrondis. Ils seront rajoutés via CSS.
+4. Exporter à partir de Photoshop.
+
 #### Exporter des PDF
 
 InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
@@ -258,6 +266,6 @@ InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dan
 2. Ouvrir ce fichier dans Acrobat Distiller. Utiliser les paramètres «PDF qualité max».
 3. Importer le PDF converti dans InDesign.
 
-## Javascript
+## JavaScript
 
 Pour une meilleure accessibilité, il n'y a aucun JavaScript requis pour afficher de l'information, tel un menu hamburger. Le site utilise Google Analytics 4, qui demeure facultatif pour les internautes.
