@@ -1828,4 +1828,25 @@ img {
   border: 2px solid #fff;
 }
 
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* À PROPOS
+*
+*
+*/
+.apropos .projet {
+  padding: 0;
+}
+.apropos .projet__formats {
+  display: block;
+}
+.apropos .projet .lien:hover {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */

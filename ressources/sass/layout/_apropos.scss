@@ -1,0 +1,26 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 2021.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* À PROPOS
+*
+*
+*/
+
+
+.apropos {
+
+  .projet {
+	padding: 0;
+	&__formats {
+	  display: block;
+	}
+	& .lien:hover {
+	  text-decoration: none;
+	}
+  }
+
+}
