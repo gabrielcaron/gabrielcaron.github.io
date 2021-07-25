@@ -130,8 +130,30 @@
 		}
 	  }
 
+	  &__lien-section {
+		text-decoration: none;
+		color: $noir;
+		&:hover, &:active {
+		  .navigation__titre-section {
+			&::after {
+			  margin-left: 2.5rem;
+			}
+		  }
+		}
+	  }
+
 	  &__titre-section {
 		margin: 3rem 0 1rem 2rem;
+		&::after {
+		  background: url("../images/design/fleche.svg") no-repeat center;
+		  height: 3.5rem;
+		  width: 3.5rem;
+		  display: inline-block;
+		  vertical-align: middle;
+		  margin-left: 1.5rem;
+		  content: "";
+		  transition: all 200ms ease-in-out;
+		}
 	  }
 
 	  &__liste {
@@ -143,7 +165,6 @@
 		& > * {
 		  grid-column: span 6;
 		  vertical-align: top; // Version mobile
-		  //min-height: 25rem; // Éviter un décalage causé par les figcaptions sur deux lignes
 		}
 	  }
 	}

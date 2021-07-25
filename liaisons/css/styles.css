@@ -1629,8 +1629,25 @@ img {
     grid-column: 1/11;
   }
 }
+.accueil .projets .navigation__lien-section {
+  text-decoration: none;
+  color: #000;
+}
+.accueil .projets .navigation__lien-section:hover .navigation__titre-section::after, .accueil .projets .navigation__lien-section:active .navigation__titre-section::after {
+  margin-left: 2.5rem;
+}
 .accueil .projets .navigation__titre-section {
   margin: 3rem 0 1rem 2rem;
+}
+.accueil .projets .navigation__titre-section::after {
+  background: url("../images/design/fleche.svg") no-repeat center;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1.5rem;
+  content: "";
+  transition: all 200ms ease-in-out;
 }
 .accueil .projets .navigation__liste {
   list-style-type: none;

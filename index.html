@@ -33,9 +33,10 @@
 <main class="projets" id="contenu">
 	<section class="projets__conteneurDemiGrille web-applis">
 		<nav class="navigation web-applis">
-			<h2 class="navigation__titre-section titre" aria-label="Projets de sites Web et d'applications mobiles">Web
-				+
-				applis</h2>
+			<a class="navigation__lien-section titre" href="web-applis/index.html">
+				<h2 class="navigation__titre-section" aria-label="Sites Web et applis">
+					Web + applis</h2>
+			</a>
 			<ul class="navigation__liste rangeeProjets">
 				<li class="navigation__item">
 					<a href="web-applis/alaia.html" class="navigation__lien">
@@ -129,7 +130,8 @@
 				<li class="navigation__item">
 					<a href="web-applis/memorize.html" class="navigation__lien nouveau">
 						<figure class="navigation__figure icone">
-							<svg aria-hidden="true" class="memorize" fill="none" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"
+							<svg aria-hidden="true" class="memorize" fill="none" viewBox="0 0 320 320"
+								 xmlns="http://www.w3.org/2000/svg"
 								 xmlns:xlink="http://www.w3.org/1999/xlink">
 								<linearGradient id="memorize-orange-defaut">
 									<stop offset="0" stop-color="#ff8a00"/>
@@ -139,41 +141,61 @@
 									<stop offset="0" stop-color="#ff8a00"/>
 									<stop offset="1" stop-color="#ffaf00"/>
 								</linearGradient>
-								<linearGradient id="memorize-elevation-hover" gradientUnits="userSpaceOnUse" x1="160.04" x2="160.04" xlink:href="#memorize-orange-hover" y1="319"
+								<linearGradient id="memorize-elevation-hover" gradientUnits="userSpaceOnUse" x1="160.04"
+												x2="160.04" xlink:href="#memorize-orange-hover" y1="319"
 												y2="-.00013"/>
 								<linearGradient id="memorize-gris-hover">
 									<stop offset="0" stop-color="#fff"/>
 									<stop offset="1" stop-color="#ededed"/>
 								</linearGradient>
-								<radialGradient id="memorize-carte-dos-haut-defaut" cx="0" cy="0" gradientTransform="matrix(0 -106.762 86.2016 0 208.09 155.735)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-orange-defaut"/>
-								<radialGradient id="memorize-carte-dos-bas-defaut" cx="0" cy="0" gradientTransform="matrix(0 -106.762 86.2016 0 111.09 271.735)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-orange-defaut"/>
+								<radialGradient id="memorize-carte-dos-haut-defaut" cx="0" cy="0"
+												gradientTransform="matrix(0 -106.762 86.2016 0 208.09 155.735)"
+												gradientUnits="userSpaceOnUse" r="1"
+												xlink:href="#memorize-orange-defaut"/>
+								<radialGradient id="memorize-carte-dos-bas-defaut" cx="0" cy="0"
+												gradientTransform="matrix(0 -106.762 86.2016 0 111.09 271.735)"
+												gradientUnits="userSpaceOnUse" r="1"
+												xlink:href="#memorize-orange-defaut"/>
 								<linearGradient id="memorize-gris-defaut">
 									<stop offset="0" stop-color="#fff"/>
 									<stop offset="1" stop-color="#f5f5f5"/>
 								</linearGradient>
-								<radialGradient id="memorize-carte-face-haut-defaut" cx="0" cy="0" gradientTransform="matrix(0 100.541 -81.1786 0 111.09 51.859)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-gris-defaut"/>
-								<radialGradient id="memorize-carte-face-bas-defaut" cx="0" cy="0" gradientTransform="matrix(0 100.541 -81.1786 0 208.09 167.859)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-gris-defaut"/>
-								<radialGradient id="memorize-carte-dos-haut-hover" cx="0" cy="0" gradientTransform="matrix(0 106.735 -86.18 0 208.09 49)"
+								<radialGradient id="memorize-carte-face-haut-defaut" cx="0" cy="0"
+												gradientTransform="matrix(0 100.541 -81.1786 0 111.09 51.859)"
+												gradientUnits="userSpaceOnUse" r="1"
+												xlink:href="#memorize-gris-defaut"/>
+								<radialGradient id="memorize-carte-face-bas-defaut" cx="0" cy="0"
+												gradientTransform="matrix(0 100.541 -81.1786 0 208.09 167.859)"
+												gradientUnits="userSpaceOnUse" r="1"
+												xlink:href="#memorize-gris-defaut"/>
+								<radialGradient id="memorize-carte-dos-haut-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 106.735 -86.18 0 208.09 49)"
 												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-gris-hover"/>
-								<radialGradient id="memorize-carte-dos-bas-hover" cx="0" cy="0" gradientTransform="matrix(0 106.735 -86.18 0 111.09 165)"
+								<radialGradient id="memorize-carte-dos-bas-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 106.735 -86.18 0 111.09 165)"
 												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-gris-hover"/>
-								<radialGradient id="memorize-carte-face-haut-hover" cx="0" cy="0" gradientTransform="matrix(0 -107 86.3941 0 111.09 156)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-orange-hover"/>
-								<radialGradient id="memorize-carte-face-bas-hover" cx="0" cy="0" gradientTransform="matrix(0 -107 86.3941 0 208.09 272)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-orange-hover"/>
-								<rect class="elevation" fill="#fcfcfc" height="319.003" width="319.003" x=".538666" y=".538696"/>
-								<rect class="carte-dos-haut" fill="url(#memorize-carte-dos-haut-defaut)" height="106.735" rx="10" width="86.18" x="165" y="49"/>
-								<rect class="carte-dos-bas" fill="url(#memorize-carte-dos-bas-defaut)" height="106.735" rx="10" width="86.18" x="68" y="165"/>
+								<radialGradient id="memorize-carte-face-haut-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 -107 86.3941 0 111.09 156)"
+												gradientUnits="userSpaceOnUse" r="1"
+												xlink:href="#memorize-orange-hover"/>
+								<radialGradient id="memorize-carte-face-bas-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 -107 86.3941 0 208.09 272)"
+												gradientUnits="userSpaceOnUse" r="1"
+												xlink:href="#memorize-orange-hover"/>
+								<rect class="elevation" fill="#fcfcfc" height="319.003" width="319.003" x=".538666"
+									  y=".538696"/>
+								<rect class="carte-dos-haut" fill="url(#memorize-carte-dos-haut-defaut)"
+									  height="106.735" rx="10" width="86.18" x="165" y="49"/>
+								<rect class="carte-dos-bas" fill="url(#memorize-carte-dos-bas-defaut)" height="106.735"
+									  rx="10" width="86.18" x="68" y="165"/>
 								<g class="carte-face-contours" stroke="#ff9600" stroke-width="5">
-									<rect class="carte-face-haut" fill="url(#memorize-carte-face-haut-defaut)" height="101.735" rx="7.5" width="81.1801" x="70.5" y="51.5"/>
+									<rect class="carte-face-haut" fill="url(#memorize-carte-face-haut-defaut)"
+										  height="101.735" rx="7.5" width="81.1801" x="70.5" y="51.5"/>
 									<path d="m71 87h81"/>
 									<path d="m71 102h81"/>
 									<path d="m71 117h81"/>
-									<rect class="carte-face-bas" fill="url(#memorize-carte-face-bas-defaut)" height="101.735" rx="7.5" width="81.1801" x="167.5" y="167.5"/>
+									<rect class="carte-face-bas" fill="url(#memorize-carte-face-bas-defaut)"
+										  height="101.735" rx="7.5" width="81.1801" x="167.5" y="167.5"/>
 									<path d="m168 203h81"/>
 									<path d="m168 218h81"/>
 									<path d="m168 233h81"/>
@@ -188,28 +210,35 @@
 	</section>
 	<section class="projets__conteneurDemiGrille design-graphique">
 		<nav class="navigation design-graphique">
-			<h2 class="navigation__titre-section titre">Design graphique</h2>
+			<a class="navigation__lien-section titre" href="design-graphique/index.html">
+				<h2 class="navigation__titre-section">Design graphique</h2>
+			</a>
 			<ul class="navigation__liste rangeeProjets">
 				<li class="navigation__item">
 					<a href="design-graphique/identite-visuelle/altitude.html" class="navigation__lien nouveau">
 						<figure class="navigation__figure icone">
-							<svg aria-hidden="true" class="altitude" fill="none" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"
+							<svg aria-hidden="true" class="altitude" fill="none" viewBox="0 0 320 320"
+								 xmlns="http://www.w3.org/2000/svg"
 								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="altitude-bleu-hover" gradientUnits="userSpaceOnUse" x1="160.04" x2="160.04" y1="319" y2=".044678">
+								<linearGradient id="altitude-bleu-hover" gradientUnits="userSpaceOnUse" x1="160.04"
+												x2="160.04" y1="319" y2=".044678">
 									<stop offset="0" stop-color="#00a0ff"/>
 									<stop offset="1" stop-color="#00c8ff"/>
 								</linearGradient>
-								<radialGradient id="altitude-gris-hover" cx="0" cy="0" gradientTransform="matrix(0 239.5 -239.243 0 160.447 56)"
+								<radialGradient id="altitude-gris-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 239.5 -239.243 0 160.447 56)"
 												gradientUnits="userSpaceOnUse" r="1">
 									<stop offset="0" stop-color="#fff"/>
 									<stop offset="1" stop-color="#ededed"/>
 								</radialGradient>
-								<radialGradient id="altitude-bleu-defaut" cx="0" cy="0" gradientTransform="matrix(0 -207 206.778 0 160.447 263)"
+								<radialGradient id="altitude-bleu-defaut" cx="0" cy="0"
+												gradientTransform="matrix(0 -207 206.778 0 160.447 263)"
 												gradientUnits="userSpaceOnUse" r="1">
 									<stop offset="0" stop-color="#00a0ff"/>
 									<stop offset="1" stop-color="#00c8ff"/>
 								</radialGradient>
-								<rect class="elevation" fill="#fcfcfc" height="318.972" width="319.003" x=".540009" y=".537598"/>
+								<rect class="elevation" fill="#fcfcfc" height="318.972" width="319.003" x=".540009"
+									  y=".537598"/>
 								<g class="altisymbole" fill="url(#altitude-bleu-defaut)">
 									<path d="m172.982 194.182c-21.546 12.661-46.926 20.575-75.7081 23.685 14.0941 15.151 33.1771 24.714 53.7491 26.938 20.573 2.224 41.258-3.041 58.265-14.829 17.006-11.789 29.195-29.311 34.332-49.356 5.136-20.045 2.877-41.27-6.364-59.784-2.681 6.058-5.702 11.959-9.048 17.676-13.289 23.017-32.316 42.198-55.226 55.67z"/>
 									<path d="m74.7697 148.963c24.1458-1.423 47.9783-6.179 70.8213-14.134 21.248-7.439 41.083-18.424 58.663-32.488 3.916-3.1677 7.493-6.3241 10.767-9.4338-11.906-9.8624-26.251-16.3337-41.524-18.733s-30.91-.638-45.267 5.0987-26.902 15.2367-36.3158 27.5001c-9.4139 12.264-15.3486 26.839-17.1796 42.19z"/>
@@ -370,7 +399,8 @@
 												class="navigation__lien secondaire" target="_blank"
 												aria-label="Suivez-moi sur LinkedIn. Ce lien s'ouvrira dans une nouvelle fenêtre.">LinkedIn</a>
 				</li>
-				<li class="navigation__item"><a href="https://twitter.com/gabrcaron/" class="navigation__lien secondaire"
+				<li class="navigation__item"><a href="https://twitter.com/gabrcaron/"
+												class="navigation__lien secondaire"
 												target="_blank"
 												aria-label="Suivez-moi sur Twitter. Ce lien s'ouvrira dans une nouvelle fenêtre.">Twitter</a>
 				</li>
