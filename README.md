@@ -57,6 +57,11 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 
 ### 2021
 
+#### 24 juillet 2021
+
+* Mise en ligne du projet Memorize
+* Mise en ligne du projet Presto!
+
 #### 22 juillet 2021
 
 * Mise en ligne du projet Destinations Canada (Design graphique)
@@ -240,9 +245,9 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 
 #### Exporter les aperçus à partir de Photoshop
 
-1. Exporter en PNG via Exporter sous... Choisir le rééchantillonage **Bicubique plus net**
-2. Optimiser avec ImageOptim à 80% de qualité
-3. Nommer sous la forme **projet-largeur en px**, exemple : `mexico-1400.png`
+1. Exporter en PNG via Exporter sous... Choisir le rééchantillonage **Bicubique plus net**.
+2. Optimiser avec ImageOptim à 70% de qualité.
+3. Nommer sous la forme **projet-largeur en px**, exemple : `mexico-1400.png`.
 
 #### Projets sans contexte
 
