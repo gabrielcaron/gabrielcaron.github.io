@@ -1828,6 +1828,12 @@ img {
   border: 2px solid #fff;
 }
 @media screen and (min-width: 600px) {
+  .projet.masonry img {
+    border-radius: 3.5rem;
+    box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+  }
+}
+@media screen and (min-width: 600px) {
   .projet.macOS img {
     border-radius: 1rem;
     box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
