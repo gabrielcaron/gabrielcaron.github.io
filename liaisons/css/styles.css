@@ -1309,7 +1309,7 @@ img {
   fill: url(#destinations-gris-hover);
 }
 .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
-  fill: url(#grosseile-bleu-hover);
+  fill: url(#grosseile-vert-hover);
 }
 .navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
   fill: url(#grosseile-gris-hover);
