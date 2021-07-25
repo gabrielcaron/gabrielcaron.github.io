@@ -133,7 +133,7 @@
 	  &__lien-section {
 		text-decoration: none;
 		color: $noir;
-		&:hover, &:active {
+		&:hover {
 		  .navigation__titre-section {
 			&::after {
 			  margin-left: 2.5rem;
@@ -145,7 +145,7 @@
 	  &__titre-section {
 		margin: 3rem 0 1rem 2rem;
 		&::after {
-		  background: url("../images/design/fleche.svg") no-repeat center;
+		  background: url("../images/icones/fleche-section.svg") no-repeat center;
 		  height: 3.5rem;
 		  width: 3.5rem;
 		  display: inline-block;

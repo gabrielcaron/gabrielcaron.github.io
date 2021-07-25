@@ -1103,9 +1103,6 @@ img {
 .pieddepage .navigation__lien.section {
   line-height: 100%;
 }
-.pieddepage .navigation__lien.secondaire {
-  font-size: 2rem;
-}
 .pieddepage .navigation__lien:hover {
   border-bottom: solid 0.3rem #404040;
 }
@@ -1249,6 +1246,19 @@ img {
 }
 .navigation__lien.nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:active .navigation__figcaption::before {
   background-image: url(../images/icones/nouveau--hover.svg);
+}
+.navigation__lien:hover.externe::after {
+  margin: 0 0 0.75rem 0.75rem;
+}
+.navigation__lien.externe::after {
+  background: url("../images/icones/lien-externe.svg") no-repeat center;
+  height: 1.75rem;
+  width: 1.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  content: "";
+  transition: all 200ms ease-in-out;
 }
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
   fill: url(#SOS-elevation-hover);
@@ -1633,14 +1643,14 @@ img {
   text-decoration: none;
   color: #000;
 }
-.accueil .projets .navigation__lien-section:hover .navigation__titre-section::after, .accueil .projets .navigation__lien-section:active .navigation__titre-section::after {
+.accueil .projets .navigation__lien-section:hover .navigation__titre-section::after {
   margin-left: 2.5rem;
 }
 .accueil .projets .navigation__titre-section {
   margin: 3rem 0 1rem 2rem;
 }
 .accueil .projets .navigation__titre-section::after {
-  background: url("../images/design/fleche.svg") no-repeat center;
+  background: url("../images/icones/fleche-section.svg") no-repeat center;
   height: 3.5rem;
   width: 3.5rem;
   display: inline-block;
