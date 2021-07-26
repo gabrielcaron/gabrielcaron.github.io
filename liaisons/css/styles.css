@@ -1314,6 +1314,12 @@ img {
 .navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
   fill: url(#grosseile-gris-hover);
 }
+.navigation__lien.courant .manueldetypo .elevation, .navigation__lien:hover .manueldetypo .elevation {
+  fill: url(#manueldetypo-bleu-hover);
+}
+.navigation__lien.courant .manueldetypo .livre, .navigation__lien:hover .manueldetypo .livre {
+  fill: url(#manueldetypo-gris-hover);
+}
 .navigation__lien.courant .memorize .elevation, .navigation__lien:hover .memorize .elevation {
   fill: url(#memorize-elevation-hover);
 }

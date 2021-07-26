@@ -195,6 +195,19 @@
 	  }
 	}
 
+	// Manuel de typographie
+	&.courant, &:hover {
+	  & .manueldetypo {
+		& .elevation {
+		  fill: url(#manueldetypo-bleu-hover);
+		}
+
+		& .livre {
+		  fill: url(#manueldetypo-gris-hover);
+		}
+	  }
+	}
+
 	// Memorize
 	&.courant, &:hover {
 	  & .memorize {
