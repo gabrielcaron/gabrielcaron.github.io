@@ -228,11 +228,11 @@
 	&.courant, &:hover {
 	  & .mexico {
 		& .elevation {
-		  fill: url(#mexico-orange-lineaire);
+		  fill: url(#mexico-orange-hover);
 		}
 
 		& .guitare path {
-		  fill: url(#mexico-gris);
+		  fill: url(#mexico-gris-hover);
 		}
 	  }
 	}

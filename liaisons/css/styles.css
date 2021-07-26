@@ -1333,10 +1333,10 @@ img {
   stroke: #fff;
 }
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
-  fill: url(#mexico-orange-lineaire);
+  fill: url(#mexico-orange-hover);
 }
 .navigation__lien.courant .mexico .guitare path, .navigation__lien:hover .mexico .guitare path {
-  fill: url(#mexico-gris);
+  fill: url(#mexico-gris-hover);
 }
 .navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation {
   fill: url(#presto-vert-hover);
