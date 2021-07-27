@@ -1,43 +1,46 @@
 <img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px">
 
-Ce dépôt contient mon site personnel.
+Ce dépôt contient mon site personnel ainsi que des informations pratiques pour assurer sa continuité.
+
+Ce projet est mise à jour en continu.
 
 ## Sommaire
 * [Configurations ciblées](#configurations-ciblées)
 * [CSS](#css)
 * [Dépendances](#dépendances)
-* [Historique](#historique-de-ce-projet)
+* [Historique](#historique)
     * [En résumé](#en-résumé)
     * [2021](#2021)
-        * [Juillet 2021](#) -- liens sur tous les mois
-        * [Juin 2021](#)
-        * [Mai 2021](#)
-        * [Février 2021](#)
-        * [Janvier 2021](#)
+        * [Juillet 2021](#juillet-2021)
+        * [Juin 2021](#juin-2021)
+        * [Mai 2021](#mai-2021)
+        * [Février 2021](#février-2021)
+        * [Janvier 2021](#janvier-2021)
     * [2020](#2020)
-        * [Décembre 2020](#)
-        * [Septembre 2020](#)
-        * [Mars 2020](#)
-        * [Janvier 2020](#)
+        * [Décembre 2020](#décembre-2020)
+        * [Septembre 2020](#septembre-2020)
+        * [Mars 2020](#mars-2020)
+        * [Janvier 2020](#janvier-2020)
     * [2019](#2019)
-        * [Décembre 2019](#)
-        * [Juin 2019](#)
+        * [Décembre 2019](#décembre-2019)
+        * [Juin 2019](#juin-2019)
     * [2007](#2007)
-        * [Mai 2007](#)
+        * [Mai 2007](#mai-2007)
 * [Images](#images)
     * [Icônes](#icônes)
-        * [Couleurs](#) --lien
-        * [Tailles](#) --lien
-        * [Intégration d'une icône](#) --lien
+        * [Couleurs](#couleurs)
+        * [Tailles](#tailles)
+        * [Intégration d'une icône](#intégration-dune-icône)
     * [Projets](#projets)
         * [Formats normalisés](#formats-normalisés)
             * [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
             * [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
+            * [8 colonnes (design graphique seulement)](#7-colonnes-design-graphique-seulement)
             * [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
         * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
         * [Projets sans contexte](#projets-sans-contexte)
-        * [Capture d'écran de Xcode](#) --lien à faire
-        * [Exporter des PDF pour InDesign](#exporter-des-pdf)
+        * [Capture d'écran de Xcode](#capture-décran-de-xcode)
+        * [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 * [JavaScript](#javascript)
 
 ## Configurations ciblées
@@ -199,6 +202,8 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 
 ### Projets
 
+Le portfolio contient deux types de projets : Web/applications mobiles et Design graphique. Les projets Web sont présentés en version mobile et tablette. Sauf pour de rares exceptions, les projets de design graphique sont présentés « sans contexte », c'est-à-dire sans support physique.
+
 La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
 * On peut désactiver le téléchargement du document PDF
 * On peut zoomer autant qu'on souhaite
@@ -253,7 +258,7 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 4. Dans `<rect>` conserver seulement `fill` `height` `width`. Exemple: `fill="#fcfcfc" height="500" width="1400"`
 5. Intégrer avec une balise `<img>`.
 
-##### Capture d'écran de Xcode
+#### Capture d'écran de Xcode
 
 1. Pour avoir un format équivalent au iPad (1400px x 1000px environ), superposer la fenêtre d'Xcode par-dessus la maquette Figma pour avoir un repère visuel.
 2. Faire ensuite la capture d'écran.
