@@ -37,7 +37,7 @@ Ce dépôt contient mon site personnel.
         * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
         * [Projets sans contexte](#projets-sans-contexte)
         * [Capture d'écran de Xcode](#) --lien à faire
-        * [Exporter des PDF](#exporter-des-pdf)
+        * [Exporter des PDF pour InDesign](#exporter-des-pdf)
 * [JavaScript](#javascript)
 
 ## Configurations ciblées
@@ -199,7 +199,7 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 
 ### Projets
 
-La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Publish Online pour les raisons suivantes :
+La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
 * On peut désactiver le téléchargement du document PDF
 * On peut zoomer autant qu'on souhaite
 * La qualité d'affichage est supérieure
@@ -207,6 +207,8 @@ La plupart des projets sont présentés avec des périphériques mobiles (iPhone
 #### Formats normalisés
 
 Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une tablette ou un poste de table avec un écran avec une densité de 2x.
+
+Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
 
 ##### 12 colonnes (pleine largeur)
 
@@ -221,6 +223,13 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une ta
 |          | 1x     | 2x     |
 |----------|--------|--------|
 | Mobile   | 600px  | 1200px |
+| Tablette+| 808px  | 1616px |
+
+##### 7 colonnes (design graphique seulement)
+
+|          | 1x     | 2x     |
+|----------|--------|--------|
+| Mobile   | 600px  | 1200px |
 | Tablette+| 927px  | 1854px |
 
 ##### 6 colonnes (design graphique seulement)
@@ -229,8 +238,6 @@ Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une ta
 |----------|--------|--------|
 | Mobile   | 600px  | 1200px |
 | Tablette+| 690px  | 1380px |
-
-Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple: `mexico-1000.png`. Ne pas rajouter de référence aux périphériques : mobile, tablette, etc.
 
 #### Exporter les aperçus à partir de Photoshop
 
@@ -253,7 +260,7 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 3. Recadrer dans Photoshop en retirant les arrondis. Ils seront rajoutés via CSS.
 4. Exporter à partir de Photoshop.
 
-#### Exporter des PDF
+#### Exporter des PDF pour InDesign
 
 InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
 1. Aller dans Acrobat > Fichier > Exporter vers > PostScript. Enregistrer.
