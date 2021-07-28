@@ -2,7 +2,7 @@
 * Typographie responsive (Mobile First)
 ========================================================================
 *
-* @author Gabriel Caron
+* @author Gabriel Caron (version 5.0)
 *
 * TABLE DES MATIÈRES
 * Polices
@@ -74,7 +74,7 @@ h1, h2, h3 {
 h1 {
   font-size: 4.5rem;
   text-align: center;
-  padding: 7rem 0;
+  padding: 2rem 0 5rem 0;
   @media screen and (min-width: $mobile600px) {
     font-size: 7rem;
     padding: 10rem 0;
@@ -83,7 +83,7 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: $mobile600px) {
     font-size: 4rem;
   }
   font-family: $RobotoBold;

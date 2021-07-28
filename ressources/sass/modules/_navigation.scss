@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.3
+* @version 2021.4
 *
 * ------------------
 * TABLE DES MATIERES
@@ -145,11 +145,16 @@
 
   &__liste {
 	list-style-type: none;
-	padding: 0 3rem;
+	padding: 0;
 	vertical-align: top;
+	@media screen and (min-width: $tablet900px) {
+	  padding: 0 3rem;
+	}
 
 	&.rangeeSections {
-	  padding: 1rem 0 1rem 3rem;
+	  @media screen and (min-width: $tablet900px) {
+		padding: 1rem 0 1rem 3rem;
+	  }
 
 	  & > * {
 		width: initial;

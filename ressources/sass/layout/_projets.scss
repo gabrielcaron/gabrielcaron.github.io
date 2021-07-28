@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.2
+* @version 2021.3
 *
 * ------------------
 * TABLE DES MATIERES
@@ -25,7 +25,10 @@
   }
 
   &__titre-h2 {
-	margin: 4rem 0 0 5rem;
+	margin: 4rem 0 0 1rem;
+	@media screen and (min-width: $tablet900px) {
+	  margin: 4rem 0 0 5rem;
+	}
   }
 }
 
@@ -35,17 +38,24 @@
 .projet {
 
   &__titre {
-	font-size: 8rem;
+	font-size: 5.5rem;
 	text-align: left;
 	margin: 0;
-	padding: 7rem 0 0 0;
+	padding: 3rem 0 0 0;
+	@media screen and (min-width: $mobile600px) {
+	  font-size: 8rem;
+	  padding: 7rem 0 0 0;
+	}
   }
 
   &__description {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	letter-spacing: $EspacementStandard;
 	color: $gris25;
 	margin: 1rem 0;
+	@media screen and (min-width: $mobile600px) {
+	  font-size: 2.5rem;
+	}
   }
 
   &__processus {
@@ -62,7 +72,10 @@
   }
 
   &__figure {
-	margin: 7rem 0 0 0;
+	margin: 4rem 0 0 0;
+	@media screen and (min-width: $mobile600px) {
+	  margin: 7rem 0 0 0;
+	}
   }
 
   &__figcaption {
@@ -82,6 +95,7 @@
 	  img {
 		border-radius: 3.5rem;
 		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+		border: solid 2px white;
 	  }
 	}
   }

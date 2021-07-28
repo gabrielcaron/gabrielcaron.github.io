@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.5
+* @version 2021.6
 *
 * ------------------
 * TABLE DES MATIERES
@@ -20,18 +20,28 @@
 	font-family: $RobotoMedium;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 6rem;
+	font-size: 5rem;
 	line-height: 100%;
 	letter-spacing: $EspacementStandard;
 	text-align: center;
 	color: #000000;
 	text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
-	margin: 25rem 0 0 0;
+	margin: 5rem 0 0 0;
+	padding: 0 3rem;
+	@media screen and (min-width: 450px) {
+	  font-size: 6rem;
+	}
+	@media screen and (min-width: $tablet900px) {
+	  margin: 25rem 0 0 0;
+	}
   }
 
   &__hashtags {
 	text-align: center;
-	margin-bottom: 20rem;
+	margin-bottom: 10rem;
+	@media screen and (min-width: $tablet900px) {
+	  margin-bottom: 20rem;
+	}
   }
 
 
@@ -133,10 +143,12 @@
 	  &__lien-section {
 		text-decoration: none;
 		color: $noir;
-		&:hover {
-		  .navigation__titre-section {
-			&::after {
-			  margin-left: 2.5rem;
+		@media screen and (min-width: $mobile600px) {
+		  &:hover {
+			.navigation__titre-section {
+			  &::after {
+				margin-left: 2.5rem;
+			  }
 			}
 		  }
 		}
@@ -144,15 +156,17 @@
 
 	  &__titre-section {
 		margin: 3rem 0 1rem 2rem;
-		&::after {
-		  background: url("../images/icones/fleche-section.svg") no-repeat center;
-		  height: 3.5rem;
-		  width: 3.5rem;
-		  display: inline-block;
-		  vertical-align: middle;
-		  margin-left: 1.5rem;
-		  content: "";
-		  transition: all 200ms ease-in-out;
+		@media screen and (min-width: $mobile600px) {
+		  &::after {
+			background: url("../images/icones/fleche-section.svg") no-repeat center;
+			height: 3.5rem;
+			width: 3.5rem;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 1.5rem;
+			content: "";
+			transition: all 200ms ease-in-out;
+		  }
 		}
 	  }
 
