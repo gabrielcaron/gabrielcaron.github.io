@@ -32,15 +32,19 @@ Ce projet est mise à jour en continu.
         * [Tailles](#tailles)
         * [Intégration d'une icône](#intégration-dune-icône)
     * [Projets](#projets)
-        * [Formats normalisés](#formats-normalisés)
+        * [Droits d'auteur](#) --lien
+            * [Non-indexation des projets protégés par copyright](#) --lien
+        * [Formats des images](#) --lien
             * [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
             * [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
-            * [8 colonnes (design graphique seulement)](#7-colonnes-design-graphique-seulement)
+            * [7 colonnes (design graphique seulement)](#7-colonnes-design-graphique-seulement)
             * [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
-        * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
-        * [Projets sans contexte](#projets-sans-contexte)
-        * [Capture d'écran de Xcode](#capture-décran-de-xcode)
-        * [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
+        * [Création et exportation des aperçus](#) --liens
+            * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
+            * [Projets sans contexte en SVG](#projets-sans-contexte)
+            * [Projets réalisés avec Xcode](#capture-décran-de-xcode) --liens
+        * [Adobe Publish Online](#exporter-des-pdf-pour-indesign)
+            * [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 * [JavaScript](#javascript)
 
 ## Configurations ciblées
@@ -76,6 +80,7 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 
 #### Juillet 2021
 
+* Mise en ligne du projet Manuel de typographie (27 juillet 2021)
 * Mise en ligne du projet Memorize (24 juillet 2021)
 * Mise en ligne du projet Presto! (24 juillet 2021)
 * Mise en ligne du projet Destinations Canada (Design graphique) (22 juillet 2021)
@@ -204,12 +209,17 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 
 Le portfolio contient deux types de projets : Web/applications mobiles et Design graphique. Les projets Web sont présentés en version mobile et tablette. Sauf pour de rares exceptions, les projets de design graphique sont présentés « sans contexte », c'est-à-dire sans support physique.
 
-La plupart des projets sont présentés avec des périphériques mobiles (iPhone et/ou iPad). Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
-* On peut désactiver le téléchargement du document PDF
-* On peut zoomer autant qu'on souhaite
-* La qualité d'affichage est supérieure
+La plupart des projets sont présentés dans un contexte de périphériques mobiles (iPhone et/ou iPad).
 
-#### Formats normalisés
+#### Droits d'auteur
+
+On évite d'utiliser dans les projets des identifications visuelles protégées par copyright. Cependant, le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition de mentionner que « Ce projet n'a pas été faite en association avec le Gouvernement du Canada ni avec l'appui de celui-ci. »
+
+##### Non-indexation des projets protégés par copyright
+
+Lorsqu'il contient des éléments protégés par copyright, la page Web du projet n'est pas indexée par les moteurs de recherche pour éviter toute confusion chez les internautes.
+
+#### Formats des images
 
 Toutes les images au format PNG sont à 1x et 2x. Le site est optimal sur une tablette ou un poste de table avec un écran avec une densité de 2x.
 
@@ -228,14 +238,14 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 |          | 1x     | 2x     |
 |----------|--------|--------|
 | Mobile   | 600px  | 1200px |
-| Tablette+| 808px  | 1616px |
+| Tablette+| 927px  | 1854px |
 
 ##### 7 colonnes (design graphique seulement)
 
 |          | 1x     | 2x     |
 |----------|--------|--------|
 | Mobile   | 600px  | 1200px |
-| Tablette+| 927px  | 1854px |
+| Tablette+| 808px  | 1616px |
 
 ##### 6 colonnes (design graphique seulement)
 
@@ -244,13 +254,15 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 | Mobile   | 600px  | 1200px |
 | Tablette+| 690px  | 1380px |
 
-#### Exporter les aperçus à partir de Photoshop
+#### Création et exportation des aperçus
+
+##### Exporter les aperçus à partir de Photoshop
 
 1. Exporter en PNG via Exporter sous... Choisir le rééchantillonage **Bicubique plus net**.
 2. Optimiser avec ImageOptim à 70% de qualité.
 3. Nommer sous la forme **projet-largeur en px**, exemple : `mexico-1400.png`.
 
-#### Projets sans contexte
+##### Projets sans contexte en SVG
 
 1. Exporter en SVG et nommer sous la forme **projet-largeur en px**, exemple : `altitude-1400.svg`.
 2. Optimiser avec ImageOptim.
@@ -258,14 +270,21 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 4. Dans `<rect>` conserver seulement `fill` `height` `width`. Exemple: `fill="#fcfcfc" height="500" width="1400"`
 5. Intégrer avec une balise `<img>`.
 
-#### Capture d'écran de Xcode
+##### Projets réalisés avec Xcode
 
 1. Pour avoir un format équivalent au iPad (1400px x 1000px environ), superposer la fenêtre d'Xcode par-dessus la maquette Figma pour avoir un repère visuel.
 2. Faire ensuite la capture d'écran.
 3. Recadrer dans Photoshop en retirant les arrondis. Ils seront rajoutés via CSS.
 4. Exporter à partir de Photoshop.
 
-#### Exporter des PDF pour InDesign
+#### Adobe Publish Online
+
+Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
+* On peut désactiver le téléchargement du document PDF
+* On peut zoomer autant qu'on souhaite
+* La qualité d'affichage est supérieure
+
+##### Exporter des PDF pour InDesign
 
 InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
 1. Aller dans Acrobat > Fichier > Exporter vers > PostScript. Enregistrer.
