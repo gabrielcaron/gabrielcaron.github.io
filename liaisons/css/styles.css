@@ -1318,6 +1318,12 @@ img {
 .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
   fill: url(#destinations-gris-hover);
 }
+.navigation__lien.courant .festivaloff .elevation, .navigation__lien:hover .festivaloff .elevation {
+  fill: url(#festivaloff-violet-hover);
+}
+.navigation__lien.courant .festivaloff .note, .navigation__lien:hover .festivaloff .note {
+  fill: url(#festivaloff-gris-hover);
+}
 .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
   fill: url(#grosseile-vert-hover);
 }

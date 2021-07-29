@@ -195,6 +195,19 @@
 	  }
 	}
 
+	// Festival OFF
+	&.courant, &:hover {
+	  & .festivaloff {
+		& .elevation {
+		  fill: url(#festivaloff-violet-hover);
+		}
+
+		& .note {
+		  fill: url(#festivaloff-gris-hover);
+		}
+	  }
+	}
+
 	// Grosse-Île
 	&.courant, &:hover {
 	  & .grosseile {
