@@ -152,6 +152,19 @@
 	  }
 	}
 
+	// Boréal
+	&.courant, &:hover {
+	  & .boreal {
+		& .elevation {
+		  fill: url(#boreal-vert-hover);
+		}
+
+		& .feuille {
+		  fill: url(#boreal-gris-hover);
+		}
+	  }
+	}
+
 	// Danse en boîtes
 	&.courant, &:hover {
 	  & .danseenboites {

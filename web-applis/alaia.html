@@ -17,13 +17,18 @@
 		<a href="../index.html" aria-label="Revenir à l'accueil" class="entete__logo entete__lien-accueil"></a>
 		<nav class="navigation">
 			<ul class="navigation__liste">
-				<li class="navigation__item"><a href="../web-applis/index.html"
-												class="navigation__lien courante"
-												aria-label="Web et applications mobiles">Web +&nbsp;applis</a></li>
-				<li class="navigation__item"><a href="../design-graphique/index.html" class="navigation__lien">Design
-					graphique</a></li>
-				<li class="navigation__item"><a href="../me-contacter/index.html" class="navigation__lien">Me
-					contacter</a></li>
+				<li class="navigation__item">
+					<a href="../web-applis/index.html"
+					   class="navigation__lien courante"
+					   aria-label="Web et applications mobiles">Web +&nbsp;applis</a></li>
+				<li class="navigation__item">
+					<a href="../design-graphique/index.html" class="navigation__lien">Design
+						graphique</a>
+				</li>
+				<li class="navigation__item">
+					<a href="../me-contacter/index.html" class="navigation__lien">Me
+						contacter</a>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -33,17 +38,23 @@
 		<h2 class="screen-reader-only">Projets</h2>
 		<nav class="navigation">
 			<ul class="navigation__liste rangeeSections">
-				<li class="navigation__item"><a href="alaia.html"
-												class="navigation__lien courant">Web</a></li>
-				<li class="navigation__item"><a href="memorize.html" class="navigation__lien">Applis</a></li>
+				<li class="navigation__item">
+					<a href="alaia.html"
+					   class="navigation__lien courant">Web</a>
+				</li>
+				<li class="navigation__item">
+					<a href="memorize.html" class="navigation__lien">Applis</a>
+				</li>
 			</ul>
 			<ul class="navigation__liste projets__conteneurIcones rangeeProjets">
 				<li class="navigation__item">
 					<a href="alaia.html" class="navigation__lien courant">
 						<figure class="navigation__figure icone">
-							<svg aria-hidden="true" class="alaia" fill="none" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"
+							<svg aria-hidden="true" class="alaia" fill="none" viewBox="0 0 320 320"
+								 xmlns="http://www.w3.org/2000/svg"
 								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="alaia-bleu" gradientUnits="userSpaceOnUse" x1="160.039" x2="160.039" y1=".079987" y2="319.083">
+								<linearGradient id="alaia-bleu" gradientUnits="userSpaceOnUse" x1="160.039" x2="160.039"
+												y1=".079987" y2="319.083">
 									<stop offset=".213542" stop-color="#035393"/>
 									<stop offset="1" stop-color="#036873"/>
 								</linearGradient>
@@ -71,7 +82,8 @@
 									<stop offset="0" stop-color="#eec881"/>
 									<stop offset="1" stop-color="#e6b353"/>
 								</radialGradient>
-								<rect class="elevation" fill="#fcfcfc" height="319" rx="55" width="319" x=".538666" y=".538666"/>
+								<rect class="elevation" fill="#fcfcfc" height="319" rx="55" width="319" x=".538666"
+									  y=".538666"/>
 								<path class="planche-arriere"
 									  d="m67.154 251.841c-10.1343-10.135 8.4286-50.736 79.608-121.915 58.776-58.7762 97.356-70.489 105.076-62.7693 7.72 7.7196-3.987 46.3053-62.763 105.0813-71.18 71.18-111.7836 89.74-121.921 79.603z"
 									  fill="url(#alaia-beige-arriere)"/>
@@ -89,22 +101,60 @@
 							</svg>
 							<figcaption class="navigation__figcaption">Alaia</figcaption>
 						</figure>
-					</a></li>
+					</a>
+				</li>
+				<li class="navigation__item">
+					<a href="boreal-magazine.html" class="navigation__lien">
+						<figure class="navigation__figure icone">
+							<svg aria-hidden="true" class="boreal" fill="none" viewBox="0 0 320 320"
+								 xmlns="http://www.w3.org/2000/svg"
+								 xmlns:xlink="http://www.w3.org/1999/xlink">
+								<linearGradient id="boreal-vert-hover" gradientUnits="userSpaceOnUse" x1="160.039"
+												x2="160.039" y1=".000001" y2="318.997">
+									<stop offset="0" stop-color="#009250"/>
+									<stop offset="1" stop-color="#006437"/>
+								</linearGradient>
+								<radialGradient id="boreal-gris-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 114.072 -222.998 0 159.499 102.999)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset=".494792" stop-color="#fff"/>
+									<stop offset="1" stop-color="#ededed"/>
+								</radialGradient>
+								<radialGradient id="boreal-vert-defaut" cx="0" cy="0"
+												gradientTransform="matrix(0 114.072 -222.998 0 159.499 102.999)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset="0" stop-color="#009250"/>
+									<stop offset="1" stop-color="#006437"/>
+								</radialGradient>
+								<rect class="elevation" fill="#fcfcfc" height="319" width="319" x=".538696"
+									  y=".538666"/>
+								<path class="feuille"
+									  d="m269.581 128.948c-71.853 4.892-77.405-28.81-115.116-25.752-27.76 2.266-47.463 28.468-57.6835 46.02-.185.352-.4817.633-.8437.799-.362.165-.769.207-1.1572.118-12.9905-2.494-25.6376-6.521-37.6748-11.995-6.5976-3.075-12.366 11.132-6.9762 13.883 54.8904 28.001 131.0684 8.704 159.0274 0 .442-.147.922-.129 1.352.049.43.179.781.507.987.923.207.417.255.894.137 1.343-.119.449-.396.841-.781 1.102-17.883 12.589-60.442 36.795-114.1967 28.99-.381-.053-.7691.009-1.1152.176-.3462.167-.6348.433-.8296.764s-.287.712-.2649 1.095c.0222.383.1575.751.3891 1.058 9.2113 12.481 30.0853 34.924 68.4993 28.378 57.937-9.891 117.676-89.325 106.247-86.951z"
+									  fill="url(#boreal-vert-defaut)"/>
+							</svg>
+							<figcaption class="navigation__figcaption">Boréal</figcaption>
+						</figure>
+					</a>
+				</li>
 				<li class="navigation__item">
 					<a href="destinations-canada.html" class="navigation__lien">
 						<figure class="navigation__figure icone">
-							<svg aria-hidden="true" class="destinations" fill="none" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg"
+							<svg aria-hidden="true" class="destinations" fill="none" viewBox="0 0 260 260"
+								 xmlns="http://www.w3.org/2000/svg"
 								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="destinations-rouge-hover" gradientUnits="userSpaceOnUse" x1="130" x2="130" y1="0" y2="260">
+								<linearGradient id="destinations-rouge-hover" gradientUnits="userSpaceOnUse" x1="130"
+												x2="130" y1="0" y2="260">
 									<stop offset="0" stop-color="#f20000"/>
 									<stop offset="1" stop-color="#de0000"/>
 								</linearGradient>
-								<radialGradient id="destinations-rouge-symbole" cx="0" cy="0" gradientTransform="matrix(0 84.4916 -84.5 0 129.5 130.492)"
+								<radialGradient id="destinations-rouge-symbole" cx="0" cy="0"
+												gradientTransform="matrix(0 84.4916 -84.5 0 129.5 130.492)"
 												gradientUnits="userSpaceOnUse" r="1">
 									<stop offset="0" stop-color="#f20000"/>
 									<stop offset="1" stop-color="#de0000"/>
 								</radialGradient>
-								<radialGradient id="destinations-gris-hover" cx="0" cy="0" gradientTransform="matrix(0 84.4916 -84.5 0 129.5 130.492)"
+								<radialGradient id="destinations-gris-hover" cx="0" cy="0"
+												gradientTransform="matrix(0 84.4916 -84.5 0 129.5 130.492)"
 												gradientUnits="userSpaceOnUse" r="1">
 									<stop offset=".645133" stop-color="#fff"/>
 									<stop offset="1" stop-color="#ededed"/>
@@ -117,7 +167,8 @@
 
 							<figcaption class="navigation__figcaption">Destinations Canada</figcaption>
 						</figure>
-					</a></li>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</section>
@@ -125,15 +176,20 @@
 		<h1 class="projet__titre">Alaia</h1>
 		<p class="projet__description">La culture du surf</p>
 		<ul class="projet__processus">
-			<li class="projet__formats"><a href="https://indd.adobe.com/view/e91e0ac8-1e70-43cd-8bc5-f581a4bb7831" class="lien web"
+			<li class="projet__formats"><a href="https://indd.adobe.com/view/e91e0ac8-1e70-43cd-8bc5-f581a4bb7831"
+										   class="lien web"
 										   aria-label="Esquisses préliminaires dans Adobe Publish Online. Ce lien s'ouvrira dans une nouvelle fenêtre."
 										   target="_blank">Esquisses préliminaires</a></li>
-			<li class="projet__formats"><a href="https://www.figma.com/file/CkXxDHPZYD6JhOcaBP24gq/Planche-de-style-Alaia-gabrielcaron.ca?node-id=0%3A1" class="lien figma"
-										   aria-label="Planche de style Figma. Ce lien s'ouvrira dans une nouvelle fenêtre."
-										   target="_blank">Planche de style</a></li>
-			<li class="projet__formats"><a href="https://www.figma.com/file/eXSlYwYifEYMMA7HAjFXKo/Alaia-gabrielcaron.ca?node-id=0%3A1" class="lien figma"
-										   aria-label="Maquette Figma. Ce lien s'ouvrira dans une nouvelle fenêtre."
-										   target="_blank">Maquette Figma</a></li>
+			<li class="projet__formats"><a
+					href="https://www.figma.com/file/CkXxDHPZYD6JhOcaBP24gq/Planche-de-style-Alaia-gabrielcaron.ca?node-id=0%3A1"
+					class="lien figma"
+					aria-label="Planche de style Figma. Ce lien s'ouvrira dans une nouvelle fenêtre."
+					target="_blank">Planche de style</a></li>
+			<li class="projet__formats"><a
+					href="https://www.figma.com/file/eXSlYwYifEYMMA7HAjFXKo/Alaia-gabrielcaron.ca?node-id=0%3A1"
+					class="lien figma"
+					aria-label="Maquette Figma. Ce lien s'ouvrira dans une nouvelle fenêtre."
+					target="_blank">Maquette Figma</a></li>
 		</ul>
 		<figure class="projet__figure">
 			<picture class="projet__picture">

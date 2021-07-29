@@ -1297,6 +1297,12 @@ img {
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
   fill: url(#goutte-gris-hover);
 }
+.navigation__lien.courant .boreal .elevation, .navigation__lien:hover .boreal .elevation {
+  fill: url(#boreal-vert-hover);
+}
+.navigation__lien.courant .boreal .feuille, .navigation__lien:hover .boreal .feuille {
+  fill: url(#boreal-gris-hover);
+}
 .navigation__lien.courant .danseenboites .elevation, .navigation__lien:hover .danseenboites .elevation {
   fill: url(#danse-or-elevation-hover);
 }
