@@ -32,18 +32,18 @@ Ce projet est mise à jour en continu.
         * [Tailles](#tailles)
         * [Intégration d'une icône](#intégration-dune-icône)
     * [Projets](#projets)
-        * [Droits d'auteur](#) --lien
-            * [Non-indexation des projets protégés par copyright](#) --lien
-        * [Formats des images](#) --lien
+        * [Droits d'auteur](#droits-dauteur)
+            * [Non-indexation des projets protégés par copyright](#non-indexation-des-projets-protégés-par-copyright)
+        * [Formats des images](#formats-des-images)
             * [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
             * [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
             * [7 colonnes (design graphique seulement)](#7-colonnes-design-graphique-seulement)
             * [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
-        * [Création et exportation des aperçus](#) --liens
+        * [Création et exportation des aperçus](#création-et-exportation-des-aperçus)
             * [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
-            * [Projets sans contexte en SVG](#projets-sans-contexte)
-            * [Projets réalisés avec Xcode](#capture-décran-de-xcode) --liens
-        * [Adobe Publish Online](#exporter-des-pdf-pour-indesign)
+            * [Projets sans contexte en SVG](#projets-sans-contexte-en-svg)
+            * [Projets réalisés avec Xcode](#projets-réalisés-avec-xcode)
+        * [Adobe Publish Online](#adobe-publish-online)
             * [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 * [JavaScript](#javascript)
 
