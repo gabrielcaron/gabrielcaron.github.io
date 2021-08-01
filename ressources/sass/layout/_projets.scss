@@ -17,6 +17,7 @@
   &__selecteur {
 	@media screen and (min-width: $tablet900px) {
 	  @include bulle();
+	  margin-bottom: 3rem;
 	}
   }
 
@@ -44,7 +45,6 @@
 	padding: 3rem 0 0 0;
 	@media screen and (min-width: $mobile600px) {
 	  font-size: 8rem;
-	  padding: 7rem 0 0 0;
 	}
   }
 

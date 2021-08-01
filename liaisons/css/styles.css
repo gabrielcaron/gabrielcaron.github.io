@@ -1838,6 +1838,7 @@ img {
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
+    margin-bottom: 3rem;
   }
   .projets__selecteur:before {
     content: "";
@@ -1880,7 +1881,6 @@ img {
 @media screen and (min-width: 600px) {
   .projet__titre {
     font-size: 8rem;
-    padding: 7rem 0 0 0;
   }
 }
 .projet__description {
