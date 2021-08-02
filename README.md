@@ -66,13 +66,13 @@ Aucune dépendance requise.
 
 ### En résumé
 
-Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue à ce moment.
+Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue à ce moment.
 
 À l'été 2019, le projet d'un nouveau portfolio Web est amorcé. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
 
-À l'hiver 2020, un premier prototype est intégré. Le résultat visuel n'était pas concluant; le projet est mis sur la glace temporairement.
+À l'hiver 2020, un premier prototype est intégré.
 
-À l'automne 2020, le projet est relancé et la première version est abandonnée. Le projet est recommencé avec de nouvelles recherches visuelles, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
+À l'automne 2020, une deuxième phase de conception est amorcée : nouvelles recherches visuelles, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
 
 À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
 
@@ -80,6 +80,7 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 
 #### Juillet 2021
 
+* Mise en ligne du projet Festival OFF (31 juillet 2021)
 * Mise en ligne du projet Manuel de typographie (27 juillet 2021)
 * Mise en ligne du projet Memorize (24 juillet 2021)
 * Mise en ligne du projet Presto! (24 juillet 2021)
@@ -95,7 +96,7 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 * Mise en ligne du projet Alaia (30 juin 2021)
 * Mise en ligne du projet Mexico (26 juin 2021)
 * Fin de l'intégration des composantes principales du design (en-tête, pied de page, gabarits des menus et pages des projets, sélecteur de projets et icônes) (24 juin 2021)
-* Réservation du nom de domaine (23 juin 2021)
+* Acquisition du domaine gabrielcaron.ca (23 juin 2021)
 * Fin de la révision de mon identité visuelle (11 juin 2021)
 * Début de l'intégration de la version 2.0 du site (9 juin 2021)
 * Mise en ligne de la version de développement (9 juin 2021)
@@ -105,7 +106,7 @@ Un premier portfolio imprimé a été réalisé à l'hiver 2007 dans le cadre du
 * Refonte du projet Boréal Magazine (1er mai 2021)
     * Retrait des floats
     * Conversion vers CSS Grid
-    * Utilisation de SASS
+    * Mise en place de modules SASS
     * Nouvelle page d'accueil
 
 #### Février 2021
