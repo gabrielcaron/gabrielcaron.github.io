@@ -11,6 +11,7 @@ Ce projet est mise à jour en continu.
 * [Historique](#historique)
     * [En résumé](#en-résumé)
     * [2021](#2021)
+        * [Août 2021](#août-2021)
         * [Juillet 2021](#juillet-2021)
         * [Juin 2021](#juin-2021)
         * [Mai 2021](#mai-2021)
@@ -77,6 +78,10 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
 
 ### 2021
+
+#### Août 2021
+
+* Mise en ligne du projet Boréal Magazine (6 août 2021)
 
 #### Juillet 2021
 
