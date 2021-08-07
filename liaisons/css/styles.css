@@ -511,19 +511,58 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-family: Roboto-Bold, sans serif;
+  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 600px) {
   h2 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 
 h3 {
+  font-size: 3.5rem;
+  font-family: Roboto-Bold, sans serif;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  h3 {
+    font-size: 5rem;
+  }
+}
+
+h4 {
+  font-size: 3rem;
+  font-family: Roboto-Bold, sans serif;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  h4 {
+    font-size: 4rem;
+  }
+}
+
+h5 {
   font-size: 2.5rem;
   font-family: Roboto-Bold, sans serif;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  h5 {
+    font-size: 3rem;
+  }
+}
+
+h6 {
+  font-size: 2rem;
+  font-family: Roboto-Bold, sans serif;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 600px) {
+  h6 {
+    font-size: 2rem;
+  }
 }
 
 body {
@@ -1074,6 +1113,7 @@ img {
   color: #000;
   text-decoration: none;
   line-height: 110%;
+  font-size: 2.5rem;
 }
 .pieddepage .navigation__titre .section {
   color: #000;
@@ -1251,19 +1291,6 @@ img {
 .navigation__lien.nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:active .navigation__figcaption::before {
   background-image: url(../images/icones/nouveau--hover.svg);
 }
-.navigation__lien:hover.externe::after {
-  margin: 0 0 0.75rem 0.75rem;
-}
-.navigation__lien.externe::after {
-  background: url("../images/icones/lien-externe.svg") no-repeat center;
-  height: 1.75rem;
-  width: 1.75rem;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.5rem;
-  content: "";
-  transition: all 200ms ease-in-out;
-}
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
   fill: url(#SOS-elevation-hover);
 }
@@ -1437,6 +1464,21 @@ img {
 }
 .lien.xd:hover::before, .lien.xd:active::before {
   background-image: url(../images/icones/xd--hover.svg);
+}
+
+.externe:hover::after {
+  margin: 0 0 0.75rem 0.75rem;
+}
+
+.externe::after {
+  background: url("../images/icones/lien-externe.svg") no-repeat center;
+  height: 1.75rem;
+  width: 1.75rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  content: "";
+  transition: all 200ms ease-in-out;
 }
 
 /********* LAYOUT *********/
