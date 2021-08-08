@@ -190,6 +190,10 @@
 	}
 
 	@media screen and (min-width: $tablet900px) {
+	  grid-column: span 3;
+	}
+
+	@media screen and (min-width: $desktop1100px) {
 	  grid-column: span 2;
 	}
   }
@@ -218,6 +222,9 @@
 		border-radius: $arrondiMobile;
 	  }
 	  @media screen and (min-width: $desktop1100px) {
+		border-radius: $arrondiMobile;
+	  }
+	  @media screen and (min-width: 1400px) {
 		border-radius: $arrondiTable;
 	  }
 	}
@@ -235,7 +242,7 @@
 	  padding: 1.3rem 3rem;
 	}
 	@media screen and (min-width: $tablet900px) {
-	  padding: 1.3rem 1rem;
+	  padding: 1.3rem 1.5rem;
 	  border-radius: $arrondiMobile - 1rem;
 	}
 	@media screen and (min-width: $desktop1200px) {
@@ -311,10 +318,7 @@
 		&.courant {
 		  & .navigation__figcaption {
 			@include boutonPageCourante;
-			padding: 1rem 2rem;
-			@media screen and (min-width: $mobile600px) {
-			  padding: 1rem 3rem;
-			}
+			padding: 1rem 1.5rem;
 		  }
 		}
 	  }

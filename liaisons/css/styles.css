@@ -957,6 +957,11 @@ img {
 }
 @media screen and (min-width: 900px) {
   .projets .navigation__item {
+    grid-column: span 3;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .projets .navigation__item {
     grid-column: span 2;
   }
 }
@@ -989,6 +994,11 @@ img {
 }
 @media screen and (min-width: 1100px) {
   .projets .navigation__figure svg {
+    border-radius: 4rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .projets .navigation__figure svg {
     border-radius: 5.5rem;
   }
 }
@@ -1008,7 +1018,7 @@ img {
 }
 @media screen and (min-width: 900px) {
   .projets .navigation__figcaption {
-    padding: 1.3rem 1rem;
+    padding: 1.3rem 1.5rem;
     border-radius: 3rem;
   }
 }
@@ -1070,12 +1080,7 @@ img {
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-  padding: 1rem 2rem;
-}
-@media screen and (min-width: 600px) {
-  .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
-    padding: 1rem 3rem;
-  }
+  padding: 1rem 1.5rem;
 }
 
 /* Pied de page */
@@ -1279,17 +1284,19 @@ img {
 *
 */
 /* État survol des icônes des projets */
-.navigation__lien.nouveau .navigation__figcaption::before {
-  content: "";
-  display: inline-block;
-  width: 1.4rem;
-  height: 1.4rem;
-  background-image: url(../images/icones/nouveau.svg);
-  background-repeat: no-repeat;
-  padding-right: 1rem;
-}
-.navigation__lien.nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:active .navigation__figcaption::before {
-  background-image: url(../images/icones/nouveau--hover.svg);
+@media screen and (min-width: 600px) {
+  .navigation__lien.nouveau .navigation__figcaption::before {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(../images/icones/nouveau.svg);
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+  }
+  .navigation__lien.nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:active .navigation__figcaption::before {
+    background-image: url(../images/icones/nouveau--hover.svg);
+  }
 }
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
   fill: url(#SOS-elevation-hover);
@@ -1536,11 +1543,11 @@ img {
   color: #000000;
   text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
   margin: 5rem 0 0 0;
-  padding: 0 3rem;
 }
 @media screen and (min-width: 450px) {
   .accueil__accroche {
     font-size: 6rem;
+    padding: 0 3rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -1556,6 +1563,9 @@ img {
   .accueil__hashtags {
     margin-bottom: 20rem;
   }
+}
+.accueil .projets {
+  align-items: flex-start;
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
   @media (min-width: 900px) {
@@ -1717,15 +1727,16 @@ img {
   text-decoration: none;
   color: #000;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1100px) {
   .accueil .projets .navigation__lien-section:hover .navigation__titre-section::after {
     margin-left: 2.5rem;
   }
 }
 .accueil .projets .navigation__titre-section {
   margin: 3rem 0 1rem 2rem;
+  font-size: 4rem;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1100px) {
   .accueil .projets .navigation__titre-section::after {
     background: url("../images/icones/fleche-section.svg") no-repeat center;
     height: 3.5rem;
@@ -1827,11 +1838,16 @@ img {
   text-align: center;
 }
 .contact__figure svg {
-  width: 13rem;
+  width: 10rem;
   border: solid 3px #fff;
   border-radius: 3.5rem;
   vertical-align: middle;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+}
+@media screen and (min-width: 600px) {
+  .contact__figure svg {
+    width: 13rem;
+  }
 }
 .contact__figcaption {
   font-family: Roboto-Bold, sans serif;
@@ -1942,10 +1958,12 @@ img {
 }
 .projet__formats {
   padding: 1rem 4rem 1rem 0;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 600px) {
   .projet__formats {
     display: inline-block;
+    font-size: 2rem;
   }
 }
 .projet__figure {

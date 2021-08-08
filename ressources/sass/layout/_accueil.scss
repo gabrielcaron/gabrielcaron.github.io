@@ -27,9 +27,10 @@
 	color: #000000;
 	text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
 	margin: 5rem 0 0 0;
-	padding: 0 3rem;
+
 	@media screen and (min-width: 450px) {
 	  font-size: 6rem;
+	  padding: 0 3rem;
 	}
 	@media screen and (min-width: $tablet900px) {
 	  margin: 25rem 0 0 0;
@@ -47,6 +48,7 @@
 
   .projets {
 	@include rangeeGrid12col($tablet900px);
+	align-items: flex-start;
 	@media screen and (max-width: 899px) {
 	  @include paddingConteneur;
 	}
@@ -143,7 +145,7 @@
 	  &__lien-section {
 		text-decoration: none;
 		color: $noir;
-		@media screen and (min-width: $mobile600px) {
+		@media screen and (min-width: $desktop1100px) {
 		  &:hover {
 			.navigation__titre-section {
 			  &::after {
@@ -156,7 +158,9 @@
 
 	  &__titre-section {
 		margin: 3rem 0 1rem 2rem;
-		@media screen and (min-width: $mobile600px) {
+		font-size: 4rem;
+
+		@media screen and (min-width: $desktop1100px) {
 		  &::after {
 			background: url("../images/icones/fleche-section.svg") no-repeat center;
 			height: 3.5rem;
