@@ -81,6 +81,7 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 
 #### Août 2021
 
+* Activation du domaine gabrielcaron.ca (10 août 2021)
 * Mise en ligne du projet Boréal Magazine (6 août 2021)
 
 #### Juillet 2021
