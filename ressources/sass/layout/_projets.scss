@@ -27,6 +27,8 @@
 
   &__titre-h2 {
 	margin: 4rem 0 0 1rem;
+	font-size: 4rem;
+
 	@media screen and (min-width: $tablet900px) {
 	  margin: 4rem 0 0 5rem;
 	}

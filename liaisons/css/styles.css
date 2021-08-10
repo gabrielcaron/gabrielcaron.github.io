@@ -1922,6 +1922,7 @@ img {
 }
 .projets__titre-h2 {
   margin: 4rem 0 0 1rem;
+  font-size: 4rem;
 }
 @media screen and (min-width: 900px) {
   .projets__titre-h2 {
