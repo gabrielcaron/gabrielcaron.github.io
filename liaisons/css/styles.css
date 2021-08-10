@@ -1999,19 +1999,41 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* À PROPOS
+* À PROPOS DE CE SITE
 *
 *
 */
+.apropos .sous-titre {
+  font-size: 4rem;
+  font-family: Roboto-Bold, sans serif;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 800px) {
+  @supports (grid-template-columns: minmax(auto, 1400px)) {
+    @media screen and (min-width: 800px) and (min-width: 600px) {
+      .apropos .quelques-chiffres {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+      }
+    }
+  }
+  .apropos .quelques-chiffres h2 {
+    grid-column: span 12;
+  }
+  .apropos .quelques-chiffres .statistique {
+    grid-column: span 6;
+  }
+}
 .apropos .projet {
   padding: 0;
 }
-.apropos .projet__formats {
+.apropos .projet__formats.lien {
   display: block;
 }
 .apropos .projet .lien:hover {

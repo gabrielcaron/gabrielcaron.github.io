@@ -1,11 +1,11 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2021.0
+* @version 2021.1
 *
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* À PROPOS
+* À PROPOS DE CE SITE
 *
 *
 */
@@ -13,9 +13,31 @@
 
 .apropos {
 
+  // À propos de ce site
+  .sous-titre {
+	font-size: 4rem;
+	font-family: Roboto-Bold, sans serif;
+	margin-bottom: 0.5rem;
+  }
+
+  .quelques-chiffres {
+	@media screen and (min-width: 800px) {
+	  @include rangeeGrid12col();
+
+	  & h2 {
+		grid-column: span 12;
+	  }
+
+	  & .statistique {
+		grid-column: span 6;
+	  }
+	}
+  }
+
+  // Accessibilité
   .projet {
 	padding: 0;
-	&__formats {
+	&__formats.lien {
 	  display: block;
 	}
 	& .lien:hover {
