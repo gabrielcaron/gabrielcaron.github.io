@@ -28,12 +28,24 @@
 	text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
 	margin: 5rem 0 0 0;
 
-	@media screen and (min-width: 450px) {
-	  font-size: 6rem;
+	@media screen and (min-width: 500px) {
+	  font-size: 5.5rem;
 	  padding: 0 3rem;
+	}
+	@media screen and (min-width: 850px) {
+	  font-size: 6rem;
 	}
 	@media screen and (min-width: $tablet900px) {
 	  margin: 25rem 0 0 0;
+	}
+  }
+
+  &__coeur {
+	height: 4.5rem;
+	vertical-align: top;
+
+	@media screen and (min-width: 850px) {
+	  height: 6rem;
 	}
   }
 
