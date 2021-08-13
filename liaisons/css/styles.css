@@ -1261,6 +1261,11 @@ img {
 .pieddepage__copyright {
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: #000;
+}
+.pieddepage__copyright:hover {
+  text-decoration: underline;
 }
 @media screen and (min-width: 900px) {
   .pieddepage__copyright {

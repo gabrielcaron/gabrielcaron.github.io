@@ -73,6 +73,13 @@
   &__copyright {
 	font-size: 1.6rem;
 	letter-spacing: $EspacementStandard;
+	text-decoration: none;
+	color: $noir;
+	
+	&:hover {
+	  text-decoration: underline;
+	}
+
 	@media screen and (min-width: $tablet900px) {
 	  position: relative;
 	  top: 13rem;
