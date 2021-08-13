@@ -52,13 +52,21 @@
   }
 
   &__logo {
-	background-image: url("../images/design/iv-gabrielcaron-nb.svg");
-	background-repeat: no-repeat;
 	width: 250px;
 	height: 60px;
 	display: block;
+
+	& .maison {
+	  display: none;
+	}
+
 	&:hover {
-	  background-image: url("../images/design/iv-gabrielcaron-nb--retour.svg");
+	  & .maison {
+		display: block;
+	  }
+	  & .signature {
+		display: none;
+	  }
 	}
   }
 

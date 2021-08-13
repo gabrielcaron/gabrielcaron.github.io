@@ -1245,14 +1245,18 @@ img {
   }
 }
 .pieddepage__logo {
-  background-image: url("../images/design/iv-gabrielcaron-nb.svg");
-  background-repeat: no-repeat;
   width: 250px;
   height: 60px;
   display: block;
 }
-.pieddepage__logo:hover {
-  background-image: url("../images/design/iv-gabrielcaron-nb--retour.svg");
+.pieddepage__logo .maison {
+  display: none;
+}
+.pieddepage__logo:hover .maison {
+  display: block;
+}
+.pieddepage__logo:hover .signature {
+  display: none;
 }
 .pieddepage__copyright {
   font-size: 1.6rem;
