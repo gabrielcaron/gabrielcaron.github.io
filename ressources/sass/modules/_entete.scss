@@ -57,19 +57,28 @@
   }
 
   &__logo {
-	background-image: url("../images/design/iv-gabrielcaron.svg");
-	background-repeat: no-repeat;
 	width: 217px;
 	height: 53px;
 	margin-left: 0.5rem;
 	display: block; // si flex non fonctionnel
-	@media screen and (min-width: 1000px) {
+
+	@media screen and (min-width: $tablet900px) {
 	  width: 285px;
 	  height: 70px;
 	  margin-left: 0;
 	}
+
+	& .maison {
+	  display: none;
+	}
+
 	&:hover {
-	  background-image: url("../images/design/iv-gabrielcaron--retour.svg");
+	  & .maison {
+		display: block;
+	  }
+	  & .signature {
+		display: none;
+	  }
 	}
   }
 

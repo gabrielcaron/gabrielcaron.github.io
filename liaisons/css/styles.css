@@ -743,22 +743,26 @@ img {
   }
 }
 .entete__logo {
-  background-image: url("../images/design/iv-gabrielcaron.svg");
-  background-repeat: no-repeat;
   width: 217px;
   height: 53px;
   margin-left: 0.5rem;
   display: block;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   .entete__logo {
     width: 285px;
     height: 70px;
     margin-left: 0;
   }
 }
-.entete__logo:hover {
-  background-image: url("../images/design/iv-gabrielcaron--retour.svg");
+.entete__logo .maison {
+  display: none;
+}
+.entete__logo:hover .maison {
+  display: block;
+}
+.entete__logo:hover .signature {
+  display: none;
 }
 .entete__menu {
   align-items: baseline;
