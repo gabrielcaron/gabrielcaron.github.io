@@ -1013,24 +1013,7 @@ img {
   line-height: 120%;
   border-radius: 4rem;
   margin-top: 0.5rem;
-  padding: 1.3rem 2rem;
-}
-@media screen and (min-width: 600px) {
-  .projets .navigation__figcaption {
-    padding: 1.3rem 3rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .projets .navigation__figcaption {
-    padding: 1.3rem 1.5rem;
-    border-radius: 3rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projets .navigation__figcaption {
-    padding: 1.3rem 3rem;
-    border-radius: 4rem;
-  }
+  padding: 1.3rem 2.3rem;
 }
 .projets .navigation .rangeeSections .courant {
   border: 3px solid #ffe100;
@@ -1072,11 +1055,6 @@ img {
   border: none;
   padding: 1.3rem 2.3rem;
 }
-@media screen and (min-width: 600px) {
-  .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption {
-    padding: 1.3rem 3.3rem;
-  }
-}
 .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1084,7 +1062,7 @@ img {
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
 }
 
 /* Pied de page */
