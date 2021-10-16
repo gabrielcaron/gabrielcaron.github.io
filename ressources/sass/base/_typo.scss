@@ -1,24 +1,11 @@
 /**
-* Typographie responsive (Mobile First)
-========================================================================
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 5.1
 *
-* @author Gabriel Caron (version 5.0)
-*
-* TABLE DES MATIÈRES
+* ------------------
+* TABLE DES MATIERES
+* ------------------
 * Polices
-* Base décimale
-* Hiérarchie responsive
-*
-*
-* Doc des points de rupture :
-* ==========================================================================
-* Écran mobile : de 0 à 599px
-* point de rupture: 600px
-*
-* Écran tablette : de 600 à 799px
-* point de rupture: 800px
-*
-* Écran desktop : 800px et +
 */
 
 /* Polices */
@@ -64,7 +51,7 @@
   url(../../liaisons/polices/roboto-boldItalic.ttf) format('truetype');
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $RobotoMedium;
   font-weight: normal;
   line-height: 100%;
