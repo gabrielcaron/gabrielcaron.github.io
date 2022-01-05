@@ -176,6 +176,19 @@
 	  }
 	}
 
+	// Élite
+	&.courant, &:hover {
+	  & .elite {
+		& .elevation {
+		  fill: url(#elite-rouge-hover);
+		}
+
+		& .etincelle {
+		  fill: url(#elite-gris-hover);
+		}
+	  }
+	}
+
 	// Festival OFF
 	&.courant, &:hover {
 	  & .festivaloff {

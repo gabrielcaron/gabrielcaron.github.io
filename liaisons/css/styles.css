@@ -1330,6 +1330,12 @@ img {
 .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
   fill: url(#destinations-gris-hover);
 }
+.navigation__lien.courant .elite .elevation, .navigation__lien:hover .elite .elevation {
+  fill: url(#elite-rouge-hover);
+}
+.navigation__lien.courant .elite .etincelle, .navigation__lien:hover .elite .etincelle {
+  fill: url(#elite-gris-hover);
+}
 .navigation__lien.courant .festivaloff .elevation, .navigation__lien:hover .festivaloff .elevation {
   fill: url(#festivaloff-violet-hover);
 }
