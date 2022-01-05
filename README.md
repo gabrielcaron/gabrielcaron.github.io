@@ -1,4 +1,4 @@
-<img src="liaisons/images/design/iv-gabrielcaron.svg" width="285px" height="70px">
+# gabrielcaron.ca
 
 Ce dépôt contient mon site personnel ainsi que des informations pratiques pour assurer sa continuité.
 
