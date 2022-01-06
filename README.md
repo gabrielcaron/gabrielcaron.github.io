@@ -10,6 +10,8 @@ Ce projet est mise à jour en continu.
 * [Dépendances](#dépendances)
 * [Historique](#historique)
     * [En résumé](#en-résumé)
+    * [2022](#2022)
+      * [Janvier 2022](#janvier-2022)
     * [2021](#2021)
         * [Août 2021](#août-2021)
         * [Juillet 2021](#juillet-2021)
@@ -34,7 +36,6 @@ Ce projet est mise à jour en continu.
         * [Intégration d'une icône](#intégration-dune-icône)
     * [Projets](#projets)
         * [Droits d'auteur](#droits-dauteur)
-            * [Non-indexation des projets protégés par copyright](#non-indexation-des-projets-protégés-par-copyright)
         * [Formats des images](#formats-des-images)
             * [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
             * [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
@@ -73,9 +74,16 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 
 À l'hiver 2020, un premier prototype est intégré.
 
-À l'automne 2020, une deuxième phase de conception est amorcée : nouvelles recherches visuelles, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
+À l'automne 2020, une deuxième itération de design est amorcée : nouvelles recherches visuelles, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
 
 À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
+
+### 2022
+
+#### Janvier 2022
+
+* Mise en ligne du projet Élite (5 janvier 2022)
+* Mise en ligne du projet Tim (5 janvier 2022)
 
 ### 2021
 
@@ -196,7 +204,7 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 #### Intégration d'une icône
 1. Retirer les ombres et les contours de l'élévation (le cas échéant)
 2. Aplatir le symbole
-3. Exporter en SVG dans Figma
+3. Exporter l'icône au complet (élévation + symbole) en SVG dans Figma
 4. Optimiser dans ImageOptim
 5. Ajouter des classes aux endroits suivants :
    * sur la balise SVG : nom du projet
@@ -208,23 +216,19 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
    * height
    * arrondi sur l'élévation
 8. Ajouter dans le SVG par défaut les dégradés du SVG de l'état survol
-9. Pour conserver la validité du HTML, préfixer avec des ID uniques les dégradés avec le nom du projet, exemple : `#mexico-orange-radial`.
+9. Pour conserver la validité du HTML, préfixer avec des ID uniques les dégradés avec le nom du projet, exemple : `#mexico-orange-defaut`.
 10. Lier les ID à l'état survol dans les CSS
 
 
 ### Projets
 
-Le portfolio contient deux types de projets : Web/applications mobiles et Design graphique. Les projets Web sont présentés en version mobile et tablette. Sauf pour de rares exceptions, les projets de design graphique sont présentés « sans contexte », c'est-à-dire sans support physique.
-
-La plupart des projets sont présentés dans un contexte de périphériques mobiles (iPhone et/ou iPad).
+Le portfolio contient deux types de projets : Web/applications mobiles et design graphique. Les projets Web sont présentés en version mobile et tablette. Les projets de design graphique sont présentés la plupart du temps « sans contexte », c'est-à-dire sans support physique.
 
 #### Droits d'auteur
 
-On évite d'utiliser dans les projets des identifications visuelles protégées par copyright. Cependant, le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition de mentionner que « Ce projet n'a pas été faite en association avec le Gouvernement du Canada ni avec l'appui de celui-ci. »
+Éviter d'utiliser des identifications visuelles protégées par copyright.
 
-##### Non-indexation des projets protégés par copyright
-
-Lorsqu'il contient des éléments protégés par copyright, la page Web du projet n'est pas indexée par les moteurs de recherche pour éviter toute confusion chez les internautes.
+Cependant, le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition de mentionner que « Ce projet n'a pas été faite en association avec le Gouvernement du Canada ni avec l'appui de celui-ci. »
 
 #### Formats des images
 
