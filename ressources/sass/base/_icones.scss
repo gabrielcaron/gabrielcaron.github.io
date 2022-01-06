@@ -282,6 +282,19 @@
 		}
 	  }
 	}
+
+	// Tim
+	&.courant, &:hover {
+	  & .tim {
+		& .elevation {
+		  fill: url(#tim-bleu-hover);
+		}
+
+		& .logotim {
+		  fill: url(#tim-gris-hover);
+		}
+	  }
+	}
   }
 }
 

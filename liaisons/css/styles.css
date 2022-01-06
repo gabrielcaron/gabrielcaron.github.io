@@ -1384,6 +1384,12 @@ img {
 .navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole {
   fill: url(#presto-gris-hover);
 }
+.navigation__lien.courant .tim .elevation, .navigation__lien:hover .tim .elevation {
+  fill: url(#tim-bleu-hover);
+}
+.navigation__lien.courant .tim .logotim, .navigation__lien:hover .tim .logotim {
+  fill: url(#tim-gris-hover);
+}
 
 .lien {
   font-family: Roboto-Medium, sans serif;
