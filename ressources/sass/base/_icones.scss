@@ -257,6 +257,19 @@
 	  }
 	}
 
+	// Mettez le feu à votre créativité
+	&.courant, &:hover {
+	  & .creativite {
+		& .elevation {
+		  fill: url(#creativite-orange-hover);
+		}
+
+		& .feu {
+		  fill: url(#creativite-gris-hover);
+		}
+	  }
+	}
+
 	// Mexico
 	&.courant, &:hover {
 	  & .mexico {
@@ -279,6 +292,19 @@
 
 		& .prestosymbole {
 		  fill: url(#presto-gris-hover);
+		}
+	  }
+	}
+
+	// Reprends le contrôle
+	&.courant, &:hover {
+	  & .controle {
+		& .elevation {
+		  fill: url(#controle-jaune-hover);
+		}
+
+		& .pantin {
+		  fill: url(#controle-gris-hover);
 		}
 	  }
 	}

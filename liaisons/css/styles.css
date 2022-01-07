@@ -1372,6 +1372,12 @@ img {
 .navigation__lien.courant .memorize .carte-face-contours, .navigation__lien:hover .memorize .carte-face-contours {
   stroke: #fff;
 }
+.navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
+  fill: url(#creativite-orange-hover);
+}
+.navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
+  fill: url(#creativite-gris-hover);
+}
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-hover);
 }
@@ -1383,6 +1389,12 @@ img {
 }
 .navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole {
   fill: url(#presto-gris-hover);
+}
+.navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation {
+  fill: url(#controle-jaune-hover);
+}
+.navigation__lien.courant .controle .pantin, .navigation__lien:hover .controle .pantin {
+  fill: url(#controle-gris-hover);
 }
 .navigation__lien.courant .tim .elevation, .navigation__lien:hover .tim .elevation {
   fill: url(#tim-bleu-hover);
