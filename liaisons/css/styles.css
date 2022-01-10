@@ -1286,16 +1286,10 @@ img {
   fill: #f34b18;
 }
 .navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation {
-  fill: url(#alaia-bleu);
+  fill: url(#alaia-sable-defaut);
 }
-.navigation__lien.courant .alaia .planche-devant, .navigation__lien:hover .alaia .planche-devant {
-  fill: url(#alaia-gris-devant);
-}
-.navigation__lien.courant .alaia .planche-arriere, .navigation__lien:hover .alaia .planche-arriere {
-  fill: url(#alaia-gris-arriere);
-}
-.navigation__lien.courant .alaia .planche-ligne, .navigation__lien:hover .alaia .planche-ligne {
-  fill: #045D85;
+.navigation__lien.courant .alaia .planches, .navigation__lien:hover .alaia .planches {
+  fill: url(#alaia-gris-hover);
 }
 .navigation__lien.courant .altitude .elevation, .navigation__lien:hover .altitude .elevation {
   fill: url(#altitude-bleu-hover);

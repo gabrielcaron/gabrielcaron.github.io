@@ -90,19 +90,11 @@
 	&.courant, &:hover {
 	  & .alaia {
 		& .elevation {
-		  fill: url(#alaia-bleu);
+		  fill: url(#alaia-sable-defaut);
 		}
 
-		& .planche-devant {
-		  fill: url(#alaia-gris-devant);
-		}
-
-		& .planche-arriere {
-		  fill: url(#alaia-gris-arriere);
-		}
-
-		& .planche-ligne {
-		  fill: #045D85;
+		& .planches {
+		  fill: url(#alaia-gris-hover);
 		}
 	  }
 	}
