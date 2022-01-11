@@ -1360,7 +1360,7 @@ img {
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-hover);
 }
-.navigation__lien.courant .mexico .guitare path, .navigation__lien:hover .mexico .guitare path {
+.navigation__lien.courant .mexico .guitare, .navigation__lien:hover .mexico .guitare {
   fill: url(#mexico-gris-hover);
 }
 .navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation {
