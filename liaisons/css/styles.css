@@ -1277,13 +1277,10 @@ img {
   }
 }
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
-  fill: url(#SOS-elevation-hover);
+  fill: url(#SOS-rouge-hover);
 }
-.navigation__lien.courant .SOS .anneau, .navigation__lien:hover .SOS .anneau {
-  fill: url(#SOS-anneau-hover);
-}
-.navigation__lien.courant .SOS .cordes, .navigation__lien:hover .SOS .cordes {
-  fill: #f34b18;
+.navigation__lien.courant .SOS .bouee, .navigation__lien:hover .SOS .bouee {
+  fill: url(#SOS-gris-hover);
 }
 .navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation {
   fill: url(#alaia-sable-defaut);

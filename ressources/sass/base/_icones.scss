@@ -73,15 +73,11 @@
 	&.courant, &:hover {
 	  & .SOS {
 		& .elevation {
-		  fill: url(#SOS-elevation-hover);
+		  fill: url(#SOS-rouge-hover);
 		}
 
-		& .anneau {
-		  fill: url(#SOS-anneau-hover);
-		}
-
-		& .cordes {
-		  fill: #f34b18;
+		& .bouee {
+		  fill: url(#SOS-gris-hover);
 		}
 	  }
 	}
