@@ -82,6 +82,7 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 
 #### Janvier 2022
 
+* Mise en ligne de la version 2 des icônes (11 janvier 2022)
 * Mise en ligne du projet Élite (5 janvier 2022)
 * Mise en ligne du projet Tim (5 janvier 2022)
 
