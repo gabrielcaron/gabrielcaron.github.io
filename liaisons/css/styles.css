@@ -2025,6 +2025,7 @@ img {
     grid-column: span 12;
   }
   .apropos .quelques-chiffres .statistique {
+    max-width: 100%;
     grid-column: span 6;
   }
 }
