@@ -82,75 +82,28 @@
 				<li class="navigation__item">
 					<a href="memorize.html" class="navigation__lien">
 						<figure class="navigation__figure icone">
-							<svg aria-hidden="true" class="memorize" fill="none" viewBox="0 0 320 320"
-								 xmlns="http://www.w3.org/2000/svg"
+							<svg aria-hidden="true" class="memorize" fill="none" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg"
 								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="memorize-orange-defaut">
+								<linearGradient id="memorize-orange-hover" gradientUnits="userSpaceOnUse" x1="160.04" x2="160.04" y1="319" y2="-.00013">
 									<stop offset="0" stop-color="#ff8a00"/>
 									<stop offset="1" stop-color="#ffaf00"/>
 								</linearGradient>
-								<linearGradient id="memorize-orange-hover">
-									<stop offset="0" stop-color="#ff8a00"/>
-									<stop offset="1" stop-color="#ffaf00"/>
-								</linearGradient>
-								<linearGradient id="memorize-elevation-hover" gradientUnits="userSpaceOnUse" x1="160.04"
-												x2="160.04" xlink:href="#memorize-orange-hover" y1="319"
-												y2="-.00013"/>
-								<linearGradient id="memorize-gris-hover">
-									<stop offset="0" stop-color="#fff"/>
+								<radialGradient id="memorize-gris-hover" cx="0" cy="0" gradientTransform="matrix(0 261 -177.527 0 159.84 48)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset=".494792" stop-color="#fff"/>
 									<stop offset="1" stop-color="#ededed"/>
-								</linearGradient>
-								<radialGradient id="memorize-carte-dos-haut-defaut" cx="0" cy="0"
-												gradientTransform="matrix(0 -106.762 86.2016 0 208.09 155.735)"
-												gradientUnits="userSpaceOnUse" r="1"
-												xlink:href="#memorize-orange-defaut"/>
-								<radialGradient id="memorize-carte-dos-bas-defaut" cx="0" cy="0"
-												gradientTransform="matrix(0 -106.762 86.2016 0 111.09 271.735)"
-												gradientUnits="userSpaceOnUse" r="1"
-												xlink:href="#memorize-orange-defaut"/>
-								<linearGradient id="memorize-gris-defaut">
-									<stop offset="0" stop-color="#fff"/>
-									<stop offset="1" stop-color="#f5f5f5"/>
-								</linearGradient>
-								<radialGradient id="memorize-carte-face-haut-defaut" cx="0" cy="0"
-												gradientTransform="matrix(0 100.541 -81.1786 0 111.09 51.859)"
-												gradientUnits="userSpaceOnUse" r="1"
-												xlink:href="#memorize-gris-defaut"/>
-								<radialGradient id="memorize-carte-face-bas-defaut" cx="0" cy="0"
-												gradientTransform="matrix(0 100.541 -81.1786 0 208.09 167.859)"
-												gradientUnits="userSpaceOnUse" r="1"
-												xlink:href="#memorize-gris-defaut"/>
-								<radialGradient id="memorize-carte-dos-haut-hover" cx="0" cy="0"
-												gradientTransform="matrix(0 106.735 -86.18 0 208.09 49)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-gris-hover"/>
-								<radialGradient id="memorize-carte-dos-bas-hover" cx="0" cy="0"
-												gradientTransform="matrix(0 106.735 -86.18 0 111.09 165)"
-												gradientUnits="userSpaceOnUse" r="1" xlink:href="#memorize-gris-hover"/>
-								<radialGradient id="memorize-carte-face-haut-hover" cx="0" cy="0"
-												gradientTransform="matrix(0 -107 86.3941 0 111.09 156)"
-												gradientUnits="userSpaceOnUse" r="1"
-												xlink:href="#memorize-orange-hover"/>
-								<radialGradient id="memorize-carte-face-bas-hover" cx="0" cy="0"
-												gradientTransform="matrix(0 -107 86.3941 0 208.09 272)"
-												gradientUnits="userSpaceOnUse" r="1"
-												xlink:href="#memorize-orange-hover"/>
-								<rect class="elevation" fill="#fcfcfc" height="319.003" width="319.003" x=".538666"
-									  y=".538696"/>
-								<rect class="carte-dos-haut" fill="url(#memorize-carte-dos-haut-defaut)"
-									  height="106.735" rx="10" width="86.18" x="165" y="49"/>
-								<rect class="carte-dos-bas" fill="url(#memorize-carte-dos-bas-defaut)" height="106.735"
-									  rx="10" width="86.18" x="68" y="165"/>
-								<g class="carte-face-contours" stroke="#ff9600" stroke-width="5">
-									<rect class="carte-face-haut" fill="url(#memorize-carte-face-haut-defaut)"
-										  height="101.735" rx="7.5" width="81.1801" x="70.5" y="51.5"/>
-									<path d="m71 87h81"/>
-									<path d="m71 102h81"/>
-									<path d="m71 117h81"/>
-									<rect class="carte-face-bas" fill="url(#memorize-carte-face-bas-defaut)"
-										  height="101.735" rx="7.5" width="81.1801" x="167.5" y="167.5"/>
-									<path d="m168 203h81"/>
-									<path d="m168 218h81"/>
-									<path d="m168 233h81"/>
+								</radialGradient>
+								<radialGradient id="memorize-orange-defaut" cx="0" cy="0" gradientTransform="matrix(0 -223.056 151.718 0 159.84 271)"
+												gradientUnits="userSpaceOnUse" r="1">
+									<stop offset="0" stop-color="#ff8a00"/>
+									<stop offset="1" stop-color="#ffaf00"/>
+								</radialGradient>
+								<rect class="elevation" fill="#fcfcfc" height="319" width="319" x=".538666" y=".538696"/>
+								<g class="cartes" fill="url(#memorize-orange-defaut)">
+									<path d="m140.252 48h-41.1844c-3.9962 0-7.8287 1.5875-10.6544 4.4132s-4.4132 6.6582-4.4132 10.6544v77.3464c0 3.997 1.5875 7.829 4.4132 10.655s6.6582 4.413 10.6544 4.413h41.1844c3.996 0 7.829-1.587 10.655-4.413 2.825-2.826 4.413-6.658 4.413-10.655v-77.3464c0-3.9962-1.588-7.8287-4.413-10.6544-2.826-2.8257-6.659-4.4132-10.655-4.4132zm-41.1844 10.045h41.1844c1.332 0 2.61.5292 3.552 1.4711s1.471 2.2194 1.471 3.5515v16.072h-51.23v-16.072c0-1.3321.5292-2.6096 1.4711-3.5515s2.2194-1.4711 3.5515-1.4711zm-5.0226 41.687v-15.5698h51.23v15.5698zm51.23 5.023v15.569h-51.23v-15.569zm-5.023 40.682h-41.1844c-1.3321 0-2.6096-.529-3.5515-1.471s-1.4711-2.22-1.4711-3.552v-15.067h51.23v15.067c0 1.332-.529 2.61-1.471 3.552s-2.22 1.471-3.552 1.471z"/>
+									<path d="m220.613 48h-41.185c-3.996 0-7.829 1.5875-10.654 4.4132-2.826 2.8257-4.414 6.6582-4.414 10.6544v77.3464c0 3.997 1.588 7.829 4.414 10.655 2.825 2.826 6.658 4.413 10.654 4.413h41.185c3.996 0 7.828-1.587 10.654-4.413s4.413-6.658 4.413-10.655v-77.3464c0-3.9962-1.587-7.8287-4.413-10.6544s-6.658-4.4132-10.654-4.4132zm5.022 92.414c0 1.332-.529 2.61-1.471 3.552s-2.219 1.471-3.551 1.471h-41.185c-1.332 0-2.61-.529-3.552-1.471-.941-.942-1.471-2.22-1.471-3.552v-77.3464c0-1.3321.53-2.6096 1.471-3.5515.942-.9419 2.22-1.4711 3.552-1.4711h41.185c1.332 0 2.609.5292 3.551 1.4711s1.471 2.2194 1.471 3.5515z"/>
+									<path d="m220.613 163.518h-41.185c-3.996 0-7.829 1.587-10.654 4.413-2.826 2.826-4.414 6.658-4.414 10.655v77.346c0 3.997 1.588 7.829 4.414 10.655 2.825 2.826 6.658 4.413 10.654 4.413h41.185c3.996 0 7.828-1.587 10.654-4.413s4.413-6.658 4.413-10.655v-77.346c0-3.997-1.587-7.829-4.413-10.655s-6.658-4.413-10.654-4.413zm-41.185 10.045h41.185c1.332 0 2.609.529 3.551 1.471s1.471 2.22 1.471 3.552v15.067h-51.23v-15.067c0-1.332.53-2.61 1.471-3.552.942-.942 2.22-1.471 3.552-1.471zm-5.023 40.683v-15.57h51.23v15.57zm51.23 5.022v15.57h-51.23v-15.57zm-5.022 41.687h-41.185c-1.332 0-2.61-.529-3.552-1.471-.941-.942-1.471-2.219-1.471-3.552v-16.072h51.23v16.072c0 1.333-.529 2.61-1.471 3.552s-2.219 1.471-3.551 1.471z"/>
+									<path d="m140.252 163.518h-41.1844c-3.9962 0-7.8287 1.587-10.6544 4.413s-4.4132 6.658-4.4132 10.655v77.346c0 3.997 1.5875 7.829 4.4132 10.655s6.6582 4.413 10.6544 4.413h41.1844c3.996 0 7.829-1.587 10.655-4.413 2.825-2.826 4.413-6.658 4.413-10.655v-77.346c0-3.997-1.588-7.829-4.413-10.655-2.826-2.826-6.659-4.413-10.655-4.413zm5.023 92.414c0 1.333-.529 2.61-1.471 3.552s-2.22 1.471-3.552 1.471h-41.1844c-1.3321 0-2.6096-.529-3.5515-1.471s-1.4711-2.219-1.4711-3.552v-77.346c0-1.332.5292-2.61 1.4711-3.552s2.2194-1.471 3.5515-1.471h41.1844c1.332 0 2.61.529 3.552 1.471s1.471 2.22 1.471 3.552z"/>
 								</g>
 							</svg>
 

@@ -224,27 +224,11 @@
 	&.courant, &:hover {
 	  & .memorize {
 		& .elevation {
-		  fill: url(#memorize-elevation-hover);
+		  fill: url(#memorize-orange-hover);
 		}
 
-		& .carte-dos-haut {
-		  fill: url(#memorize-carte-dos-haut-hover);
-		}
-
-		& .carte-dos-bas {
-		  fill: url(#memorize-carte-dos-bas-hover);
-		}
-
-		& .carte-face-bas {
-		  fill: url(#memorize-carte-face-bas-hover);
-		}
-
-		& .carte-face-haut {
-		  fill: url(#memorize-carte-face-haut-hover);
-		}
-
-		& .carte-face-contours {
-		  stroke: $blanc;
+		& .cartes {
+		  fill: url(#memorize-gris-hover);
 		}
 	  }
 	}

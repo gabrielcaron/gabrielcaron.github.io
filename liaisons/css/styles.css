@@ -1349,22 +1349,10 @@ img {
   fill: url(#manueldetypo-gris-hover);
 }
 .navigation__lien.courant .memorize .elevation, .navigation__lien:hover .memorize .elevation {
-  fill: url(#memorize-elevation-hover);
+  fill: url(#memorize-orange-hover);
 }
-.navigation__lien.courant .memorize .carte-dos-haut, .navigation__lien:hover .memorize .carte-dos-haut {
-  fill: url(#memorize-carte-dos-haut-hover);
-}
-.navigation__lien.courant .memorize .carte-dos-bas, .navigation__lien:hover .memorize .carte-dos-bas {
-  fill: url(#memorize-carte-dos-bas-hover);
-}
-.navigation__lien.courant .memorize .carte-face-bas, .navigation__lien:hover .memorize .carte-face-bas {
-  fill: url(#memorize-carte-face-bas-hover);
-}
-.navigation__lien.courant .memorize .carte-face-haut, .navigation__lien:hover .memorize .carte-face-haut {
-  fill: url(#memorize-carte-face-haut-hover);
-}
-.navigation__lien.courant .memorize .carte-face-contours, .navigation__lien:hover .memorize .carte-face-contours {
-  stroke: #fff;
+.navigation__lien.courant .memorize .cartes, .navigation__lien:hover .memorize .cartes {
+  fill: url(#memorize-gris-hover);
 }
 .navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
   fill: url(#creativite-orange-hover);
