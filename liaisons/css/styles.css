@@ -1295,10 +1295,10 @@ img {
   fill: url(#altitude-gris-hover);
 }
 .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
-  fill: url(#elevation-bleu-hover);
+  fill: url(#aquafina-bleu-hover);
 }
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
-  fill: url(#goutte-gris-hover);
+  fill: url(#aquafina-gris-hover);
 }
 .navigation__lien.courant .boreal .elevation, .navigation__lien:hover .boreal .elevation {
   fill: url(#boreal-vert-hover);
