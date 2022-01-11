@@ -1829,6 +1829,12 @@ img {
   margin: 0;
   text-align: center;
 }
+@media screen and (min-width: 1050px) {
+  .contact__figure {
+    display: flex;
+    align-items: center;
+  }
+}
 .contact__figure svg {
   width: 10rem;
   border: solid 3px #fff;

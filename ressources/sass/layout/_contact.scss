@@ -80,6 +80,11 @@
 	margin: 0;
 	text-align: center;
 
+	@media screen and (min-width: 1050px) {
+	  display: flex;
+	  align-items: center;
+	}
+
 	& svg {
 	  width: 10rem;
 	  border: solid 3px $blanc;
