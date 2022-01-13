@@ -1534,16 +1534,12 @@ img {
 }
 @media screen and (min-width: 900px) {
   .accueil__accroche {
-    margin: 25rem 0 0 0;
+    margin: 20rem 0 0 0;
   }
 }
-.accueil__coeur {
-  height: 4.5rem;
-  vertical-align: top;
-}
-@media screen and (min-width: 850px) {
-  .accueil__coeur {
-    height: 6rem;
+@media screen and (min-width: 1100px) {
+  .accueil__accroche {
+    margin: 25rem 0 0 0;
   }
 }
 .accueil__hashtags {
@@ -1553,7 +1549,21 @@ img {
 }
 @media screen and (min-width: 900px) {
   .accueil__hashtags {
+    margin-bottom: 15rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .accueil__hashtags {
     margin-bottom: 20rem;
+  }
+}
+.accueil__coeur {
+  height: 4.5rem;
+  vertical-align: top;
+}
+@media screen and (min-width: 850px) {
+  .accueil__coeur {
+    height: 6rem;
   }
 }
 .accueil .projets {
@@ -2025,7 +2035,7 @@ img {
     grid-column: span 12;
   }
   .apropos .quelques-chiffres .statistique {
-    max-width: 100%;
+    display: inline-block;
     grid-column: span 6;
   }
 }
