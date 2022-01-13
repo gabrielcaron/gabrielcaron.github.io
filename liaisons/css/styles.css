@@ -1104,9 +1104,14 @@ img {
   font-size: 2rem;
   color: #404040;
   text-decoration: none;
-  line-height: 175%;
+  line-height: 225%;
   letter-spacing: 0.05rem;
   transition: border-bottom 0.075s ease-in-out;
+}
+@media screen and (min-width: 1200px) {
+  .pieddepage .navigation__lien {
+    line-height: 200%;
+  }
 }
 .pieddepage .navigation__lien.section {
   line-height: 100%;
@@ -1514,7 +1519,7 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 5rem;
-  line-height: 100%;
+  line-height: 110%;
   letter-spacing: 0.05rem;
   text-align: center;
   color: #000000;
