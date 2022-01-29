@@ -15,35 +15,37 @@
 
   // À propos de ce site
   .sous-titre {
-	font-size: 4rem;
-	font-family: Roboto-Bold, sans serif;
-	margin-bottom: 0.5rem;
+    font-size: 4rem;
+    font-family: Roboto-Bold, sans serif;
+    margin-bottom: 0.5rem;
   }
 
   .quelques-chiffres {
-	@media screen and (min-width: 800px) {
-	  @include rangeeGrid12col();
+    @media screen and (min-width: 800px) {
+      @include rangeeGrid12col();
 
-	  & h2 {
-		grid-column: span 12;
-	  }
+      & h2 {
+        grid-column: span 12;
+      }
 
-	  & .statistique {
-		display: inline-block;
-		grid-column: span 6;
-	  }
-	}
+      & .statistique {
+        grid-column: span 6;
+        width: 100%; // Règle un bogue d'affichage sur Safari
+      }
+    }
   }
 
   // Accessibilité
   .projet {
-	padding: 0;
-	&__formats.lien {
-	  display: block;
-	}
-	& .lien:hover {
-	  text-decoration: none;
-	}
+    padding: 0;
+
+    &__formats.lien {
+      display: block;
+    }
+
+    & .lien:hover {
+      text-decoration: none;
+    }
   }
 
 }
