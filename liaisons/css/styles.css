@@ -2040,8 +2040,8 @@ img {
     grid-column: span 12;
   }
   .apropos .quelques-chiffres .statistique {
-    display: inline-block;
     grid-column: span 6;
+    width: 100%;
   }
 }
 .apropos .projet {
