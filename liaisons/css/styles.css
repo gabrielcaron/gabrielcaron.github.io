@@ -801,14 +801,14 @@ img {
   text-decoration: none;
   line-height: 120%;
   letter-spacing: 0.05rem;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.7rem;
   margin: 0 0.3rem;
   text-align: center;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 520px) {
   .entete .navigation__lien {
     font-size: 2rem;
-    padding: 1.2rem 2.5rem;
+    padding: 1.4rem 3rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -873,14 +873,20 @@ img {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   line-height: 120%;
+  padding: 1rem 1.5rem;
+}
+@media screen and (min-width: 520px) {
+  .entete .navigation__lien.courante {
+    padding: 1.2rem 2.8rem;
+  }
 }
 .entete .navigation__lien.courante:hover {
   border: none;
   padding: 1.3rem 1.8rem;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 520px) {
   .entete .navigation__lien.courante:hover {
-    padding: 1.5rem 2.8rem;
+    padding: 1.5rem 3.1rem;
   }
 }
 

@@ -41,12 +41,13 @@
     text-decoration: none;
     line-height: 120%;
     letter-spacing: $EspacementStandard;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 1.7rem;
     margin: 0 0.3rem;
     text-align: center;
-    @media screen and (min-width: 550px) {
+
+    @media screen and (min-width: 520px) {
       font-size: 2rem;
-      padding: 1.2rem 2.5rem;
+      padding: 1.4rem 3rem;
     }
     @media screen and (min-width: $tablet900px) {
       font-size: 1.8rem;
@@ -115,12 +116,18 @@
     &.courante {
       @include boutonPageCourante;
       line-height: 120%;
+      padding: 1rem 1.5rem;
+
+      @media screen and (min-width: 520px) {
+        padding: 1.2rem 2.8rem;
+      }
 
       &:hover {
         border: none;
         padding: 1.3rem 1.8rem;
-        @media screen and (min-width: 550px) {
-          padding: 1.5rem 2.8rem;
+
+        @media screen and (min-width: 520px) {
+          padding: 1.5rem 3.1rem;
         }
       }
     }
