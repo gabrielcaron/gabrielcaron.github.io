@@ -68,15 +68,15 @@ Aucune dépendance requise.
 
 ### En résumé
 
-Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé à l'hiver 2007 dans le cadre du cours Projet graphique 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup. Aucune version Web n'avait été prévue à ce moment.
+Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé à l'hiver 2007 dans le cadre du cours 
+Projet graphique 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup.
 
-À l'été 2019, le projet d'un nouveau portfolio Web est amorcé. Il rassemblera les projets réalisés en Graphisme ainsi qu'en Techniques d'intégration multimédia.
-
-À l'hiver 2020, un premier prototype est intégré.
-
-À l'automne 2020, une deuxième itération de design est amorcée : nouvelles recherches visuelles, esquisses préliminaires, esquisses fonctionnelles, maquettes, etc.
-
-À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
+* À l'été 2019, début du projet d'un nouveau portfolio Web. Il rassemblera les projets réalisés en Graphisme 
+ainsi qu'en Techniques d'intégration multimédia.
+* À l'hiver 2020, un premier prototype est intégré.
+* À l'automne 2020, une deuxième itération de design est amorcée : nouvelles recherches visuelles, esquisses 
+  préliminaires, esquisses fonctionnelles, maquettes, etc.
+* À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
 
 ### 2022
 
@@ -122,7 +122,7 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
     * Retrait des floats
     * Conversion vers CSS Grid
     * Mise en place de modules SASS
-    * Nouvelle page d'accueil
+    * Refonte de la page d'accueil
 
 #### Février 2021
 
@@ -166,7 +166,7 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 
 * Lancement du projet de portfolio Web
     * Recherche et idéation
-    * Début du retraçage et de la sélection des projets
+    * Retraçage et sélection des projets
 
 ### 2007
 
@@ -194,15 +194,16 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
     * 65 % = hauteur de 207 px
     * 70 % = hauteur de 223 px
 * La taille maximale de l'icône est de 319 px dans le navigateur.
-* Les traits doivent avoir au minimum 5 px. Idéalement, on peut choisir des multiples de 5.
+* Les traits principaux doivent avoir une épaisseur de 10 pixels. Les détails doivent avoir 5 px.
 * Les symboles ronds sont uniformisés à 207 px de hauteur.
 * Les symboles carrés sont uniformisés à 223 px de hauteur.
 * Dans une même rangée, la hauteur des symboles doit être uniforme. On évite de mélanger des symboles ronds et carrés dans une même rangée.
-    * Si une rangée a une icône avec un symbole rond, toute la rangée sera uniformisée sur la hauteur de ce symbole.
-  * Si une rangée a une icône avec un symbole carré, toute la rangée sera uniformisée sur la hauteur de ce symbole.
+* Si une rangée a une icône avec un symbole rond, toute la rangée sera uniformisée sur la hauteur de ce symbole.
+* Si une rangée a une icône avec un symbole carré, toute la rangée sera uniformisée sur la hauteur de ce symbole.
 
 
 #### Intégration d'une icône
+
 1. Retirer les ombres et les contours de l'élévation (le cas échéant)
 2. Aplatir le symbole
 3. Exporter l'icône au complet (élévation + symbole) en SVG dans Figma
@@ -223,13 +224,17 @@ Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé
 
 ### Projets
 
-Le portfolio contient deux types de projets : Web/applications mobiles et design graphique. Les projets Web sont présentés en version mobile et tablette. Les projets de design graphique sont présentés la plupart du temps « sans contexte », c'est-à-dire sans support physique.
+Le portfolio contient deux types de projets : Web/applications mobiles et design graphique.
+* Les projets Web sont présentés en version mobile et tablette.
+* Les projets de design graphique sont présentés la 
+plupart du temps « sans contexte », c'est-à-dire sans support physique.
 
 #### Droits d'auteur
 
 Éviter d'utiliser des identifications visuelles protégées par copyright.
 
-Cependant, le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition de mentionner que « Ce projet n'a pas été faite en association avec le Gouvernement du Canada ni avec l'appui de celui-ci. »
+Le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition 
+de mentionner que « Ce projet n'a pas été faite en association avec le Gouvernement du Canada ni avec l'appui de celui-ci. »
 
 #### Formats des images
 
