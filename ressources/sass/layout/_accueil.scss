@@ -70,7 +70,7 @@
 
   .projets {
     @include rangeeGrid12col($tablet900px);
-    align-items: flex-start;
+
     @media screen and (max-width: 899px) {
       @include paddingConteneur;
     }
@@ -126,6 +126,7 @@
 
       &.web-applis {
         @include rangeeGrid12col($tablet900px);
+        align-content: flex-start;
 
         & .titre {
           grid-column: 2 / 13;
@@ -146,6 +147,7 @@
 
       &.design-graphique {
         @include rangeeGrid12col($tablet900px);
+        align-content: flex-start;
 
         & .titre {
           grid-column: 1 / 12;
