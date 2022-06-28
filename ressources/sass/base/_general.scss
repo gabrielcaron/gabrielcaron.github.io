@@ -21,6 +21,11 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: 17rem;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $gris98;
+
+  }
 }
 
 img {
