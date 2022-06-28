@@ -16,279 +16,284 @@
   position: relative;
   $bordure: 2px;
   background-color: $gris98;
-  //background-color: #5ac6ee; // pour tester uniquement
   background-clip: padding-box;
   border: solid $bordure transparent;
   border-radius: 55px;
-  //display: inline-block;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $noirSombre;
+  }
 
   &:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	margin: -$bordure;
-	border-radius: inherit;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$bordure;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+
+    @media screen and (prefers-color-scheme: dark) {
+		background: linear-gradient(180deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 1) 100%);
+    }
   }
 }
 
 
 /* État survol des icônes des projets */
 
-
 .navigation {
 
   &__lien {
 
-	// Nouveau projet
+    // Nouveau projet
 
-	@media screen and (min-width: $mobile600px) {
-	  &.nouveau {
-		& .navigation__figcaption::before {
-		  content: "";
-		  display: inline-block;
-		  width: 1.4rem;
-		  height: 1.4rem;
-		  background-image: url(../images/icones/nouveau.svg);
-		  background-repeat: no-repeat;
-		  padding-right: 1rem;
-		}
+    @media screen and (min-width: $mobile600px) {
+      &.nouveau {
+        & .navigation__figcaption::before {
+          content: "";
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background-image: url(../images/icones/nouveau.svg);
+          background-repeat: no-repeat;
+          padding-right: 1rem;
+        }
 
-		&.nouveau:hover, &.nouveau:active {
+        &.nouveau:hover, &.nouveau:active {
 
-		  & .navigation__figcaption::before {
-			background-image: url(../images/icones/nouveau--hover.svg);
-		  }
-		}
-	  }
-	}
+          & .navigation__figcaption::before {
+            background-image: url(../images/icones/nouveau--hover.svg);
+          }
+        }
+      }
+    }
 
-	// Projets en ordre alphabétique
+    // Projets en ordre alphabétique
 
-	// 100 ans de SOS
-	&.courant, &:hover {
-	  & .SOS {
-		& .elevation {
-		  fill: url(#SOS-rouge-hover);
-		}
+    // 100 ans de SOS
+    &.courant, &:hover {
+      & .SOS {
+        & .elevation {
+          fill: url(#SOS-rouge-hover);
+        }
 
-		& .bouee {
-		  fill: url(#SOS-gris-hover);
-		}
-	  }
-	}
+        & .bouee {
+          fill: url(#SOS-gris-hover);
+        }
+      }
+    }
 
-	// Alaia
-	&.courant, &:hover {
-	  & .alaia {
-		& .elevation {
-		  fill: url(#alaia-sable-defaut);
-		}
+    // Alaia
+    &.courant, &:hover {
+      & .alaia {
+        & .elevation {
+          fill: url(#alaia-sable-defaut);
+        }
 
-		& .planches {
-		  fill: url(#alaia-gris-hover);
-		}
-	  }
-	}
+        & .planches {
+          fill: url(#alaia-gris-hover);
+        }
+      }
+    }
 
-	// Altitude
-	&.courant, &:hover {
-	  & .altitude {
-		& .elevation {
-		  fill: url(#altitude-bleu-hover);
-		}
+    // Altitude
+    &.courant, &:hover {
+      & .altitude {
+        & .elevation {
+          fill: url(#altitude-bleu-hover);
+        }
 
-		& .altisymbole {
-		  fill: url(#altitude-gris-hover);
-		}
-	  }
-	}
+        & .altisymbole {
+          fill: url(#altitude-gris-hover);
+        }
+      }
+    }
 
-	// Aquafina
-	&.courant, &:hover {
-	  & .aquafina {
-		& .elevation {
-		  fill: url(#aquafina-bleu-hover);
-		}
+    // Aquafina
+    &.courant, &:hover {
+      & .aquafina {
+        & .elevation {
+          fill: url(#aquafina-bleu-hover);
+        }
 
-		& .goutte {
-		  fill: url(#aquafina-gris-hover);
-		}
-	  }
-	}
+        & .goutte {
+          fill: url(#aquafina-gris-hover);
+        }
+      }
+    }
 
-	// Boréal
-	&.courant, &:hover {
-	  & .boreal {
-		& .elevation {
-		  fill: url(#boreal-vert-hover);
-		}
+    // Boréal
+    &.courant, &:hover {
+      & .boreal {
+        & .elevation {
+          fill: url(#boreal-vert-hover);
+        }
 
-		& .feuille {
-		  fill: url(#boreal-gris-hover);
-		}
-	  }
-	}
+        & .feuille {
+          fill: url(#boreal-gris-hover);
+        }
+      }
+    }
 
-	// Danse en boîtes
-	&.courant, &:hover {
-	  & .danseenboites {
-		& .elevation {
-		  fill: url(#danseenboites-orange-hover);
-		}
+    // Danse en boîtes
+    &.courant, &:hover {
+      & .danseenboites {
+        & .elevation {
+          fill: url(#danseenboites-orange-hover);
+        }
 
-		& .masques {
-		  fill: url(#danseenboites-gris-hover);
-		}
-	  }
-	}
+        & .masques {
+          fill: url(#danseenboites-gris-hover);
+        }
+      }
+    }
 
-	// Destinations Canada
-	&.courant, &:hover {
-	  & .destinations {
-		& .elevation {
-		  fill: url(#destinations-rouge-hover);
-		}
+    // Destinations Canada
+    &.courant, &:hover {
+      & .destinations {
+        & .elevation {
+          fill: url(#destinations-rouge-hover);
+        }
 
-		& .symbole {
-		  fill: url(#destinations-gris-hover);
-		}
-	  }
-	}
+        & .symbole {
+          fill: url(#destinations-gris-hover);
+        }
+      }
+    }
 
-	// Élite
-	&.courant, &:hover {
-	  & .elite {
-		& .elevation {
-		  fill: url(#elite-rouge-hover);
-		}
+    // Élite
+    &.courant, &:hover {
+      & .elite {
+        & .elevation {
+          fill: url(#elite-rouge-hover);
+        }
 
-		& .etincelle {
-		  fill: url(#elite-gris-hover);
-		}
-	  }
-	}
+        & .etincelle {
+          fill: url(#elite-gris-hover);
+        }
+      }
+    }
 
-	// Festival OFF
-	&.courant, &:hover {
-	  & .festivaloff {
-		& .elevation {
-		  fill: url(#festivaloff-violet-hover);
-		}
+    // Festival OFF
+    &.courant, &:hover {
+      & .festivaloff {
+        & .elevation {
+          fill: url(#festivaloff-violet-hover);
+        }
 
-		& .note {
-		  fill: url(#festivaloff-gris-hover);
-		}
-	  }
-	}
+        & .note {
+          fill: url(#festivaloff-gris-hover);
+        }
+      }
+    }
 
-	// Grosse-Île
-	&.courant, &:hover {
-	  & .grosseile {
-		& .elevation {
-		  fill: url(#grosseile-vert-hover);
-		}
+    // Grosse-Île
+    &.courant, &:hover {
+      & .grosseile {
+        & .elevation {
+          fill: url(#grosseile-vert-hover);
+        }
 
-		& .croix {
-		  fill: url(#grosseile-gris-hover);
-		}
-	  }
-	}
+        & .croix {
+          fill: url(#grosseile-gris-hover);
+        }
+      }
+    }
 
-	// Manuel de typographie
-	&.courant, &:hover {
-	  & .manueldetypo {
-		& .elevation {
-		  fill: url(#manueldetypo-bleu-hover);
-		}
+    // Manuel de typographie
+    &.courant, &:hover {
+      & .manueldetypo {
+        & .elevation {
+          fill: url(#manueldetypo-bleu-hover);
+        }
 
-		& .livre {
-		  fill: url(#manueldetypo-gris-hover);
-		}
-	  }
-	}
+        & .livre {
+          fill: url(#manueldetypo-gris-hover);
+        }
+      }
+    }
 
-	// Memorize
-	&.courant, &:hover {
-	  & .memorize {
-		& .elevation {
-		  fill: url(#memorize-orange-hover);
-		}
+    // Memorize
+    &.courant, &:hover {
+      & .memorize {
+        & .elevation {
+          fill: url(#memorize-orange-hover);
+        }
 
-		& .cartes {
-		  fill: url(#memorize-gris-hover);
-		}
-	  }
-	}
+        & .cartes {
+          fill: url(#memorize-gris-hover);
+        }
+      }
+    }
 
-	// Mettez le feu à votre créativité
-	&.courant, &:hover {
-	  & .creativite {
-		& .elevation {
-		  fill: url(#creativite-orange-hover);
-		}
+    // Mettez le feu à votre créativité
+    &.courant, &:hover {
+      & .creativite {
+        & .elevation {
+          fill: url(#creativite-orange-hover);
+        }
 
-		& .feu {
-		  fill: url(#creativite-gris-hover);
-		}
-	  }
-	}
+        & .feu {
+          fill: url(#creativite-gris-hover);
+        }
+      }
+    }
 
-	// Mexico
-	&.courant, &:hover {
-	  & .mexico {
-		& .elevation {
-		  fill: url(#mexico-orange-hover);
-		}
+    // Mexico
+    &.courant, &:hover {
+      & .mexico {
+        & .elevation {
+          fill: url(#mexico-orange-hover);
+        }
 
-		& .guitare {
-		  fill: url(#mexico-gris-hover);
-		}
-	  }
-	}
+        & .guitare {
+          fill: url(#mexico-gris-hover);
+        }
+      }
+    }
 
-	// Presto!
-	&.courant, &:hover {
-	  & .presto {
-		& .elevation {
-		  fill: url(#presto-vert-hover);
-		}
+    // Presto!
+    &.courant, &:hover {
+      & .presto {
+        & .elevation {
+          fill: url(#presto-vert-hover);
+        }
 
-		& .prestosymbole {
-		  fill: url(#presto-gris-hover);
-		}
-	  }
-	}
+        & .prestosymbole {
+          fill: url(#presto-gris-hover);
+        }
+      }
+    }
 
-	// Reprends le contrôle
-	&.courant, &:hover {
-	  & .controle {
-		& .elevation {
-		  fill: url(#controle-jaune-hover);
-		}
+    // Reprends le contrôle
+    &.courant, &:hover {
+      & .controle {
+        & .elevation {
+          fill: url(#controle-jaune-hover);
+        }
 
-		& .pantin {
-		  fill: url(#controle-gris-hover);
-		}
-	  }
-	}
+        & .pantin {
+          fill: url(#controle-gris-hover);
+        }
+      }
+    }
 
-	// Tim
-	&.courant, &:hover {
-	  & .tim {
-		& .elevation {
-		  fill: url(#tim-bleu-hover);
-		}
+    // Tim
+    &.courant, &:hover {
+      & .tim {
+        & .elevation {
+          fill: url(#tim-bleu-hover);
+        }
 
-		& .logotim {
-		  fill: url(#tim-gris-hover);
-		}
-	  }
-	}
+        & .logotim {
+          fill: url(#tim-gris-hover);
+        }
+      }
+    }
   }
 }
 
@@ -300,136 +305,136 @@
   letter-spacing: $EspacementStandard;
 
   &::before {
-	content: "";
-	display: inline-block;
-	width: 3.5rem;
-	height: 5rem;
-	vertical-align: middle;
-	margin-top: -0.5rem;
-	padding-right: 1rem;
-	background-repeat: no-repeat;
-	transition: all, 0.1s ease-in-out;
+    content: "";
+    display: inline-block;
+    width: 3.5rem;
+    height: 5rem;
+    vertical-align: middle;
+    margin-top: -0.5rem;
+    padding-right: 1rem;
+    background-repeat: no-repeat;
+    transition: all, 0.1s ease-in-out;
   }
 
   &:link, &:visited {
-	color: $gris25;
+    color: $gris25;
   }
 
   &:hover, &:active {
-	color: $noir;
-	text-decoration: underline;
+    color: $noir;
+    text-decoration: underline;
   }
 
   &.axure {
 
-	&::before {
-	  background-image: url(../images/icones/axure.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/axure.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/axure--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/axure--hover.svg);
+      }
+    }
   }
 
   &.figma {
 
-	&::before {
-	  background-image: url(../images/icones/figma.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/figma.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/figma--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/figma--hover.svg);
+      }
+    }
   }
 
   &.github {
 
-	&::before {
-	  background-image: url(../images/icones/github.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/github.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/github--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/github--hover.svg);
+      }
+    }
   }
 
   &.pdf {
 
-	&::before {
-	  background-image: url(../images/icones/pdf.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/pdf.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/pdf--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/pdf--hover.svg);
+      }
+    }
   }
 
   &.rtf {
 
-	&::before {
-	  background-image: url(../images/icones/rtf.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/rtf.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/rtf--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/rtf--hover.svg);
+      }
+    }
   }
 
   &.sketch {
 
-	&::before {
-	  background-image: url(../images/icones/sketch.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/sketch.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/sketch--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/sketch--hover.svg);
+      }
+    }
   }
 
   &.web {
 
-	&::before {
-	  background-image: url(../images/icones/web.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/web.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/web--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/web--hover.svg);
+      }
+    }
   }
 
   &.xd {
 
-	&::before {
-	  background-image: url(../images/icones/xd.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/xd.svg);
+    }
 
-	&:hover, &:active {
+    &:hover, &:active {
 
-	  &::before {
-		background-image: url(../images/icones/xd--hover.svg);
-	  }
-	}
+      &::before {
+        background-image: url(../images/icones/xd--hover.svg);
+      }
+    }
   }
 }
 
@@ -437,7 +442,7 @@
 
 .externe:hover {
   &::after {
-	margin: 0 0 0.75rem 0.75rem;
+    margin: 0 0 0.75rem 0.75rem;
   }
 }
 

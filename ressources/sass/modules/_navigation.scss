@@ -213,6 +213,16 @@
     letter-spacing: $EspacementStandard;
     line-height: 100%;
     border-radius: $arrondiMobile;
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blancSombre;
+    }
+
+    &:hover {
+      @media screen and (prefers-color-scheme: dark) {
+        color: $gris25;
+      }
+    }
   }
 
   &__figure {
@@ -223,6 +233,7 @@
       border: solid 3px $blanc;
       border-radius: $arrondiMobile;
       box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
+
       @media screen and (min-width: $mobile600px) {
         border-radius: $arrondiTable;
       }
@@ -234,6 +245,15 @@
       }
       @media screen and (min-width: 1400px) {
         border-radius: $arrondiTable;
+      }
+
+      @media screen and (prefers-color-scheme: dark) {
+        border: solid 3px $grisContourIconeSombre;
+        box-shadow: none;
+
+        & .elevation {
+          fill: $grisElevationIconeSombre;
+        }
       }
     }
   }
