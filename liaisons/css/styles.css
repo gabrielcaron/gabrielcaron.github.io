@@ -904,11 +904,21 @@ img {
   background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
   box-shadow: -5px -5px 20px 0px white, 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien:active:before {
+    box-shadow: none;
+  }
+}
 .entete .navigation__lien.courante {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   line-height: 120%;
   padding: 1rem 1.5rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien.courante {
+    box-shadow: none;
+  }
 }
 @media screen and (min-width: 520px) {
   .entete .navigation__lien.courante {
@@ -1046,7 +1056,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figure svg {
-    border: solid 3px #1F1F1F;
+    border: solid 2px #1F1F1F;
     box-shadow: none;
   }
   .projets .navigation__figure svg .elevation {
@@ -1066,6 +1076,11 @@ img {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeSections .courant {
+    box-shadow: none;
+  }
+}
 .projets .navigation .rangeeSections .navigation__lien {
   font-size: 2rem;
   padding: 1rem 2.7rem;
@@ -1080,6 +1095,11 @@ img {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeSections .navigation__lien:hover {
+    box-shadow: none;
+  }
+}
 .projets .navigation .rangeeSections .navigation__lien:hover.courant {
   border: none;
   padding: 1.3rem 3rem;
@@ -1087,6 +1107,11 @@ img {
 .projets .navigation .rangeeSections .navigation__lien:active {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeSections .navigation__lien:active {
+    box-shadow: none;
+  }
 }
 .projets .navigation .rangeeSections .navigation__lien:active.courant {
   border: none;
@@ -1098,6 +1123,11 @@ img {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption {
+    box-shadow: none;
+  }
+}
 .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption {
   border: none;
   padding: 1.3rem 2.3rem;
@@ -1106,10 +1136,20 @@ img {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
+    box-shadow: none;
+  }
+}
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
+    box-shadow: none;
+  }
 }
 
 /* Pied de page */
@@ -1392,6 +1432,11 @@ img {
     background-image: url(../images/icones/nouveau--hover.svg);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant svg, .navigation__lien:hover svg {
+    border: solid 2px rgba(255, 225, 0, 0.2);
+  }
+}
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
   fill: url(#SOS-rouge-hover);
 }
@@ -1484,6 +1529,11 @@ img {
 }
 .navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation {
   fill: url(#controle-jaune-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation {
+    fill: rgba(255, 225, 0, 0.15);
+  }
 }
 .navigation__lien.courant .controle .pantin, .navigation__lien:hover .controle .pantin {
   fill: url(#controle-gris-hover);

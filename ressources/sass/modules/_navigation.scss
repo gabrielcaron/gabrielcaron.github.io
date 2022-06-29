@@ -122,6 +122,10 @@
         border-radius: inherit;
         background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
         box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+
+        @media screen and (prefers-color-scheme: dark) {
+          box-shadow: none;
+        }
       }
     }
 
@@ -260,7 +264,7 @@
       }
 
       @media screen and (prefers-color-scheme: dark) {
-        border: solid 3px $grisContourIconeSombre;
+        border: solid 2px $grisContourIconeSombre;
         box-shadow: none;
 
         & .elevation {

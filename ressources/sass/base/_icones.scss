@@ -74,6 +74,16 @@
 
     // Projets en ordre alphabétique
 
+    // Toutes les icônes
+
+    @media screen and (prefers-color-scheme: dark) {
+      &.courant, &:hover {
+        & svg {
+          border: solid 2px transparentize($jauneOfficiel, 0.8);
+        }
+      }
+    }
+
     // 100 ans de SOS
     &.courant, &:hover {
       & .SOS {
@@ -274,6 +284,10 @@
       & .controle {
         & .elevation {
           fill: url(#controle-jaune-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .pantin {
