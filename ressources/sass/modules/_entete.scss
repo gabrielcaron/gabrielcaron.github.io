@@ -68,14 +68,31 @@
 	  margin-left: 0;
 	}
 
+	& .signature {
+	  @media screen and (prefers-color-scheme: dark) {
+		fill: $noirSombre;
+	  }
+	}
+
 	& .maison {
 	  display: none;
 	}
 
+    & .logotype {
+      @media screen and (prefers-color-scheme: dark) {
+        fill: $blancSombre;
+      }
+    }
+
 	&:hover {
 	  & .maison {
 		display: block;
+
+        @media screen and (prefers-color-scheme: dark) {
+          fill: $noirSombre;
+        }
 	  }
+
 	  & .signature {
 		display: none;
 	  }

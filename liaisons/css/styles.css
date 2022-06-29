@@ -742,11 +742,26 @@ img {
     margin-left: 0;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .entete__logo .signature {
+    fill: #0D0D0D;
+  }
+}
 .entete__logo .maison {
   display: none;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .entete__logo .logotype {
+    fill: #E6E6E6;
+  }
+}
 .entete__logo:hover .maison {
   display: block;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .entete__logo:hover .maison {
+    fill: #0D0D0D;
+  }
 }
 .entete__logo:hover .signature {
   display: none;
