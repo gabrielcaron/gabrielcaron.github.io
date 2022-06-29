@@ -1443,7 +1443,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .SOS .bouee, .navigation__lien:hover .SOS .bouee {
@@ -1454,7 +1454,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .alaia .planches, .navigation__lien:hover .alaia .planches {
@@ -1465,7 +1465,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .altitude .elevation, .navigation__lien:hover .altitude .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .altitude .altisymbole, .navigation__lien:hover .altitude .altisymbole {
@@ -1476,7 +1476,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
@@ -1487,7 +1487,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .boreal .elevation, .navigation__lien:hover .boreal .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .boreal .feuille, .navigation__lien:hover .boreal .feuille {
@@ -1498,7 +1498,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .danseenboites .elevation, .navigation__lien:hover .danseenboites .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .danseenboites .masques, .navigation__lien:hover .danseenboites .masques {
@@ -1509,7 +1509,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
@@ -1520,7 +1520,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .elite .elevation, .navigation__lien:hover .elite .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .elite .etincelle, .navigation__lien:hover .elite .etincelle {
@@ -1531,7 +1531,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .festivaloff .elevation, .navigation__lien:hover .festivaloff .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .festivaloff .note, .navigation__lien:hover .festivaloff .note {
@@ -1542,7 +1542,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
@@ -1553,7 +1553,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .manueldetypo .elevation, .navigation__lien:hover .manueldetypo .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .manueldetypo .livre, .navigation__lien:hover .manueldetypo .livre {
@@ -1564,7 +1564,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .memorize .elevation, .navigation__lien:hover .memorize .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .memorize .cartes, .navigation__lien:hover .memorize .cartes {
@@ -1575,7 +1575,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
@@ -1586,7 +1586,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .mexico .guitare, .navigation__lien:hover .mexico .guitare {
@@ -1597,7 +1597,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole {
@@ -1608,7 +1608,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .controle .pantin, .navigation__lien:hover .controle .pantin {
@@ -1619,7 +1619,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .tim .elevation, .navigation__lien:hover .tim .elevation {
-    fill: rgba(255, 225, 0, 0.15);
+    fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .tim .logotim, .navigation__lien:hover .tim .logotim {
