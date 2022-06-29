@@ -56,12 +56,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 100%;
   letter-spacing: $EspacementStandard;
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: $blancSombre;
+  }
 }
 
 h1 {
   font-size: 4.5rem;
   text-align: center;
   padding: 2rem 0 5rem 0;
+
   @media screen and (min-width: $mobile600px) {
     font-size: 7rem;
     padding: 10rem 0;
