@@ -79,7 +79,7 @@
       border: solid $bordure transparent;
 
       @media screen and (prefers-color-scheme: dark) {
-        color: $noirSombre;
+        color: $gris25;
       }
 
       &:before {
@@ -96,6 +96,7 @@
         box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
 
         @media screen and (prefers-color-scheme: dark) {
+          background: linear-gradient(180deg, $noirSombre 0%, $noirSombre 100%);
           box-shadow: none;
         }
       }

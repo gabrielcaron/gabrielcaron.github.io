@@ -89,6 +89,10 @@
       & .SOS {
         & .elevation {
           fill: url(#SOS-rouge-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .bouee {
@@ -102,6 +106,10 @@
       & .alaia {
         & .elevation {
           fill: url(#alaia-sable-defaut);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .planches {
@@ -115,6 +123,10 @@
       & .altitude {
         & .elevation {
           fill: url(#altitude-bleu-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .altisymbole {
@@ -128,6 +140,10 @@
       & .aquafina {
         & .elevation {
           fill: url(#aquafina-bleu-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .goutte {
@@ -141,6 +157,10 @@
       & .boreal {
         & .elevation {
           fill: url(#boreal-vert-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .feuille {
@@ -154,10 +174,18 @@
       & .danseenboites {
         & .elevation {
           fill: url(#danseenboites-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .masques {
           fill: url(#danseenboites-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            // Même dégradé état initial et hover
+          }
         }
       }
     }
@@ -167,6 +195,10 @@
       & .destinations {
         & .elevation {
           fill: url(#destinations-rouge-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .symbole {
@@ -180,6 +212,10 @@
       & .elite {
         & .elevation {
           fill: url(#elite-rouge-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .etincelle {
@@ -193,6 +229,10 @@
       & .festivaloff {
         & .elevation {
           fill: url(#festivaloff-violet-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .note {
@@ -206,6 +246,10 @@
       & .grosseile {
         & .elevation {
           fill: url(#grosseile-vert-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .croix {
@@ -219,6 +263,10 @@
       & .manueldetypo {
         & .elevation {
           fill: url(#manueldetypo-bleu-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .livre {
@@ -232,6 +280,10 @@
       & .memorize {
         & .elevation {
           fill: url(#memorize-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .cartes {
@@ -245,6 +297,10 @@
       & .creativite {
         & .elevation {
           fill: url(#creativite-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .feu {
@@ -258,6 +314,10 @@
       & .mexico {
         & .elevation {
           fill: url(#mexico-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .guitare {
@@ -271,6 +331,10 @@
       & .presto {
         & .elevation {
           fill: url(#presto-vert-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .prestosymbole {
@@ -301,6 +365,10 @@
       & .tim {
         & .elevation {
           fill: url(#tim-bleu-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.85);
+          }
         }
 
         & .logotim {
