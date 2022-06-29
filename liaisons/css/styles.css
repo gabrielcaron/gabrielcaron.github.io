@@ -836,6 +836,11 @@ img {
     font-size: 2rem;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien {
+    color: #E6E6E6;
+  }
+}
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
   border: solid 1px transparent;
   border-radius: 2.5rem;
@@ -852,6 +857,11 @@ img {
   background-clip: padding-box;
   border: solid 1px transparent;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien:hover {
+    color: #0D0D0D;
+  }
+}
 .entete .navigation__lien:hover:before {
   content: "";
   position: absolute;
@@ -864,6 +874,11 @@ img {
   border-radius: inherit;
   background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien:hover:before {
+    box-shadow: none;
+  }
 }
 .entete .navigation__lien:active {
   position: relative;
@@ -1537,6 +1552,7 @@ body {
 @media screen and (prefers-color-scheme: dark) {
   body {
     background-color: #0D0D0D;
+    background-image: url("../images/design/texture-vagues--sombre.svg");
   }
 }
 

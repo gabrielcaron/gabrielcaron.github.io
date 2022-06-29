@@ -56,10 +56,15 @@
       font-size: 2rem;
     }
 
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blancSombre;
+    }
+
     &:link, &:visited {
       border: solid 1px transparent;
       border-radius: 2.5rem;
       transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+
       @media screen and (min-width: $mobile600px) {
         border-radius: 3rem;
       }
@@ -73,6 +78,9 @@
       background-clip: padding-box;
       border: solid $bordure transparent;
 
+      @media screen and (prefers-color-scheme: dark) {
+        color: $noirSombre;
+      }
 
       &:before {
         content: '';
@@ -86,6 +94,10 @@
         border-radius: inherit;
         background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
         box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+
+        @media screen and (prefers-color-scheme: dark) {
+          box-shadow: none;
+        }
       }
 
     }
