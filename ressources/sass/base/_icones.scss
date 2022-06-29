@@ -400,11 +400,19 @@
 
   &:link, &:visited {
     color: $gris25;
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: $gris65AAA;
+    }
   }
 
   &:hover, &:active {
     color: $noir;
     text-decoration: underline;
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blancSombre;
+    }
   }
 
   &.axure {
