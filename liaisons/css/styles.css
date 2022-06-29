@@ -1314,6 +1314,9 @@ img {
   .pieddepage__logo .signature {
     fill: #0D0D0D;
   }
+  .pieddepage__logo .logotype {
+    fill: #E6E6E6;
+  }
 }
 .pieddepage__logo:hover .maison {
   display: block;
