@@ -1144,9 +1144,19 @@ img {
   line-height: 110%;
   font-size: 2.5rem;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage .navigation__titre {
+    color: #E6E6E6;
+  }
+}
 .pieddepage .navigation__titre .section {
   color: #000;
   font-size: 2.5rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage .navigation__titre .section {
+    color: #E6E6E6;
+  }
 }
 .pieddepage .navigation__liste {
   grid-column: span 4;
@@ -1168,11 +1178,22 @@ img {
     line-height: 200%;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage .navigation__lien {
+    color: #A6A6A6;
+  }
+}
 .pieddepage .navigation__lien.section {
   line-height: 100%;
 }
 .pieddepage .navigation__lien:hover {
   border-bottom: solid 0.3rem #404040;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage .navigation__lien:hover {
+    color: #E6E6E6;
+    border-bottom: solid 0.3rem #FFE100;
+  }
 }
 .pieddepage__copyright {
   grid-column: 1/13;
@@ -1233,6 +1254,11 @@ img {
     border-radius: 20rem 0 0 0;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage {
+    background-image: linear-gradient(to right bottom, #1D1B16, #1C1A15);
+  }
+}
 @supports (grid-template-columns: minmax(auto, 1400px)) {
   @media (min-width: 600px) {
     .pieddepage__conteneurGrille {
@@ -1256,6 +1282,11 @@ img {
     padding-left: 4rem;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage__titres {
+    color: #A6A6A6;
+  }
+}
 .pieddepage__rangeeLogo {
   padding: 6rem 0 2rem 0;
 }
@@ -1276,8 +1307,21 @@ img {
 .pieddepage__logo .maison {
   display: none;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage__logo .elevation {
+    fill: #FFE100;
+  }
+  .pieddepage__logo .signature {
+    fill: #0D0D0D;
+  }
+}
 .pieddepage__logo:hover .maison {
   display: block;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage__logo:hover .maison {
+    fill: #0D0D0D;
+  }
 }
 .pieddepage__logo:hover .signature {
   display: none;
@@ -1290,6 +1334,11 @@ img {
 }
 .pieddepage__copyright:hover {
   text-decoration: underline;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage__copyright {
+    color: #A6A6A6;
+  }
 }
 @media screen and (min-width: 900px) {
   .pieddepage__copyright {
@@ -1523,6 +1572,11 @@ img {
   margin-left: 0.5rem;
   content: "";
   transition: all 200ms ease-in-out;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .externe::after {
+    background: url("../images/icones/lien-externe--sombre.svg") no-repeat center;
+  }
 }
 
 /********* LAYOUT *********/

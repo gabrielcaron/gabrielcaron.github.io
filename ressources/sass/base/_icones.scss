@@ -455,4 +455,8 @@
   margin-left: 0.5rem;
   content: "";
   transition: all 200ms ease-in-out;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: url("../images/icones/lien-externe--sombre.svg") no-repeat center;
+  }
 }
