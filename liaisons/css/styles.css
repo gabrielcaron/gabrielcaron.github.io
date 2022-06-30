@@ -1806,6 +1806,11 @@ img {
     fill: url(#controle-jaune-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .tim .logotim {
+    fill: url(#tim-bleu-sombre);
+  }
+}
 .navigation__lien.courant .tim .elevation, .navigation__lien:hover .tim .elevation {
   fill: url(#tim-bleu-hover);
 }
@@ -1816,6 +1821,11 @@ img {
 }
 .navigation__lien.courant .tim .logotim, .navigation__lien:hover .tim .logotim {
   fill: url(#tim-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .tim .logotim, .navigation__lien:hover .tim .logotim {
+    fill: url(#tim-bleu-sombre);
+  }
 }
 
 .lien {

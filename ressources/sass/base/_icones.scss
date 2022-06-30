@@ -549,6 +549,14 @@
     }
 
     // Tim
+    @media screen and (prefers-color-scheme: dark) {
+      & .tim {
+        & .logotim {
+          fill: url(#tim-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .tim {
         & .elevation {
@@ -561,6 +569,10 @@
 
         & .logotim {
           fill: url(#tim-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#tim-bleu-sombre);
+          }
         }
       }
     }
