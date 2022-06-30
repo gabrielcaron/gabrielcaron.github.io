@@ -1497,6 +1497,11 @@ img {
 .navigation__lien.courant .alaia .planches, .navigation__lien:hover .alaia .planches {
   fill: url(#alaia-gris-hover);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .alaia .planches, .navigation__lien:hover .alaia .planches {
+    fill: url(#alaia-sable-sombre);
+  }
+}
 .navigation__lien.courant .altitude .elevation, .navigation__lien:hover .altitude .elevation {
   fill: url(#altitude-bleu-hover);
 }

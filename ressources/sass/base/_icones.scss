@@ -122,6 +122,10 @@
 
         & .planches {
           fill: url(#alaia-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#alaia-sable-sombre);
+          }
         }
       }
     }
