@@ -462,6 +462,14 @@
     }
 
     // Mexico
+    @media screen and (prefers-color-scheme: dark) {
+      & .mexico {
+        & .guitare {
+          fill: url(#mexico-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .mexico {
         & .elevation {
@@ -474,6 +482,10 @@
 
         & .guitare {
           fill: url(#mexico-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#mexico-orange-sombre);
+          }
         }
       }
     }

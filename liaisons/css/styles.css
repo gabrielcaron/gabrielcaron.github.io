@@ -1743,6 +1743,11 @@ img {
     fill: url(#creativite-orange-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .mexico .guitare {
+    fill: url(#mexico-orange-sombre);
+  }
+}
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-hover);
 }
@@ -1753,6 +1758,11 @@ img {
 }
 .navigation__lien.courant .mexico .guitare, .navigation__lien:hover .mexico .guitare {
   fill: url(#mexico-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .mexico .guitare, .navigation__lien:hover .mexico .guitare {
+    fill: url(#mexico-orange-sombre);
+  }
 }
 .navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation {
   fill: url(#presto-vert-hover);
