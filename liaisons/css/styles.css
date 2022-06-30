@@ -1409,7 +1409,7 @@ img {
   color: #000;
 }
 .pieddepage__copyright:hover {
-  text-decoration: underline yellow;
+  text-decoration: underline dotted yellow;
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage__copyright:hover {
