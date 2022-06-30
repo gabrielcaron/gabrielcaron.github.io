@@ -1764,6 +1764,11 @@ img {
     fill: url(#mexico-orange-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .presto .prestosymbole {
+    fill: url(#presto-vert-sombre);
+  }
+}
 .navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation {
   fill: url(#presto-vert-hover);
 }
@@ -1774,6 +1779,11 @@ img {
 }
 .navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole {
   fill: url(#presto-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole {
+    fill: url(#presto-vert-sombre);
+  }
 }
 .navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation {
   fill: url(#controle-jaune-hover);

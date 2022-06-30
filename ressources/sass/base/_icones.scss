@@ -491,6 +491,14 @@
     }
 
     // Presto!
+    @media screen and (prefers-color-scheme: dark) {
+      & .presto {
+        & .prestosymbole {
+          fill: url(#presto-vert-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .presto {
         & .elevation {
@@ -503,6 +511,10 @@
 
         & .prestosymbole {
           fill: url(#presto-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#presto-vert-sombre);
+          }
         }
       }
     }
