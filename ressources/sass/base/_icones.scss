@@ -143,6 +143,14 @@
     }
 
     // Altitude
+    @media screen and (prefers-color-scheme: dark) {
+      & .altitude {
+        & .altisymbole {
+          fill: url(#altitude-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .altitude {
         & .elevation {
@@ -155,6 +163,10 @@
 
         & .altisymbole {
           fill: url(#altitude-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#altitude-bleu-sombre);
+          }
         }
       }
     }

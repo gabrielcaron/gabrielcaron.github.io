@@ -1512,6 +1512,11 @@ img {
     fill: url(#alaia-sable-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .altitude .altisymbole {
+    fill: url(#altitude-bleu-sombre);
+  }
+}
 .navigation__lien.courant .altitude .elevation, .navigation__lien:hover .altitude .elevation {
   fill: url(#altitude-bleu-hover);
 }
@@ -1522,6 +1527,11 @@ img {
 }
 .navigation__lien.courant .altitude .altisymbole, .navigation__lien:hover .altitude .altisymbole {
   fill: url(#altitude-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .altitude .altisymbole, .navigation__lien:hover .altitude .altisymbole {
+    fill: url(#altitude-bleu-sombre);
+  }
 }
 .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
   fill: url(#aquafina-bleu-hover);
