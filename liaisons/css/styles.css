@@ -1575,6 +1575,11 @@ img {
     fill: url(#boreal-vert-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .danseenboites .masques {
+    fill: url(#danseenboites-orange-sombre);
+  }
+}
 .navigation__lien.courant .danseenboites .elevation, .navigation__lien:hover .danseenboites .elevation {
   fill: url(#danseenboites-orange-hover);
 }
@@ -1585,6 +1590,11 @@ img {
 }
 .navigation__lien.courant .danseenboites .masques, .navigation__lien:hover .danseenboites .masques {
   fill: url(#danseenboites-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .danseenboites .masques, .navigation__lien:hover .danseenboites .masques {
+    fill: url(#danseenboites-orange-sombre);
+  }
 }
 .navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation {
   fill: url(#destinations-rouge-hover);

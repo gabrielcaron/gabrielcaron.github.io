@@ -230,6 +230,14 @@
     }
 
     // Danse en boîtes
+    @media screen and (prefers-color-scheme: dark) {
+      & .danseenboites {
+        & .masques {
+          fill: url(#danseenboites-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .danseenboites {
         & .elevation {
@@ -244,7 +252,7 @@
           fill: url(#danseenboites-gris-hover);
 
           @media screen and (prefers-color-scheme: dark) {
-            // Même dégradé état initial et hover
+            fill: url(#danseenboites-orange-sombre);
           }
         }
       }
