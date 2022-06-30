@@ -11,24 +11,10 @@ Ce projet est mise à jour en continu.
 * [Historique](#historique)
     * [En résumé](#en-résumé)
     * [2022](#2022)
-      * [Janvier 2022](#janvier-2022)
     * [2021](#2021)
-        * [Août 2021](#août-2021)
-        * [Juillet 2021](#juillet-2021)
-        * [Juin 2021](#juin-2021)
-        * [Mai 2021](#mai-2021)
-        * [Février 2021](#février-2021)
-        * [Janvier 2021](#janvier-2021)
     * [2020](#2020)
-        * [Décembre 2020](#décembre-2020)
-        * [Septembre 2020](#septembre-2020)
-        * [Mars 2020](#mars-2020)
-        * [Janvier 2020](#janvier-2020)
     * [2019](#2019)
-        * [Décembre 2019](#décembre-2019)
-        * [Juin 2019](#juin-2019)
     * [2007](#2007)
-        * [Mai 2007](#mai-2007)
 * [Images](#images)
     * [Icônes](#icônes)
         * [Couleurs](#couleurs)
@@ -79,6 +65,10 @@ ainsi qu'en Techniques d'intégration multimédia.
 * À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
 
 ### 2022
+
+#### Juin 2022
+
+* Mien en ligne du mode sombre. S'active automatiquement (synchronisé avec le système d'exploitation).
 
 #### Janvier 2022
 
