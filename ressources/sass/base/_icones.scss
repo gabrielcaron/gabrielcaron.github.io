@@ -317,6 +317,14 @@
     }
 
     // Festival OFF
+    @media screen and (prefers-color-scheme: dark) {
+      & .festivaloff {
+        & .note {
+          fill: url(#festivaloff-violet-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .festivaloff {
         & .elevation {
@@ -329,6 +337,10 @@
 
         & .note {
           fill: url(#festivaloff-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#festivaloff-violet-sombre);
+          }
         }
       }
     }

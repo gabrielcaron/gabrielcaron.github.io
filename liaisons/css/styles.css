@@ -1638,6 +1638,11 @@ img {
     fill: url(#elite-rouge-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .festivaloff .note {
+    fill: url(#festivaloff-violet-sombre);
+  }
+}
 .navigation__lien.courant .festivaloff .elevation, .navigation__lien:hover .festivaloff .elevation {
   fill: url(#festivaloff-violet-hover);
 }
@@ -1648,6 +1653,11 @@ img {
 }
 .navigation__lien.courant .festivaloff .note, .navigation__lien:hover .festivaloff .note {
   fill: url(#festivaloff-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .festivaloff .note, .navigation__lien:hover .festivaloff .note {
+    fill: url(#festivaloff-violet-sombre);
+  }
 }
 .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
   fill: url(#grosseile-vert-hover);
