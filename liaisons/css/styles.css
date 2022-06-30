@@ -1701,6 +1701,11 @@ img {
     fill: url(#manueldetypo-bleu-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .memorize .cartes {
+    fill: url(#memorize-orange-sombre);
+  }
+}
 .navigation__lien.courant .memorize .elevation, .navigation__lien:hover .memorize .elevation {
   fill: url(#memorize-orange-hover);
 }
@@ -1711,6 +1716,11 @@ img {
 }
 .navigation__lien.courant .memorize .cartes, .navigation__lien:hover .memorize .cartes {
   fill: url(#memorize-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .memorize .cartes, .navigation__lien:hover .memorize .cartes {
+    fill: url(#memorize-orange-sombre);
+  }
 }
 .navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
   fill: url(#creativite-orange-hover);

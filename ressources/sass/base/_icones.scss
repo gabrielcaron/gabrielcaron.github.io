@@ -404,6 +404,14 @@
     }
 
     // Memorize
+    @media screen and (prefers-color-scheme: dark) {
+      & .memorize {
+        & .cartes {
+          fill: url(#memorize-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .memorize {
         & .elevation {
@@ -416,6 +424,10 @@
 
         & .cartes {
           fill: url(#memorize-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#memorize-orange-sombre);
+          }
         }
       }
     }
