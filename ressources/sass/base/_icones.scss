@@ -346,6 +346,14 @@
     }
 
     // Grosse-Île
+    @media screen and (prefers-color-scheme: dark) {
+      & .grosseile {
+        & .croix {
+          fill: url(#grosseile-vert-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .grosseile {
         & .elevation {
@@ -358,6 +366,10 @@
 
         & .croix {
           fill: url(#grosseile-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#grosseile-vert-sombre);
+          }
         }
       }
     }

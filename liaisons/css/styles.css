@@ -1659,6 +1659,11 @@ img {
     fill: url(#festivaloff-violet-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .grosseile .croix {
+    fill: url(#grosseile-vert-sombre);
+  }
+}
 .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation {
   fill: url(#grosseile-vert-hover);
 }
@@ -1669,6 +1674,11 @@ img {
 }
 .navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
   fill: url(#grosseile-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix {
+    fill: url(#grosseile-vert-sombre);
+  }
 }
 .navigation__lien.courant .manueldetypo .elevation, .navigation__lien:hover .manueldetypo .elevation {
   fill: url(#manueldetypo-bleu-hover);
