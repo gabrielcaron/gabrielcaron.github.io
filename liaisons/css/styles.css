@@ -1596,6 +1596,11 @@ img {
     fill: url(#danseenboites-orange-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .destinations .symbole {
+    fill: url(#destinations-rouge-sombre);
+  }
+}
 .navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation {
   fill: url(#destinations-rouge-hover);
 }
@@ -1606,6 +1611,11 @@ img {
 }
 .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
   fill: url(#destinations-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole {
+    fill: url(#destinations-rouge-sombre);
+  }
 }
 .navigation__lien.courant .elite .elevation, .navigation__lien:hover .elite .elevation {
   fill: url(#elite-rouge-hover);

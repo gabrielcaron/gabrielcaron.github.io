@@ -259,6 +259,14 @@
     }
 
     // Destinations Canada
+    @media screen and (prefers-color-scheme: dark) {
+      & .destinations {
+        & .symbole {
+          fill: url(#destinations-rouge-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .destinations {
         & .elevation {
@@ -271,6 +279,10 @@
 
         & .symbole {
           fill: url(#destinations-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#destinations-rouge-sombre);
+          }
         }
       }
     }
