@@ -1617,6 +1617,11 @@ img {
     fill: url(#destinations-rouge-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .elite .etincelle {
+    fill: url(#elite-rouge-sombre);
+  }
+}
 .navigation__lien.courant .elite .elevation, .navigation__lien:hover .elite .elevation {
   fill: url(#elite-rouge-hover);
 }
@@ -1627,6 +1632,11 @@ img {
 }
 .navigation__lien.courant .elite .etincelle, .navigation__lien:hover .elite .etincelle {
   fill: url(#elite-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .elite .etincelle, .navigation__lien:hover .elite .etincelle {
+    fill: url(#elite-rouge-sombre);
+  }
 }
 .navigation__lien.courant .festivaloff .elevation, .navigation__lien:hover .festivaloff .elevation {
   fill: url(#festivaloff-violet-hover);

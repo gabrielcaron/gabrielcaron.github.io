@@ -288,6 +288,14 @@
     }
 
     // Élite
+    @media screen and (prefers-color-scheme: dark) {
+      & .elite {
+        & .etincelle {
+          fill: url(#elite-rouge-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .elite {
         & .elevation {
@@ -300,6 +308,10 @@
 
         & .etincelle {
           fill: url(#elite-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#elite-rouge-sombre);
+          }
         }
       }
     }
