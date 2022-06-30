@@ -433,9 +433,17 @@
     }
 
     // Mettez le feu à votre créativité
+    @media screen and (prefers-color-scheme: dark) {
+      & .creativite {
+        & .feu {
+          fill: url(#creativite-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .creativite {
-        & .elevation {
+        & .feu {
           fill: url(#creativite-orange-hover);
 
           @media screen and (prefers-color-scheme: dark) {
@@ -445,6 +453,10 @@
 
         & .feu {
           fill: url(#creativite-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#creativite-orange-sombre);
+          }
         }
       }
     }

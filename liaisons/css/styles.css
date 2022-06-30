@@ -1722,16 +1722,26 @@ img {
     fill: url(#memorize-orange-sombre);
   }
 }
-.navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .creativite .feu {
+    fill: url(#creativite-orange-sombre);
+  }
+}
+.navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
   fill: url(#creativite-orange-hover);
 }
 @media screen and (prefers-color-scheme: dark) {
-  .navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
+  .navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
     fill: rgba(255, 225, 0, 0.1);
   }
 }
 .navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
   fill: url(#creativite-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
+    fill: url(#creativite-orange-sombre);
+  }
 }
 .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation {
   fill: url(#mexico-orange-hover);
