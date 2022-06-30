@@ -1680,6 +1680,11 @@ img {
     fill: url(#grosseile-vert-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .manueldetypo .livre {
+    fill: url(#manueldetypo-bleu-sombre);
+  }
+}
 .navigation__lien.courant .manueldetypo .elevation, .navigation__lien:hover .manueldetypo .elevation {
   fill: url(#manueldetypo-bleu-hover);
 }
@@ -1690,6 +1695,11 @@ img {
 }
 .navigation__lien.courant .manueldetypo .livre, .navigation__lien:hover .manueldetypo .livre {
   fill: url(#manueldetypo-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .manueldetypo .livre, .navigation__lien:hover .manueldetypo .livre {
+    fill: url(#manueldetypo-bleu-sombre);
+  }
 }
 .navigation__lien.courant .memorize .elevation, .navigation__lien:hover .memorize .elevation {
   fill: url(#memorize-orange-hover);

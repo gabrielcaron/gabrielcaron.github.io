@@ -375,6 +375,14 @@
     }
 
     // Manuel de typographie
+    @media screen and (prefers-color-scheme: dark) {
+      & .manueldetypo {
+        & .livre {
+          fill: url(#manueldetypo-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .manueldetypo {
         & .elevation {
@@ -387,6 +395,10 @@
 
         & .livre {
           fill: url(#manueldetypo-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#manueldetypo-bleu-sombre);
+          }
         }
       }
     }
