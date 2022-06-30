@@ -1524,6 +1524,11 @@ img {
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
   fill: url(#aquafina-gris-hover);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .boreal .feuille {
+    fill: url(#boreal-vert-sombre);
+  }
+}
 .navigation__lien.courant .boreal .elevation, .navigation__lien:hover .boreal .elevation {
   fill: url(#boreal-vert-hover);
 }
@@ -1534,6 +1539,11 @@ img {
 }
 .navigation__lien.courant .boreal .feuille, .navigation__lien:hover .boreal .feuille {
   fill: url(#boreal-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .boreal .feuille, .navigation__lien:hover .boreal .feuille {
+    fill: url(#boreal-vert-sombre);
+  }
 }
 .navigation__lien.courant .danseenboites .elevation, .navigation__lien:hover .danseenboites .elevation {
   fill: url(#danseenboites-orange-hover);
