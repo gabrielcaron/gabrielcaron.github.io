@@ -1470,6 +1470,11 @@ img {
     border: solid 2px rgba(255, 225, 0, 0.2);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .SOS .bouee {
+    fill: url(#SOS-rouge-sombre);
+  }
+}
 .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation {
   fill: url(#SOS-rouge-hover);
 }
@@ -1480,6 +1485,11 @@ img {
 }
 .navigation__lien.courant .SOS .bouee, .navigation__lien:hover .SOS .bouee {
   fill: url(#SOS-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .SOS .bouee, .navigation__lien:hover .SOS .bouee {
+    fill: url(#SOS-rouge-sombre);
+  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien .alaia .planches {

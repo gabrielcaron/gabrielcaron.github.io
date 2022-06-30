@@ -85,6 +85,14 @@
     }
 
     // 100 ans de SOS
+    @media screen and (prefers-color-scheme: dark) {
+      & .SOS {
+        & .bouee {
+          fill: url(#SOS-rouge-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .SOS {
         & .elevation {
@@ -97,6 +105,10 @@
 
         & .bouee {
           fill: url(#SOS-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#SOS-rouge-sombre);
+          }
         }
       }
     }
