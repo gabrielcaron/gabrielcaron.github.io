@@ -85,6 +85,14 @@
     }
 
     // 100 ans de SOS
+    @media screen and (prefers-color-scheme: dark) {
+      & .SOS {
+        & .bouee {
+          fill: url(#SOS-rouge-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .SOS {
         & .elevation {
@@ -97,11 +105,23 @@
 
         & .bouee {
           fill: url(#SOS-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#SOS-rouge-sombre);
+          }
         }
       }
     }
 
     // Alaia
+    @media screen and (prefers-color-scheme: dark) {
+      & .alaia {
+        & .planches {
+          fill: url(#alaia-sable-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .alaia {
         & .elevation {
@@ -114,11 +134,23 @@
 
         & .planches {
           fill: url(#alaia-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#alaia-sable-sombre);
+          }
         }
       }
     }
 
     // Altitude
+    @media screen and (prefers-color-scheme: dark) {
+      & .altitude {
+        & .altisymbole {
+          fill: url(#altitude-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .altitude {
         & .elevation {
@@ -131,11 +163,23 @@
 
         & .altisymbole {
           fill: url(#altitude-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#altitude-bleu-sombre);
+          }
         }
       }
     }
 
     // Aquafina
+    @media screen and (prefers-color-scheme: dark) {
+      & .aquafina {
+        & .goutte {
+          fill: url(#aquafina-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .aquafina {
         & .elevation {
@@ -148,11 +192,23 @@
 
         & .goutte {
           fill: url(#aquafina-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#aquafina-bleu-sombre);
+          }
         }
       }
     }
 
     // Boréal
+    @media screen and (prefers-color-scheme: dark) {
+      & .boreal {
+        & .feuille {
+          fill: url(#boreal-vert-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .boreal {
         & .elevation {
@@ -165,11 +221,23 @@
 
         & .feuille {
           fill: url(#boreal-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#boreal-vert-sombre);
+          }
         }
       }
     }
 
     // Danse en boîtes
+    @media screen and (prefers-color-scheme: dark) {
+      & .danseenboites {
+        & .masques {
+          fill: url(#danseenboites-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .danseenboites {
         & .elevation {
@@ -184,13 +252,21 @@
           fill: url(#danseenboites-gris-hover);
 
           @media screen and (prefers-color-scheme: dark) {
-            // Même dégradé état initial et hover
+            fill: url(#danseenboites-orange-sombre);
           }
         }
       }
     }
 
     // Destinations Canada
+    @media screen and (prefers-color-scheme: dark) {
+      & .destinations {
+        & .symbole {
+          fill: url(#destinations-rouge-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .destinations {
         & .elevation {
@@ -203,11 +279,23 @@
 
         & .symbole {
           fill: url(#destinations-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#destinations-rouge-sombre);
+          }
         }
       }
     }
 
     // Élite
+    @media screen and (prefers-color-scheme: dark) {
+      & .elite {
+        & .etincelle {
+          fill: url(#elite-rouge-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .elite {
         & .elevation {
@@ -220,11 +308,23 @@
 
         & .etincelle {
           fill: url(#elite-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#elite-rouge-sombre);
+          }
         }
       }
     }
 
     // Festival OFF
+    @media screen and (prefers-color-scheme: dark) {
+      & .festivaloff {
+        & .note {
+          fill: url(#festivaloff-violet-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .festivaloff {
         & .elevation {
@@ -237,11 +337,23 @@
 
         & .note {
           fill: url(#festivaloff-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#festivaloff-violet-sombre);
+          }
         }
       }
     }
 
     // Grosse-Île
+    @media screen and (prefers-color-scheme: dark) {
+      & .grosseile {
+        & .croix {
+          fill: url(#grosseile-vert-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .grosseile {
         & .elevation {
@@ -254,11 +366,23 @@
 
         & .croix {
           fill: url(#grosseile-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#grosseile-vert-sombre);
+          }
         }
       }
     }
 
     // Manuel de typographie
+    @media screen and (prefers-color-scheme: dark) {
+      & .manueldetypo {
+        & .livre {
+          fill: url(#manueldetypo-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .manueldetypo {
         & .elevation {
@@ -271,11 +395,23 @@
 
         & .livre {
           fill: url(#manueldetypo-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#manueldetypo-bleu-sombre);
+          }
         }
       }
     }
 
     // Memorize
+    @media screen and (prefers-color-scheme: dark) {
+      & .memorize {
+        & .cartes {
+          fill: url(#memorize-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .memorize {
         & .elevation {
@@ -288,14 +424,26 @@
 
         & .cartes {
           fill: url(#memorize-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#memorize-orange-sombre);
+          }
         }
       }
     }
 
     // Mettez le feu à votre créativité
+    @media screen and (prefers-color-scheme: dark) {
+      & .creativite {
+        & .feu {
+          fill: url(#creativite-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .creativite {
-        & .elevation {
+        & .feu {
           fill: url(#creativite-orange-hover);
 
           @media screen and (prefers-color-scheme: dark) {
@@ -305,11 +453,23 @@
 
         & .feu {
           fill: url(#creativite-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#creativite-orange-sombre);
+          }
         }
       }
     }
 
     // Mexico
+    @media screen and (prefers-color-scheme: dark) {
+      & .mexico {
+        & .guitare {
+          fill: url(#mexico-orange-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .mexico {
         & .elevation {
@@ -322,11 +482,23 @@
 
         & .guitare {
           fill: url(#mexico-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#mexico-orange-sombre);
+          }
         }
       }
     }
 
     // Presto!
+    @media screen and (prefers-color-scheme: dark) {
+      & .presto {
+        & .prestosymbole {
+          fill: url(#presto-vert-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .presto {
         & .elevation {
@@ -339,11 +511,23 @@
 
         & .prestosymbole {
           fill: url(#presto-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#presto-vert-sombre);
+          }
         }
       }
     }
 
     // Reprends le contrôle
+    @media screen and (prefers-color-scheme: dark) {
+      & .controle {
+        & .pantin {
+          fill: url(#controle-jaune-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .controle {
         & .elevation {
@@ -356,11 +540,23 @@
 
         & .pantin {
           fill: url(#controle-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#controle-jaune-sombre);
+          }
         }
       }
     }
 
     // Tim
+    @media screen and (prefers-color-scheme: dark) {
+      & .tim {
+        & .logotim {
+          fill: url(#tim-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .tim {
         & .elevation {
@@ -373,6 +569,10 @@
 
         & .logotim {
           fill: url(#tim-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#tim-bleu-sombre);
+          }
         }
       }
     }
