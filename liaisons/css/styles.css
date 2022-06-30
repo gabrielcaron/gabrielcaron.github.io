@@ -1481,6 +1481,11 @@ img {
 .navigation__lien.courant .SOS .bouee, .navigation__lien:hover .SOS .bouee {
   fill: url(#SOS-gris-hover);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .alaia .planches {
+    fill: url(#alaia-sable-sombre);
+  }
+}
 .navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation {
   fill: url(#alaia-sable-defaut);
 }
