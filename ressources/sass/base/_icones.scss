@@ -172,6 +172,14 @@
     }
 
     // Aquafina
+    @media screen and (prefers-color-scheme: dark) {
+      & .aquafina {
+        & .goutte {
+          fill: url(#aquafina-bleu-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .aquafina {
         & .elevation {
@@ -184,6 +192,10 @@
 
         & .goutte {
           fill: url(#aquafina-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#aquafina-bleu-sombre);
+          }
         }
       }
     }

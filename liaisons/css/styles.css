@@ -1533,6 +1533,11 @@ img {
     fill: url(#altitude-bleu-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .aquafina .goutte {
+    fill: url(#aquafina-bleu-sombre);
+  }
+}
 .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation {
   fill: url(#aquafina-bleu-hover);
 }
@@ -1543,6 +1548,11 @@ img {
 }
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
   fill: url(#aquafina-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte {
+    fill: url(#aquafina-bleu-sombre);
+  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien .boreal .feuille {
