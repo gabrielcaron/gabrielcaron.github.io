@@ -509,7 +509,7 @@ h2 {
 }
 @media screen and (min-width: 600px) {
   h2 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
@@ -520,7 +520,7 @@ h3 {
 }
 @media screen and (min-width: 600px) {
   h3 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -531,7 +531,7 @@ h4 {
 }
 @media screen and (min-width: 600px) {
   h4 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -542,7 +542,7 @@ h5 {
 }
 @media screen and (min-width: 600px) {
   h5 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -557,6 +557,11 @@ h6 {
   }
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  p {
+    color: #E6E6E6;
+  }
+}
 body {
   font-family: Roboto-Regular, sans serif;
   font-size: 2rem;
@@ -781,7 +786,7 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.0
+* @version 4.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1073,6 +1078,11 @@ img {
   margin-top: 0.5rem;
   padding: 1.3rem 2.3rem;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__figcaption {
+    border: 3px solid transparent;
+  }
+}
 .projets .navigation .rangeeSections .courant {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1129,9 +1139,21 @@ img {
     box-shadow: none;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption {
+    border: 3px solid #A6A6A6;
+    background: transparent;
+    color: #E6E6E6;
+  }
+}
 .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption {
   border: none;
   padding: 1.3rem 2.3rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption {
+    border: 3px solid #FFE100;
+  }
 }
 .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
@@ -1150,6 +1172,11 @@ img {
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
     box-shadow: none;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
+    padding: 1.3rem 2.3rem;
   }
 }
 
@@ -1382,7 +1409,12 @@ img {
   color: #000;
 }
 .pieddepage__copyright:hover {
-  text-decoration: underline;
+  text-decoration: underline yellow;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pieddepage__copyright:hover {
+    color: #E6E6E6;
+  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage__copyright {
@@ -1662,11 +1694,21 @@ img {
 .lien.axure::before {
   background-image: url(../images/icones/axure.svg);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .lien.axure::before {
+    background-image: url(../images/icones/axure--sombre.svg);
+  }
+}
 .lien.axure:hover::before, .lien.axure:active::before {
   background-image: url(../images/icones/axure--hover.svg);
 }
 .lien.figma::before {
   background-image: url(../images/icones/figma.svg);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .lien.figma::before {
+    background-image: url(../images/icones/figma--sombre.svg);
+  }
 }
 .lien.figma:hover::before, .lien.figma:active::before {
   background-image: url(../images/icones/figma--hover.svg);
@@ -1674,11 +1716,21 @@ img {
 .lien.github::before {
   background-image: url(../images/icones/github.svg);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .lien.github::before {
+    background-image: url(../images/icones/github--sombre.svg);
+  }
+}
 .lien.github:hover::before, .lien.github:active::before {
   background-image: url(../images/icones/github--hover.svg);
 }
 .lien.pdf::before {
   background-image: url(../images/icones/pdf.svg);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .lien.pdf::before {
+    background-image: url(../images/icones/pdf--sombre.svg);
+  }
 }
 .lien.pdf:hover::before, .lien.pdf:active::before {
   background-image: url(../images/icones/pdf--hover.svg);
@@ -1686,11 +1738,21 @@ img {
 .lien.rtf::before {
   background-image: url(../images/icones/rtf.svg);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .lien.rtf::before {
+    background-image: url(../images/icones/rtf--sombre.svg);
+  }
+}
 .lien.rtf:hover::before, .lien.rtf:active::before {
   background-image: url(../images/icones/rtf--hover.svg);
 }
 .lien.sketch::before {
   background-image: url(../images/icones/sketch.svg);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .lien.sketch::before {
+    background-image: url(../images/icones/sketch--sombre.svg);
+  }
 }
 .lien.sketch:hover::before, .lien.sketch:active::before {
   background-image: url(../images/icones/sketch--hover.svg);
@@ -1698,11 +1760,21 @@ img {
 .lien.web::before {
   background-image: url(../images/icones/web.svg);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .lien.web::before {
+    background-image: url(../images/icones/web--sombre.svg);
+  }
+}
 .lien.web:hover::before, .lien.web:active::before {
   background-image: url(../images/icones/web--hover.svg);
 }
 .lien.xd::before {
   background-image: url(../images/icones/xd.svg);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .lien.xd::before {
+    background-image: url(../images/icones/xd--sombre.svg);
+  }
 }
 .lien.xd:hover::before, .lien.xd:active::before {
   background-image: url(../images/icones/xd--hover.svg);
@@ -1759,6 +1831,23 @@ body {
   }
 }
 
+a:hover {
+  text-decoration: underline dotted;
+}
+@media screen and (prefers-color-scheme: dark) {
+  a {
+    color: #E6E6E6;
+  }
+  a:hover {
+    text-decoration: underline dotted #FFE100;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  li {
+    color: #E6E6E6;
+  }
+}
 img {
   vertical-align: bottom;
   max-width: 100%;
@@ -1766,7 +1855,7 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.0
+* @version 6.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1976,6 +2065,11 @@ img {
     padding: 0 0 0 3rem;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .accueil .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption {
+    border: 3px solid #FFE100;
+  }
+}
 .accueil .projets .navigation.web-applis {
   align-content: flex-start;
 }
@@ -2132,14 +2226,34 @@ img {
   line-height: 100%;
   border-radius: 4rem;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien {
+    color: #A6A6A6;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:hover {
+    color: #E6E6E6;
+  }
+}
 .contact__lien:hover .courriel .elevation {
   fill: url(#courriel-elevation-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:hover .courriel .elevation {
+    fill: rgba(255, 225, 0, 0.1);
+  }
 }
 .contact__lien:hover .courriel .enveloppe {
   fill: url(#enveloppe-hover);
 }
 .contact__lien:hover .linkedin .elevation {
   fill: url(#linkedin-bleu-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:hover .linkedin .elevation {
+    fill: rgba(255, 225, 0, 0.1);
+  }
 }
 .contact__lien:hover .linkedin .logotype {
   fill: url(#linkedin-gris-hover);
@@ -2167,6 +2281,15 @@ img {
 @media screen and (min-width: 600px) {
   .contact__figure svg {
     width: 13rem;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__figure svg {
+    box-shadow: none;
+    border: solid 2px rgba(255, 225, 0, 0.2);
+  }
+  .contact__figure svg .elevation {
+    fill: #1A1A1A;
   }
 }
 .contact__figcaption {
@@ -2371,6 +2494,11 @@ img {
   .apropos .quelques-chiffres .statistique {
     grid-column: span 6;
     width: 100%;
+  }
+}
+@media screen and (min-width: 800px) and (prefers-color-scheme: dark) {
+  .apropos .quelques-chiffres .statistique path {
+    fill: #E6E6E6;
   }
 }
 .apropos .projet {

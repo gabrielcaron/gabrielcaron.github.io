@@ -419,6 +419,10 @@
 
     &::before {
       background-image: url(../images/icones/axure.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/axure--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -433,6 +437,10 @@
 
     &::before {
       background-image: url(../images/icones/figma.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/figma--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -447,6 +455,10 @@
 
     &::before {
       background-image: url(../images/icones/github.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/github--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -461,6 +473,10 @@
 
     &::before {
       background-image: url(../images/icones/pdf.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/pdf--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -475,6 +491,10 @@
 
     &::before {
       background-image: url(../images/icones/rtf.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/rtf--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -489,6 +509,10 @@
 
     &::before {
       background-image: url(../images/icones/sketch.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/sketch--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -503,6 +527,10 @@
 
     &::before {
       background-image: url(../images/icones/web.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/web--sombre.svg);
+      }
     }
 
     &:hover, &:active {
@@ -517,6 +545,10 @@
 
     &::before {
       background-image: url(../images/icones/xd.svg);
+
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/xd--sombre.svg);
+      }
     }
 
     &:hover, &:active {

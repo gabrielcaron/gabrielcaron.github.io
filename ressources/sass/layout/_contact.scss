@@ -46,12 +46,23 @@
 	line-height: 100%;
 	border-radius: $arrondiMobile;
 
+	@media screen and (prefers-color-scheme: dark) {
+	  color: $gris65AAA;
+	}
 
 	&:hover {
+	  @media screen and (prefers-color-scheme: dark) {
+		color: $blancSombre;
+	  }
+
 	  // Icône Courriel
 	  & .courriel {
 		& .elevation {
 		  fill: url(#courriel-elevation-hover);
+
+		  @media screen and (prefers-color-scheme: dark) {
+			fill: transparentize($jauneOfficiel, 0.90);
+		  }
 		}
 
 		& .enveloppe {
@@ -63,6 +74,10 @@
 	  & .linkedin {
 		& .elevation {
 		  fill: url(#linkedin-bleu-hover);
+
+		  @media screen and (prefers-color-scheme: dark) {
+			fill: transparentize($jauneOfficiel, 0.90);
+		  }
 		}
 
 		& .logotype {
@@ -94,6 +109,15 @@
 
 	  @media screen and (min-width: $mobile600px) {
 		width: 13rem;
+	  }
+
+	  @media screen and (prefers-color-scheme: dark) {
+		box-shadow: none;
+		border: solid 2px transparentize($jauneOfficiel, 0.8);
+
+		& .elevation {
+		  fill: $grisElevationIconeSombre;
+		}
 	  }
 	}
   }

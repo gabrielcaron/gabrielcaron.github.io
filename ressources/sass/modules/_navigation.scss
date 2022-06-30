@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.0
+* @version 4.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -283,6 +283,10 @@
     border-radius: $arrondiMobile;
     margin-top: 0.5rem;
     padding: 1.3rem 2.3rem;
+
+    @media screen and (prefers-color-scheme: dark) {
+      border: 3px solid transparent;
+    }
   }
 
   // Styles spécifique aux liens des sections
@@ -331,12 +335,22 @@
           & .navigation__figcaption {
             border: none;
             @include boutonSurvol;
+
+            @media screen and (prefers-color-scheme: dark) {
+              border: 3px solid $gris65AAA;
+              background: transparent;
+              color: $blancSombre;
+            }
           }
 
           &.courant {
             & .navigation__figcaption {
               border: none;
               padding: 1.3rem 2.3rem;
+
+              @media screen and (prefers-color-scheme: dark) {
+                border: 3px solid $jauneOfficiel;
+              }
             }
           }
         }
@@ -351,6 +365,10 @@
           & .navigation__figcaption {
             @include boutonPageCourante;
             padding: 1rem 2rem;
+
+            @media screen and (prefers-color-scheme: dark) {
+              padding: 1.3rem 2.3rem;
+            }
           }
         }
       }

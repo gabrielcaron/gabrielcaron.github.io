@@ -28,6 +28,26 @@ body {
   }
 }
 
+a {
+  &:hover {
+    text-decoration: underline dotted;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: $blancSombre;
+
+    &:hover {
+      text-decoration: underline dotted $jauneOfficiel;
+    }
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  li {
+    color: $blancSombre;
+  }
+}
+
 img {
   vertical-align: bottom;
   max-width: 100%;
