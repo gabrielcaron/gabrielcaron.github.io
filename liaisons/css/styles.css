@@ -1785,6 +1785,11 @@ img {
     fill: url(#presto-vert-sombre);
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien .controle .pantin {
+    fill: url(#controle-jaune-sombre);
+  }
+}
 .navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation {
   fill: url(#controle-jaune-hover);
 }
@@ -1795,6 +1800,11 @@ img {
 }
 .navigation__lien.courant .controle .pantin, .navigation__lien:hover .controle .pantin {
   fill: url(#controle-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.courant .controle .pantin, .navigation__lien:hover .controle .pantin {
+    fill: url(#controle-jaune-sombre);
+  }
 }
 .navigation__lien.courant .tim .elevation, .navigation__lien:hover .tim .elevation {
   fill: url(#tim-bleu-hover);

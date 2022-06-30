@@ -520,6 +520,14 @@
     }
 
     // Reprends le contrôle
+    @media screen and (prefers-color-scheme: dark) {
+      & .controle {
+        & .pantin {
+          fill: url(#controle-jaune-sombre);
+        }
+      }
+    }
+
     &.courant, &:hover {
       & .controle {
         & .elevation {
@@ -532,6 +540,10 @@
 
         & .pantin {
           fill: url(#controle-gris-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: url(#controle-jaune-sombre);
+          }
         }
       }
     }
