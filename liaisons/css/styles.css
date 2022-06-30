@@ -2180,6 +2180,11 @@ img {
     background: linear-gradient(180deg, #1f1f1f 0%, #1f1f1f 100%);
   }
 }
+@media screen and (min-width: 900px) {
+  .accueil .projets__conteneurDemiGrille.web-applis:before {
+    left: 2px;
+  }
+}
 .accueil .projets__conteneurDemiGrille.design-graphique {
   grid-column: 7/13;
   justify-content: flex-start;
@@ -2217,6 +2222,11 @@ img {
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
   .accueil .projets__conteneurDemiGrille.design-graphique:before {
     background: linear-gradient(180deg, #1f1f1f 0%, #1f1f1f 100%);
+  }
+}
+@media screen and (min-width: 900px) {
+  .accueil .projets__conteneurDemiGrille.design-graphique:before {
+    right: 2px;
   }
 }
 .accueil .projets__web-applis {

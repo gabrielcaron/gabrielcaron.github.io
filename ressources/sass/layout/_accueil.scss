@@ -102,6 +102,10 @@
 		  @include bulle();
 		  border-left: none;
 		  border-radius: 0 $arrondiTable $arrondiTable 0;
+
+		  &:before {
+			left: 2px; // Retire la barre de défilement en page d'accueil
+		  }
 		}
 	  }
 
@@ -113,6 +117,10 @@
 		  @include bulle();
 		  border-right: none;
 		  border-radius: $arrondiTable 0 0 $arrondiTable;
+
+		  &:before {
+			right: 2px; // Retire la barre de défilement en page d'accueil
+		  }
 		}
 	  }
 	}
