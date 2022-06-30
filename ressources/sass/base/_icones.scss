@@ -16,279 +16,366 @@
   position: relative;
   $bordure: 2px;
   background-color: $gris98;
-  //background-color: #5ac6ee; // pour tester uniquement
   background-clip: padding-box;
   border: solid $bordure transparent;
   border-radius: 55px;
-  //display: inline-block;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $noirSombre;
+  }
 
   &:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	margin: -$bordure;
-	border-radius: inherit;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$bordure;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+
+    @media screen and (prefers-color-scheme: dark) {
+		background: linear-gradient(180deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 1) 100%);
+    }
   }
 }
 
 
 /* État survol des icônes des projets */
 
-
 .navigation {
 
   &__lien {
 
-	// Nouveau projet
+    // Nouveau projet
 
-	@media screen and (min-width: $mobile600px) {
-	  &.nouveau {
-		& .navigation__figcaption::before {
-		  content: "";
-		  display: inline-block;
-		  width: 1.4rem;
-		  height: 1.4rem;
-		  background-image: url(../images/icones/nouveau.svg);
-		  background-repeat: no-repeat;
-		  padding-right: 1rem;
-		}
+    @media screen and (min-width: $mobile600px) {
+      &.nouveau {
+        & .navigation__figcaption::before {
+          content: "";
+          display: inline-block;
+          width: 1.4rem;
+          height: 1.4rem;
+          background-image: url(../images/icones/nouveau.svg);
+          background-repeat: no-repeat;
+          padding-right: 1rem;
+        }
 
-		&.nouveau:hover, &.nouveau:active {
+        &.nouveau:hover, &.nouveau:active {
 
-		  & .navigation__figcaption::before {
-			background-image: url(../images/icones/nouveau--hover.svg);
-		  }
-		}
-	  }
-	}
+          & .navigation__figcaption::before {
+            background-image: url(../images/icones/nouveau--hover.svg);
+          }
+        }
+      }
+    }
 
-	// Projets en ordre alphabétique
+    // Projets en ordre alphabétique
 
-	// 100 ans de SOS
-	&.courant, &:hover {
-	  & .SOS {
-		& .elevation {
-		  fill: url(#SOS-rouge-hover);
-		}
+    // Toutes les icônes
 
-		& .bouee {
-		  fill: url(#SOS-gris-hover);
-		}
-	  }
-	}
+    @media screen and (prefers-color-scheme: dark) {
+      &.courant, &:hover {
+        & svg {
+          border: solid 2px transparentize($jauneOfficiel, 0.8);
+        }
+      }
+    }
 
-	// Alaia
-	&.courant, &:hover {
-	  & .alaia {
-		& .elevation {
-		  fill: url(#alaia-sable-defaut);
-		}
+    // 100 ans de SOS
+    &.courant, &:hover {
+      & .SOS {
+        & .elevation {
+          fill: url(#SOS-rouge-hover);
 
-		& .planches {
-		  fill: url(#alaia-gris-hover);
-		}
-	  }
-	}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-	// Altitude
-	&.courant, &:hover {
-	  & .altitude {
-		& .elevation {
-		  fill: url(#altitude-bleu-hover);
-		}
+        & .bouee {
+          fill: url(#SOS-gris-hover);
+        }
+      }
+    }
 
-		& .altisymbole {
-		  fill: url(#altitude-gris-hover);
-		}
-	  }
-	}
+    // Alaia
+    &.courant, &:hover {
+      & .alaia {
+        & .elevation {
+          fill: url(#alaia-sable-defaut);
 
-	// Aquafina
-	&.courant, &:hover {
-	  & .aquafina {
-		& .elevation {
-		  fill: url(#aquafina-bleu-hover);
-		}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-		& .goutte {
-		  fill: url(#aquafina-gris-hover);
-		}
-	  }
-	}
+        & .planches {
+          fill: url(#alaia-gris-hover);
+        }
+      }
+    }
 
-	// Boréal
-	&.courant, &:hover {
-	  & .boreal {
-		& .elevation {
-		  fill: url(#boreal-vert-hover);
-		}
+    // Altitude
+    &.courant, &:hover {
+      & .altitude {
+        & .elevation {
+          fill: url(#altitude-bleu-hover);
 
-		& .feuille {
-		  fill: url(#boreal-gris-hover);
-		}
-	  }
-	}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-	// Danse en boîtes
-	&.courant, &:hover {
-	  & .danseenboites {
-		& .elevation {
-		  fill: url(#danseenboites-orange-hover);
-		}
+        & .altisymbole {
+          fill: url(#altitude-gris-hover);
+        }
+      }
+    }
 
-		& .masques {
-		  fill: url(#danseenboites-gris-hover);
-		}
-	  }
-	}
+    // Aquafina
+    &.courant, &:hover {
+      & .aquafina {
+        & .elevation {
+          fill: url(#aquafina-bleu-hover);
 
-	// Destinations Canada
-	&.courant, &:hover {
-	  & .destinations {
-		& .elevation {
-		  fill: url(#destinations-rouge-hover);
-		}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-		& .symbole {
-		  fill: url(#destinations-gris-hover);
-		}
-	  }
-	}
+        & .goutte {
+          fill: url(#aquafina-gris-hover);
+        }
+      }
+    }
 
-	// Élite
-	&.courant, &:hover {
-	  & .elite {
-		& .elevation {
-		  fill: url(#elite-rouge-hover);
-		}
+    // Boréal
+    &.courant, &:hover {
+      & .boreal {
+        & .elevation {
+          fill: url(#boreal-vert-hover);
 
-		& .etincelle {
-		  fill: url(#elite-gris-hover);
-		}
-	  }
-	}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-	// Festival OFF
-	&.courant, &:hover {
-	  & .festivaloff {
-		& .elevation {
-		  fill: url(#festivaloff-violet-hover);
-		}
+        & .feuille {
+          fill: url(#boreal-gris-hover);
+        }
+      }
+    }
 
-		& .note {
-		  fill: url(#festivaloff-gris-hover);
-		}
-	  }
-	}
+    // Danse en boîtes
+    &.courant, &:hover {
+      & .danseenboites {
+        & .elevation {
+          fill: url(#danseenboites-orange-hover);
 
-	// Grosse-Île
-	&.courant, &:hover {
-	  & .grosseile {
-		& .elevation {
-		  fill: url(#grosseile-vert-hover);
-		}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-		& .croix {
-		  fill: url(#grosseile-gris-hover);
-		}
-	  }
-	}
+        & .masques {
+          fill: url(#danseenboites-gris-hover);
 
-	// Manuel de typographie
-	&.courant, &:hover {
-	  & .manueldetypo {
-		& .elevation {
-		  fill: url(#manueldetypo-bleu-hover);
-		}
+          @media screen and (prefers-color-scheme: dark) {
+            // Même dégradé état initial et hover
+          }
+        }
+      }
+    }
 
-		& .livre {
-		  fill: url(#manueldetypo-gris-hover);
-		}
-	  }
-	}
+    // Destinations Canada
+    &.courant, &:hover {
+      & .destinations {
+        & .elevation {
+          fill: url(#destinations-rouge-hover);
 
-	// Memorize
-	&.courant, &:hover {
-	  & .memorize {
-		& .elevation {
-		  fill: url(#memorize-orange-hover);
-		}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-		& .cartes {
-		  fill: url(#memorize-gris-hover);
-		}
-	  }
-	}
+        & .symbole {
+          fill: url(#destinations-gris-hover);
+        }
+      }
+    }
 
-	// Mettez le feu à votre créativité
-	&.courant, &:hover {
-	  & .creativite {
-		& .elevation {
-		  fill: url(#creativite-orange-hover);
-		}
+    // Élite
+    &.courant, &:hover {
+      & .elite {
+        & .elevation {
+          fill: url(#elite-rouge-hover);
 
-		& .feu {
-		  fill: url(#creativite-gris-hover);
-		}
-	  }
-	}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-	// Mexico
-	&.courant, &:hover {
-	  & .mexico {
-		& .elevation {
-		  fill: url(#mexico-orange-hover);
-		}
+        & .etincelle {
+          fill: url(#elite-gris-hover);
+        }
+      }
+    }
 
-		& .guitare {
-		  fill: url(#mexico-gris-hover);
-		}
-	  }
-	}
+    // Festival OFF
+    &.courant, &:hover {
+      & .festivaloff {
+        & .elevation {
+          fill: url(#festivaloff-violet-hover);
 
-	// Presto!
-	&.courant, &:hover {
-	  & .presto {
-		& .elevation {
-		  fill: url(#presto-vert-hover);
-		}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-		& .prestosymbole {
-		  fill: url(#presto-gris-hover);
-		}
-	  }
-	}
+        & .note {
+          fill: url(#festivaloff-gris-hover);
+        }
+      }
+    }
 
-	// Reprends le contrôle
-	&.courant, &:hover {
-	  & .controle {
-		& .elevation {
-		  fill: url(#controle-jaune-hover);
-		}
+    // Grosse-Île
+    &.courant, &:hover {
+      & .grosseile {
+        & .elevation {
+          fill: url(#grosseile-vert-hover);
 
-		& .pantin {
-		  fill: url(#controle-gris-hover);
-		}
-	  }
-	}
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
 
-	// Tim
-	&.courant, &:hover {
-	  & .tim {
-		& .elevation {
-		  fill: url(#tim-bleu-hover);
-		}
+        & .croix {
+          fill: url(#grosseile-gris-hover);
+        }
+      }
+    }
 
-		& .logotim {
-		  fill: url(#tim-gris-hover);
-		}
-	  }
-	}
+    // Manuel de typographie
+    &.courant, &:hover {
+      & .manueldetypo {
+        & .elevation {
+          fill: url(#manueldetypo-bleu-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .livre {
+          fill: url(#manueldetypo-gris-hover);
+        }
+      }
+    }
+
+    // Memorize
+    &.courant, &:hover {
+      & .memorize {
+        & .elevation {
+          fill: url(#memorize-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .cartes {
+          fill: url(#memorize-gris-hover);
+        }
+      }
+    }
+
+    // Mettez le feu à votre créativité
+    &.courant, &:hover {
+      & .creativite {
+        & .elevation {
+          fill: url(#creativite-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .feu {
+          fill: url(#creativite-gris-hover);
+        }
+      }
+    }
+
+    // Mexico
+    &.courant, &:hover {
+      & .mexico {
+        & .elevation {
+          fill: url(#mexico-orange-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .guitare {
+          fill: url(#mexico-gris-hover);
+        }
+      }
+    }
+
+    // Presto!
+    &.courant, &:hover {
+      & .presto {
+        & .elevation {
+          fill: url(#presto-vert-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .prestosymbole {
+          fill: url(#presto-gris-hover);
+        }
+      }
+    }
+
+    // Reprends le contrôle
+    &.courant, &:hover {
+      & .controle {
+        & .elevation {
+          fill: url(#controle-jaune-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .pantin {
+          fill: url(#controle-gris-hover);
+        }
+      }
+    }
+
+    // Tim
+    &.courant, &:hover {
+      & .tim {
+        & .elevation {
+          fill: url(#tim-bleu-hover);
+
+          @media screen and (prefers-color-scheme: dark) {
+            fill: transparentize($jauneOfficiel, 0.90);
+          }
+        }
+
+        & .logotim {
+          fill: url(#tim-gris-hover);
+        }
+      }
+    }
   }
 }
 
@@ -300,136 +387,176 @@
   letter-spacing: $EspacementStandard;
 
   &::before {
-	content: "";
-	display: inline-block;
-	width: 3.5rem;
-	height: 5rem;
-	vertical-align: middle;
-	margin-top: -0.5rem;
-	padding-right: 1rem;
-	background-repeat: no-repeat;
-	transition: all, 0.1s ease-in-out;
+    content: "";
+    display: inline-block;
+    width: 3.5rem;
+    height: 5rem;
+    vertical-align: middle;
+    margin-top: -0.5rem;
+    padding-right: 1rem;
+    background-repeat: no-repeat;
+    transition: all, 0.1s ease-in-out;
   }
 
   &:link, &:visited {
-	color: $gris25;
+    color: $gris25;
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: $gris65AAA;
+    }
   }
 
   &:hover, &:active {
-	color: $noir;
-	text-decoration: underline;
+    color: $noir;
+    text-decoration: underline;
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blancSombre;
+    }
   }
 
   &.axure {
 
-	&::before {
-	  background-image: url(../images/icones/axure.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/axure.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/axure--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/axure--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/axure--hover.svg);
+      }
+    }
   }
 
   &.figma {
 
-	&::before {
-	  background-image: url(../images/icones/figma.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/figma.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/figma--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/figma--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/figma--hover.svg);
+      }
+    }
   }
 
   &.github {
 
-	&::before {
-	  background-image: url(../images/icones/github.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/github.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/github--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/github--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/github--hover.svg);
+      }
+    }
   }
 
   &.pdf {
 
-	&::before {
-	  background-image: url(../images/icones/pdf.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/pdf.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/pdf--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/pdf--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/pdf--hover.svg);
+      }
+    }
   }
 
   &.rtf {
 
-	&::before {
-	  background-image: url(../images/icones/rtf.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/rtf.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/rtf--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/rtf--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/rtf--hover.svg);
+      }
+    }
   }
 
   &.sketch {
 
-	&::before {
-	  background-image: url(../images/icones/sketch.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/sketch.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/sketch--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/sketch--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/sketch--hover.svg);
+      }
+    }
   }
 
   &.web {
 
-	&::before {
-	  background-image: url(../images/icones/web.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/web.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/web--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/web--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/web--hover.svg);
+      }
+    }
   }
 
   &.xd {
 
-	&::before {
-	  background-image: url(../images/icones/xd.svg);
-	}
+    &::before {
+      background-image: url(../images/icones/xd.svg);
 
-	&:hover, &:active {
+      @media screen and (prefers-color-scheme: dark) {
+        background-image: url(../images/icones/xd--sombre.svg);
+      }
+    }
 
-	  &::before {
-		background-image: url(../images/icones/xd--hover.svg);
-	  }
-	}
+    &:hover, &:active {
+
+      &::before {
+        background-image: url(../images/icones/xd--hover.svg);
+      }
+    }
   }
 }
 
@@ -437,7 +564,7 @@
 
 .externe:hover {
   &::after {
-	margin: 0 0 0.75rem 0.75rem;
+    margin: 0 0 0.75rem 0.75rem;
   }
 }
 
@@ -450,4 +577,8 @@
   margin-left: 0.5rem;
   content: "";
   transition: all 200ms ease-in-out;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: url("../images/icones/lien-externe--sombre.svg") no-repeat center;
+  }
 }

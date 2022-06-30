@@ -1,0 +1,54 @@
+/**
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 1.0
+*
+* ------------------
+* TABLE DES MATIERES
+* ------------------
+* STYLES GÉNÉRAUX
+*
+*
+*/
+
+/* Base décimale */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $gris98;
+  background-image: url("../images/design/texture-vagues.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 17rem;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: $noirSombre;
+    background-image: url("../images/design/texture-vagues--sombre.svg");
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: underline dotted;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: $blancSombre;
+
+    &:hover {
+      text-decoration: underline dotted $jauneOfficiel;
+    }
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  li {
+    color: $blancSombre;
+  }
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}

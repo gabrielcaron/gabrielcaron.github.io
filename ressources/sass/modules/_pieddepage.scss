@@ -24,6 +24,10 @@
 	border-radius: 20rem 0 0 0;
   }
 
+  @media screen and (prefers-color-scheme: dark) {
+	background-image: linear-gradient(to right bottom, #1D1B16, #1C1A15);
+  }
+
   &__conteneurGrille {
 	@include rangeeGrid12col();
   }
@@ -35,14 +39,20 @@
 	line-height: 150%;
 	letter-spacing: $EspacementStandard;
 	margin: 2rem 0 0 0;
+
 	@media screen and (min-width: $mobile600px) {
 	  margin: 0.75rem 0 0 0;
 	  padding-left: 4rem;
+	}
+
+	@media screen and (prefers-color-scheme: dark) {
+	  color: $gris65AAA;
 	}
   }
 
   &__rangeeLogo {
 	padding: 6rem 0 2rem 0;
+
 	@media screen and (min-width: $mobile600px) {
 	  grid-column: 1 / 13;
 	  @include rangeeFlex;
@@ -60,9 +70,27 @@
 	  display: none;
 	}
 
+	@media screen and (prefers-color-scheme: dark) {
+	  & .elevation {
+		fill: $jauneOfficiel;
+	  }
+
+	  & .signature {
+		fill: $noirSombre;
+	  }
+
+	  & .logotype {
+		fill: $blancSombre;
+	  }
+	}
+
 	&:hover {
 	  & .maison {
 		display: block;
+
+		@media screen and (prefers-color-scheme: dark) {
+		  fill: $noirSombre;
+		}
 	  }
 	  & .signature {
 		display: none;
@@ -77,7 +105,15 @@
 	color: $noir;
 
 	&:hover {
-	  text-decoration: underline;
+	  text-decoration: underline dotted yellow;
+
+	  @media screen and (prefers-color-scheme: dark) {
+		color: $blancSombre;
+	  }
+	}
+
+	@media screen and (prefers-color-scheme: dark) {
+	  color: $gris65AAA;
 	}
 
 	@media screen and (min-width: $tablet900px) {
@@ -89,6 +125,7 @@
   &__vagues {
 	padding-top: 5rem;
 	display: none;
+
 	@media screen and (min-width: $tablet900px) {
 	  display: block;
 	}

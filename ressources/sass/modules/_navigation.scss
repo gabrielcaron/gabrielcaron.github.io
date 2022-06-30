@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.0
+* @version 4.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -56,10 +56,15 @@
       font-size: 2rem;
     }
 
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blancSombre;
+    }
+
     &:link, &:visited {
       border: solid 1px transparent;
       border-radius: 2.5rem;
       transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+
       @media screen and (min-width: $mobile600px) {
         border-radius: 3rem;
       }
@@ -73,6 +78,9 @@
       background-clip: padding-box;
       border: solid $bordure transparent;
 
+      @media screen and (prefers-color-scheme: dark) {
+        color: $gris25;
+      }
 
       &:before {
         content: '';
@@ -86,6 +94,11 @@
         border-radius: inherit;
         background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
         box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+
+        @media screen and (prefers-color-scheme: dark) {
+          background: linear-gradient(180deg, $noirSombre 0%, $noirSombre 100%);
+          box-shadow: none;
+        }
       }
 
     }
@@ -110,6 +123,10 @@
         border-radius: inherit;
         background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
         box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+
+        @media screen and (prefers-color-scheme: dark) {
+          box-shadow: none;
+        }
       }
     }
 
@@ -213,6 +230,16 @@
     letter-spacing: $EspacementStandard;
     line-height: 100%;
     border-radius: $arrondiMobile;
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: $blancSombre;
+    }
+
+    &:hover {
+      @media screen and (prefers-color-scheme: dark) {
+        color: $gris25;
+      }
+    }
   }
 
   &__figure {
@@ -223,6 +250,7 @@
       border: solid 3px $blanc;
       border-radius: $arrondiMobile;
       box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
+
       @media screen and (min-width: $mobile600px) {
         border-radius: $arrondiTable;
       }
@@ -235,6 +263,15 @@
       @media screen and (min-width: 1400px) {
         border-radius: $arrondiTable;
       }
+
+      @media screen and (prefers-color-scheme: dark) {
+        border: solid 2px $grisContourIconeSombre;
+        box-shadow: none;
+
+        & .elevation {
+          fill: $grisElevationIconeSombre;
+        }
+      }
     }
   }
 
@@ -246,6 +283,10 @@
     border-radius: $arrondiMobile;
     margin-top: 0.5rem;
     padding: 1.3rem 2.3rem;
+
+    @media screen and (prefers-color-scheme: dark) {
+      border: 3px solid transparent;
+    }
   }
 
   // Styles spécifique aux liens des sections
@@ -294,12 +335,22 @@
           & .navigation__figcaption {
             border: none;
             @include boutonSurvol;
+
+            @media screen and (prefers-color-scheme: dark) {
+              border: 3px solid $gris65AAA;
+              background: transparent;
+              color: $blancSombre;
+            }
           }
 
           &.courant {
             & .navigation__figcaption {
               border: none;
               padding: 1.3rem 2.3rem;
+
+              @media screen and (prefers-color-scheme: dark) {
+                border: 3px solid $jauneOfficiel;
+              }
             }
           }
         }
@@ -314,6 +365,10 @@
           & .navigation__figcaption {
             @include boutonPageCourante;
             padding: 1rem 2rem;
+
+            @media screen and (prefers-color-scheme: dark) {
+              padding: 1.3rem 2.3rem;
+            }
           }
         }
       }
@@ -355,9 +410,17 @@
       line-height: 110%;
       font-size: 2.5rem;
 
+      @media screen and (prefers-color-scheme: dark) {
+        color: $blancSombre;
+      }
+
       & .section {
         color: $noir;
         font-size: 2.5rem;
+
+        @media screen and (prefers-color-scheme: dark) {
+          color: $blancSombre;
+        }
       }
     }
 
@@ -381,12 +444,21 @@
         line-height: 200%;
       }
 
+      @media screen and (prefers-color-scheme: dark) {
+        color: $gris65AAA;
+      }
+
       &.section {
         line-height: 100%;
       }
 
       &:hover {
         border-bottom: solid 0.3rem $gris25;
+
+        @media screen and (prefers-color-scheme: dark) {
+          color: $blancSombre;
+          border-bottom: solid 0.3rem $jauneOfficiel;
+        }
       }
     }
   }
