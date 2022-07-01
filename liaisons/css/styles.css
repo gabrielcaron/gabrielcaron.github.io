@@ -2026,7 +2026,7 @@ a:hover {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  li {
+  li, figcaption {
     color: #E6E6E6;
   }
 }

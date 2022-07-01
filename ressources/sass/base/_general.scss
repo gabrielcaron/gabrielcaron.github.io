@@ -43,7 +43,7 @@ a {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  li {
+  li, figcaption {
     color: $blancSombre;
   }
 }
