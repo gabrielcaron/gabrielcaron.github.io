@@ -1917,6 +1917,9 @@ img {
 .lien.pdf:hover::before, .lien.pdf:active::before {
   background-image: url(../images/icones/pdf--hover.svg);
 }
+.lien.pdf .taille {
+  font-size: 1.6rem;
+}
 .lien.rtf::before {
   background-image: url(../images/icones/rtf.svg);
 }
