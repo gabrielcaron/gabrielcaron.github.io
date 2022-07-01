@@ -443,7 +443,7 @@
 
     &.courant, &:hover {
       & .creativite {
-        & .feu {
+        & .elevation {
           fill: url(#creativite-orange-hover);
 
           @media screen and (prefers-color-scheme: dark) {

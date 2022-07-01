@@ -1739,11 +1739,11 @@ img {
     fill: url(#creativite-orange-sombre);
   }
 }
-.navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
+.navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
   fill: url(#creativite-orange-hover);
 }
 @media screen and (prefers-color-scheme: dark) {
-  .navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu {
+  .navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation {
     fill: rgba(255, 225, 0, 0.1);
   }
 }
