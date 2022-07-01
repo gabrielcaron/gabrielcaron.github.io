@@ -73,6 +73,21 @@ h1 {
   }
 }
 
+// Titre H1 spécifique à une page de contenu secondaire
+
+.contenu.secondaire {
+  h1 {
+    font-size: 5.5rem;
+    text-align: left;
+    padding: 2rem 0 0 0;
+    margin: 2rem 0 0 0;
+
+    @media screen and (min-width: $mobile600px) {
+      font-size: 7rem;
+    }
+  }
+}
+
 h2 {
   font-size: 4rem;
   font-family: $RobotoMedium;
