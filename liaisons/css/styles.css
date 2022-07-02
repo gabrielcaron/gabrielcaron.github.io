@@ -1917,7 +1917,7 @@ img {
 .lien.pdf:hover::before, .lien.pdf:active::before {
   background-image: url(../images/icones/pdf--hover.svg);
 }
-.lien.pdf .taille {
+.lien.pdf .abreviation, .lien.pdf .taille {
   font-size: 1.6rem;
 }
 .lien.rtf::before {
