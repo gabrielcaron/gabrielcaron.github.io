@@ -91,6 +91,7 @@
   &__figcaption {
 	font-size: 1.6rem;
 	margin-top: 2rem;
+	color: $gris25;
 
 	@media screen and (prefers-color-scheme: dark) {
 	  color: $gris65AAA;
@@ -101,6 +102,10 @@
 	img {
 	  border-radius: 3.5rem;
 	  border: 2px solid $blanc;
+
+	  @media screen and (prefers-color-scheme: dark) {
+		border: 2px solid $grisContourIconeSombre;
+	  }
 	}
   }
 
@@ -108,8 +113,13 @@
 	@media screen and (min-width: $mobile600px) {
 	  img {
 		border-radius: 3.5rem;
-		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
-		border: solid 2px white;
+		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px $blanc;
+		border: solid 2px $blanc;
+
+		@media screen and (prefers-color-scheme: dark) {
+		  box-shadow: none;
+		  border: solid 2px $grisContourIconeSombre;
+		}
 	  }
 	}
   }
@@ -119,6 +129,10 @@
 	  img {
 		border-radius: 1rem;
 		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+
+		@media screen and (prefers-color-scheme: dark) {
+		  box-shadow: none;
+		}
 	  }
 	}
   }
