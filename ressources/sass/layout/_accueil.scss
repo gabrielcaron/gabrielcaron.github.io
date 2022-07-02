@@ -147,7 +147,7 @@
 
 		.navigation {
 		  &__lien {
-			&:hover {
+			&:hover, &:focus {
 			  & .navigation__figcaption {
 
 				@media screen and (prefers-color-scheme: dark) {
@@ -206,7 +206,7 @@
 		color: $noir;
 
 		@media screen and (min-width: $desktop1100px) {
-		  &:hover {
+		  &:hover, &:focus {
 			.navigation__titre-section {
 			  &::after {
 				margin-left: 2.5rem;

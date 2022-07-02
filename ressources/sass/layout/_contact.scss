@@ -50,7 +50,7 @@
 	  color: $gris65AAA;
 	}
 
-	&:hover {
+	&:hover, &:focus {
 	  @media screen and (prefers-color-scheme: dark) {
 		color: $blancSombre;
 	  }
