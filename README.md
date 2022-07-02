@@ -68,7 +68,8 @@ ainsi qu'en Techniques d'intégration multimédia.
 
 #### Juin 2022
 
-* Mien en ligne du mode sombre. S'active automatiquement (synchronisé avec le système d'exploitation).
+* Mise en ligne du mode sombre automatique (synchronisé avec le système d'exploitation) (29 juin 2022)
+* Début de la transition de Adobe Publish Online vers des documents PDF accessible (1er juillet 2022)
 
 #### Janvier 2022
 
@@ -271,10 +272,10 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 
 ##### Projets sans contexte en SVG
 
-1. Exporter en SVG et nommer sous la forme **projet-largeur en px**, exemple : `altitude-1400.svg`.
-2. Optimiser avec ImageOptim.
-3. Dans `<svg>` retirer `width` et `height`.
-4. Dans `<rect>` conserver seulement `fill` `height` `width`. Exemple: `fill="#fcfcfc" height="500" width="1400"`
+1. Dans Figma, copier-coller, retirer les coins arrondis et le contour.
+2. Exporter en SVG et nommer sous la forme **projet-largeur en px**, exemple : `altitude-1400.svg`.
+3. Optimiser avec ImageOptim.
+4. Dans `<svg>` retirer `width` et `height`.
 5. Intégrer avec une balise `<img>`.
 
 ##### Projets réalisés avec Xcode
