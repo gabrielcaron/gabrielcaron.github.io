@@ -1479,7 +1479,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant svg, .navigation__lien:hover svg {
-    border: solid 2px rgba(255, 225, 0, 0.2);
+    border: solid 2px rgba(255, 225, 0, 0.5);
   }
 }
 @media screen and (prefers-color-scheme: dark) {
