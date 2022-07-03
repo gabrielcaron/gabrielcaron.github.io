@@ -585,6 +585,9 @@
   font-family: $RobotoMedium;
   text-decoration: none;
   letter-spacing: $EspacementStandard;
+  display: inline-block;
+  margin-top: 1rem; // Compense la marge négative sur l'icône
+  padding: 1rem 4rem 1rem 0;
 
   &::before {
     content: "";

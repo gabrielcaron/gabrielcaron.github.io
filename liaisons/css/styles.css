@@ -1849,6 +1849,9 @@ img {
   font-family: Roboto-Medium, sans serif;
   text-decoration: none;
   letter-spacing: 0.05rem;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 4rem 1rem 0;
 }
 .lien::before {
   content: "";
@@ -2640,8 +2643,11 @@ img {
   list-style-type: none;
   padding: 0;
 }
-.projet__formats {
+.projet__processus .lien {
+  margin-top: inherit;
   padding: 1rem 4rem 1rem 0;
+}
+.projet__formats {
   font-size: 1.8rem;
 }
 @media screen and (min-width: 600px) {

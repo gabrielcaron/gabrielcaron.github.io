@@ -69,10 +69,14 @@
   &__processus {
 	list-style-type: none;
 	padding: 0;
+
+	& .lien {
+	  margin-top: inherit;
+	  padding: 1rem 4rem 1rem 0;
+	}
   }
 
   &__formats {
-	padding: 1rem 4rem 1rem 0;
 	font-size: 1.8rem;
 
 	@media screen and (min-width: $mobile600px) {
