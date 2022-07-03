@@ -358,6 +358,10 @@
         &:active {
           & .navigation__figcaption {
             @include boutonActif;
+
+            @media screen and (prefers-color-scheme: dark) {
+              color: $noirSombre;
+            }
           }
         }
 

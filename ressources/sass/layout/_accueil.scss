@@ -143,21 +143,21 @@
 
 	.navigation {
 
-	  & .rangeeProjets {
-
-		.navigation {
-		  &__lien {
-			&:hover, &:focus {
-			  & .navigation__figcaption {
-
-				@media screen and (prefers-color-scheme: dark) {
-				  border: 3px solid $jauneOfficiel;
-				}
-			  }
-			}
-		  }
-		}
-	  }
+	  //& .rangeeProjets {
+	  //
+		//.navigation {
+		//  &__lien {
+		//	&:hover, &:focus {
+		//	  & .navigation__figcaption {
+	  //
+		//		@media screen and (prefers-color-scheme: dark) {
+		//		  border: 3px solid $jauneOfficiel;
+		//		}
+		//	  }
+		//	}
+		//  }
+		//}
+	  //}
 
 	  &.web-applis {
 		@include rangeeGrid12col($tablet900px);

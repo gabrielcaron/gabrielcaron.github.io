@@ -1176,6 +1176,11 @@ img {
     box-shadow: none;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
+    color: #0D0D0D;
+  }
+}
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1479,7 +1484,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant svg, .navigation__lien:hover svg, .navigation__lien:focus svg {
-    border: solid 2px rgba(255, 225, 0, 0.5);
+    border: solid 2px #A6A6A6;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -2268,11 +2273,6 @@ img {
     padding: 0 0 0 3rem;
   }
 }
-@media screen and (prefers-color-scheme: dark) {
-  .accueil .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption, .accueil .projets .navigation .rangeeProjets .navigation__lien:focus .navigation__figcaption {
-    border: 3px solid #FFE100;
-  }
-}
 .accueil .projets .navigation.web-applis {
   align-content: flex-start;
 }
@@ -2434,11 +2434,6 @@ img {
     color: #A6A6A6;
   }
 }
-@media screen and (prefers-color-scheme: dark) {
-  .contact__lien:hover, .contact__lien:focus {
-    color: #E6E6E6;
-  }
-}
 .contact__lien:hover .courriel .elevation, .contact__lien:focus .courriel .elevation {
   fill: url(#courriel-elevation-hover);
 }
@@ -2461,8 +2456,33 @@ img {
 .contact__lien:hover .linkedin .logotype, .contact__lien:focus .linkedin .logotype {
   fill: url(#linkedin-gris-hover);
 }
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:hover, .contact__lien:focus {
+    color: #E6E6E6;
+  }
+  .contact__lien:hover .courriel, .contact__lien:focus .courriel {
+    border: solid 2px #A6A6A6;
+  }
+  .contact__lien:hover .courriel .enveloppe, .contact__lien:focus .courriel .enveloppe {
+    fill: url(#enveloppe-sombre);
+  }
+  .contact__lien:hover .linkedin, .contact__lien:focus .linkedin {
+    border: solid 2px #A6A6A6;
+  }
+  .contact__lien:hover .linkedin .logotype, .contact__lien:focus .linkedin .logotype {
+    fill: url(#linkedin-bleu-sombre);
+  }
+}
 .contact__lien:hover .contact__figcaption, .contact__lien:focus .contact__figcaption {
   text-decoration: underline;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien .courriel .enveloppe {
+    fill: url(#enveloppe-sombre);
+  }
+  .contact__lien .linkedin .logotype {
+    fill: url(#linkedin-bleu-sombre);
+  }
 }
 .contact__figure {
   margin: 0;
@@ -2489,7 +2509,7 @@ img {
 @media screen and (prefers-color-scheme: dark) {
   .contact__figure svg {
     box-shadow: none;
-    border: solid 2px rgba(255, 225, 0, 0.2);
+    border: solid 2px #1F1F1F;
   }
   .contact__figure svg .elevation {
     fill: #1A1A1A;
