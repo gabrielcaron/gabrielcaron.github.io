@@ -79,7 +79,7 @@
     @media screen and (prefers-color-scheme: dark) {
       &.courant, &:hover, &:focus {
         & svg {
-          border: solid 2px transparentize($jauneOfficiel, 0.5);
+          border: solid 2px $gris65AAA;
         }
       }
     }

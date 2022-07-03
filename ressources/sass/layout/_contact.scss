@@ -51,11 +51,6 @@
 	}
 
 	&:hover, &:focus {
-	  @media screen and (prefers-color-scheme: dark) {
-		color: $blancSombre;
-	  }
-
-	  // Icône Courriel
 	  & .courriel {
 		& .elevation {
 		  fill: url(#courriel-elevation-hover);
@@ -70,7 +65,6 @@
 		}
 	  }
 
-	  // Icône LinkedIn
 	  & .linkedin {
 		& .elevation {
 		  fill: url(#linkedin-bleu-hover);
@@ -85,8 +79,43 @@
 		}
 	  }
 
+	  @media screen and (prefers-color-scheme: dark) {
+		color: $blancSombre;
+
+		& .courriel {
+		  border: solid 2px $gris65AAA;
+
+		  & .enveloppe {
+			fill: url(#enveloppe-sombre);
+		  }
+		}
+
+		& .linkedin {
+		  border: solid 2px $gris65AAA;
+
+		  & .logotype {
+			fill: url(#linkedin-bleu-sombre);
+		  }
+		}
+	  }
+
 	  & .contact__figcaption {
 		text-decoration: underline;
+	  }
+	}
+
+	// État initial sombre
+	@media screen and (prefers-color-scheme: dark) {
+	  & .courriel {
+		& .enveloppe {
+		  fill: url(#enveloppe-sombre);
+		}
+	  }
+
+	  & .linkedin {
+		& .logotype {
+		  fill: url(#linkedin-bleu-sombre);
+		}
 	  }
 	}
   }
@@ -113,7 +142,7 @@
 
 	  @media screen and (prefers-color-scheme: dark) {
 		box-shadow: none;
-		border: solid 2px transparentize($jauneOfficiel, 0.8);
+		border: solid 2px $grisContourIconeSombre;
 
 		& .elevation {
 		  fill: $grisElevationIconeSombre;
