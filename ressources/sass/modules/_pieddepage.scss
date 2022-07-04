@@ -61,6 +61,21 @@
 	}
   }
 
+  &__lien-accueil {
+	&:hover, &:focus {
+	  & .maison {
+		display: block;
+
+		@media screen and (prefers-color-scheme: dark) {
+		  fill: $noirSombre;
+		}
+	  }
+	  & .signature {
+		display: none;
+	  }
+	}
+  }
+
   &__logo {
 	width: 250px;
 	height: 60px;
@@ -81,19 +96,6 @@
 
 	  & .logotype {
 		fill: $blancSombre;
-	  }
-	}
-
-	&:hover {
-	  & .maison {
-		display: block;
-
-		@media screen and (prefers-color-scheme: dark) {
-		  fill: $noirSombre;
-		}
-	  }
-	  & .signature {
-		display: none;
 	  }
 	}
   }

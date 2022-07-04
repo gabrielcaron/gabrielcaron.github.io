@@ -54,6 +54,20 @@
 	@media screen and (max-width: $tablet900px - 1) {
 	  flex-basis: 100%;
 	}
+
+	&:hover, &:focus {
+	  & .maison {
+		display: block;
+
+		@media screen and (prefers-color-scheme: dark) {
+		  fill: $noirSombre;
+		}
+	  }
+
+	  & .signature {
+		display: none;
+	  }
+	}
   }
 
   &__logo {
@@ -83,20 +97,6 @@
         fill: $blancSombre;
       }
     }
-
-	&:hover {
-	  & .maison {
-		display: block;
-
-        @media screen and (prefers-color-scheme: dark) {
-          fill: $noirSombre;
-        }
-	  }
-
-	  & .signature {
-		display: none;
-	  }
-	}
   }
 
   &__menu {
