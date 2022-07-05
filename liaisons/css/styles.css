@@ -1048,7 +1048,7 @@ img {
   text-align: center;
 }
 .projets .navigation__figure svg {
-  border: solid 3px #fff;
+  border: solid 2px #fff;
   border-radius: 4rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
 }
