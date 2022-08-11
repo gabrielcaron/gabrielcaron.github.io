@@ -20,27 +20,6 @@
 * Mixin pour le padding de base pour mobile
 */
 
-/***** Utilitaires de base *****/
-
-/** Box sizing **/
-@mixin border-box-sizing {
-  html {
-	box-sizing: border-box;
-  }
-  *, *:before, *:after {
-	box-sizing: inherit;
-  }
-}
-
-/* Clearfix */
-@mixin clearfix {
-  &:after {
-	content: " ";
-	display: table;
-	clear: both;
-  }
-}
-
 /***** Accessibilité *****/
 
 // Hide only visually, but have it available for screenreaders:
