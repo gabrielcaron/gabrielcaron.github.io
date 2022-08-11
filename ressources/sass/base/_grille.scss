@@ -1,25 +1,14 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 3.0
+* @version 3.1
 *
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* Utilisation du modèle de boîte avec Box-Sizing
 * Classe conteneur pour le centrage du bloc parent avec CSS Grid
 * Classe conteneur pour le positionnement de la rangée enfant en Grid
 * Classe conteneur pour le positionnement de la rangée enfant en flexbox
 */
-
-/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
-html {
-  box-sizing: border-box;
-}
-
-/*** Images responsives ***/
-img {
-  max-width: 100%;
-}
 
 
 
