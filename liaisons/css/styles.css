@@ -407,9 +407,6 @@ template {
 * Mixin pour rangée Grid sur 12 colonnes
 * Mixin pour le padding de base pour mobile
 */
-/***** Utilitaires de base *****/
-/** Box sizing **/
-/* Clearfix */
 /***** Accessibilité *****/
 .visuallyhidden,
 .screen-reader-only {
@@ -479,7 +476,7 @@ template {
   src: url(../../liaisons/polices/roboto-boldItalic.woff2) format("woff2"), url(../../liaisons/polices/roboto-boldItalic.woff) format("woff"), url(../../liaisons/polices/roboto-boldItalic.ttf) format("truetype");
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   font-weight: normal;
   line-height: 100%;
   letter-spacing: 0.05rem;
@@ -516,7 +513,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 600px) {
@@ -527,7 +524,7 @@ h2 {
 
 h3 {
   font-size: 3.5rem;
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 600px) {
@@ -538,7 +535,7 @@ h3 {
 
 h4 {
   font-size: 3rem;
-  font-family: Roboto-Bold, sans serif;
+  font-family: Roboto-Bold, Arial, sans serif;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 600px) {
@@ -549,7 +546,7 @@ h4 {
 
 h5 {
   font-size: 2.5rem;
-  font-family: Roboto-Bold, sans serif;
+  font-family: Roboto-Bold, Arial, sans serif;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 600px) {
@@ -560,7 +557,7 @@ h5 {
 
 h6 {
   font-size: 2rem;
-  font-family: Roboto-Bold, sans serif;
+  font-family: Roboto-Bold, Arial, sans serif;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 600px) {
@@ -575,7 +572,7 @@ h6 {
   }
 }
 body {
-  font-family: Roboto-Regular, sans serif;
+  font-family: Roboto-Regular, Arial, sans serif;
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -583,26 +580,15 @@ body {
 /** Grille **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 3.0
+* @version 3.1
 *
 * ------------------
 * TABLE DES MATIERES
 * ------------------
-* Utilisation du modèle de boîte avec Box-Sizing
 * Classe conteneur pour le centrage du bloc parent avec CSS Grid
 * Classe conteneur pour le positionnement de la rangée enfant en Grid
 * Classe conteneur pour le positionnement de la rangée enfant en flexbox
 */
-/*** Harmoniser le modèle de boîte avec Box-Sizing ***/
-html {
-  box-sizing: border-box;
-}
-
-/*** Images responsives ***/
-img {
-  max-width: 100%;
-}
-
 /*** DEV seulement - Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
   padding-left: 3rem;
@@ -798,14 +784,8 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* NAVIGATION
-*
-*
+* @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
+* @version 4.2
 */
 /* En-tête */
 .entete .navigation {
@@ -831,11 +811,13 @@ img {
   }
 }
 .entete .navigation__lien {
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.5rem;
+  text-decoration: underline solid #737373;
   display: inline-block;
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.6rem;
   color: #404040;
-  text-decoration: none;
   line-height: 120%;
   letter-spacing: 0.05rem;
   padding: 1.2rem 1.7rem;
@@ -861,6 +843,7 @@ img {
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien {
     color: #E6E6E6;
+    text-decoration: underline solid #808080;
   }
 }
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
@@ -878,6 +861,7 @@ img {
   background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
   background-clip: padding-box;
   border: solid 1px transparent;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien:hover, .entete .navigation__lien:focus {
@@ -932,6 +916,7 @@ img {
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   line-height: 120%;
   padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien.courante {
@@ -1026,7 +1011,7 @@ img {
   }
 }
 .projets .navigation__lien {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   text-decoration: none;
   color: #404040;
   letter-spacing: 0.05rem;
@@ -1082,13 +1067,16 @@ img {
   }
 }
 .projets .navigation__figcaption {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.6rem;
   display: inline-block;
-  line-height: 120%;
+  line-height: 150%;
   border-radius: 4rem;
   margin-top: 0.5rem;
   padding: 1.3rem 2.3rem;
+  text-decoration: underline solid #737373;
+  text-decoration-thickness: 0.1rem;
+  text-underline-offset: 0.5rem;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figcaption {
@@ -1117,6 +1105,7 @@ img {
 .projets .navigation .rangeeSections .navigation__lien:hover, .projets .navigation .rangeeSections .navigation__lien:focus {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation .rangeeSections .navigation__lien:hover, .projets .navigation .rangeeSections .navigation__lien:focus {
@@ -1143,6 +1132,7 @@ img {
 }
 .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus .navigation__figcaption {
   border: none;
+  text-decoration: none;
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
@@ -1185,6 +1175,7 @@ img {
   border: 3px solid #ffe100;
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
@@ -1255,7 +1246,7 @@ img {
   margin-top: 0;
 }
 .pieddepage .navigation__lien {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   font-size: 2rem;
   color: #404040;
   text-decoration: none;
@@ -1359,7 +1350,7 @@ img {
   }
 }
 .pieddepage__titres {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   font-size: 2rem;
   color: #404040;
   line-height: 150%;
@@ -1846,7 +1837,7 @@ img {
 }
 
 .lien {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   text-decoration: none;
   letter-spacing: 0.05rem;
   display: inline-block;
@@ -2008,6 +1999,7 @@ img {
 /* Base décimale */
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
@@ -2033,7 +2025,7 @@ body {
 }
 
 a:hover {
-  text-decoration: underline dotted;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   a {
@@ -2069,7 +2061,7 @@ img {
   padding-bottom: 0;
 }
 .accueil__accroche {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   font-style: normal;
   font-weight: 500;
   font-size: 5rem;
@@ -2425,7 +2417,7 @@ img {
   grid-column: 3/span 4;
 }
 .contact__lien {
-  font-family: Roboto-Medium, sans serif;
+  font-family: Roboto-Medium, Arial, sans serif;
   text-decoration: none;
   color: #404040;
   letter-spacing: 0.05rem;
@@ -2519,7 +2511,7 @@ img {
   }
 }
 .contact__figcaption {
-  font-family: Roboto-Bold, sans serif;
+  font-family: Roboto-Bold, Arial, sans serif;
   font-size: 3.5rem;
   display: inline-block;
   line-height: 120%;

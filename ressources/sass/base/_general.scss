@@ -13,6 +13,7 @@
 /* Base décimale */
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
 
 a {
   &:hover {
-    text-decoration: underline dotted;
+    text-decoration: none;
   }
 
   @media screen and (prefers-color-scheme: dark) {
