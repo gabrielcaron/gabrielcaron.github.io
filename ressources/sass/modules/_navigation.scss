@@ -1,14 +1,19 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* NAVIGATION
-*
-*
+* @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
+* @version 4.2
 */
+
+@mixin soulignementLiens($mode: "clair") {
+  @if($mode == "clair") {
+    text-decoration: underline solid $gris45 0.15rem;
+    text-underline-offset: 0.5rem;
+  }
+  @else if($mode == "sombre") {
+    text-decoration: underline solid $gris50 0.15rem;
+    text-underline-offset: 0.5rem;
+  }
+}
 
 /* En-tête */
 
@@ -34,11 +39,11 @@
   }
 
   &__lien {
+    @include soulignementLiens();
     display: inline-block;
     font-family: $RobotoMedium;
     font-size: 1.6rem;
     color: $gris25;
-    text-decoration: none;
     line-height: 120%;
     letter-spacing: $EspacementStandard;
     padding: 1.2rem 1.7rem;
@@ -58,6 +63,7 @@
 
     @media screen and (prefers-color-scheme: dark) {
       color: $blancSombre;
+      @include soulignementLiens($mode: "sombre");
     }
 
     &:link, &:visited {
@@ -77,6 +83,7 @@
       background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
       background-clip: padding-box;
       border: solid $bordure transparent;
+      text-decoration: none;
 
       @media screen and (prefers-color-scheme: dark) {
         color: $gris25;
@@ -134,6 +141,7 @@
       @include boutonPageCourante;
       line-height: 120%;
       padding: 1rem 1.5rem;
+      text-decoration: none;
 
       @media screen and (min-width: 520px) {
         padding: 1.2rem 2.8rem;
@@ -224,18 +232,19 @@
   }
 
   &__lien {
+    @include soulignementLiens;
     font-family: $RobotoMedium;
-    text-decoration: none;
     color: $gris25;
     letter-spacing: $EspacementStandard;
     line-height: 100%;
     border-radius: $arrondiMobile;
 
     @media screen and (prefers-color-scheme: dark) {
+      @include soulignementLiens($mode: "sombre");
       color: $blancSombre;
     }
 
-    &:hover {
+    &:hover, &:focus {
       @media screen and (prefers-color-scheme: dark) {
         color: $gris25;
       }
@@ -279,21 +288,25 @@
     font-family: $RobotoMedium;
     font-size: 1.6rem;
     display: inline-block;
-    line-height: 120%;
+    line-height: 150%;
     border-radius: $arrondiMobile;
     margin-top: 0.5rem;
     padding: 1.3rem 2.3rem;
+    text-decoration: underline solid $gris45;
+    text-decoration-thickness: 0.1rem;
+    text-underline-offset: 0.5rem;
 
     @media screen and (prefers-color-scheme: dark) {
       border: 3px solid transparent;
     }
   }
 
-  // Styles spécifique aux liens des sections
+  // Styles spécifique aux liens des titres de sections
   & .rangeeSections {
 
     & .courant {
       @include boutonPageCourante;
+      text-decoration: none;
     }
 
     & .navigation__lien {
@@ -306,6 +319,7 @@
 
       &:hover, &:focus {
         @include boutonSurvol;
+        text-decoration: none;
 
         &.courant {
           border: none;
@@ -334,6 +348,7 @@
         &:hover, &:focus {
           & .navigation__figcaption {
             border: none;
+            text-decoration: none;
             @include boutonSurvol;
 
             @media screen and (prefers-color-scheme: dark) {
@@ -369,6 +384,7 @@
           & .navigation__figcaption {
             @include boutonPageCourante;
             padding: 1rem 2rem;
+            text-decoration: none;
 
             @media screen and (prefers-color-scheme: dark) {
               padding: 1.3rem 2.3rem;
@@ -436,10 +452,10 @@
     }
 
     &__lien {
+      @include soulignementLiens();
       font-family: $RobotoMedium;
       font-size: 2rem;
       color: $gris25;
-      text-decoration: none;
       line-height: 225%;
       letter-spacing: $EspacementStandard;
       transition: border-bottom 0.075s ease-in-out;
@@ -449,6 +465,7 @@
       }
 
       @media screen and (prefers-color-scheme: dark) {
+        @include soulignementLiens($mode: "sombre");
         color: $gris65AAA;
       }
 
@@ -457,11 +474,10 @@
       }
 
       &:hover {
-        border-bottom: solid 0.3rem $gris25;
+        text-decoration: none;
 
         @media screen and (prefers-color-scheme: dark) {
           color: $blancSombre;
-          border-bottom: solid 0.3rem $jauneOfficiel;
         }
       }
     }
