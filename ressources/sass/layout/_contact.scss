@@ -39,14 +39,15 @@
   }
 
   &__lien {
+	@include soulignementLiens;
 	font-family: $RobotoMedium;
-	text-decoration: none;
 	color: $gris25;
 	letter-spacing: $EspacementStandard;
 	line-height: 100%;
 	border-radius: $arrondiMobile;
 
 	@media screen and (prefers-color-scheme: dark) {
+	  @include soulignementLiens($mode: "sombre");
 	  color: $gris65AAA;
 	}
 
@@ -100,7 +101,7 @@
 	  }
 
 	  & .contact__figcaption {
-		text-decoration: underline;
+		text-decoration: none;
 	  }
 	}
 

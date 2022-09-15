@@ -6,12 +6,12 @@
 
 @mixin soulignementLiens($mode: "clair") {
   @if($mode == "clair") {
-    text-decoration-thickness: 0.1rem;
+    text-decoration: underline solid $gris45 0.15rem;
     text-underline-offset: 0.5rem;
-    text-decoration: underline solid $gris45;
   }
   @else if($mode == "sombre") {
-    text-decoration: underline solid $gris50;
+    text-decoration: underline solid $gris50 0.15rem;
+    text-underline-offset: 0.5rem;
   }
 }
 
@@ -232,18 +232,19 @@
   }
 
   &__lien {
+    @include soulignementLiens;
     font-family: $RobotoMedium;
-    text-decoration: none;
     color: $gris25;
     letter-spacing: $EspacementStandard;
     line-height: 100%;
     border-radius: $arrondiMobile;
 
     @media screen and (prefers-color-scheme: dark) {
+      @include soulignementLiens($mode: "sombre");
       color: $blancSombre;
     }
 
-    &:hover {
+    &:hover, &:focus {
       @media screen and (prefers-color-scheme: dark) {
         color: $gris25;
       }
@@ -305,6 +306,7 @@
 
     & .courant {
       @include boutonPageCourante;
+      text-decoration: none;
     }
 
     & .navigation__lien {
@@ -450,10 +452,10 @@
     }
 
     &__lien {
+      @include soulignementLiens();
       font-family: $RobotoMedium;
       font-size: 2rem;
       color: $gris25;
-      text-decoration: none;
       line-height: 225%;
       letter-spacing: $EspacementStandard;
       transition: border-bottom 0.075s ease-in-out;
@@ -463,6 +465,7 @@
       }
 
       @media screen and (prefers-color-scheme: dark) {
+        @include soulignementLiens($mode: "sombre");
         color: $gris65AAA;
       }
 
@@ -471,11 +474,10 @@
       }
 
       &:hover {
-        border-bottom: solid 0.3rem $gris25;
+        text-decoration: none;
 
         @media screen and (prefers-color-scheme: dark) {
           color: $blancSombre;
-          border-bottom: solid 0.3rem $jauneOfficiel;
         }
       }
     }

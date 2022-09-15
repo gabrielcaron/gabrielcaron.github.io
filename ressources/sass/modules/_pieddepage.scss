@@ -107,7 +107,7 @@
 	color: $noir;
 
 	&:hover {
-	  text-decoration: underline dotted yellow;
+	  text-decoration: underline;
 
 	  @media screen and (prefers-color-scheme: dark) {
 		color: $blancSombre;
