@@ -6,11 +6,17 @@
 
 @mixin soulignementLiens($mode: "clair") {
   @if($mode == "clair") {
-    text-decoration: underline solid $gris45 0.15rem;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $gris45;
+    text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.5rem;
   }
   @else if($mode == "sombre") {
-    text-decoration: underline solid $gris50 0.15rem;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $gris50;
+    text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.5rem;
   }
 }
@@ -285,6 +291,7 @@
   }
 
   &__figcaption {
+    @include soulignementLiens();
     font-family: $RobotoMedium;
     font-size: 1.6rem;
     display: inline-block;
@@ -292,11 +299,9 @@
     border-radius: $arrondiMobile;
     margin-top: 0.5rem;
     padding: 1.3rem 2.3rem;
-    text-decoration: underline solid $gris45;
-    text-decoration-thickness: 0.1rem;
-    text-underline-offset: 0.5rem;
 
     @media screen and (prefers-color-scheme: dark) {
+      @include soulignementLiens($mode: "sombre");
       border: 3px solid transparent;
     }
   }

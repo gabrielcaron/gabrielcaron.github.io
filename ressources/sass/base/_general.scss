@@ -48,6 +48,10 @@ a {
   }
 }
 
+abbr[title] {
+  text-decoration-style: dotted;
+}
+
 img {
   vertical-align: bottom;
   max-width: 100%;
