@@ -631,7 +631,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/axure--hover.svg);
@@ -649,7 +649,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/figma--hover.svg);
@@ -667,7 +667,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/github--hover.svg);
@@ -685,7 +685,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/pdf--hover.svg);
@@ -707,7 +707,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/rtf--hover.svg);
@@ -725,7 +725,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/sketch--hover.svg);
@@ -743,7 +743,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/web--hover.svg);
@@ -761,7 +761,7 @@
       }
     }
 
-    &:hover, &:active, &:focus {
+    &:hover, &:active, &:focus-visible {
 
       &::before {
         background-image: url(../images/icones/xd--hover.svg);

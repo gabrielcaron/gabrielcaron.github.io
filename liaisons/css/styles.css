@@ -1923,7 +1923,7 @@ body {
     background-image: url(../images/icones/axure--sombre.svg);
   }
 }
-.lien.axure:hover::before, .lien.axure:active::before, .lien.axure:focus::before {
+.lien.axure:hover::before, .lien.axure:active::before, .lien.axure:focus-visible::before {
   background-image: url(../images/icones/axure--hover.svg);
 }
 .lien.figma::before {
@@ -1934,7 +1934,7 @@ body {
     background-image: url(../images/icones/figma--sombre.svg);
   }
 }
-.lien.figma:hover::before, .lien.figma:active::before, .lien.figma:focus::before {
+.lien.figma:hover::before, .lien.figma:active::before, .lien.figma:focus-visible::before {
   background-image: url(../images/icones/figma--hover.svg);
 }
 .lien.github::before {
@@ -1945,7 +1945,7 @@ body {
     background-image: url(../images/icones/github--sombre.svg);
   }
 }
-.lien.github:hover::before, .lien.github:active::before, .lien.github:focus::before {
+.lien.github:hover::before, .lien.github:active::before, .lien.github:focus-visible::before {
   background-image: url(../images/icones/github--hover.svg);
 }
 .lien.pdf::before {
@@ -1956,7 +1956,7 @@ body {
     background-image: url(../images/icones/pdf--sombre.svg);
   }
 }
-.lien.pdf:hover::before, .lien.pdf:active::before, .lien.pdf:focus::before {
+.lien.pdf:hover::before, .lien.pdf:active::before, .lien.pdf:focus-visible::before {
   background-image: url(../images/icones/pdf--hover.svg);
 }
 .lien.pdf .abreviation, .lien.pdf .taille {
@@ -1970,7 +1970,7 @@ body {
     background-image: url(../images/icones/rtf--sombre.svg);
   }
 }
-.lien.rtf:hover::before, .lien.rtf:active::before, .lien.rtf:focus::before {
+.lien.rtf:hover::before, .lien.rtf:active::before, .lien.rtf:focus-visible::before {
   background-image: url(../images/icones/rtf--hover.svg);
 }
 .lien.sketch::before {
@@ -1981,7 +1981,7 @@ body {
     background-image: url(../images/icones/sketch--sombre.svg);
   }
 }
-.lien.sketch:hover::before, .lien.sketch:active::before, .lien.sketch:focus::before {
+.lien.sketch:hover::before, .lien.sketch:active::before, .lien.sketch:focus-visible::before {
   background-image: url(../images/icones/sketch--hover.svg);
 }
 .lien.web::before {
@@ -1992,7 +1992,7 @@ body {
     background-image: url(../images/icones/web--sombre.svg);
   }
 }
-.lien.web:hover::before, .lien.web:active::before, .lien.web:focus::before {
+.lien.web:hover::before, .lien.web:active::before, .lien.web:focus-visible::before {
   background-image: url(../images/icones/web--hover.svg);
 }
 .lien.xd::before {
@@ -2003,7 +2003,7 @@ body {
     background-image: url(../images/icones/xd--sombre.svg);
   }
 }
-.lien.xd:hover::before, .lien.xd:active::before, .lien.xd:focus::before {
+.lien.xd:hover::before, .lien.xd:active::before, .lien.xd:focus-visible::before {
   background-image: url(../images/icones/xd--hover.svg);
 }
 
