@@ -1,7 +1,7 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
-* @version 4.2
+* @version 4.3
 */
 
 @mixin soulignementLiens($mode: "clair") {
@@ -10,14 +10,14 @@
     text-decoration-style: solid;
     text-decoration-color: $gris45;
     text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.3rem;
   }
   @else if($mode == "sombre") {
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: $gris50;
     text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.5rem;
+    text-underline-offset: 0.3rem;
   }
 }
 
