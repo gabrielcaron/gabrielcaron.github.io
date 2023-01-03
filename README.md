@@ -10,6 +10,7 @@ Ce projet est mise à jour en continu.
 * [Dépendances](#dépendances)
 * [Historique](#historique)
     * [En résumé](#en-résumé)
+    * [2023](#2023)
     * [2022](#2022)
     * [2021](#2021)
     * [2020](#2020)
@@ -63,6 +64,13 @@ ainsi qu'en Techniques d'intégration multimédia.
 * À l'automne 2020, une deuxième itération de design est amorcée : nouvelles recherches visuelles, esquisses 
   préliminaires, esquisses fonctionnelles, maquettes, etc.
 * À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
+
+### 2023
+
+#### Janvier 2023
+
+- Mise en ligne du projet Tim (2 janvier 2023)
+- Archivage du projet Boréal Magazine (2 janvier 2023)
 
 ### 2022
 
