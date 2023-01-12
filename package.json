@@ -1,0 +1,15 @@
+{
+  "name": "gabrielcaron",
+  "version": "2.0.0",
+  "description": "Portfolio Web",
+  "scripts": {
+    "sass": "sass --watch ressources/sass:liaisons/css",
+    "sassprod": "sass --style=compressed ressources/sass:liaisons/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcaron/gabrielcaron.github.io.git"
+  },
+  "author": "Gabriel Caron",
+  "license": "ISC"
+}
