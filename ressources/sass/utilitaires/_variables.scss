@@ -1,6 +1,7 @@
 /**
+* Variables des modules
  * @author Gabriel Caron <1861095@csfoy.ca>
- * @version 1.0
+ * @version 1.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -12,29 +13,27 @@
 * POINTS DE RUPTURE
 */
 
-
 $arrondiMobile: 4rem;
 $arrondiTable: 5.5rem;
-
 
 /** Palette de couleurs **/
 
 /* Couleurs de base AAA */
 
 $blanc: #fff;
-$gris99: #FCFCFC; // Icones seulement
-$gris98: #FAFAFA;
+$gris99: #fcfcfc; // Icones seulement
+$gris98: #fafafa;
 $gris50: #808080; // AA
 $gris45: #737373; // AA
 $gris25: #404040; // AAA
 $noir: #000;
-$jauneOfficiel: #FFE100;
+$jauneOfficiel: #ffe100;
 
-$blancSombre: #E6E6E6;
-$gris65AAA: #A6A6A6;
-$grisContourIconeSombre: #1F1F1F;
-$grisElevationIconeSombre: #1A1A1A;
-$noirSombre: #0D0D0D;
+$blancSombre: #e6e6e6;
+$gris65AAA: #a6a6a6;
+$grisContourIconeSombre: #1f1f1f;
+$grisElevationIconeSombre: #1a1a1a;
+$noirSombre: #0d0d0d;
 
 /* Polices */
 
@@ -50,5 +49,6 @@ $EspacementStandard: 0.05rem;
 /** Points de rupture **/
 $mobile600px: 600px;
 $tablet900px: 900px;
+$desktop1000px: 1000px;
 $desktop1100px: 1100px;
 $desktop1200px: 1200px;

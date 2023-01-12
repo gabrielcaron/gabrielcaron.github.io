@@ -369,8 +369,9 @@ template {
 /**** UTILITAIRES ****/
 /** Variables **/
 /**
+* Variables des modules
  * @author Gabriel Caron <1861095@csfoy.ca>
- * @version 1.0
+ * @version 1.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -435,7 +436,7 @@ template {
   padding: 0 3rem;
   line-height: 5rem;
   color: #000;
-  background-color: #FFE100;
+  background-color: #ffe100;
   text-align: center;
 }
 
@@ -483,7 +484,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6 {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 
@@ -568,7 +569,7 @@ h6 {
 
 @media screen and (prefers-color-scheme: dark) {
   p {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 body {
@@ -742,7 +743,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete__lien-accueil:hover .maison, .entete__lien-accueil:focus .maison {
-    fill: #0D0D0D;
+    fill: #0d0d0d;
   }
 }
 .entete__lien-accueil:hover .signature, .entete__lien-accueil:focus .signature {
@@ -763,7 +764,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete__logo .signature {
-    fill: #0D0D0D;
+    fill: #0d0d0d;
   }
 }
 .entete__logo .maison {
@@ -771,7 +772,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete__logo .logotype {
-    fill: #E6E6E6;
+    fill: #e6e6e6;
   }
 }
 .entete__menu {
@@ -844,7 +845,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien {
-    color: #E6E6E6;
+    color: #e6e6e6;
     text-decoration: underline;
     text-decoration-style: solid;
     text-decoration-color: #808080;
@@ -889,7 +890,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien:hover:before, .entete .navigation__lien:focus:before {
-    background: linear-gradient(180deg, #0D0D0D 0%, #0D0D0D 100%);
+    background: linear-gradient(180deg, #0d0d0d 0%, #0d0d0d 100%);
     box-shadow: none;
   }
 }
@@ -1035,7 +1036,7 @@ body {
     text-decoration-color: #808080;
     text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.3rem;
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -1074,11 +1075,11 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figure svg {
-    border: solid 2px #1F1F1F;
+    border: solid 2px #1f1f1f;
     box-shadow: none;
   }
   .projets .navigation__figure svg .elevation {
-    fill: #1A1A1A;
+    fill: #1a1a1a;
   }
 }
 .projets .navigation__figcaption {
@@ -1166,9 +1167,9 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus .navigation__figcaption {
-    border: 3px solid #A6A6A6;
+    border: 3px solid #a6a6a6;
     background: transparent;
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus.courant .navigation__figcaption {
@@ -1177,7 +1178,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus.courant .navigation__figcaption {
-    border: 3px solid #FFE100;
+    border: 3px solid #ffe100;
   }
 }
 .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
@@ -1191,7 +1192,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
-    color: #0D0D0D;
+    color: #0d0d0d;
   }
 }
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
@@ -1250,7 +1251,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage .navigation__titre {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 .pieddepage .navigation__titre .section {
@@ -1259,7 +1260,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage .navigation__titre .section {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 .pieddepage .navigation__liste {
@@ -1293,7 +1294,7 @@ body {
     text-decoration-color: #808080;
     text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.3rem;
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .pieddepage .navigation__lien.section {
@@ -1304,7 +1305,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage .navigation__lien:hover {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 .pieddepage__copyright {
@@ -1314,7 +1315,7 @@ body {
 /** Pied de page **/
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.0
+* @version 1.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -1327,7 +1328,7 @@ body {
   padding-left: 3rem;
   padding-right: 3rem;
   padding: 0 3rem 5rem 3rem;
-  background-image: linear-gradient(to right bottom, #fff000, #FFEB00);
+  background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
   margin-top: 10rem;
 }
 @media screen and (min-width: 1000px) {
@@ -1368,7 +1369,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage {
-    background-image: linear-gradient(to right bottom, #1D1B16, #1C1A15);
+    background-image: linear-gradient(to right bottom, #1d1b16, #1c1a15);
   }
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
@@ -1396,7 +1397,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage__titres {
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .pieddepage__rangeeLogo {
@@ -1416,7 +1417,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage__lien-accueil:hover .maison, .pieddepage__lien-accueil:focus .maison {
-    fill: #0D0D0D;
+    fill: #0d0d0d;
   }
 }
 .pieddepage__lien-accueil:hover .signature, .pieddepage__lien-accueil:focus .signature {
@@ -1432,13 +1433,13 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage__logo .elevation {
-    fill: #FFE100;
+    fill: #ffe100;
   }
   .pieddepage__logo .signature {
-    fill: #0D0D0D;
+    fill: #0d0d0d;
   }
   .pieddepage__logo .logotype {
-    fill: #E6E6E6;
+    fill: #e6e6e6;
   }
 }
 .pieddepage__copyright {
@@ -1448,10 +1449,10 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pieddepage__copyright {
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .pieddepage__copyright {
     position: relative;
     top: 13rem;
@@ -1497,7 +1498,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant svg, .navigation__lien:hover svg, .navigation__lien:focus svg {
-    border: solid 2px #A6A6A6;
+    border: solid 2px #a6a6a6;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -1895,7 +1896,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .lien:link, .lien:visited {
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .lien:hover, .lien:active {
@@ -1903,7 +1904,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .lien:hover, .lien:active {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 .lien.axure::before {
@@ -2032,11 +2033,11 @@ html {
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 @media screen and (prefers-color-scheme: dark) {
   body {
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
   }
 }
 @media screen and (min-width: 900px) {
@@ -2062,13 +2063,13 @@ a:hover {
 }
 @media screen and (prefers-color-scheme: dark) {
   a {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 
 @media screen and (prefers-color-scheme: dark) {
   li, figcaption {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 abbr[title] {
@@ -2129,7 +2130,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .accueil__accroche {
-    color: #E6E6E6;
+    color: #e6e6e6;
     text-shadow: none;
   }
 }
@@ -2150,7 +2151,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .accueil__hashtags {
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .accueil__coeur {
@@ -2205,7 +2206,7 @@ img {
 @media screen and (min-width: 900px) {
   .accueil .projets__conteneurDemiGrille.web-applis {
     position: relative;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
@@ -2215,7 +2216,7 @@ img {
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
   .accueil .projets__conteneurDemiGrille.web-applis {
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
   }
 }
 @media screen and (min-width: 900px) {
@@ -2249,7 +2250,7 @@ img {
 @media screen and (min-width: 900px) {
   .accueil .projets__conteneurDemiGrille.design-graphique {
     position: relative;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
@@ -2259,7 +2260,7 @@ img {
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
   .accueil .projets__conteneurDemiGrille.design-graphique {
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
   }
 }
 @media screen and (min-width: 900px) {
@@ -2369,7 +2370,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .accueil .projets .navigation__lien-section {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
 }
 .accueil .projets .navigation__titre-section {
@@ -2469,7 +2470,7 @@ img {
     text-decoration-color: #808080;
     text-decoration-thickness: 0.15rem;
     text-underline-offset: 0.3rem;
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .contact__lien:hover .courriel .elevation, .contact__lien:focus .courriel .elevation {
@@ -2496,16 +2497,16 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .contact__lien:hover, .contact__lien:focus {
-    color: #E6E6E6;
+    color: #e6e6e6;
   }
   .contact__lien:hover .courriel, .contact__lien:focus .courriel {
-    border: solid 2px #A6A6A6;
+    border: solid 2px #a6a6a6;
   }
   .contact__lien:hover .courriel .enveloppe, .contact__lien:focus .courriel .enveloppe {
     fill: url(#enveloppe-sombre);
   }
   .contact__lien:hover .linkedin, .contact__lien:focus .linkedin {
-    border: solid 2px #A6A6A6;
+    border: solid 2px #a6a6a6;
   }
   .contact__lien:hover .linkedin .logotype, .contact__lien:focus .linkedin .logotype {
     fill: url(#linkedin-bleu-sombre);
@@ -2547,10 +2548,10 @@ img {
 @media screen and (prefers-color-scheme: dark) {
   .contact__figure svg {
     box-shadow: none;
-    border: solid 2px #1F1F1F;
+    border: solid 2px #1f1f1f;
   }
   .contact__figure svg .elevation {
-    fill: #1A1A1A;
+    fill: #1a1a1a;
   }
 }
 .contact__figcaption {
@@ -2596,7 +2597,7 @@ img {
 @media screen and (min-width: 900px) {
   .projets__selecteur {
     position: relative;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     background-clip: padding-box;
     border: solid 2px transparent;
     border-radius: 55px;
@@ -2605,7 +2606,7 @@ img {
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
   .projets__selecteur {
-    background-color: #0D0D0D;
+    background-color: #0d0d0d;
   }
 }
 @media screen and (min-width: 900px) {
@@ -2671,7 +2672,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projet__description {
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .projet__processus {
@@ -2706,7 +2707,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projet__figcaption {
-    color: #A6A6A6;
+    color: #a6a6a6;
   }
 }
 .projet.sans-contexte img {
@@ -2715,7 +2716,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projet.sans-contexte img {
-    border: 2px solid #1F1F1F;
+    border: 2px solid #1f1f1f;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2728,7 +2729,7 @@ img {
 @media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
   .projet.masonry img {
     box-shadow: none;
-    border: solid 2px #1F1F1F;
+    border: solid 2px #1f1f1f;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2779,7 +2780,7 @@ img {
 }
 @media screen and (min-width: 800px) and (prefers-color-scheme: dark) {
   .apropos .quelques-chiffres .statistique path {
-    fill: #E6E6E6;
+    fill: #e6e6e6;
   }
 }
 .apropos .projet {
