@@ -250,12 +250,6 @@
       color: $blancSombre;
     }
 
-    &.courant {
-        & .icone {
-          border: none;
-        }
-    }
-
     &:hover, &:focus {
       @media screen and (prefers-color-scheme: dark) {
         color: $gris25;
@@ -263,6 +257,26 @@
 
       & .icone {
         border: none;
+
+        @media screen and (prefers-color-scheme: dark) {
+          border: 2px solid $gris65AAA;
+        }
+      }
+    }
+
+    &.courant {
+      & .icone {
+        border: none;
+
+        @media screen and (prefers-color-scheme: dark) {
+          border: 2px solid $jauneOfficiel;
+
+          &:hover, &:focus {
+            border: 2px solid $jauneOfficiel;
+          }
+        }
+
+
       }
     }
   }

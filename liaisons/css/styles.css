@@ -1039,9 +1039,6 @@ body {
     color: #e6e6e6;
   }
 }
-.projets .navigation__lien.courant .icone {
-  border: none;
-}
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien:hover, .projets .navigation__lien:focus {
     color: #404040;
@@ -1049,6 +1046,22 @@ body {
 }
 .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
   border: none;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
+    border: 2px solid #a6a6a6;
+  }
+}
+.projets .navigation__lien.courant .icone {
+  border: none;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__lien.courant .icone {
+    border: 2px solid #ffe100;
+  }
+  .projets .navigation__lien.courant .icone:hover, .projets .navigation__lien.courant .icone:focus {
+    border: 2px solid #ffe100;
+  }
 }
 .projets .navigation__figure {
   margin: 0;
@@ -1517,7 +1530,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .SOS .elevation, .navigation__lien:hover .SOS .elevation, .navigation__lien:focus .SOS .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .SOS .bouee, .navigation__lien:hover .SOS .bouee, .navigation__lien:focus .SOS .bouee {
@@ -1538,7 +1551,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .alaia .elevation, .navigation__lien:hover .alaia .elevation, .navigation__lien:focus .alaia .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .alaia .planches, .navigation__lien:hover .alaia .planches, .navigation__lien:focus .alaia .planches {
@@ -1559,7 +1572,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .altitude .elevation, .navigation__lien:hover .altitude .elevation, .navigation__lien:focus .altitude .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .altitude .altisymbole, .navigation__lien:hover .altitude .altisymbole, .navigation__lien:focus .altitude .altisymbole {
@@ -1580,7 +1593,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .aquafina .elevation, .navigation__lien:hover .aquafina .elevation, .navigation__lien:focus .aquafina .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .aquafina .goutte, .navigation__lien:hover .aquafina .goutte, .navigation__lien:focus .aquafina .goutte {
@@ -1601,7 +1614,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .boreal .elevation, .navigation__lien:hover .boreal .elevation, .navigation__lien:focus .boreal .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .boreal .feuille, .navigation__lien:hover .boreal .feuille, .navigation__lien:focus .boreal .feuille {
@@ -1622,7 +1635,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .danseenboites .elevation, .navigation__lien:hover .danseenboites .elevation, .navigation__lien:focus .danseenboites .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .danseenboites .masques, .navigation__lien:hover .danseenboites .masques, .navigation__lien:focus .danseenboites .masques {
@@ -1643,7 +1656,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .destinations .elevation, .navigation__lien:hover .destinations .elevation, .navigation__lien:focus .destinations .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .destinations .symbole, .navigation__lien:hover .destinations .symbole, .navigation__lien:focus .destinations .symbole {
@@ -1664,7 +1677,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .elite .elevation, .navigation__lien:hover .elite .elevation, .navigation__lien:focus .elite .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .elite .etincelle, .navigation__lien:hover .elite .etincelle, .navigation__lien:focus .elite .etincelle {
@@ -1685,7 +1698,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .festivaloff .elevation, .navigation__lien:hover .festivaloff .elevation, .navigation__lien:focus .festivaloff .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .festivaloff .note, .navigation__lien:hover .festivaloff .note, .navigation__lien:focus .festivaloff .note {
@@ -1706,7 +1719,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .grosseile .elevation, .navigation__lien:hover .grosseile .elevation, .navigation__lien:focus .grosseile .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .grosseile .croix, .navigation__lien:hover .grosseile .croix, .navigation__lien:focus .grosseile .croix {
@@ -1727,7 +1740,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .manueldetypo .elevation, .navigation__lien:hover .manueldetypo .elevation, .navigation__lien:focus .manueldetypo .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .manueldetypo .livre, .navigation__lien:hover .manueldetypo .livre, .navigation__lien:focus .manueldetypo .livre {
@@ -1748,7 +1761,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .memorize .elevation, .navigation__lien:hover .memorize .elevation, .navigation__lien:focus .memorize .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .memorize .cartes, .navigation__lien:hover .memorize .cartes, .navigation__lien:focus .memorize .cartes {
@@ -1769,7 +1782,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .creativite .elevation, .navigation__lien:hover .creativite .elevation, .navigation__lien:focus .creativite .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .creativite .feu, .navigation__lien:hover .creativite .feu, .navigation__lien:focus .creativite .feu {
@@ -1790,7 +1803,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .mexico .elevation, .navigation__lien:hover .mexico .elevation, .navigation__lien:focus .mexico .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .mexico .guitare, .navigation__lien:hover .mexico .guitare, .navigation__lien:focus .mexico .guitare {
@@ -1811,7 +1824,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .presto .elevation, .navigation__lien:hover .presto .elevation, .navigation__lien:focus .presto .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .presto .prestosymbole, .navigation__lien:hover .presto .prestosymbole, .navigation__lien:focus .presto .prestosymbole {
@@ -1832,7 +1845,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .controle .elevation, .navigation__lien:hover .controle .elevation, .navigation__lien:focus .controle .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .controle .pantin, .navigation__lien:hover .controle .pantin, .navigation__lien:focus .controle .pantin {
@@ -1853,7 +1866,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.courant .tim .elevation, .navigation__lien:hover .tim .elevation, .navigation__lien:focus .tim .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: rgba(255, 225, 0, 0.05);
   }
 }
 .navigation__lien.courant .tim .logotim, .navigation__lien:hover .tim .logotim, .navigation__lien:focus .tim .logotim {
@@ -2483,12 +2496,17 @@ img {
   border: none;
   margin: 4px 4px 0 0;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:hover .icone, .contact__lien:focus .icone {
+    margin: initial;
+  }
+}
 .contact__lien:hover .courriel .elevation, .contact__lien:focus .courriel .elevation {
   fill: url(#courriel-elevation-hover);
 }
 @media screen and (prefers-color-scheme: dark) {
   .contact__lien:hover .courriel .elevation, .contact__lien:focus .courriel .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: #1a1a1a;
   }
 }
 .contact__lien:hover .courriel .enveloppe, .contact__lien:focus .courriel .enveloppe {
@@ -2499,7 +2517,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .contact__lien:hover .linkedin .elevation, .contact__lien:focus .linkedin .elevation {
-    fill: rgba(255, 225, 0, 0.1);
+    fill: #1a1a1a;
   }
 }
 .contact__lien:hover .linkedin .logotype, .contact__lien:focus .linkedin .logotype {
