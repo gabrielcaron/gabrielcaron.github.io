@@ -14,11 +14,11 @@
 // Bulle qui contient les icônes
 @mixin bulle {
   position: relative;
-  $bordure: 2px;
+  $bordure: 0.2rem;
   background-color: $gris98;
   background-clip: padding-box;
   border: solid $bordure transparent;
-  border-radius: 55px;
+  border-radius: 5.5rem;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: $noirSombre;
@@ -79,7 +79,7 @@
     @media screen and (prefers-color-scheme: dark) {
       &.courant, &:hover, &:focus {
         & svg {
-          border: solid 2px $gris65AAA;
+          border: solid 0.2rem $gris65AAA;
         }
       }
     }

@@ -105,10 +105,10 @@
   &.sans-contexte {
 	img {
 	  border-radius: 3.5rem;
-	  border: 2px solid $blanc;
+	  border: 0.2rem solid $blanc;
 
 	  @media screen and (prefers-color-scheme: dark) {
-		border: 2px solid $grisContourIconeSombre;
+		border: 0.2rem solid $grisContourIconeSombre;
 	  }
 	}
   }
@@ -118,11 +118,11 @@
 	  img {
 		border-radius: 3.5rem;
 		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px $blanc;
-		border: solid 2px $blanc;
+		border: solid 0.2rem $blanc;
 
 		@media screen and (prefers-color-scheme: dark) {
 		  box-shadow: none;
-		  border: solid 2px $grisContourIconeSombre;
+		  border: solid 0.2rem $grisContourIconeSombre;
 		}
 	  }
 	}

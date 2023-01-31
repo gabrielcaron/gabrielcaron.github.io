@@ -259,7 +259,7 @@
         border: none;
 
         @media screen and (prefers-color-scheme: dark) {
-          border: 2px solid $gris65AAA;
+          border: 0.2rem solid $gris65AAA;
         }
       }
     }
@@ -269,10 +269,10 @@
         border: none;
 
         @media screen and (prefers-color-scheme: dark) {
-          border: 2px solid $jauneOfficiel;
+          border: 0.2rem solid $jauneOfficiel;
 
           &:hover, &:focus {
-            border: 2px solid $jauneOfficiel;
+            border: 0.2rem solid $jauneOfficiel;
           }
         }
 
@@ -286,7 +286,7 @@
     text-align: center;
 
     & .icone {
-      border: solid 2px $blanc;
+      border: solid 0.2rem $blanc;
       border-radius: $arrondiMobile;
       box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
 
@@ -304,7 +304,7 @@
       }
 
       @media screen and (prefers-color-scheme: dark) {
-        border: solid 2px $grisContourIconeSombre;
+        border: solid 0.2rem $grisContourIconeSombre;
         box-shadow: none;
 
         & .elevation {
@@ -326,7 +326,7 @@
 
     @media screen and (prefers-color-scheme: dark) {
       @include soulignementLiens($mode: "sombre");
-      border: 3px solid transparent;
+      border: 0.3rem solid transparent;
     }
   }
 
@@ -393,7 +393,7 @@
               padding: 1.3rem 2.3rem;
 
               @media screen and (prefers-color-scheme: dark) {
-                border: 3px solid $jauneOfficiel;
+                border: 0.3rem solid $jauneOfficiel;
               }
             }
           }

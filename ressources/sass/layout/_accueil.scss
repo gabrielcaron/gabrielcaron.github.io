@@ -25,7 +25,7 @@
 	letter-spacing: $EspacementStandard;
 	text-align: center;
 	color: $noir;
-	text-shadow: -1px -1px 3px #FFFFFF, 2px 2px 3px rgba(0, 0, 0, 0.15);
+	text-shadow: -1px -1px 3px $blanc, 2px 2px 3px rgba(0, 0, 0, 0.15);
 	margin: 5rem 0 0 0;
 
 	@media screen and (min-width: 500px) {
@@ -90,7 +90,7 @@
 		@media screen and (min-width: $tablet900px) {
 		  display: grid;
 		  grid-template-columns: minmax(auto, 690px);
-		  column-gap: 20px;
+		  column-gap: 2rem;
 		}
 	  }
 
@@ -104,7 +104,7 @@
 		  border-radius: 0 $arrondiTable $arrondiTable 0;
 
 		  &:before {
-			left: 2px; // Retire la barre de défilement en page d'accueil
+			left: -0.2rem; // Retire la barre de défilement en page d'accueil
 		  }
 		}
 	  }
@@ -119,7 +119,7 @@
 		  border-radius: $arrondiTable 0 0 $arrondiTable;
 
 		  &:before {
-			right: 2px; // Retire la barre de défilement en page d'accueil
+			right: 0.2rem; // Retire la barre de défilement en page d'accueil
 		  }
 		}
 	  }
@@ -142,22 +142,6 @@
 	// Navigation spécifique à l'accueil
 
 	.navigation {
-
-	  //& .rangeeProjets {
-	  //
-		//.navigation {
-		//  &__lien {
-		//	&:hover, &:focus {
-		//	  & .navigation__figcaption {
-	  //
-		//		@media screen and (prefers-color-scheme: dark) {
-		//		  border: 3px solid $jauneOfficiel;
-		//		}
-		//	  }
-		//	}
-		//  }
-		//}
-	  //}
 
 	  &.web-applis {
 		@include rangeeGrid12col($tablet900px);
