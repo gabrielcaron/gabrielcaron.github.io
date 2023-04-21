@@ -101,7 +101,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -589,7 +590,8 @@ body {
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
@@ -916,16 +918,6 @@ body {
 }
 
 /* Projets */
-@media screen and (min-width: 900px) {
-  .projets .navigation.web-applis {
-    padding: 1rem 3rem 1.5rem 1rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .projets .navigation.design-graphique {
-    padding: 1rem 1rem 1.5rem 3rem;
-  }
-}
 .projets .navigation__liste {
   list-style-type: none;
   padding: 0;
@@ -1214,7 +1206,8 @@ body {
       .pieddepage .navigation {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
       }
     }
   }
@@ -1366,7 +1359,8 @@ body {
     .pieddepage__conteneurGrille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2152,7 +2146,8 @@ img {
     .accueil .projets {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2178,8 +2173,9 @@ img {
   @media screen and (min-width: 900px) {
     .accueil .projets__conteneur-demi-grille {
       display: grid;
-      grid-template-columns: minmax(auto, 690px);
-      column-gap: 2rem;
+      grid-template-columns: minmax(auto, calc(690px - 4rem));
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2272,19 +2268,29 @@ img {
   }
 }
 .accueil .projets__web-applis {
-  padding: 0 3rem 0 3rem;
+  padding: 0.5rem 0;
 }
 @media screen and (min-width: 600px) {
   .accueil .projets__web-applis {
-    padding: 0 3rem 0 0;
+    padding: 2rem 0 0 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .accueil .projets__web-applis {
+    padding: 0 4rem 0 0;
   }
 }
 .accueil .projets__design-graphique {
-  padding: 0 3rem 0 3rem;
+  padding: 0.5rem 0;
 }
 @media screen and (min-width: 600px) {
   .accueil .projets__design-graphique {
-    padding: 0 0 0 3rem;
+    padding: 2rem 0 0 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .accueil .projets__design-graphique {
+    padding: 0 0 0 4rem;
   }
 }
 .accueil .projets .navigation.web-applis {
@@ -2295,7 +2301,8 @@ img {
     .accueil .projets .navigation.web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2323,7 +2330,8 @@ img {
     .accueil .projets .navigation.design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2382,7 +2390,8 @@ img {
     .accueil .projets .navigation__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2424,7 +2433,8 @@ img {
     .contact__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2626,7 +2636,8 @@ img {
     .projets__conteneurIcones {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2759,7 +2770,8 @@ img {
       .apropos .quelques-chiffres {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
       }
     }
   }
@@ -2784,6 +2796,4 @@ img {
 }
 .apropos .projet .lien:hover {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

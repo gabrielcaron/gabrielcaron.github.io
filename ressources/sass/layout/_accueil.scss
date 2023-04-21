@@ -72,6 +72,7 @@
   }
 
 
+  // projets = conteneur bleed
   .projets {
 	@include rangeeGrid12col($tablet900px);
 
@@ -84,7 +85,7 @@
 	  @supports (grid-template-columns: minmax(auto, $tablet900px)) {
 		@media screen and (min-width: $tablet900px) {
 		  display: grid;
-		  grid-template-columns: minmax(auto, 690px);
+		  grid-template-columns: minmax(auto, calc(690px - 4rem)); // - 4rem de padding
 		  column-gap: 2rem;
 		}
 	  }
@@ -124,18 +125,29 @@
 	}
 
 	&__web-applis {
-	  padding: 0 3rem 0 3rem;
+	  padding: 0.5rem 0;
+
 	  @media screen and (min-width: $mobile600px) {
-		padding: 0 3rem 0 0;
+		padding: 2rem 0 0 0;
+	  }
+
+	  @media screen and (min-width: $tablet900px) {
+		padding: 0 4rem 0 0;
 	  }
 	}
 
 	&__design-graphique {
-	  padding: 0 3rem 0 3rem;
+	  padding: 0.5rem 0;
+
 	  @media screen and (min-width: $mobile600px) {
-		padding: 0 0 0 3rem;
+		padding: 2rem 0 0 0;
 	  }
-	}
+	  
+	  @media screen and (min-width: $tablet900px) {
+    	padding: 0 0 0 4rem;
+    }
+  }
+
 
 	// Navigation spécifique à l'accueil
 
