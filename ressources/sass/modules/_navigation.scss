@@ -169,18 +169,6 @@
 
 .projets .navigation {
 
-  &.web-applis {
-    @media screen and (min-width: $tablet900px) {
-      padding: 1rem 3rem 1.5rem 1rem;
-    }
-  }
-
-  &.design-graphique {
-    @media screen and (min-width: $tablet900px) {
-      padding: 1rem 1rem 1.5rem 3rem;
-    }
-  }
-
   &__liste {
     list-style-type: none;
     padding: 0;
