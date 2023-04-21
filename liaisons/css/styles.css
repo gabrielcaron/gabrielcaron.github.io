@@ -35,10 +35,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -73,12 +71,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -86,10 +81,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -106,12 +99,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -129,10 +120,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -182,14 +171,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -197,8 +182,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -207,8 +191,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -257,18 +240,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -291,10 +268,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -310,10 +285,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -328,10 +301,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -619,7 +590,8 @@ body {
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
@@ -911,7 +883,7 @@ body {
   margin: -1px;
   border-radius: inherit;
   background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
-  box-shadow: -5px -5px 20px 0px white, 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: -5px -5px 20px 0px rgb(255, 255, 255), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien:active:before {
@@ -919,7 +891,7 @@ body {
   }
 }
 .entete .navigation__lien.courante {
-  border: 3px solid #ffe100;
+  border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   line-height: 120%;
   padding: 1rem 1.5rem;
@@ -1070,7 +1042,7 @@ body {
 .projets .navigation__figure .icone {
   border: solid 0.2rem #fff;
   border-radius: 4rem;
-  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__figure .icone {
@@ -1126,7 +1098,7 @@ body {
   }
 }
 .projets .navigation .rangeeSections .courant {
-  border: 3px solid #ffe100;
+  border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
@@ -1215,7 +1187,7 @@ body {
   }
 }
 .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
-  border: 3px solid #ffe100;
+  border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
   text-decoration: none;
@@ -1244,7 +1216,8 @@ body {
       .pieddepage .navigation {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
       }
     }
   }
@@ -1396,7 +1369,8 @@ body {
     .pieddepage__conteneurGrille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2102,14 +2076,9 @@ img {
 
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* ACCUEIL
-*
-*
+* @description Mise en page de l'accueil
+* @version 6.2
+* @date 20 avril 2023
 */
 .accueil .entete {
   padding-bottom: 0;
@@ -2187,7 +2156,8 @@ img {
     .accueil .projets {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2211,19 +2181,20 @@ img {
 }
 @supports (grid-template-columns: minmax(auto, 900px)) {
   @media screen and (min-width: 900px) {
-    .accueil .projets__conteneurDemiGrille {
+    .accueil .projets__conteneur-demi-grille {
       display: grid;
       grid-template-columns: minmax(auto, 690px);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
-.accueil .projets__conteneurDemiGrille.web-applis {
+.accueil .projets__conteneur-demi-grille.projets__web-applis {
   grid-column: 1/7;
   justify-content: flex-end;
 }
 @media screen and (min-width: 900px) {
-  .accueil .projets__conteneurDemiGrille.web-applis {
+  .accueil .projets__conteneur-demi-grille.projets__web-applis {
     position: relative;
     background-color: #fafafa;
     background-clip: padding-box;
@@ -2234,12 +2205,12 @@ img {
   }
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
-  .accueil .projets__conteneurDemiGrille.web-applis {
+  .accueil .projets__conteneur-demi-grille.projets__web-applis {
     background-color: #0d0d0d;
   }
 }
 @media screen and (min-width: 900px) {
-  .accueil .projets__conteneurDemiGrille.web-applis:before {
+  .accueil .projets__conteneur-demi-grille.projets__web-applis:before {
     content: "";
     position: absolute;
     top: 0;
@@ -2249,25 +2220,25 @@ img {
     z-index: -1;
     margin: -0.2rem;
     border-radius: inherit;
-    background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(252, 252, 252) 100%);
   }
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
-  .accueil .projets__conteneurDemiGrille.web-applis:before {
-    background: linear-gradient(180deg, #1f1f1f 0%, #1f1f1f 100%);
+  .accueil .projets__conteneur-demi-grille.projets__web-applis:before {
+    background: linear-gradient(180deg, rgb(31, 31, 31) 0%, rgb(31, 31, 31) 100%);
   }
 }
 @media screen and (min-width: 900px) {
-  .accueil .projets__conteneurDemiGrille.web-applis:before {
+  .accueil .projets__conteneur-demi-grille.projets__web-applis:before {
     left: -0.2rem;
   }
 }
-.accueil .projets__conteneurDemiGrille.design-graphique {
+.accueil .projets__conteneur-demi-grille.projets__design-graphique {
   grid-column: 7/13;
   justify-content: flex-start;
 }
 @media screen and (min-width: 900px) {
-  .accueil .projets__conteneurDemiGrille.design-graphique {
+  .accueil .projets__conteneur-demi-grille.projets__design-graphique {
     position: relative;
     background-color: #fafafa;
     background-clip: padding-box;
@@ -2278,12 +2249,12 @@ img {
   }
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
-  .accueil .projets__conteneurDemiGrille.design-graphique {
+  .accueil .projets__conteneur-demi-grille.projets__design-graphique {
     background-color: #0d0d0d;
   }
 }
 @media screen and (min-width: 900px) {
-  .accueil .projets__conteneurDemiGrille.design-graphique:before {
+  .accueil .projets__conteneur-demi-grille.projets__design-graphique:before {
     content: "";
     position: absolute;
     top: 0;
@@ -2293,16 +2264,16 @@ img {
     z-index: -1;
     margin: -0.2rem;
     border-radius: inherit;
-    background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(252, 252, 252) 100%);
   }
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
-  .accueil .projets__conteneurDemiGrille.design-graphique:before {
-    background: linear-gradient(180deg, #1f1f1f 0%, #1f1f1f 100%);
+  .accueil .projets__conteneur-demi-grille.projets__design-graphique:before {
+    background: linear-gradient(180deg, rgb(31, 31, 31) 0%, rgb(31, 31, 31) 100%);
   }
 }
 @media screen and (min-width: 900px) {
-  .accueil .projets__conteneurDemiGrille.design-graphique:before {
+  .accueil .projets__conteneur-demi-grille.projets__design-graphique:before {
     right: 0.2rem;
   }
 }
@@ -2330,7 +2301,8 @@ img {
     .accueil .projets .navigation.web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2358,7 +2330,8 @@ img {
     .accueil .projets .navigation.design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2417,7 +2390,8 @@ img {
     .accueil .projets .navigation__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2459,7 +2433,8 @@ img {
     .contact__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2566,7 +2541,7 @@ img {
   border: solid 0.2rem #fff;
   border-radius: 3.5rem;
   vertical-align: middle;
-  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
 }
 @media screen and (min-width: 600px) {
   .contact__figure .icone {
@@ -2648,12 +2623,12 @@ img {
     z-index: -1;
     margin: -0.2rem;
     border-radius: inherit;
-    background: linear-gradient(180deg, white 0%, #fcfcfc 100%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(252, 252, 252) 100%);
   }
 }
 @media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
   .projets__selecteur:before {
-    background: linear-gradient(180deg, #1f1f1f 0%, #1f1f1f 100%);
+    background: linear-gradient(180deg, rgb(31, 31, 31) 0%, rgb(31, 31, 31) 100%);
   }
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
@@ -2661,7 +2636,8 @@ img {
     .projets__conteneurIcones {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
     }
   }
 }
@@ -2794,7 +2770,8 @@ img {
       .apropos .quelques-chiffres {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
       }
     }
   }
@@ -2819,6 +2796,4 @@ img {
 }
 .apropos .projet .lien:hover {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
