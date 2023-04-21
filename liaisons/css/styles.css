@@ -2277,7 +2277,7 @@ img {
 }
 @media screen and (min-width: 900px) {
   .accueil .projets__web-applis {
-    padding: 0 4rem 0 0;
+    padding: 2rem 4rem 0 0;
   }
 }
 .accueil .projets__design-graphique {
@@ -2290,7 +2290,7 @@ img {
 }
 @media screen and (min-width: 900px) {
   .accueil .projets__design-graphique {
-    padding: 0 0 0 4rem;
+    padding: 2rem 0 0 4rem;
   }
 }
 .accueil .projets .navigation.web-applis {
