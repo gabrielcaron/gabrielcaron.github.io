@@ -1,13 +1,8 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* ACCUEIL
-*
-*
+* @description Mise en page de l'accueil
+* @version 6.2
+* @date 20 avril 2023
 */
 
 .accueil {
@@ -84,7 +79,7 @@
 	  @include paddingConteneur;
 	}
 
-	&__conteneurDemiGrille {
+	&__conteneur-demi-grille {
 
 	  @supports (grid-template-columns: minmax(auto, $tablet900px)) {
 		@media screen and (min-width: $tablet900px) {
@@ -94,34 +89,37 @@
 		}
 	  }
 
-	  &.web-applis {
-		grid-column: 1 / 7;
-		justify-content: flex-end;
-
-		@media screen and (min-width: $tablet900px) {
-		  @include bulle();
-		  border-left: none;
-		  border-radius: 0 $arrondiTable $arrondiTable 0;
-
-		  &:before {
-			left: -0.2rem; // Retire la barre de défilement en page d'accueil
+	  &.projets {
+		
+		&__web-applis {
+			grid-column: 1 / 7;
+			justify-content: flex-end;
+	
+			@media screen and (min-width: $tablet900px) {
+			  @include bulle();
+			  border-left: none;
+			  border-radius: 0 $arrondiTable $arrondiTable 0;
+	
+			  &:before {
+				left: -0.2rem; // Retire la barre de défilement en page d'accueil
+			  }
+			}
 		  }
-		}
-	  }
 
-	  &.design-graphique {
-		grid-column: 7 / 13;
-		justify-content: flex-start;
-
-		@media screen and (min-width: $tablet900px) {
-		  @include bulle();
-		  border-right: none;
-		  border-radius: $arrondiTable 0 0 $arrondiTable;
-
-		  &:before {
-			right: 0.2rem; // Retire la barre de défilement en page d'accueil
+		  &__design-graphique {
+			grid-column: 7 / 13;
+			justify-content: flex-start;
+	
+			@media screen and (min-width: $tablet900px) {
+			  @include bulle();
+			  border-right: none;
+			  border-radius: $arrondiTable 0 0 $arrondiTable;
+	
+			  &:before {
+				right: 0.2rem; // Retire la barre de défilement en page d'accueil
+			  }
+			}
 		  }
-		}
 	  }
 	}
 
