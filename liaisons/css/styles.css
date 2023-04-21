@@ -101,8 +101,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -590,8 +589,7 @@ body {
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
@@ -1216,8 +1214,7 @@ body {
       .pieddepage .navigation {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
       }
     }
   }
@@ -1369,8 +1366,7 @@ body {
     .pieddepage__conteneurGrille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2156,8 +2152,7 @@ img {
     .accueil .projets {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2184,8 +2179,7 @@ img {
     .accueil .projets__conteneur-demi-grille {
       display: grid;
       grid-template-columns: minmax(auto, 690px);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2301,8 +2295,7 @@ img {
     .accueil .projets .navigation.web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2330,8 +2323,7 @@ img {
     .accueil .projets .navigation.design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2390,8 +2382,7 @@ img {
     .accueil .projets .navigation__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2433,8 +2424,7 @@ img {
     .contact__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2636,8 +2626,7 @@ img {
     .projets__conteneurIcones {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2770,8 +2759,7 @@ img {
       .apropos .quelques-chiffres {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
       }
     }
   }
@@ -2796,4 +2784,6 @@ img {
 }
 .apropos .projet .lien:hover {
   text-decoration: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
