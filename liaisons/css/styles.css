@@ -2083,17 +2083,38 @@ img {
   text-align: center;
   color: #000;
   text-shadow: -1px -1px 3px #fff, 2px 2px 3px rgba(0, 0, 0, 0.15);
-  margin: 5rem 0 0 0;
+  margin: 4rem 2rem;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   .accueil__accroche {
-    font-size: 5.5rem;
-    padding: 0 3rem;
+    margin: 4rem 4rem;
+  }
+}
+@media screen and (min-width: 475px) {
+  .accueil__accroche {
+    margin: 4rem 7rem;
+  }
+}
+@media screen and (min-width: 545px) {
+  .accueil__accroche {
+    font-size: 6rem;
+    margin: 4rem 8rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .accueil__accroche {
+    margin: 4rem 0;
+  }
+}
+@media screen and (min-width: 735px) {
+  .accueil__accroche {
+    margin: 6rem 0;
   }
 }
 @media screen and (min-width: 850px) {
   .accueil__accroche {
-    font-size: 6rem;
+    margin: 8rem 0;
+    font-size: 8rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -2113,12 +2134,17 @@ img {
   }
 }
 .accueil__coeur {
-  height: 4.5rem;
+  height: 5rem;
   vertical-align: top;
+}
+@media screen and (min-width: 545px) {
+  .accueil__coeur {
+    height: 6rem;
+  }
 }
 @media screen and (min-width: 850px) {
   .accueil__coeur {
-    height: 6rem;
+    height: 8rem;
   }
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {

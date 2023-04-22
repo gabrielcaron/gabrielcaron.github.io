@@ -21,14 +21,29 @@
 	text-align: center;
 	color: $noir;
 	text-shadow: -1px -1px 3px $blanc, 2px 2px 3px rgba(0, 0, 0, 0.15);
-	margin: 5rem 0 0 0;
+	margin: 4rem 2rem;
 
-	@media screen and (min-width: 500px) {
-	  font-size: 5.5rem;
-	  padding: 0 3rem;
+	@media screen and (min-width: 400px) {
+		margin: 4rem 4rem;
+	  }
+
+	@media screen and (min-width: 475px) {
+		margin: 4rem 7rem;
+	}
+
+	@media screen and (min-width: 545px) {
+		font-size: 6rem;
+		margin: 4rem 8rem;
+	}
+	@media screen and (min-width: $mobile600px) {
+		margin: 4rem 0;
+	}
+	@media screen and (min-width: 735px) {
+		margin: 6rem 0;
 	}
 	@media screen and (min-width: 850px) {
-	  font-size: 6rem;
+		margin: 8rem 0;
+		font-size: 8rem;
 	}
 	@media screen and (min-width: $tablet900px) {
 	  margin: 20rem 0 15rem 0;
@@ -63,11 +78,15 @@
 //   }
 
   &__coeur {
-	height: 4.5rem;
+	height: 5rem;
 	vertical-align: top;
 
+	@media screen and (min-width: 545px) {
+		height: 6rem;
+	  }
+
 	@media screen and (min-width: 850px) {
-	  height: 6rem;
+	  height: 8rem;
 	}
   }
 
