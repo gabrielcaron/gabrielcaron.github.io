@@ -1,6 +1,6 @@
 # gabrielcaron.ca
 
-Ce dépôt contient mon portfolio Web et des informations pratiques pour assurer sa continuité.
+Portfolio Web et informations pratiques pour assurer sa continuité.
 
 Ce projet est mise à jour en continu.
 
