@@ -2068,7 +2068,7 @@ img {
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @description Mise en page de l'accueil
 * @version 6.2
-* @date 20 avril 2023
+* @date 21 avril 2023
 */
 .accueil .entete {
   padding-bottom: 0;
@@ -2299,12 +2299,12 @@ img {
     padding: 2rem 0 0 4rem;
   }
 }
-.accueil .projets .navigation.web-applis {
+.accueil .projets .navigation--web-applis {
   align-content: flex-start;
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
   @media (min-width: 900px) {
-    .accueil .projets .navigation.web-applis {
+    .accueil .projets .navigation--web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       -moz-column-gap: 2rem;
@@ -2312,28 +2312,28 @@ img {
     }
   }
 }
-.accueil .projets .navigation.web-applis .titre {
+.accueil .projets .navigation--web-applis .navigation__lien-section {
   grid-column: 2/13;
 }
 @media screen and (min-width: 1000px) {
-  .accueil .projets .navigation.web-applis .titre {
+  .accueil .projets .navigation--web-applis .navigation__lien-section {
     grid-column: 3/13;
   }
 }
-.accueil .projets .navigation.web-applis .rangeeProjets {
+.accueil .projets .navigation--web-applis .navigation__rangee-projets {
   grid-column: 2/13;
 }
 @media screen and (min-width: 1000px) {
-  .accueil .projets .navigation.web-applis .rangeeProjets {
+  .accueil .projets .navigation--web-applis .navigation__rangee-projets {
     grid-column: 3/13;
   }
 }
-.accueil .projets .navigation.design-graphique {
+.accueil .projets .navigation--design-graphique {
   align-content: flex-start;
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
   @media (min-width: 900px) {
-    .accueil .projets .navigation.design-graphique {
+    .accueil .projets .navigation--design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       -moz-column-gap: 2rem;
@@ -2341,19 +2341,19 @@ img {
     }
   }
 }
-.accueil .projets .navigation.design-graphique .titre {
+.accueil .projets .navigation--design-graphique .navigation__lien-section {
   grid-column: 1/12;
 }
 @media screen and (min-width: 1000px) {
-  .accueil .projets .navigation.design-graphique .titre {
+  .accueil .projets .navigation--design-graphique .navigation__lien-section {
     grid-column: 1/11;
   }
 }
-.accueil .projets .navigation.design-graphique .rangeeProjets {
+.accueil .projets .navigation--design-graphique .navigation__rangee-projets {
   grid-column: 1/12;
 }
 @media screen and (min-width: 1000px) {
-  .accueil .projets .navigation.design-graphique .rangeeProjets {
+  .accueil .projets .navigation--design-graphique .navigation__rangee-projets {
     grid-column: 1/11;
   }
 }
