@@ -2,8 +2,6 @@
 
 Portfolio Web et informations pratiques pour assurer sa continuité.
 
-Ce projet est mise à jour en continu.
-
 ## Sommaire
 - [Configurations ciblées](#configurations-ciblées)
 - [CSS](#css)
