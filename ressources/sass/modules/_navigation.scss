@@ -169,18 +169,6 @@
 
 .projets .navigation {
 
-  &.web-applis {
-    @media screen and (min-width: $tablet900px) {
-      padding: 1rem 3rem 1.5rem 1rem;
-    }
-  }
-
-  &.design-graphique {
-    @media screen and (min-width: $tablet900px) {
-      padding: 1rem 1rem 1.5rem 3rem;
-    }
-  }
-
   &__liste {
     list-style-type: none;
     padding: 0;
@@ -204,7 +192,7 @@
     display: inline-block;
     vertical-align: top;
     padding: 1rem 0;
-    @media screen and (max-width: $mobile600px - 1px) {
+    @media screen and (max-width: calc($mobile600px - 1px)) {
       width: calc(50% - 1.3rem);
     }
 
