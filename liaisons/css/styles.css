@@ -1475,7 +1475,7 @@ body {
     background-repeat: no-repeat;
     padding-right: 1rem;
   }
-  .navigation__lien.navigation--nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.navigation--nouveau.nouveau:active .navigation__figcaption::before, .navigation__lien.navigation--nouveau.nouveau:focus .navigation__figcaption::before {
+  .navigation__lien.navigation--nouveau:hover .navigation__figcaption::before, .navigation__lien.navigation--nouveau:active .navigation__figcaption::before, .navigation__lien.navigation--nouveau:focus .navigation__figcaption::before {
     background-image: url(../images/icones/nouveau--hover.svg);
   }
 }
