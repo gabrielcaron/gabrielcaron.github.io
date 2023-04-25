@@ -818,28 +818,3 @@
 		}
 	}
 }
-
-// Lien externe
-
-.externe:hover,
-.externe:focus {
-	&::after {
-		margin: 0 0 0.75rem 0.75rem;
-	}
-}
-
-.externe::after {
-	background: url("../images/icones/lien-externe.svg") no-repeat center;
-	height: 1.75rem;
-	width: 1.75rem;
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 0.5rem;
-	content: "";
-	transition: all 200ms ease-in-out;
-
-	@media screen and (prefers-color-scheme: dark) {
-		background: url("../images/icones/lien-externe--sombre.svg") no-repeat
-			center;
-	}
-}
