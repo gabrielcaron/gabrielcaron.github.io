@@ -1466,7 +1466,7 @@ body {
 */
 /* État survol des icônes des projets */
 @media screen and (min-width: 600px) {
-  .navigation__lien.nouveau .navigation__figcaption::before {
+  .navigation__lien.navigation--nouveau .navigation__figcaption::before {
     content: "";
     display: inline-block;
     width: 1.4rem;
@@ -1475,7 +1475,7 @@ body {
     background-repeat: no-repeat;
     padding-right: 1rem;
   }
-  .navigation__lien.nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:active .navigation__figcaption::before, .navigation__lien.nouveau.nouveau:focus .navigation__figcaption::before {
+  .navigation__lien.navigation--nouveau.nouveau:hover .navigation__figcaption::before, .navigation__lien.navigation--nouveau.nouveau:active .navigation__figcaption::before, .navigation__lien.navigation--nouveau.nouveau:focus .navigation__figcaption::before {
     background-image: url(../images/icones/nouveau--hover.svg);
   }
 }
@@ -1934,7 +1934,8 @@ body {
 .lien.pdf:hover::before, .lien.pdf:active::before, .lien.pdf:focus-visible::before {
   background-image: url(../images/icones/pdf--hover.svg);
 }
-.lien.pdf .abreviation, .lien.pdf .taille {
+.lien.pdf .abreviation,
+.lien.pdf .taille {
   font-size: 1.6rem;
 }
 .lien.rtf::before {
@@ -1982,7 +1983,8 @@ body {
   background-image: url(../images/icones/xd--hover.svg);
 }
 
-.externe:hover::after, .externe:focus::after {
+.externe:hover::after,
+.externe:focus::after {
   margin: 0 0 0.75rem 0.75rem;
 }
 
