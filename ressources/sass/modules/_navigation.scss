@@ -5,502 +5,542 @@
 */
 
 @mixin soulignementLiens($mode: "clair") {
-  @if($mode == "clair") {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: $gris45;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
-  }
-  @else if($mode == "sombre") {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: $gris50;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
-  }
+	@if ($mode == "clair") {
+		text-decoration: underline;
+		text-decoration-style: solid;
+		text-decoration-color: $gris45;
+		text-decoration-thickness: 0.15rem;
+		text-underline-offset: 0.3rem;
+	} @else if($mode == "sombre") {
+		text-decoration: underline;
+		text-decoration-style: solid;
+		text-decoration-color: $gris50;
+		text-decoration-thickness: 0.15rem;
+		text-underline-offset: 0.3rem;
+	}
 }
 
 /* En-tête */
 
 .entete .navigation {
-  width: 100%;
-  @media screen and (min-width: $tablet900px) {
-    width: initial;
-  }
+	width: 100%;
+	@media screen and (min-width: $tablet900px) {
+		width: initial;
+	}
 
-  &__liste {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 3.5rem 0;
-  }
+	&__liste {
+		display: flex;
+		list-style-type: none;
+		padding: 0;
+		margin: 3.5rem 0;
+	}
 
-  &__item {
-    display: inline-block;
+	&__item {
+		display: inline-block;
 
-    @media screen and (min-width: $mobile600px) {
-      margin-left: 1rem;
-    }
-  }
+		@media screen and (min-width: $mobile600px) {
+			margin-left: 1rem;
+		}
+	}
 
-  &__lien {
-    @include soulignementLiens();
-    display: inline-block;
-    font-family: $RobotoMedium;
-    font-size: 1.6rem;
-    color: $gris25;
-    line-height: 120%;
-    letter-spacing: $EspacementStandard;
-    padding: 1.2rem 1.7rem;
-    margin: 0 0.3rem;
-    text-align: center;
+	&__lien {
+		@include soulignementLiens();
+		display: inline-block;
+		font-family: $RobotoMedium;
+		font-size: 1.6rem;
+		color: $gris25;
+		line-height: 120%;
+		letter-spacing: $EspacementStandard;
+		padding: 1.2rem 1.7rem;
+		margin: 0 0.3rem;
+		text-align: center;
 
-    @media screen and (min-width: 520px) {
-      font-size: 2rem;
-      padding: 1.4rem 3rem;
-    }
-    @media screen and (min-width: $tablet900px) {
-      font-size: 1.8rem;
-    }
-    @media screen and (min-width: 1100px) {
-      font-size: 2rem;
-    }
+		@media screen and (min-width: 520px) {
+			font-size: 2rem;
+			padding: 1.4rem 3rem;
+		}
+		@media screen and (min-width: $tablet900px) {
+			font-size: 1.8rem;
+		}
+		@media screen and (min-width: 1100px) {
+			font-size: 2rem;
+		}
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: $blancSombre;
-      @include soulignementLiens($mode: "sombre");
-    }
+		@media screen and (prefers-color-scheme: dark) {
+			color: $blancSombre;
+			@include soulignementLiens($mode: "sombre");
+		}
 
-    &:link, &:visited {
-      border: solid 1px transparent;
-      border-radius: 2.5rem;
-      transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+		&:link,
+		&:visited {
+			border: solid 1px transparent;
+			border-radius: 2.5rem;
+			transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
 
-      @media screen and (min-width: $mobile600px) {
-        border-radius: 3rem;
-      }
-    }
+			@media screen and (min-width: $mobile600px) {
+				border-radius: 3rem;
+			}
+		}
 
-    &:hover, &:focus {
-      // Technique pour obtenir des coins arrondis avec un dégradé
-      position: relative;
-      $bordure: 1px;
-      background: linear-gradient(175deg, #FFF000 6.26%, #FFE100 93.03%);
-      background-clip: padding-box;
-      border: solid $bordure transparent;
-      text-decoration: none;
+		&:hover,
+		&:focus {
+			// Technique pour obtenir des coins arrondis avec un dégradé
+			position: relative;
+			$bordure: 1px;
+			background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
+			background-clip: padding-box;
+			border: solid $bordure transparent;
+			text-decoration: none;
 
-      @media screen and (prefers-color-scheme: dark) {
-        color: $gris25;
-      }
+			@media screen and (prefers-color-scheme: dark) {
+				color: $gris25;
+			}
 
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -$bordure;
-        border-radius: inherit;
-        background: linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
-        box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #FFFFFF;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				margin: -$bordure;
+				border-radius: inherit;
+				background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 100%);
+				box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #ffffff;
 
-        @media screen and (prefers-color-scheme: dark) {
-          background: linear-gradient(180deg, $noirSombre 0%, $noirSombre 100%);
-          box-shadow: none;
-        }
-      }
+				@media screen and (prefers-color-scheme: dark) {
+					background: linear-gradient(180deg, $noirSombre 0%, $noirSombre 100%);
+					box-shadow: none;
+				}
+			}
+		}
 
-    }
+		&:active {
+			// Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
+			position: relative;
+			$bordure: 1px;
+			background: linear-gradient(175deg, #fff000 6.26%, #ffd700 93.03%);
+			background-clip: padding-box;
+			border: solid $bordure transparent;
 
-    &:active {
-      // Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
-      position: relative;
-      $bordure: 1px;
-      background: linear-gradient(175deg, #FFF000 6.26%, #FFD700 93.03%);
-      background-clip: padding-box;
-      border: solid $bordure transparent;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				margin: -$bordure;
+				border-radius: inherit;
+				background: linear-gradient(180deg, #e6e6e6 0%, #ffffff 100%);
+				box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1),
+					3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        margin: -$bordure;
-        border-radius: inherit;
-        background: linear-gradient(180deg, #E6E6E6 0%, #FFFFFF 100%);
-        box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+				@media screen and (prefers-color-scheme: dark) {
+					box-shadow: none;
+				}
+			}
+		}
 
-        @media screen and (prefers-color-scheme: dark) {
-          box-shadow: none;
-        }
-      }
-    }
+		&.courante {
+			@include boutonPageCourante;
+			line-height: 120%;
+			padding: 1rem 1.5rem;
+			text-decoration: none;
 
-    &.courante {
-      @include boutonPageCourante;
-      line-height: 120%;
-      padding: 1rem 1.5rem;
-      text-decoration: none;
+			@media screen and (min-width: 520px) {
+				padding: 1.2rem 2.8rem;
+			}
 
-      @media screen and (min-width: 520px) {
-        padding: 1.2rem 2.8rem;
-      }
+			&:hover {
+				border: none;
+				padding: 1.3rem 1.8rem;
 
-      &:hover {
-        border: none;
-        padding: 1.3rem 1.8rem;
-
-        @media screen and (min-width: 520px) {
-          padding: 1.5rem 3.1rem;
-        }
-      }
-    }
-  }
+				@media screen and (min-width: 520px) {
+					padding: 1.5rem 3.1rem;
+				}
+			}
+		}
+	}
 }
 
 /* Projets */
 
 .projets .navigation {
+	&__liste {
+		list-style-type: none;
+		padding: 0;
+		vertical-align: top;
+		@media screen and (min-width: $tablet900px) {
+			padding: 0 3rem;
+		}
 
-  &__liste {
-    list-style-type: none;
-    padding: 0;
-    vertical-align: top;
-    @media screen and (min-width: $tablet900px) {
-      padding: 0 3rem;
-    }
+		&.rangeeSections {
+			@media screen and (min-width: $tablet900px) {
+				padding: 1rem 0 1rem 3rem;
+			}
 
-    &.rangeeSections {
-      @media screen and (min-width: $tablet900px) {
-        padding: 1rem 0 1rem 3rem;
-      }
+			& > * {
+				width: initial;
+			}
+		}
+	}
 
-      & > * {
-        width: initial;
-      }
-    }
-  }
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		padding: 1rem 0;
+		@media screen and (max-width: calc($mobile600px - 1px)) {
+			width: calc(50% - 1.3rem);
+		}
 
-  &__item {
-    display: inline-block;
-    vertical-align: top;
-    padding: 1rem 0;
-    @media screen and (max-width: calc($mobile600px - 1px)) {
-      width: calc(50% - 1.3rem);
-    }
+		&.block {
+			display: block;
+			padding: 1.5rem 0;
+			@media screen and (min-width: 650px) {
+				display: inline-block;
+				padding: 1rem 0;
+			}
+		}
 
-    &.block {
-      display: block;
-      padding: 1.5rem 0;
-      @media screen and (min-width: 650px) {
-        display: inline-block;
-        padding: 1rem 0;
-      }
-    }
+		&:nth-child(odd) {
+			padding-right: 2rem;
+			@media screen and (min-width: $mobile600px) {
+				padding-right: initial;
+			}
+		}
 
-    &:nth-child(odd) {
-      padding-right: 2rem;
-      @media screen and (min-width: $mobile600px) {
-        padding-right: initial;
-      }
-    }
+		@media screen and (min-width: $mobile600px) {
+			grid-column: span 6;
+		}
 
-    @media screen and (min-width: $mobile600px) {
-      grid-column: span 6;
-    }
+		@media screen and (min-width: $tablet900px) {
+			grid-column: span 3;
+		}
 
-    @media screen and (min-width: $tablet900px) {
-      grid-column: span 3;
-    }
+		@media screen and (min-width: $desktop1100px) {
+			grid-column: span 2;
+		}
+	}
 
-    @media screen and (min-width: $desktop1100px) {
-      grid-column: span 2;
-    }
-  }
+	&__lien {
+		@include soulignementLiens;
+		font-family: $RobotoMedium;
+		color: $gris25;
+		letter-spacing: $EspacementStandard;
+		line-height: 100%;
+		border-radius: $arrondiMobile;
 
-  &__lien {
-    @include soulignementLiens;
-    font-family: $RobotoMedium;
-    color: $gris25;
-    letter-spacing: $EspacementStandard;
-    line-height: 100%;
-    border-radius: $arrondiMobile;
+		@media screen and (prefers-color-scheme: dark) {
+			@include soulignementLiens($mode: "sombre");
+			color: $blancSombre;
+		}
 
-    @media screen and (prefers-color-scheme: dark) {
-      @include soulignementLiens($mode: "sombre");
-      color: $blancSombre;
-    }
+		&:hover,
+		&:focus {
+			@media screen and (prefers-color-scheme: dark) {
+				color: $gris25;
+			}
 
-    &:hover, &:focus {
-      @media screen and (prefers-color-scheme: dark) {
-        color: $gris25;
-      }
+			& .icone {
+				border: none;
 
-      & .icone {
-        border: none;
+				@media screen and (prefers-color-scheme: dark) {
+					border: 0.2rem solid $gris65AAA;
+				}
+			}
+		}
 
-        @media screen and (prefers-color-scheme: dark) {
-          border: 0.2rem solid $gris65AAA;
-        }
-      }
-    }
+		&.courant {
+			& .icone {
+				border: none;
 
-    &.courant {
-      & .icone {
-        border: none;
+				@media screen and (prefers-color-scheme: dark) {
+					border: 0.2rem solid $jauneOfficiel;
 
-        @media screen and (prefers-color-scheme: dark) {
-          border: 0.2rem solid $jauneOfficiel;
+					&:hover,
+					&:focus {
+						border: 0.2rem solid $jauneOfficiel;
+					}
+				}
+			}
+		}
+	}
 
-          &:hover, &:focus {
-            border: 0.2rem solid $jauneOfficiel;
-          }
-        }
+	&__figure {
+		margin: 0;
+		text-align: center;
 
+		& .icone {
+			border: solid 0.2rem $blanc;
+			border-radius: $arrondiMobile;
+			box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
+				-5px -5px 25px 0px rgba(255, 255, 255, 1);
 
-      }
-    }
-  }
+			@media screen and (min-width: $mobile600px) {
+				border-radius: $arrondiTable;
+			}
+			@media screen and (min-width: $tablet900px) {
+				border-radius: $arrondiMobile;
+			}
+			@media screen and (min-width: $desktop1100px) {
+				border-radius: $arrondiMobile;
+			}
+			@media screen and (min-width: 1400px) {
+				border-radius: $arrondiTable;
+			}
 
-  &__figure {
-    margin: 0;
-    text-align: center;
+			@media screen and (prefers-color-scheme: dark) {
+				border: solid 0.2rem $grisContourIconeSombre;
+				box-shadow: none;
 
-    & .icone {
-      border: solid 0.2rem $blanc;
-      border-radius: $arrondiMobile;
-      box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
+				& .elevation {
+					fill: $grisElevationIconeSombre;
+				}
+			}
+		}
+	}
 
-      @media screen and (min-width: $mobile600px) {
-        border-radius: $arrondiTable;
-      }
-      @media screen and (min-width: $tablet900px) {
-        border-radius: $arrondiMobile;
-      }
-      @media screen and (min-width: $desktop1100px) {
-        border-radius: $arrondiMobile;
-      }
-      @media screen and (min-width: 1400px) {
-        border-radius: $arrondiTable;
-      }
+	&__figcaption {
+		@include soulignementLiens();
+		font-family: $RobotoMedium;
+		font-size: 1.6rem;
+		display: inline-block;
+		line-height: 150%;
+		border-radius: $arrondiMobile;
+		margin-top: 0.5rem;
+		padding: 1.3rem 2.3rem;
 
-      @media screen and (prefers-color-scheme: dark) {
-        border: solid 0.2rem $grisContourIconeSombre;
-        box-shadow: none;
+		@media screen and (min-width: $tablet900px) {
+			min-height: 5rem;
+		}
 
-        & .elevation {
-          fill: $grisElevationIconeSombre;
-        }
-      }
-    }
-  }
+		@media screen and (min-width: $desktop1200px) {
+			min-height: initial;
+		}
 
-  &__figcaption {
-    @include soulignementLiens();
-    font-family: $RobotoMedium;
-    font-size: 1.6rem;
-    display: inline-block;
-    line-height: 150%;
-    border-radius: $arrondiMobile;
-    margin-top: 0.5rem;
-    padding: 1.3rem 2.3rem;
+		@media screen and (prefers-color-scheme: dark) {
+			@include soulignementLiens($mode: "sombre");
+			border: 0.3rem solid transparent;
+		}
+	}
 
-    @media screen and (prefers-color-scheme: dark) {
-      @include soulignementLiens($mode: "sombre");
-      border: 0.3rem solid transparent;
-    }
-  }
+	// Styles spécifique aux liens des titres de sections
+	& .rangeeSections {
+		& .courant {
+			@include boutonPageCourante;
+			text-decoration: none;
+		}
 
-  // Styles spécifique aux liens des titres de sections
-  & .rangeeSections {
+		& .navigation__lien {
+			font-size: 2rem;
+			@media screen and (min-width: 550px) {
+				font-size: 2.4rem;
+			}
+			padding: 1rem 2.7rem;
+			margin: 0 0.3rem;
 
-    & .courant {
-      @include boutonPageCourante;
-      text-decoration: none;
-    }
+			&:hover,
+			&:focus {
+				@include boutonSurvol;
+				text-decoration: none;
 
-    & .navigation__lien {
-      font-size: 2rem;
-      @media screen and (min-width: 550px) {
-        font-size: 2.4rem;
-      }
-      padding: 1rem 2.7rem;
-      margin: 0 0.3rem;
+				&.courant {
+					border: none;
+					padding: 1.3rem 3rem;
+				}
+			}
 
-      &:hover, &:focus {
-        @include boutonSurvol;
-        text-decoration: none;
+			&:active {
+				@include boutonActif;
 
-        &.courant {
-          border: none;
-          padding: 1.3rem 3rem;
-        }
-      }
+				&.courant {
+					border: none;
+					padding: 1.3rem 3rem;
+					margin: 0 0.3rem;
+				}
+			}
+		}
+	}
 
-      &:active {
-        @include boutonActif;
+	// Styles spécifiques aux liens des projets
 
-        &.courant {
-          border: none;
-          padding: 1.3rem 3rem;
-          margin: 0 0.3rem;
-        }
-      }
-    }
-  }
+	& .rangeeProjets {
+		.navigation {
+			&__lien {
+				&:hover,
+				&:focus {
+					& .navigation__figcaption {
+						border: none;
+						text-decoration: none;
+						@include boutonSurvol;
 
-  // Styles spécifiques aux liens des projets
+						@media screen and (prefers-color-scheme: dark) {
+							border: 3px solid $gris65AAA;
+							background: transparent;
+							color: $blancSombre;
+						}
+					}
 
-  & .rangeeProjets {
+					&.courant {
+						& .navigation__figcaption {
+							border: none;
+							padding: 1.3rem 2.3rem;
 
-    .navigation {
-      &__lien {
-        &:hover, &:focus {
-          & .navigation__figcaption {
-            border: none;
-            text-decoration: none;
-            @include boutonSurvol;
+							@media screen and (prefers-color-scheme: dark) {
+								border: 0.3rem solid $jauneOfficiel;
+							}
+						}
+					}
+				}
 
-            @media screen and (prefers-color-scheme: dark) {
-              border: 3px solid $gris65AAA;
-              background: transparent;
-              color: $blancSombre;
-            }
-          }
+				&:active {
+					& .navigation__figcaption {
+						@include boutonActif;
 
-          &.courant {
-            & .navigation__figcaption {
-              border: none;
-              padding: 1.3rem 2.3rem;
+						@media screen and (prefers-color-scheme: dark) {
+							color: $noirSombre;
+						}
+					}
+				}
 
-              @media screen and (prefers-color-scheme: dark) {
-                border: 0.3rem solid $jauneOfficiel;
-              }
-            }
-          }
-        }
+				&.courant {
+					& .navigation__figcaption {
+						@include boutonPageCourante;
+						padding: 1rem 2rem;
+						text-decoration: none;
 
-        &:active {
-          & .navigation__figcaption {
-            @include boutonActif;
-
-            @media screen and (prefers-color-scheme: dark) {
-              color: $noirSombre;
-            }
-          }
-        }
-
-        &.courant {
-          & .navigation__figcaption {
-            @include boutonPageCourante;
-            padding: 1rem 2rem;
-            text-decoration: none;
-
-            @media screen and (prefers-color-scheme: dark) {
-              padding: 1.3rem 2.3rem;
-            }
-          }
-        }
-      }
-    }
-  }
+						@media screen and (prefers-color-scheme: dark) {
+							padding: 1.3rem 2.3rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
+/* Lien externe */
+
+.navigation {
+	// Lien externe
+	&__lien {
+		&--externe {
+			&:hover,
+			&:focus {
+				&::after {
+					margin: 0 0 0.75rem 0.75rem;
+				}
+			}
+
+			&::after {
+				background: url("../images/icones/lien-externe.svg") no-repeat center;
+				height: 1.75rem;
+				width: 1.75rem;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 0.5rem;
+				content: "";
+				transition: all 200ms ease-in-out;
+
+				@media screen and (prefers-color-scheme: dark) {
+					background: url("../images/icones/lien-externe--sombre.svg") no-repeat
+						center;
+				}
+			}
+		}
+	}
+}
 
 /* Pied de page */
 
-.pieddepage {
-  .navigation {
-    grid-column: 1 / 13;
-    @media screen and (min-width: 600px) {
-      @include rangeeGrid12col();
-      row-gap: 0;
-    }
+.pied-de-page {
+	.navigation {
+		grid-column: 1 / 13;
+		@media screen and (min-width: 600px) {
+			@include rangeeGrid();
+			row-gap: 0;
+		}
 
-    .rangee1 {
-      grid-row: 1;
-    }
+		.rangee1 {
+			grid-row: 1;
+		}
 
-    .rangee2 {
-      grid-row: 2;
-    }
+		.rangee2 {
+			grid-row: 2;
+		}
 
-    .rangee3 {
-      grid-row: 3;
-    }
+		.rangee3 {
+			grid-row: 3;
+		}
 
-    .rangee4 {
-      grid-row: 4;
-    }
+		.rangee4 {
+			grid-row: 4;
+		}
 
-    &__titre {
-      grid-column: span 4;
-      color: $noir;
-      text-decoration: none;
-      line-height: 110%;
-      font-size: 2.5rem;
+		&__titre {
+			grid-column: span 4;
+			color: $noir;
+			text-decoration: none;
+			line-height: 110%;
+			font-size: 2.5rem;
 
-      @media screen and (prefers-color-scheme: dark) {
-        color: $blancSombre;
-      }
+			@media screen and (prefers-color-scheme: dark) {
+				color: $blancSombre;
+			}
 
-      & .section {
-        color: $noir;
-        font-size: 2.5rem;
+			& .section {
+				color: $noir;
+				font-size: 2.5rem;
 
-        @media screen and (prefers-color-scheme: dark) {
-          color: $blancSombre;
-        }
-      }
-    }
+				@media screen and (prefers-color-scheme: dark) {
+					color: $blancSombre;
+				}
+			}
+		}
 
-    &__liste {
-      grid-column: span 4;
-      list-style-type: none;
-      padding: 0;
-      margin-top: 0;
-    }
+		&__liste {
+			grid-column: span 4;
+			list-style-type: none;
+			padding: 0;
+			margin-top: 0;
+		}
 
-    &__lien {
-      @include soulignementLiens();
-      font-family: $RobotoMedium;
-      font-size: 2rem;
-      color: $gris25;
-      line-height: 225%;
-      letter-spacing: $EspacementStandard;
-      transition: border-bottom 0.075s ease-in-out;
+		&__lien {
+			@include soulignementLiens();
+			font-family: $RobotoMedium;
+			font-size: 2rem;
+			color: $gris25;
+			line-height: 225%;
+			letter-spacing: $EspacementStandard;
+			transition: border-bottom 0.075s ease-in-out;
 
-      @media screen and (min-width: $desktop1200px) {
-        line-height: 200%;
-      }
+			@media screen and (min-width: $desktop1200px) {
+				line-height: 200%;
+			}
 
-      @media screen and (prefers-color-scheme: dark) {
-        @include soulignementLiens($mode: "sombre");
-        color: $gris65AAA;
-      }
+			@media screen and (prefers-color-scheme: dark) {
+				@include soulignementLiens($mode: "sombre");
+				color: $gris65AAA;
+			}
 
-      &.section {
-        line-height: 100%;
-      }
+			&.section {
+				line-height: 100%;
+			}
 
-      &:hover {
-        text-decoration: none;
+			&:hover {
+				text-decoration: none;
 
-        @media screen and (prefers-color-scheme: dark) {
-          color: $blancSombre;
-        }
-      }
-    }
-  }
+				@media screen and (prefers-color-scheme: dark) {
+					color: $blancSombre;
+				}
+			}
+		}
+	}
 
-  &__copyright {
-    grid-column: 1 / 13;
-  }
+	&__copyright {
+		grid-column: 1 / 13;
+	}
 }

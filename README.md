@@ -1,8 +1,6 @@
 # gabrielcaron.ca
 
-Ce dépôt contient mon portfolio Web et des informations pratiques pour assurer sa continuité.
-
-Ce projet est mise à jour en continu.
+Portfolio Web et informations pratiques pour assurer sa continuité.
 
 ## Sommaire
 - [Configurations ciblées](#configurations-ciblées)

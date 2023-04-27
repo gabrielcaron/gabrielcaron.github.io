@@ -91,55 +91,10 @@
 
 	// projets = conteneur bleed
 	.projets {
-		@include rangeeGrid12col($tablet900px);
+		@include rangeeGrid($pointRupture: $tablet900px);
 
 		@media screen and (max-width: 899px) {
 			@include paddingConteneur;
-		}
-
-		&__conteneur-demi-grille {
-			@supports (grid-template-columns: minmax(auto, $tablet900px)) {
-				@media screen and (min-width: $tablet900px) {
-					display: grid;
-					grid-template-columns: minmax(
-						auto,
-						calc(690px - 4rem)
-					); // - 4rem de padding
-					column-gap: 2rem;
-				}
-			}
-
-			&.projets {
-				&__web-applis {
-					grid-column: 1 / 7;
-					justify-content: flex-end;
-
-					@media screen and (min-width: $tablet900px) {
-						@include bulle();
-						border-left: none;
-						border-radius: 0 $arrondiTable $arrondiTable 0;
-
-						&:before {
-							left: -0.2rem; // Retire la barre de défilement en page d'accueil
-						}
-					}
-				}
-
-				&__design-graphique {
-					grid-column: 7 / 13;
-					justify-content: flex-start;
-
-					@media screen and (min-width: $tablet900px) {
-						@include bulle();
-						border-right: none;
-						border-radius: $arrondiTable 0 0 $arrondiTable;
-
-						&:before {
-							right: 0.2rem; // Retire la barre de défilement en page d'accueil
-						}
-					}
-				}
-			}
 		}
 
 		&__web-applis {
@@ -151,6 +106,23 @@
 
 			@media screen and (min-width: $tablet900px) {
 				padding: 2rem 4rem 0 0;
+			}
+
+			&--demi-grille {
+				@include rangeeDemiGrille();
+
+				grid-column: 1 / 7;
+				justify-content: flex-end;
+
+				@media screen and (min-width: $tablet900px) {
+					@include bulle();
+					border-left: none;
+					border-radius: 0 $arrondiTable $arrondiTable 0;
+
+					&:before {
+						left: -0.2rem; // Retire la barre de défilement en page d'accueil
+					}
+				}
 			}
 		}
 
@@ -164,13 +136,30 @@
 			@media screen and (min-width: $tablet900px) {
 				padding: 2rem 0 0 4rem;
 			}
+
+			&--demi-grille {
+				@include rangeeDemiGrille();
+
+				grid-column: 7 / 13;
+				justify-content: flex-start;
+
+				@media screen and (min-width: $tablet900px) {
+					@include bulle();
+					border-right: none;
+					border-radius: $arrondiTable 0 0 $arrondiTable;
+
+					&:before {
+						right: 0.2rem; // Retire la barre de défilement en page d'accueil
+					}
+				}
+			}
 		}
 
 		// Navigation spécifique à l'accueil
 
 		.navigation {
 			&--web-applis {
-				@include rangeeGrid12col($tablet900px);
+				@include rangeeGrid($pointRupture: $tablet900px);
 				align-content: flex-start;
 
 				& .navigation {
@@ -192,7 +181,7 @@
 			}
 
 			&--design-graphique {
-				@include rangeeGrid12col($tablet900px);
+				@include rangeeGrid($pointRupture: $tablet900px);
 				align-content: flex-start;
 
 				& .navigation {
@@ -258,7 +247,7 @@
 				list-style-type: none;
 				padding: 0;
 
-				@include rangeeGrid12col();
+				@include rangeeGrid();
 
 				& > * {
 					grid-column: span 6;

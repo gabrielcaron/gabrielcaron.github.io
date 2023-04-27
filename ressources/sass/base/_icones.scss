@@ -13,782 +13,808 @@
 
 // Bulle qui contient les icônes
 @mixin bulle {
-  position: relative;
-  $bordure: 0.2rem;
-  background-color: $gris98;
-  background-clip: padding-box;
-  border: solid $bordure transparent;
-  border-radius: 5.5rem;
+	position: relative;
+	$bordure: 0.2rem;
+	background-color: $gris98;
+	background-clip: padding-box;
+	border: solid $bordure transparent;
+	border-radius: 5.5rem;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: $noirSombre;
-  }
+	@media screen and (prefers-color-scheme: dark) {
+		background-color: $noirSombre;
+	}
 
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -$bordure;
-    border-radius: inherit;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(252, 252, 252, 1) 100%);
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		margin: -$bordure;
+		border-radius: inherit;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 1) 0%,
+			rgba(252, 252, 252, 1) 100%
+		);
 
-    @media screen and (prefers-color-scheme: dark) {
-		background: linear-gradient(180deg, rgba(31, 31, 31, 1) 0%, rgba(31, 31, 31, 1) 100%);
-    }
-  }
+		@media screen and (prefers-color-scheme: dark) {
+			background: linear-gradient(
+				180deg,
+				rgba(31, 31, 31, 1) 0%,
+				rgba(31, 31, 31, 1) 100%
+			);
+		}
+	}
 }
-
 
 /* État survol des icônes des projets */
 
 .navigation {
-
-  &__lien {
-
-    // Nouveau projet
-
-    @media screen and (min-width: $mobile600px) {
-      &.nouveau {
-        & .navigation__figcaption::before {
-          content: "";
-          display: inline-block;
-          width: 1.4rem;
-          height: 1.4rem;
-          background-image: url(../images/icones/nouveau.svg);
-          background-repeat: no-repeat;
-          padding-right: 1rem;
-        }
-
-        &.nouveau:hover, &.nouveau:active, &.nouveau:focus {
-
-          & .navigation__figcaption::before {
-            background-image: url(../images/icones/nouveau--hover.svg);
-          }
-        }
-      }
-    }
-
-    // Projets en ordre alphabétique
-
-    // Toutes les icônes
-
-    @media screen and (prefers-color-scheme: dark) {
-      &.courant, &:hover, &:focus {
-        & svg {
-          border: solid 0.2rem $gris65AAA;
-        }
-      }
-    }
-
-    // 100 ans de SOS
-    @media screen and (prefers-color-scheme: dark) {
-      & .SOS {
-        & .bouee {
-          fill: url(#SOS-rouge-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .SOS {
-        & .elevation {
-          fill: url(#SOS-rouge-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .bouee {
-          fill: url(#SOS-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#SOS-rouge-sombre);
-          }
-        }
-      }
-    }
-
-    // Alaia
-    @media screen and (prefers-color-scheme: dark) {
-      & .alaia {
-        & .planches {
-          fill: url(#alaia-sable-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .alaia {
-        & .elevation {
-          fill: url(#alaia-sable-defaut);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .planches {
-          fill: url(#alaia-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#alaia-sable-sombre);
-          }
-        }
-      }
-    }
-
-    // Altitude
-    @media screen and (prefers-color-scheme: dark) {
-      & .altitude {
-        & .altisymbole {
-          fill: url(#altitude-bleu-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .altitude {
-        & .elevation {
-          fill: url(#altitude-bleu-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .altisymbole {
-          fill: url(#altitude-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#altitude-bleu-sombre);
-          }
-        }
-      }
-    }
-
-    // Aquafina
-    @media screen and (prefers-color-scheme: dark) {
-      & .aquafina {
-        & .goutte {
-          fill: url(#aquafina-bleu-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .aquafina {
-        & .elevation {
-          fill: url(#aquafina-bleu-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .goutte {
-          fill: url(#aquafina-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#aquafina-bleu-sombre);
-          }
-        }
-      }
-    }
-
-    // Boréal
-    @media screen and (prefers-color-scheme: dark) {
-      & .boreal {
-        & .feuille {
-          fill: url(#boreal-vert-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .boreal {
-        & .elevation {
-          fill: url(#boreal-vert-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .feuille {
-          fill: url(#boreal-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#boreal-vert-sombre);
-          }
-        }
-      }
-    }
-
-    // Danse en boîtes
-    @media screen and (prefers-color-scheme: dark) {
-      & .danseenboites {
-        & .masques {
-          fill: url(#danseenboites-orange-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .danseenboites {
-        & .elevation {
-          fill: url(#danseenboites-orange-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .masques {
-          fill: url(#danseenboites-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#danseenboites-orange-sombre);
-          }
-        }
-      }
-    }
-
-    // Destinations Canada
-    @media screen and (prefers-color-scheme: dark) {
-      & .destinations {
-        & .symbole {
-          fill: url(#destinations-rouge-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .destinations {
-        & .elevation {
-          fill: url(#destinations-rouge-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .symbole {
-          fill: url(#destinations-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#destinations-rouge-sombre);
-          }
-        }
-      }
-    }
-
-    // Élite
-    @media screen and (prefers-color-scheme: dark) {
-      & .elite {
-        & .etincelle {
-          fill: url(#elite-rouge-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .elite {
-        & .elevation {
-          fill: url(#elite-rouge-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .etincelle {
-          fill: url(#elite-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#elite-rouge-sombre);
-          }
-        }
-      }
-    }
-
-    // Festival OFF
-    @media screen and (prefers-color-scheme: dark) {
-      & .festivaloff {
-        & .note {
-          fill: url(#festivaloff-violet-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .festivaloff {
-        & .elevation {
-          fill: url(#festivaloff-violet-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .note {
-          fill: url(#festivaloff-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#festivaloff-violet-sombre);
-          }
-        }
-      }
-    }
-
-    // Grosse-Île
-    @media screen and (prefers-color-scheme: dark) {
-      & .grosseile {
-        & .croix {
-          fill: url(#grosseile-vert-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .grosseile {
-        & .elevation {
-          fill: url(#grosseile-vert-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .croix {
-          fill: url(#grosseile-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#grosseile-vert-sombre);
-          }
-        }
-      }
-    }
-
-    // Manuel de typographie
-    @media screen and (prefers-color-scheme: dark) {
-      & .manueldetypo {
-        & .livre {
-          fill: url(#manueldetypo-bleu-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .manueldetypo {
-        & .elevation {
-          fill: url(#manueldetypo-bleu-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .livre {
-          fill: url(#manueldetypo-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#manueldetypo-bleu-sombre);
-          }
-        }
-      }
-    }
-
-    // Memorize
-    @media screen and (prefers-color-scheme: dark) {
-      & .memorize {
-        & .cartes {
-          fill: url(#memorize-orange-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .memorize {
-        & .elevation {
-          fill: url(#memorize-orange-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .cartes {
-          fill: url(#memorize-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#memorize-orange-sombre);
-          }
-        }
-      }
-    }
-
-    // Mettez le feu à votre créativité
-    @media screen and (prefers-color-scheme: dark) {
-      & .creativite {
-        & .feu {
-          fill: url(#creativite-orange-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .creativite {
-        & .elevation {
-          fill: url(#creativite-orange-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .feu {
-          fill: url(#creativite-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#creativite-orange-sombre);
-          }
-        }
-      }
-    }
-
-    // Mexico
-    @media screen and (prefers-color-scheme: dark) {
-      & .mexico {
-        & .guitare {
-          fill: url(#mexico-orange-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .mexico {
-        & .elevation {
-          fill: url(#mexico-orange-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .guitare {
-          fill: url(#mexico-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#mexico-orange-sombre);
-          }
-        }
-      }
-    }
-
-    // Presto!
-    @media screen and (prefers-color-scheme: dark) {
-      & .presto {
-        & .prestosymbole {
-          fill: url(#presto-vert-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .presto {
-        & .elevation {
-          fill: url(#presto-vert-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .prestosymbole {
-          fill: url(#presto-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#presto-vert-sombre);
-          }
-        }
-      }
-    }
-
-    // Reprends le contrôle
-    @media screen and (prefers-color-scheme: dark) {
-      & .controle {
-        & .pantin {
-          fill: url(#controle-jaune-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .controle {
-        & .elevation {
-          fill: url(#controle-jaune-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .pantin {
-          fill: url(#controle-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#controle-jaune-sombre);
-          }
-        }
-      }
-    }
-
-    // Tim
-    @media screen and (prefers-color-scheme: dark) {
-      & .tim {
-        & .logotim {
-          fill: url(#tim-bleu-sombre);
-        }
-      }
-    }
-
-    &.courant, &:hover, &:focus {
-      & .tim {
-        & .elevation {
-          fill: url(#tim-bleu-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: transparentize($jauneOfficiel, 0.95);
-          }
-        }
-
-        & .logotim {
-          fill: url(#tim-gris-hover);
-
-          @media screen and (prefers-color-scheme: dark) {
-            fill: url(#tim-bleu-sombre);
-          }
-        }
-      }
-    }
-  }
+	&__lien {
+		// Nouveau projet
+
+		@media screen and (min-width: $mobile600px) {
+			&.navigation--nouveau {
+				& .navigation {
+					&__figcaption::before {
+						content: "";
+						display: inline-block;
+						width: 1.4rem;
+						height: 1.4rem;
+						background-image: url(../images/icones/nouveau.svg);
+						background-repeat: no-repeat;
+						padding-right: 1rem;
+					}
+				}
+
+				&:hover,
+				&:active,
+				&:focus {
+					& .navigation {
+						&__figcaption::before {
+							background-image: url(../images/icones/nouveau--hover.svg);
+						}
+					}
+				}
+			}
+		}
+
+		// Projets en ordre alphabétique
+
+		// Toutes les icônes
+
+		@media screen and (prefers-color-scheme: dark) {
+			&.courant,
+			&:hover,
+			&:focus {
+				& svg {
+					border: solid 0.2rem $gris65AAA;
+				}
+			}
+		}
+
+		// 100 ans de SOS
+		@media screen and (prefers-color-scheme: dark) {
+			& .SOS {
+				& .bouee {
+					fill: url(#SOS-rouge-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .SOS {
+				& .elevation {
+					fill: url(#SOS-rouge-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .bouee {
+					fill: url(#SOS-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#SOS-rouge-sombre);
+					}
+				}
+			}
+		}
+
+		// Alaia
+		@media screen and (prefers-color-scheme: dark) {
+			& .alaia {
+				& .planches {
+					fill: url(#alaia-sable-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .alaia {
+				& .elevation {
+					fill: url(#alaia-sable-defaut);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .planches {
+					fill: url(#alaia-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#alaia-sable-sombre);
+					}
+				}
+			}
+		}
+
+		// Altitude
+		@media screen and (prefers-color-scheme: dark) {
+			& .altitude {
+				& .altisymbole {
+					fill: url(#altitude-bleu-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .altitude {
+				& .elevation {
+					fill: url(#altitude-bleu-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .altisymbole {
+					fill: url(#altitude-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#altitude-bleu-sombre);
+					}
+				}
+			}
+		}
+
+		// Aquafina
+		@media screen and (prefers-color-scheme: dark) {
+			& .aquafina {
+				& .goutte {
+					fill: url(#aquafina-bleu-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .aquafina {
+				& .elevation {
+					fill: url(#aquafina-bleu-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .goutte {
+					fill: url(#aquafina-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#aquafina-bleu-sombre);
+					}
+				}
+			}
+		}
+
+		// Boréal
+		@media screen and (prefers-color-scheme: dark) {
+			& .boreal {
+				& .feuille {
+					fill: url(#boreal-vert-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .boreal {
+				& .elevation {
+					fill: url(#boreal-vert-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .feuille {
+					fill: url(#boreal-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#boreal-vert-sombre);
+					}
+				}
+			}
+		}
+
+		// Danse en boîtes
+		@media screen and (prefers-color-scheme: dark) {
+			& .danseenboites {
+				& .masques {
+					fill: url(#danseenboites-orange-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .danseenboites {
+				& .elevation {
+					fill: url(#danseenboites-orange-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .masques {
+					fill: url(#danseenboites-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#danseenboites-orange-sombre);
+					}
+				}
+			}
+		}
+
+		// Destinations Canada
+		@media screen and (prefers-color-scheme: dark) {
+			& .destinations {
+				& .symbole {
+					fill: url(#destinations-rouge-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .destinations {
+				& .elevation {
+					fill: url(#destinations-rouge-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .symbole {
+					fill: url(#destinations-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#destinations-rouge-sombre);
+					}
+				}
+			}
+		}
+
+		// Élite
+		@media screen and (prefers-color-scheme: dark) {
+			& .elite {
+				& .etincelle {
+					fill: url(#elite-rouge-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .elite {
+				& .elevation {
+					fill: url(#elite-rouge-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .etincelle {
+					fill: url(#elite-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#elite-rouge-sombre);
+					}
+				}
+			}
+		}
+
+		// Festival OFF
+		@media screen and (prefers-color-scheme: dark) {
+			& .festivaloff {
+				& .note {
+					fill: url(#festivaloff-violet-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .festivaloff {
+				& .elevation {
+					fill: url(#festivaloff-violet-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .note {
+					fill: url(#festivaloff-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#festivaloff-violet-sombre);
+					}
+				}
+			}
+		}
+
+		// Grosse-Île
+		@media screen and (prefers-color-scheme: dark) {
+			& .grosseile {
+				& .croix {
+					fill: url(#grosseile-vert-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .grosseile {
+				& .elevation {
+					fill: url(#grosseile-vert-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .croix {
+					fill: url(#grosseile-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#grosseile-vert-sombre);
+					}
+				}
+			}
+		}
+
+		// Manuel de typographie
+		@media screen and (prefers-color-scheme: dark) {
+			& .manueldetypo {
+				& .livre {
+					fill: url(#manueldetypo-bleu-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .manueldetypo {
+				& .elevation {
+					fill: url(#manueldetypo-bleu-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .livre {
+					fill: url(#manueldetypo-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#manueldetypo-bleu-sombre);
+					}
+				}
+			}
+		}
+
+		// Memorize
+		@media screen and (prefers-color-scheme: dark) {
+			& .memorize {
+				& .cartes {
+					fill: url(#memorize-orange-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .memorize {
+				& .elevation {
+					fill: url(#memorize-orange-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .cartes {
+					fill: url(#memorize-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#memorize-orange-sombre);
+					}
+				}
+			}
+		}
+
+		// Mettez le feu à votre créativité
+		@media screen and (prefers-color-scheme: dark) {
+			& .creativite {
+				& .feu {
+					fill: url(#creativite-orange-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .creativite {
+				& .elevation {
+					fill: url(#creativite-orange-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .feu {
+					fill: url(#creativite-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#creativite-orange-sombre);
+					}
+				}
+			}
+		}
+
+		// Mexico
+		@media screen and (prefers-color-scheme: dark) {
+			& .mexico {
+				& .guitare {
+					fill: url(#mexico-orange-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .mexico {
+				& .elevation {
+					fill: url(#mexico-orange-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .guitare {
+					fill: url(#mexico-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#mexico-orange-sombre);
+					}
+				}
+			}
+		}
+
+		// Presto!
+		@media screen and (prefers-color-scheme: dark) {
+			& .presto {
+				& .prestosymbole {
+					fill: url(#presto-vert-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .presto {
+				& .elevation {
+					fill: url(#presto-vert-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .prestosymbole {
+					fill: url(#presto-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#presto-vert-sombre);
+					}
+				}
+			}
+		}
+
+		// Reprends le contrôle
+		@media screen and (prefers-color-scheme: dark) {
+			& .controle {
+				& .pantin {
+					fill: url(#controle-jaune-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .controle {
+				& .elevation {
+					fill: url(#controle-jaune-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .pantin {
+					fill: url(#controle-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#controle-jaune-sombre);
+					}
+				}
+			}
+		}
+
+		// Tim
+		@media screen and (prefers-color-scheme: dark) {
+			& .tim {
+				& .logotim {
+					fill: url(#tim-bleu-sombre);
+				}
+			}
+		}
+
+		&.courant,
+		&:hover,
+		&:focus {
+			& .tim {
+				& .elevation {
+					fill: url(#tim-bleu-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .logotim {
+					fill: url(#tim-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#tim-bleu-sombre);
+					}
+				}
+			}
+		}
+	}
 }
 
 // Liens avec icones pour formats
 
 .lien {
-  @include soulignementLiens();
-  font-family: $RobotoMedium;
-  letter-spacing: $EspacementStandard;
-  display: inline-block;
-  margin-top: 1rem; // Compense la marge négative sur l'icône
-  padding: 1rem 4rem 1rem 0;
+	@include soulignementLiens();
+	font-family: $RobotoMedium;
+	letter-spacing: $EspacementStandard;
+	display: inline-block;
+	margin-top: 1rem; // Compense la marge négative sur l'icône
+	padding: 1rem 4rem 1rem 0;
 
-  @media screen and (prefers-color-scheme: dark) {
-    @include soulignementLiens($mode: "sombre");
-  }
+	@media screen and (prefers-color-scheme: dark) {
+		@include soulignementLiens($mode: "sombre");
+	}
 
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 3.5rem;
-    height: 5rem;
-    vertical-align: middle;
-    margin-top: -0.5rem;
-    padding-right: 1rem;
-    background-repeat: no-repeat;
-    transition: all, 0.1s ease-in-out;
-  }
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 3.5rem;
+		height: 5rem;
+		vertical-align: middle;
+		margin-top: -0.5rem;
+		padding-right: 1rem;
+		background-repeat: no-repeat;
+		transition: all, 0.1s ease-in-out;
+	}
 
-  &:link, &:visited {
-    color: $gris25;
+	&:link,
+	&:visited {
+		color: $gris25;
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: $gris65AAA;
-    }
-  }
+		@media screen and (prefers-color-scheme: dark) {
+			color: $gris65AAA;
+		}
+	}
 
-  &:hover, &:active {
-    color: $noir;
+	&:hover,
+	&:active {
+		color: $noir;
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: $blancSombre;
-    }
-  }
+		@media screen and (prefers-color-scheme: dark) {
+			color: $blancSombre;
+		}
+	}
 
-  &.axure {
+	&.axure {
+		&::before {
+			background-image: url(../images/icones/axure.svg);
 
-    &::before {
-      background-image: url(../images/icones/axure.svg);
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/axure--sombre.svg);
+			}
+		}
 
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/axure--sombre.svg);
-      }
-    }
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/axure--hover.svg);
+			}
+		}
+	}
 
-    &:hover, &:active, &:focus-visible {
+	&.figma {
+		&::before {
+			background-image: url(../images/icones/figma.svg);
 
-      &::before {
-        background-image: url(../images/icones/axure--hover.svg);
-      }
-    }
-  }
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/figma--sombre.svg);
+			}
+		}
 
-  &.figma {
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/figma--hover.svg);
+			}
+		}
+	}
 
-    &::before {
-      background-image: url(../images/icones/figma.svg);
+	&.github {
+		&::before {
+			background-image: url(../images/icones/github.svg);
 
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/figma--sombre.svg);
-      }
-    }
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/github--sombre.svg);
+			}
+		}
 
-    &:hover, &:active, &:focus-visible {
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/github--hover.svg);
+			}
+		}
+	}
 
-      &::before {
-        background-image: url(../images/icones/figma--hover.svg);
-      }
-    }
-  }
+	&.pdf {
+		&::before {
+			background-image: url(../images/icones/pdf.svg);
 
-  &.github {
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/pdf--sombre.svg);
+			}
+		}
 
-    &::before {
-      background-image: url(../images/icones/github.svg);
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/pdf--hover.svg);
+			}
+		}
 
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/github--sombre.svg);
-      }
-    }
+		& .abreviation,
+		.taille {
+			font-size: 1.6rem;
+		}
+	}
 
-    &:hover, &:active, &:focus-visible {
+	&.rtf {
+		&::before {
+			background-image: url(../images/icones/rtf.svg);
 
-      &::before {
-        background-image: url(../images/icones/github--hover.svg);
-      }
-    }
-  }
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/rtf--sombre.svg);
+			}
+		}
 
-  &.pdf {
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/rtf--hover.svg);
+			}
+		}
+	}
 
-    &::before {
-      background-image: url(../images/icones/pdf.svg);
+	&.sketch {
+		&::before {
+			background-image: url(../images/icones/sketch.svg);
 
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/pdf--sombre.svg);
-      }
-    }
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/sketch--sombre.svg);
+			}
+		}
 
-    &:hover, &:active, &:focus-visible {
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/sketch--hover.svg);
+			}
+		}
+	}
 
-      &::before {
-        background-image: url(../images/icones/pdf--hover.svg);
-      }
-    }
+	&.web {
+		&::before {
+			background-image: url(../images/icones/web.svg);
 
-    & .abreviation, .taille {
-      font-size: 1.6rem;
-    }
-  }
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/web--sombre.svg);
+			}
+		}
 
-  &.rtf {
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/web--hover.svg);
+			}
+		}
+	}
 
-    &::before {
-      background-image: url(../images/icones/rtf.svg);
+	&.xd {
+		&::before {
+			background-image: url(../images/icones/xd.svg);
 
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/rtf--sombre.svg);
-      }
-    }
+			@media screen and (prefers-color-scheme: dark) {
+				background-image: url(../images/icones/xd--sombre.svg);
+			}
+		}
 
-    &:hover, &:active, &:focus-visible {
-
-      &::before {
-        background-image: url(../images/icones/rtf--hover.svg);
-      }
-    }
-  }
-
-  &.sketch {
-
-    &::before {
-      background-image: url(../images/icones/sketch.svg);
-
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/sketch--sombre.svg);
-      }
-    }
-
-    &:hover, &:active, &:focus-visible {
-
-      &::before {
-        background-image: url(../images/icones/sketch--hover.svg);
-      }
-    }
-  }
-
-  &.web {
-
-    &::before {
-      background-image: url(../images/icones/web.svg);
-
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/web--sombre.svg);
-      }
-    }
-
-    &:hover, &:active, &:focus-visible {
-
-      &::before {
-        background-image: url(../images/icones/web--hover.svg);
-      }
-    }
-  }
-
-  &.xd {
-
-    &::before {
-      background-image: url(../images/icones/xd.svg);
-
-      @media screen and (prefers-color-scheme: dark) {
-        background-image: url(../images/icones/xd--sombre.svg);
-      }
-    }
-
-    &:hover, &:active, &:focus-visible {
-
-      &::before {
-        background-image: url(../images/icones/xd--hover.svg);
-      }
-    }
-  }
-}
-
-// Lien externe
-
-.externe:hover, .externe:focus {
-  &::after {
-    margin: 0 0 0.75rem 0.75rem;
-  }
-}
-
-.externe::after {
-  background: url("../images/icones/lien-externe.svg") no-repeat center;
-  height: 1.75rem;
-  width: 1.75rem;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 0.5rem;
-  content: "";
-  transition: all 200ms ease-in-out;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background: url("../images/icones/lien-externe--sombre.svg") no-repeat center;
-  }
+		&:hover,
+		&:active,
+		&:focus-visible {
+			&::before {
+				background-image: url(../images/icones/xd--hover.svg);
+			}
+		}
+	}
 }

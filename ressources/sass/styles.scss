@@ -36,21 +36,21 @@
 /**** UTILITAIRES ****/
 
 /** Variables **/
-@import 'utilitaires/variables';
+@import "utilitaires/variables";
 
 /** Mixins **/
-@import 'utilitaires/mixins';
+@import "utilitaires/mixins";
 
 /****** BASE ******/
 
 /** Typographie **/
-@import 'base/typo';
+@import "base/typo";
 
 /** Grille **/
-@import 'base/grille';
+@import "base/grille";
 
 /** Boutons **/
-@import 'base/boutons';
+@import "base/boutons";
 
 /****** MODULES ******/
 
@@ -72,4 +72,3 @@
 @import "layout/menus";
 @import "layout/projets";
 @import "layout/apropos";
-

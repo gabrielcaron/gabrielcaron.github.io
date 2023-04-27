@@ -10,118 +10,118 @@
 *
 */
 
-.pieddepage {
-  @include conteneur1400px();
-  padding: 0 3rem 5rem 3rem;
-  background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
-  margin-top: 10rem;
+.pied-de-page {
+	@include conteneur1400px();
+	padding: 0 3rem 5rem 3rem;
+	background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
+	margin-top: 10rem;
 
-  @media screen and (min-width: $tablet900px) {
-    padding: 0 5rem 0 5rem;
-  }
+	@media screen and (min-width: $tablet900px) {
+		padding: 0 5rem 0 5rem;
+	}
 
-  @media screen and (min-width: 1700px) {
-    border-radius: 20rem 0 0 0;
-  }
+	@media screen and (min-width: 1700px) {
+		border-radius: 20rem 0 0 0;
+	}
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(to right bottom, #1d1b16, #1c1a15);
-  }
+	@media screen and (prefers-color-scheme: dark) {
+		background-image: linear-gradient(to right bottom, #1d1b16, #1c1a15);
+	}
 
-  &__conteneurGrille {
-    @include rangeeGrid12col();
-  }
+	&__conteneur-grille {
+		@include rangeeGrid();
+	}
 
-  &__titres {
-    font-family: $RobotoMedium;
-    font-size: 2rem;
-    color: $gris25;
-    line-height: 150%;
-    letter-spacing: $EspacementStandard;
-    margin: 2rem 0 0 0;
+	&__titres {
+		font-family: $RobotoMedium;
+		font-size: 2rem;
+		color: $gris25;
+		line-height: 150%;
+		letter-spacing: $EspacementStandard;
+		margin: 2rem 0 0 0;
 
-    @media screen and (min-width: $mobile600px) {
-      margin: 0.75rem 0 0 0;
-      padding-left: 4rem;
-    }
+		@media screen and (min-width: $mobile600px) {
+			margin: 0.75rem 0 0 0;
+			padding-left: 4rem;
+		}
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: $gris65AAA;
-    }
-  }
+		@media screen and (prefers-color-scheme: dark) {
+			color: $gris65AAA;
+		}
+	}
 
-  &__rangeeLogo {
-    padding: 6rem 0 2rem 0;
+	&__rangee-logo {
+		padding: 6rem 0 2rem 0;
 
-    @media screen and (min-width: $mobile600px) {
-      grid-column: 1 / 13;
-      @include rangeeFlex;
-      justify-content: flex-start;
-      padding: 10rem 0 5rem 0;
-    }
-  }
+		@media screen and (min-width: $mobile600px) {
+			grid-column: 1 / 13;
+			@include rangeeFlex;
+			justify-content: flex-start;
+			padding: 10rem 0 5rem 0;
+		}
+	}
 
-  &__lien-accueil {
-    &:hover,
-    &:focus {
-      & .maison {
-        display: block;
+	&__lien-accueil {
+		&:hover,
+		&:focus {
+			& .maison {
+				display: block;
 
-        @media screen and (prefers-color-scheme: dark) {
-          fill: $noirSombre;
-        }
-      }
-      & .signature {
-        display: none;
-      }
-    }
-  }
+				@media screen and (prefers-color-scheme: dark) {
+					fill: $noirSombre;
+				}
+			}
+			& .signature {
+				display: none;
+			}
+		}
+	}
 
-  &__logo {
-    width: 25rem;
-    height: 6rem;
-    display: block;
+	&__logo {
+		width: 25rem;
+		height: 6rem;
+		display: block;
 
-    & .maison {
-      display: none;
-    }
+		& .maison {
+			display: none;
+		}
 
-    @media screen and (prefers-color-scheme: dark) {
-      & .elevation {
-        fill: $jauneOfficiel;
-      }
+		@media screen and (prefers-color-scheme: dark) {
+			& .elevation {
+				fill: $jauneOfficiel;
+			}
 
-      & .signature {
-        fill: $noirSombre;
-      }
+			& .signature {
+				fill: $noirSombre;
+			}
 
-      & .logotype {
-        fill: $blancSombre;
-      }
-    }
-  }
+			& .logotype {
+				fill: $blancSombre;
+			}
+		}
+	}
 
-  &__copyright {
-    font-size: 1.6rem;
-    letter-spacing: $EspacementStandard;
-    color: $noir;
+	&__copyright {
+		font-size: 1.6rem;
+		letter-spacing: $EspacementStandard;
+		color: $noir;
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: $gris65AAA;
-    }
+		@media screen and (prefers-color-scheme: dark) {
+			color: $gris65AAA;
+		}
 
-    @media screen and (min-width: $desktop1000px) {
-      position: relative;
-      top: 13rem;
-    }
-  }
+		@media screen and (min-width: $desktop1000px) {
+			position: relative;
+			top: 13rem;
+		}
+	}
 
-  &__vagues {
-    padding-top: 5rem;
-    display: none;
+	&__vagues {
+		padding-top: 5rem;
+		display: none;
 
-    @media screen and (min-width: $tablet900px) {
-      display: block;
-    }
-  }
+		@media screen and (min-width: $tablet900px) {
+			display: block;
+		}
+	}
 }

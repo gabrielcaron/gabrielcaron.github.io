@@ -10,165 +10,165 @@
 *
 */
 
-
 .contact {
-
-  &__titre {
-	padding: 2rem 0 1rem 0;
-	@media screen and (min-width: $mobile600px) {
-	  padding: 4rem 0 1rem 0;
-	}
-	@media screen and (min-width: $tablet900px) {
-	  padding: 10rem 0 1rem 0;
-	}
-  }
-
-  &__liste {
-	@include rangeeGrid12col();
-	padding: 0 0 5rem 0;
-	list-style-type: none;
-  }
-
-  &__item {
-	grid-column: span 4;
-	padding: 2rem 0;
-
-	&:first-child {
-	  grid-column: 3 / span 4;
-	}
-  }
-
-  &__lien {
-	@include soulignementLiens;
-	font-family: $RobotoMedium;
-	color: $gris25;
-	letter-spacing: $EspacementStandard;
-	line-height: 100%;
-	border-radius: $arrondiMobile;
-
-	@media screen and (prefers-color-scheme: dark) {
-	  @include soulignementLiens($mode: "sombre");
-	  color: $gris65AAA;
+	&__titre {
+		padding: 2rem 0 1rem 0;
+		@media screen and (min-width: $mobile600px) {
+			padding: 4rem 0 1rem 0;
+		}
+		@media screen and (min-width: $tablet900px) {
+			padding: 10rem 0 1rem 0;
+		}
 	}
 
-	&:hover, &:focus {
-	  & .icone {
-		border: none;
-		margin: 0.4rem 0.4rem 0 0;
+	&__liste {
+		@include rangeeGrid();
+		padding: 0 0 5rem 0;
+		list-style-type: none;
+	}
+
+	&__item {
+		grid-column: span 4;
+		padding: 2rem 0;
+
+		&:first-child {
+			grid-column: 3 / span 4;
+		}
+	}
+
+	&__lien {
+		@include soulignementLiens;
+		font-family: $RobotoMedium;
+		color: $gris25;
+		letter-spacing: $EspacementStandard;
+		line-height: 100%;
+		border-radius: $arrondiMobile;
 
 		@media screen and (prefers-color-scheme: dark) {
-		  margin: initial;
-		}
-	  }
-
-	  & .courriel {
-		& .elevation {
-		  fill: url(#courriel-elevation-hover);
-
-		  @media screen and (prefers-color-scheme: dark) {
-			fill: $grisElevationIconeSombre;
-		  }
+			@include soulignementLiens($mode: "sombre");
+			color: $gris65AAA;
 		}
 
-		& .enveloppe {
-		  fill: url(#enveloppe-hover);
+		&:hover,
+		&:focus {
+			& .icone {
+				border: none;
+				margin: 0.4rem 0.4rem 0 0;
+
+				@media screen and (prefers-color-scheme: dark) {
+					margin: initial;
+				}
+			}
+
+			& .courriel {
+				& .elevation {
+					fill: url(#courriel-elevation-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: $grisElevationIconeSombre;
+					}
+				}
+
+				& .enveloppe {
+					fill: url(#enveloppe-hover);
+				}
+			}
+
+			& .linkedin {
+				& .elevation {
+					fill: url(#linkedin-bleu-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: $grisElevationIconeSombre;
+					}
+				}
+
+				& .logotype {
+					fill: url(#linkedin-gris-hover);
+				}
+			}
+
+			@media screen and (prefers-color-scheme: dark) {
+				color: $blancSombre;
+
+				& .courriel {
+					border: solid 0.2rem $gris65AAA;
+
+					& .enveloppe {
+						fill: url(#enveloppe-sombre);
+					}
+				}
+
+				& .linkedin {
+					border: solid 0.2rem $gris65AAA;
+
+					& .logotype {
+						fill: url(#linkedin-bleu-sombre);
+					}
+				}
+			}
+
+			& .contact__figcaption {
+				text-decoration: none;
+			}
 		}
-	  }
 
-	  & .linkedin {
-		& .elevation {
-		  fill: url(#linkedin-bleu-hover);
+		// État initial sombre
+		@media screen and (prefers-color-scheme: dark) {
+			& .courriel {
+				& .enveloppe {
+					fill: url(#enveloppe-sombre);
+				}
+			}
 
-		  @media screen and (prefers-color-scheme: dark) {
-			fill: $grisElevationIconeSombre;
-		  }
+			& .linkedin {
+				& .logotype {
+					fill: url(#linkedin-bleu-sombre);
+				}
+			}
 		}
-
-		& .logotype {
-		  fill: url(#linkedin-gris-hover);
-		}
-	  }
-
-	  @media screen and (prefers-color-scheme: dark) {
-		color: $blancSombre;
-
-		& .courriel {
-		  border: solid 0.2rem $gris65AAA;
-
-		  & .enveloppe {
-			fill: url(#enveloppe-sombre);
-		  }
-		}
-
-		& .linkedin {
-		  border: solid 0.2rem $gris65AAA;
-
-		  & .logotype {
-			fill: url(#linkedin-bleu-sombre);
-		  }
-		}
-	  }
-
-	  & .contact__figcaption {
-		text-decoration: none;
-	  }
 	}
 
-	// État initial sombre
-	@media screen and (prefers-color-scheme: dark) {
-	  & .courriel {
-		& .enveloppe {
-		  fill: url(#enveloppe-sombre);
+	&__figure {
+		margin: 0;
+		text-align: center;
+
+		@media screen and (min-width: 1050px) {
+			display: flex;
+			align-items: center;
 		}
-	  }
 
-	  & .linkedin {
-		& .logotype {
-		  fill: url(#linkedin-bleu-sombre);
+		& .icone {
+			width: 10rem;
+			border: solid 0.2rem $blanc;
+			border-radius: 3.5rem;
+			vertical-align: middle;
+			box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
+				-5px -5px 25px 0px rgba(255, 255, 255, 1);
+
+			@media screen and (min-width: $mobile600px) {
+				width: 13rem;
+			}
+
+			@media screen and (prefers-color-scheme: dark) {
+				box-shadow: none;
+				border: solid 0.2rem $grisContourIconeSombre;
+
+				& .elevation {
+					fill: $grisElevationIconeSombre;
+				}
+			}
 		}
-	  }
-	}
-  }
-
-  &__figure {
-	margin: 0;
-	text-align: center;
-
-	@media screen and (min-width: 1050px) {
-	  display: flex;
-	  align-items: center;
 	}
 
-	& .icone {
-	  width: 10rem;
-	  border: solid 0.2rem $blanc;
-	  border-radius: 3.5rem;
-	  vertical-align: middle;
-	  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgba(255, 255, 255, 1);
-
-	  @media screen and (min-width: $mobile600px) {
-		width: 13rem;
-	  }
-
-	  @media screen and (prefers-color-scheme: dark) {
-		box-shadow: none;
-		border: solid 0.2rem $grisContourIconeSombre;
-
-		& .elevation {
-		  fill: $grisElevationIconeSombre;
-		}
-	  }
+	&__figcaption {
+		font-family: $RobotoBold;
+		font-size: 3.5rem;
+		display: inline-block;
+		line-height: 120%;
+		border-radius: $arrondiMobile;
+		margin-top: 0.5rem;
+		padding: 1.3rem 2rem;
+		vertical-align: middle;
 	}
-  }
-
-  &__figcaption {
-	font-family: $RobotoBold;
-	font-size: 3.5rem;
-	display: inline-block;
-	line-height: 120%;
-	border-radius: $arrondiMobile;
-	margin-top: 0.5rem;
-	padding: 1.3rem 2rem;
-	vertical-align: middle;
-  }
 }
