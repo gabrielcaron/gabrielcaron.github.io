@@ -105,17 +105,17 @@
 			}
 
 			@media screen and (min-width: $tablet900px) {
+				@include bulle();
 				padding: 2rem 4rem 0 0;
 			}
 
+			// Modificateur grille 50%
 			&--demi-grille {
 				@include rangeeDemiGrille();
 
-				grid-column: 1 / 7;
-				justify-content: flex-end;
-
 				@media screen and (min-width: $tablet900px) {
-					@include bulle();
+					grid-column: 1 / 7;
+					justify-content: flex-end;
 					border-left: none;
 					border-radius: 0 $arrondiTable $arrondiTable 0;
 
@@ -134,17 +134,18 @@
 			}
 
 			@media screen and (min-width: $tablet900px) {
+				@include bulle();
 				padding: 2rem 0 0 4rem;
 			}
 
+			// Modificateur grille 50%
 			&--demi-grille {
 				@include rangeeDemiGrille();
 
-				grid-column: 7 / 13;
-				justify-content: flex-start;
-
 				@media screen and (min-width: $tablet900px) {
-					@include bulle();
+					grid-column: 7 / 13;
+					justify-content: flex-start;
+					// @include bulle();
 					border-right: none;
 					border-radius: $arrondiTable 0 0 $arrondiTable;
 
@@ -160,18 +161,24 @@
 		.navigation {
 			&--web-applis {
 				@include rangeeGrid($pointRupture: $tablet900px);
-				align-content: flex-start;
+				@media screen and (min-width: $mobile600px) {
+					align-content: flex-start;
+				}
 
 				& .navigation {
 					&__lien-section {
-						grid-column: 2 / 13;
+						@media screen and (min-width: $mobile600px) {
+							grid-column: 2 / 13;
+						}
 
 						@media screen and (min-width: 1000px) {
 							grid-column: 3 / 13;
 						}
 					}
 					&__rangee-projets {
-						grid-column: 2 / 13;
+						@media screen and (min-width: $mobile600px) {
+							grid-column: 2 / 13;
+						}
 
 						@media screen and (min-width: 1000px) {
 							grid-column: 3 / 13;
@@ -182,18 +189,24 @@
 
 			&--design-graphique {
 				@include rangeeGrid($pointRupture: $tablet900px);
-				align-content: flex-start;
+				@media screen and (min-width: $mobile600px) {
+					align-content: flex-start;
+				}
 
 				& .navigation {
 					&__lien-section {
-						grid-column: 1 / 12;
+						@media screen and (min-width: $mobile600px) {
+							grid-column: 1 / 12;
+						}
 
 						@media screen and (min-width: 1000px) {
 							grid-column: 1 / 11;
 						}
 					}
 					&__rangee-projets {
-						grid-column: 1 / 12;
+						@media screen and (min-width: $mobile600px) {
+							grid-column: 1 / 12;
+						}
 
 						@media screen and (min-width: 1000px) {
 							grid-column: 1 / 11;
@@ -249,9 +262,11 @@
 
 				@include rangeeGrid();
 
-				& > * {
-					grid-column: span 6;
-					vertical-align: top; // Version mobile
+				@media screen and (min-width: $mobile600px) {
+					& > * {
+						grid-column: span 6;
+						vertical-align: top; // Version mobile
+					}
 				}
 			}
 		}
