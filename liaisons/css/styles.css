@@ -1077,6 +1077,16 @@ body {
   margin-top: 0.5rem;
   padding: 1.3rem 2.3rem;
 }
+@media screen and (min-width: 900px) {
+  .projets .navigation__figcaption {
+    min-height: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projets .navigation__figcaption {
+    min-height: initial;
+  }
+}
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figcaption {
     text-decoration: underline;
