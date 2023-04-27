@@ -13,131 +13,129 @@
 /* Styles généraux, tous les projets */
 
 .projets {
-
-  &__selecteur {
-	@media screen and (min-width: $tablet900px) {
-	  @include bulle();
-	  margin-bottom: 3rem;
+	&__selecteur {
+		@media screen and (min-width: $tablet900px) {
+			@include bulle();
+			margin-bottom: 3rem;
+		}
 	}
-  }
 
-  &__conteneurIcones {
-	@include rangeeGrid12col();
-  }
-
-  &__titre-h2 {
-	margin: 4rem 0 0 1rem;
-	font-size: 4rem;
-
-	@media screen and (min-width: $tablet900px) {
-	  margin: 4rem 0 0 5rem;
+	&__conteneurIcones {
+		@include rangeeGrid();
 	}
-  }
+
+	&__titre-h2 {
+		margin: 4rem 0 0 1rem;
+		font-size: 4rem;
+
+		@media screen and (min-width: $tablet900px) {
+			margin: 4rem 0 0 5rem;
+		}
+	}
 }
-
 
 /* Styles spécifiques, aperçu d'un projet */
 
 .projet {
+	&__titre {
+		font-size: 5.5rem;
+		text-align: left;
+		margin: 0;
+		padding: 3rem 0 0 0;
 
-  &__titre {
-	font-size: 5.5rem;
-	text-align: left;
-	margin: 0;
-	padding: 3rem 0 0 0;
-
-	@media screen and (min-width: $mobile600px) {
-	  font-size: 8rem;
-	}
-  }
-
-  &__description {
-	font-size: 2rem;
-	letter-spacing: $EspacementStandard;
-	color: $gris25;
-	margin: 1rem 0;
-
-	@media screen and (min-width: $mobile600px) {
-	  font-size: 2.5rem;
+		@media screen and (min-width: $mobile600px) {
+			font-size: 8rem;
+		}
 	}
 
-	@media screen and (prefers-color-scheme: dark) {
-	  color: $gris65AAA;
-	}
-  }
+	&__description {
+		font-size: 2rem;
+		letter-spacing: $EspacementStandard;
+		color: $gris25;
+		margin: 1rem 0;
 
-  &__processus {
-	list-style-type: none;
-	padding: 0;
-
-	& .lien {
-	  margin-top: inherit;
-	  padding: 1rem 4rem 1rem 0;
-	}
-  }
-
-  &__formats {
-	font-size: 1.8rem;
-
-	@media screen and (min-width: $mobile600px) {
-	  display: inline-block;
-	  font-size: 2rem;
-	}
-  }
-
-  &__figure {
-	margin: 4rem 0 0 0;
-	@media screen and (min-width: $mobile600px) {
-	  margin: 7rem 0 0 0;
-	}
-  }
-
-  &__figcaption {
-	font-size: 1.6rem;
-	margin-top: 2rem;
-	color: $gris25;
-
-	@media screen and (prefers-color-scheme: dark) {
-	  color: $gris65AAA;
-	}
-  }
-
-  &.sans-contexte {
-	img {
-	  border-radius: 3.5rem;
-	  border: 0.2rem solid $blanc;
-
-	  @media screen and (prefers-color-scheme: dark) {
-		border: 0.2rem solid $grisContourIconeSombre;
-	  }
-	}
-  }
-
-  &.masonry {
-	@media screen and (min-width: $mobile600px) {
-	  img {
-		border-radius: 3.5rem;
-		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px $blanc;
-		border: solid 0.2rem $blanc;
+		@media screen and (min-width: $mobile600px) {
+			font-size: 2.5rem;
+		}
 
 		@media screen and (prefers-color-scheme: dark) {
-		  box-shadow: none;
-		  border: solid 0.2rem $grisContourIconeSombre;
+			color: $gris65AAA;
 		}
-	  }
 	}
-  }
 
-  &.macOS {
-	@media screen and (min-width: $mobile600px) {
-	  img {
-		border-radius: 1rem;
-		box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+	&__processus {
+		list-style-type: none;
+		padding: 0;
+
+		& .lien {
+			margin-top: inherit;
+			padding: 1rem 4rem 1rem 0;
+		}
+	}
+
+	&__formats {
+		font-size: 1.8rem;
+
+		@media screen and (min-width: $mobile600px) {
+			display: inline-block;
+			font-size: 2rem;
+		}
+	}
+
+	&__figure {
+		margin: 4rem 0 0 0;
+		@media screen and (min-width: $mobile600px) {
+			margin: 7rem 0 0 0;
+		}
+	}
+
+	&__figcaption {
+		font-size: 1.6rem;
+		margin-top: 2rem;
+		color: $gris25;
 
 		@media screen and (prefers-color-scheme: dark) {
-		  box-shadow: none;
+			color: $gris65AAA;
 		}
-	  }
 	}
-  }
+
+	&.sans-contexte {
+		img {
+			border-radius: 3.5rem;
+			border: 0.2rem solid $blanc;
+
+			@media screen and (prefers-color-scheme: dark) {
+				border: 0.2rem solid $grisContourIconeSombre;
+			}
+		}
+	}
+
+	&.masonry {
+		@media screen and (min-width: $mobile600px) {
+			img {
+				border-radius: 3.5rem;
+				box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
+					-5px -5px 25px 0px $blanc;
+				border: solid 0.2rem $blanc;
+
+				@media screen and (prefers-color-scheme: dark) {
+					box-shadow: none;
+					border: solid 0.2rem $grisContourIconeSombre;
+				}
+			}
+		}
+	}
+
+	&.macOS {
+		@media screen and (min-width: $mobile600px) {
+			img {
+				border-radius: 1rem;
+				box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px white;
+
+				@media screen and (prefers-color-scheme: dark) {
+					box-shadow: none;
+				}
+			}
+		}
+	}
 }

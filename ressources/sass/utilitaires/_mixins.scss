@@ -25,89 +25,110 @@
 // Hide only visually, but have it available for screenreaders:
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 
-  // Extends the .visuallyhidden class to allow the element to be focusable
-  // when navigated to via the keyboard: https://www.drupal.org/node/897638
-  &.focusable:active,
-  &.focusable:focus {
-	clip: auto;
-	height: auto;
-	margin: 0;
-	overflow: visible;
-	position: static;
-	width: auto;
-  }
+	// Extends the .visuallyhidden class to allow the element to be focusable
+	// when navigated to via the keyboard: https://www.drupal.org/node/897638
+	&.focusable:active,
+	&.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
 }
 
 .visuallyhidden,
 .screen-reader-only {
-  @include visuallyhidden;
+	@include visuallyhidden;
 }
 
 .sauter-contenu {
-  display: block;
-  padding: 0 3rem;
-  line-height: 5rem;
-  color: $noir;
-  background-color: $jauneOfficiel;
-  text-align: center;
+	display: block;
+	padding: 0 3rem;
+	line-height: 5rem;
+	color: $noir;
+	background-color: $jauneOfficiel;
+	text-align: center;
 }
-
 
 // Mixin pour conteneur parent en Grid
 @mixin conteneur1400px($conteneurBleed: false) {
-  @include paddingConteneur;
-  @supports (grid-template-columns: minmax(auto, 1400px)) {
-	@media (min-width: $mobile600px) {
-	  display: grid;
-	  grid-template-columns: minmax(auto, 1400px);
-	  justify-content: center;
-	  @if $conteneurBleed == true {
-		padding: 0;
-	  }
+	@include paddingConteneur;
+	@supports (grid-template-columns: minmax(auto, 1400px)) {
+		@media (min-width: $mobile600px) {
+			display: grid;
+			grid-template-columns: minmax(auto, 1400px);
+			justify-content: center;
+			@if $conteneurBleed == true {
+				padding: 0;
+			}
+		}
 	}
-  }
-  @supports not (grid-template-columns: minmax(auto, 1400px)) {
-	max-width: 1400px;
-  }
+	@supports not (grid-template-columns: minmax(auto, 1400px)) {
+		max-width: 1400px;
+	}
 }
 
 // Mixin pour rangée Grid sur 12 colonnes
-@mixin rangeeGrid12col($pointRupture: $mobile600px) {
-  @supports (grid-template-columns: minmax(auto, 1400px)) {
-	@media (min-width: $pointRupture) {
-	  display: grid;
-	  grid-template-columns: repeat(12, 1fr);
-	  column-gap: 2rem;
+@mixin rangeeGrid(
+	$nombreColonnes: 12,
+	$largeurColonnes: 1fr,
+	$largeurMax: 1400px,
+	$pointRupture: $mobile600px,
+	$gap: 2rem
+) {
+	@supports (grid-template-columns: minmax(auto, $largeurMax)) {
+		@media (min-width: $pointRupture) {
+			display: grid;
+			grid-template-columns: repeat($nombreColonnes, $largeurColonnes);
+			column-gap: $gap;
+		}
 	}
-  }
 }
 
+// Mixin pour demi-grille
+@mixin rangeeDemiGrille(
+	$largeurColonne: minmax(auto, calc(690px - 4rem)),
+	// - 4rem de padding
+	$largeurMax: 1400px,
+	$pointRupture: $tablet900px,
+	$gap: 2rem
+) {
+	@supports (grid-template-columns: minmax(auto, $largeurMax)) {
+		@media (min-width: $pointRupture) {
+			display: grid;
+			grid-template-columns: $largeurColonne;
+			column-gap: $gap;
+		}
+	}
+}
 
 // Mixin pour rangée Flex par défaut
 @mixin rangeeFlex {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 // Mixin pour le padding de base pour mobile si Grid ou Flex ne sont pas utilisés
 @mixin paddingConteneur {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  @media screen and (min-width: 1000px) {
-	padding-left: 5rem;
-	padding-right: 5rem;
-  }
-  @media screen and (min-width: 1930px) {
-	padding-left: 0;
-	padding-right: 0;
-  }
+	padding-left: 3rem;
+	padding-right: 3rem;
+	@media screen and (min-width: 1000px) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	@media screen and (min-width: 1930px) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

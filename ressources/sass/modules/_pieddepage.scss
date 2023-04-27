@@ -29,7 +29,7 @@
 	}
 
 	&__conteneur-grille {
-		@include rangeeGrid12col();
+		@include rangeeGrid();
 	}
 
 	&__titres {

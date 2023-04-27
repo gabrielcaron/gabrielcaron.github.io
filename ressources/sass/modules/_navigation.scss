@@ -452,7 +452,7 @@
 	.navigation {
 		grid-column: 1 / 13;
 		@media screen and (min-width: 600px) {
-			@include rangeeGrid12col();
+			@include rangeeGrid();
 			row-gap: 0;
 		}
 
