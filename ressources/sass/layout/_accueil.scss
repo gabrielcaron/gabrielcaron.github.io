@@ -97,10 +97,6 @@
 			@include paddingConteneur;
 		}
 
-		&__titre-h2 {
-			@include fleche();
-		}
-
 		// Modificateur grille 50%
 		&--demi-grille {
 			@include rangeeGrid($pointRupture: $tablet900px);
@@ -239,18 +235,15 @@
 
 		.navigation {
 			&__lien-section {
+				@include fleche();
 				text-decoration: none;
 				color: $noir;
 
 				@media screen and (min-width: $desktop1100px) {
 					&:hover,
 					&:focus {
-						.navigation {
-							&__titre-section {
-								&::after {
-									margin-left: 2.5rem;
-								}
-							}
+						&::after {
+							margin-left: 2.5rem;
 						}
 					}
 				}
