@@ -923,16 +923,6 @@ body {
   padding: 0;
   vertical-align: top;
 }
-@supports (grid-template-columns: minmax(auto, 1400px)) {
-  @media (min-width: 600px) {
-    .projets .navigation__liste {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
-    }
-  }
-}
 @media screen and (min-width: 900px) {
   .projets .navigation__liste {
     padding: 0 3rem;
@@ -1155,60 +1145,70 @@ body {
   padding: 1.3rem 3rem;
   margin: 0 0.3rem;
 }
-.projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus .navigation__figcaption {
+@supports (grid-template-columns: minmax(auto, 1400px)) {
+  @media (min-width: 600px) {
+    .projets .navigation__rangee-projets {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      -moz-column-gap: 2rem;
+           column-gap: 2rem;
+    }
+  }
+}
+.projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
   border: none;
   text-decoration: none;
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
     box-shadow: none;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien:hover .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
     border: 3px solid #a6a6a6;
     background: transparent;
     color: #e6e6e6;
   }
 }
-.projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus.courant .navigation__figcaption {
+.projets .navigation__rangee-projets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus.courant .navigation__figcaption {
   border: none;
   padding: 1.3rem 2.3rem;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation .rangeeProjets .navigation__lien:focus.courant .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus.courant .navigation__figcaption {
     border: 0.3rem solid #ffe100;
   }
 }
-.projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
+.projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
     box-shadow: none;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien:active .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
     color: #0d0d0d;
   }
 }
-.projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
+.projets .navigation__rangee-projets .navigation__lien.courant .navigation__figcaption {
   border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien.courant .navigation__figcaption {
     box-shadow: none;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeProjets .navigation__lien.courant .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien.courant .navigation__figcaption {
     padding: 1.3rem 2.3rem;
   }
 }
@@ -2223,16 +2223,6 @@ img {
     padding-right: 0;
   }
 }
-.accueil .projets__titre-h2::after {
-  background: url("../images/icones/fleche-section.svg") no-repeat center;
-  height: 3.5rem;
-  width: 3.5rem;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 1.5rem;
-  content: "";
-  transition: all 200ms ease-in-out;
-}
 .accueil .projets--demi-grille {
   padding: 0;
 }
@@ -2276,8 +2266,8 @@ img {
     height: 3.5rem;
     width: 3.5rem;
     display: inline-block;
-    vertical-align: middle;
-    margin-left: 1.5rem;
+    vertical-align: text-bottom;
+    margin-left: 1rem;
     content: "";
     transition: all 200ms ease-in-out;
   }
@@ -2419,8 +2409,18 @@ img {
   text-decoration: none;
   color: #000;
 }
+.accueil .projets .navigation__lien-section::after {
+  background: url("../images/icones/fleche-section.svg") no-repeat center;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-left: 1rem;
+  content: "";
+  transition: all 200ms ease-in-out;
+}
 @media screen and (min-width: 1100px) {
-  .accueil .projets .navigation__lien-section:hover .navigation__titre-section::after, .accueil .projets .navigation__lien-section:focus .navigation__titre-section::after {
+  .accueil .projets .navigation__lien-section:hover::after, .accueil .projets .navigation__lien-section:focus::after {
     margin-left: 2.5rem;
   }
 }
@@ -2644,17 +2644,8 @@ img {
     background: linear-gradient(180deg, rgb(31, 31, 31) 0%, rgb(31, 31, 31) 100%);
   }
 }
-@supports (grid-template-columns: minmax(auto, 1400px)) {
-  @media (min-width: 600px) {
-    .projets__conteneurIcones {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
-    }
-  }
-}
 .projets__titre-h2 {
+  display: inline-block;
   margin: 4rem 0 0 1rem;
   font-size: 4rem;
 }

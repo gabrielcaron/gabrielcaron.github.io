@@ -20,10 +20,6 @@
 		}
 	}
 
-	&__conteneurIcones {
-		@include rangeeGrid();
-	}
-
 	&__titre-h2 {
 		display: inline-block;
 		margin: 4rem 0 0 1rem;

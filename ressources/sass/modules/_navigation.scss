@@ -170,8 +170,6 @@
 
 .projets .navigation {
 	&__liste {
-		@include rangeeGrid();
-
 		list-style-type: none;
 		padding: 0;
 		vertical-align: top;
@@ -331,6 +329,7 @@
 	}
 
 	// Styles spécifique aux liens des titres de sections
+	// TODO clarifier rangeeSections = rangee navigation dans chaque projet
 	& .rangeeSections {
 		& .courant {
 			@include boutonPageCourante;
@@ -370,7 +369,9 @@
 
 	// Styles spécifiques aux liens des projets
 
-	& .rangeeProjets {
+	&__rangee-projets {
+		@include rangeeGrid();
+
 		.navigation {
 			&__lien {
 				&:hover,
