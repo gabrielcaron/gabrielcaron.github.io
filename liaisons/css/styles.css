@@ -1213,6 +1213,13 @@ body {
   }
 }
 
+/* Modificateur menu de navigation */
+@media screen and (min-width: 900px) {
+  .projets--menu .navigation__item {
+    grid-column: span 3;
+  }
+}
+
 /* Lien externe */
 .navigation__lien--externe:hover::after, .navigation__lien--externe:focus::after {
   margin: 0 0 0.75rem 0.75rem;
@@ -2589,23 +2596,6 @@ img {
   margin-top: 0.5rem;
   padding: 1.3rem 2rem;
   vertical-align: middle;
-}
-
-/**
-* @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.0
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* MENUS
-*
-*
-*/
-@media screen and (min-width: 900px) {
-  .menu .navigation__item {
-    grid-column: span 3;
-  }
 }
 
 /**

@@ -425,6 +425,20 @@
 	}
 }
 
+/* Modificateur menu de navigation */
+
+.projets {
+	&--menu {
+		.navigation {
+			&__item {
+				@media screen and (min-width: $tablet900px) {
+					grid-column: span 3;
+				}
+			}
+		}
+	}
+}
+
 /* Lien externe */
 
 .navigation {
