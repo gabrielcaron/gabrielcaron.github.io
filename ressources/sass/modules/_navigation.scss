@@ -170,9 +170,12 @@
 
 .projets .navigation {
 	&__liste {
+		@include rangeeGrid();
+
 		list-style-type: none;
 		padding: 0;
 		vertical-align: top;
+
 		@media screen and (min-width: $tablet900px) {
 			padding: 0 3rem;
 		}
