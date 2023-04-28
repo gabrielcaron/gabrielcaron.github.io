@@ -91,66 +91,145 @@
 
 	// projets = conteneur bleed
 	.projets {
-		@include rangeeGrid($pointRupture: $tablet900px);
+		@include conteneur1400px();
 
 		@media screen and (max-width: 899px) {
 			@include paddingConteneur;
 		}
 
-		&__web-applis {
-			padding: 0.5rem 0;
+		&__titre-h2 {
+			@include fleche();
+		}
 
-			@media screen and (min-width: $mobile600px) {
-				padding: 2rem 0 0 0;
+		// Modificateur grille 50%
+		&--demi-grille {
+			@include rangeeGrid($pointRupture: $tablet900px);
+
+			@media screen and (max-width: 899px) {
+				@include paddingConteneur;
 			}
 
-			@media screen and (min-width: $tablet900px) {
-				@include bulle();
-				padding: 2rem 4rem 0 0;
-			}
+			padding: 0;
 
-			// Modificateur grille 50%
-			&--demi-grille {
-				@include rangeeDemiGrille();
+			& .projets {
+				&__titre-h2 {
+					margin: 3rem 0 1rem 2rem;
 
-				@media screen and (min-width: $tablet900px) {
-					grid-column: 1 / 7;
-					justify-content: flex-end;
-					border-left: none;
-					border-radius: 0 $arrondiTable $arrondiTable 0;
+					&:after {
+						content: none;
+					}
 
-					&:before {
-						left: -0.2rem; // Retire la barre de défilement en page d'accueil
+					@media screen and (min-width: $desktop1100px) {
+						@include fleche();
+					}
+				}
+
+				&__web-applis {
+					@include rangeeDemiGrille();
+
+					@media screen and (min-width: $mobile600px) {
+						padding: 2rem 0 0 0;
+					}
+
+					@media screen and (min-width: $tablet900px) {
+						grid-column: 1 / 7;
+						justify-content: flex-end;
+						border-left: none;
+						border-radius: 0 $arrondiTable $arrondiTable 0;
+						padding: 2rem 4rem 0 0;
+
+						&:before {
+							left: -0.2rem; // Retire la barre de défilement en page d'accueil
+						}
+					}
+				}
+
+				&__design-graphique {
+					@include rangeeDemiGrille();
+
+					@media screen and (min-width: $mobile600px) {
+						padding: 2rem 0 0 0;
+					}
+
+					@media screen and (min-width: $tablet900px) {
+						grid-column: 7 / 13;
+						justify-content: flex-start;
+						border-right: none;
+						border-radius: $arrondiTable 0 0 $arrondiTable;
+						padding: 2rem 0 0 4rem;
+
+						&:before {
+							right: 0.2rem; // Retire la barre de défilement en page d'accueil
+						}
 					}
 				}
 			}
-		}
 
-		&__design-graphique {
-			padding: 0.5rem 0;
+			& .navigation {
+				&--web-applis {
+					@include rangeeGrid($pointRupture: $tablet900px);
+					@media screen and (min-width: $mobile600px) {
+						align-content: flex-start;
+					}
 
-			@media screen and (min-width: $mobile600px) {
-				padding: 2rem 0 0 0;
-			}
+					& .navigation {
+						&__lien-section {
+							@media screen and (min-width: $mobile600px) {
+								grid-column: 2 / 13;
+							}
 
-			@media screen and (min-width: $tablet900px) {
-				@include bulle();
-				padding: 2rem 0 0 4rem;
-			}
+							@media screen and (min-width: 1000px) {
+								grid-column: 3 / 13;
+							}
+						}
+						&__rangee-projets {
+							@media screen and (min-width: $mobile600px) {
+								grid-column: 2 / 13;
+							}
 
-			// Modificateur grille 50%
-			&--demi-grille {
-				@include rangeeDemiGrille();
+							@media screen and (min-width: 1000px) {
+								grid-column: 3 / 13;
+							}
+						}
+					}
+				}
 
-				@media screen and (min-width: $tablet900px) {
-					grid-column: 7 / 13;
-					justify-content: flex-start;
-					// @include bulle();
-					border-right: none;
-					border-radius: $arrondiTable 0 0 $arrondiTable;
+				&--design-graphique {
+					@include rangeeGrid($pointRupture: $tablet900px);
+					@media screen and (min-width: $mobile600px) {
+						align-content: flex-start;
+					}
 
-					&:before {
-						right: 0.2rem; // Retire la barre de défilement en page d'accueil
+					& .navigation {
+						&__lien-section {
+							@media screen and (min-width: $mobile600px) {
+								grid-column: 1 / 12;
+							}
+
+							@media screen and (min-width: 1000px) {
+								grid-column: 1 / 11;
+							}
+						}
+						&__rangee-projets {
+							@media screen and (min-width: $mobile600px) {
+								grid-column: 1 / 12;
+							}
+
+							@media screen and (min-width: 1000px) {
+								grid-column: 1 / 11;
+							}
+						}
+					}
+				}
+
+				&__liste {
+					padding: 0;
+
+					@media screen and (min-width: $mobile600px) {
+						& > * {
+							grid-column: span 6;
+							vertical-align: top; // Version mobile
+						}
 					}
 				}
 			}
@@ -159,62 +238,6 @@
 		// Navigation spécifique à l'accueil
 
 		.navigation {
-			&--web-applis {
-				@include rangeeGrid($pointRupture: $tablet900px);
-				@media screen and (min-width: $mobile600px) {
-					align-content: flex-start;
-				}
-
-				& .navigation {
-					&__lien-section {
-						@media screen and (min-width: $mobile600px) {
-							grid-column: 2 / 13;
-						}
-
-						@media screen and (min-width: 1000px) {
-							grid-column: 3 / 13;
-						}
-					}
-					&__rangee-projets {
-						@media screen and (min-width: $mobile600px) {
-							grid-column: 2 / 13;
-						}
-
-						@media screen and (min-width: 1000px) {
-							grid-column: 3 / 13;
-						}
-					}
-				}
-			}
-
-			&--design-graphique {
-				@include rangeeGrid($pointRupture: $tablet900px);
-				@media screen and (min-width: $mobile600px) {
-					align-content: flex-start;
-				}
-
-				& .navigation {
-					&__lien-section {
-						@media screen and (min-width: $mobile600px) {
-							grid-column: 1 / 12;
-						}
-
-						@media screen and (min-width: 1000px) {
-							grid-column: 1 / 11;
-						}
-					}
-					&__rangee-projets {
-						@media screen and (min-width: $mobile600px) {
-							grid-column: 1 / 12;
-						}
-
-						@media screen and (min-width: 1000px) {
-							grid-column: 1 / 11;
-						}
-					}
-				}
-			}
-
 			&__lien-section {
 				text-decoration: none;
 				color: $noir;
@@ -234,39 +257,6 @@
 
 				@media screen and (prefers-color-scheme: dark) {
 					color: $blancSombre;
-				}
-			}
-
-			&__titre-section {
-				margin: 3rem 0 1rem 2rem;
-				font-size: 4rem;
-
-				@media screen and (min-width: $desktop1100px) {
-					&::after {
-						background: url("../images/icones/fleche-section.svg") no-repeat
-							center;
-						height: 3.5rem;
-						width: 3.5rem;
-						display: inline-block;
-						vertical-align: middle;
-						margin-left: 1.5rem;
-						content: "";
-						transition: all 200ms ease-in-out;
-					}
-				}
-			}
-
-			&__liste {
-				list-style-type: none;
-				padding: 0;
-
-				@include rangeeGrid();
-
-				@media screen and (min-width: $mobile600px) {
-					& > * {
-						grid-column: span 6;
-						vertical-align: top; // Version mobile
-					}
 				}
 			}
 		}
