@@ -1,6 +1,6 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.0
+* @version 6.1
 *
 * ------------------
 * TABLE DES MATIERES
@@ -83,16 +83,6 @@
 						padding-right: 1rem;
 					}
 				}
-
-				&:hover,
-				&:active,
-				&:focus {
-					& .navigation {
-						&__figcaption::before {
-							background-image: url(../images/icones/nouveau--hover.svg);
-						}
-					}
-				}
 			}
 		}
 
@@ -101,7 +91,7 @@
 		// Toutes les icônes
 
 		@media screen and (prefers-color-scheme: dark) {
-			&.courant,
+			&.navigation__lien--courant,
 			&:hover,
 			&:focus {
 				& svg {
@@ -119,7 +109,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .SOS {
@@ -150,7 +140,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .alaia {
@@ -181,7 +171,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .altitude {
@@ -212,7 +202,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .aquafina {
@@ -243,7 +233,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .boreal {
@@ -274,7 +264,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .danseenboites {
@@ -305,7 +295,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .destinations {
@@ -336,7 +326,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .elite {
@@ -367,7 +357,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .festivaloff {
@@ -398,7 +388,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .grosseile {
@@ -429,7 +419,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .manueldetypo {
@@ -460,7 +450,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .memorize {
@@ -491,7 +481,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .creativite {
@@ -522,7 +512,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .mexico {
@@ -553,7 +543,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .presto {
@@ -584,7 +574,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .controle {
@@ -615,7 +605,7 @@
 			}
 		}
 
-		&.courant,
+		&.navigation__lien--courant,
 		&:hover,
 		&:focus {
 			& .tim {
