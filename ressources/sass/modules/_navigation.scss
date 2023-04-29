@@ -73,7 +73,8 @@
 				@include soulignementLiens($mode: "sombre");
 			}
 
-			&:link {
+			&:link,
+			&:visited {
 				border: solid 1px transparent;
 				border-radius: 2.5rem;
 				transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
@@ -81,9 +82,6 @@
 				@media screen and (min-width: $mobile600px) {
 					border-radius: 3rem;
 				}
-			}
-
-			&:visited {
 			}
 
 			&:hover,
@@ -258,16 +256,20 @@
 				}
 			}
 
-			&.courant {
-				& .icone {
-					border: none;
+			&.navigation {
+				&__lien {
+					&--courant {
+						& .icone {
+							border: none;
 
-					@media screen and (prefers-color-scheme: dark) {
-						border: 0.2rem solid $jauneOfficiel;
+							@media screen and (prefers-color-scheme: dark) {
+								border: 0.2rem solid $jauneOfficiel;
 
-						&:hover,
-						&:focus {
-							border: 0.2rem solid $jauneOfficiel;
+								&:hover,
+								&:focus {
+									border: 0.2rem solid $jauneOfficiel;
+								}
+							}
 						}
 					}
 				}
@@ -342,37 +344,32 @@
 				width: initial;
 			}
 
-			& .courant {
-				@include boutonPageCourante;
-				text-decoration: none;
-			}
-
-			& .navigation__lien {
-				font-size: 2rem;
-				@media screen and (min-width: 550px) {
-					font-size: 2.4rem;
-				}
-				padding: 1rem 2.7rem;
-				margin: 0 0.3rem;
-
-				&:hover,
-				&:focus {
-					@include boutonSurvol;
-					text-decoration: none;
-
-					&.courant {
-						border: none;
-						padding: 1.3rem 3rem;
+			& .navigation {
+				&__lien {
+					&--courant {
+						@include boutonPageCourante;
+						text-decoration: none;
 					}
 				}
+			}
 
-				&:active {
-					@include boutonActif;
+			& .navigation {
+				&__lien {
+					font-size: 2rem;
+					@media screen and (min-width: 550px) {
+						font-size: 2.4rem;
+					}
+					padding: 1rem 2.7rem;
+					margin: 0 0.3rem;
 
-					&.courant {
-						border: none;
-						padding: 1.3rem 3rem;
-						margin: 0 0.3rem;
+					&:hover,
+					&:focus {
+						@include boutonSurvol;
+						text-decoration: none;
+					}
+
+					&:active {
+						@include boutonActif;
 					}
 				}
 			}
@@ -387,48 +384,62 @@
 				&__lien {
 					&:hover,
 					&:focus {
-						& .navigation__figcaption {
-							border: none;
-							text-decoration: none;
-							@include boutonSurvol;
+						& .navigation {
+							&__figcaption {
+								border: none;
+								text-decoration: none;
+								@include boutonSurvol;
 
-							@media screen and (prefers-color-scheme: dark) {
-								border: 3px solid $gris65AAA;
-								background: transparent;
-								color: $blancSombre;
+								@media screen and (prefers-color-scheme: dark) {
+									border: 3px solid $gris65AAA;
+									background: transparent;
+									color: $blancSombre;
+								}
 							}
 						}
 
-						&.courant {
-							& .navigation__figcaption {
-								border: none;
-								padding: 1.3rem 2.3rem;
+						&.navigation {
+							&__lien {
+								&--courant {
+									& .navigation__figcaption {
+										border: none;
+										padding: 1.3rem 2.3rem;
 
-								@media screen and (prefers-color-scheme: dark) {
-									border: 0.3rem solid $jauneOfficiel;
+										@media screen and (prefers-color-scheme: dark) {
+											border: 0.3rem solid $jauneOfficiel;
+										}
+									}
 								}
 							}
 						}
 					}
 
 					&:active {
-						& .navigation__figcaption {
-							@include boutonActif;
+						& .navigation {
+							&__figcaption {
+								@include boutonActif;
 
-							@media screen and (prefers-color-scheme: dark) {
-								color: $noirSombre;
+								@media screen and (prefers-color-scheme: dark) {
+									color: $noirSombre;
+								}
 							}
 						}
 					}
 
-					&.courant {
-						& .navigation__figcaption {
-							@include boutonPageCourante;
-							padding: 1rem 2rem;
-							text-decoration: none;
+					&.navigation {
+						&__lien {
+							&--courant {
+								& .navigation {
+									&__figcaption {
+										@include boutonPageCourante;
+										padding: 1rem 2rem;
+										text-decoration: none;
 
-							@media screen and (prefers-color-scheme: dark) {
-								padding: 1.3rem 2.3rem;
+										@media screen and (prefers-color-scheme: dark) {
+											padding: 1.3rem 2.3rem;
+										}
+									}
+								}
 							}
 						}
 					}

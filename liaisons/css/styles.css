@@ -825,13 +825,13 @@ body {
     text-underline-offset: 0.3rem;
   }
 }
-.entete .navigation__lien:link {
+.entete .navigation__lien:link, .entete .navigation__lien:visited {
   border: solid 1px transparent;
   border-radius: 2.5rem;
   transition: background 0.1s ease-in-out;
 }
 @media screen and (min-width: 600px) {
-  .entete .navigation__lien:link {
+  .entete .navigation__lien:link, .entete .navigation__lien:visited {
     border-radius: 3rem;
   }
 }
@@ -1009,14 +1009,14 @@ body {
     border: 0.2rem solid #a6a6a6;
   }
 }
-.projets .navigation__lien.courant .icone {
+.projets .navigation__lien.navigation__lien--courant .icone {
   border: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien.courant .icone {
+  .projets .navigation__lien.navigation__lien--courant .icone {
     border: 0.2rem solid #ffe100;
   }
-  .projets .navigation__lien.courant .icone:hover, .projets .navigation__lien.courant .icone:focus {
+  .projets .navigation__lien.navigation__lien--courant .icone:hover, .projets .navigation__lien.navigation__lien--courant .icone:focus {
     border: 0.2rem solid #ffe100;
   }
 }
@@ -1100,13 +1100,13 @@ body {
 .projets .navigation__rangee-sections > * {
   width: initial;
 }
-.projets .navigation__rangee-sections .courant {
+.projets .navigation__rangee-sections .navigation__lien--courant {
   border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-sections .courant {
+  .projets .navigation__rangee-sections .navigation__lien--courant {
     box-shadow: none;
   }
 }
@@ -1130,10 +1130,6 @@ body {
     box-shadow: none;
   }
 }
-.projets .navigation__rangee-sections .navigation__lien:hover.courant, .projets .navigation__rangee-sections .navigation__lien:focus.courant {
-  border: none;
-  padding: 1.3rem 3rem;
-}
 .projets .navigation__rangee-sections .navigation__lien:active {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
@@ -1142,11 +1138,6 @@ body {
   .projets .navigation__rangee-sections .navigation__lien:active {
     box-shadow: none;
   }
-}
-.projets .navigation__rangee-sections .navigation__lien:active.courant {
-  border: none;
-  padding: 1.3rem 3rem;
-  margin: 0 0.3rem;
 }
 @supports (grid-template-columns: minmax(auto, 1400px)) {
   @media (min-width: 600px) {
@@ -1176,12 +1167,12 @@ body {
     color: #e6e6e6;
   }
 }
-.projets .navigation__rangee-projets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus.courant .navigation__figcaption {
+.projets .navigation__rangee-projets .navigation__lien:hover.navigation__lien--courant .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus.navigation__lien--courant .navigation__figcaption {
   border: none;
   padding: 1.3rem 2.3rem;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-projets .navigation__lien:hover.courant .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus.courant .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien:hover.navigation__lien--courant .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus.navigation__lien--courant .navigation__figcaption {
     border: 0.3rem solid #ffe100;
   }
 }
@@ -1199,19 +1190,19 @@ body {
     color: #0d0d0d;
   }
 }
-.projets .navigation__rangee-projets .navigation__lien.courant .navigation__figcaption {
+.projets .navigation__rangee-projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
   border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-projets .navigation__lien.courant .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
     box-shadow: none;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-projets .navigation__lien.courant .navigation__figcaption {
+  .projets .navigation__rangee-projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
     padding: 1.3rem 2.3rem;
   }
 }
