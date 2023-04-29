@@ -931,14 +931,6 @@ body {
     padding: 0 3rem;
   }
 }
-@media screen and (min-width: 900px) {
-  .projets .navigation__liste.rangeeSections {
-    padding: 1rem 0 1rem 3rem;
-  }
-}
-.projets .navigation__liste.rangeeSections > * {
-  width: initial;
-}
 .projets .navigation__item {
   display: inline-block;
   vertical-align: top;
@@ -1100,50 +1092,58 @@ body {
     border: 0.3rem solid transparent;
   }
 }
-.projets .navigation .rangeeSections .courant {
+@media screen and (min-width: 900px) {
+  .projets .navigation__rangee-sections {
+    padding: 1rem 0 1rem 3rem;
+  }
+}
+.projets .navigation__rangee-sections > * {
+  width: initial;
+}
+.projets .navigation__rangee-sections .courant {
   border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeSections .courant {
+  .projets .navigation__rangee-sections .courant {
     box-shadow: none;
   }
 }
-.projets .navigation .rangeeSections .navigation__lien {
+.projets .navigation__rangee-sections .navigation__lien {
   font-size: 2rem;
   padding: 1rem 2.7rem;
   margin: 0 0.3rem;
 }
 @media screen and (min-width: 550px) {
-  .projets .navigation .rangeeSections .navigation__lien {
+  .projets .navigation__rangee-sections .navigation__lien {
     font-size: 2.4rem;
   }
 }
-.projets .navigation .rangeeSections .navigation__lien:hover, .projets .navigation .rangeeSections .navigation__lien:focus {
+.projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFE100 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeSections .navigation__lien:hover, .projets .navigation .rangeeSections .navigation__lien:focus {
+  .projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
     box-shadow: none;
   }
 }
-.projets .navigation .rangeeSections .navigation__lien:hover.courant, .projets .navigation .rangeeSections .navigation__lien:focus.courant {
+.projets .navigation__rangee-sections .navigation__lien:hover.courant, .projets .navigation__rangee-sections .navigation__lien:focus.courant {
   border: none;
   padding: 1.3rem 3rem;
 }
-.projets .navigation .rangeeSections .navigation__lien:active {
+.projets .navigation__rangee-sections .navigation__lien:active {
   background: linear-gradient(187.52deg, #FFF000 6.26%, #FFD700 93.03%);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation .rangeeSections .navigation__lien:active {
+  .projets .navigation__rangee-sections .navigation__lien:active {
     box-shadow: none;
   }
 }
-.projets .navigation .rangeeSections .navigation__lien:active.courant {
+.projets .navigation__rangee-sections .navigation__lien:active.courant {
   border: none;
   padding: 1.3rem 3rem;
   margin: 0 0.3rem;

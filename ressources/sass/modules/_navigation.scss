@@ -191,16 +191,6 @@
 			@media screen and (min-width: $tablet900px) {
 				padding: 0 3rem;
 			}
-
-			&.rangeeSections {
-				@media screen and (min-width: $tablet900px) {
-					padding: 1rem 0 1rem 3rem;
-				}
-
-				& > * {
-					width: initial;
-				}
-			}
 		}
 
 		&__item {
@@ -343,8 +333,15 @@
 		}
 
 		// Styles spécifique aux liens des titres de sections
-		// TODO clarifier rangeeSections = rangee navigation dans chaque projet
-		& .rangeeSections {
+		&__rangee-sections {
+			@media screen and (min-width: $tablet900px) {
+				padding: 1rem 0 1rem 3rem;
+			}
+
+			& > * {
+				width: initial;
+			}
+
 			& .courant {
 				@include boutonPageCourante;
 				text-decoration: none;
