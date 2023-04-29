@@ -758,7 +758,7 @@ body {
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
-* @version 4.3
+* @version 4.4
 */
 /* En-tête */
 .entete .navigation {
@@ -825,13 +825,13 @@ body {
     text-underline-offset: 0.3rem;
   }
 }
-.entete .navigation__lien:link, .entete .navigation__lien:visited {
+.entete .navigation__lien:link {
   border: solid 1px transparent;
   border-radius: 2.5rem;
   transition: background 0.1s ease-in-out;
 }
 @media screen and (min-width: 600px) {
-  .entete .navigation__lien:link, .entete .navigation__lien:visited {
+  .entete .navigation__lien:link {
     border-radius: 3rem;
   }
 }
@@ -890,7 +890,7 @@ body {
     box-shadow: none;
   }
 }
-.entete .navigation__lien.courante {
+.entete .navigation__lien.navigation__lien--courant {
   border: 3px solid rgb(255, 225, 0);
   box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
   line-height: 120%;
@@ -898,26 +898,29 @@ body {
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .entete .navigation__lien.courante {
+  .entete .navigation__lien.navigation__lien--courant {
     box-shadow: none;
   }
 }
 @media screen and (min-width: 520px) {
-  .entete .navigation__lien.courante {
+  .entete .navigation__lien.navigation__lien--courant {
     padding: 1.2rem 2.8rem;
   }
 }
-.entete .navigation__lien.courante:hover {
+.entete .navigation__lien.navigation__lien--courant:hover {
   border: none;
   padding: 1.3rem 1.8rem;
 }
 @media screen and (min-width: 520px) {
-  .entete .navigation__lien.courante:hover {
+  .entete .navigation__lien.navigation__lien--courant:hover {
     padding: 1.5rem 3.1rem;
   }
 }
 
 /* Projets */
+.projets {
+  /* Modificateur menu de navigation */
+}
 .projets .navigation__liste {
   list-style-type: none;
   padding: 0;
@@ -1212,8 +1215,6 @@ body {
     padding: 1.3rem 2.3rem;
   }
 }
-
-/* Modificateur menu de navigation */
 @media screen and (min-width: 900px) {
   .projets--menu .navigation__item {
     grid-column: span 3;
