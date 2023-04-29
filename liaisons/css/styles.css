@@ -447,14 +447,24 @@ template {
   font-family: Roboto-BoldItalic;
   src: url(../../liaisons/polices/roboto-boldItalic.woff2) format("woff2"), url(../../liaisons/polices/roboto-boldItalic.woff) format("woff"), url(../../liaisons/polices/roboto-boldItalic.ttf) format("truetype");
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Roboto-Medium, Arial, sans serif;
   font-weight: normal;
   line-height: 100%;
   letter-spacing: 0.05rem;
 }
 @media screen and (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: #e6e6e6;
   }
 }
@@ -467,7 +477,7 @@ h1 {
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 7rem;
-    padding: 10rem 0;
+    padding: 7.7rem 0;
   }
 }
 
@@ -2114,12 +2124,7 @@ img {
 }
 @media screen and (min-width: 900px) {
   .accueil__accroche {
-    margin: 20rem 0 15rem 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .accueil__accroche {
-    margin: 25rem 0 20rem 0;
+    margin: 20rem 0 13rem 0;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
