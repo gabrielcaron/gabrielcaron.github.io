@@ -13,6 +13,8 @@
 /* Styles généraux, tous les projets */
 
 .projets {
+	@include conteneur1400px;
+
 	&__selecteur {
 		@media screen and (min-width: $tablet900px) {
 			@include bulle();

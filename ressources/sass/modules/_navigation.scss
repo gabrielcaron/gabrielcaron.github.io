@@ -1,7 +1,7 @@
 /**
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
-* @version 4.3
+* @version 4.4
 */
 
 @mixin soulignementLiens($mode: "clair") {
@@ -22,144 +22,155 @@
 
 /* En-tête */
 
-.entete .navigation {
-	width: 100%;
-	@media screen and (min-width: $tablet900px) {
-		width: initial;
-	}
+.entete {
+	& .navigation {
+		width: 100%;
 
-	&__liste {
-		display: flex;
-		list-style-type: none;
-		padding: 0;
-		margin: 3.5rem 0;
-	}
-
-	&__item {
-		display: inline-block;
-
-		@media screen and (min-width: $mobile600px) {
-			margin-left: 1rem;
-		}
-	}
-
-	&__lien {
-		@include soulignementLiens();
-		display: inline-block;
-		font-family: $RobotoMedium;
-		font-size: 1.6rem;
-		color: $gris25;
-		line-height: 120%;
-		letter-spacing: $EspacementStandard;
-		padding: 1.2rem 1.7rem;
-		margin: 0 0.3rem;
-		text-align: center;
-
-		@media screen and (min-width: 520px) {
-			font-size: 2rem;
-			padding: 1.4rem 3rem;
-		}
 		@media screen and (min-width: $tablet900px) {
-			font-size: 1.8rem;
-		}
-		@media screen and (min-width: 1100px) {
-			font-size: 2rem;
+			width: initial;
 		}
 
-		@media screen and (prefers-color-scheme: dark) {
-			color: $blancSombre;
-			@include soulignementLiens($mode: "sombre");
+		&__liste {
+			display: flex;
+			list-style-type: none;
+			padding: 0;
+			margin: 3.5rem 0;
 		}
 
-		&:link,
-		&:visited {
-			border: solid 1px transparent;
-			border-radius: 2.5rem;
-			transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+		&__item {
+			display: inline-block;
 
 			@media screen and (min-width: $mobile600px) {
-				border-radius: 3rem;
+				margin-left: 1rem;
 			}
 		}
 
-		&:hover,
-		&:focus {
-			// Technique pour obtenir des coins arrondis avec un dégradé
-			position: relative;
-			$bordure: 1px;
-			background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
-			background-clip: padding-box;
-			border: solid $bordure transparent;
-			text-decoration: none;
-
-			@media screen and (prefers-color-scheme: dark) {
-				color: $gris25;
-			}
-
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: -1;
-				margin: -$bordure;
-				border-radius: inherit;
-				background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 100%);
-				box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #ffffff;
-
-				@media screen and (prefers-color-scheme: dark) {
-					background: linear-gradient(180deg, $noirSombre 0%, $noirSombre 100%);
-					box-shadow: none;
-				}
-			}
-		}
-
-		&:active {
-			// Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
-			position: relative;
-			$bordure: 1px;
-			background: linear-gradient(175deg, #fff000 6.26%, #ffd700 93.03%);
-			background-clip: padding-box;
-			border: solid $bordure transparent;
-
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: -1;
-				margin: -$bordure;
-				border-radius: inherit;
-				background: linear-gradient(180deg, #e6e6e6 0%, #ffffff 100%);
-				box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1),
-					3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-
-				@media screen and (prefers-color-scheme: dark) {
-					box-shadow: none;
-				}
-			}
-		}
-
-		&.courante {
-			@include boutonPageCourante;
+		&__lien {
+			@include soulignementLiens();
+			display: inline-block;
+			font-family: $RobotoMedium;
+			font-size: 1.6rem;
+			color: $gris25;
 			line-height: 120%;
-			padding: 1rem 1.5rem;
-			text-decoration: none;
+			letter-spacing: $EspacementStandard;
+			padding: 1.2rem 1.7rem;
+			margin: 0 0.3rem;
+			text-align: center;
 
 			@media screen and (min-width: 520px) {
-				padding: 1.2rem 2.8rem;
+				font-size: 2rem;
+				padding: 1.4rem 3rem;
+			}
+			@media screen and (min-width: $tablet900px) {
+				font-size: 1.8rem;
+			}
+			@media screen and (min-width: 1100px) {
+				font-size: 2rem;
 			}
 
-			&:hover {
-				border: none;
-				padding: 1.3rem 1.8rem;
+			@media screen and (prefers-color-scheme: dark) {
+				color: $blancSombre;
+				@include soulignementLiens($mode: "sombre");
+			}
 
-				@media screen and (min-width: 520px) {
-					padding: 1.5rem 3.1rem;
+			&:link,
+			&:visited {
+				border: solid 1px transparent;
+				border-radius: 2.5rem;
+				transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
+
+				@media screen and (min-width: $mobile600px) {
+					border-radius: 3rem;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				// Technique pour obtenir des coins arrondis avec un dégradé
+				position: relative;
+				$bordure: 1px;
+				background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
+				background-clip: padding-box;
+				border: solid $bordure transparent;
+				text-decoration: none;
+
+				@media screen and (prefers-color-scheme: dark) {
+					color: $gris25;
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: -1;
+					margin: -$bordure;
+					border-radius: inherit;
+					background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 100%);
+					box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #ffffff;
+
+					@media screen and (prefers-color-scheme: dark) {
+						background: linear-gradient(
+							180deg,
+							$noirSombre 0%,
+							$noirSombre 100%
+						);
+						box-shadow: none;
+					}
+				}
+			}
+
+			&:active {
+				// Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
+				position: relative;
+				$bordure: 1px;
+				background: linear-gradient(175deg, #fff000 6.26%, #ffd700 93.03%);
+				background-clip: padding-box;
+				border: solid $bordure transparent;
+
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					z-index: -1;
+					margin: -$bordure;
+					border-radius: inherit;
+					background: linear-gradient(180deg, #e6e6e6 0%, #ffffff 100%);
+					box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1),
+						3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+
+					@media screen and (prefers-color-scheme: dark) {
+						box-shadow: none;
+					}
+				}
+			}
+
+			&.navigation {
+				&__lien {
+					&--courant {
+						@include boutonPageCourante;
+						line-height: 120%;
+						padding: 1rem 1.5rem;
+						text-decoration: none;
+
+						@media screen and (min-width: 520px) {
+							padding: 1.2rem 2.8rem;
+						}
+
+						&:hover {
+							border: none;
+							padding: 1.3rem 1.8rem;
+
+							@media screen and (min-width: 520px) {
+								padding: 1.5rem 3.1rem;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -168,17 +179,162 @@
 
 /* Projets */
 
-.projets .navigation {
-	&__liste {
-		list-style-type: none;
-		padding: 0;
-		vertical-align: top;
+.projets {
+	& .navigation {
+		&__liste {
+			list-style-type: none;
+			padding: 0;
+			vertical-align: top;
 
-		@media screen and (min-width: $tablet900px) {
-			padding: 0 3rem;
+			@media screen and (min-width: $tablet900px) {
+				padding: 0 3rem;
+			}
 		}
 
-		&.rangeeSections {
+		&__item {
+			display: inline-block;
+			vertical-align: top;
+			padding: 1rem 0;
+			@media screen and (max-width: calc($mobile600px - 1px)) {
+				width: calc(50% - 1.3rem);
+			}
+
+			&.block {
+				display: block;
+				padding: 1.5rem 0;
+				@media screen and (min-width: 650px) {
+					display: inline-block;
+					padding: 1rem 0;
+				}
+			}
+
+			&:nth-child(odd) {
+				padding-right: 2rem;
+				@media screen and (min-width: $mobile600px) {
+					padding-right: initial;
+				}
+			}
+
+			@media screen and (min-width: $mobile600px) {
+				grid-column: span 6;
+			}
+
+			@media screen and (min-width: $tablet900px) {
+				grid-column: span 3;
+			}
+
+			@media screen and (min-width: $desktop1100px) {
+				grid-column: span 2;
+			}
+		}
+
+		&__lien {
+			@include soulignementLiens;
+			font-family: $RobotoMedium;
+			color: $gris25;
+			letter-spacing: $EspacementStandard;
+			line-height: 100%;
+			border-radius: $arrondiMobile;
+
+			@media screen and (prefers-color-scheme: dark) {
+				@include soulignementLiens($mode: "sombre");
+				color: $blancSombre;
+			}
+
+			&:hover,
+			&:focus {
+				@media screen and (prefers-color-scheme: dark) {
+					color: $gris25;
+				}
+
+				& .icone {
+					@media screen and (prefers-color-scheme: dark) {
+						border: 0.2rem solid $gris65AAA;
+					}
+				}
+			}
+
+			&.navigation {
+				&__lien {
+					&--courant {
+						& .icone {
+							border: none;
+							outline: none;
+
+							@media screen and (prefers-color-scheme: dark) {
+								border: 0.2rem solid $jauneOfficiel;
+
+								&:hover,
+								&:focus {
+									border: 0.2rem solid $jauneOfficiel;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__figure {
+			margin: 0;
+			text-align: center;
+
+			& .icone {
+				border: solid 0.2rem $blanc;
+				border-radius: $arrondiMobile;
+				box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
+					-5px -5px 25px 0px rgba(255, 255, 255, 1);
+
+				@media screen and (min-width: $mobile600px) {
+					border-radius: $arrondiTable;
+				}
+				@media screen and (min-width: $tablet900px) {
+					border-radius: $arrondiMobile;
+				}
+				@media screen and (min-width: $desktop1100px) {
+					border-radius: $arrondiMobile;
+				}
+				@media screen and (min-width: 1400px) {
+					border-radius: $arrondiTable;
+				}
+
+				@media screen and (prefers-color-scheme: dark) {
+					border: solid 0.2rem $grisContourIconeSombre;
+					box-shadow: none;
+
+					& .elevation {
+						fill: $grisElevationIconeSombre;
+					}
+				}
+			}
+		}
+
+		&__figcaption {
+			@include soulignementLiens();
+			font-family: $RobotoMedium;
+			font-size: 1.6rem;
+			display: inline-block;
+			line-height: 150%;
+			border-radius: $arrondiMobile;
+			margin-top: 0.5rem;
+			padding: 1.3rem 2.3rem;
+
+			@media screen and (min-width: $tablet900px) {
+				min-height: 5rem;
+			}
+
+			@media screen and (min-width: $desktop1200px) {
+				min-height: initial;
+			}
+
+			@media screen and (prefers-color-scheme: dark) {
+				@include soulignementLiens($mode: "sombre");
+				border: 0.3rem solid transparent;
+			}
+		}
+
+		// Styles spécifique aux liens des titres de sections
+		&__rangee-sections {
 			@media screen and (min-width: $tablet900px) {
 				padding: 1rem 0 1rem 3rem;
 			}
@@ -186,249 +342,95 @@
 			& > * {
 				width: initial;
 			}
-		}
-	}
 
-	&__item {
-		display: inline-block;
-		vertical-align: top;
-		padding: 1rem 0;
-		@media screen and (max-width: calc($mobile600px - 1px)) {
-			width: calc(50% - 1.3rem);
-		}
-
-		&.block {
-			display: block;
-			padding: 1.5rem 0;
-			@media screen and (min-width: 650px) {
-				display: inline-block;
-				padding: 1rem 0;
-			}
-		}
-
-		&:nth-child(odd) {
-			padding-right: 2rem;
-			@media screen and (min-width: $mobile600px) {
-				padding-right: initial;
-			}
-		}
-
-		@media screen and (min-width: $mobile600px) {
-			grid-column: span 6;
-		}
-
-		@media screen and (min-width: $tablet900px) {
-			grid-column: span 3;
-		}
-
-		@media screen and (min-width: $desktop1100px) {
-			grid-column: span 2;
-		}
-	}
-
-	&__lien {
-		@include soulignementLiens;
-		font-family: $RobotoMedium;
-		color: $gris25;
-		letter-spacing: $EspacementStandard;
-		line-height: 100%;
-		border-radius: $arrondiMobile;
-
-		@media screen and (prefers-color-scheme: dark) {
-			@include soulignementLiens($mode: "sombre");
-			color: $blancSombre;
-		}
-
-		&:hover,
-		&:focus {
-			@media screen and (prefers-color-scheme: dark) {
-				color: $gris25;
-			}
-
-			& .icone {
-				border: none;
-
-				@media screen and (prefers-color-scheme: dark) {
-					border: 0.2rem solid $gris65AAA;
+			& .navigation {
+				&__lien {
+					&--courant {
+						@include boutonPageCourante;
+						text-decoration: none;
+					}
 				}
 			}
-		}
 
-		&.courant {
-			& .icone {
-				border: none;
-
-				@media screen and (prefers-color-scheme: dark) {
-					border: 0.2rem solid $jauneOfficiel;
+			& .navigation {
+				&__lien {
+					font-size: 2rem;
+					@media screen and (min-width: 550px) {
+						font-size: 2.4rem;
+					}
+					padding: 1rem 2.7rem;
+					margin: 0 0.3rem;
 
 					&:hover,
 					&:focus {
-						border: 0.2rem solid $jauneOfficiel;
-					}
-				}
-			}
-		}
-	}
-
-	&__figure {
-		margin: 0;
-		text-align: center;
-
-		& .icone {
-			border: solid 0.2rem $blanc;
-			border-radius: $arrondiMobile;
-			box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
-				-5px -5px 25px 0px rgba(255, 255, 255, 1);
-
-			@media screen and (min-width: $mobile600px) {
-				border-radius: $arrondiTable;
-			}
-			@media screen and (min-width: $tablet900px) {
-				border-radius: $arrondiMobile;
-			}
-			@media screen and (min-width: $desktop1100px) {
-				border-radius: $arrondiMobile;
-			}
-			@media screen and (min-width: 1400px) {
-				border-radius: $arrondiTable;
-			}
-
-			@media screen and (prefers-color-scheme: dark) {
-				border: solid 0.2rem $grisContourIconeSombre;
-				box-shadow: none;
-
-				& .elevation {
-					fill: $grisElevationIconeSombre;
-				}
-			}
-		}
-	}
-
-	&__figcaption {
-		@include soulignementLiens();
-		font-family: $RobotoMedium;
-		font-size: 1.6rem;
-		display: inline-block;
-		line-height: 150%;
-		border-radius: $arrondiMobile;
-		margin-top: 0.5rem;
-		padding: 1.3rem 2.3rem;
-
-		@media screen and (min-width: $tablet900px) {
-			min-height: 5rem;
-		}
-
-		@media screen and (min-width: $desktop1200px) {
-			min-height: initial;
-		}
-
-		@media screen and (prefers-color-scheme: dark) {
-			@include soulignementLiens($mode: "sombre");
-			border: 0.3rem solid transparent;
-		}
-	}
-
-	// Styles spécifique aux liens des titres de sections
-	// TODO clarifier rangeeSections = rangee navigation dans chaque projet
-	& .rangeeSections {
-		& .courant {
-			@include boutonPageCourante;
-			text-decoration: none;
-		}
-
-		& .navigation__lien {
-			font-size: 2rem;
-			@media screen and (min-width: 550px) {
-				font-size: 2.4rem;
-			}
-			padding: 1rem 2.7rem;
-			margin: 0 0.3rem;
-
-			&:hover,
-			&:focus {
-				@include boutonSurvol;
-				text-decoration: none;
-
-				&.courant {
-					border: none;
-					padding: 1.3rem 3rem;
-				}
-			}
-
-			&:active {
-				@include boutonActif;
-
-				&.courant {
-					border: none;
-					padding: 1.3rem 3rem;
-					margin: 0 0.3rem;
-				}
-			}
-		}
-	}
-
-	// Styles spécifiques aux liens des projets
-
-	&__rangee-projets {
-		@include rangeeGrid();
-
-		.navigation {
-			&__lien {
-				&:hover,
-				&:focus {
-					& .navigation__figcaption {
-						border: none;
-						text-decoration: none;
 						@include boutonSurvol;
+						text-decoration: none;
+						padding: 1.4rem 2.7rem;
 
-						@media screen and (prefers-color-scheme: dark) {
-							border: 3px solid $gris65AAA;
-							background: transparent;
-							color: $blancSombre;
-						}
-					}
-
-					&.courant {
-						& .navigation__figcaption {
-							border: none;
-							padding: 1.3rem 2.3rem;
-
-							@media screen and (prefers-color-scheme: dark) {
-								border: 0.3rem solid $jauneOfficiel;
+						&.navigation {
+							&__lien {
+								&--courant {
+									border: none;
+									padding: 1.3rem 3rem;
+								}
 							}
 						}
 					}
 				}
+			}
+		}
 
-				&:active {
-					& .navigation__figcaption {
-						@include boutonActif;
+		// Styles spécifiques aux liens des projets
 
-						@media screen and (prefers-color-scheme: dark) {
-							color: $noirSombre;
+		&__rangee-projets {
+			@include rangeeGrid();
+
+			.navigation {
+				&__lien {
+					&:hover,
+					&:focus {
+						& .navigation {
+							&__figcaption {
+								text-decoration: none;
+							}
 						}
 					}
-				}
 
-				&.courant {
-					& .navigation__figcaption {
-						@include boutonPageCourante;
-						padding: 1rem 2rem;
-						text-decoration: none;
+					&:active {
+						& .navigation {
+							&__figcaption {
+								@include boutonActif;
 
-						@media screen and (prefers-color-scheme: dark) {
-							padding: 1.3rem 2.3rem;
+								@media screen and (prefers-color-scheme: dark) {
+									color: $noirSombre;
+								}
+							}
+						}
+					}
+
+					&.navigation {
+						&__lien {
+							&--courant {
+								& .navigation {
+									&__figcaption {
+										@include boutonPageCourante;
+										padding: 1rem 2rem;
+										text-decoration: none;
+
+										@media screen and (prefers-color-scheme: dark) {
+											padding: 1.3rem 2.3rem;
+										}
+									}
+								}
+							}
 						}
 					}
 				}
 			}
 		}
 	}
-}
 
-/* Modificateur menu de navigation */
-
-.projets {
+	/* Modificateur menu de navigation */
 	&--menu {
 		.navigation {
 			&__item {
@@ -476,34 +478,37 @@
 
 .pied-de-page {
 	.navigation {
-		grid-column: 1 / 13;
 		@media screen and (min-width: 600px) {
+			grid-column: 1 / 13;
 			@include rangeeGrid();
 			row-gap: 0;
-		}
 
-		.rangee1 {
-			grid-row: 1;
-		}
+			.rangee1 {
+				grid-row: 1;
+			}
 
-		.rangee2 {
-			grid-row: 2;
-		}
+			.rangee2 {
+				grid-row: 2;
+			}
 
-		.rangee3 {
-			grid-row: 3;
-		}
+			.rangee3 {
+				grid-row: 3;
+			}
 
-		.rangee4 {
-			grid-row: 4;
+			.rangee4 {
+				grid-row: 4;
+			}
 		}
 
 		&__titre {
-			grid-column: span 4;
 			color: $noir;
 			text-decoration: none;
 			line-height: 110%;
 			font-size: 2.5rem;
+
+			@media screen and (min-width: $mobile600px) {
+				grid-column: span 4;
+			}
 
 			@media screen and (prefers-color-scheme: dark) {
 				color: $blancSombre;
@@ -520,10 +525,13 @@
 		}
 
 		&__liste {
-			grid-column: span 4;
 			list-style-type: none;
 			padding: 0;
 			margin-top: 0;
+
+			@media screen and (min-width: $mobile600px) {
+				grid-column: span 4;
+			}
 		}
 
 		&__lien {
@@ -559,6 +567,8 @@
 	}
 
 	&__copyright {
-		grid-column: 1 / 13;
+		@media screen and (min-width: $mobile600px) {
+			grid-column: 1 / 13;
+		}
 	}
 }
