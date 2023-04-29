@@ -11,6 +11,8 @@
 */
 
 .contact {
+	@include conteneur1400px;
+
 	&__titre {
 		padding: 2rem 0 1rem 0;
 		@media screen and (min-width: $mobile600px) {
