@@ -1,4 +1,4 @@
-/**
+/*
 * Styles des balises racine
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 1.1
@@ -6,53 +6,54 @@
 
 /* Base décimale */
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+	font-size: 62.5%;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: $gris98;
+	background-color: $gris98;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: $noirSombre;
-  }
+	@media screen and (prefers-color-scheme: dark) {
+		background-color: $noirSombre;
+	}
 
-  @media screen and (min-width: $tablet900px) {
-    background-image: url("../images/design/texture-vagues.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 17rem;
-  }
+	@media screen and (min-width: $tablet900px) {
+		background-image: url("../images/design/texture-vagues.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-y: 17rem;
+	}
 
-  @media screen and (min-width: $tablet900px) and (prefers-color-scheme: dark) {
-    background-image: url("../images/design/texture-vagues--sombre.svg");
-  }
+	@media screen and (min-width: $tablet900px) and (prefers-color-scheme: dark) {
+		background-image: url("../images/design/texture-vagues--sombre.svg");
+	}
 }
 
 a {
-  text-underline-offset: 0.3rem;
-  outline-offset: 1rem;
+	text-underline-offset: 0.3rem;
+	outline-offset: 1rem;
 
-  &:hover {
-    text-decoration: none;
-  }
+	&:hover {
+		text-decoration: none;
+	}
 
-  @media screen and (prefers-color-scheme: dark) {
-    color: $blancSombre;
-  }
+	@media screen and (prefers-color-scheme: dark) {
+		color: $blancSombre;
+	}
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  li, figcaption {
-    color: $blancSombre;
-  }
+	li,
+	figcaption {
+		color: $blancSombre;
+	}
 }
 
 abbr[title] {
-  text-decoration-style: dotted;
+	text-decoration-style: dotted;
 }
 
 img {
-  vertical-align: bottom;
-  max-width: 100%;
+	vertical-align: bottom;
+	max-width: 100%;
 }

@@ -1,39 +1,30 @@
-/**
+/*
+* Grille de développement
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 3.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* Classe conteneur pour le centrage du bloc parent avec CSS Grid
-* Classe conteneur pour le positionnement de la rangée enfant en Grid
-* Classe conteneur pour le positionnement de la rangée enfant en flexbox
+* @version 1.0
 */
-
-
 
 /*** DEV seulement - Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
-  @include paddingConteneur;
-  @media (min-width: $mobile600px) {
-	display: grid;
-	grid-template-columns: minmax(auto, 1400px);
-	justify-content: center;
-  }
+	@include paddingConteneur;
+	@media (min-width: $mobile600px) {
+		display: grid;
+		grid-template-columns: minmax(auto, 1400px);
+		justify-content: center;
+	}
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en Grid ***/
 .rangeeGrid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 2rem;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 2rem;
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
 @media (min-width: 600px) {
-  .rangeeFlex {
-	display: flex;
-	justify-content: space-between;
-  }
-
+	.rangeeFlex {
+		display: flex;
+		justify-content: space-between;
+	}
 }
