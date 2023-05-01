@@ -1,23 +1,7 @@
-/**
-* @author Gabriel Caron - 1861095@csfoy.ca
+/*
+* Mixins de la grille
+* @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2.5
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* UTILITAIRES DE BASE
-** Box sizing
-* Clearfix
-* ACCESSIBILITÉ
-** Visually hidden/screen reader only
-** Lien sauter au contenu
-* TYPOGRAPHIE
-* Fonction pour convertir une valeur de font-size en pixels à son équivalent rem
-* Mixin qui inclus la solution de repli en pixel suivi par la valeur calculée en rem
-* Mixin pour conteneur de base à 1200px
-* Mixin pour rangée Flex par défaut
-* Mixin pour rangée Grid sur 12 colonnes
-* Mixin pour le padding de base pour mobile
 */
 
 /***** Accessibilité *****/

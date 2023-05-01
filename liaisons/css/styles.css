@@ -339,45 +339,20 @@ template {
 
 /**** UTILITAIRES ****/
 /** Variables **/
-/**
-* Variables des modules
- * @author Gabriel Caron <1861095@csfoy.ca>
- * @version 1.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* VARIABLES
-* PALETTES DE COULEURS
-** Couleurs de base
-** Autres couleurs
-* POINTS DE RUPTURE
+/*
+* Variables globales
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 1.1
 */
 /** Palette de couleurs **/
 /* Couleurs de base AAA */
 /* Polices */
 /** Points de rupture **/
 /** Mixins **/
-/**
-* @author Gabriel Caron - 1861095@csfoy.ca
+/*
+* Mixins de la grille
+* @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2.5
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* UTILITAIRES DE BASE
-** Box sizing
-* Clearfix
-* ACCESSIBILITÉ
-** Visually hidden/screen reader only
-** Lien sauter au contenu
-* TYPOGRAPHIE
-* Fonction pour convertir une valeur de font-size en pixels à son équivalent rem
-* Mixin qui inclus la solution de repli en pixel suivi par la valeur calculée en rem
-* Mixin pour conteneur de base à 1200px
-* Mixin pour rangée Flex par défaut
-* Mixin pour rangée Grid sur 12 colonnes
-* Mixin pour le padding de base pour mobile
 */
 /***** Accessibilité *****/
 .visuallyhidden,
@@ -413,14 +388,10 @@ template {
 
 /****** BASE ******/
 /** Typographie **/
-/**
+/*
+* Polices de base
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 5.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* Polices
 */
 /* Polices */
 @font-face {
@@ -560,16 +531,10 @@ body {
 }
 
 /** Grille **/
-/**
+/*
+* Grille de développement
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 3.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* Classe conteneur pour le centrage du bloc parent avec CSS Grid
-* Classe conteneur pour le positionnement de la rangée enfant en Grid
-* Classe conteneur pour le positionnement de la rangée enfant en flexbox
+* @version 1.0
 */
 /*** DEV seulement - Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
@@ -612,31 +577,20 @@ body {
   }
 }
 /** Boutons **/
-/**
+/*
+* Mixins des boutons
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 1.0
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* BOUTONS
-*
 */
 /* Styles pour l'état survol */
 /* Styles pour l'état actif */
 /* Styles pour la page courante */
 /****** MODULES ******/
 /** Entete **/
-/**
+/*
+* En-tête
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2.0
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* EN-TÊTE
-*
-*
 */
 .entete {
   padding-left: 3rem;
@@ -765,9 +719,9 @@ body {
   padding-top: 5.5rem;
 }
 
-/**
+/*
+* Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @version 4.4
 */
 /* En-tête */
@@ -1018,13 +972,9 @@ body {
 }
 .projets .navigation__lien.navigation__lien--courant .icone {
   border: none;
-  outline: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien.navigation__lien--courant .icone {
-    border: 0.2rem solid #ffe100;
-  }
-  .projets .navigation__lien.navigation__lien--courant .icone:hover, .projets .navigation__lien.navigation__lien--courant .icone:focus {
     border: 0.2rem solid #ffe100;
   }
 }
@@ -1322,16 +1272,10 @@ body {
 }
 
 /** Pied de page **/
-/**
+/*
+* Pied de page
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 1.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* PIED DE PAGE
-*
-*
 */
 .pied-de-page {
   padding-left: 3rem;
@@ -1479,17 +1423,10 @@ body {
 }
 
 /** Icônes **/
-/**
+/*
+* Icônes des projets
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 6.1
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* ICONES DES PROJETS
-** Conteneur
-*
-*
 */
 /* État survol des icônes des projets */
 @media screen and (min-width: 600px) {
@@ -2008,7 +1945,7 @@ body {
 }
 
 /********* LAYOUT *********/
-/**
+/*
 * Styles des balises racine
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 1.1
@@ -2056,7 +1993,8 @@ a:hover {
 }
 
 @media screen and (prefers-color-scheme: dark) {
-  li, figcaption {
+  li,
+  figcaption {
     color: #e6e6e6;
   }
 }
@@ -2069,11 +2007,10 @@ img {
   max-width: 100%;
 }
 
-/**
+/*
+* Mise en page de l'accueil
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @description Mise en page de l'accueil
 * @version 6.2
-* @date 21 avril 2023
 */
 .accueil .entete {
   padding-bottom: 0;
@@ -2372,16 +2309,10 @@ img {
   }
 }
 
-/**
+/*
+* Mise en page de la page Contact
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2.0
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* CONTACTER
-*
-*
 */
 .contact {
   padding-left: 3rem;
@@ -2570,16 +2501,10 @@ img {
   vertical-align: middle;
 }
 
-/**
+/*
+* Mise en page des projets
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 3.0
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* PROJETS
-*
-*
 */
 /* Styles généraux, tous les projets */
 .projets {
@@ -2754,16 +2679,10 @@ img {
   }
 }
 
-/**
+/*
+* Pages de contenu
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.0
-*
-* ------------------
-* TABLE DES MATIERES
-* ------------------
-* À PROPOS DE CE SITE + PAGES DE CONTENU
-*
-*
+* @version 1.1
 */
 .apropos .contenu {
   padding-left: 3rem;

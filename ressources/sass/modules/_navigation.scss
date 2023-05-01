@@ -1,6 +1,6 @@
-/**
+/*
+* Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @description Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @version 4.4
 */
 
@@ -259,15 +259,9 @@
 					&--courant {
 						& .icone {
 							border: none;
-							outline: none;
 
 							@media screen and (prefers-color-scheme: dark) {
 								border: 0.2rem solid $jauneOfficiel;
-
-								&:hover,
-								&:focus {
-									border: 0.2rem solid $jauneOfficiel;
-								}
 							}
 						}
 					}
