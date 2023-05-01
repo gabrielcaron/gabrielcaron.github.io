@@ -972,13 +972,9 @@ body {
 }
 .projets .navigation__lien.navigation__lien--courant .icone {
   border: none;
-  outline: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien.navigation__lien--courant .icone {
-    border: 0.2rem solid #ffe100;
-  }
-  .projets .navigation__lien.navigation__lien--courant .icone:hover, .projets .navigation__lien.navigation__lien--courant .icone:focus {
     border: 0.2rem solid #ffe100;
   }
 }

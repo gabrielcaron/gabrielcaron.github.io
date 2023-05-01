@@ -259,15 +259,9 @@
 					&--courant {
 						& .icone {
 							border: none;
-							outline: none;
 
 							@media screen and (prefers-color-scheme: dark) {
 								border: 0.2rem solid $jauneOfficiel;
-
-								&:hover,
-								&:focus {
-									border: 0.2rem solid $jauneOfficiel;
-								}
 							}
 						}
 					}
