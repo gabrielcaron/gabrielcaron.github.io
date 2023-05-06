@@ -308,18 +308,19 @@
 			font-family: $RobotoMedium;
 			font-size: 1.6rem;
 			display: inline-block;
-			line-height: 150%;
+			line-height: 125%;
 			border-radius: $arrondiMobile;
 			margin-top: 0.5rem;
 			padding: 1.3rem 2.3rem;
 
-			@media screen and (min-width: $tablet900px) {
-				min-height: 5rem;
-			}
+			// Seulement si demi-grille
+			// @media screen and (min-width: $tablet900px) {
+			// 	min-height: 5rem;
+			// }
 
-			@media screen and (min-width: $desktop1200px) {
-				min-height: initial;
-			}
+			// @media screen and (min-width: $desktop1200px) {
+			// 	min-height: initial;
+			// }
 
 			@media screen and (prefers-color-scheme: dark) {
 				@include soulignementLiens($mode: "sombre");
