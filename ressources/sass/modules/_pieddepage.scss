@@ -1,7 +1,7 @@
 /*
 * Pied de page
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.1
+* @version 1.2
 */
 
 .pied-de-page {
@@ -12,10 +12,6 @@
 
 	@media screen and (min-width: $tablet900px) {
 		padding: 0 5rem 0 5rem;
-	}
-
-	@media screen and (min-width: 1700px) {
-		border-radius: 20rem 0 0 0;
 	}
 
 	@media screen and (prefers-color-scheme: dark) {
