@@ -181,53 +181,6 @@
 
 .projets {
 	& .navigation {
-		&__liste {
-			list-style-type: none;
-			padding: 0;
-			vertical-align: top;
-
-			// @media screen and (min-width: $tablet900px) {
-			// 	padding: 0 3rem;
-			// }
-		}
-
-		&__item {
-			display: inline-block;
-			vertical-align: top;
-			padding: 1rem 0;
-			@media screen and (max-width: calc($mobile600px - 1px)) {
-				width: calc(50% - 1.3rem);
-			}
-
-			&.block {
-				display: block;
-				padding: 1.5rem 0;
-				@media screen and (min-width: 650px) {
-					display: inline-block;
-					padding: 1rem 0;
-				}
-			}
-
-			&:nth-child(odd) {
-				padding-right: 2rem;
-				@media screen and (min-width: $mobile600px) {
-					padding-right: initial;
-				}
-			}
-
-			@media screen and (min-width: $mobile600px) {
-				grid-column: span 6;
-			}
-
-			@media screen and (min-width: $tablet900px) {
-				grid-column: span 3;
-			}
-
-			@media screen and (min-width: $desktop1100px) {
-				grid-column: span 2;
-			}
-		}
-
 		&__lien {
 			@include soulignementLiens;
 			font-family: $RobotoMedium;
@@ -262,6 +215,18 @@
 
 							@media screen and (prefers-color-scheme: dark) {
 								border: 0.2rem solid $jauneOfficiel;
+							}
+						}
+
+						& .navigation {
+							&__figcaption {
+								@include boutonPageCourante;
+								padding: 1rem 2rem;
+								text-decoration: none;
+
+								@media screen and (prefers-color-scheme: dark) {
+									padding: 1.3rem 2.3rem;
+								}
 							}
 						}
 					}
@@ -328,8 +293,13 @@
 			}
 		}
 
-		// Styles spécifique aux liens des titres de sections
+		// Styles des liens des titres de sections
+
 		&__rangee-sections {
+			display: flex;
+			list-style-type: none;
+			padding: 0;
+
 			& > * {
 				width: initial;
 			}
@@ -371,12 +341,13 @@
 			}
 		}
 
-		// Styles spécifiques aux liens des projets
+		// Styles des liens des projets dans les menus
 
 		&__rangee-projets {
 			@include rangeeGrid();
+			padding: 0;
 
-			.navigation {
+			& .navigation {
 				&__lien {
 					&:hover,
 					&:focus {
@@ -398,39 +369,110 @@
 							}
 						}
 					}
+				}
 
-					&.navigation {
-						&__lien {
-							&--courant {
-								& .navigation {
-									&__figcaption {
-										@include boutonPageCourante;
-										padding: 1rem 2rem;
-										text-decoration: none;
+				&__liste {
+					list-style-type: none;
+					padding: 0;
+					vertical-align: top;
+				}
 
-										@media screen and (prefers-color-scheme: dark) {
-											padding: 1.3rem 2.3rem;
-										}
-									}
-								}
-							}
+				&__item {
+					display: inline-block;
+					vertical-align: top;
+					padding: 1rem 0;
+					@media screen and (max-width: calc($mobile600px - 1px)) {
+						width: calc(50% - 1.3rem);
+					}
+
+					&.block {
+						display: block;
+						padding: 1.5rem 0;
+						@media screen and (min-width: 650px) {
+							display: inline-block;
+							padding: 1rem 0;
 						}
 					}
+
+					&:nth-child(odd) {
+						padding-right: 2rem;
+						@media screen and (min-width: $mobile600px) {
+							padding-right: initial;
+						}
+					}
+
+					@media screen and (min-width: $mobile600px) {
+						grid-column: span 6;
+					}
+
+					@media screen and (min-width: $tablet900px) {
+						grid-column: span 3;
+					}
+
+					@media screen and (min-width: $desktop1100px) {
+						grid-column: span 2;
+					}
+				}
+			}
+		}
+
+		// Styles des liens des projets dans chaque fiche (sélecteur)
+
+		&__rangee-selecteur {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			@include rangeeGrid();
+			list-style-type: none;
+			padding: 0;
+
+			@media screen and (min-width: $desktop1100px) {
+				display: flex;
+				gap: 5rem;
+			}
+
+			& .navigation {
+				&__item {
+					width: 100%;
+
+					@media screen and (min-width: $mobile600px) {
+						grid-column: span 6;
+					}
+
+					@media screen and (min-width: $desktop1100px) {
+						width: initial;
+					}
+				}
+
+				&__figure {
+					display: flex;
+					align-items: center;
+					gap: 1.5rem;
+					text-align: left;
+
+					& .icone {
+						width: 8.5rem;
+						border-radius: 2rem;
+					}
+				}
+
+				&__figcaption {
+					padding: 0;
 				}
 			}
 		}
 	}
 
 	/* Modificateur menu de navigation */
-	&--menu {
-		.navigation {
-			&__item {
-				@media screen and (min-width: $tablet900px) {
-					grid-column: span 3;
-				}
-			}
-		}
-	}
+	// &--menu {
+	// 	.navigation {
+	// 		&__item {
+	// 			@media screen and (min-width: $tablet900px) {
+	// 				grid-column: span 3;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 /* Lien externe */
