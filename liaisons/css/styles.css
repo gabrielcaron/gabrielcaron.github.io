@@ -1955,19 +1955,6 @@ body {
     background-color: #0d0d0d;
   }
 }
-@media screen and (min-width: 900px) {
-  body {
-    background-image: url("../images/design/texture-vagues.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-y: 17rem;
-  }
-}
-@media screen and (min-width: 900px) and (prefers-color-scheme: dark) {
-  body {
-    background-image: url("../images/design/texture-vagues--sombre.svg");
-  }
-}
 
 a {
   text-underline-offset: 0.3rem;
