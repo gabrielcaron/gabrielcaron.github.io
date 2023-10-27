@@ -1,7 +1,7 @@
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.4
+* @version 4.5
 */
 
 @mixin soulignementLiens($mode: "clair") {
@@ -186,9 +186,9 @@
 			padding: 0;
 			vertical-align: top;
 
-			@media screen and (min-width: $tablet900px) {
-				padding: 0 3rem;
-			}
+			// @media screen and (min-width: $tablet900px) {
+			// 	padding: 0 3rem;
+			// }
 		}
 
 		&__item {
@@ -330,10 +330,6 @@
 
 		// Styles spécifique aux liens des titres de sections
 		&__rangee-sections {
-			@media screen and (min-width: $tablet900px) {
-				padding: 1rem 0 1rem 3rem;
-			}
-
 			& > * {
 				width: initial;
 			}
