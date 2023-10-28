@@ -952,7 +952,7 @@ body {
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__figure .icone {
-    border-radius: 5.5rem;
+    border-radius: 3rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -960,12 +960,7 @@ body {
     border-radius: 4rem;
   }
 }
-@media screen and (min-width: 1100px) {
-  .projets .navigation__figure .icone {
-    border-radius: 4rem;
-  }
-}
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .projets .navigation__figure .icone {
     border-radius: 5.5rem;
   }
@@ -1111,17 +1106,7 @@ body {
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__rangee-projets .navigation__item {
-    grid-column: span 6;
-  }
-}
-@media screen and (min-width: 900px) {
-  .projets .navigation__rangee-projets .navigation__item {
     grid-column: span 3;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .projets .navigation__rangee-projets .navigation__item {
-    grid-column: span 2;
   }
 }
 .projets .navigation__rangee-selecteur {
@@ -2024,7 +2009,7 @@ img {
 /*
 * Mise en page de l'accueil
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.2
+* @version 6.3
 */
 .accueil .entete {
   padding-bottom: 0;
@@ -2302,15 +2287,17 @@ img {
   text-decoration: none;
   color: #000;
 }
-.accueil .projets .navigation__lien-section::after {
-  background: url("../images/icones/fleche-section.svg") no-repeat center;
-  height: 3.5rem;
-  width: 3.5rem;
-  display: inline-block;
-  vertical-align: text-bottom;
-  margin-left: 1rem;
-  content: "";
-  transition: all 200ms ease-in-out;
+@media screen and (min-width: 600px) {
+  .accueil .projets .navigation__lien-section::after {
+    background: url("../images/icones/fleche-section.svg") no-repeat center;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 1rem;
+    content: "";
+    transition: all 200ms ease-in-out;
+  }
 }
 @media screen and (min-width: 1100px) {
   .accueil .projets .navigation__lien-section:hover::after, .accueil .projets .navigation__lien-section:focus::after {
@@ -2558,12 +2545,12 @@ img {
 }
 .projets__titre-h2 {
   display: inline-block;
-  margin: 4rem 0 0 1rem;
+  margin: 4rem 0 1rem 1rem;
   font-size: 4rem;
 }
 @media screen and (min-width: 900px) {
   .projets__titre-h2 {
-    margin: 4rem 0 0 5rem;
+    margin: 4rem 0 1rem 3rem;
   }
 }
 

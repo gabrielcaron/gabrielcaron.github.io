@@ -1,7 +1,7 @@
 /*
 * Mise en page de l'accueil
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.2
+* @version 6.3
 */
 
 .accueil {
@@ -47,33 +47,11 @@
 			margin: 20rem 0 13rem 0;
 		}
 
-		// @media screen and (min-width: $desktop1200px) {
-		// 	margin: 25rem 0 20rem 0;
-		// }
-
 		@media screen and (prefers-color-scheme: dark) {
 			color: $blancSombre;
 			text-shadow: none;
 		}
 	}
-
-	//   &__hashtags {
-	// 	text-align: center;
-	// 	margin-bottom: 10rem;
-	// 	color: $gris25;
-
-	// 	@media screen and (min-width: $tablet900px) {
-	// 	  margin-bottom: 15rem;
-	// 	}
-
-	// 	@media screen and (min-width: $desktop1200px) {
-	// 	  margin-bottom: 20rem;
-	// 	}
-
-	// 	@media screen and (prefers-color-scheme: dark) {
-	// 	  color: $gris65AAA;
-	// 	}
-	//   }
 
 	&__coeur {
 		height: 5rem;
@@ -232,9 +210,12 @@
 
 		.navigation {
 			&__lien-section {
-				@include fleche();
 				text-decoration: none;
 				color: $noir;
+
+				@media screen and (min-width: $mobile600px) {
+					@include fleche();
+				}
 
 				@media screen and (min-width: $desktop1100px) {
 					&:hover,

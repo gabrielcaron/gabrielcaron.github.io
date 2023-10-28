@@ -245,15 +245,12 @@
 					-5px -5px 25px 0px rgba(255, 255, 255, 1);
 
 				@media screen and (min-width: $mobile600px) {
-					border-radius: $arrondiTable;
+					border-radius: $arrondiMobile - 1rem;
 				}
 				@media screen and (min-width: $tablet900px) {
 					border-radius: $arrondiMobile;
 				}
-				@media screen and (min-width: $desktop1100px) {
-					border-radius: $arrondiMobile;
-				}
-				@media screen and (min-width: 1400px) {
+				@media screen and (min-width: $desktop1200px) {
 					border-radius: $arrondiTable;
 				}
 
@@ -402,15 +399,7 @@
 					}
 
 					@media screen and (min-width: $mobile600px) {
-						grid-column: span 6;
-					}
-
-					@media screen and (min-width: $tablet900px) {
 						grid-column: span 3;
-					}
-
-					@media screen and (min-width: $desktop1100px) {
-						grid-column: span 2;
 					}
 				}
 			}
