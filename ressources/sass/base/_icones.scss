@@ -64,7 +64,7 @@
 		// Nouveau projet
 
 		@media screen and (min-width: $mobile600px) {
-			&.navigation--nouveau {
+			&--nouveau {
 				& .navigation {
 					&__figcaption::before {
 						content: "";
