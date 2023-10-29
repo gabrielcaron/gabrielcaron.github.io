@@ -294,45 +294,34 @@
 
 		&__rangee-sections {
 			display: flex;
+			align-items: center;
 			list-style-type: none;
 			padding: 0;
 
-			& > * {
-				width: initial;
-			}
-
 			& .navigation {
 				&__lien {
+					display: inline-block;
+					font-size: 1.6rem;
+					text-align: center;
+					line-height: 120%;
+					padding: 1rem 1.5rem;
+
+					margin: 0 0.3rem;
+
+					@media screen and (min-width: 550px) {
+						font-size: 2.4rem;
+						padding: 1rem 2.7rem;
+					}
+
 					&--courant {
 						@include boutonPageCourante;
 						text-decoration: none;
 					}
-				}
-			}
-
-			& .navigation {
-				&__lien {
-					font-size: 2rem;
-					@media screen and (min-width: 550px) {
-						font-size: 2.4rem;
-					}
-					padding: 1rem 2.7rem;
-					margin: 0 0.3rem;
 
 					&:hover,
 					&:focus {
 						@include boutonSurvol;
 						text-decoration: none;
-						padding: 1.4rem 2.7rem;
-
-						&.navigation {
-							&__lien {
-								&--courant {
-									border: none;
-									padding: 1.3rem 3rem;
-								}
-							}
-						}
 					}
 				}
 			}
@@ -380,15 +369,6 @@
 					padding: 1rem 0;
 					@media screen and (max-width: calc($mobile600px - 1px)) {
 						width: calc(50% - 1.3rem);
-					}
-
-					&.block {
-						display: block;
-						padding: 1.5rem 0;
-						@media screen and (min-width: 650px) {
-							display: inline-block;
-							padding: 1rem 0;
-						}
 					}
 
 					&:nth-child(odd) {
