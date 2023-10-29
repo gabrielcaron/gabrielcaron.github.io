@@ -75,7 +75,6 @@
 
 			&:link,
 			&:visited {
-				border: solid 1px transparent;
 				border-radius: 2.5rem;
 				transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
 
@@ -86,67 +85,11 @@
 
 			&:hover,
 			&:focus {
-				// Technique pour obtenir des coins arrondis avec un dégradé
-				position: relative;
-				$bordure: 1px;
 				background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
-				background-clip: padding-box;
-				border: solid $bordure transparent;
 				text-decoration: none;
 
 				@media screen and (prefers-color-scheme: dark) {
 					color: $gris25;
-				}
-
-				&:before {
-					content: "";
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					z-index: -1;
-					margin: -$bordure;
-					border-radius: inherit;
-					background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 100%);
-					box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #ffffff;
-
-					@media screen and (prefers-color-scheme: dark) {
-						background: linear-gradient(
-							180deg,
-							$noirSombre 0%,
-							$noirSombre 100%
-						);
-						box-shadow: none;
-					}
-				}
-			}
-
-			&:active {
-				// Cette technique est nécessaire pour obtenir des coins arrondis avec un dégradé
-				position: relative;
-				$bordure: 1px;
-				background: linear-gradient(175deg, #fff000 6.26%, #ffd700 93.03%);
-				background-clip: padding-box;
-				border: solid $bordure transparent;
-
-				&:before {
-					content: "";
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					z-index: -1;
-					margin: -$bordure;
-					border-radius: inherit;
-					background: linear-gradient(180deg, #e6e6e6 0%, #ffffff 100%);
-					box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 1),
-						3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-
-					@media screen and (prefers-color-scheme: dark) {
-						box-shadow: none;
-					}
 				}
 			}
 
@@ -431,17 +374,6 @@
 			}
 		}
 	}
-
-	/* Modificateur menu de navigation */
-	// &--menu {
-	// 	.navigation {
-	// 		&__item {
-	// 			@media screen and (min-width: $tablet900px) {
-	// 				grid-column: span 3;
-	// 			}
-	// 		}
-	// 	}
-	// }
 }
 
 /* Lien externe */

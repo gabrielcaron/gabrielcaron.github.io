@@ -790,7 +790,6 @@ body {
   }
 }
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
-  border: solid 1px transparent;
   border-radius: 2.5rem;
   transition: background 0.1s ease-in-out;
 }
@@ -800,58 +799,12 @@ body {
   }
 }
 .entete .navigation__lien:hover, .entete .navigation__lien:focus {
-  position: relative;
   background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
-  background-clip: padding-box;
-  border: solid 1px transparent;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien:hover, .entete .navigation__lien:focus {
     color: #404040;
-  }
-}
-.entete .navigation__lien:hover:before, .entete .navigation__lien:focus:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -1px;
-  border-radius: inherit;
-  background: linear-gradient(180deg, #ffffff 0%, #e6e6e6 100%);
-  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px #ffffff;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .entete .navigation__lien:hover:before, .entete .navigation__lien:focus:before {
-    background: linear-gradient(180deg, #0d0d0d 0%, #0d0d0d 100%);
-    box-shadow: none;
-  }
-}
-.entete .navigation__lien:active {
-  position: relative;
-  background: linear-gradient(175deg, #fff000 6.26%, #ffd700 93.03%);
-  background-clip: padding-box;
-  border: solid 1px transparent;
-}
-.entete .navigation__lien:active:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -1px;
-  border-radius: inherit;
-  background: linear-gradient(180deg, #e6e6e6 0%, #ffffff 100%);
-  box-shadow: -5px -5px 20px 0px rgb(255, 255, 255), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
-}
-@media screen and (prefers-color-scheme: dark) {
-  .entete .navigation__lien:active:before {
-    box-shadow: none;
   }
 }
 .entete .navigation__lien.navigation__lien--courant {
@@ -882,9 +835,6 @@ body {
 }
 
 /* Projets */
-.projets {
-  /* Modificateur menu de navigation */
-}
 .projets .navigation__lien {
   text-decoration: underline;
   text-decoration-style: solid;
