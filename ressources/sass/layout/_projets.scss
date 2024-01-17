@@ -1,7 +1,7 @@
 /*
 * Mise en page des projets
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 3.0
+* @version 3.1
 */
 
 /* Styles généraux, tous les projets */
@@ -9,20 +9,19 @@
 .projets {
 	@include conteneur1400px;
 
-	&__selecteur {
+	& .navigation {
 		@media screen and (min-width: $tablet900px) {
-			@include bulle();
 			margin-bottom: 3rem;
 		}
 	}
 
 	&__titre-h2 {
 		display: inline-block;
-		margin: 4rem 0 0 1rem;
+		margin: 4rem 0 1rem 1rem;
 		font-size: 4rem;
 
 		@media screen and (min-width: $tablet900px) {
-			margin: 4rem 0 0 5rem;
+			margin: 4rem 0 1rem 3rem;
 		}
 	}
 }

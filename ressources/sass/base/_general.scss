@@ -16,17 +16,6 @@ body {
 	@media screen and (prefers-color-scheme: dark) {
 		background-color: $noirSombre;
 	}
-
-	@media screen and (min-width: $tablet900px) {
-		background-image: url("../images/design/texture-vagues.svg");
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position-y: 17rem;
-	}
-
-	@media screen and (min-width: $tablet900px) and (prefers-color-scheme: dark) {
-		background-image: url("../images/design/texture-vagues--sombre.svg");
-	}
 }
 
 a {

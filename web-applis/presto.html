@@ -1,370 +1,594 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<!-- Google Tag Manager -->
-	<script>(function (w, d, s, l, i) {
-		w[l] = w[l] || [];
-		w[l].push({
-			'gtm.start':
-				new Date().getTime(), event: 'gtm.js'
-		});
-		var f = d.getElementsByTagName(s)[0],
-			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-		j.async = true;
-		j.src =
-			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-		f.parentNode.insertBefore(j, f);
-	})(window, document, 'script', 'dataLayer', 'GTM-TLSFZVV');</script>
-	<!-- End Google Tag Manager -->
-	<meta name="title" content="Presto! | Gabriel Caron">
-	<meta name="description" content="L'appli qui livre votre repas plus vite que son ombre.">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="screen" href="../liaisons/css/styles.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="../liaisons/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../liaisons/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../liaisons/favicon/favicon-16x16.png">
-	<link rel="manifest" href="../site.webmanifest">
-	<title>Presto! | Gabriel Caron</title>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLSFZVV"
-			height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-<a href="#contenu" class="screen-reader-only focusable sauter-contenu">Passer au contenu</a>
-<header class="entete">
-	<div class="entete__menu">
-		<a href="../" aria-label="Revenir à l'accueil" class="entete__lien-accueil">
-			<svg aria-hidden="true" class="entete__logo" viewBox="0 0 561.77 137.56" xmlns="http://www.w3.org/2000/svg"
-				 xmlns:xlink="http://www.w3.org/1999/xlink">
-				<linearGradient id="a" gradientUnits="userSpaceOnUse" x1="68.52" x2="68.52" y1=".49" y2="137.53">
-					<stop offset="0" stop-color="#ffe600"/>
-					<stop offset="1" stop-color="#ffdc00"/>
-				</linearGradient>
-				<path d="m137 23.72v90.58a23.26 23.26 0 0 1 -11.73 20.15 23.09 23.09 0 0 1 -11.5 3.08h-90.55a23.23 23.23 0 0 1 -23.22-23.23v-90.58a23.3 23.3 0 0 1 23.22-23.23h90.59a23.31 23.31 0 0 1 23.19 23.23z"
-					  fill="url(#a)"/>
-				<path class="signature"
-					  d="m131.14 92.45c-4.7 4.12-9.2 8.07-13.57 11.8-6-38.59 3-70.2 6.57-82.76 1.59-5.57 1.92-6.73.72-8.24a3.14 3.14 0 0 0 -2.6-1.17 3.07 3.07 0 0 0 -1.72.66c-25.87 20.77-48.23 33.92-66.54 39.12 6.8-15.84 2.6-28.79-5.47-35.18-7.41-5.88-19.63-7.19-30.2 3.13-8.87 8.66-9.59 23.05-1.6 32.07 3 3.39 10.57 9.37 25.77 8.2-10.96 16.74-28.36 36.52-42.5 51.62v2.6a23.2 23.2 0 0 0 .66 5.5c15.98-16.8 37.75-41.19 49.68-60.8 15.49-3.23 37.21-13.12 67.21-36.23-4.19 15-12.24 47.29-5.31 86q-3.85 3.21-7.6 6.15c-16.41-14.09-34.26-19.48-51.93-15.62-26.07 5.68-34.1 19-33.06 28.62a16.72 16.72 0 0 0 4.53 9.61h10.64c-5.78-2.28-8.78-6.28-9.21-10.26-.83-7.74 7.62-17.59 28.38-22.11a45.69 45.69 0 0 1 9.83-1.07c14 0 26.16 6.51 35.88 14.59-12.31 9.13-24.16 15.79-37.2 18.85h18.06a136.44 136.44 0 0 0 23.72-14.76 114.4 114.4 0 0 1 12.72 14.53 22.66 22.66 0 0 0 8.27-2.85 162.48 162.48 0 0 1 -6.52-23.36c5.23-4.42 10.63-9.15 16.3-14.13l1.95-1.7v-8zm-84.62-38.87c-11.41 1.92-20.28 0-25.27-5.68-5.8-6.55-5.2-17.45 1.3-23.8 3.54-3.45 8.37-5.92 13.29-5.92a14.27 14.27 0 0 1 9 3.2c6.83 5.41 9.81 17.35 1.68 32.2zm62.82 65.62-.2-.19c1.47-1.16 2.94-2.35 4.43-3.57.83 3.77 1.81 7.6 3 11.46-2.21-2.53-4.57-5.13-7.23-7.7z"
-					  fill="#fff"/>
-				<path class="maison"
-					  d="m58.24 109.69v-28.84a1 1 0 0 1 1-1h18.56a1 1 0 0 1 1 1v28.84a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1v-39.11a1 1 0 0 1 1-1h11.81a1 1 0 0 0 .67-1.75l-48.78-43.9a1 1 0 0 0 -1.34 0l-48.78 43.9a1 1 0 0 0 .67 1.75h11.81a1 1 0 0 1 1 1v39.11a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1z"
-					  fill="#fff"/>
-				<g class="logotype">
-					<path d="m227.42 50.15a20.14 20.14 0 0 1 -8.89 5.85 37.31 37.31 0 0 1 -12.73 2.08 25.22 25.22 0 0 1 -12.86-3.2 21.37 21.37 0 0 1 -8.54-9.3 32.63 32.63 0 0 1 -3.09-14.32v-3.86a34.78 34.78 0 0 1 2.85-14.65 21.18 21.18 0 0 1 8.23-9.47 23.69 23.69 0 0 1 12.61-3.28q10 0 15.72 4.79t6.71 14h-11.34c-.52-3.24-1.66-5.6-3.44-7.11a11 11 0 0 0 -7.31-2.25 10.33 10.33 0 0 0 -9.05 4.47q-3.1 4.45-3.14 13.27v3.61q0 8.9 3.38 13.43t9.89 4.54q6.57 0 9.36-2.79v-9.78h-10.6v-8.58h22.24z"/>
-					<path d="m279.18 45.65h-20.41l-3.89 11.64h-12.38l21-56.51h10.79l21.16 56.51h-12.35zm-17.27-9.44h14.09l-7.1-21.15z"/>
-					<path d="m312 57.29v-56.51h19.79q10.29 0 15.61 3.94t5.32 11.54a12.81 12.81 0 0 1 -2.14 7.32 12.28 12.28 0 0 1 -5.94 4.64 11.94 11.94 0 0 1 6.85 4.38 13 13 0 0 1 2.51 8.08q0 8.15-5.2 12.34t-14.8 4.27zm11.64-32.84h8.62q8.81-.15 8.81-7c0-2.56-.74-4.41-2.23-5.53s-3.84-1.69-7.05-1.69h-8.15zm0 8.23v15.26h10a9.66 9.66 0 0 0 6.36-1.94 6.73 6.73 0 0 0 2.31-5.42q0-7.76-8-7.88z"/>
-					<path d="m394.44 36.6h-9.28v20.69h-11.64v-56.51h21q10 0 15.45 4.46t5.44 12.61a17.38 17.38 0 0 1 -2.51 9.65 17 17 0 0 1 -7.58 6.15l12.22 23.1v.54h-12.54zm-9.28-9.43h9.39a9.63 9.63 0 0 0 6.8-2.23 8 8 0 0 0 2.4-6.15 8.52 8.52 0 0 0 -2.27-6.29q-2.26-2.29-7-2.29h-9.35z"/>
-					<path d="m447.07 57.29h-11.64v-56.51h11.64z"/>
-					<path d="m502.81 32.8h-22.35v15.14h26.24v9.35h-37.89v-56.51h37.81v9.43h-26.16v13.47h22.35z"/>
-					<path d="m537.05 47.94h24.72v9.35h-36.37v-56.51h11.65z"/>
-					<path d="m227.07 118q-.66 9.12-6.73 14.36t-16 5.24q-10.87 0-17.1-7.31t-6.24-20.13v-3.46a34 34 0 0 1 2.87-14.36 21.59 21.59 0 0 1 8.21-9.53 23 23 0 0 1 12.4-3.32q9.78 0 15.76 5.24t6.91 14.72h-11.64c-.29-3.65-1.3-6.3-3-7.94s-4.41-2.47-8-2.47q-5.82 0-8.71 4.18t-3 12.94v4.27q0 9.16 2.78 13.39t8.75 4.23c3.59 0 6.28-.82 8-2.46s2.79-4.19 3.05-7.63z"/>
-					<path d="m276.25 125.14h-20.41l-3.84 11.65h-12.43l21-56.52h10.83l21.16 56.52h-12.39zm-17.25-9.43h14.13l-7.13-21.16z"/>
-					<path d="m330 116.1h-9.3v20.69h-11.64v-56.52h21q10 0 15.45 4.46t5.43 12.62a17.34 17.34 0 0 1 -2.5 9.64 17.08 17.08 0 0 1 -7.59 6.16l12.23 23.09v.55h-12.5zm-9.28-9.44h9.4a9.62 9.62 0 0 0 6.79-2.23 8 8 0 0 0 2.41-6.15 8.57 8.57 0 0 0 -2.32-6.28c-1.52-1.52-3.84-2.29-7-2.29h-9.3z"/>
-					<path d="m416.15 109.81a34.06 34.06 0 0 1 -2.95 14.63 22.29 22.29 0 0 1 -8.44 9.71 25 25 0 0 1 -25.13 0 22.4 22.4 0 0 1 -8.54-9.65 33.19 33.19 0 0 1 -3.09-14.38v-2.8a33.87 33.87 0 0 1 3-14.69 22.4 22.4 0 0 1 8.5-9.74 24.88 24.88 0 0 1 25.11 0 22.4 22.4 0 0 1 8.5 9.74 33.8 33.8 0 0 1 3 14.66zm-11.8-2.56q0-8.9-3.18-13.51a11.25 11.25 0 0 0 -18.17-.06q-3.18 4.56-3.22 13.37v2.76q0 8.66 3.18 13.43a11.15 11.15 0 0 0 18.17.17c2.09-3.06 3.16-7.53 3.18-13.41z"/>
-					<path d="m481.53 136.79h-11.64l-22.67-37.19v37.19h-11.65v-56.52h11.65l22.71 37.26v-37.26h11.6z"/>
-				</g>
-			</svg>
-		</a>
-		<nav class="navigation">
-			<ul class="navigation__liste">
-				<li class="navigation__item">
-					<a href="../web-applis/"
-					   class="navigation__lien navigation__lien--courant"
-					   aria-label="Web et applications mobiles">Web +&nbsp;applis</a>
-				</li>
-				<li class="navigation__item">
-					<a href="../design-graphique/" class="navigation__lien">Design graphique</a>
-				</li>
-				<li class="navigation__item">
-					<a href="../me-contacter/" class="navigation__lien">Me contacter</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-</header>
-<main class="projets" id="contenu">
-	<section class="projets__selecteur">
-		<h2 class="screen-reader-only">Projets</h2>
-		<nav class="navigation">
-			<ul class="navigation__liste navigation__rangee-sections">
-				<li class="navigation__item">
-					<a href="alaia.html"
-					   class="navigation__lien">Web</a>
-				</li>
-				<li class="navigation__item">
-					<a href="memorize.html" class="navigation__lien navigation__lien--courant">Applis</a>
-				</li>
-			</ul>
-			<ul class="navigation__liste navigation__rangee-projets">
-				<li class="navigation__item">
-					<a href="memorize.html" class="navigation__lien">
-						<figure class="navigation__figure">
-							<svg aria-hidden="true" class="icone memorize" fill="none" viewBox="0 0 320 320"
-								 xmlns="http://www.w3.org/2000/svg"
-								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="memorize-orange-hover" gradientUnits="userSpaceOnUse" x1="160.04"
-												x2="160.04" y1="319" y2="-.00013">
-									<stop offset="0" stop-color="#ff8a00"/>
-									<stop offset="1" stop-color="#ffaf00"/>
-								</linearGradient>
-								<radialGradient id="memorize-gris-hover" cx="0" cy="0"
-												gradientTransform="matrix(0 261 -177.527 0 159.84 48)"
-												gradientUnits="userSpaceOnUse" r="1">
-									<stop offset=".494792" stop-color="#fff"/>
-									<stop offset="1" stop-color="#ededed"/>
-								</radialGradient>
-								<radialGradient id="memorize-orange-defaut" cx="0" cy="0"
-												gradientTransform="matrix(0 -223.056 151.718 0 159.84 271)"
-												gradientUnits="userSpaceOnUse" r="1">
-									<stop offset="0" stop-color="#ff8a00"/>
-									<stop offset="1" stop-color="#ffaf00"/>
-								</radialGradient>
-								<radialGradient id="memorize-orange-sombre" cx="0" cy="0" gradientTransform="matrix(0 -223.056 151.718 0 159.84 271.003)"
-												gradientUnits="userSpaceOnUse" r="1">
-									<stop offset="0" stop-color="#fa9723"/>
-									<stop offset="1" stop-color="#ffcd60"/>
-								</radialGradient>
-								<rect class="elevation" fill="#fcfcfc" height="320" width="320" x="0"
-									  y="0"/>
-								<g class="cartes" fill="url(#memorize-orange-defaut)">
-									<path d="m140.252 48h-41.1844c-3.9962 0-7.8287 1.5875-10.6544 4.4132s-4.4132 6.6582-4.4132 10.6544v77.3464c0 3.997 1.5875 7.829 4.4132 10.655s6.6582 4.413 10.6544 4.413h41.1844c3.996 0 7.829-1.587 10.655-4.413 2.825-2.826 4.413-6.658 4.413-10.655v-77.3464c0-3.9962-1.588-7.8287-4.413-10.6544-2.826-2.8257-6.659-4.4132-10.655-4.4132zm-41.1844 10.045h41.1844c1.332 0 2.61.5292 3.552 1.4711s1.471 2.2194 1.471 3.5515v16.072h-51.23v-16.072c0-1.3321.5292-2.6096 1.4711-3.5515s2.2194-1.4711 3.5515-1.4711zm-5.0226 41.687v-15.5698h51.23v15.5698zm51.23 5.023v15.569h-51.23v-15.569zm-5.023 40.682h-41.1844c-1.3321 0-2.6096-.529-3.5515-1.471s-1.4711-2.22-1.4711-3.552v-15.067h51.23v15.067c0 1.332-.529 2.61-1.471 3.552s-2.22 1.471-3.552 1.471z"/>
-									<path d="m220.613 48h-41.185c-3.996 0-7.829 1.5875-10.654 4.4132-2.826 2.8257-4.414 6.6582-4.414 10.6544v77.3464c0 3.997 1.588 7.829 4.414 10.655 2.825 2.826 6.658 4.413 10.654 4.413h41.185c3.996 0 7.828-1.587 10.654-4.413s4.413-6.658 4.413-10.655v-77.3464c0-3.9962-1.587-7.8287-4.413-10.6544s-6.658-4.4132-10.654-4.4132zm5.022 92.414c0 1.332-.529 2.61-1.471 3.552s-2.219 1.471-3.551 1.471h-41.185c-1.332 0-2.61-.529-3.552-1.471-.941-.942-1.471-2.22-1.471-3.552v-77.3464c0-1.3321.53-2.6096 1.471-3.5515.942-.9419 2.22-1.4711 3.552-1.4711h41.185c1.332 0 2.609.5292 3.551 1.4711s1.471 2.2194 1.471 3.5515z"/>
-									<path d="m220.613 163.518h-41.185c-3.996 0-7.829 1.587-10.654 4.413-2.826 2.826-4.414 6.658-4.414 10.655v77.346c0 3.997 1.588 7.829 4.414 10.655 2.825 2.826 6.658 4.413 10.654 4.413h41.185c3.996 0 7.828-1.587 10.654-4.413s4.413-6.658 4.413-10.655v-77.346c0-3.997-1.587-7.829-4.413-10.655s-6.658-4.413-10.654-4.413zm-41.185 10.045h41.185c1.332 0 2.609.529 3.551 1.471s1.471 2.22 1.471 3.552v15.067h-51.23v-15.067c0-1.332.53-2.61 1.471-3.552.942-.942 2.22-1.471 3.552-1.471zm-5.023 40.683v-15.57h51.23v15.57zm51.23 5.022v15.57h-51.23v-15.57zm-5.022 41.687h-41.185c-1.332 0-2.61-.529-3.552-1.471-.941-.942-1.471-2.219-1.471-3.552v-16.072h51.23v16.072c0 1.333-.529 2.61-1.471 3.552s-2.219 1.471-3.551 1.471z"/>
-									<path d="m140.252 163.518h-41.1844c-3.9962 0-7.8287 1.587-10.6544 4.413s-4.4132 6.658-4.4132 10.655v77.346c0 3.997 1.5875 7.829 4.4132 10.655s6.6582 4.413 10.6544 4.413h41.1844c3.996 0 7.829-1.587 10.655-4.413 2.825-2.826 4.413-6.658 4.413-10.655v-77.346c0-3.997-1.588-7.829-4.413-10.655-2.826-2.826-6.659-4.413-10.655-4.413zm5.023 92.414c0 1.333-.529 2.61-1.471 3.552s-2.22 1.471-3.552 1.471h-41.1844c-1.3321 0-2.6096-.529-3.5515-1.471s-1.4711-2.219-1.4711-3.552v-77.346c0-1.332.5292-2.61 1.4711-3.552s2.2194-1.471 3.5515-1.471h41.1844c1.332 0 2.61.529 3.552 1.471s1.471 2.22 1.471 3.552z"/>
-								</g>
-							</svg>
-							<figcaption class="navigation__figcaption">Memorize</figcaption>
-						</figure>
+	<head>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					"gtm.start": new Date().getTime(),
+					event: "gtm.js",
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-TLSFZVV");
+		</script>
+		<!-- End Google Tag Manager -->
+		<meta name="title" content="Presto! | Gabriel Caron" />
+		<meta
+			name="description"
+			content="L'appli qui livre votre repas plus vite que son ombre." />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../liaisons/css/styles.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../liaisons/favicon/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../liaisons/favicon/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../liaisons/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="../site.webmanifest" />
+		<title>Presto! | Gabriel Caron</title>
+	</head>
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-TLSFZVV"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<a href="#contenu" class="screen-reader-only focusable sauter-contenu"
+			>Passer au contenu</a
+		>
+		<header class="entete">
+			<div class="entete__menu">
+				<a
+					href="../"
+					aria-label="Revenir à l'accueil"
+					class="entete__lien-accueil">
+					<svg
+						aria-hidden="true"
+						class="entete__logo"
+						viewBox="0 0 561.77 137.56"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink">
+						<linearGradient
+							id="a"
+							gradientUnits="userSpaceOnUse"
+							x1="68.52"
+							x2="68.52"
+							y1=".49"
+							y2="137.53">
+							<stop offset="0" stop-color="#ffe600" />
+							<stop offset="1" stop-color="#ffdc00" />
+						</linearGradient>
+						<path
+							d="m137 23.72v90.58a23.26 23.26 0 0 1 -11.73 20.15 23.09 23.09 0 0 1 -11.5 3.08h-90.55a23.23 23.23 0 0 1 -23.22-23.23v-90.58a23.3 23.3 0 0 1 23.22-23.23h90.59a23.31 23.31 0 0 1 23.19 23.23z"
+							fill="url(#a)" />
+						<path
+							class="signature"
+							d="m131.14 92.45c-4.7 4.12-9.2 8.07-13.57 11.8-6-38.59 3-70.2 6.57-82.76 1.59-5.57 1.92-6.73.72-8.24a3.14 3.14 0 0 0 -2.6-1.17 3.07 3.07 0 0 0 -1.72.66c-25.87 20.77-48.23 33.92-66.54 39.12 6.8-15.84 2.6-28.79-5.47-35.18-7.41-5.88-19.63-7.19-30.2 3.13-8.87 8.66-9.59 23.05-1.6 32.07 3 3.39 10.57 9.37 25.77 8.2-10.96 16.74-28.36 36.52-42.5 51.62v2.6a23.2 23.2 0 0 0 .66 5.5c15.98-16.8 37.75-41.19 49.68-60.8 15.49-3.23 37.21-13.12 67.21-36.23-4.19 15-12.24 47.29-5.31 86q-3.85 3.21-7.6 6.15c-16.41-14.09-34.26-19.48-51.93-15.62-26.07 5.68-34.1 19-33.06 28.62a16.72 16.72 0 0 0 4.53 9.61h10.64c-5.78-2.28-8.78-6.28-9.21-10.26-.83-7.74 7.62-17.59 28.38-22.11a45.69 45.69 0 0 1 9.83-1.07c14 0 26.16 6.51 35.88 14.59-12.31 9.13-24.16 15.79-37.2 18.85h18.06a136.44 136.44 0 0 0 23.72-14.76 114.4 114.4 0 0 1 12.72 14.53 22.66 22.66 0 0 0 8.27-2.85 162.48 162.48 0 0 1 -6.52-23.36c5.23-4.42 10.63-9.15 16.3-14.13l1.95-1.7v-8zm-84.62-38.87c-11.41 1.92-20.28 0-25.27-5.68-5.8-6.55-5.2-17.45 1.3-23.8 3.54-3.45 8.37-5.92 13.29-5.92a14.27 14.27 0 0 1 9 3.2c6.83 5.41 9.81 17.35 1.68 32.2zm62.82 65.62-.2-.19c1.47-1.16 2.94-2.35 4.43-3.57.83 3.77 1.81 7.6 3 11.46-2.21-2.53-4.57-5.13-7.23-7.7z"
+							fill="#fff" />
+						<path
+							class="maison"
+							d="m58.24 109.69v-28.84a1 1 0 0 1 1-1h18.56a1 1 0 0 1 1 1v28.84a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1v-39.11a1 1 0 0 1 1-1h11.81a1 1 0 0 0 .67-1.75l-48.78-43.9a1 1 0 0 0 -1.34 0l-48.78 43.9a1 1 0 0 0 .67 1.75h11.81a1 1 0 0 1 1 1v39.11a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1z"
+							fill="#fff" />
+						<g class="logotype">
+							<path
+								d="m227.42 50.15a20.14 20.14 0 0 1 -8.89 5.85 37.31 37.31 0 0 1 -12.73 2.08 25.22 25.22 0 0 1 -12.86-3.2 21.37 21.37 0 0 1 -8.54-9.3 32.63 32.63 0 0 1 -3.09-14.32v-3.86a34.78 34.78 0 0 1 2.85-14.65 21.18 21.18 0 0 1 8.23-9.47 23.69 23.69 0 0 1 12.61-3.28q10 0 15.72 4.79t6.71 14h-11.34c-.52-3.24-1.66-5.6-3.44-7.11a11 11 0 0 0 -7.31-2.25 10.33 10.33 0 0 0 -9.05 4.47q-3.1 4.45-3.14 13.27v3.61q0 8.9 3.38 13.43t9.89 4.54q6.57 0 9.36-2.79v-9.78h-10.6v-8.58h22.24z" />
+							<path
+								d="m279.18 45.65h-20.41l-3.89 11.64h-12.38l21-56.51h10.79l21.16 56.51h-12.35zm-17.27-9.44h14.09l-7.1-21.15z" />
+							<path
+								d="m312 57.29v-56.51h19.79q10.29 0 15.61 3.94t5.32 11.54a12.81 12.81 0 0 1 -2.14 7.32 12.28 12.28 0 0 1 -5.94 4.64 11.94 11.94 0 0 1 6.85 4.38 13 13 0 0 1 2.51 8.08q0 8.15-5.2 12.34t-14.8 4.27zm11.64-32.84h8.62q8.81-.15 8.81-7c0-2.56-.74-4.41-2.23-5.53s-3.84-1.69-7.05-1.69h-8.15zm0 8.23v15.26h10a9.66 9.66 0 0 0 6.36-1.94 6.73 6.73 0 0 0 2.31-5.42q0-7.76-8-7.88z" />
+							<path
+								d="m394.44 36.6h-9.28v20.69h-11.64v-56.51h21q10 0 15.45 4.46t5.44 12.61a17.38 17.38 0 0 1 -2.51 9.65 17 17 0 0 1 -7.58 6.15l12.22 23.1v.54h-12.54zm-9.28-9.43h9.39a9.63 9.63 0 0 0 6.8-2.23 8 8 0 0 0 2.4-6.15 8.52 8.52 0 0 0 -2.27-6.29q-2.26-2.29-7-2.29h-9.35z" />
+							<path d="m447.07 57.29h-11.64v-56.51h11.64z" />
+							<path
+								d="m502.81 32.8h-22.35v15.14h26.24v9.35h-37.89v-56.51h37.81v9.43h-26.16v13.47h22.35z" />
+							<path d="m537.05 47.94h24.72v9.35h-36.37v-56.51h11.65z" />
+							<path
+								d="m227.07 118q-.66 9.12-6.73 14.36t-16 5.24q-10.87 0-17.1-7.31t-6.24-20.13v-3.46a34 34 0 0 1 2.87-14.36 21.59 21.59 0 0 1 8.21-9.53 23 23 0 0 1 12.4-3.32q9.78 0 15.76 5.24t6.91 14.72h-11.64c-.29-3.65-1.3-6.3-3-7.94s-4.41-2.47-8-2.47q-5.82 0-8.71 4.18t-3 12.94v4.27q0 9.16 2.78 13.39t8.75 4.23c3.59 0 6.28-.82 8-2.46s2.79-4.19 3.05-7.63z" />
+							<path
+								d="m276.25 125.14h-20.41l-3.84 11.65h-12.43l21-56.52h10.83l21.16 56.52h-12.39zm-17.25-9.43h14.13l-7.13-21.16z" />
+							<path
+								d="m330 116.1h-9.3v20.69h-11.64v-56.52h21q10 0 15.45 4.46t5.43 12.62a17.34 17.34 0 0 1 -2.5 9.64 17.08 17.08 0 0 1 -7.59 6.16l12.23 23.09v.55h-12.5zm-9.28-9.44h9.4a9.62 9.62 0 0 0 6.79-2.23 8 8 0 0 0 2.41-6.15 8.57 8.57 0 0 0 -2.32-6.28c-1.52-1.52-3.84-2.29-7-2.29h-9.3z" />
+							<path
+								d="m416.15 109.81a34.06 34.06 0 0 1 -2.95 14.63 22.29 22.29 0 0 1 -8.44 9.71 25 25 0 0 1 -25.13 0 22.4 22.4 0 0 1 -8.54-9.65 33.19 33.19 0 0 1 -3.09-14.38v-2.8a33.87 33.87 0 0 1 3-14.69 22.4 22.4 0 0 1 8.5-9.74 24.88 24.88 0 0 1 25.11 0 22.4 22.4 0 0 1 8.5 9.74 33.8 33.8 0 0 1 3 14.66zm-11.8-2.56q0-8.9-3.18-13.51a11.25 11.25 0 0 0 -18.17-.06q-3.18 4.56-3.22 13.37v2.76q0 8.66 3.18 13.43a11.15 11.15 0 0 0 18.17.17c2.09-3.06 3.16-7.53 3.18-13.41z" />
+							<path
+								d="m481.53 136.79h-11.64l-22.67-37.19v37.19h-11.65v-56.52h11.65l22.71 37.26v-37.26h11.6z" />
+						</g>
+					</svg>
+				</a>
+				<nav class="navigation">
+					<ul class="navigation__liste">
+						<li class="navigation__item">
+							<a
+								href="../web-applis/"
+								class="navigation__lien navigation__lien--courant"
+								aria-label="Web et applications mobiles"
+								>Web +&nbsp;applis</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a href="../design-graphique/" class="navigation__lien"
+								>Design graphique</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a href="../me-contacter/" class="navigation__lien"
+								>Me contacter</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="projets" id="contenu">
+			<nav class="navigation">
+				<ul class="navigation__liste navigation__rangee-sections">
+					<li class="navigation__item">
+						<a href="alaia.html" class="navigation__lien">Web</a>
+					</li>
+					<li class="navigation__item">
+						<a
+							href="memorize.html"
+							class="navigation__lien navigation__lien--courant"
+							>Applis</a
+						>
+					</li>
+				</ul>
+				<ul class="navigation__liste navigation__rangee-selecteur">
+					<li class="navigation__item">
+						<a href="memorize.html" class="navigation__lien">
+							<figure class="navigation__figure">
+								<svg
+									aria-hidden="true"
+									class="icone memorize"
+									fill="none"
+									viewBox="0 0 320 320"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink">
+									<linearGradient
+										id="memorize-orange-hover"
+										gradientUnits="userSpaceOnUse"
+										x1="160.04"
+										x2="160.04"
+										y1="319"
+										y2="-.00013">
+										<stop offset="0" stop-color="#ff8a00" />
+										<stop offset="1" stop-color="#ffaf00" />
+									</linearGradient>
+									<radialGradient
+										id="memorize-gris-hover"
+										cx="0"
+										cy="0"
+										gradientTransform="matrix(0 261 -177.527 0 159.84 48)"
+										gradientUnits="userSpaceOnUse"
+										r="1">
+										<stop offset=".494792" stop-color="#fff" />
+										<stop offset="1" stop-color="#ededed" />
+									</radialGradient>
+									<radialGradient
+										id="memorize-orange-defaut"
+										cx="0"
+										cy="0"
+										gradientTransform="matrix(0 -223.056 151.718 0 159.84 271)"
+										gradientUnits="userSpaceOnUse"
+										r="1">
+										<stop offset="0" stop-color="#ff8a00" />
+										<stop offset="1" stop-color="#ffaf00" />
+									</radialGradient>
+									<radialGradient
+										id="memorize-orange-sombre"
+										cx="0"
+										cy="0"
+										gradientTransform="matrix(0 -223.056 151.718 0 159.84 271.003)"
+										gradientUnits="userSpaceOnUse"
+										r="1">
+										<stop offset="0" stop-color="#fa9723" />
+										<stop offset="1" stop-color="#ffcd60" />
+									</radialGradient>
+									<rect
+										class="elevation"
+										fill="#fcfcfc"
+										height="320"
+										width="320"
+										x="0"
+										y="0" />
+									<g class="cartes" fill="url(#memorize-orange-defaut)">
+										<path
+											d="m140.252 48h-41.1844c-3.9962 0-7.8287 1.5875-10.6544 4.4132s-4.4132 6.6582-4.4132 10.6544v77.3464c0 3.997 1.5875 7.829 4.4132 10.655s6.6582 4.413 10.6544 4.413h41.1844c3.996 0 7.829-1.587 10.655-4.413 2.825-2.826 4.413-6.658 4.413-10.655v-77.3464c0-3.9962-1.588-7.8287-4.413-10.6544-2.826-2.8257-6.659-4.4132-10.655-4.4132zm-41.1844 10.045h41.1844c1.332 0 2.61.5292 3.552 1.4711s1.471 2.2194 1.471 3.5515v16.072h-51.23v-16.072c0-1.3321.5292-2.6096 1.4711-3.5515s2.2194-1.4711 3.5515-1.4711zm-5.0226 41.687v-15.5698h51.23v15.5698zm51.23 5.023v15.569h-51.23v-15.569zm-5.023 40.682h-41.1844c-1.3321 0-2.6096-.529-3.5515-1.471s-1.4711-2.22-1.4711-3.552v-15.067h51.23v15.067c0 1.332-.529 2.61-1.471 3.552s-2.22 1.471-3.552 1.471z" />
+										<path
+											d="m220.613 48h-41.185c-3.996 0-7.829 1.5875-10.654 4.4132-2.826 2.8257-4.414 6.6582-4.414 10.6544v77.3464c0 3.997 1.588 7.829 4.414 10.655 2.825 2.826 6.658 4.413 10.654 4.413h41.185c3.996 0 7.828-1.587 10.654-4.413s4.413-6.658 4.413-10.655v-77.3464c0-3.9962-1.587-7.8287-4.413-10.6544s-6.658-4.4132-10.654-4.4132zm5.022 92.414c0 1.332-.529 2.61-1.471 3.552s-2.219 1.471-3.551 1.471h-41.185c-1.332 0-2.61-.529-3.552-1.471-.941-.942-1.471-2.22-1.471-3.552v-77.3464c0-1.3321.53-2.6096 1.471-3.5515.942-.9419 2.22-1.4711 3.552-1.4711h41.185c1.332 0 2.609.5292 3.551 1.4711s1.471 2.2194 1.471 3.5515z" />
+										<path
+											d="m220.613 163.518h-41.185c-3.996 0-7.829 1.587-10.654 4.413-2.826 2.826-4.414 6.658-4.414 10.655v77.346c0 3.997 1.588 7.829 4.414 10.655 2.825 2.826 6.658 4.413 10.654 4.413h41.185c3.996 0 7.828-1.587 10.654-4.413s4.413-6.658 4.413-10.655v-77.346c0-3.997-1.587-7.829-4.413-10.655s-6.658-4.413-10.654-4.413zm-41.185 10.045h41.185c1.332 0 2.609.529 3.551 1.471s1.471 2.22 1.471 3.552v15.067h-51.23v-15.067c0-1.332.53-2.61 1.471-3.552.942-.942 2.22-1.471 3.552-1.471zm-5.023 40.683v-15.57h51.23v15.57zm51.23 5.022v15.57h-51.23v-15.57zm-5.022 41.687h-41.185c-1.332 0-2.61-.529-3.552-1.471-.941-.942-1.471-2.219-1.471-3.552v-16.072h51.23v16.072c0 1.333-.529 2.61-1.471 3.552s-2.219 1.471-3.551 1.471z" />
+										<path
+											d="m140.252 163.518h-41.1844c-3.9962 0-7.8287 1.587-10.6544 4.413s-4.4132 6.658-4.4132 10.655v77.346c0 3.997 1.5875 7.829 4.4132 10.655s6.6582 4.413 10.6544 4.413h41.1844c3.996 0 7.829-1.587 10.655-4.413 2.825-2.826 4.413-6.658 4.413-10.655v-77.346c0-3.997-1.588-7.829-4.413-10.655-2.826-2.826-6.659-4.413-10.655-4.413zm5.023 92.414c0 1.333-.529 2.61-1.471 3.552s-2.22 1.471-3.552 1.471h-41.1844c-1.3321 0-2.6096-.529-3.5515-1.471s-1.4711-2.219-1.4711-3.552v-77.346c0-1.332.5292-2.61 1.4711-3.552s2.2194-1.471 3.5515-1.471h41.1844c1.332 0 2.61.529 3.552 1.471s1.471 2.22 1.471 3.552z" />
+									</g>
+								</svg>
+								<figcaption class="navigation__figcaption">Memorize</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a
+							href="presto.html"
+							class="navigation__lien navigation__lien--courant">
+							<figure class="navigation__figure">
+								<svg
+									aria-hidden="true"
+									class="icone presto"
+									fill="none"
+									viewBox="0 0 320 320"
+									xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink">
+									<linearGradient
+										id="presto-vert-hover"
+										gradientUnits="userSpaceOnUse"
+										x1="160.039"
+										x2="160.039"
+										y1="318.997"
+										y2="-.00013">
+										<stop offset="0" stop-color="#0a4b00" />
+										<stop offset="1" stop-color="#117800" />
+									</linearGradient>
+									<radialGradient
+										id="presto-gris-hover"
+										cx="0"
+										cy="0"
+										gradientTransform="matrix(0 149.065 -223 0 159.5 85)"
+										gradientUnits="userSpaceOnUse"
+										r="1">
+										<stop offset=".494792" stop-color="#fff" />
+										<stop offset="1" stop-color="#ededed" />
+									</radialGradient>
+									<radialGradient
+										id="presto-vert-defaut"
+										cx="0"
+										cy="0"
+										gradientTransform="matrix(0 -149 222.903 0 179 234)"
+										gradientUnits="userSpaceOnUse"
+										r="1">
+										<stop offset="0" stop-color="#0a4b00" />
+										<stop offset=".516649" stop-color="#0e6300" />
+										<stop offset="1" stop-color="#117800" />
+									</radialGradient>
+									<radialGradient
+										id="presto-vert-sombre"
+										cx="0"
+										cy="0"
+										gradientTransform="matrix(0 -149 222.903 0 179 234)"
+										gradientUnits="userSpaceOnUse"
+										r="1">
+										<stop offset="0" stop-color="#0f871b" />
+										<stop offset="1" stop-color="#9ae48e" />
+									</radialGradient>
+									<rect
+										class="elevation"
+										fill="#fcfcfc"
+										height="320"
+										width="320"
+										x="0"
+										y="0" />
+									<g class="prestosymbole" fill="url(#presto-vert-defaut)">
+										<path
+											d="m116.025 184.136h-65.0239c-.6633 0-1.2994-.263-1.7684-.732s-.7325-1.105-.7325-1.769c0-.663.2635-1.299.7325-1.768s1.1051-.733 1.7684-.733h65.0239c.664 0 1.3.264 1.769.733s.732 1.105.732 1.768c0 .664-.263 1.3-.732 1.769s-1.105.732-1.769.732z" />
+										<path
+											d="m141.035 159.927h-65.0246c-.6723-.026-1.3085-.311-1.7748-.796s-.7266-1.132-.7261-1.805c.0258-.646.3007-1.256.767-1.704.4662-.447 1.0876-.697 1.7339-.697h65.0246c.646 0 1.267.25 1.734.697.466.448.741 1.058.767 1.704 0 .673-.26 1.32-.727 1.805-.466.485-1.102.77-1.774.796z" />
+										<path
+											d="m115.525 135.618h-65.0241c-.6633 0-1.2994-.263-1.7684-.732s-.7325-1.106-.7325-1.769.2635-1.299.7325-1.768 1.1051-.733 1.7684-.733h65.0241c.663 0 1.3.264 1.769.733s.732 1.105.732 1.768-.263 1.3-.732 1.769-1.106.732-1.769.732z" />
+										<path
+											d="m163.843 162.028 7.003-7.103-42.816-42.816c-1.87-1.891-2.918-4.443-2.918-7.102 0-2.66 1.048-5.2116 2.918-7.1029 1.881-1.8217 4.384-2.8589 7.002-2.9011 2.627.0002 5.146 1.0437 7.003 2.9011l42.916 42.9159 7.103-7.003-42.916-42.9155c-1.843-1.8692-4.039-3.3535-6.461-4.3667-2.421-1.0131-5.02-1.5348-7.645-1.5348-2.624 0-5.223.5217-7.645 1.5348-2.421 1.0132-4.617 2.4975-6.46 4.3667-3.702 3.7613-5.777 8.8275-5.777 14.1055 0 5.277 2.075 10.344 5.777 14.105z" />
+										<path
+											d="m266.481 208.145-47.517-47.418-7.103 7.103 47.518 47.418c1.9 2.001 2.201 5.102.5 7.002-.456.569-1.035 1.027-1.693 1.339-.659.312-1.38.47-2.109.462-1.347-.024-2.635-.561-3.601-1.501l-44.016-44.116-7.003 7.003-3.601-3.602-7.103 7.103 5.002 5.002c1.5 1.496 3.533 2.337 5.652 2.337s4.152-.841 5.652-2.337l1.401-1.301 37.014 37.014c1.45 1.463 3.188 2.609 5.103 3.367 1.916.758 3.967 1.11 6.026 1.035 2.059-.076 4.079-.577 5.934-1.472 1.856-.895 3.505-2.165 4.845-3.73 5.202-5.902 4.701-15.006-.901-20.708z" />
+										<path
+											d="m216.963 124.414c.954.958 2.249 1.497 3.601 1.501.654-.004 1.301-.139 1.903-.397.601-.257 1.145-.633 1.599-1.104l20.007-19.907c.942-.942 1.471-2.22 1.471-3.552 0-1.3318-.529-2.6092-1.471-3.5511s-2.219-1.471-3.551-1.471-2.61.5291-3.552 1.471l-20.007 20.0071c-.917.935-1.43 2.192-1.43 3.502 0 1.309.513 2.566 1.43 3.501z" />
+										<path
+											d="m227.467 134.918c.954.957 2.249 1.497 3.601 1.5.654-.003 1.301-.138 1.903-.396.601-.258 1.145-.633 1.598-1.104l20.008-19.908c.942-.941 1.471-2.219 1.471-3.551s-.529-2.609-1.471-3.551-2.219-1.471-3.551-1.471-2.61.529-3.552 1.471l-20.007 20.007c-.917.935-1.43 2.192-1.43 3.502 0 1.309.513 2.566 1.43 3.501z" />
+										<path
+											d="m208.36 164.229 7.102-7.003 6.703-6.702c2.705 1.809 5.852 2.846 9.103 3.001 1.891.024 3.766-.346 5.505-1.086 1.74-.741 3.306-1.836 4.599-3.216l23.709-23.709c.942-.942 1.471-2.219 1.471-3.551s-.529-2.609-1.471-3.551-2.22-1.471-3.552-1.471-2.609.529-3.551 1.471l-23.709 23.709c-.36.421-.804.764-1.303 1.005s-1.044.375-1.598.395c-2.401 0-5.202-2.401-6.002-3.201-.954-.958-2.249-1.497-3.601-1.501-1.305-.008-2.562.495-3.502 1.401l-81.73 81.73c-.378.386-.829.691-1.328.897-.498.206-1.034.31-1.573.304-.526.017-1.05-.082-1.534-.29-.484-.207-.916-.518-1.267-.911-.378-.372-.678-.816-.883-1.305-.205-.49-.311-1.015-.311-1.546 0-.53.106-1.056.311-1.545.205-.49.505-.934.883-1.306l50.719-50.719 14.005-14.105 7.103-7.003 9.803-9.903c.488-.457.876-1.011 1.138-1.626.261-.616.392-1.279.382-1.948-.009-.668-.158-1.328-.437-1.935-.279-.608-.682-1.151-1.183-1.594-1.1-1.2-3.701-4.502-3.801-7.103.056-.987.485-1.917 1.2-2.601l23.809-23.7084c.942-.9418 1.471-2.2193 1.471-3.5513s-.529-2.6094-1.471-3.5513-2.219-1.471-3.551-1.471-2.61.5291-3.552 1.471l-23.708 23.709c-1.333 1.282-2.392 2.82-3.114 4.522s-1.092 3.533-1.088 5.382c.227 3.686 1.512 7.229 3.701 10.203l-6.702 6.603-7.003 7.102-14.105 14.006-50.719 50.718c-1.945 1.972-3.266 4.473-3.799 7.191-.532 2.718-.253 5.532.803 8.093 1.056 2.56 2.842 4.753 5.136 6.304 2.294 1.552 4.994 2.394 7.764 2.421 1.84.006 3.663-.354 5.363-1.058s3.243-1.738 4.541-3.043l43.716-43.616 7.002-7.103z" />
+									</g>
+								</svg>
+								<figcaption class="navigation__figcaption">Presto!</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="projet masonry">
+				<h1 class="projet__titre">Presto!</h1>
+				<p class="projet__description">
+					Appli de livraison de repas de Coopsco
+				</p>
+				<ul class="projet__processus">
+					<li class="projet__formats">
+						<a
+							href="https://cz1ijw.axshare.com"
+							class="lien web"
+							aria-label="Diagramme de flux dans Axure Cloud. Ce lien s'ouvrira dans une nouvelle fenêtre."
+							target="_blank"
+							>Diagramme de flux</a
+						>
+					</li>
+					<li class="projet__formats">
+						<a
+							href="https://d029zq.axshare.com"
+							class="lien axure"
+							aria-label="Prototype Axure dans Axure Cloud. Ce lien s'ouvrira dans une nouvelle fenêtre."
+							target="_blank"
+							>Prototype Axure</a
+						>
+					</li>
+					<li class="projet__formats">
+						<a
+							href="https://www.figma.com/file/scnYI2xeiK1NNaVJN1MHsY/Planche-de-style-Presto-gabrielcaron.ca?node-id=0%3A1"
+							class="lien figma"
+							aria-label="Planche de style dans Figma (en ligne). Ce lien s'ouvrira dans une nouvelle fenêtre."
+							target="_blank"
+							>Planche de style</a
+						>
+					</li>
+					<li class="projet__formats">
+						<a
+							href="https://www.figma.com/proto/h6ZHWJ7vJblHbcJWsYoHPf/Maquettes-Presto-gabrielcaron.ca?page-id=0%3A1&node-id=39%3A32&viewport=645%2C234%2C0.5652834177017212&scaling=scale-down&starting-point-node-id=39%3A32"
+							class="lien figma"
+							aria-label="Maquette Figma (en ligne). Ce lien s'ouvrira dans une nouvelle fenêtre."
+							target="_blank"
+							>Maquette Figma</a
+						>
+					</li>
+					<li class="projet__formats">
+						<a href="../transcriptions-textuelles/presto.html" class="lien web"
+							>Transcription textuelle</a
+						>
+					</li>
+				</ul>
+				<figure class="projet__figure">
+					<picture class="projet__picture">
+						<!-- Image pour mobile -->
+						<source
+							media="(max-width: 599px)"
+							srcset="
+								../liaisons/images/projets/applis/presto-600.png  1x,
+								../liaisons/images/projets/applis/presto-1200.png 2x
+							" />
+						<!-- Image pour tablette -->
+						<source
+							media="(max-width: 1000px)"
+							srcset="
+								../liaisons/images/projets/applis/presto-1000.png 1x,
+								../liaisons/images/projets/applis/presto-2000.png 2x
+							" />
+						<!-- Image pour poste de table et image de repli -->
+						<img
+							src="../liaisons/images/projets/applis/presto-1400.png"
+							srcset="
+								../liaisons/images/projets/applis/presto-1400.png 1x,
+								../liaisons/images/projets/applis/presto-2800.png 2x
+							"
+							alt="" />
+					</picture>
+					<figcaption class="projet__figcaption">
+						Ce projet a été réalisé à l'automne 2020 dans le cadre du cours
+						Conception interactive I en Techniques d'intégration multimédia au
+						Cégep de Sainte-Foy.
+						<a href="../credits.html#presto">Avis sur les droits d'auteur</a>
+					</figcaption>
+				</figure>
+			</div>
+		</main>
+		<footer class="pied-de-page">
+			<div class="pied-de-page__conteneur-grille">
+				<div class="pied-de-page__rangee-logo">
+					<a
+						href="../"
+						aria-label="Revenir à l'accueil"
+						class="pied-de-page__lien-accueil">
+						<svg
+							aria-hidden="true"
+							class="pied-de-page__logo"
+							viewBox="0 0 561.77 137.56"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								class="elevation"
+								d="m137 23.72v90.58a23.26 23.26 0 0 1 -11.73 20.15 23.09 23.09 0 0 1 -11.5 3.08h-90.55a23.23 23.23 0 0 1 -23.22-23.23v-90.58a23.3 23.3 0 0 1 23.22-23.23h90.59a23.31 23.31 0 0 1 23.19 23.23z"
+								fill="#231f20" />
+							<path
+								class="signature"
+								d="m131.14 92.45c-4.7 4.12-9.2 8.07-13.57 11.8-6-38.59 3-70.2 6.57-82.76 1.59-5.57 1.92-6.73.72-8.24a3.14 3.14 0 0 0 -2.6-1.17 3.07 3.07 0 0 0 -1.72.66c-25.87 20.77-48.23 33.92-66.54 39.12 6.8-15.84 2.6-28.79-5.47-35.18-7.41-5.88-19.63-7.19-30.2 3.13-8.87 8.66-9.59 23.05-1.6 32.07 3 3.39 10.57 9.37 25.77 8.2-10.96 16.74-28.36 36.52-42.5 51.62v2.6a23.2 23.2 0 0 0 .66 5.5c15.98-16.8 37.75-41.19 49.68-60.8 15.49-3.23 37.21-13.12 67.21-36.23-4.19 15-12.24 47.29-5.31 86q-3.85 3.21-7.6 6.15c-16.41-14.09-34.26-19.48-51.93-15.62-26.07 5.68-34.1 19-33.06 28.62a16.72 16.72 0 0 0 4.53 9.61h10.64c-5.78-2.28-8.78-6.28-9.21-10.26-.83-7.74 7.62-17.59 28.38-22.11a45.69 45.69 0 0 1 9.83-1.07c14 0 26.16 6.51 35.88 14.59-12.31 9.13-24.16 15.79-37.2 18.85h18.06a136.44 136.44 0 0 0 23.72-14.76 114.4 114.4 0 0 1 12.72 14.53 22.66 22.66 0 0 0 8.27-2.85 162.48 162.48 0 0 1 -6.52-23.36c5.23-4.42 10.63-9.15 16.3-14.13l1.95-1.7v-8zm-84.62-38.87c-11.41 1.92-20.28 0-25.27-5.68-5.8-6.55-5.2-17.45 1.3-23.8 3.54-3.45 8.37-5.92 13.29-5.92a14.27 14.27 0 0 1 9 3.2c6.83 5.41 9.81 17.35 1.68 32.2zm62.82 65.62-.2-.19c1.47-1.16 2.94-2.35 4.43-3.57.83 3.77 1.81 7.6 3 11.46-2.21-2.53-4.57-5.13-7.23-7.7z"
+								fill="#fff" />
+							<path
+								class="maison"
+								d="m58.24 109.69v-28.84a1 1 0 0 1 1-1h18.56a1 1 0 0 1 1 1v28.84a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1v-39.11a1 1 0 0 1 1-1h11.81a1 1 0 0 0 .67-1.75l-48.78-43.9a1 1 0 0 0 -1.34 0l-48.78 43.9a1 1 0 0 0 .67 1.75h11.81a1 1 0 0 1 1 1v39.11a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1z"
+								fill="#fff" />
+							<g class="logotype">
+								<path
+									d="m227.42 50.15a20.14 20.14 0 0 1 -8.89 5.85 37.07 37.07 0 0 1 -12.73 2.08 25.22 25.22 0 0 1 -12.86-3.2 21.37 21.37 0 0 1 -8.54-9.3 32.63 32.63 0 0 1 -3.09-14.32v-3.86a34.78 34.78 0 0 1 2.85-14.65 21.18 21.18 0 0 1 8.23-9.47 23.69 23.69 0 0 1 12.61-3.28q10 0 15.72 4.79t6.71 14h-11.34c-.52-3.24-1.66-5.6-3.44-7.11a11 11 0 0 0 -7.31-2.25 10.33 10.33 0 0 0 -9.05 4.47q-3.1 4.45-3.14 13.27v3.61q0 8.9 3.38 13.43t9.89 4.54q6.57 0 9.36-2.79v-9.78h-10.6v-8.58h22.24z" />
+								<path
+									d="m279.18 45.65h-20.41l-3.89 11.64h-12.38l21-56.51h10.79l21.16 56.51h-12.35zm-17.27-9.44h14.09l-7.1-21.15z" />
+								<path
+									d="m312 57.29v-56.51h19.79q10.29 0 15.61 3.94t5.32 11.54a12.81 12.81 0 0 1 -2.14 7.32 12.28 12.28 0 0 1 -5.94 4.64 11.94 11.94 0 0 1 6.85 4.38 13 13 0 0 1 2.51 8.08q0 8.15-5.2 12.34t-14.8 4.27zm11.64-32.84h8.62q8.81-.15 8.81-7c0-2.56-.74-4.41-2.23-5.53s-3.84-1.69-7.05-1.69h-8.15zm0 8.23v15.26h10a9.66 9.66 0 0 0 6.36-1.94 6.73 6.73 0 0 0 2.31-5.42q0-7.76-8-7.88z" />
+								<path
+									d="m394.44 36.6h-9.28v20.69h-11.64v-56.51h21q10 0 15.45 4.46t5.44 12.61a17.38 17.38 0 0 1 -2.51 9.65 17 17 0 0 1 -7.58 6.15l12.22 23.1v.54h-12.54zm-9.28-9.43h9.39a9.63 9.63 0 0 0 6.8-2.23 8 8 0 0 0 2.4-6.15 8.52 8.52 0 0 0 -2.27-6.29q-2.26-2.29-7-2.29h-9.35z" />
+								<path d="m447.07 57.29h-11.64v-56.51h11.64z" />
+								<path
+									d="m502.81 32.8h-22.35v15.14h26.24v9.35h-37.89v-56.51h37.81v9.43h-26.16v13.47h22.35z" />
+								<path d="m537.05 47.94h24.72v9.35h-36.37v-56.51h11.65z" />
+								<path
+									d="m227.07 118q-.66 9.12-6.73 14.36t-16 5.24q-10.87 0-17.1-7.31t-6.24-20.13v-3.46a34 34 0 0 1 2.87-14.36 21.59 21.59 0 0 1 8.21-9.53 23 23 0 0 1 12.4-3.32q9.78 0 15.76 5.24t6.91 14.72h-11.64c-.29-3.65-1.3-6.3-3-7.94s-4.41-2.47-8-2.47q-5.82 0-8.71 4.18t-3 12.94v4.27q0 9.16 2.78 13.39t8.75 4.23c3.59 0 6.28-.82 8-2.46s2.79-4.19 3.05-7.63z" />
+								<path
+									d="m276.25 125.14h-20.41l-3.84 11.65h-12.43l21-56.52h10.83l21.16 56.52h-12.39zm-17.25-9.43h14.13l-7.13-21.16z" />
+								<path
+									d="m330 116.1h-9.3v20.69h-11.64v-56.52h21q10 0 15.45 4.46t5.43 12.62a17.34 17.34 0 0 1 -2.5 9.64 17.08 17.08 0 0 1 -7.59 6.16l12.23 23.09v.55h-12.5zm-9.28-9.44h9.4a9.62 9.62 0 0 0 6.79-2.23 8 8 0 0 0 2.41-6.15 8.57 8.57 0 0 0 -2.32-6.28c-1.52-1.52-3.84-2.29-7-2.29h-9.3z" />
+								<path
+									d="m416.15 109.81a34.06 34.06 0 0 1 -2.95 14.63 22.29 22.29 0 0 1 -8.44 9.71 25 25 0 0 1 -25.13 0 22.4 22.4 0 0 1 -8.54-9.65 33.19 33.19 0 0 1 -3.09-14.38v-2.8a33.87 33.87 0 0 1 3-14.69 22.4 22.4 0 0 1 8.5-9.74 24.88 24.88 0 0 1 25.11 0 22.4 22.4 0 0 1 8.5 9.74 33.8 33.8 0 0 1 3 14.66zm-11.8-2.56q0-8.9-3.18-13.51a11.25 11.25 0 0 0 -18.17-.06q-3.18 4.56-3.22 13.37v2.76q0 8.66 3.18 13.43a11.15 11.15 0 0 0 18.17.17c2.09-3.06 3.16-7.53 3.18-13.41z" />
+								<path
+									d="m481.53 136.79h-11.64l-22.67-37.19v37.19h-11.65v-56.52h11.65l22.71 37.26v-37.26h11.6z" />
+							</g>
+						</svg>
 					</a>
-				</li>
-				<li class="navigation__item">
-					<a href="presto.html" class="navigation__lien navigation__lien--courant">
-						<figure class="navigation__figure">
-							<svg aria-hidden="true" class="icone presto" fill="none" viewBox="0 0 320 320"
-								 xmlns="http://www.w3.org/2000/svg"
-								 xmlns:xlink="http://www.w3.org/1999/xlink">
-								<linearGradient id="presto-vert-hover" gradientUnits="userSpaceOnUse" x1="160.039"
-												x2="160.039" y1="318.997" y2="-.00013">
-									<stop offset="0" stop-color="#0a4b00"/>
-									<stop offset="1" stop-color="#117800"/>
-								</linearGradient>
-								<radialGradient id="presto-gris-hover" cx="0" cy="0"
-												gradientTransform="matrix(0 149.065 -223 0 159.5 85)"
-												gradientUnits="userSpaceOnUse" r="1">
-									<stop offset=".494792" stop-color="#fff"/>
-									<stop offset="1" stop-color="#ededed"/>
-								</radialGradient>
-								<radialGradient id="presto-vert-defaut" cx="0" cy="0"
-												gradientTransform="matrix(0 -149 222.903 0 179 234)"
-												gradientUnits="userSpaceOnUse" r="1">
-									<stop offset="0" stop-color="#0a4b00"/>
-									<stop offset=".516649" stop-color="#0e6300"/>
-									<stop offset="1" stop-color="#117800"/>
-								</radialGradient>
-								<radialGradient id="presto-vert-sombre" cx="0" cy="0" gradientTransform="matrix(0 -149 222.903 0 179 234)"
-												gradientUnits="userSpaceOnUse" r="1">
-									<stop offset="0" stop-color="#0f871b"/>
-									<stop offset="1" stop-color="#9ae48e"/>
-								</radialGradient>
-								<rect class="elevation" fill="#fcfcfc" height="320" width="320" x="0"
-									  y="0"/>
-								<g class="prestosymbole" fill="url(#presto-vert-defaut)">
-									<path d="m116.025 184.136h-65.0239c-.6633 0-1.2994-.263-1.7684-.732s-.7325-1.105-.7325-1.769c0-.663.2635-1.299.7325-1.768s1.1051-.733 1.7684-.733h65.0239c.664 0 1.3.264 1.769.733s.732 1.105.732 1.768c0 .664-.263 1.3-.732 1.769s-1.105.732-1.769.732z"/>
-									<path d="m141.035 159.927h-65.0246c-.6723-.026-1.3085-.311-1.7748-.796s-.7266-1.132-.7261-1.805c.0258-.646.3007-1.256.767-1.704.4662-.447 1.0876-.697 1.7339-.697h65.0246c.646 0 1.267.25 1.734.697.466.448.741 1.058.767 1.704 0 .673-.26 1.32-.727 1.805-.466.485-1.102.77-1.774.796z"/>
-									<path d="m115.525 135.618h-65.0241c-.6633 0-1.2994-.263-1.7684-.732s-.7325-1.106-.7325-1.769.2635-1.299.7325-1.768 1.1051-.733 1.7684-.733h65.0241c.663 0 1.3.264 1.769.733s.732 1.105.732 1.768-.263 1.3-.732 1.769-1.106.732-1.769.732z"/>
-									<path d="m163.843 162.028 7.003-7.103-42.816-42.816c-1.87-1.891-2.918-4.443-2.918-7.102 0-2.66 1.048-5.2116 2.918-7.1029 1.881-1.8217 4.384-2.8589 7.002-2.9011 2.627.0002 5.146 1.0437 7.003 2.9011l42.916 42.9159 7.103-7.003-42.916-42.9155c-1.843-1.8692-4.039-3.3535-6.461-4.3667-2.421-1.0131-5.02-1.5348-7.645-1.5348-2.624 0-5.223.5217-7.645 1.5348-2.421 1.0132-4.617 2.4975-6.46 4.3667-3.702 3.7613-5.777 8.8275-5.777 14.1055 0 5.277 2.075 10.344 5.777 14.105z"/>
-									<path d="m266.481 208.145-47.517-47.418-7.103 7.103 47.518 47.418c1.9 2.001 2.201 5.102.5 7.002-.456.569-1.035 1.027-1.693 1.339-.659.312-1.38.47-2.109.462-1.347-.024-2.635-.561-3.601-1.501l-44.016-44.116-7.003 7.003-3.601-3.602-7.103 7.103 5.002 5.002c1.5 1.496 3.533 2.337 5.652 2.337s4.152-.841 5.652-2.337l1.401-1.301 37.014 37.014c1.45 1.463 3.188 2.609 5.103 3.367 1.916.758 3.967 1.11 6.026 1.035 2.059-.076 4.079-.577 5.934-1.472 1.856-.895 3.505-2.165 4.845-3.73 5.202-5.902 4.701-15.006-.901-20.708z"/>
-									<path d="m216.963 124.414c.954.958 2.249 1.497 3.601 1.501.654-.004 1.301-.139 1.903-.397.601-.257 1.145-.633 1.599-1.104l20.007-19.907c.942-.942 1.471-2.22 1.471-3.552 0-1.3318-.529-2.6092-1.471-3.5511s-2.219-1.471-3.551-1.471-2.61.5291-3.552 1.471l-20.007 20.0071c-.917.935-1.43 2.192-1.43 3.502 0 1.309.513 2.566 1.43 3.501z"/>
-									<path d="m227.467 134.918c.954.957 2.249 1.497 3.601 1.5.654-.003 1.301-.138 1.903-.396.601-.258 1.145-.633 1.598-1.104l20.008-19.908c.942-.941 1.471-2.219 1.471-3.551s-.529-2.609-1.471-3.551-2.219-1.471-3.551-1.471-2.61.529-3.552 1.471l-20.007 20.007c-.917.935-1.43 2.192-1.43 3.502 0 1.309.513 2.566 1.43 3.501z"/>
-									<path d="m208.36 164.229 7.102-7.003 6.703-6.702c2.705 1.809 5.852 2.846 9.103 3.001 1.891.024 3.766-.346 5.505-1.086 1.74-.741 3.306-1.836 4.599-3.216l23.709-23.709c.942-.942 1.471-2.219 1.471-3.551s-.529-2.609-1.471-3.551-2.22-1.471-3.552-1.471-2.609.529-3.551 1.471l-23.709 23.709c-.36.421-.804.764-1.303 1.005s-1.044.375-1.598.395c-2.401 0-5.202-2.401-6.002-3.201-.954-.958-2.249-1.497-3.601-1.501-1.305-.008-2.562.495-3.502 1.401l-81.73 81.73c-.378.386-.829.691-1.328.897-.498.206-1.034.31-1.573.304-.526.017-1.05-.082-1.534-.29-.484-.207-.916-.518-1.267-.911-.378-.372-.678-.816-.883-1.305-.205-.49-.311-1.015-.311-1.546 0-.53.106-1.056.311-1.545.205-.49.505-.934.883-1.306l50.719-50.719 14.005-14.105 7.103-7.003 9.803-9.903c.488-.457.876-1.011 1.138-1.626.261-.616.392-1.279.382-1.948-.009-.668-.158-1.328-.437-1.935-.279-.608-.682-1.151-1.183-1.594-1.1-1.2-3.701-4.502-3.801-7.103.056-.987.485-1.917 1.2-2.601l23.809-23.7084c.942-.9418 1.471-2.2193 1.471-3.5513s-.529-2.6094-1.471-3.5513-2.219-1.471-3.551-1.471-2.61.5291-3.552 1.471l-23.708 23.709c-1.333 1.282-2.392 2.82-3.114 4.522s-1.092 3.533-1.088 5.382c.227 3.686 1.512 7.229 3.701 10.203l-6.702 6.603-7.003 7.102-14.105 14.006-50.719 50.718c-1.945 1.972-3.266 4.473-3.799 7.191-.532 2.718-.253 5.532.803 8.093 1.056 2.56 2.842 4.753 5.136 6.304 2.294 1.552 4.994 2.394 7.764 2.421 1.84.006 3.663-.354 5.363-1.058s3.243-1.738 4.541-3.043l43.716-43.616 7.002-7.103z"/>
-								</g>
-							</svg>
-							<figcaption class="navigation__figcaption">Presto!</figcaption>
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</section>
-	<section class="projet masonry">
-		<h1 class="projet__titre">Presto!</h1>
-		<p class="projet__description">Appli de livraison de repas de Coopsco</p>
-		<ul class="projet__processus">
-			<li class="projet__formats">
-				<a href="https://cz1ijw.axshare.com" class="lien web"
-				   aria-label="Diagramme de flux dans Axure Cloud. Ce lien s'ouvrira dans une nouvelle fenêtre."
-				   target="_blank">Diagramme de flux</a>
-			</li>
-			<li class="projet__formats">
-				<a href="https://d029zq.axshare.com" class="lien axure"
-				   aria-label="Prototype Axure dans Axure Cloud. Ce lien s'ouvrira dans une nouvelle fenêtre."
-				   target="_blank">Prototype Axure</a>
-			</li>
-			<li class="projet__formats">
-				<a href="https://www.figma.com/file/scnYI2xeiK1NNaVJN1MHsY/Planche-de-style-Presto-gabrielcaron.ca?node-id=0%3A1"
-				   class="lien figma"
-				   aria-label="Planche de style dans Figma (en ligne). Ce lien s'ouvrira dans une nouvelle fenêtre."
-				   target="_blank">Planche de style</a>
-			</li>
-			<li class="projet__formats">
-				<a href="https://www.figma.com/proto/h6ZHWJ7vJblHbcJWsYoHPf/Maquettes-Presto-gabrielcaron.ca?page-id=0%3A1&node-id=39%3A32&viewport=645%2C234%2C0.5652834177017212&scaling=scale-down&starting-point-node-id=39%3A32"
-				   class="lien figma"
-				   aria-label="Maquette Figma (en ligne). Ce lien s'ouvrira dans une nouvelle fenêtre."
-				   target="_blank">Maquette Figma</a>
-			</li>
-			<li class="projet__formats">
-				<a href="../transcriptions-textuelles/presto.html"
-				   class="lien web">Transcription textuelle</a>
-			</li>
-		</ul>
-		<figure class="projet__figure">
-			<picture class="projet__picture">
-				<!-- Image pour mobile -->
-				<source media="(max-width: 599px)"
-						srcset="../liaisons/images/projets/applis/presto-600.png 1x, ../liaisons/images/projets/applis/presto-1200.png 2x">
-				<!-- Image pour tablette -->
-				<source media="(max-width: 1000px)"
-						srcset="../liaisons/images/projets/applis/presto-1000.png 1x, ../liaisons/images/projets/applis/presto-2000.png 2x">
-				<!-- Image pour poste de table et image de repli -->
-				<img src="../liaisons/images/projets/applis/presto-1400.png"
-					 srcset="../liaisons/images/projets/applis/presto-1400.png 1x, ../liaisons/images/projets/applis/presto-2800.png 2x"
-					 alt="">
-			</picture>
-			<figcaption class="projet__figcaption">Ce projet a été réalisé à l'automne 2020 dans le cadre du cours
-				Conception interactive I en Techniques d'intégration multimédia au Cégep de Sainte-Foy. <a
-						href="../credits.html#presto">Avis sur les droits d'auteur</a>
-			</figcaption>
-		</figure>
-	</section>
-</main>
-<footer class="pied-de-page">
-	<div class="pied-de-page__conteneur-grille">
-		<div class="pied-de-page__rangee-logo">
-			<a href="../" aria-label="Revenir à l'accueil"
-			   class="pied-de-page__lien-accueil">
-				<svg aria-hidden="true" class="pied-de-page__logo" viewBox="0 0 561.77 137.56"
-					 xmlns="http://www.w3.org/2000/svg">
-					<path class="elevation" d="m137 23.72v90.58a23.26 23.26 0 0 1 -11.73 20.15 23.09 23.09 0 0 1 -11.5 3.08h-90.55a23.23 23.23 0 0 1 -23.22-23.23v-90.58a23.3 23.3 0 0 1 23.22-23.23h90.59a23.31 23.31 0 0 1 23.19 23.23z"
-						  fill="#231f20"/>
-					<path class="signature"
-						  d="m131.14 92.45c-4.7 4.12-9.2 8.07-13.57 11.8-6-38.59 3-70.2 6.57-82.76 1.59-5.57 1.92-6.73.72-8.24a3.14 3.14 0 0 0 -2.6-1.17 3.07 3.07 0 0 0 -1.72.66c-25.87 20.77-48.23 33.92-66.54 39.12 6.8-15.84 2.6-28.79-5.47-35.18-7.41-5.88-19.63-7.19-30.2 3.13-8.87 8.66-9.59 23.05-1.6 32.07 3 3.39 10.57 9.37 25.77 8.2-10.96 16.74-28.36 36.52-42.5 51.62v2.6a23.2 23.2 0 0 0 .66 5.5c15.98-16.8 37.75-41.19 49.68-60.8 15.49-3.23 37.21-13.12 67.21-36.23-4.19 15-12.24 47.29-5.31 86q-3.85 3.21-7.6 6.15c-16.41-14.09-34.26-19.48-51.93-15.62-26.07 5.68-34.1 19-33.06 28.62a16.72 16.72 0 0 0 4.53 9.61h10.64c-5.78-2.28-8.78-6.28-9.21-10.26-.83-7.74 7.62-17.59 28.38-22.11a45.69 45.69 0 0 1 9.83-1.07c14 0 26.16 6.51 35.88 14.59-12.31 9.13-24.16 15.79-37.2 18.85h18.06a136.44 136.44 0 0 0 23.72-14.76 114.4 114.4 0 0 1 12.72 14.53 22.66 22.66 0 0 0 8.27-2.85 162.48 162.48 0 0 1 -6.52-23.36c5.23-4.42 10.63-9.15 16.3-14.13l1.95-1.7v-8zm-84.62-38.87c-11.41 1.92-20.28 0-25.27-5.68-5.8-6.55-5.2-17.45 1.3-23.8 3.54-3.45 8.37-5.92 13.29-5.92a14.27 14.27 0 0 1 9 3.2c6.83 5.41 9.81 17.35 1.68 32.2zm62.82 65.62-.2-.19c1.47-1.16 2.94-2.35 4.43-3.57.83 3.77 1.81 7.6 3 11.46-2.21-2.53-4.57-5.13-7.23-7.7z"
-						  fill="#fff"/>
-					<path class="maison"
-						  d="m58.24 109.69v-28.84a1 1 0 0 1 1-1h18.56a1 1 0 0 1 1 1v28.84a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1v-39.11a1 1 0 0 1 1-1h11.81a1 1 0 0 0 .67-1.75l-48.78-43.9a1 1 0 0 0 -1.34 0l-48.78 43.9a1 1 0 0 0 .67 1.75h11.81a1 1 0 0 1 1 1v39.11a1 1 0 0 0 1 1h23.69a1 1 0 0 0 1-1z"
-						  fill="#fff"/>
-					<g class="logotype">
-						<path d="m227.42 50.15a20.14 20.14 0 0 1 -8.89 5.85 37.07 37.07 0 0 1 -12.73 2.08 25.22 25.22 0 0 1 -12.86-3.2 21.37 21.37 0 0 1 -8.54-9.3 32.63 32.63 0 0 1 -3.09-14.32v-3.86a34.78 34.78 0 0 1 2.85-14.65 21.18 21.18 0 0 1 8.23-9.47 23.69 23.69 0 0 1 12.61-3.28q10 0 15.72 4.79t6.71 14h-11.34c-.52-3.24-1.66-5.6-3.44-7.11a11 11 0 0 0 -7.31-2.25 10.33 10.33 0 0 0 -9.05 4.47q-3.1 4.45-3.14 13.27v3.61q0 8.9 3.38 13.43t9.89 4.54q6.57 0 9.36-2.79v-9.78h-10.6v-8.58h22.24z"/>
-						<path d="m279.18 45.65h-20.41l-3.89 11.64h-12.38l21-56.51h10.79l21.16 56.51h-12.35zm-17.27-9.44h14.09l-7.1-21.15z"/>
-						<path d="m312 57.29v-56.51h19.79q10.29 0 15.61 3.94t5.32 11.54a12.81 12.81 0 0 1 -2.14 7.32 12.28 12.28 0 0 1 -5.94 4.64 11.94 11.94 0 0 1 6.85 4.38 13 13 0 0 1 2.51 8.08q0 8.15-5.2 12.34t-14.8 4.27zm11.64-32.84h8.62q8.81-.15 8.81-7c0-2.56-.74-4.41-2.23-5.53s-3.84-1.69-7.05-1.69h-8.15zm0 8.23v15.26h10a9.66 9.66 0 0 0 6.36-1.94 6.73 6.73 0 0 0 2.31-5.42q0-7.76-8-7.88z"/>
-						<path d="m394.44 36.6h-9.28v20.69h-11.64v-56.51h21q10 0 15.45 4.46t5.44 12.61a17.38 17.38 0 0 1 -2.51 9.65 17 17 0 0 1 -7.58 6.15l12.22 23.1v.54h-12.54zm-9.28-9.43h9.39a9.63 9.63 0 0 0 6.8-2.23 8 8 0 0 0 2.4-6.15 8.52 8.52 0 0 0 -2.27-6.29q-2.26-2.29-7-2.29h-9.35z"/>
-						<path d="m447.07 57.29h-11.64v-56.51h11.64z"/>
-						<path d="m502.81 32.8h-22.35v15.14h26.24v9.35h-37.89v-56.51h37.81v9.43h-26.16v13.47h22.35z"/>
-						<path d="m537.05 47.94h24.72v9.35h-36.37v-56.51h11.65z"/>
-						<path d="m227.07 118q-.66 9.12-6.73 14.36t-16 5.24q-10.87 0-17.1-7.31t-6.24-20.13v-3.46a34 34 0 0 1 2.87-14.36 21.59 21.59 0 0 1 8.21-9.53 23 23 0 0 1 12.4-3.32q9.78 0 15.76 5.24t6.91 14.72h-11.64c-.29-3.65-1.3-6.3-3-7.94s-4.41-2.47-8-2.47q-5.82 0-8.71 4.18t-3 12.94v4.27q0 9.16 2.78 13.39t8.75 4.23c3.59 0 6.28-.82 8-2.46s2.79-4.19 3.05-7.63z"/>
-						<path d="m276.25 125.14h-20.41l-3.84 11.65h-12.43l21-56.52h10.83l21.16 56.52h-12.39zm-17.25-9.43h14.13l-7.13-21.16z"/>
-						<path d="m330 116.1h-9.3v20.69h-11.64v-56.52h21q10 0 15.45 4.46t5.43 12.62a17.34 17.34 0 0 1 -2.5 9.64 17.08 17.08 0 0 1 -7.59 6.16l12.23 23.09v.55h-12.5zm-9.28-9.44h9.4a9.62 9.62 0 0 0 6.79-2.23 8 8 0 0 0 2.41-6.15 8.57 8.57 0 0 0 -2.32-6.28c-1.52-1.52-3.84-2.29-7-2.29h-9.3z"/>
-						<path d="m416.15 109.81a34.06 34.06 0 0 1 -2.95 14.63 22.29 22.29 0 0 1 -8.44 9.71 25 25 0 0 1 -25.13 0 22.4 22.4 0 0 1 -8.54-9.65 33.19 33.19 0 0 1 -3.09-14.38v-2.8a33.87 33.87 0 0 1 3-14.69 22.4 22.4 0 0 1 8.5-9.74 24.88 24.88 0 0 1 25.11 0 22.4 22.4 0 0 1 8.5 9.74 33.8 33.8 0 0 1 3 14.66zm-11.8-2.56q0-8.9-3.18-13.51a11.25 11.25 0 0 0 -18.17-.06q-3.18 4.56-3.22 13.37v2.76q0 8.66 3.18 13.43a11.15 11.15 0 0 0 18.17.17c2.09-3.06 3.16-7.53 3.18-13.41z"/>
-						<path d="m481.53 136.79h-11.64l-22.67-37.19v37.19h-11.65v-56.52h11.65l22.71 37.26v-37.26h11.6z"/>
-					</g>
-				</svg>
-			</a>
-			<h2 class="visuallyhidden">Gabriel Caron</h2>
-			<p class="pied-de-page__titres">Développeur Web<br>et designer UI/UX</p>
-		</div>
-		<nav class="navigation">
-			<h3 class="navigation__titre rangee1">
-				<a href="../web-applis/" class="navigation__lien section">Web + applis</a>
-			</h3>
-			<ul class="navigation__liste rangee2">
-				<li class="navigation__item">
-					<a href="../web-applis/#web" class="navigation__lien">Web</a>
-				</li>
-				<li class="navigation__item">
-					<a href="../web-applis/#applis"
-					   class="navigation__lien">Applis</a>
-				</li>
-			</ul>
-			<h3 class="navigation__titre rangee1">
-				<a href="../design-graphique/"
-				   class="navigation__lien section">Design graphique</a>
-			</h3>
-			<ul class="navigation__liste rangee2">
-				<li class="navigation__item">
-					<a href="../design-graphique/#edition" class="navigation__lien">Édition</a>
-				</li>
-				<li class="navigation__item">
-					<a href="../design-graphique/#identite-visuelle"
-					   class="navigation__lien">Identité visuelle</a>
-				</li>
-				<li class="navigation__item">
-					<a href="../design-graphique/#publicite"
-					   class="navigation__lien">Publicité</a>
-				</li>
-			</ul>
-			<h3 class="navigation__titre rangee1">
-				<a href="../me-contacter/" class="navigation__lien section">Me
-					contacter</a>
-			</h3>
-			<h3 class="navigation__titre rangee3">Suivez-moi</h3>
-			<ul class="navigation__liste rangee4">
-				<li class="navigation__item">
-					<a href="https://www.linkedin.com/in/gabrielcaron/"
-					   class="navigation__lien navigation__lien--externe" target="_blank"
-					   aria-label="Suivez-moi sur LinkedIn. Ce lien s'ouvrira dans une nouvelle fenêtre.">LinkedIn</a>
-				</li>
-				<li class="navigation__item">
-					<a href="https://twitter.com/gabrcaron/" class="navigation__lien navigation__lien--externe"
-					   target="_blank"
-					   aria-label="Suivez-moi sur X. Ce lien s'ouvrira dans une nouvelle fenêtre.">X</a>
-				</li>
-				<li class="navigation__item">
-					<a href="https://www.instagram.com/gabrcaron/"
-					   class="navigation__lien navigation__lien--externe" target="_blank"
-					   aria-label="Suivez-moi sur Instagram. Ce lien s'ouvrira dans une nouvelle fenêtre.">Instagram</a>
-				</li>
-				<li class="navigation__item">
-					<a href="https://www.facebook.com/gabricaron/"
-					   class="navigation__lien navigation__lien--externe" target="_blank"
-					   aria-label="Suivez-moi sur Facebook. Ce lien s'ouvrira dans une nouvelle fenêtre.">Facebook</a>
-				</li>
-			</ul>
-			<h3 class="navigation__titre rangee3">Autres contenus</h3>
-			<ul class="navigation__liste rangee4">
-				<li class="navigation__item">
-					<a href="https://www.behance.net/gabrielcaron"
-					   class="navigation__lien navigation__lien--externe" target="_blank"
-					   aria-label="Voir mon profil Behance. Ce lien s'ouvrira dans une nouvelle fenêtre.">Behance</a>
-				</li>
-				<li class="navigation__item">
-					<a href="https://github.com/gabrielcaron/"
-					   class="navigation__lien navigation__lien--externe" target="_blank"
-					   aria-label="Voir mon profil GitHub. Ce lien s'ouvrira dans une nouvelle fenêtre.">GitHub</a>
-				</li>
-				<li class="navigation__item">
-					<a href="https://vimeo.com/gabrielcaron/"
-					   class="navigation__lien navigation__lien--externe" target="_blank"
-					   aria-label="Voir mon profil Viméo. Ce lien s'ouvrira dans une nouvelle fenêtre.">Viméo</a>
-				</li>
-			</ul>
-			<h3 class="navigation__titre rangee3">
-				<a href="../a-propos.html" class="navigation__lien section">À propos
-					de ce site</a>
-			</h3>
-			<ul class="navigation__liste rangee4">
-				<li class="navigation__item">
-					<a href="../accessibilite.html"
-					   class="navigation__lien">Accessibilité</a></li>
-				<li class="navigation__item">
-					<a href="../credits.html" class="navigation__lien">Crédits</a>
-				</li>
-			</ul>
-		</nav>
-		<p class="pied-de-page__copyright">© 2023, Gabriel Caron. Tous droits réservés.</p>
-	</div>
-	<img src="../liaisons/images/design/vagues-pied.svg" class="pied-de-page__vagues" alt="">
-</footer>
-</body>
+					<h2 class="visuallyhidden">Gabriel Caron</h2>
+					<p class="pied-de-page__titres">
+						Développeur Web<br />et designer UI/UX
+					</p>
+				</div>
+				<nav class="navigation">
+					<h3 class="navigation__titre rangee1">
+						<a href="../web-applis/" class="navigation__lien section"
+							>Web + applis</a
+						>
+					</h3>
+					<ul class="navigation__liste rangee2">
+						<li class="navigation__item">
+							<a href="../web-applis/#web" class="navigation__lien">Web</a>
+						</li>
+						<li class="navigation__item">
+							<a href="../web-applis/#applis" class="navigation__lien"
+								>Applis</a
+							>
+						</li>
+					</ul>
+					<h3 class="navigation__titre rangee1">
+						<a href="../design-graphique/" class="navigation__lien section"
+							>Design graphique</a
+						>
+					</h3>
+					<ul class="navigation__liste rangee2">
+						<li class="navigation__item">
+							<a href="../design-graphique/#edition" class="navigation__lien"
+								>Édition</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a
+								href="../design-graphique/#identite-visuelle"
+								class="navigation__lien"
+								>Identité visuelle</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a href="../design-graphique/#publicite" class="navigation__lien"
+								>Publicité</a
+							>
+						</li>
+					</ul>
+					<h3 class="navigation__titre rangee1">
+						<a href="../me-contacter/" class="navigation__lien section"
+							>Me contacter</a
+						>
+					</h3>
+					<h3 class="navigation__titre rangee3">Suivez-moi</h3>
+					<ul class="navigation__liste rangee4">
+						<li class="navigation__item">
+							<a
+								href="https://www.linkedin.com/in/gabrielcaron/"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Suivez-moi sur LinkedIn. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>LinkedIn</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a
+								href="https://twitter.com/gabrcaron/"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Suivez-moi sur X. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>X</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a
+								href="https://www.instagram.com/gabrcaron/"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Suivez-moi sur Instagram. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>Instagram</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a
+								href="https://www.facebook.com/gabricaron/"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Suivez-moi sur Facebook. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>Facebook</a
+							>
+						</li>
+					</ul>
+					<h3 class="navigation__titre rangee3">Autres contenus</h3>
+					<ul class="navigation__liste rangee4">
+						<li class="navigation__item">
+							<a
+								href="https://www.behance.net/gabrielcaron"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Voir mon profil Behance. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>Behance</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a
+								href="https://github.com/gabrielcaron/"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Voir mon profil GitHub. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>GitHub</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a
+								href="https://vimeo.com/gabrielcaron/"
+								class="navigation__lien navigation__lien--externe"
+								target="_blank"
+								aria-label="Voir mon profil Viméo. Ce lien s'ouvrira dans une nouvelle fenêtre."
+								>Viméo</a
+							>
+						</li>
+					</ul>
+					<h3 class="navigation__titre rangee3">
+						<a href="../a-propos.html" class="navigation__lien section"
+							>À propos de ce site</a
+						>
+					</h3>
+					<ul class="navigation__liste rangee4">
+						<li class="navigation__item">
+							<a href="../accessibilite.html" class="navigation__lien"
+								>Accessibilité</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a href="../credits.html" class="navigation__lien">Crédits</a>
+						</li>
+					</ul>
+				</nav>
+				<p class="pied-de-page__copyright">
+					© 2023, Gabriel Caron. Tous droits réservés.
+				</p>
+			</div>
+			<img
+				src="../liaisons/images/design/vagues-pied.svg"
+				class="pied-de-page__vagues"
+				alt="" />
+		</footer>
+	</body>
 </html>
