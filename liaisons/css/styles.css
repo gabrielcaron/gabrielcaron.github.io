@@ -581,7 +581,7 @@ body {
 /*
 * Mixins des boutons
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.0
+* @version 2.2
 */
 /* Styles pour l'état survol */
 /* Styles pour l'état actif */
@@ -800,24 +800,25 @@ body {
   }
 }
 .entete .navigation__lien:hover, .entete .navigation__lien:focus {
-  background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
+  color: #000;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien:hover, .entete .navigation__lien:focus {
-    color: #404040;
+    color: #e6e6e6;
   }
 }
 .entete .navigation__lien.navigation__lien--courant {
-  border: 0.3rem solid rgb(255, 225, 0);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  color: #000;
+  border: 0.3rem solid #ffe100;
+  font-family: Roboto-Bold, Arial, sans serif;
+  text-decoration: none;
   line-height: 120%;
   padding: 1rem 1.5rem;
-  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien.navigation__lien--courant {
-    box-shadow: none;
+    color: #e6e6e6;
   }
 }
 @media screen and (min-width: 520px) {
@@ -825,13 +826,12 @@ body {
     padding: 1.2rem 2.8rem;
   }
 }
-.entete .navigation__lien.navigation__lien--courant:hover {
-  border: none;
-  padding: 1.3rem 1.8rem;
+.entete .navigation__lien.navigation__lien--courant:active {
+  background-color: #ffe100;
 }
-@media screen and (min-width: 520px) {
-  .entete .navigation__lien.navigation__lien--courant:hover {
-    padding: 1.5rem 3.1rem;
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien.navigation__lien--courant:active {
+    color: #000;
   }
 }
 
@@ -880,14 +880,16 @@ body {
   }
 }
 .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
-  border: 0.3rem solid rgb(255, 225, 0);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  color: #000;
+  border: 0.3rem solid #ffe100;
+  font-family: Roboto-Bold, Arial, sans serif;
+  text-decoration: none;
   padding: 1rem 2rem;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
-    box-shadow: none;
+    color: #e6e6e6;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -973,24 +975,20 @@ body {
   }
 }
 .projets .navigation__rangee-sections .navigation__lien--courant {
-  border: 0.3rem solid rgb(255, 225, 0);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  color: #000;
+  border: 0.3rem solid #ffe100;
+  font-family: Roboto-Bold, Arial, sans serif;
+  text-decoration: none;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-sections .navigation__lien--courant {
-    box-shadow: none;
+    color: #e6e6e6;
   }
 }
 .projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
-  background: linear-gradient(187.52deg, #fff000 6.26%, #ffe100 93.03%);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  text-decoration: underline;
   text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
-    box-shadow: none;
-  }
 }
 .projets .navigation__rangee-projets {
   padding: 0;
@@ -1006,15 +1004,20 @@ body {
   }
 }
 .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
+  color: #000;
   text-decoration: none;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
+    color: #e6e6e6;
+  }
+}
 .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
-  background: linear-gradient(187.52deg, #fff000 6.26%, #ffd700 93.03%);
-  box-shadow: -5px -5px 20px 0px rgba(255, 255, 255, 0.5), 3px 5px 10px 0px rgba(0, 0, 0, 0.05);
+  background-color: #ffe100;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
-    box-shadow: none;
+    color: #000;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
