@@ -57,7 +57,7 @@ h6 {
 	font-weight: normal;
 	line-height: 100%;
 	letter-spacing: $EspacementStandard;
-
+	text-wrap: balance;
 	@media screen and (prefers-color-scheme: dark) {
 		color: $blancSombre;
 	}

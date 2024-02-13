@@ -428,6 +428,7 @@ h6 {
   font-weight: normal;
   line-height: 100%;
   letter-spacing: 0.05rem;
+  text-wrap: balance;
 }
 @media screen and (prefers-color-scheme: dark) {
   h1,
