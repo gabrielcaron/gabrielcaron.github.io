@@ -723,7 +723,7 @@ body {
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.5
+* @version 2.2
 */
 /* En-tête */
 .entete .navigation {
@@ -862,6 +862,9 @@ body {
   .projets .navigation__lien:hover, .projets .navigation__lien:focus {
     color: #404040;
   }
+}
+.projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
+  border: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
