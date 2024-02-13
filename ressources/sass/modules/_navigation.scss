@@ -138,7 +138,7 @@
 				}
 
 				& .icone {
-					border: none;
+					border: solid 0.2rem transparent;
 
 					@media screen and (prefers-color-scheme: dark) {
 						border: 0.2rem solid $gris65AAA;
@@ -180,8 +180,6 @@
 			& .icone {
 				border: solid 0.2rem $blanc;
 				border-radius: $arrondiMobile;
-				box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
-					-5px -5px 25px 0px rgba(255, 255, 255, 1);
 
 				@media screen and (min-width: $mobile600px) {
 					border-radius: $arrondiMobile - 1rem;

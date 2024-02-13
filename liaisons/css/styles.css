@@ -821,6 +821,9 @@ body {
     color: #e6e6e6;
   }
 }
+.entete .navigation__lien.navigation__lien--courant:hover {
+  text-decoration: underline;
+}
 @media screen and (min-width: 520px) {
   .entete .navigation__lien.navigation__lien--courant {
     padding: 1.2rem 2.8rem;
@@ -864,7 +867,7 @@ body {
   }
 }
 .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
-  border: none;
+  border: solid 0.2rem transparent;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
@@ -892,6 +895,9 @@ body {
     color: #e6e6e6;
   }
 }
+.projets .navigation__lien.navigation__lien--courant .navigation__figcaption:hover {
+  text-decoration: underline;
+}
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
     padding: 1.3rem 2.3rem;
@@ -904,7 +910,6 @@ body {
 .projets .navigation__figure .icone {
   border: solid 0.2rem #fff;
   border-radius: 4rem;
-  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__figure .icone {
@@ -985,6 +990,9 @@ body {
   .projets .navigation__rangee-sections .navigation__lien--courant {
     color: #e6e6e6;
   }
+}
+.projets .navigation__rangee-sections .navigation__lien--courant:hover {
+  text-decoration: underline;
 }
 .projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
   text-decoration: underline;
