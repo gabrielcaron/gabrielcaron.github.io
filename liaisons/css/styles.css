@@ -725,6 +725,7 @@ body {
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2.2
 */
+/* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
 /* En-tête */
 .entete .navigation {
   width: 100%;
@@ -757,6 +758,17 @@ body {
   padding: 1.2rem 1.7rem;
   margin: 0 0.3rem;
   text-align: center;
+}
+.entete .navigation__lien:link, .entete .navigation__lien:visited {
+  color: #404040;
+}
+.entete .navigation__lien:hover, .entete .navigation__lien:active {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien:hover, .entete .navigation__lien:active {
+    color: #e6e6e6;
+  }
 }
 @media screen and (min-width: 520px) {
   .entete .navigation__lien {
@@ -819,15 +831,9 @@ body {
 /* Projets */
 .projets .navigation__lien {
   font-family: Roboto-Medium, Arial, sans serif;
-  color: #404040;
   letter-spacing: 0.05rem;
   line-height: 100%;
   border-radius: 4rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien:hover, .projets .navigation__lien:focus {
-    color: #404040;
-  }
 }
 .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
   border: solid 0.2rem transparent;
@@ -914,6 +920,17 @@ body {
   padding: 1rem 1.5rem;
   margin: 0 0.3rem;
 }
+.projets .navigation__rangee-sections .navigation__lien:link, .projets .navigation__rangee-sections .navigation__lien:visited {
+  color: #404040;
+}
+.projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:active {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:active {
+    color: #e6e6e6;
+  }
+}
 @media screen and (min-width: 550px) {
   .projets .navigation__rangee-sections .navigation__lien {
     font-size: 2.4rem;
@@ -935,10 +952,6 @@ body {
 }
 .projets .navigation__rangee-sections .navigation__lien--courant:hover {
   text-decoration: underline;
-}
-.projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
-  text-decoration: none;
-  text-decoration: none;
 }
 .projets .navigation__rangee-projets {
   padding: 0;
@@ -1013,6 +1026,17 @@ body {
   .projets .navigation__rangee-selecteur {
     display: flex;
     gap: 5rem;
+  }
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:link, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:visited {
+  color: #404040;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:active {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:active {
+    color: #e6e6e6;
   }
 }
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
@@ -1147,10 +1171,20 @@ body {
 .pied-de-page .navigation__lien {
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 2rem;
-  color: #404040;
   line-height: 225%;
   letter-spacing: 0.05rem;
   transition: border-bottom 0.075s ease-in-out;
+}
+.pied-de-page .navigation__lien:link, .pied-de-page .navigation__lien:visited {
+  color: #404040;
+}
+.pied-de-page .navigation__lien:hover, .pied-de-page .navigation__lien:active {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pied-de-page .navigation__lien:hover, .pied-de-page .navigation__lien:active {
+    color: #e6e6e6;
+  }
 }
 @media screen and (min-width: 1200px) {
   .pied-de-page .navigation__lien {
@@ -1164,14 +1198,6 @@ body {
 }
 .pied-de-page .navigation__lien.section {
   line-height: 100%;
-}
-.pied-de-page .navigation__lien:hover {
-  text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .pied-de-page .navigation__lien:hover {
-    color: #e6e6e6;
-  }
 }
 @media screen and (min-width: 600px) {
   .pied-de-page__copyright {
@@ -1713,6 +1739,17 @@ body {
   margin-top: 1rem;
   padding: 1rem 4rem 1rem 0;
 }
+.lien:link, .lien:visited {
+  color: #404040;
+}
+.lien:hover, .lien:active {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .lien:hover, .lien:active {
+    color: #e6e6e6;
+  }
+}
 .lien::before {
   content: "";
   display: inline-block;
@@ -1723,22 +1760,6 @@ body {
   padding-right: 1rem;
   background-repeat: no-repeat;
   transition: all, 0.1s ease-in-out;
-}
-.lien:link, .lien:visited {
-  color: #404040;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .lien:link, .lien:visited {
-    color: #a6a6a6;
-  }
-}
-.lien:hover, .lien:active {
-  color: #000;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .lien:hover, .lien:active {
-    color: #e6e6e6;
-  }
 }
 .lien.axure::before {
   background-image: url(../images/icones/axure.svg);
@@ -1861,11 +1882,6 @@ a {
 }
 a:hover {
   text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  a {
-    color: #e6e6e6;
-  }
 }
 
 @media screen and (prefers-color-scheme: dark) {

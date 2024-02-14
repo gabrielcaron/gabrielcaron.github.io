@@ -625,6 +625,7 @@
 // Liens avec icones pour formats
 
 .lien {
+	@include couleursLiens;
 	font-family: $RobotoMedium;
 	letter-spacing: $EspacementStandard;
 	display: inline-block;
@@ -641,24 +642,6 @@
 		padding-right: 1rem;
 		background-repeat: no-repeat;
 		transition: all, 0.1s ease-in-out;
-	}
-
-	&:link,
-	&:visited {
-		color: $gris25;
-
-		@media screen and (prefers-color-scheme: dark) {
-			color: $gris65AAA;
-		}
-	}
-
-	&:hover,
-	&:active {
-		color: $noir;
-
-		@media screen and (prefers-color-scheme: dark) {
-			color: $blancSombre;
-		}
 	}
 
 	&.axure {
