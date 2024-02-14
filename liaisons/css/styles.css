@@ -797,6 +797,14 @@ body {
 .entete .navigation__lien:hover, .entete .navigation__lien:focus {
   text-decoration: none;
 }
+.entete .navigation__lien:active {
+  background-color: #ffe100;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien:active {
+    color: #000;
+  }
+}
 .entete .navigation__lien.navigation__lien--courant {
   color: #000;
   border: 0.3rem solid #ffe100;
@@ -819,11 +827,11 @@ body {
     padding: 1.2rem 2.8rem;
   }
 }
-.entete .navigation__lien.navigation__lien--courant:active {
+.entete .navigation__lien.navigation__lien--courant:active, .entete .navigation__lien.navigation__lien--courant:focus-visible {
   background-color: #ffe100;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .entete .navigation__lien.navigation__lien--courant:active {
+  .entete .navigation__lien.navigation__lien--courant:active, .entete .navigation__lien.navigation__lien--courant:focus-visible {
     color: #000;
   }
 }
@@ -937,6 +945,14 @@ body {
     padding: 1rem 2.7rem;
   }
 }
+.projets .navigation__rangee-sections .navigation__lien:active {
+  background-color: #ffe100;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-sections .navigation__lien:active {
+    color: #000;
+  }
+}
 .projets .navigation__rangee-sections .navigation__lien--courant {
   color: #000;
   border: 0.3rem solid #ffe100;
@@ -953,6 +969,14 @@ body {
 .projets .navigation__rangee-sections .navigation__lien--courant:hover {
   text-decoration: underline;
 }
+.projets .navigation__rangee-sections .navigation__lien--courant:active, .projets .navigation__rangee-sections .navigation__lien--courant:focus-visible {
+  background-color: #ffe100;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-sections .navigation__lien--courant:active, .projets .navigation__rangee-sections .navigation__lien--courant:focus-visible {
+    color: #000;
+  }
+}
 .projets .navigation__rangee-projets {
   padding: 0;
 }
@@ -966,16 +990,22 @@ body {
     }
   }
 }
-.projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
-  text-decoration: none;
+.projets .navigation__rangee-projets .navigation__lien:link, .projets .navigation__rangee-projets .navigation__lien:visited {
+  color: #404040;
 }
-.projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
-  background-color: #ffe100;
+.projets .navigation__rangee-projets .navigation__lien:hover, .projets .navigation__rangee-projets .navigation__lien:active {
+  color: #000;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
-    color: #000;
+  .projets .navigation__rangee-projets .navigation__lien:hover, .projets .navigation__rangee-projets .navigation__lien:active {
+    color: #e6e6e6;
   }
+}
+.projets .navigation__rangee-projets .navigation__lien .navigation__figcaption {
+  text-decoration: underline;
+}
+.projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
+  text-decoration: none;
 }
 .projets .navigation__rangee-projets .navigation__liste {
   list-style-type: none;
@@ -1056,6 +1086,14 @@ body {
 }
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption:hover {
   text-decoration: underline;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:active .navigation__figcaption, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:focus-visible .navigation__figcaption {
+  background-color: #ffe100;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:active .navigation__figcaption, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:focus-visible .navigation__figcaption {
+    color: #000;
+  }
 }
 .projets .navigation__rangee-selecteur .navigation__item {
   width: 100%;

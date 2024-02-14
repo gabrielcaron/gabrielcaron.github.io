@@ -82,6 +82,10 @@
 				@include boutonHover;
 			}
 
+			&:active {
+				@include boutonActive;
+			}
+
 			&.navigation {
 				&__lien {
 					&--courant {
@@ -93,7 +97,8 @@
 							padding: 1.2rem 2.8rem;
 						}
 
-						&:active {
+						&:active,
+						&:focus-visible {
 							@include boutonActive;
 						}
 					}
@@ -229,9 +234,18 @@
 						padding: 1rem 2.7rem;
 					}
 
+					&:active {
+						@include boutonActive;
+					}
+
 					&--courant {
 						@include boutonPageCourante;
 						text-decoration: none;
+
+						&:active,
+						&:focus-visible {
+							@include boutonActive;
+						}
 					}
 				}
 			}
@@ -245,19 +259,19 @@
 
 			& .navigation {
 				&__lien {
+					@include couleursLiens;
+
+					& .navigation {
+						&__figcaption {
+							text-decoration: underline;
+						}
+					}
+
 					&:hover,
 					&:focus {
 						& .navigation {
 							&__figcaption {
 								@include boutonHover;
-							}
-						}
-					}
-
-					&:active {
-						& .navigation {
-							&__figcaption {
-								@include boutonActive;
 							}
 						}
 					}
@@ -319,6 +333,15 @@
 								& .navigation {
 									&__figcaption {
 										@include boutonPageCourante;
+									}
+								}
+
+								&:active,
+								&:focus-visible {
+									& .navigation {
+										&__figcaption {
+											@include boutonActive;
+										}
 									}
 								}
 							}
