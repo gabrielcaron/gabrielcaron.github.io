@@ -3,35 +3,36 @@
 Portfolio Web et informations pratiques pour assurer sa continuité.
 
 ## Sommaire
+
 - [Configurations ciblées](#configurations-ciblées)
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique](#historique)
-    - [En résumé](#en-résumé)
-    - [2023](#2023)
-    - [2022](#2022)
-    - [2021](#2021)
-    - [2020](#2020)
-    - [2019](#2019)
-    - [2007](#2007)
+  - [En résumé](#en-résumé)
+  - [2023](#2023)
+  - [2022](#2022)
+  - [2021](#2021)
+  - [2020](#2020)
+  - [2019](#2019)
+  - [2007](#2007)
 - [Images](#images)
-    - [Icônes](#icônes)
-        - [Couleurs](#couleurs)
-        - [Tailles](#tailles)
-        - [Intégration d'une icône](#intégration-dune-icône)
-    - [Projets](#projets)
-        - [Droits d'auteur](#droits-dauteur)
-        - [Formats des images](#formats-des-images)
-            - [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
-            - [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
-            - [7 colonnes (design graphique seulement)](#7-colonnes-design-graphique-seulement)
-            - [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
-        - [Création et exportation des aperçus](#création-et-exportation-des-aperçus)
-            - [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
-            - [Projets sans contexte en SVG](#projets-sans-contexte-en-svg)
-            - [Projets réalisés avec Xcode](#projets-réalisés-avec-xcode)
-        - [Adobe Publish Online](#adobe-publish-online)
-            - [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
+  - [Icônes](#icônes)
+    - [Couleurs](#couleurs)
+    - [Tailles](#tailles)
+    - [Intégration d'une icône](#intégration-dune-icône)
+  - [Projets](#projets)
+    - [Droits d'auteur](#droits-dauteur)
+    - [Formats des images](#formats-des-images)
+      - [12 colonnes (pleine largeur)](#12-colonnes-pleine-largeur)
+      - [8 colonnes (design graphique seulement)](#8-colonnes-design-graphique-seulement)
+      - [7 colonnes (design graphique seulement)](#7-colonnes-design-graphique-seulement)
+      - [6 colonnes (design graphique seulement)](#6-colonnes-design-graphique-seulement)
+    - [Création et exportation des aperçus](#création-et-exportation-des-aperçus)
+      - [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
+      - [Projets sans contexte en SVG](#projets-sans-contexte-en-svg)
+      - [Projets réalisés avec Xcode](#projets-réalisés-avec-xcode)
+    - [Adobe Publish Online](#adobe-publish-online)
+      - [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 - [JavaScript](#javascript)
 
 ## Configurations ciblées
@@ -49,49 +50,58 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 
 Aucune dépendance requise.
 
-## Historique
+## Historique des versions
 
-### En résumé
+### v2.2
 
-Un premier portfolio imprimé sous forme de reliure artisanale a été réalisé à l'hiver 2007 dans le cadre du cours 
-Projet graphique 3D lors de la 3e année en Graphisme au Cégep de Rivière-du-Loup.
+- Uniformisation et simplification des rétroactions des boutons de navigation
+- Corrections diverses de conformité aux maquettes
+- Ajout de text-balance aux titres
+- Élimination mixin soulignementLiens
+- Intégration nouveau mixin couleursLiens
+- Nettoyage de code redondant
 
-- À l'été 2019, début du projet d'un nouveau portfolio Web. Il rassemblera les projets réalisés en Graphisme 
-ainsi qu'en Techniques d'intégration multimédia.
-- À l'hiver 2020, un premier prototype est intégré.
-- À l'automne 2020, une deuxième itération de design est amorcée : nouvelles recherches visuelles, esquisses 
-  préliminaires, esquisses fonctionnelles, maquettes, etc.
-- À l'été 2021, une seconde version est intégrée. La mise en ligne d'une version de développement est effectuée.
+### v2.1.1
 
-### 2023
+- Publication des modifications manquantes
 
-#### Janvier 2023
+### v2.1
+
+- Nouveau sélecteur de projets compact
+- Élimination des sections redondantes
+- Simplification initiale des états de navigation
+
+### v2.0
+
+#### 2023
+
+##### Janvier 2023
 
 - Fin de la transition vers des PDF accessibles et balisés. Élimination d'Adobe Publish Online (27 janvier 2023).
 - Mise en ligne du projet Tim (2 janvier 2023)
 - Archivage du projet Boréal Magazine (2 janvier 2023)
 
-### 2022
+#### 2022
 
-#### Juin 2022
+##### Juin 2022
 
 - Mise en ligne du mode sombre automatique (synchronisé avec le système d'exploitation) (29 juin 2022)
 - Début de la transition d'Adobe Publish Online vers des documents PDF accessible (1er juillet 2022)
 
-#### Janvier 2022
+##### Janvier 2022
 
 - Mise en ligne de la version 2 des icônes (11 janvier 2022)
 - Mise en ligne du projet Élite (5 janvier 2022)
 - Mise en ligne du projet Tim (5 janvier 2022)
 
-### 2021
+#### 2021
 
-#### Août 2021
+##### Août 2021
 
 - Activation du domaine gabrielcaron.ca (10 août 2021)
 - Mise en ligne du projet Boréal Magazine (6 août 2021)
 
-#### Juillet 2021
+##### Juillet 2021
 
 - Mise en ligne du projet Festival OFF (31 juillet 2021)
 - Mise en ligne du projet Manuel de typographie (27 juillet 2021)
@@ -104,7 +114,7 @@ ainsi qu'en Techniques d'intégration multimédia.
 - Mise en ligne du projet Grosse-Île (7 juillet 2021)
 - Mise en ligne du projet Destinations Canada (Web) (3 juillet 2021)
 
-#### Juin 2021
+##### Juin 2021
 
 - Mise en ligne du projet Alaia (30 juin 2021)
 - Mise en ligne du projet Mexico (26 juin 2021)
@@ -114,64 +124,62 @@ ainsi qu'en Techniques d'intégration multimédia.
 - Début de l'intégration de la version 2.0 du site (9 juin 2021)
 - Mise en ligne de la version de développement (9 juin 2021)
 
-#### Mai 2021
+##### Mai 2021
 
 - Refonte du projet Boréal Magazine (1er mai 2021)
-    - Retrait des floats
-    - Conversion vers CSS Grid
-    - Mise en place de modules SASS
-    - Refonte de la page d'accueil
+  - Retrait des floats
+  - Conversion vers CSS Grid
+  - Mise en place de modules SASS
+  - Refonte de la page d'accueil
 
-#### Février 2021
+##### Février 2021
 
 - Début des maquettes de la version 2.0 (12 février 2021)
 
-#### Janvier 2021
+##### Janvier 2021
 
 - Début des esquisses fonctionnelles (3 janvier 2021)
 
-### 2020
+#### 2020
 
-#### Décembre 2020
+##### Décembre 2020
 
 - Établissement de l'architecture de l'information (11 décembre 2020)
 
-#### Septembre 2020
+##### Septembre 2020
 
 - Démarrage de la version 2.0 du projet (15 septembre 2020)
-    - Nouvelle recherche visuelle
-    - Début des esquisses préliminaires
+  - Nouvelle recherche visuelle
+  - Début des esquisses préliminaires
 
-#### Mars 2020
+##### Mars 2020
 
 - Fin de l'intégration du prototype 1.0 du site (30 mars 2020)
 - Début de la révision de l'identité visuelle (3 mars 2020)
 - Début de la conception des maquettes et de l'intégration de la version 1.0 du site Web (3 mars 2020)
 
-#### Janvier 2020
+##### Janvier 2020
 
 - Refonte des projets (4 janvier 2020)
-    - Grosse-Île
-    - Mexico
+  - Grosse-Île
+  - Mexico
 
-### 2019
+#### 2019
 
-#### Décembre 2019
+##### Décembre 2019
 
 - Refonte du projet Aquafina (18 décembre 2019)
 
-#### Juin 2019
+##### Juin 2019
 
 - Lancement du projet de portfolio Web
-    - Recherche et idéation
-    - Retraçage et sélection des projets
+  - Recherche et idéation
+  - Retraçage et sélection des projets
 
-### 2007
+### v1.0
 
-#### Mai 2007
-
-- Réalisation du portfolio imprimé
-- Réalisation de la première version de mon identité visuelle
+- Conception et intégration du premier prototype (hiver 2020)
+- Jamais publié
 
 ## Images
 
@@ -182,15 +190,15 @@ ainsi qu'en Techniques d'intégration multimédia.
 
 #### Couleurs
 
-- L'élévation est gris, en aplat. Au survol, un dégradé **linéaire*- est utilisé.
-- Le symbole a un dégradé **radial*- pour l'état par défaut et pour l'état survol.
+- L'élévation est gris, en aplat. Au survol, un dégradé \*_linéaire_- est utilisé.
+- Le symbole a un dégradé \*_radial_- pour l'état par défaut et pour l'état survol.
 
 #### Tailles
 
 - Le symbole, selon sa forme, occupe 60 % à 70 % de la hauteur de l'élévation.
-    - 60 % = hauteur de 191 px
-    - 65 % = hauteur de 207 px
-    - 70 % = hauteur de 223 px
+  - 60 % = hauteur de 191 px
+  - 65 % = hauteur de 207 px
+  - 70 % = hauteur de 223 px
 - La taille maximale de l'icône est de 319 px dans le navigateur.
 - Les traits principaux doivent avoir une épaisseur de 10 pixels. Les détails doivent avoir 5 px.
 - Les symboles ronds sont uniformisés à 207 px de hauteur.
@@ -198,7 +206,6 @@ ainsi qu'en Techniques d'intégration multimédia.
 - Dans une même rangée, la hauteur des symboles doit être uniforme. On évite de mélanger des symboles ronds et carrés dans une même rangée.
 - Si une rangée a une icône avec un symbole rond, toute la rangée sera uniformisée sur la hauteur de ce symbole.
 - Si une rangée a une icône avec un symbole carré, toute la rangée sera uniformisée sur la hauteur de ce symbole.
-
 
 #### Intégration d'une icône
 
@@ -219,19 +226,19 @@ ainsi qu'en Techniques d'intégration multimédia.
 9. Pour conserver la validité du HTML, préfixer avec des ID uniques les dégradés avec le nom du projet, exemple : `#mexico-orange-defaut`.
 10. Lier les ID à l'état survol dans les CSS
 
-
 ### Projets
 
 Le portfolio contient deux types de projets : Web/applications mobiles et design graphique.
+
 - Les projets Web sont présentés en version mobile et tablette.
-- Les projets de design graphique sont présentés la 
-plupart du temps « sans contexte », c'est-à-dire sans support physique.
+- Les projets de design graphique sont présentés la
+  plupart du temps « sans contexte », c'est-à-dire sans support physique.
 
 #### Droits d'auteur
 
 Éviter d'utiliser des identifications visuelles protégées par copyright.
 
-Le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition 
+Le Gouverment du Canda autorise qu'on utilise ses contenus à des fins personnelles ou non commerciales à condition
 de mentionner que « Ce projet n'a pas été faite en association avec le Gouvernement du Canada ni avec l'appui de celui-ci. »
 
 #### Formats des images
@@ -243,31 +250,31 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 ##### 12 colonnes (pleine largeur)
 
 |          | 1x     | 2x     |
-|----------|--------|--------|
+| -------- | ------ | ------ |
 | Mobile   | 600px  | 1200px |
 | Tablette | 1000px | 2000px |
 | Table    | 1400px | 2800px |
 
 ##### 8 colonnes (design graphique seulement)
 
-|          | 1x     | 2x     |
-|----------|--------|--------|
-| Mobile   | 600px  | 1200px |
-| Tablette+| 927px  | 1854px |
+|           | 1x    | 2x     |
+| --------- | ----- | ------ |
+| Mobile    | 600px | 1200px |
+| Tablette+ | 927px | 1854px |
 
 ##### 7 colonnes (design graphique seulement)
 
-|          | 1x     | 2x     |
-|----------|--------|--------|
-| Mobile   | 600px  | 1200px |
-| Tablette+| 808px  | 1616px |
+|           | 1x    | 2x     |
+| --------- | ----- | ------ |
+| Mobile    | 600px | 1200px |
+| Tablette+ | 808px | 1616px |
 
 ##### 6 colonnes (design graphique seulement)
 
-|          | 1x     | 2x     |
-|----------|--------|--------|
-| Mobile   | 600px  | 1200px |
-| Tablette+| 690px  | 1380px |
+|           | 1x    | 2x     |
+| --------- | ----- | ------ |
+| Mobile    | 600px | 1200px |
+| Tablette+ | 690px | 1380px |
 
 #### Création et exportation des aperçus
 
@@ -295,6 +302,7 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 #### Adobe Publish Online
 
 Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
+
 - On peut désactiver le téléchargement du document PDF
 - On peut zoomer autant qu'on souhaite
 - La qualité d'affichage est supérieure
@@ -302,6 +310,7 @@ Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons
 ##### Exporter des PDF pour InDesign
 
 InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
+
 1. Aller dans Acrobat > Fichier > Exporter vers > PostScript. Enregistrer.
 2. Ouvrir ce fichier dans Acrobat Distiller. Utiliser les paramètres «PDF qualité max».
 3. Importer le PDF converti dans InDesign.
