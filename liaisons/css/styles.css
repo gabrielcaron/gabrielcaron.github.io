@@ -1203,14 +1203,16 @@ body {
   }
 }
 .pied-de-page .navigation__titre {
-  color: #000;
   text-decoration: none;
   line-height: 110%;
-  font-size: 2.5rem;
+  font-family: Roboto-Bold, Arial, sans serif;
+  font-size: 2rem;
+  margin: 3rem 0 0 0;
 }
 @media screen and (min-width: 600px) {
   .pied-de-page .navigation__titre {
     grid-column: span 4;
+    margin: initial;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -1219,8 +1221,9 @@ body {
   }
 }
 .pied-de-page .navigation__titre .section {
+  font-family: Roboto-Bold, Arial, sans serif;
   color: #000;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 @media screen and (prefers-color-scheme: dark) {
   .pied-de-page .navigation__titre .section {
@@ -1229,8 +1232,8 @@ body {
 }
 .pied-de-page .navigation__liste {
   list-style-type: "– ";
-  padding: 0 0 0 3rem;
-  margin-top: 0;
+  padding: 0 0 0 2.5rem;
+  margin-top: 0.5rem;
 }
 @media screen and (min-width: 600px) {
   .pied-de-page .navigation__liste {
@@ -1239,7 +1242,7 @@ body {
 }
 .pied-de-page .navigation__lien {
   font-family: Roboto-Medium, Arial, sans serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 225%;
   letter-spacing: 0.05rem;
   transition: border-bottom 0.075s ease-in-out;
@@ -1271,6 +1274,7 @@ body {
   }
 }
 .pied-de-page .navigation__lien.section {
+  color: #000;
   line-height: 100%;
 }
 @media screen and (min-width: 600px) {
