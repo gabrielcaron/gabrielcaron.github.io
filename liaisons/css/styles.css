@@ -687,15 +687,15 @@ body {
   display: none;
 }
 .entete__logo {
-  width: 21.7rem;
-  height: 5.5rem;
+  width: 20rem;
+  height: 4.885rem;
   margin-left: 0.5rem;
   display: block;
 }
 @media screen and (min-width: 900px) {
   .entete__logo {
-    width: 285px;
-    height: 70px;
+    width: 25rem;
+    height: 6.1rem;
     margin-left: 0;
   }
 }
@@ -2484,15 +2484,10 @@ img {
   }
 }
 .projet__description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.05rem;
   color: #404040;
   margin: 1rem 0;
-}
-@media screen and (min-width: 600px) {
-  .projet__description {
-    font-size: 2.5rem;
-  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .projet__description {
@@ -2513,7 +2508,6 @@ img {
 @media screen and (min-width: 600px) {
   .projet__formats {
     display: inline-block;
-    font-size: 2rem;
   }
 }
 .projet__figure {

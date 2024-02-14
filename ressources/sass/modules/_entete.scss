@@ -65,14 +65,14 @@
 	}
 
 	&__logo {
-		width: 21.7rem;
-		height: 5.5rem;
+		width: 20rem;
+		height: 4.885rem;
 		margin-left: 0.5rem;
 		display: block; // si flex non fonctionnel
 
 		@media screen and (min-width: $tablet900px) {
-			width: 285px;
-			height: 70px;
+			width: 25rem;
+			height: 6.1rem;
 			margin-left: 0;
 		}
 
