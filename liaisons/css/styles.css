@@ -770,20 +770,10 @@ body {
     color: #e6e6e6;
   }
 }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 600px) {
   .entete .navigation__lien {
     font-size: 2rem;
     padding: 1.4rem 3rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .entete .navigation__lien {
-    font-size: 1.8rem;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .entete .navigation__lien {
-    font-size: 2rem;
   }
 }
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
@@ -837,83 +827,6 @@ body {
 }
 
 /* Projets */
-.projets .navigation__lien {
-  font-family: Roboto-Medium, Arial, sans serif;
-  letter-spacing: 0.05rem;
-  line-height: 100%;
-  border-radius: 4rem;
-}
-.projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
-  border: solid 0.2rem transparent;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
-    border: 0.2rem solid #a6a6a6;
-  }
-}
-.projets .navigation__lien.navigation__lien--courant .icone {
-  border: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien.navigation__lien--courant .icone {
-    border: 0.2rem solid #ffe100;
-  }
-}
-.projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
-  padding: 1rem 2rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
-    padding: 1.3rem 2.3rem;
-  }
-}
-.projets .navigation__figure {
-  margin: 0;
-  text-align: center;
-}
-.projets .navigation__figure .icone {
-  border: solid 0.2rem #fff;
-  border-radius: 4rem;
-  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
-}
-@media screen and (min-width: 600px) {
-  .projets .navigation__figure .icone {
-    border-radius: 3rem;
-  }
-}
-@media screen and (min-width: 900px) {
-  .projets .navigation__figure .icone {
-    border-radius: 4rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .projets .navigation__figure .icone {
-    border-radius: 5.5rem;
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__figure .icone {
-    border: solid 0.2rem #1f1f1f;
-    box-shadow: none;
-  }
-  .projets .navigation__figure .icone .elevation {
-    fill: #1a1a1a;
-  }
-}
-.projets .navigation__figcaption {
-  font-family: Roboto-Medium, Arial, sans serif;
-  font-size: 1.6rem;
-  display: inline-block;
-  line-height: 125%;
-  border-radius: 4rem;
-  margin-top: 0.5rem;
-  padding: 1.3rem 2.3rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__figcaption {
-    border: 0.3rem solid transparent;
-  }
-}
 .projets .navigation__rangee-sections {
   display: flex;
   align-items: center;
@@ -939,9 +852,9 @@ body {
     color: #e6e6e6;
   }
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .projets .navigation__rangee-sections .navigation__lien {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 1rem 2.7rem;
   }
 }
@@ -1072,6 +985,9 @@ body {
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
   text-decoration: none;
 }
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figure .icone {
+  width: 8.5rem;
+}
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
   color: #000;
   border: 0.3rem solid #ffe100;
@@ -1095,6 +1011,9 @@ body {
     color: #000;
   }
 }
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover .navigation__figure .icone {
+  width: 8.5rem;
+}
 .projets .navigation__rangee-selecteur .navigation__item {
   width: 100%;
 }
@@ -1115,11 +1034,93 @@ body {
   text-align: left;
 }
 .projets .navigation__rangee-selecteur .navigation__figure .icone {
-  width: 8.5rem;
+  width: 8.1rem;
   border-radius: 2rem;
 }
 .projets .navigation__rangee-selecteur .navigation__figcaption {
   padding: 0;
+}
+.projets .navigation__lien {
+  font-family: Roboto-Medium, Arial, sans serif;
+  letter-spacing: 0.05rem;
+  line-height: 100%;
+  border-radius: 4rem;
+}
+.projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
+  border: none;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__lien:hover .icone, .projets .navigation__lien:focus .icone {
+    border: 0.2rem solid #a6a6a6;
+  }
+}
+.projets .navigation__lien.navigation__lien--courant .icone {
+  border: none;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__lien.navigation__lien--courant .icone {
+    border: 0.2rem solid #ffe100;
+  }
+}
+.projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
+  padding: 1rem 2rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
+    padding: 1.3rem 2.3rem;
+  }
+}
+.projets .navigation__figure {
+  margin: 0;
+  text-align: center;
+}
+.projets .navigation__figure .icone {
+  border: solid 0.2rem #fff;
+  border-radius: 4rem;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
+}
+@media screen and (min-width: 600px) {
+  .projets .navigation__figure .icone {
+    border-radius: 3rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .projets .navigation__figure .icone {
+    border-radius: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projets .navigation__figure .icone {
+    border-radius: 5.5rem;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__figure .icone {
+    border: solid 0.2rem #1f1f1f;
+    box-shadow: none;
+  }
+  .projets .navigation__figure .icone .elevation {
+    fill: #1a1a1a;
+  }
+}
+.projets .navigation__figcaption {
+  font-family: Roboto-Medium, Arial, sans serif;
+  font-size: 1.6rem;
+  display: inline-block;
+  line-height: 125%;
+  border-radius: 4rem;
+  margin-top: 0.5rem;
+  padding: 1.3rem 2.3rem;
+}
+@media screen and (min-width: 600px) {
+  .projets .navigation__figcaption {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__figcaption {
+    border: 0.3rem solid transparent;
+  }
 }
 
 /* Lien externe */
