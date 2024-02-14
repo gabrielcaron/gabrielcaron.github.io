@@ -1228,8 +1228,8 @@ body {
   }
 }
 .pied-de-page .navigation__liste {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: "– ";
+  padding: 0 0 0 3rem;
   margin-top: 0;
 }
 @media screen and (min-width: 600px) {
