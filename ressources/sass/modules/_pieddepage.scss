@@ -24,14 +24,14 @@
 
 	&__titres {
 		font-family: $RobotoMedium;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		color: $gris25;
 		line-height: 150%;
 		letter-spacing: $EspacementStandard;
 		margin: 2rem 0 0 0;
 
 		@media screen and (min-width: $mobile600px) {
-			margin: 0.75rem 0 0 0;
+			margin: 0.2rem 0 0 0;
 			padding-left: 4rem;
 		}
 
@@ -68,8 +68,8 @@
 	}
 
 	&__logo {
-		width: 25rem;
-		height: 6rem;
+		width: 20rem;
+		height: 4.9rem;
 		display: block;
 
 		& .maison {
