@@ -625,16 +625,12 @@
 // Liens avec icones pour formats
 
 .lien {
-	@include soulignementLiens();
+	@include couleursLiens;
 	font-family: $RobotoMedium;
 	letter-spacing: $EspacementStandard;
 	display: inline-block;
 	margin-top: 1rem; // Compense la marge négative sur l'icône
 	padding: 1rem 4rem 1rem 0;
-
-	@media screen and (prefers-color-scheme: dark) {
-		@include soulignementLiens($mode: "sombre");
-	}
 
 	&::before {
 		content: "";
@@ -646,24 +642,6 @@
 		padding-right: 1rem;
 		background-repeat: no-repeat;
 		transition: all, 0.1s ease-in-out;
-	}
-
-	&:link,
-	&:visited {
-		color: $gris25;
-
-		@media screen and (prefers-color-scheme: dark) {
-			color: $gris65AAA;
-		}
-	}
-
-	&:hover,
-	&:active {
-		color: $noir;
-
-		@media screen and (prefers-color-scheme: dark) {
-			color: $blancSombre;
-		}
 	}
 
 	&.axure {

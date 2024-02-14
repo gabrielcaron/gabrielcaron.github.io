@@ -1,22 +1,27 @@
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 4.5
+* @version 2.2
 */
 
-@mixin soulignementLiens($mode: "clair") {
-	@if ($mode == "clair") {
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-decoration-color: $gris45;
-		text-decoration-thickness: 0.15rem;
-		text-underline-offset: 0.3rem;
-	} @else if($mode == "sombre") {
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-decoration-color: $gris50;
-		text-decoration-thickness: 0.15rem;
-		text-underline-offset: 0.3rem;
+/* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
+@mixin couleursLiens {
+	&:link,
+	&:visited {
+		color: $gris25;
+
+		@media screen and (prefers-color-scheme: dark) {
+			color: $blancSombre;
+		}
+	}
+
+	&:hover,
+	&:active {
+		color: $noir;
+
+		@media screen and (prefers-color-scheme: dark) {
+			color: $blancSombre;
+		}
 	}
 }
 
@@ -46,37 +51,24 @@
 		}
 
 		&__lien {
-			@include soulignementLiens();
+			@include couleursLiens;
 			display: inline-block;
 			font-family: $RobotoMedium;
 			font-size: 1.6rem;
-			color: $gris25;
 			line-height: 120%;
 			letter-spacing: $EspacementStandard;
 			padding: 1.2rem 1.7rem;
 			margin: 0 0.3rem;
 			text-align: center;
 
-			@media screen and (min-width: 520px) {
+			@media screen and (min-width: $mobile600px) {
 				font-size: 2rem;
 				padding: 1.4rem 3rem;
-			}
-			@media screen and (min-width: $tablet900px) {
-				font-size: 1.8rem;
-			}
-			@media screen and (min-width: 1100px) {
-				font-size: 2rem;
-			}
-
-			@media screen and (prefers-color-scheme: dark) {
-				color: $blancSombre;
-				@include soulignementLiens($mode: "sombre");
 			}
 
 			&:link,
 			&:visited {
 				border-radius: 2.5rem;
-				transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
 
 				@media screen and (min-width: $mobile600px) {
 					border-radius: 3rem;
@@ -85,12 +77,11 @@
 
 			&:hover,
 			&:focus {
-				background: linear-gradient(175deg, #fff000 6.26%, #ffe100 93.03%);
-				text-decoration: none;
+				@include boutonHover;
+			}
 
-				@media screen and (prefers-color-scheme: dark) {
-					color: $gris25;
-				}
+			&:active {
+				@include boutonActive;
 			}
 
 			&.navigation {
@@ -99,19 +90,14 @@
 						@include boutonPageCourante;
 						line-height: 120%;
 						padding: 1rem 1.5rem;
-						text-decoration: none;
 
 						@media screen and (min-width: 520px) {
 							padding: 1.2rem 2.8rem;
 						}
 
-						&:hover {
-							border: none;
-							padding: 1.3rem 1.8rem;
-
-							@media screen and (min-width: 520px) {
-								padding: 1.5rem 3.1rem;
-							}
+						&:active,
+						&:focus-visible {
+							@include boutonActive;
 						}
 					}
 				}
@@ -124,26 +110,212 @@
 
 .projets {
 	& .navigation {
+		// Styles des liens des titres de sections
+
+		&__rangee-sections {
+			display: flex;
+			align-items: center;
+			list-style-type: none;
+			padding: 0;
+
+			& .navigation {
+				&__lien {
+					@include couleursLiens;
+					display: inline-block;
+					font-size: 1.6rem;
+					text-align: center;
+					line-height: 120%;
+					padding: 1rem 1.5rem;
+					margin: 0 0.3rem;
+
+					@media screen and (min-width: $mobile600px) {
+						font-size: 2rem;
+						padding: 1rem 2.7rem;
+					}
+
+					&:active {
+						@include boutonActive;
+					}
+
+					&--courant {
+						@include boutonPageCourante;
+						text-decoration: none;
+
+						&:active,
+						&:focus-visible {
+							@include boutonActive;
+						}
+					}
+				}
+			}
+		}
+
+		// Styles des liens des projets dans les menus
+
+		&__rangee-projets {
+			@include rangeeGrid();
+			padding: 0;
+
+			& .navigation {
+				&__lien {
+					@include couleursLiens;
+
+					& .navigation {
+						&__figcaption {
+							text-decoration: underline;
+						}
+					}
+
+					&:hover,
+					&:focus {
+						& .navigation {
+							&__figcaption {
+								@include boutonHover;
+							}
+						}
+					}
+				}
+
+				&__liste {
+					list-style-type: none;
+					padding: 0;
+					vertical-align: top;
+				}
+
+				&__item {
+					display: inline-block;
+					vertical-align: top;
+					padding: 1rem 0;
+					@media screen and (max-width: calc($mobile600px - 1px)) {
+						width: calc(50% - 1.3rem);
+					}
+
+					&:nth-child(odd) {
+						padding-right: 2rem;
+						@media screen and (min-width: $mobile600px) {
+							padding-right: initial;
+						}
+					}
+
+					@media screen and (min-width: $mobile600px) {
+						grid-column: span 3;
+					}
+				}
+			}
+		}
+
+		// Styles des liens du sélecteur des projets dans chaque fiche
+
+		&__rangee-selecteur {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 2rem;
+			@include rangeeGrid();
+			list-style-type: none;
+			padding: 0;
+
+			@media screen and (min-width: $desktop1100px) {
+				display: flex;
+				gap: 5rem;
+			}
+
+			& .navigation {
+				&__lien {
+					&.navigation {
+						&__lien {
+							@include couleursLiens;
+
+							&--courant {
+								// Annule le souligné hérité de l'agent utilisateur
+								text-decoration: none;
+
+								& .navigation {
+									&__figure {
+										& .icone {
+											width: 8.5rem;
+
+											@media screen and (prefers-color-scheme: dark) {
+												width: 8.1rem;
+											}
+										}
+									}
+
+									&__figcaption {
+										@include boutonPageCourante;
+									}
+								}
+
+								&:active,
+								&:focus-visible {
+									& .navigation {
+										&__figcaption {
+											@include boutonActive;
+										}
+									}
+								}
+							}
+
+							&:hover {
+								& .navigation {
+									&__figure {
+										& .icone {
+											width: 8.5rem;
+
+											@media screen and (prefers-color-scheme: dark) {
+												width: 8.1rem;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&__item {
+					width: 100%;
+
+					@media screen and (min-width: $mobile600px) {
+						grid-column: span 6;
+					}
+
+					@media screen and (min-width: $desktop1100px) {
+						width: initial;
+					}
+				}
+
+				&__figure {
+					display: flex;
+					align-items: center;
+					gap: 1.5rem;
+					text-align: left;
+
+					& .icone {
+						width: 8.1rem; // 8.5rem - bordure de 2px
+						border-radius: 2rem;
+					}
+				}
+
+				&__figcaption {
+					padding: 0;
+				}
+			}
+		}
+
+		// Styles généraux
+
 		&__lien {
-			@include soulignementLiens;
 			font-family: $RobotoMedium;
-			color: $gris25;
+
 			letter-spacing: $EspacementStandard;
 			line-height: 100%;
 			border-radius: $arrondiMobile;
 
-			@media screen and (prefers-color-scheme: dark) {
-				@include soulignementLiens($mode: "sombre");
-				color: $blancSombre;
-			}
-
 			&:hover,
 			&:focus {
-				@media screen and (prefers-color-scheme: dark) {
-					color: $gris25;
-				}
-
 				& .icone {
+					border: none;
+
 					@media screen and (prefers-color-scheme: dark) {
 						border: 0.2rem solid $gris65AAA;
 					}
@@ -163,9 +335,7 @@
 
 						& .navigation {
 							&__figcaption {
-								@include boutonPageCourante;
 								padding: 1rem 2rem;
-								text-decoration: none;
 
 								@media screen and (prefers-color-scheme: dark) {
 									padding: 1.3rem 2.3rem;
@@ -209,7 +379,6 @@
 		}
 
 		&__figcaption {
-			@include soulignementLiens();
 			font-family: $RobotoMedium;
 			font-size: 1.6rem;
 			display: inline-block;
@@ -217,6 +386,10 @@
 			border-radius: $arrondiMobile;
 			margin-top: 0.5rem;
 			padding: 1.3rem 2.3rem;
+
+			@media screen and (min-width: $mobile600px) {
+				font-size: 1.8rem;
+			}
 
 			// Seulement si demi-grille
 			// @media screen and (min-width: $tablet900px) {
@@ -228,149 +401,7 @@
 			// }
 
 			@media screen and (prefers-color-scheme: dark) {
-				@include soulignementLiens($mode: "sombre");
 				border: 0.3rem solid transparent;
-			}
-		}
-
-		// Styles des liens des titres de sections
-
-		&__rangee-sections {
-			display: flex;
-			align-items: center;
-			list-style-type: none;
-			padding: 0;
-
-			& .navigation {
-				&__lien {
-					display: inline-block;
-					font-size: 1.6rem;
-					text-align: center;
-					line-height: 120%;
-					padding: 1rem 1.5rem;
-
-					margin: 0 0.3rem;
-
-					@media screen and (min-width: 550px) {
-						font-size: 2.4rem;
-						padding: 1rem 2.7rem;
-					}
-
-					&--courant {
-						@include boutonPageCourante;
-						text-decoration: none;
-					}
-
-					&:hover,
-					&:focus {
-						@include boutonSurvol;
-						text-decoration: none;
-					}
-				}
-			}
-		}
-
-		// Styles des liens des projets dans les menus
-
-		&__rangee-projets {
-			@include rangeeGrid();
-			padding: 0;
-
-			& .navigation {
-				&__lien {
-					&:hover,
-					&:focus {
-						& .navigation {
-							&__figcaption {
-								text-decoration: none;
-							}
-						}
-					}
-
-					&:active {
-						& .navigation {
-							&__figcaption {
-								@include boutonActif;
-
-								@media screen and (prefers-color-scheme: dark) {
-									color: $noirSombre;
-								}
-							}
-						}
-					}
-				}
-
-				&__liste {
-					list-style-type: none;
-					padding: 0;
-					vertical-align: top;
-				}
-
-				&__item {
-					display: inline-block;
-					vertical-align: top;
-					padding: 1rem 0;
-					@media screen and (max-width: calc($mobile600px - 1px)) {
-						width: calc(50% - 1.3rem);
-					}
-
-					&:nth-child(odd) {
-						padding-right: 2rem;
-						@media screen and (min-width: $mobile600px) {
-							padding-right: initial;
-						}
-					}
-
-					@media screen and (min-width: $mobile600px) {
-						grid-column: span 3;
-					}
-				}
-			}
-		}
-
-		// Styles des liens des projets dans chaque fiche (sélecteur)
-
-		&__rangee-selecteur {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 2rem;
-			@include rangeeGrid();
-			list-style-type: none;
-			padding: 0;
-
-			@media screen and (min-width: $desktop1100px) {
-				display: flex;
-				gap: 5rem;
-			}
-
-			& .navigation {
-				&__item {
-					width: 100%;
-
-					@media screen and (min-width: $mobile600px) {
-						grid-column: span 6;
-					}
-
-					@media screen and (min-width: $desktop1100px) {
-						width: initial;
-					}
-				}
-
-				&__figure {
-					display: flex;
-					align-items: center;
-					gap: 1.5rem;
-					text-align: left;
-
-					& .icone {
-						width: 8.5rem;
-						border-radius: 2rem;
-					}
-				}
-
-				&__figcaption {
-					padding: 0;
-				}
 			}
 		}
 	}
@@ -469,10 +500,9 @@
 		}
 
 		&__lien {
-			@include soulignementLiens();
+			@include couleursLiens;
 			font-family: $RobotoMedium;
 			font-size: 2rem;
-			color: $gris25;
 			line-height: 225%;
 			letter-spacing: $EspacementStandard;
 			transition: border-bottom 0.075s ease-in-out;
@@ -482,20 +512,11 @@
 			}
 
 			@media screen and (prefers-color-scheme: dark) {
-				@include soulignementLiens($mode: "sombre");
 				color: $gris65AAA;
 			}
 
 			&.section {
 				line-height: 100%;
-			}
-
-			&:hover {
-				text-decoration: none;
-
-				@media screen and (prefers-color-scheme: dark) {
-					color: $blancSombre;
-				}
 			}
 		}
 	}

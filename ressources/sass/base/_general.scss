@@ -27,7 +27,11 @@ a {
 	}
 
 	@media screen and (prefers-color-scheme: dark) {
-		color: $blancSombre;
+		color: #64b9ff;
+
+		&:visited {
+			color: #b487ff;
+		}
 	}
 }
 

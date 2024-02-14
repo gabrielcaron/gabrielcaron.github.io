@@ -33,17 +33,11 @@
 	}
 
 	&__lien {
-		@include soulignementLiens;
 		font-family: $RobotoMedium;
 		color: $gris25;
 		letter-spacing: $EspacementStandard;
 		line-height: 100%;
 		border-radius: $arrondiMobile;
-
-		@media screen and (prefers-color-scheme: dark) {
-			@include soulignementLiens($mode: "sombre");
-			color: $gris65AAA;
-		}
 
 		&:hover,
 		&:focus {
