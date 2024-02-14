@@ -25,23 +25,15 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
-}
 
-// @mixin soulignementLiens($mode: "clair") {
-// 	@if ($mode == "clair") {
-// 		text-decoration: underline;
-// 		text-decoration-style: solid;
-// 		text-decoration-color: $gris45;
-// 		text-decoration-thickness: 0.15rem;
-// 		text-underline-offset: 0.3rem;
-// 	} @else if($mode == "sombre") {
-// 		text-decoration: underline;
-// 		text-decoration-style: solid;
-// 		text-decoration-color: $gris50;
-// 		text-decoration-thickness: 0.15rem;
-// 		text-underline-offset: 0.3rem;
-// 	}
-// }
+	@media screen and (prefers-color-scheme: dark) {
+		color: #64b9ff;
+
+		&:visited {
+			color: #b487ff;
+		}
+	}
+}
 
 @media screen and (prefers-color-scheme: dark) {
 	li,
