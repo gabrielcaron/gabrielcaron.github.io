@@ -4,22 +4,6 @@
 * @version 2.2
 */
 
-@mixin soulignementLiens($mode: "clair") {
-	@if ($mode == "clair") {
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-decoration-color: $gris45;
-		text-decoration-thickness: 0.15rem;
-		text-underline-offset: 0.3rem;
-	} @else if($mode == "sombre") {
-		text-decoration: underline;
-		text-decoration-style: solid;
-		text-decoration-color: $gris50;
-		text-decoration-thickness: 0.15rem;
-		text-underline-offset: 0.3rem;
-	}
-}
-
 /* En-tête */
 
 .entete {
@@ -46,11 +30,9 @@
 		}
 
 		&__lien {
-			@include soulignementLiens();
 			display: inline-block;
 			font-family: $RobotoMedium;
 			font-size: 1.6rem;
-			color: $gris25;
 			line-height: 120%;
 			letter-spacing: $EspacementStandard;
 			padding: 1.2rem 1.7rem;
@@ -68,15 +50,9 @@
 				font-size: 2rem;
 			}
 
-			@media screen and (prefers-color-scheme: dark) {
-				color: $blancSombre;
-				@include soulignementLiens($mode: "sombre");
-			}
-
 			&:link,
 			&:visited {
 				border-radius: 2.5rem;
-				transition: background 0.1s ease-in-out; //linear-gradient pas supporté par CSS Transitions
 
 				@media screen and (min-width: $mobile600px) {
 					border-radius: 3rem;
@@ -85,12 +61,7 @@
 
 			&:hover,
 			&:focus {
-				color: $noir;
-				text-decoration: none;
-
-				@media screen and (prefers-color-scheme: dark) {
-					color: $blancSombre;
-				}
+				@include boutonHover;
 			}
 
 			&.navigation {
@@ -105,7 +76,7 @@
 						}
 
 						&:active {
-							@include boutonActif;
+							@include boutonActive;
 						}
 					}
 				}
@@ -116,20 +87,16 @@
 
 /* Projets */
 
+// Styles généraux
+
 .projets {
 	& .navigation {
 		&__lien {
-			@include soulignementLiens;
 			font-family: $RobotoMedium;
 			color: $gris25;
 			letter-spacing: $EspacementStandard;
 			line-height: 100%;
 			border-radius: $arrondiMobile;
-
-			@media screen and (prefers-color-scheme: dark) {
-				@include soulignementLiens($mode: "sombre");
-				color: $blancSombre;
-			}
 
 			&:hover,
 			&:focus {
@@ -159,9 +126,7 @@
 
 						& .navigation {
 							&__figcaption {
-								@include boutonPageCourante;
 								padding: 1rem 2rem;
-								text-decoration: none;
 
 								@media screen and (prefers-color-scheme: dark) {
 									padding: 1.3rem 2.3rem;
@@ -180,6 +145,8 @@
 			& .icone {
 				border: solid 0.2rem $blanc;
 				border-radius: $arrondiMobile;
+				box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
+					-5px -5px 25px 0px rgba(255, 255, 255, 1);
 
 				@media screen and (min-width: $mobile600px) {
 					border-radius: $arrondiMobile - 1rem;
@@ -203,7 +170,6 @@
 		}
 
 		&__figcaption {
-			@include soulignementLiens();
 			font-family: $RobotoMedium;
 			font-size: 1.6rem;
 			display: inline-block;
@@ -222,7 +188,6 @@
 			// }
 
 			@media screen and (prefers-color-scheme: dark) {
-				@include soulignementLiens($mode: "sombre");
 				border: 0.3rem solid transparent;
 			}
 		}
@@ -257,7 +222,7 @@
 
 					&:hover,
 					&:focus {
-						@include boutonSurvol;
+						@include boutonHover;
 						text-decoration: none;
 					}
 				}
@@ -272,16 +237,16 @@
 
 			& .navigation {
 				&__lien {
+					// & .navigation {
+					// 	&__figcaption {
+					// 	}
+					// }
+
 					&:hover,
 					&:focus {
 						& .navigation {
 							&__figcaption {
-								color: $noir;
-								text-decoration: none;
-
-								@media screen and (prefers-color-scheme: dark) {
-									color: $blancSombre;
-								}
+								@include boutonHover;
 							}
 						}
 					}
@@ -289,11 +254,7 @@
 					&:active {
 						& .navigation {
 							&__figcaption {
-								@include boutonActif;
-
-								@media screen and (prefers-color-scheme: dark) {
-									color: $noirSombre;
-								}
+								@include boutonActive;
 							}
 						}
 					}
@@ -327,7 +288,7 @@
 			}
 		}
 
-		// Styles des liens des projets dans chaque fiche (sélecteur)
+		// Styles des liens du sélecteur des projets dans chaque fiche
 
 		&__rangee-selecteur {
 			display: flex;
@@ -343,6 +304,49 @@
 			}
 
 			& .navigation {
+				&__lien {
+					// &:hover,
+					// &:focus {
+					// 	& .navigation {
+					// 		// &__figcaption {
+					// 		// 	// text-decoration: none;
+					// 		// 	// color: red;
+					// 		// }
+
+					// 		// @media screen and (prefers-color-scheme: dark) {
+					// 		// 	color: $blancSombre;
+					// 		// }
+					// 	}
+					// }
+
+					// &:active {
+					// 	& .navigation {
+					// 		&__figcaption {
+					// 			@include boutonActive;
+
+					// 			@media screen and (prefers-color-scheme: dark) {
+					// 				color: $noirSombre;
+					// 			}
+					// 		}
+					// 	}
+					// }
+
+					&.navigation {
+						&__lien {
+							&--courant {
+								// Annule le souligné hérité de l'agent utilisateur
+								text-decoration: none;
+
+								& .navigation {
+									&__figcaption {
+										@include boutonPageCourante;
+									}
+								}
+							}
+						}
+					}
+				}
+
 				&__item {
 					width: 100%;
 
@@ -468,7 +472,6 @@
 		}
 
 		&__lien {
-			@include soulignementLiens();
 			font-family: $RobotoMedium;
 			font-size: 2rem;
 			color: $gris25;
@@ -481,7 +484,6 @@
 			}
 
 			@media screen and (prefers-color-scheme: dark) {
-				@include soulignementLiens($mode: "sombre");
 				color: $gris65AAA;
 			}
 

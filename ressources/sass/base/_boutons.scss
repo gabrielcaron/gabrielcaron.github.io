@@ -6,13 +6,13 @@
 
 /* Styles pour l'état survol */
 
-@mixin boutonSurvol {
-	text-decoration: underline;
+@mixin boutonHover {
+	text-decoration: none;
 }
 
 /* Styles pour l'état actif */
 
-@mixin boutonActif {
+@mixin boutonActive {
 	background-color: $jauneOfficiel;
 
 	@media screen and (prefers-color-scheme: dark) {
@@ -27,6 +27,7 @@
 	border: 0.3rem solid $jauneOfficiel;
 	font-family: $RobotoBold;
 	text-decoration: none;
+	color: $noir;
 
 	@media screen and (prefers-color-scheme: dark) {
 		color: $blancSombre;

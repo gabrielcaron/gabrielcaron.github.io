@@ -749,15 +749,9 @@ body {
   }
 }
 .entete .navigation__lien {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #737373;
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.3rem;
   display: inline-block;
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.6rem;
-  color: #404040;
   line-height: 120%;
   letter-spacing: 0.05rem;
   padding: 1.2rem 1.7rem;
@@ -780,19 +774,8 @@ body {
     font-size: 2rem;
   }
 }
-@media screen and (prefers-color-scheme: dark) {
-  .entete .navigation__lien {
-    color: #e6e6e6;
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #808080;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
-  }
-}
 .entete .navigation__lien:link, .entete .navigation__lien:visited {
   border-radius: 2.5rem;
-  transition: background 0.1s ease-in-out;
 }
 @media screen and (min-width: 600px) {
   .entete .navigation__lien:link, .entete .navigation__lien:visited {
@@ -800,19 +783,14 @@ body {
   }
 }
 .entete .navigation__lien:hover, .entete .navigation__lien:focus {
-  color: #000;
   text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .entete .navigation__lien:hover, .entete .navigation__lien:focus {
-    color: #e6e6e6;
-  }
 }
 .entete .navigation__lien.navigation__lien--courant {
   color: #000;
   border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
+  color: #000;
   line-height: 120%;
   padding: 1rem 1.5rem;
 }
@@ -840,26 +818,11 @@ body {
 
 /* Projets */
 .projets .navigation__lien {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #737373;
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.3rem;
   font-family: Roboto-Medium, Arial, sans serif;
   color: #404040;
   letter-spacing: 0.05rem;
   line-height: 100%;
   border-radius: 4rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #808080;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
-    color: #e6e6e6;
-  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien:hover, .projets .navigation__lien:focus {
@@ -883,20 +846,7 @@ body {
   }
 }
 .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
-  color: #000;
-  border: 0.3rem solid #ffe100;
-  font-family: Roboto-Bold, Arial, sans serif;
-  text-decoration: none;
   padding: 1rem 2rem;
-  text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
-    color: #e6e6e6;
-  }
-}
-.projets .navigation__lien.navigation__lien--courant .navigation__figcaption:hover {
-  text-decoration: underline;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
@@ -910,6 +860,7 @@ body {
 .projets .navigation__figure .icone {
   border: solid 0.2rem #fff;
   border-radius: 4rem;
+  box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
 }
 @media screen and (min-width: 600px) {
   .projets .navigation__figure .icone {
@@ -936,11 +887,6 @@ body {
   }
 }
 .projets .navigation__figcaption {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #737373;
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.3rem;
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.6rem;
   display: inline-block;
@@ -951,11 +897,6 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figcaption {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #808080;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
     border: 0.3rem solid transparent;
   }
 }
@@ -984,6 +925,7 @@ body {
   border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
+  color: #000;
   text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -995,7 +937,7 @@ body {
   text-decoration: underline;
 }
 .projets .navigation__rangee-sections .navigation__lien:hover, .projets .navigation__rangee-sections .navigation__lien:focus {
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration: none;
 }
 .projets .navigation__rangee-projets {
@@ -1012,13 +954,7 @@ body {
   }
 }
 .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
-  color: #000;
   text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
-    color: #e6e6e6;
-  }
 }
 .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
   background-color: #ffe100;
@@ -1026,11 +962,6 @@ body {
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
     color: #000;
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-projets .navigation__lien:active .navigation__figcaption {
-    color: #0d0d0d;
   }
 }
 .projets .navigation__rangee-projets .navigation__liste {
@@ -1083,6 +1014,24 @@ body {
     display: flex;
     gap: 5rem;
   }
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
+  text-decoration: none;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
+  color: #000;
+  border: 0.3rem solid #ffe100;
+  font-family: Roboto-Bold, Arial, sans serif;
+  text-decoration: none;
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
+    color: #e6e6e6;
+  }
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption:hover {
+  text-decoration: underline;
 }
 .projets .navigation__rangee-selecteur .navigation__item {
   width: 100%;
@@ -1196,11 +1145,6 @@ body {
   }
 }
 .pied-de-page .navigation__lien {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #737373;
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.3rem;
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 2rem;
   color: #404040;
@@ -1215,11 +1159,6 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pied-de-page .navigation__lien {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #808080;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
     color: #a6a6a6;
   }
 }
@@ -1768,25 +1707,11 @@ body {
 }
 
 .lien {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #737373;
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.3rem;
   font-family: Roboto-Medium, Arial, sans serif;
   letter-spacing: 0.05rem;
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 4rem 1rem 0;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .lien {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #808080;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
-  }
 }
 .lien::before {
   content: "";
@@ -2332,26 +2257,11 @@ img {
   grid-column: 3/span 4;
 }
 .contact__lien {
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #737373;
-  text-decoration-thickness: 0.15rem;
-  text-underline-offset: 0.3rem;
   font-family: Roboto-Medium, Arial, sans serif;
   color: #404040;
   letter-spacing: 0.05rem;
   line-height: 100%;
   border-radius: 4rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .contact__lien {
-    text-decoration: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #808080;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.3rem;
-    color: #a6a6a6;
-  }
 }
 .contact__lien:hover .icone, .contact__lien:focus .icone {
   border: none;
