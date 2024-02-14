@@ -1263,11 +1263,6 @@ body {
     color: #e6e6e6;
   }
 }
-@media screen and (min-width: 1200px) {
-  .pied-de-page .navigation__lien {
-    line-height: 200%;
-  }
-}
 @media screen and (prefers-color-scheme: dark) {
   .pied-de-page .navigation__lien {
     color: #a6a6a6;
