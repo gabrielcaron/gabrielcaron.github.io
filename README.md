@@ -8,6 +8,8 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.4](#v24)
+  - [v2.3.2](#v232)
   - [v2.3.1](#v231)
   - [v2.3](#v23)
   - [v2.2](#v22)
@@ -51,6 +53,15 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.4
+
+- Nouveau sitemap.xml
+- Correction des URL de la page 404
+
+### v2.3.2
+
+- Correction mineure
 
 ### v2.3.1
 
