@@ -1272,6 +1272,11 @@ body {
   color: #000;
   line-height: 100%;
 }
+@media screen and (prefers-color-scheme: dark) {
+  .pied-de-page .navigation__lien.section {
+    color: #e6e6e6;
+  }
+}
 @media screen and (min-width: 600px) {
   .pied-de-page__copyright {
     grid-column: 1/13;
