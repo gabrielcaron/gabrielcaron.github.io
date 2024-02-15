@@ -517,6 +517,10 @@
 			&.section {
 				color: $noir;
 				line-height: 100%;
+
+				@media screen and (prefers-color-scheme: dark) {
+					color: $blancSombre;
+				}
 			}
 		}
 	}
