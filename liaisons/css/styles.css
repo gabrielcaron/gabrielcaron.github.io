@@ -1342,26 +1342,9 @@ body {
     }
   }
 }
-.pied-de-page__titres {
-  font-family: Roboto-Medium, Arial, sans serif;
-  font-size: 1.8rem;
-  color: #404040;
-  line-height: 150%;
-  letter-spacing: 0.05rem;
-  margin: 2rem 0 0 0;
-}
-@media screen and (min-width: 600px) {
-  .pied-de-page__titres {
-    margin: 0.2rem 0 0 0;
-    padding-left: 4rem;
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .pied-de-page__titres {
-    color: #a6a6a6;
-  }
-}
 .pied-de-page__rangee-logo {
+  container-type: inline-size;
+  container-name: rangee-logo;
   padding: 6rem 0 2rem 0;
 }
 @media screen and (min-width: 600px) {
@@ -1370,7 +1353,27 @@ body {
     display: flex;
     justify-content: space-between;
     justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
     padding: 10rem 0 5rem 0;
+  }
+}
+.pied-de-page__titres {
+  font-family: Roboto-Medium, Arial, sans serif;
+  font-size: 1.8rem;
+  color: #404040;
+  line-height: 150%;
+  letter-spacing: 0.05rem;
+  margin: 2rem 0 0 0;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pied-de-page__titres {
+    color: #a6a6a6;
+  }
+}
+@container rangee-logo (min-width: 600px) {
+  .pied-de-page__titres {
+    margin: 1rem 0 0 0;
   }
 }
 .pied-de-page__lien-accueil:hover .maison, .pied-de-page__lien-accueil:focus .maison {
