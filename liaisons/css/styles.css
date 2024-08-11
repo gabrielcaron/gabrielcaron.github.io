@@ -723,7 +723,7 @@ body {
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.2
+* @version 2.3
 */
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
 /* En-tête */
@@ -1005,14 +1005,6 @@ body {
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
   text-decoration: none;
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figure .icone {
-  width: 8.5rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figure .icone {
-    width: 8.1rem;
-  }
-}
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
   color: #000;
   border: 0.3rem solid #ffe100;
@@ -1036,14 +1028,6 @@ body {
     color: #000;
   }
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover .navigation__figure .icone {
-  width: 8.5rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover .navigation__figure .icone {
-    width: 8.1rem;
-  }
-}
 .projets .navigation__rangee-selecteur .navigation__item {
   width: 100%;
 }
@@ -1064,8 +1048,7 @@ body {
   text-align: left;
 }
 .projets .navigation__rangee-selecteur .navigation__figure .icone {
-  width: 8.1rem;
-  height: auto;
+  width: 8.5rem;
   border-radius: 2rem;
 }
 .projets .navigation__rangee-selecteur .navigation__figcaption {
@@ -1106,7 +1089,6 @@ body {
   text-align: center;
 }
 .projets .navigation__figure .icone {
-  border: solid 0.2rem #fff;
   border-radius: 4rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
 }

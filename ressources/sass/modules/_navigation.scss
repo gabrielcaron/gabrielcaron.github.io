@@ -1,7 +1,7 @@
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.2
+* @version 2.3
 */
 
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
@@ -230,16 +230,6 @@
 								text-decoration: none;
 
 								& .navigation {
-									&__figure {
-										& .icone {
-											width: 8.5rem;
-
-											@media screen and (prefers-color-scheme: dark) {
-												width: 8.1rem;
-											}
-										}
-									}
-
 									&__figcaption {
 										@include boutonPageCourante;
 									}
@@ -250,20 +240,6 @@
 									& .navigation {
 										&__figcaption {
 											@include boutonActive;
-										}
-									}
-								}
-							}
-
-							&:hover {
-								& .navigation {
-									&__figure {
-										& .icone {
-											width: 8.5rem;
-
-											@media screen and (prefers-color-scheme: dark) {
-												width: 8.1rem;
-											}
 										}
 									}
 								}
@@ -291,7 +267,7 @@
 					text-align: left;
 
 					& .icone {
-						width: 8.1rem; // 8.5rem - bordure de 2px
+						width: 8.5rem;
 						border-radius: 2rem;
 					}
 				}
@@ -352,7 +328,6 @@
 			text-align: center;
 
 			& .icone {
-				border: solid 0.2rem $blanc;
 				border-radius: $arrondiMobile;
 				box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05),
 					-5px -5px 25px 0px rgba(255, 255, 255, 1);
