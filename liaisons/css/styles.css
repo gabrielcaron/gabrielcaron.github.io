@@ -1065,6 +1065,7 @@ body {
 }
 .projets .navigation__rangee-selecteur .navigation__figure .icone {
   width: 8.1rem;
+  height: auto;
   border-radius: 2rem;
 }
 .projets .navigation__rangee-selecteur .navigation__figcaption {
@@ -1662,6 +1663,22 @@ body {
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.navigation__lien--courant .grosseile .croix, .navigation__lien:hover .grosseile .croix, .navigation__lien:focus .grosseile .croix {
     fill: url(#grosseile-vert-sombre);
+  }
+}
+.navigation__lien.navigation__lien--courant .lestuaire .elevation, .navigation__lien:hover .lestuaire .elevation, .navigation__lien:focus .lestuaire .elevation {
+  fill: url(#lestuaire-jaune-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.navigation__lien--courant .lestuaire .elevation, .navigation__lien:hover .lestuaire .elevation, .navigation__lien:focus .lestuaire .elevation {
+    fill: rgba(255, 225, 0, 0.05);
+  }
+}
+.navigation__lien.navigation__lien--courant .lestuaire .symbole, .navigation__lien:hover .lestuaire .symbole, .navigation__lien:focus .lestuaire .symbole {
+  fill: url(#lestuaire-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.navigation__lien--courant .lestuaire .symbole, .navigation__lien:hover .lestuaire .symbole, .navigation__lien:focus .lestuaire .symbole {
+    fill: url(#lestuaire-jaune-hover);
   }
 }
 @media screen and (prefers-color-scheme: dark) {

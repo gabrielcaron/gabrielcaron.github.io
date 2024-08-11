@@ -403,6 +403,29 @@
 			}
 		}
 
+		// L'Estuaire
+		&.navigation__lien--courant,
+		&:hover,
+		&:focus {
+			& .lestuaire {
+				& .elevation {
+					fill: url(#lestuaire-jaune-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .symbole {
+					fill: url(#lestuaire-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#lestuaire-jaune-hover);
+					}
+				}
+			}
+		}
+
 		// Manuel de typographie
 		@media screen and (prefers-color-scheme: dark) {
 			& .manueldetypo {
