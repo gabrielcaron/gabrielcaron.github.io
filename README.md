@@ -56,6 +56,10 @@ Aucune dépendance requise.
 
 ## Historique des versions
 
+### v2.5.1
+
+- Correction mineure
+
 ### v2.5
 
 - Mise en ligne du projet L'Estuaire (Design graphique)
