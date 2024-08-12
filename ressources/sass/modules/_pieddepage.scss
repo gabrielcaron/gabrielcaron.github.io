@@ -22,6 +22,21 @@
 		@include rangeeGrid();
 	}
 
+	&__rangee-logo {
+		container-type: inline-size;
+		container-name: rangee-logo;
+		padding: 6rem 0 2rem 0;
+
+		@media screen and (min-width: $mobile600px) {
+			grid-column: 1 / 13;
+			@include rangeeFlex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 3rem;
+			padding: 10rem 0 5rem 0;
+		}
+	}
+
 	&__titres {
 		font-family: $RobotoMedium;
 		font-size: 1.8rem;
@@ -30,24 +45,12 @@
 		letter-spacing: $EspacementStandard;
 		margin: 2rem 0 0 0;
 
-		@media screen and (min-width: $mobile600px) {
-			margin: 0.2rem 0 0 0;
-			padding-left: 4rem;
-		}
-
 		@media screen and (prefers-color-scheme: dark) {
 			color: $gris65AAA;
 		}
-	}
 
-	&__rangee-logo {
-		padding: 6rem 0 2rem 0;
-
-		@media screen and (min-width: $mobile600px) {
-			grid-column: 1 / 13;
-			@include rangeeFlex;
-			justify-content: flex-start;
-			padding: 10rem 0 5rem 0;
+		@container rangee-logo (min-width: 525px) {
+			margin: 1rem 0 0 0;
 		}
 	}
 

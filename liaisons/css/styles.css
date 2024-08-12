@@ -723,7 +723,7 @@ body {
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.2
+* @version 2.3
 */
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
 /* En-tête */
@@ -1005,14 +1005,6 @@ body {
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
   text-decoration: none;
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figure .icone {
-  width: 8.5rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figure .icone {
-    width: 8.1rem;
-  }
-}
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
   color: #000;
   border: 0.3rem solid #ffe100;
@@ -1036,14 +1028,6 @@ body {
     color: #000;
   }
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover .navigation__figure .icone {
-  width: 8.5rem;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:hover .navigation__figure .icone {
-    width: 8.1rem;
-  }
-}
 .projets .navigation__rangee-selecteur .navigation__item {
   width: 100%;
 }
@@ -1064,7 +1048,7 @@ body {
   text-align: left;
 }
 .projets .navigation__rangee-selecteur .navigation__figure .icone {
-  width: 8.1rem;
+  width: 8.5rem;
   border-radius: 2rem;
 }
 .projets .navigation__rangee-selecteur .navigation__figcaption {
@@ -1105,7 +1089,6 @@ body {
   text-align: center;
 }
 .projets .navigation__figure .icone {
-  border: solid 0.2rem #fff;
   border-radius: 4rem;
   box-shadow: 3px 3px 25px 0 rgba(0, 0, 0, 0.05), -5px -5px 25px 0px rgb(255, 255, 255);
 }
@@ -1126,7 +1109,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figure .icone {
-    border: solid 0.2rem #1f1f1f;
+    border: solid 0.2rem #262626;
     box-shadow: none;
   }
   .projets .navigation__figure .icone .elevation {
@@ -1342,26 +1325,9 @@ body {
     }
   }
 }
-.pied-de-page__titres {
-  font-family: Roboto-Medium, Arial, sans serif;
-  font-size: 1.8rem;
-  color: #404040;
-  line-height: 150%;
-  letter-spacing: 0.05rem;
-  margin: 2rem 0 0 0;
-}
-@media screen and (min-width: 600px) {
-  .pied-de-page__titres {
-    margin: 0.2rem 0 0 0;
-    padding-left: 4rem;
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .pied-de-page__titres {
-    color: #a6a6a6;
-  }
-}
 .pied-de-page__rangee-logo {
+  container-type: inline-size;
+  container-name: rangee-logo;
   padding: 6rem 0 2rem 0;
 }
 @media screen and (min-width: 600px) {
@@ -1370,7 +1336,27 @@ body {
     display: flex;
     justify-content: space-between;
     justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
     padding: 10rem 0 5rem 0;
+  }
+}
+.pied-de-page__titres {
+  font-family: Roboto-Medium, Arial, sans serif;
+  font-size: 1.8rem;
+  color: #404040;
+  line-height: 150%;
+  letter-spacing: 0.05rem;
+  margin: 2rem 0 0 0;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .pied-de-page__titres {
+    color: #a6a6a6;
+  }
+}
+@container rangee-logo (min-width: 525px) {
+  .pied-de-page__titres {
+    margin: 1rem 0 0 0;
   }
 }
 .pied-de-page__lien-accueil:hover .maison, .pied-de-page__lien-accueil:focus .maison {
@@ -1659,6 +1645,22 @@ body {
 @media screen and (prefers-color-scheme: dark) {
   .navigation__lien.navigation__lien--courant .grosseile .croix, .navigation__lien:hover .grosseile .croix, .navigation__lien:focus .grosseile .croix {
     fill: url(#grosseile-vert-sombre);
+  }
+}
+.navigation__lien.navigation__lien--courant .lestuaire .elevation, .navigation__lien:hover .lestuaire .elevation, .navigation__lien:focus .lestuaire .elevation {
+  fill: url(#lestuaire-jaune-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.navigation__lien--courant .lestuaire .elevation, .navigation__lien:hover .lestuaire .elevation, .navigation__lien:focus .lestuaire .elevation {
+    fill: rgba(255, 225, 0, 0.05);
+  }
+}
+.navigation__lien.navigation__lien--courant .lestuaire .symbole, .navigation__lien:hover .lestuaire .symbole, .navigation__lien:focus .lestuaire .symbole {
+  fill: url(#lestuaire-gris-hover);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .navigation__lien.navigation__lien--courant .lestuaire .symbole, .navigation__lien:hover .lestuaire .symbole, .navigation__lien:focus .lestuaire .symbole {
+    fill: url(#lestuaire-jaune-hover);
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -2001,7 +2003,7 @@ img {
   font-family: Roboto-Medium, Arial, sans serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 110%;
   letter-spacing: 0.05rem;
   text-align: center;
@@ -2009,24 +2011,9 @@ img {
   text-shadow: -1px -1px 3px #fff, 2px 2px 3px rgba(0, 0, 0, 0.15);
   margin: 4rem 2rem;
 }
-@media screen and (min-width: 400px) {
-  .accueil__accroche {
-    margin: 4rem 4rem;
-  }
-}
-@media screen and (min-width: 475px) {
-  .accueil__accroche {
-    margin: 4rem 7rem;
-  }
-}
-@media screen and (min-width: 545px) {
-  .accueil__accroche {
-    font-size: 6rem;
-    margin: 4rem 8rem;
-  }
-}
 @media screen and (min-width: 600px) {
   .accueil__accroche {
+    font-size: 5rem;
     margin: 4rem 0;
   }
 }
@@ -2038,12 +2025,17 @@ img {
 @media screen and (min-width: 850px) {
   .accueil__accroche {
     margin: 8rem 0;
-    font-size: 8rem;
+    font-size: 7rem;
   }
 }
 @media screen and (min-width: 900px) {
   .accueil__accroche {
-    margin: 20rem 0 13rem 0;
+    margin: 5rem 0 4rem 0;
+  }
+}
+@media screen and (min-width: 950px) {
+  .accueil__accroche {
+    margin: 20rem 0 10rem 0;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -2453,7 +2445,7 @@ img {
 @media screen and (prefers-color-scheme: dark) {
   .contact__figure .icone {
     box-shadow: none;
-    border: solid 0.2rem #1f1f1f;
+    border: solid 0.2rem #262626;
   }
   .contact__figure .icone .elevation {
     fill: #1a1a1a;
@@ -2585,7 +2577,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projet.sans-contexte img {
-    border: 0.2rem solid #1f1f1f;
+    border: 0.2rem solid #262626;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2598,7 +2590,7 @@ img {
 @media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
   .projet.masonry img {
     box-shadow: none;
-    border: solid 0.2rem #1f1f1f;
+    border: solid 0.2rem #262626;
   }
 }
 @media screen and (min-width: 600px) {

@@ -4,45 +4,6 @@
 * @version 6.1
 */
 
-// Bulle qui contient les icônes
-@mixin bulle {
-	position: relative;
-	$bordure: 0.2rem;
-	background-color: $gris98;
-	background-clip: padding-box;
-	border: solid $bordure transparent;
-	border-radius: 5.5rem;
-
-	@media screen and (prefers-color-scheme: dark) {
-		background-color: $noirSombre;
-	}
-
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-		margin: -$bordure;
-		border-radius: inherit;
-		background: linear-gradient(
-			180deg,
-			rgba(255, 255, 255, 1) 0%,
-			rgba(252, 252, 252, 1) 100%
-		);
-
-		@media screen and (prefers-color-scheme: dark) {
-			background: linear-gradient(
-				180deg,
-				rgba(31, 31, 31, 1) 0%,
-				rgba(31, 31, 31, 1) 100%
-			);
-		}
-	}
-}
-
 // Flèche de navigation
 @mixin fleche {
 	&::after {
@@ -398,6 +359,29 @@
 
 					@media screen and (prefers-color-scheme: dark) {
 						fill: url(#grosseile-vert-sombre);
+					}
+				}
+			}
+		}
+
+		// L'Estuaire
+		&.navigation__lien--courant,
+		&:hover,
+		&:focus {
+			& .lestuaire {
+				& .elevation {
+					fill: url(#lestuaire-jaune-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: transparentize($jauneOfficiel, 0.95);
+					}
+				}
+
+				& .symbole {
+					fill: url(#lestuaire-gris-hover);
+
+					@media screen and (prefers-color-scheme: dark) {
+						fill: url(#lestuaire-jaune-hover);
 					}
 				}
 			}
