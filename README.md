@@ -8,6 +8,7 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.5](#v25)
   - [v2.4.1](#v241)
   - [v2.4](#v24)
   - [v2.3.2](#v232)
@@ -54,6 +55,13 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.5
+
+- Mise en ligne du projet L'Estuaire (Design graphique)
+- (Pied de page) Intégration initiale des Container Queries
+- (Icônes) Transition vers les élévations blanches et retrait des bordures en mode clair
+- (Accueil) Nouvelle accroche
 
 ### v2.4.1
 
@@ -234,7 +242,9 @@ Aucune dépendance requise.
 
 #### Intégration d'une icône
 
-1. Retirer les ombres et les contours de l'élévation (le cas échéant)
+Note d'août 2024: ne pas retirer le width et le height des icônes SVG, car elles doivent demeurer fluides.
+
+1. Retirer les ombres, les contours et les arrondis de l'élévation (le cas échéant)
 2. Aplatir le symbole
 3. Exporter l'icône au complet (élévation + symbole) en SVG dans Figma
 4. Optimiser dans ImageOptim
@@ -246,7 +256,6 @@ Aucune dépendance requise.
 7. Retirer :
    - width
    - height
-   - arrondi sur l'élévation
 8. Ajouter dans le SVG par défaut les dégradés du SVG de l'état survol
 9. Pour conserver la validité du HTML, préfixer avec des ID uniques les dégradés avec le nom du projet, exemple : `#mexico-orange-defaut`.
 10. Lier les ID à l'état survol dans les CSS
@@ -313,9 +322,8 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 
 1. Dans Figma, copier-coller, retirer les coins arrondis et le contour.
 2. Exporter en SVG et nommer sous la forme **projet-largeur en px**, exemple : `altitude-1400.svg`.
-3. Optimiser avec ImageOptim.
-4. Dans `<svg>` retirer `width` et `height`.
-5. Intégrer avec une balise `<img>`.
+3. Optimiser avec ImageOptim. Ne pas retirer `width` et `height`.
+4. Intégrer avec une balise `<img>`.
 
 ##### Projets réalisés avec Xcode
 
