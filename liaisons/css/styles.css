@@ -1109,7 +1109,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__figure .icone {
-    border: solid 0.2rem #1f1f1f;
+    border: solid 0.2rem #262626;
     box-shadow: none;
   }
   .projets .navigation__figure .icone .elevation {
@@ -2455,7 +2455,7 @@ img {
 @media screen and (prefers-color-scheme: dark) {
   .contact__figure .icone {
     box-shadow: none;
-    border: solid 0.2rem #1f1f1f;
+    border: solid 0.2rem #262626;
   }
   .contact__figure .icone .elevation {
     fill: #1a1a1a;
@@ -2587,7 +2587,7 @@ img {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projet.sans-contexte img {
-    border: 0.2rem solid #1f1f1f;
+    border: 0.2rem solid #262626;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2600,7 +2600,7 @@ img {
 @media screen and (min-width: 600px) and (prefers-color-scheme: dark) {
   .projet.masonry img {
     box-shadow: none;
-    border: solid 0.2rem #1f1f1f;
+    border: solid 0.2rem #262626;
   }
 }
 @media screen and (min-width: 600px) {
