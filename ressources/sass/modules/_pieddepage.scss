@@ -1,16 +1,16 @@
 /*
 * Pied de page
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.2
 */
 
 .pied-de-page {
 	@include conteneur1400px();
-	padding: 0 3rem 5rem 3rem;
-	background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
-	margin-top: 10rem;
+	background-color: $jauneOfficiel;
+	margin-top: 5rem;
+	padding-bottom: 1rem;
 
 	@media screen and (min-width: $tablet900px) {
+		margin-top: 10rem;
 		padding: 0 5rem 0 5rem;
 	}
 
@@ -25,7 +25,7 @@
 	&__rangee-logo {
 		container-type: inline-size;
 		container-name: rangee-logo;
-		padding: 6rem 0 2rem 0;
+		padding: 5rem 0 2rem 0;
 
 		@media screen and (min-width: $mobile600px) {
 			grid-column: 1 / 13;
@@ -33,6 +33,10 @@
 			justify-content: flex-start;
 			align-items: center;
 			gap: 3rem;
+			padding: 5rem 0 5rem 0;
+		}
+
+		@media screen and (min-width: $tablet900px) {
 			padding: 10rem 0 5rem 0;
 		}
 	}

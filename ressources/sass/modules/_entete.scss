@@ -1,7 +1,6 @@
 /*
 * En-tête
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.0
 */
 
 .entete {
@@ -13,24 +12,20 @@
 	}
 
 	@media screen and (min-width: $tablet900px) {
-		padding-bottom: 10rem;
+		padding-bottom: 3rem;
 	}
 
 	@media screen and (min-width: 1000px) {
 		padding-left: 5rem;
 		padding-right: 5rem;
+		padding-bottom: 10rem;
 	}
 
 	// Positionnement des vagues
-	background-image: url("../images/design/vagues-entete.svg");
-	background-repeat: no-repeat;
-	background-position: 30rem -7rem;
-	background-size: 70rem;
-	@media screen and (min-width: 952px) {
-		background-position: 35vw -2vw;
-		background-size: initial;
-	}
+
 	@media screen and (min-width: 1000px) {
+		background-image: url("../images/design/vagues-entete.svg");
+		background-repeat: no-repeat;
 		background-position: 40vw 0;
 	}
 	@media screen and (min-width: 1400px) {

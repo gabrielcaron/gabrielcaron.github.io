@@ -105,12 +105,14 @@
 
 // Mixin pour le padding de base pour mobile si Grid ou Flex ne sont pas utilisés
 @mixin paddingConteneur {
-	padding-left: 3rem;
-	padding-right: 3rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
 	@media screen and (min-width: 1000px) {
 		padding-left: 5rem;
 		padding-right: 5rem;
 	}
+
 	@media screen and (min-width: 1930px) {
 		padding-left: 0;
 		padding-right: 0;

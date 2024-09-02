@@ -1,6 +1,6 @@
 # gabrielcaron.ca
 
-Portfolio Web et informations pratiques pour assurer sa continuité.
+Portfolio Web et informations pratiques pour assurer sa continuité
 
 ## Sommaire
 
@@ -8,6 +8,7 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.6](#v26)
   - [v2.5](#v25)
   - [v2.4.1](#v241)
   - [v2.4](#v24)
@@ -55,6 +56,19 @@ Portfolio Web et informations pratiques pour assurer sa continuité.
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.6
+
+Cette version apporte principalement des améliorations importantes en versions mobile et tablette.
+
+- (En-tête) Élimination des vagues en versions mobile et tablette
+- (Navigation et Icônes) Réduction de la taille des icônes des projets en version mobile
+- (Pied de page) Ajustement de la couleur des liens en mode sombre
+- (Mixins) paddingConteneur(): réduction du padding à 2rem en version mobile
+
+### v2.5.1
+
+- Correction mineure
 
 ### v2.5
 
