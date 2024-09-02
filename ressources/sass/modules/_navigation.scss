@@ -1,17 +1,16 @@
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.3
 */
 
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
-@mixin couleursLiens {
+@mixin couleursLiens($modeSombre: $blancSombre) {
 	&:link,
 	&:visited {
 		color: $gris25;
 
 		@media screen and (prefers-color-scheme: dark) {
-			color: $blancSombre;
+			color: $modeSombre;
 		}
 	}
 
@@ -20,7 +19,7 @@
 		color: $noir;
 
 		@media screen and (prefers-color-scheme: dark) {
-			color: $blancSombre;
+			color: $modeSombre;
 		}
 	}
 }
@@ -49,7 +48,7 @@
 		&__item {
 			display: inline-block;
 
-			@media screen and (min-width: $mobile600px) {
+			@media screen and (min-width: $desktop1100px) {
 				margin-left: 1rem;
 			}
 		}
@@ -66,6 +65,10 @@
 			text-align: center;
 
 			@media screen and (min-width: $mobile600px) {
+				font-size: 1.8rem;
+			}
+
+			@media screen and (min-width: $desktop1000px) {
 				font-size: 2rem;
 				padding: 1.4rem 3rem;
 			}
@@ -490,16 +493,12 @@
 		}
 
 		&__lien {
-			@include couleursLiens;
+			@include couleursLiens($modeSombre: $gris65AAA);
 			font-family: $RobotoMedium;
 			font-size: 1.8rem;
 			line-height: 225%;
 			letter-spacing: $EspacementStandard;
 			transition: border-bottom 0.075s ease-in-out;
-
-			@media screen and (prefers-color-scheme: dark) {
-				color: $gris65AAA;
-			}
 
 			&.section {
 				color: $noir;

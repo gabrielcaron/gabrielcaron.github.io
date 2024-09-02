@@ -1,12 +1,11 @@
 /*
 * Pied de page
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.2
 */
 
 .pied-de-page {
 	@include conteneur1400px();
-	background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
+	background-color: $jauneOfficiel;
 	margin-top: 5rem;
 	padding-bottom: 1rem;
 

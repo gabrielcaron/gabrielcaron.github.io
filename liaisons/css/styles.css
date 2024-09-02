@@ -591,7 +591,6 @@ body {
 /*
 * En-tête
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.0
 */
 .entete {
   padding-left: 2rem;
@@ -631,13 +630,14 @@ body {
 }
 @media screen and (min-width: 900px) {
   .entete {
-    padding-bottom: 10rem;
+    padding-bottom: 3rem;
   }
 }
 @media screen and (min-width: 1000px) {
   .entete {
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-bottom: 10rem;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -715,7 +715,6 @@ body {
 /*
 * Styles des liens de navigation (en-tête, icônes des projets et pied de page)
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.3
 */
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
 /* En-tête */
@@ -741,7 +740,7 @@ body {
 .entete .navigation__item {
   display: inline-block;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1100px) {
   .entete .navigation__item {
     margin-left: 1rem;
   }
@@ -773,6 +772,11 @@ body {
   }
 }
 @media screen and (min-width: 600px) {
+  .entete .navigation__lien {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1000px) {
   .entete .navigation__lien {
     font-size: 2rem;
     padding: 1.4rem 3rem;
@@ -1240,7 +1244,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pied-de-page .navigation__lien:link, .pied-de-page .navigation__lien:visited {
-    color: #e6e6e6;
+    color: #a6a6a6;
   }
 }
 .pied-de-page .navigation__lien:hover, .pied-de-page .navigation__lien:active {
@@ -1248,11 +1252,6 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .pied-de-page .navigation__lien:hover, .pied-de-page .navigation__lien:active {
-    color: #e6e6e6;
-  }
-}
-@media screen and (prefers-color-scheme: dark) {
-  .pied-de-page .navigation__lien {
     color: #a6a6a6;
   }
 }
@@ -1275,12 +1274,11 @@ body {
 /*
 * Pied de page
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.2
 */
 .pied-de-page {
   padding-left: 2rem;
   padding-right: 2rem;
-  background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
+  background-color: #ffe100;
   margin-top: 5rem;
   padding-bottom: 1rem;
 }
