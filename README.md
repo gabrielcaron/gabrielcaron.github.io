@@ -56,6 +56,15 @@ Aucune dépendance requise.
 
 ## Historique des versions
 
+### v2.6
+
+Cette version apporte principalement des améliorations importantes en version mobile et tablette.
+
+- (En-tête) Élimination des vagues en versions mobile et tablette
+- (Navigation et Icônes) Réduction de la taille des icônes des projets en version mobile
+- (Pied de page) Ajustement de la couleur des liens en mode sombre
+- (Mixins) paddingConteneur(): réduction du padding à 2rem en version mobile
+
 ### v2.5.1
 
 - Correction mineure
