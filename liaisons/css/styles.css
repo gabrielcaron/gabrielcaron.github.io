@@ -539,8 +539,8 @@ body {
 */
 /*** DEV seulement - Classe conteneur pour le centrage du bloc parent avec CSS Grid ***/
 .conteneur {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .conteneur {
@@ -594,12 +594,8 @@ body {
 * @version 2.0
 */
 .entete {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  background-image: url("../images/design/vagues-entete.svg");
-  background-repeat: no-repeat;
-  background-position: 30rem -7rem;
-  background-size: 70rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .entete {
@@ -644,14 +640,10 @@ body {
     padding-right: 5rem;
   }
 }
-@media screen and (min-width: 952px) {
-  .entete {
-    background-position: 35vw -2vw;
-    background-size: initial;
-  }
-}
 @media screen and (min-width: 1000px) {
   .entete {
+    background-image: url("../images/design/vagues-entete.svg");
+    background-repeat: no-repeat;
     background-position: 40vw 0;
   }
 }
@@ -739,7 +731,12 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 3.5rem 0;
+  margin: 3rem 0 0 0;
+}
+@media screen and (min-width: 1000px) {
+  .entete .navigation__liste {
+    margin: 3rem 0 2rem 0;
+  }
 }
 .entete .navigation__item {
   display: inline-block;
@@ -963,10 +960,13 @@ body {
     grid-column: span 3;
   }
 }
+.projets .navigation__rangee-projets .navigation__figcaption {
+  margin-top: 0.5rem;
+}
 .projets .navigation__rangee-selecteur {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style-type: none;
   padding: 0;
 }
@@ -1048,8 +1048,14 @@ body {
   text-align: left;
 }
 .projets .navigation__rangee-selecteur .navigation__figure .icone {
-  width: 8.5rem;
-  border-radius: 2rem;
+  width: 5rem;
+  border-radius: 1.5rem;
+}
+@media screen and (min-width: 600px) {
+  .projets .navigation__rangee-selecteur .navigation__figure .icone {
+    width: 8.5rem;
+    border-radius: 2rem;
+  }
 }
 .projets .navigation__rangee-selecteur .navigation__figcaption {
   padding: 0;
@@ -1073,7 +1079,7 @@ body {
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__lien.navigation__lien--courant .icone {
-    border: 0.2rem solid #ffe100;
+    border: 0.3rem solid #ffe100;
   }
 }
 .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
@@ -1122,7 +1128,6 @@ body {
   display: inline-block;
   line-height: 125%;
   border-radius: 4rem;
-  margin-top: 0.5rem;
   padding: 1.3rem 2.3rem;
 }
 @media screen and (min-width: 600px) {
@@ -1273,11 +1278,11 @@ body {
 * @version 1.2
 */
 .pied-de-page {
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding: 0 3rem 5rem 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   background-image: linear-gradient(to right bottom, #fff000, #ffeb00);
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
 }
 @media screen and (min-width: 1000px) {
   .pied-de-page {
@@ -1307,6 +1312,7 @@ body {
 }
 @media screen and (min-width: 900px) {
   .pied-de-page {
+    margin-top: 10rem;
     padding: 0 5rem 0 5rem;
   }
 }
@@ -1328,7 +1334,7 @@ body {
 .pied-de-page__rangee-logo {
   container-type: inline-size;
   container-name: rangee-logo;
-  padding: 6rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
 }
 @media screen and (min-width: 600px) {
   .pied-de-page__rangee-logo {
@@ -1338,6 +1344,11 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 3rem;
+    padding: 5rem 0 5rem 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  .pied-de-page__rangee-logo {
     padding: 10rem 0 5rem 0;
   }
 }
@@ -1837,8 +1848,8 @@ body {
 .lien::before {
   content: "";
   display: inline-block;
-  width: 3.5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 4rem;
   vertical-align: middle;
   margin-top: -0.5rem;
   padding-right: 1rem;
@@ -2060,8 +2071,8 @@ img {
 }
 @media screen and (max-width: 899px) {
   .accueil .projets {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media screen and (max-width: 899px) and (min-width: 1000px) {
@@ -2091,8 +2102,8 @@ img {
 }
 @media screen and (max-width: 899px) {
   .accueil .projets--demi-grille {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media screen and (max-width: 899px) and (min-width: 1000px) {
@@ -2291,8 +2302,8 @@ img {
 * @version 2.0
 */
 .contact {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .contact {
@@ -2469,8 +2480,8 @@ img {
 */
 /* Styles généraux, tous les projets */
 .projets {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .projets {
@@ -2611,8 +2622,8 @@ img {
 * @version 1.1
 */
 .apropos .contenu {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .apropos .contenu {
@@ -2680,8 +2691,8 @@ img {
 }
 
 .contenu.secondaire .contenu {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media screen and (min-width: 1000px) {
   .contenu.secondaire .contenu {
