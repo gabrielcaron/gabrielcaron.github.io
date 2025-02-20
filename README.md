@@ -8,6 +8,7 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.6.1](#v261)
   - [v2.6](#v26)
   - [v2.5](#v25)
   - [v2.4.1](#v241)
@@ -56,6 +57,10 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.6.1
+
+- Mise à jour de l'année
 
 ### v2.6
 
