@@ -22,6 +22,7 @@
 		<meta name="description" content="La culture du surf" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<script src="../liaisons/js/accordeon.js" defer></script>
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -517,11 +518,31 @@
 							"
 							alt="" />
 					</picture>
-					<figcaption class="projet__figcaption">
-						Ce projet a été réalisé à l'hiver 2020 dans le cadre du cours Design
+					<!-- Accordeon v1.0 -->
+				<div class="accordeon accordeon--active">
+					<h2 class="accordeon__titre">
+						<button
+							id="AccordeonUnique"
+							class="accordeon__bouton"
+							aria-expanded="false"
+							aria-controls="accorderon1"
+							type="button">
+							À propos
+						</button>
+					</h3>
+					<div
+						id="accorderon1"
+						class="accordeon__contenu"
+						role="region"
+						aria-labelledby="AccordeonUnique">
+						<p>
+							Ce projet a été réalisé à l'hiver 2020 dans le cadre du cours Design
 						d'interface II en Techniques d'intégration multimédia au Cégep de
 						Sainte-Foy.
-					</figcaption>
+						</p>
+					</div>
+				</div>
+				<!-- Fin de la composante Accordéon -->
 				</figure>
 			</div>
 		</main>
