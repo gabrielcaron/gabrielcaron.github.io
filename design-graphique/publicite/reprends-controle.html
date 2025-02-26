@@ -23,6 +23,7 @@
 	<meta name="description" content="Campagne contre le tabagisme">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="../../liaisons/js/accordeon.js" defer></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="../../liaisons/css/styles.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="../../liaisons/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../../liaisons/favicon/favicon-32x32.png">
@@ -302,13 +303,30 @@
 								../../liaisons/images/projets/publicite/reprends-controle-1380.png 2x
 							" alt="">
 				</picture>
-				<figcaption class="projet__figcaption">
-					Ce projet a été réalisé en équipe avec Charlotte Ouellet à l’hiver
-					2007 dans le cadre du cours Création publicitaire en Techniques de
-					graphisme au Cégep de Rivière-du-Loup.
-					<a href="../../credits.html#controle">Avis sur les droits d'auteur</a>
-				</figcaption>
 			</figure>
+			<!-- Accordeon v1.0 -->
+			<div class="accordeon accordeon--active">
+				<h2 class="accordeon__titre">
+					<button id="AccordeonUniqueId01" class="accordeon__bouton" aria-expanded="false"
+						aria-controls="accorderon01" type="button">
+						À propos
+					</button>
+				</h2>
+				<div id="accorderon01" class="accordeon__contenu" role="region" aria-labelledby="AccordeonUniqueId01">
+					<p>
+						Ce projet a été réalisé avec Charlotte Ouellet dans le cadre du cours Création publicitaire en
+						Techniques de
+						graphisme au Cégep de Rivière-du-Loup.
+					</p>
+					<p>
+						Le mot-symbole «&nbsp;Canada&nbsp;» est la propriété du Gouvernement du
+						Canada. La source des textes est inconnue. Ce projet n'a pas été faite
+						en association avec le Gouvernement du Canada ni avec l'appui de
+						celui-ci.
+					</p>
+				</div>
+			</div>
+			<!-- Fin de la composante Accordéon -->
 		</div>
 	</main>
 	<footer class="pied-de-page">

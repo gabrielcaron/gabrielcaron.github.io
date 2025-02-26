@@ -23,12 +23,13 @@
 	<meta name="description" content="Identification visuelle du site Web promotionnel">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="../../liaisons/js/accordeon.js" defer></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="../../liaisons/css/styles.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="../../liaisons/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../../liaisons/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../../liaisons/favicon/favicon-16x16.png">
 	<link rel="manifest" href="../../site.webmanifest">
-	<title>Destinations Canada | Design graphique | Gabriel Caron</title>
+	<title>Destinations Canada (Design graphique) | Gabriel Caron</title>
 </head>
 
 <body>
@@ -351,13 +352,25 @@
 								../../liaisons/images/projets/identite-visuelle/destinations-335.svg
 							" alt="">
 				</picture>
-				<figcaption class="projet__figcaption">
-					Cette identification visuelle est tirée du projet
-					<a href="../../web-applis/destinations-canada.html">Destinations Canada</a>
-					réalisé à l'hiver 2020 dans le cadre du cours Design d'interface II
-					en Techniques d'intégration multimédia au Cégep de Sainte-Foy.
-				</figcaption>
 			</figure>
+			<!-- Accordeon v1.0 -->
+			<div class="accordeon accordeon--active">
+				<h2 class="accordeon__titre">
+					<button id="AccordeonUniqueId01" class="accordeon__bouton" aria-expanded="false"
+						aria-controls="accorderon01" type="button">
+						À propos
+					</button>
+				</h2>
+				<div id="accorderon01" class="accordeon__contenu" role="region" aria-labelledby="AccordeonUniqueId01">
+					<p>
+						Cette identification visuelle est tirée du projet
+						<a href="../../web-applis/destinations-canada.html">Destinations Canada</a>
+						réalisé dans le cadre du cours Design d'interface II
+						en Techniques d'intégration multimédia au Cégep de Sainte-Foy.
+					</p>
+				</div>
+			</div>
+			<!-- Fin de la composante Accordéon -->
 		</div>
 	</main>
 	<footer class="pied-de-page">

@@ -23,6 +23,7 @@
 	<meta name="description" content="Identification visuelle du site Web promotionnel">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<script src="../../liaisons/js/accordeon.js" defer></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="../../liaisons/css/styles.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="../../liaisons/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../../liaisons/favicon/favicon-32x32.png">
@@ -352,12 +353,29 @@
 								../../liaisons/images/projets/identite-visuelle/tim-335.svg
 							" alt="">
 				</picture>
-				<figcaption class="projet__figcaption">
-					Ce logotype a été réalisé en 2021. <br>Reproduction autorisée pour
-					tout usage dans le cadre du programme des Techniques d'intégration
-					multimédia du Cégep de Sainte-Foy.
-				</figcaption>
 			</figure>
+			<!-- Accordeon v1.0 -->
+			<div class="accordeon accordeon--active">
+				<h2 class="accordeon__titre">
+					<button id="AccordeonUniqueId01" class="accordeon__bouton" aria-expanded="false"
+						aria-controls="accorderon01" type="button">
+						À propos
+					</button>
+				</h2>
+				<div id="accorderon01" class="accordeon__contenu" role="region" aria-labelledby="AccordeonUniqueId01">
+					<p>
+						Ce logotype a été réalisé dans le cadre de l’épreuve
+						synthèse de programme des Techniques d'intégration multimédia au
+						Cégep de Sainte-Foy.
+					</p>
+					<p>
+						Reproduction autorisée pour
+						tout usage dans le cadre du programme des Techniques d'intégration
+						multimédia du Cégep de Sainte-Foy.
+					</p>
+				</div>
+			</div>
+			<!-- Fin de la composante Accordéon -->
 		</div>
 	</main>
 	<footer class="pied-de-page">
