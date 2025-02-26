@@ -2764,29 +2764,9 @@ img {
   font-family: Roboto-Bold, sans serif;
   margin-bottom: 0.5rem;
 }
-@media screen and (min-width: 800px) {
-  @supports (grid-template-columns: minmax(auto, 1400px)) {
-    @media screen and (min-width: 800px) and (min-width: 600px) {
-      .apropos .quelques-chiffres {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        -moz-column-gap: 2rem;
-             column-gap: 2rem;
-      }
-    }
-  }
-  .apropos .quelques-chiffres h2 {
-    grid-column: span 12;
-  }
-  .apropos .quelques-chiffres .statistique {
-    grid-column: span 6;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 800px) and (prefers-color-scheme: dark) {
-  .apropos .quelques-chiffres .statistique path {
-    fill: #e6e6e6;
-  }
+.apropos .stats {
+  font-size: 2.5rem;
+  font-family: Roboto-Bold, sans serif;
 }
 .apropos .projet {
   padding: 0;
