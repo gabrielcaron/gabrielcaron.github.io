@@ -1,0 +1,122 @@
+/*
+* Composante Accordéon
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 1.0
+*/
+
+.accordeon {
+	list-style: none;
+	width: 100%;
+	transition: all $transition--base ease-in;
+	overflow: hidden;
+	margin: 1rem 0;
+
+	&:first-of-type {
+		margin-top: 3rem;
+	}
+
+	&--active {
+		& .accordeon {
+			&__contenu {
+				display: block;
+				max-height: fit-content;
+				margin: 0 0 1rem 0;
+				transition: max-height $transition--base ease-out; // transition à l'ouverture
+			}
+
+			&__bouton {
+				color: $noir;
+
+				@media screen and (prefers-color-scheme: dark) {
+					color: $blancSombre;
+				}
+
+				&::before {
+					transform: rotate(180deg);
+
+					@media screen and (prefers-color-scheme: dark) {
+						background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+					}
+				}
+
+				&::after {
+					background-color: $jauneOfficiel;
+					border-color: $jauneOfficiel;
+				}
+			}
+		}
+	}
+
+	&__bouton {
+		color: $gris25;
+		background-color: transparent;
+		border: initial;
+		display: flex;
+		align-items: center;
+		gap: 3.5rem;
+		padding: 1rem 0;
+		font-family: $RobotoMedium;
+		font-size: 1.8rem;
+		text-decoration: underline;
+		text-align: left;
+		cursor: pointer;
+
+		@media screen and (prefers-color-scheme: dark) {
+			color: $blancSombre;
+		}
+
+		&::before {
+			content: "";
+			position: relative;
+			left: 1rem;
+			display: inline-block;
+			width: 2.3rem;
+			height: 1.3rem;
+			background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+			background-size: cover;
+			transition: all $transition--base ease-in-out;
+
+			@media screen and (prefers-color-scheme: dark) {
+				background: url(../images/icones/fleche-accordeon--sombre.svg) no-repeat;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			display: flex;
+			border: solid 0.3rem $gris25;
+			border-radius: 0.7rem;
+			height: 3.6rem;
+			width: 3.6rem;
+
+			@media screen and (prefers-color-scheme: dark) {
+				border-color: $gris65AAA;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			& .accordeon__titre {
+				color: $noir;
+			}
+		}
+	}
+
+	&__titre {
+		margin: 0;
+	}
+
+	&__contenu {
+		display: none; // Évite d'être lu par un lecteur d'écran
+		overflow: hidden;
+		max-height: 0;
+		font-size: 1.6rem;
+		transition: none; // Pour ne pas voir le tiroir se fermer à l'ouverture de la page
+
+		& > * {
+			margin: 1rem 5.5rem;
+		}
+	}
+}

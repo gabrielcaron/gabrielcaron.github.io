@@ -348,6 +348,7 @@ template {
 /* Couleurs de base AAA */
 /* Polices */
 /** Points de rupture **/
+/** Transitions **/
 /** Mixins **/
 /*
 * Mixins de la grille
@@ -1268,6 +1269,115 @@ body {
   .pied-de-page__copyright {
     grid-column: 1/13;
   }
+}
+
+/*
+* Composante Accordéon
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 1.0
+*/
+.accordeon {
+  list-style: none;
+  width: 100%;
+  transition: all 200ms ease-in;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+.accordeon:first-of-type {
+  margin-top: 3rem;
+}
+.accordeon--active .accordeon__contenu {
+  display: block;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 0 0 1rem 0;
+  transition: max-height 200ms ease-out;
+}
+.accordeon--active .accordeon__bouton {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon--active .accordeon__bouton {
+    color: #e6e6e6;
+  }
+}
+.accordeon--active .accordeon__bouton::before {
+  transform: rotate(180deg);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon--active .accordeon__bouton::before {
+    background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+  }
+}
+.accordeon--active .accordeon__bouton::after {
+  background-color: #ffe100;
+  border-color: #ffe100;
+}
+.accordeon__bouton {
+  color: #404040;
+  background-color: transparent;
+  border: initial;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 1rem 0;
+  font-family: Roboto-Medium, Arial, sans serif;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-align: left;
+  cursor: pointer;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon__bouton {
+    color: #e6e6e6;
+  }
+}
+.accordeon__bouton::before {
+  content: "";
+  position: relative;
+  left: 1rem;
+  display: inline-block;
+  width: 2.3rem;
+  height: 1.3rem;
+  background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+  background-size: cover;
+  transition: all 200ms ease-in-out;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon__bouton::before {
+    background: url(../images/icones/fleche-accordeon--sombre.svg) no-repeat;
+  }
+}
+.accordeon__bouton::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  border: solid 0.3rem #404040;
+  border-radius: 0.7rem;
+  height: 3.6rem;
+  width: 3.6rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon__bouton::after {
+    border-color: #a6a6a6;
+  }
+}
+.accordeon__bouton:hover .accordeon__titre, .accordeon__bouton:focus .accordeon__titre {
+  color: #000;
+}
+.accordeon__titre {
+  margin: 0;
+}
+.accordeon__contenu {
+  display: none;
+  overflow: hidden;
+  max-height: 0;
+  font-size: 1.6rem;
+  transition: none;
+}
+.accordeon__contenu > * {
+  margin: 1rem 5.5rem;
 }
 
 /** Pied de page **/
@@ -2654,29 +2764,9 @@ img {
   font-family: Roboto-Bold, sans serif;
   margin-bottom: 0.5rem;
 }
-@media screen and (min-width: 800px) {
-  @supports (grid-template-columns: minmax(auto, 1400px)) {
-    @media screen and (min-width: 800px) and (min-width: 600px) {
-      .apropos .quelques-chiffres {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        -moz-column-gap: 2rem;
-             column-gap: 2rem;
-      }
-    }
-  }
-  .apropos .quelques-chiffres h2 {
-    grid-column: span 12;
-  }
-  .apropos .quelques-chiffres .statistique {
-    grid-column: span 6;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 800px) and (prefers-color-scheme: dark) {
-  .apropos .quelques-chiffres .statistique path {
-    fill: #e6e6e6;
-  }
+.apropos .stats {
+  font-size: 2.5rem;
+  font-family: Roboto-Bold, sans serif;
 }
 .apropos .projet {
   padding: 0;

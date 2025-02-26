@@ -8,6 +8,7 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.7](#v27)
   - [v2.6.1](#v261)
   - [v2.6](#v26)
   - [v2.5](#v25)
@@ -57,6 +58,14 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.7
+
+- (Accordéon) Ajout de la composante
+- Retrait de certaines planches de style
+- Transfert des crédits dans chaque projet
+- Mise à jour des statistiques
+- Élimination des balises auto-fermantes inutiles
 
 ### v2.6.1
 

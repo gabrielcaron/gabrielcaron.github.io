@@ -15,26 +15,31 @@
 		margin-bottom: 0.5rem;
 	}
 
-	.quelques-chiffres {
-		@media screen and (min-width: 800px) {
-			@include rangeeGrid();
-
-			& h2 {
-				grid-column: span 12;
-			}
-
-			& .statistique {
-				grid-column: span 6;
-				width: 100%; // Règle un bogue d'affichage sur Safari
-
-				@media screen and (prefers-color-scheme: dark) {
-					& path {
-						fill: $blancSombre;
-					}
-				}
-			}
-		}
+	& .stats {
+		font-size: 2.5rem;
+		font-family: Roboto-Bold, sans serif;
 	}
+
+	// .quelques-chiffres {
+	// 	@media screen and (min-width: 800px) {
+	// 		@include rangeeGrid();
+
+	// 		& h2 {
+	// 			grid-column: span 12;
+	// 		}
+
+	// 		& .statistique {
+	// 			grid-column: span 6;
+	// 			width: 100%; // Règle un bogue d'affichage sur Safari
+
+	// 			@media screen and (prefers-color-scheme: dark) {
+	// 				& path {
+	// 					fill: $blancSombre;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	// Accessibilité
 	.projet {
