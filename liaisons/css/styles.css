@@ -381,11 +381,11 @@ body {
 }
 
 a {
+  text-decoration: underline;
   text-underline-offset: 0.5rem;
   outline-offset: 1rem;
 }
 a:hover {
-  text-decoration: underline;
   text-decoration-thickness: 0.35rem;
   text-underline-offset: 0.3rem;
   text-underline-position: from-font;
@@ -827,10 +827,10 @@ body {
 }
 .entete .navigation__lien.navigation__lien--courant {
   color: #000;
-  border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
   color: #000;
+  border: 0.3rem solid #ffe100;
   line-height: 120%;
   padding: 1rem 1.5rem;
 }
@@ -840,10 +840,10 @@ body {
   }
 }
 .entete .navigation__lien.navigation__lien--courant:hover {
+  text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
 .entete .navigation__lien.navigation__lien--courant:hover:hover {
-  text-decoration: underline;
   text-decoration-thickness: 0.35rem;
   text-underline-offset: 0.3rem;
   text-underline-position: from-font;
@@ -916,11 +916,10 @@ body {
 }
 .projets .navigation__rangee-sections .navigation__lien--courant {
   color: #000;
-  border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
   color: #000;
-  text-decoration: none;
+  border: 0.3rem solid #ffe100;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-sections .navigation__lien--courant {
@@ -928,10 +927,10 @@ body {
   }
 }
 .projets .navigation__rangee-sections .navigation__lien--courant:hover {
+  text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
 .projets .navigation__rangee-sections .navigation__lien--courant:hover:hover {
-  text-decoration: underline;
   text-decoration-thickness: 0.35rem;
   text-underline-offset: 0.3rem;
   text-underline-position: from-font;
@@ -962,6 +961,9 @@ body {
     }
   }
 }
+.projets .navigation__rangee-projets .navigation__lien {
+  text-decoration: underline;
+}
 .projets .navigation__rangee-projets .navigation__lien:link, .projets .navigation__rangee-projets .navigation__lien:visited {
   color: #404040;
 }
@@ -976,6 +978,16 @@ body {
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-projets .navigation__lien:hover, .projets .navigation__rangee-projets .navigation__lien:active {
     color: #e6e6e6;
+  }
+}
+.projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption {
+    text-decoration-thickness: 0.4rem;
   }
 }
 .projets .navigation__rangee-projets .navigation__lien .navigation__figcaption {
@@ -1009,9 +1021,6 @@ body {
     grid-column: span 3;
   }
 }
-.projets .navigation__rangee-projets .navigation__figcaption {
-  margin-top: 0.5rem;
-}
 .projets .navigation__rangee-selecteur {
   display: flex;
   flex-wrap: wrap;
@@ -1031,7 +1040,7 @@ body {
 @media screen and (min-width: 1100px) {
   .projets .navigation__rangee-selecteur {
     display: flex;
-    gap: 5rem;
+    gap: 3rem 5rem;
   }
 }
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:link, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:visited {
@@ -1051,41 +1060,34 @@ body {
   }
 }
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
-  text-decoration: none;
-}
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
   color: #000;
-  border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
   color: #000;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
     color: #e6e6e6;
   }
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption:hover {
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .icone {
+  border: 0.3rem solid #ffe100;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
+  border: 0.3rem solid #ffe100;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:hover {
+  text-decoration: underline;
   text-underline-offset: 0.5rem;
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption:hover:hover {
-  text-decoration: underline;
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:hover:hover {
   text-decoration-thickness: 0.35rem;
   text-underline-offset: 0.3rem;
   text-underline-position: from-font;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption:hover:hover {
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:hover:hover {
     text-decoration-thickness: 0.4rem;
-  }
-}
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:active .navigation__figcaption, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:focus-visible .navigation__figcaption {
-  background-color: #ffe100;
-  text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:active .navigation__figcaption, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:focus-visible .navigation__figcaption {
-    color: #000;
   }
 }
 .projets .navigation__rangee-selecteur .navigation__item {
@@ -1137,11 +1139,6 @@ body {
 .projets .navigation__lien.navigation__lien--courant .icone {
   border: none;
 }
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien.navigation__lien--courant .icone {
-    border: 0.3rem solid #ffe100;
-  }
-}
 .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
   padding: 1rem 2rem;
 }
@@ -1186,7 +1183,7 @@ body {
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.6rem;
   display: inline-block;
-  line-height: 125%;
+  line-height: 150%;
   border-radius: 4rem;
   padding: 1.3rem 2.3rem;
 }
@@ -1366,6 +1363,7 @@ body {
   }
 }
 .accordeon__bouton {
+  text-decoration: underline;
   text-underline-offset: 0.5rem;
   color: #404040;
   background-color: transparent;
@@ -1383,7 +1381,6 @@ body {
   cursor: pointer;
 }
 .accordeon__bouton:hover {
-  text-decoration: underline;
   text-decoration-thickness: 0.35rem;
   text-underline-offset: 0.3rem;
   text-underline-position: from-font;
@@ -2407,7 +2404,6 @@ body {
 /*
 * Mise en page de la page Contact
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.0
 */
 .contact {
   padding-left: 2rem;
@@ -2474,10 +2470,20 @@ body {
 }
 .contact__lien {
   font-family: Roboto-Medium, Arial, sans serif;
-  color: #404040;
   letter-spacing: 0.05rem;
   line-height: 100%;
   border-radius: 4rem;
+  color: #000;
+  text-decoration-thickness: 0.3rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien {
+    color: #e6e6e6;
+  }
+}
+.contact__lien:hover, .contact__lien:focus {
+  text-decoration-thickness: 0.5rem;
+  text-underline-offset: 0.1rem;
 }
 .contact__lien:hover .icone, .contact__lien:focus .icone {
   border: none;
@@ -2527,8 +2533,13 @@ body {
     fill: url(#linkedin-bleu-sombre);
   }
 }
-.contact__lien:hover .contact__figcaption, .contact__lien:focus .contact__figcaption {
-  text-decoration: none;
+.contact__lien:visited {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:visited {
+    color: #e6e6e6;
+  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .contact__lien .courriel .enveloppe {

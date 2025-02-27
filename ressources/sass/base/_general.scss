@@ -4,17 +4,39 @@
 * @version 1.1
 */
 
-@mixin soulignementLiens {
-	text-underline-offset: 0.5rem;
+@mixin soulignementLiens($modeMenu: false) {
+	text-decoration: underline;
 
-	&:hover {
-		text-decoration: underline;
-		text-decoration-thickness: 0.35rem;
-		text-underline-offset: 0.3rem;
-		text-underline-position: from-font;
+	@if $modeMenu == true {
+		&:hover {
+			& .navigation {
+				&__figcaption {
+					text-decoration-thickness: 0.35rem;
+					text-underline-offset: 0.3rem;
+					text-underline-position: from-font;
 
-		@media screen and (prefers-color-scheme: dark) {
-			text-decoration-thickness: 0.4rem;
+					@media screen and (prefers-color-scheme: dark) {
+						text-decoration-thickness: 0.4rem;
+					}
+				}
+			}
+		}
+		& .navigation {
+			&__figcaption {
+				text-decoration: underline;
+			}
+		}
+	} @else {
+		text-underline-offset: 0.5rem;
+
+		&:hover {
+			text-decoration-thickness: 0.35rem;
+			text-underline-offset: 0.3rem;
+			text-underline-position: from-font;
+
+			@media screen and (prefers-color-scheme: dark) {
+				text-decoration-thickness: 0.4rem;
+			}
 		}
 	}
 }

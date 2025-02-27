@@ -1,7 +1,6 @@
 /*
 * Mise en page de la page Contact
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.0
 */
 
 .contact {
@@ -34,13 +33,21 @@
 
 	&__lien {
 		font-family: $RobotoMedium;
-		color: $gris25;
 		letter-spacing: $EspacementStandard;
 		line-height: 100%;
 		border-radius: $arrondiMobile;
+		color: $noir;
+		text-decoration-thickness: 0.3rem;
+
+		@media screen and (prefers-color-scheme: dark) {
+			color: $blancSombre;
+		}
 
 		&:hover,
 		&:focus {
+			text-decoration-thickness: 0.5rem;
+			text-underline-offset: 0.1rem;
+
 			& .icone {
 				border: none;
 				margin: 0.4rem 0.4rem 0 0;
@@ -97,9 +104,13 @@
 					}
 				}
 			}
+		}
 
-			& .contact__figcaption {
-				text-decoration: none;
+		&:visited {
+			color: $noir;
+
+			@media screen and (prefers-color-scheme: dark) {
+				color: $blancSombre;
 			}
 		}
 
