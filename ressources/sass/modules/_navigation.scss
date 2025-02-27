@@ -3,6 +3,8 @@
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 */
 
+// TODO faire un lien de retour pour les projets archivés (Voir Altitude)
+
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
 @mixin couleursLiens($modeSombre: $blancSombre) {
 	&:link,
@@ -82,11 +84,6 @@
 				}
 			}
 
-			&:hover,
-			&:focus {
-				@include boutonHover;
-			}
-
 			&:active {
 				@include boutonActive;
 			}
@@ -146,7 +143,6 @@
 
 					&--courant {
 						@include boutonPageCourante;
-						text-decoration: none;
 
 						&:active,
 						&:focus-visible {
@@ -166,21 +162,7 @@
 			& .navigation {
 				&__lien {
 					@include couleursLiens;
-
-					& .navigation {
-						&__figcaption {
-							text-decoration: underline;
-						}
-					}
-
-					&:hover,
-					&:focus {
-						& .navigation {
-							&__figcaption {
-								@include boutonHover;
-							}
-						}
-					}
+					@include soulignementLiens($modeMenu: true);
 				}
 
 				&__liste {
@@ -208,10 +190,6 @@
 						grid-column: span 3;
 					}
 				}
-
-				&__figcaption {
-					margin-top: 0.5rem;
-				}
 			}
 		}
 
@@ -227,7 +205,7 @@
 
 			@media screen and (min-width: $desktop1100px) {
 				display: flex;
-				gap: 5rem;
+				gap: 3rem 5rem;
 			}
 
 			& .navigation {
@@ -237,23 +215,7 @@
 							@include couleursLiens;
 
 							&--courant {
-								// Annule le souligné hérité de l'agent utilisateur
-								text-decoration: none;
-
-								& .navigation {
-									&__figcaption {
-										@include boutonPageCourante;
-									}
-								}
-
-								&:active,
-								&:focus-visible {
-									& .navigation {
-										&__figcaption {
-											@include boutonActive;
-										}
-									}
-								}
+								@include boutonPageCourante($modeIcone: true);
 							}
 						}
 					}
@@ -298,7 +260,6 @@
 
 		&__lien {
 			font-family: $RobotoMedium;
-
 			letter-spacing: $EspacementStandard;
 			line-height: 100%;
 			border-radius: $arrondiMobile;
@@ -320,9 +281,9 @@
 						& .icone {
 							border: none;
 
-							@media screen and (prefers-color-scheme: dark) {
-								border: 0.3rem solid $jauneOfficiel;
-							}
+							// @media screen and (prefers-color-scheme: dark) {
+							// 	border: 0.3rem solid $jauneOfficiel;
+							// }
 						}
 
 						& .navigation {
@@ -373,7 +334,7 @@
 			font-family: $RobotoMedium;
 			font-size: 1.6rem;
 			display: inline-block;
-			line-height: 125%;
+			line-height: 150%;
 			border-radius: $arrondiMobile;
 			padding: 1.3rem 2.3rem;
 

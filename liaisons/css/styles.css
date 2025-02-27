@@ -2,29 +2,6 @@
 /**
  * @author Gabriel Caron <gabriel.caron@gmail.com>
  */
-/*
- * ------------------
- * TABLE DES MATIERES
- * ------------------
- * Librairies
- ** Normalize
- * ------------------
- * UTILITAIRES
- ** Variables
- ** Mixins
- * ------------------
- * BASE
- ** Typographie
- ** Grille
- * ------------------
- * MODULES
- ** Entete
- ** Pied de page
- * ------------------
- * LAYOUT
- ** Accueil
- ** General
- */
 /****** Librairies ******/
 /** Normalize **/
 /*! normalize.sass v8.0.1 | MIT License | github.com/necolas/normalize.sass */
@@ -101,8 +78,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -338,7 +314,6 @@ template {
 }
 
 /**** UTILITAIRES ****/
-/** Variables **/
 /*
 * Variables globales
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -349,13 +324,10 @@ template {
 /* Polices */
 /** Points de rupture **/
 /** Transitions **/
-/** Mixins **/
 /*
-* Mixins de la grille
+* Mixins de la grille et d'accessibilité
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.5
 */
-/***** Accessibilité *****/
 .visuallyhidden,
 .screen-reader-only {
   border: 0;
@@ -388,7 +360,65 @@ template {
 }
 
 /****** BASE ******/
-/** Typographie **/
+/*
+* Styles des balises racine
+* @author Gabriel Caron <gabriel.caron@gmail.com>
+* @version 1.1
+*/
+/* Base décimale */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+}
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #0d0d0d;
+  }
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  outline-offset: 1rem;
+}
+a:hover {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
+}
+@media screen and (prefers-color-scheme: dark) {
+  a:hover {
+    text-decoration-thickness: 0.4rem;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  a {
+    color: #64b9ff;
+  }
+  a:visited {
+    color: #b487ff;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  li,
+  figcaption {
+    color: #e6e6e6;
+  }
+}
+abbr[title] {
+  text-decoration-style: dotted;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
 /*
 * Polices de base
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -532,7 +562,6 @@ body {
   line-height: 1.5;
 }
 
-/** Grille **/
 /*
 * Grille de développement
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -567,8 +596,7 @@ body {
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
@@ -578,17 +606,14 @@ body {
     justify-content: space-between;
   }
 }
-/** Boutons **/
 /*
 * Mixins des boutons
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 2.2
 */
-/* Styles pour l'état survol */
 /* Styles pour l'état actif */
 /* Styles pour la page courante */
 /****** MODULES ******/
-/** Entete **/
 /*
 * En-tête
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -791,11 +816,9 @@ body {
     border-radius: 3rem;
   }
 }
-.entete .navigation__lien:hover, .entete .navigation__lien:focus {
-  text-decoration: none;
-}
 .entete .navigation__lien:active {
   background-color: #ffe100;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien:active {
@@ -804,10 +827,10 @@ body {
 }
 .entete .navigation__lien.navigation__lien--courant {
   color: #000;
-  border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
   color: #000;
+  border: 0.3rem solid #ffe100;
   line-height: 120%;
   padding: 1rem 1.5rem;
 }
@@ -818,6 +841,17 @@ body {
 }
 .entete .navigation__lien.navigation__lien--courant:hover {
   text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.entete .navigation__lien.navigation__lien--courant:hover:hover {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .entete .navigation__lien.navigation__lien--courant:hover:hover {
+    text-decoration-thickness: 0.4rem;
+  }
 }
 @media screen and (min-width: 520px) {
   .entete .navigation__lien.navigation__lien--courant {
@@ -826,6 +860,7 @@ body {
 }
 .entete .navigation__lien.navigation__lien--courant:active, .entete .navigation__lien.navigation__lien--courant:focus-visible {
   background-color: #ffe100;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .entete .navigation__lien.navigation__lien--courant:active, .entete .navigation__lien.navigation__lien--courant:focus-visible {
@@ -872,6 +907,7 @@ body {
 }
 .projets .navigation__rangee-sections .navigation__lien:active {
   background-color: #ffe100;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-sections .navigation__lien:active {
@@ -880,11 +916,10 @@ body {
 }
 .projets .navigation__rangee-sections .navigation__lien--courant {
   color: #000;
-  border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
   color: #000;
-  text-decoration: none;
+  border: 0.3rem solid #ffe100;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-sections .navigation__lien--courant {
@@ -893,9 +928,21 @@ body {
 }
 .projets .navigation__rangee-sections .navigation__lien--courant:hover {
   text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.projets .navigation__rangee-sections .navigation__lien--courant:hover:hover {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-sections .navigation__lien--courant:hover:hover {
+    text-decoration-thickness: 0.4rem;
+  }
 }
 .projets .navigation__rangee-sections .navigation__lien--courant:active, .projets .navigation__rangee-sections .navigation__lien--courant:focus-visible {
   background-color: #ffe100;
+  text-decoration: none;
 }
 @media screen and (prefers-color-scheme: dark) {
   .projets .navigation__rangee-sections .navigation__lien--courant:active, .projets .navigation__rangee-sections .navigation__lien--courant:focus-visible {
@@ -910,10 +957,12 @@ body {
     .projets .navigation__rangee-projets {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
+}
+.projets .navigation__rangee-projets .navigation__lien {
+  text-decoration: underline;
 }
 .projets .navigation__rangee-projets .navigation__lien:link, .projets .navigation__rangee-projets .navigation__lien:visited {
   color: #404040;
@@ -931,11 +980,18 @@ body {
     color: #e6e6e6;
   }
 }
+.projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption {
+    text-decoration-thickness: 0.4rem;
+  }
+}
 .projets .navigation__rangee-projets .navigation__lien .navigation__figcaption {
   text-decoration: underline;
-}
-.projets .navigation__rangee-projets .navigation__lien:hover .navigation__figcaption, .projets .navigation__rangee-projets .navigation__lien:focus .navigation__figcaption {
-  text-decoration: none;
 }
 .projets .navigation__rangee-projets .navigation__liste {
   list-style-type: none;
@@ -965,9 +1021,6 @@ body {
     grid-column: span 3;
   }
 }
-.projets .navigation__rangee-projets .navigation__figcaption {
-  margin-top: 0.5rem;
-}
 .projets .navigation__rangee-selecteur {
   display: flex;
   flex-wrap: wrap;
@@ -980,15 +1033,14 @@ body {
     .projets .navigation__rangee-selecteur {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
 @media screen and (min-width: 1100px) {
   .projets .navigation__rangee-selecteur {
     display: flex;
-    gap: 5rem;
+    gap: 3rem 5rem;
   }
 }
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:link, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien:visited {
@@ -1008,29 +1060,34 @@ body {
   }
 }
 .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
-  text-decoration: none;
-}
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
   color: #000;
-  border: 0.3rem solid #ffe100;
   font-family: Roboto-Bold, Arial, sans serif;
   text-decoration: none;
   color: #000;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant {
     color: #e6e6e6;
   }
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption:hover {
-  text-decoration: underline;
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .icone {
+  border: 0.3rem solid #ffe100;
 }
-.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:active .navigation__figcaption, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:focus-visible .navigation__figcaption {
-  background-color: #ffe100;
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant .navigation__figcaption {
+  border: 0.3rem solid #ffe100;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+.projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:hover:hover {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:active .navigation__figcaption, .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:focus-visible .navigation__figcaption {
-    color: #000;
+  .projets .navigation__rangee-selecteur .navigation__lien.navigation__lien--courant:hover:hover {
+    text-decoration-thickness: 0.4rem;
   }
 }
 .projets .navigation__rangee-selecteur .navigation__item {
@@ -1082,11 +1139,6 @@ body {
 .projets .navigation__lien.navigation__lien--courant .icone {
   border: none;
 }
-@media screen and (prefers-color-scheme: dark) {
-  .projets .navigation__lien.navigation__lien--courant .icone {
-    border: 0.3rem solid #ffe100;
-  }
-}
 .projets .navigation__lien.navigation__lien--courant .navigation__figcaption {
   padding: 1rem 2rem;
 }
@@ -1131,7 +1183,7 @@ body {
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.6rem;
   display: inline-block;
-  line-height: 125%;
+  line-height: 150%;
   border-radius: 4rem;
   padding: 1.3rem 2.3rem;
 }
@@ -1177,8 +1229,7 @@ body {
       .pied-de-page .navigation {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        -moz-column-gap: 2rem;
-             column-gap: 2rem;
+        column-gap: 2rem;
       }
     }
   }
@@ -1274,7 +1325,6 @@ body {
 /*
 * Composante Accordéon
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.0
 */
 .accordeon {
   list-style: none;
@@ -1288,9 +1338,8 @@ body {
 }
 .accordeon--active .accordeon__contenu {
   display: block;
-  max-height: -moz-fit-content;
   max-height: fit-content;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem 1.5rem;
   transition: max-height 200ms ease-out;
 }
 .accordeon--active .accordeon__bouton {
@@ -1302,30 +1351,44 @@ body {
   }
 }
 .accordeon--active .accordeon__bouton::before {
-  transform: rotate(180deg);
-}
-@media screen and (prefers-color-scheme: dark) {
-  .accordeon--active .accordeon__bouton::before {
-    background: url(../images/icones/fleche-accordeon.svg) no-repeat;
-  }
-}
-.accordeon--active .accordeon__bouton::after {
   background-color: #ffe100;
   border-color: #ffe100;
 }
+.accordeon--active .accordeon__bouton::after {
+  transform: rotate(180deg);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon--active .accordeon__bouton::after {
+    background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+  }
+}
 .accordeon__bouton {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
   color: #404040;
   background-color: transparent;
   border: initial;
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 2rem;
   padding: 1rem 0;
+  margin: 1rem;
   font-family: Roboto-Medium, Arial, sans serif;
   font-size: 1.8rem;
   text-decoration: underline;
   text-align: left;
+  outline-offset: 1rem;
   cursor: pointer;
+}
+.accordeon__bouton:hover {
+  text-decoration-thickness: 0.35rem;
+  text-underline-offset: 0.3rem;
+  text-underline-position: from-font;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon__bouton:hover {
+    text-decoration-thickness: 0.4rem;
+  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .accordeon__bouton {
@@ -1334,23 +1397,6 @@ body {
 }
 .accordeon__bouton::before {
   content: "";
-  position: relative;
-  left: 1rem;
-  display: inline-block;
-  width: 2.3rem;
-  height: 1.3rem;
-  background: url(../images/icones/fleche-accordeon.svg) no-repeat;
-  background-size: cover;
-  transition: all 200ms ease-in-out;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .accordeon__bouton::before {
-    background: url(../images/icones/fleche-accordeon--sombre.svg) no-repeat;
-  }
-}
-.accordeon__bouton::after {
-  content: "";
-  position: absolute;
   z-index: -1;
   display: flex;
   border: solid 0.3rem #404040;
@@ -1359,8 +1405,24 @@ body {
   width: 3.6rem;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .accordeon__bouton::after {
+  .accordeon__bouton::before {
     border-color: #a6a6a6;
+  }
+}
+.accordeon__bouton::after {
+  content: "";
+  position: absolute;
+  margin-left: 0.9rem;
+  display: inline-block;
+  width: 2.4rem;
+  height: 1.4rem;
+  background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+  background-size: cover;
+  transition: all 200ms ease-in-out;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon__bouton::after {
+    background: url(../images/icones/fleche-accordeon--sombre.svg) no-repeat;
   }
 }
 .accordeon__bouton:hover .accordeon__titre, .accordeon__bouton:focus .accordeon__titre {
@@ -1380,7 +1442,6 @@ body {
   margin: 1rem 5.5rem;
 }
 
-/** Pied de page **/
 /*
 * Pied de page
 * @author Gabriel Caron <gabriel.caron@gmail.com>
@@ -1434,8 +1495,7 @@ body {
     .pied-de-page__conteneur-grille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -1533,11 +1593,9 @@ body {
   }
 }
 
-/** Icônes **/
 /*
 * Icônes des projets
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.1
 */
 /* État survol des icônes des projets */
 @media screen and (min-width: 600px) {
@@ -1933,9 +1991,9 @@ body {
 .lien {
   font-family: Roboto-Medium, Arial, sans serif;
   letter-spacing: 0.05rem;
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 1rem 4rem 1rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 .lien:link, .lien:visited {
   color: #404040;
@@ -1955,12 +2013,8 @@ body {
 }
 .lien::before {
   content: "";
-  display: inline-block;
   width: 3rem;
   height: 4rem;
-  vertical-align: middle;
-  margin-top: -0.5rem;
-  padding-right: 1rem;
   background-repeat: no-repeat;
   transition: all, 0.1s ease-in-out;
 }
@@ -2059,58 +2113,6 @@ body {
 
 /********* LAYOUT *********/
 /*
-* Styles des balises racine
-* @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.1
-*
-
-/* Base décimale */
-html {
-  font-size: 62.5%;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fafafa;
-}
-@media screen and (prefers-color-scheme: dark) {
-  body {
-    background-color: #0d0d0d;
-  }
-}
-
-a {
-  text-underline-offset: 0.3rem;
-  outline-offset: 1rem;
-}
-a:hover {
-  text-decoration: none;
-}
-@media screen and (prefers-color-scheme: dark) {
-  a {
-    color: #64b9ff;
-  }
-  a:visited {
-    color: #b487ff;
-  }
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  li,
-  figcaption {
-    color: #e6e6e6;
-  }
-}
-abbr[title] {
-  text-decoration-style: dotted;
-}
-
-img {
-  vertical-align: bottom;
-  max-width: 100%;
-}
-
-/*
 * Mise en page de l'accueil
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 * @version 6.3
@@ -2203,8 +2205,7 @@ img {
     .accueil .projets--demi-grille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2249,8 +2250,7 @@ img {
     .accueil .projets--demi-grille .projets__web-applis {
       display: grid;
       grid-template-columns: minmax(auto, calc(690px - 4rem));
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2276,8 +2276,7 @@ img {
     .accueil .projets--demi-grille .projets__design-graphique {
       display: grid;
       grid-template-columns: minmax(auto, calc(690px - 4rem));
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2303,8 +2302,7 @@ img {
     .accueil .projets--demi-grille .navigation--web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2338,8 +2336,7 @@ img {
     .accueil .projets--demi-grille .navigation--design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2407,7 +2404,6 @@ img {
 /*
 * Mise en page de la page Contact
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 2.0
 */
 .contact {
   padding-left: 2rem;
@@ -2461,8 +2457,7 @@ img {
     .contact__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      -moz-column-gap: 2rem;
-           column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 }
@@ -2475,10 +2470,20 @@ img {
 }
 .contact__lien {
   font-family: Roboto-Medium, Arial, sans serif;
-  color: #404040;
   letter-spacing: 0.05rem;
   line-height: 100%;
   border-radius: 4rem;
+  color: #000;
+  text-decoration-thickness: 0.3rem;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien {
+    color: #e6e6e6;
+  }
+}
+.contact__lien:hover, .contact__lien:focus {
+  text-decoration-thickness: 0.5rem;
+  text-underline-offset: 0.1rem;
 }
 .contact__lien:hover .icone, .contact__lien:focus .icone {
   border: none;
@@ -2528,8 +2533,13 @@ img {
     fill: url(#linkedin-bleu-sombre);
   }
 }
-.contact__lien:hover .contact__figcaption, .contact__lien:focus .contact__figcaption {
-  text-decoration: none;
+.contact__lien:visited {
+  color: #000;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .contact__lien:visited {
+    color: #e6e6e6;
+  }
 }
 @media screen and (prefers-color-scheme: dark) {
   .contact__lien .courriel .enveloppe {
@@ -2584,7 +2594,6 @@ img {
 /*
 * Mise en page des projets
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 3.1
 */
 /* Styles généraux, tous les projets */
 .projets {
@@ -2657,20 +2666,14 @@ img {
   }
 }
 .projet__processus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 4rem;
   list-style-type: none;
   padding: 0;
 }
-.projet__processus .lien {
-  margin-top: inherit;
-  padding: 1rem 4rem 1rem 0;
-}
 .projet__formats {
   font-size: 1.8rem;
-}
-@media screen and (min-width: 600px) {
-  .projet__formats {
-    display: inline-block;
-  }
 }
 .projet__figure {
   margin: 4rem 0 0 0;
@@ -2807,4 +2810,6 @@ img {
   .contenu.secondaire .contenu {
     max-width: 1400px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

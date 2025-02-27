@@ -4,16 +4,11 @@
 * @version 2.2
 */
 
-/* Styles pour l'état survol */
-
-@mixin boutonHover {
-	text-decoration: none;
-}
-
 /* Styles pour l'état actif */
 
 @mixin boutonActive {
 	background-color: $jauneOfficiel;
+	text-decoration: none;
 
 	@media screen and (prefers-color-scheme: dark) {
 		color: $noir;
@@ -22,9 +17,8 @@
 
 /* Styles pour la page courante */
 
-@mixin boutonPageCourante {
+@mixin boutonPageCourante($modeIcone: false) {
 	color: $noir;
-	border: 0.3rem solid $jauneOfficiel;
 	font-family: $RobotoBold;
 	text-decoration: none;
 	color: $noir;
@@ -33,7 +27,21 @@
 		color: $blancSombre;
 	}
 
+	@if $modeIcone == true {
+		& .icone {
+			border: 0.3rem solid $jauneOfficiel;
+		}
+
+		& .navigation {
+			&__figcaption {
+				border: 0.3rem solid $jauneOfficiel;
+			}
+		}
+	} @else if $modeIcone == false {
+		border: 0.3rem solid $jauneOfficiel;
+	}
+
 	&:hover {
-		text-decoration: underline;
+		@include soulignementLiens();
 	}
 }
