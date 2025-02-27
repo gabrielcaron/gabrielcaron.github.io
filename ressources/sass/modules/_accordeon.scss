@@ -1,8 +1,9 @@
 /*
 * Composante Accordéon
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.0
 */
+
+// TODO inverser after et before pour la compréhension
 
 .accordeon {
 	list-style: none;
@@ -20,7 +21,7 @@
 			&__contenu {
 				display: block;
 				max-height: fit-content;
-				margin: 0 0 1rem 0;
+				margin: 0 0 1rem 1rem;
 				transition: max-height $transition--base ease-out; // transition à l'ouverture
 			}
 
@@ -48,6 +49,7 @@
 	}
 
 	&__bouton {
+		@include soulignementLiens;
 		color: $gris25;
 		background-color: transparent;
 		border: initial;
@@ -55,10 +57,12 @@
 		align-items: center;
 		gap: 3.5rem;
 		padding: 1rem 0;
+		margin: 1rem; // Solution temporaire pour rendre le focus visible, bogue connu de Chrome
 		font-family: $RobotoMedium;
 		font-size: 1.8rem;
 		text-decoration: underline;
 		text-align: left;
+		outline-offset: 1rem;
 		cursor: pointer;
 
 		@media screen and (prefers-color-scheme: dark) {
