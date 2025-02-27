@@ -1342,7 +1342,7 @@ body {
 .accordeon--active .accordeon__contenu {
   display: block;
   max-height: fit-content;
-  margin: 0 0 1rem 1rem;
+  margin: 0 0 1rem 1.5rem;
   transition: max-height 200ms ease-out;
 }
 .accordeon--active .accordeon__bouton {
@@ -1354,16 +1354,16 @@ body {
   }
 }
 .accordeon--active .accordeon__bouton::before {
+  background-color: #ffe100;
+  border-color: #ffe100;
+}
+.accordeon--active .accordeon__bouton::after {
   transform: rotate(180deg);
 }
 @media screen and (prefers-color-scheme: dark) {
-  .accordeon--active .accordeon__bouton::before {
+  .accordeon--active .accordeon__bouton::after {
     background: url(../images/icones/fleche-accordeon.svg) no-repeat;
   }
-}
-.accordeon--active .accordeon__bouton::after {
-  background-color: #ffe100;
-  border-color: #ffe100;
 }
 .accordeon__bouton {
   text-underline-offset: 0.5rem;
@@ -1372,7 +1372,7 @@ body {
   border: initial;
   display: flex;
   align-items: center;
-  gap: 3.5rem;
+  gap: 2rem;
   padding: 1rem 0;
   margin: 1rem;
   font-family: Roboto-Medium, Arial, sans serif;
@@ -1400,23 +1400,6 @@ body {
 }
 .accordeon__bouton::before {
   content: "";
-  position: relative;
-  left: 1rem;
-  display: inline-block;
-  width: 2.3rem;
-  height: 1.3rem;
-  background: url(../images/icones/fleche-accordeon.svg) no-repeat;
-  background-size: cover;
-  transition: all 200ms ease-in-out;
-}
-@media screen and (prefers-color-scheme: dark) {
-  .accordeon__bouton::before {
-    background: url(../images/icones/fleche-accordeon--sombre.svg) no-repeat;
-  }
-}
-.accordeon__bouton::after {
-  content: "";
-  position: absolute;
   z-index: -1;
   display: flex;
   border: solid 0.3rem #404040;
@@ -1425,8 +1408,24 @@ body {
   width: 3.6rem;
 }
 @media screen and (prefers-color-scheme: dark) {
-  .accordeon__bouton::after {
+  .accordeon__bouton::before {
     border-color: #a6a6a6;
+  }
+}
+.accordeon__bouton::after {
+  content: "";
+  position: absolute;
+  margin-left: 0.9rem;
+  display: inline-block;
+  width: 2.4rem;
+  height: 1.4rem;
+  background: url(../images/icones/fleche-accordeon.svg) no-repeat;
+  background-size: cover;
+  transition: all 200ms ease-in-out;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .accordeon__bouton::after {
+    background: url(../images/icones/fleche-accordeon--sombre.svg) no-repeat;
   }
 }
 .accordeon__bouton:hover .accordeon__titre, .accordeon__bouton:focus .accordeon__titre {
