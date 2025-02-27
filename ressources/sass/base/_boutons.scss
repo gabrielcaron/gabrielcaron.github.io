@@ -17,15 +17,28 @@
 
 /* Styles pour la page courante */
 
-@mixin boutonPageCourante {
+@mixin boutonPageCourante($modeIcone: false) {
 	color: $noir;
-	border: 0.3rem solid $jauneOfficiel;
 	font-family: $RobotoBold;
 	text-decoration: none;
 	color: $noir;
 
 	@media screen and (prefers-color-scheme: dark) {
 		color: $blancSombre;
+	}
+
+	@if $modeIcone == true {
+		& .icone {
+			border: 0.3rem solid $jauneOfficiel;
+		}
+
+		& .navigation {
+			&__figcaption {
+				border: 0.3rem solid $jauneOfficiel;
+			}
+		}
+	} @else if $modeIcone == false {
+		border: 0.3rem solid $jauneOfficiel;
 	}
 
 	&:hover {
