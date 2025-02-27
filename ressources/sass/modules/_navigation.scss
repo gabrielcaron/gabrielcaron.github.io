@@ -3,6 +3,8 @@
 * @author Gabriel Caron <gabriel.caron@gmail.com>
 */
 
+// TODO faire un lien de retour pour les projets archivés (Voir Altitude)
+
 /* Mixin servant exclusivement à gérér les liens gris, car les liens au fil du texte sont bleus (par défaut) */
 @mixin couleursLiens($modeSombre: $blancSombre) {
 	&:link,
@@ -80,11 +82,6 @@
 				@media screen and (min-width: $mobile600px) {
 					border-radius: 3rem;
 				}
-			}
-
-			&:hover,
-			&:focus {
-				@include boutonHover;
 			}
 
 			&:active {
@@ -170,15 +167,6 @@
 					& .navigation {
 						&__figcaption {
 							text-decoration: underline;
-						}
-					}
-
-					&:hover,
-					&:focus {
-						& .navigation {
-							&__figcaption {
-								@include boutonHover;
-							}
 						}
 					}
 				}

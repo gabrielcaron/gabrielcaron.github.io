@@ -4,30 +4,6 @@
  * @author Gabriel Caron <gabriel.caron@gmail.com>
  */
 
-/*
- * ------------------
- * TABLE DES MATIERES
- * ------------------
- * Librairies
- ** Normalize
- * ------------------
- * UTILITAIRES
- ** Variables
- ** Mixins
- * ------------------
- * BASE
- ** Typographie
- ** Grille
- * ------------------
- * MODULES
- ** Entete
- ** Pied de page
- * ------------------
- * LAYOUT
- ** Accueil
- ** General
- */
-
 /****** Librairies ******/
 
 /** Normalize **/
@@ -35,39 +11,27 @@
 
 /**** UTILITAIRES ****/
 
-/** Variables **/
 @import "utilitaires/variables";
-
-/** Mixins **/
 @import "utilitaires/mixins";
 
 /****** BASE ******/
 
-/** Typographie **/
+@import "base/general";
 @import "base/typo";
-
-/** Grille **/
 @import "base/grille";
 
-/** Boutons **/
 @import "base/boutons";
 
 /****** MODULES ******/
 
-/** Entete **/
 @import "modules/entete";
 @import "modules/navigation";
 @import "modules/accordeon";
-
-/** Pied de page **/
 @import "modules/pieddepage";
-
-/** Icônes **/
 @import "base/icones";
 
 /********* LAYOUT *********/
 
-@import "base/general";
 @import "layout/accueil";
 @import "layout/contact";
 @import "layout/projets";

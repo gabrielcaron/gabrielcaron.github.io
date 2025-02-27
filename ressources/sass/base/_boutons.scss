@@ -4,16 +4,11 @@
 * @version 2.2
 */
 
-/* Styles pour l'état survol */
-
-@mixin boutonHover {
-	text-decoration: none;
-}
-
 /* Styles pour l'état actif */
 
 @mixin boutonActive {
 	background-color: $jauneOfficiel;
+	text-decoration: none;
 
 	@media screen and (prefers-color-scheme: dark) {
 		color: $noir;
@@ -34,6 +29,6 @@
 	}
 
 	&:hover {
-		text-decoration: underline;
+		@include soulignementLiens();
 	}
 }
