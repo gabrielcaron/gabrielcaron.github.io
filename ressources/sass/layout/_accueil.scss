@@ -1,7 +1,5 @@
 /*
 * Mise en page de l'accueil
-* @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.3
 */
 
 .accueil {
@@ -18,7 +16,6 @@
 		letter-spacing: $EspacementStandard;
 		text-align: center;
 		color: $noir;
-		text-shadow: -1px -1px 3px $blanc, 2px 2px 3px rgba(0, 0, 0, 0.15);
 		margin: 4rem 2rem;
 
 		@media screen and (min-width: $mobile600px) {
@@ -42,7 +39,6 @@
 
 		@media screen and (prefers-color-scheme: dark) {
 			color: $blancSombre;
-			text-shadow: none;
 		}
 	}
 

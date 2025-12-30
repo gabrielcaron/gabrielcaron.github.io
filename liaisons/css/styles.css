@@ -78,7 +78,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -596,7 +597,7 @@ body {
 .rangeeGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  column-gap: 2rem;
+  gap: 2rem;
 }
 
 /*** DEV seulement - Classe conteneur pour le positionnement de la rangée enfant en flexbox ***/
@@ -957,7 +958,7 @@ body {
     .projets .navigation__rangee-projets {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -1024,7 +1025,6 @@ body {
 .projets .navigation__rangee-selecteur {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
   list-style-type: none;
   padding: 0;
 }
@@ -1033,7 +1033,7 @@ body {
     .projets .navigation__rangee-selecteur {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -1229,7 +1229,7 @@ body {
       .pied-de-page .navigation {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        column-gap: 2rem;
+        gap: 1.5rem 2rem;
       }
     }
   }
@@ -1338,6 +1338,7 @@ body {
 }
 .accordeon--active .accordeon__contenu {
   display: block;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   margin: 0 0 1rem 1.5rem;
   transition: max-height 200ms ease-out;
@@ -1495,7 +1496,7 @@ body {
     .pied-de-page__conteneur-grille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2114,8 +2115,6 @@ body {
 /********* LAYOUT *********/
 /*
 * Mise en page de l'accueil
-* @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 6.3
 */
 .accueil .entete {
   padding-bottom: 0;
@@ -2129,7 +2128,6 @@ body {
   letter-spacing: 0.05rem;
   text-align: center;
   color: #000;
-  text-shadow: -1px -1px 3px #fff, 2px 2px 3px rgba(0, 0, 0, 0.15);
   margin: 4rem 2rem;
 }
 @media screen and (min-width: 600px) {
@@ -2162,7 +2160,6 @@ body {
 @media screen and (prefers-color-scheme: dark) {
   .accueil__accroche {
     color: #e6e6e6;
-    text-shadow: none;
   }
 }
 .accueil__coeur {
@@ -2205,7 +2202,7 @@ body {
     .accueil .projets--demi-grille {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2250,7 +2247,7 @@ body {
     .accueil .projets--demi-grille .projets__web-applis {
       display: grid;
       grid-template-columns: minmax(auto, calc(690px - 4rem));
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2276,7 +2273,7 @@ body {
     .accueil .projets--demi-grille .projets__design-graphique {
       display: grid;
       grid-template-columns: minmax(auto, calc(690px - 4rem));
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2302,7 +2299,7 @@ body {
     .accueil .projets--demi-grille .navigation--web-applis {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2336,7 +2333,7 @@ body {
     .accueil .projets--demi-grille .navigation--design-graphique {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2457,7 +2454,7 @@ body {
     .contact__liste {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      column-gap: 2rem;
+      gap: 1.5rem 2rem;
     }
   }
 }
@@ -2810,6 +2807,4 @@ body {
   .contenu.secondaire .contenu {
     max-width: 1400px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

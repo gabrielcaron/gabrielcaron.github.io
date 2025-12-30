@@ -74,7 +74,7 @@
 		@media (min-width: $pointRupture) {
 			display: grid;
 			grid-template-columns: repeat($nombreColonnes, $largeurColonnes);
-			column-gap: $gap;
+			gap: 1.5rem $gap;
 		}
 	}
 }
@@ -91,7 +91,7 @@
 		@media (min-width: $pointRupture) {
 			display: grid;
 			grid-template-columns: $largeurColonne;
-			column-gap: $gap;
+			gap: 1.5rem $gap;
 		}
 	}
 }
