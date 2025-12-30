@@ -57,6 +57,7 @@ Aucune dépendance requise.
 ### v2.9
 
 - (Pied de page) Retrait de Threads
+- Optimisation générale
 
 ### v2.8
 
