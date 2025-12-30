@@ -1,7 +1,7 @@
 /**
  * Accordeon Class
  * @author Gabriel Caron <gabriel.caron@gmail.com>
- * @copyright © 2025, Gabriel Caron. Tous droits réservés.
+ * @copyright © 2026, Gabriel Caron. Tous droits réservés.
  * @version 1.0
  * @param {HTMLElement} refAccordeon - L'accordéon HTML
  * @return {void}
