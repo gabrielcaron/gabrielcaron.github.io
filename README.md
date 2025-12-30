@@ -4,10 +4,10 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 
 ## Sommaire
 
-- [Configurations ciblées](#configurations-ciblées)
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.9](#v29)
   - [v2.8](#v28)
   - [v2.7](#v27)
   - [v2.6.1](#v261)
@@ -43,12 +43,6 @@ Portfolio Web et informations pratiques pour assurer sa continuité
       - [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 - [JavaScript](#javascript)
 
-## Configurations ciblées
-
-- Poste de table : MacBook Pro 15/16 pouces
-- Tablette : iPad Pro
-- Mobile : iPhone X
-
 ## CSS
 
 - SASS
@@ -59,6 +53,10 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.9
+
+- (Pied de page) Retrait de Threads
 
 ### v2.8
 
