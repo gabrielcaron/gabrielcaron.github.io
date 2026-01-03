@@ -364,7 +364,6 @@ template {
 /*
 * Styles des balises racine
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.1
 */
 /* Base décimale */
 html {
@@ -418,6 +417,12 @@ abbr[title] {
 img {
   vertical-align: bottom;
   max-width: 100%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  table {
+    color: #e6e6e6;
+  }
 }
 
 /*

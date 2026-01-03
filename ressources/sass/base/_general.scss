@@ -1,7 +1,6 @@
 /*
 * Styles des balises racine
 * @author Gabriel Caron <gabriel.caron@gmail.com>
-* @version 1.1
 */
 
 @mixin soulignementLiens($modeMenu: false) {
@@ -82,4 +81,10 @@ abbr[title] {
 img {
 	vertical-align: bottom;
 	max-width: 100%;
+}
+
+table {
+	@media screen and (prefers-color-scheme: dark) {
+		color: $blancSombre;
+	}
 }
