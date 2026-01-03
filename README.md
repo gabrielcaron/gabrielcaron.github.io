@@ -39,8 +39,6 @@ Portfolio Web et informations pratiques pour assurer sa continuité
       - [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
       - [Projets sans contexte en SVG](#projets-sans-contexte-en-svg)
       - [Projets réalisés avec Xcode](#projets-réalisés-avec-xcode)
-    - [Adobe Publish Online](#adobe-publish-online)
-      - [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 - [JavaScript](#javascript)
 
 ## CSS
@@ -364,22 +362,6 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 2. Faire ensuite la capture d'écran.
 3. Recadrer dans Photoshop en retirant les arrondis. Ils seront rajoutés via CSS.
 4. Exporter à partir de Photoshop.
-
-#### Adobe Publish Online
-
-Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
-
-- On peut désactiver le téléchargement du document PDF
-- On peut zoomer autant qu'on souhaite
-- La qualité d'affichage est supérieure
-
-##### Exporter des PDF pour InDesign
-
-InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
-
-1. Aller dans Acrobat > Fichier > Exporter vers > PostScript. Enregistrer.
-2. Ouvrir ce fichier dans Acrobat Distiller. Utiliser les paramètres «PDF qualité max».
-3. Importer le PDF converti dans InDesign.
 
 ## JavaScript
 
