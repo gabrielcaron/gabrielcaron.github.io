@@ -7,6 +7,7 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.10](#v210)
   - [v2.9](#v29)
   - [v2.8](#v28)
   - [v2.7](#v27)
@@ -51,6 +52,12 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.10
+
+- Corrections mineures et optimisation générale
+- Rotation des projets
+- Rafraichissement du projet 100 ans de SOS
 
 ### v2.9
 
