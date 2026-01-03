@@ -7,6 +7,7 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 - [CSS](#css)
 - [Dépendances](#dépendances)
 - [Historique des versions](#historique-des-versions)
+  - [v2.10](#v210)
   - [v2.9](#v29)
   - [v2.8](#v28)
   - [v2.7](#v27)
@@ -39,8 +40,6 @@ Portfolio Web et informations pratiques pour assurer sa continuité
       - [Exporter les aperçus à partir de Photoshop](#exporter-les-aperçus-à-partir-de-photoshop)
       - [Projets sans contexte en SVG](#projets-sans-contexte-en-svg)
       - [Projets réalisés avec Xcode](#projets-réalisés-avec-xcode)
-    - [Adobe Publish Online](#adobe-publish-online)
-      - [Exporter des PDF pour InDesign](#exporter-des-pdf-pour-indesign)
 - [JavaScript](#javascript)
 
 ## CSS
@@ -53,6 +52,12 @@ Portfolio Web et informations pratiques pour assurer sa continuité
 Aucune dépendance requise.
 
 ## Historique des versions
+
+### v2.10
+
+- Corrections mineures et optimisation générale
+- Rotation des projets
+- Rafraichissement du projet 100 ans de SOS
 
 ### v2.9
 
@@ -365,22 +370,9 @@ Nommer les fichiers selon la forme suivante : `nomduprojet-largeur.ext`, exemple
 3. Recadrer dans Photoshop en retirant les arrondis. Ils seront rajoutés via CSS.
 4. Exporter à partir de Photoshop.
 
-#### Adobe Publish Online
-
-Adobe Publish Online a été préféré à Adobe Document Cloud pour les raisons suivantes :
-
-- On peut désactiver le téléchargement du document PDF
-- On peut zoomer autant qu'on souhaite
-- La qualité d'affichage est supérieure
-
-##### Exporter des PDF pour InDesign
-
-InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dans Acrobat Pro :
-
-1. Aller dans Acrobat > Fichier > Exporter vers > PostScript. Enregistrer.
-2. Ouvrir ce fichier dans Acrobat Distiller. Utiliser les paramètres «PDF qualité max».
-3. Importer le PDF converti dans InDesign.
-
 ## JavaScript
 
-Pour une meilleure accessibilité, il n'y a aucun JavaScript requis pour afficher de l'information, tel un menu hamburger. Le site utilise Google Analytics 4, qui demeure facultatif pour les internautes.
+Pour une meilleure accessibilité, le JavaScript demeure facultatif pour afficher le contenu. Lorsqu'il est activé dans le navigateur, il permet:
+
+- La collecte de données pour Google Analytics
+- L'utilisation de la composante Accordéon
