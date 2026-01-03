@@ -383,4 +383,7 @@ InDesign n'affiche pas correctement les PDF annotés avec Fichiers dans iOS. Dan
 
 ## JavaScript
 
-Pour une meilleure accessibilité, il n'y a aucun JavaScript requis pour afficher de l'information, tel un menu hamburger. Le site utilise Google Analytics 4, qui demeure facultatif pour les internautes.
+Pour une meilleure accessibilité, le JavaScript demeure facultatif pour afficher le contenu. Lorsqu'il est activé dans le navigateur, il permet:
+
+- La collecte de données pour Google Analytics
+- L'utilisation de la composante Accordéon
